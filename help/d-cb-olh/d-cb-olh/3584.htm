@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Lists </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "4525.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "1710.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('4501');highlight('3584')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="4525.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="1710.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Lists</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Lists' (3584)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">A list is a defined set of values with a common purpose.  For example, a list can contain the numbers frequently called by a specific customer, a list of areas serviced by a specific substation, or a list of the area codes that form the central business district of a specific city.</p>
+<p class="bodytext">As in the case of service types, it is inefficient and often impractical to hard-code information into Convergent Billing.  For this reason, a derived attribute can be defined, with the type of information held in the associated list.  Like equipment types, the values in the derived attribute are not defined during product definition but entered in response to information supplied by the customer.</p>
+<p class="bodytext">When a derived attribute, with an evaluation type of List, is evaluated, the value of a conditional expression is compared to each of the values defined in the derived attribute.  The derived attribute returns TRUE (a non-zero value) if the given value is defined in the derived attribute, or returns FALSE (zero) if the given value is not defined in the list.</p>
+<p class="bodytext">The most common use for a derived attribute, with an evaluation type of List, is used to group frequently called numbers so that special tariffs can be applied, and customers can nominate up to five B party phone numbers that they call frequently.</p>
+<p class="bodytext">The specified numbers (entered by a user on the <span class="fieldname">Lists</span> tab on <span class="formname">Customer Detail</span> form) are stored in a derived attribute and whenever that customer makes a call, the B party phone number is compared to the numbers in the derived attribute.  If a match is found, the special tariff is applied; if no match is found, the normal call tariff for that customer is applied.</p>
+<p class="bodytext">The application environment determines the options available for derived attribute storage and use.  Derived attributes processed in the Billing application environment, can be used in Customer, Customer Node, Normalised Event, and Service contexts, and stored in Customer, Customer Node, Facility Group, and Service contexts.</p>
+<p class="bodytext">Derived attributes processed in the Rating application environment, can be used in the Service context, and stored in Facility Group and Service contexts. Derived attributes can be either master or slaves.  Master and slave derived attributes share the same data, but the slave derived attribute may redefine how the common data is accessed.</p>
+<p class="bodytext">A derived attribute can also be used to define a list to look up facilities in a facility group and then specify tariff eligibility criteria.  The list indicates whether a specific facility is in a facility group and therefore whether tariffs associated with that facility should be applied.</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="4525.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="1710.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

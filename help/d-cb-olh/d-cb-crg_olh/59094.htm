@@ -1,0 +1,484 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> PRODUCT_INSTANCE_TRE_V </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "50770.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "57844.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7526');highlight('59094')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="50770.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="57844.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">PRODUCT_INSTANCE_TRE_V</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'PRODUCT_INSTANCE_TRE_V' (59094)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="unixoutputc">PRODUCT_INSTANCE_TRE_V</span> view provides details about product instances.</p>
+<p class="syntaxheading">Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="192"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="132"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="372"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PRODUCT_INSTANCE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">ID of a product instance.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">LAST_MODIFIED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Date-time that this row was last modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">OPERATOR_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">User who created or last modified the record.</p>
+<p class="tablebodytext">The value can be overridden, but the specified user must be the same as the TRE-connected user.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Date-time that the record becomes effective.</p>
+<p class="tablebodytext">Its finest granularity is one second.</p>
+<p class="tablebodytext">If this is a companion product instance, the date must correspond to a date for the base product instance associated with the product instance.  This is checked by the DVP.</p>
+<p class="tablebodytext">For inserts, it is set to the <span class="unixoutputc">StartDate~</span> parameter.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_END_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Date-time of the last second that the record is effective.</p>
+<p class="tablebodytext">The record ceases to be effective one second after the <span class="unixoutputc">EFFECTIVE_END_DATE</span>.</p>
+<p class="tablebodytext">Its finest granularity is one second.</p>
+<p class="tablebodytext">It must be greater than or equal to <span class="unixoutputc">EFFECTIVE_START_DATE</span>.</p>
+<p class="tablebodytext">If this is a companion product instance, the date must correspond to a date for the base product instance associated with the product instance.  This is checked by the DVP.</p>
+<p class="tablebodytext">For inserts, it defaults to the end of time if it is not specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PRODUCT_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Name of the product associated with the product instance.</p>
+<p class="tablebodytext">The product must exist for at least this date range.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PRODUCT_DISPLAY_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Display name of the product associated with the product instance.</p>
+<p class="tablebodytext">The product must exist for at least this date range.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PRODUCT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">ID of the product associated with the product instance.</p>
+<p class="tablebodytext">It must exist for at least this date range.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PRODUCT_INSTANCE_</span><br><span class="unixoutputc">STATUS_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Current status of this product, mirroring service statuses. Valid values include:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">0 (Product Creation): Temporary status during product creation. When product creation is complete, this status is updated.</li><li class="tablelistbullet">1 (Provision Required): Provisioning must be performed.</li><li class="tablelistbullet">2 (Provisioned)</li><li class="tablelistbullet">3 (Active)</li><li class="tablelistbullet">4 (Suspended)</li><li class="tablelistbullet">5 (Temporary Disconnect Required): Deactivation must be performed.</li><li class="tablelistbullet">6 (Temporarily Disconnected)</li><li class="tablelistbullet">7 (Reactivation Required): Reactivation must be performed.</li><li class="tablelistbullet">8 (Cancellation Required): Deactivation must be performed.</li><li class="tablelistbullet">9 (Cancelled)</li><li class="tablelistbullet">10 (Moved)</li><li class="tablelistbullet">11 (Upgraded).</li></ul><p class="tablebodytext">For more information, refer to <span class="referrals">Remarks</span> below.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_NODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Customer node that owns this instance of the product.</p>
+<p class="tablebodytext">It must exist for at least this date range.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">BASE_PRODUCT_INSTANCE_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">ID of the base product instance.</p>
+<p class="tablebodytext">It is mandatory for companion product instances.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">CONTRACT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Contract that caused the creation of this companion product instance.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FROM_PRODUCT_INSTANCE_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">If this product instance was created as a replacement for a product instance, this is the ID of the product instance that was replaced.</p>
+<p class="tablebodytext">When <span class="unixoutputc">PRODUCT_INSTANCE_ID</span> has a status of Active, it must have a status of Moved or Upgraded, and eventually is deleted.  For this reason, this value may not reference a valid product instance.</p>
+<p class="tablebodytext">If the product instance exists, the following values are checked:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">The referenced product instance has a <span class="unixoutputc">TO_PRODUCT_INSTANCE_ID.</span> Since a single product instance could have been split to create this product instance and others, the referenced product instance's <span class="unixoutputc">TO_PRODUCT_INSTANCE_ID</span> may not be equal to <span class="unixoutputc">PRODUCT_INSTANCE_ID</span>.</li><li class="tablelistbullet">If this product instance has a status of Active, to see whether the other product instance has a status of Moved or Upgraded.</li></ul><p class="tablebodytext">For a companion product instance, the value is NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FROM_PRODUCT_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Product ID associated with the <span class="unixoutputc">FROM_PRODUCT_INSTANCE_ID</span>.</p>
+<p class="tablebodytext">It is not redundant, because after a replacement, <span class="unixoutputc">FROM_PRODUCT_INSTANCE_ID</span> is archived from the system.</p>
+<p class="tablebodytext">For a companion product instance, the value is NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FROM_PRODUCT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Product ID associated with the <span class="unixoutputc">FROM_PRODUCT_INSTANCE_ID</span>.</p>
+<p class="tablebodytext">It is not redundant, because after a replacement, <span class="unixoutputc">FROM_PRODUCT_INSTANCE_ID</span> is archived from the system.</p>
+<p class="tablebodytext">For a companion product instance, the value is NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">TO_PRODUCT_INSTANCE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">If this product instance was replaced, this is the ID of the product instance that replaced it.</p>
+<p class="tablebodytext">When it has a status of Active, this product instance must have a status of Cancelled and is eventually deleted. </p>
+<p class="tablebodytext">For a companion product instance, the value is NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">TO_PRODUCT_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Product ID associated with <span class="unixoutputc">TO_PRODUCT_INSTANCE_ID</span>.</p>
+<p class="tablebodytext">It is obtained from <span class="unixoutputc">TO_PRODUCT_INSTANCE_ID</span>.</p>
+<p class="tablebodytext">For a companion product instance, the value is NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">TO_PRODUCT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Read-only</p>
+<p class="tablebodytext">Redundant</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Product ID associated with <span class="unixoutputc">TO_PRODUCT_INSTANCE_ID</span>.</p>
+<p class="tablebodytext">It is obtained from <span class="unixoutputc">TO_PRODUCT_INSTANCE_ID</span>.</p>
+<p class="tablebodytext">For a companion product instance, the value is NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">UNCOMPLETED_IND_ODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Read-only</p>
+<p class="tablebodytext">Redundant</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">For base products only.</p>
+<p class="tablebodytext">If set to 1 (TRUE), the product instance was not completely installed, or is in the process of being completed; otherwise, the value is NULL.</p>
+<p class="tablebodytext">If set to 1 (TRUE), it is necessary for either of the following to be in place:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">The product instance to have a status of Product Creation.</li><li class="tablelistbullet">One or more rows to exist in the <span class="unixoutputc">PRODUCT_INSTANCE_SERVICE</span> or <span class="unixoutputc">PRODUCT_INSTANCE_EQUIP</span> tables for this product instance and a date range with an <span class="unixoutputc">UNCOMPLETED_IND_CODE</span> of 1 (TRUE).</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">MULTIPLE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">For companion products only.</p>
+<p class="tablebodytext">If set to 1 (TRUE), multiple instances of the companion product can be active on a single base product instance.</p>
+<p class="tablebodytext">If set to NULL, only one instance of the companion product can be active on a single base product instance.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">GENERAL_1 - GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">General fields.</p>
+<p class="tablebodytext">Their use is controlled by the product definition using the entity validation ID.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">ACTIVE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Date-time when the status of the product instance was first changed to Active.</p>
+<p class="tablebodytext">Its finest granularity is one second.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">INDUSTRY_GENERAL_1 -</span><br><span class="unixoutputc">INDUSTRY_GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">General fields for common attributes for a product, irrespective of individual client customisation.</p>
+<p class="tablebodytext">Individual client customisation should be performed using the <span class="unixoutputc">GENERAL_1</span> to <span class="unixoutputc">GENERAL_10</span> fields.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SERVICE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not searchable</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">ID of the service with which this companion product instance is associated.</p>
+<p class="tablebodytext">It is only applicable if the product instance is:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">A companion product</li><li class="tablelistbullet">Configured to be service-specific.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SERVICE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (64)</p>
+<p class="tablebodytext">Not searchable</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Name of the service with which this companion product instance is associated.</p>
+<p class="tablebodytext">It is only applicable if the product instance is:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">A companion product</li><li class="tablelistbullet">Configured to be service-specific.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">DO_NOT_PURGE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext"><a id="h79002" class="jump" title="Pseudo-columns" href="7526.htm#o79001" target="_self">Pseudo-column</a></p>
+<p class="tablebodytext">Used for updates only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">If set to 1 (TRUE), no notification is sent to the service cache of any updates to the product instance.</p>
+<p class="tablebodytext">It can be used for bulk updates of product instances before a restart of the service cache.</p>
+<p class="tablebodytext">If not specified, the service cache is purged after the update is committed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">DO_NOT_UPDATE_STATUS_</span><br><span class="unixoutputc">IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Pseudo-column</p>
+<p class="tablebodytext">Used for updates only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">If set to 1 (TRUE), updates to a base product instance's status are not automatically applied to its:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Companion product instances</li><li class="tablelistbullet">Services</li><li class="tablelistbullet">Facility group instances.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">IGNORE_OFFER_END_DATE_</span><br><span class="unixoutputc">IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Pseudo-column</p>
+<p class="tablebodytext">Used for inserts and updates only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">If set to 1 (TRUE), the end of the availability period of the associated product offer is ignored.</p>
+<p class="tablebodytext">The insert or update succeeds provided that the start of the availability period of the product offer is no later than the <span class="unixoutputc">EFFECTIVE_START_DATE</span> of the product instance.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Product Offer Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="198"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="132"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="366"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PRODUCT_OFFER_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of the product offer associated with this base product instance, or the product offer from which this companion product instance was generated.</p>
+<p class="tablebodytext">For base product instances, the product offer must be compatible with the base product.</p>
+<p class="tablebodytext">For companion product instances:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">The product offer must belong to the product offer hierarchy of the product offer assigned to this product instance's base product.</li><li class="tablelistbullet">If the base product instance is assigned a product offer, it must not be set to NULL.</li><li class="tablelistbullet">If the base product instance is not assigned a product offer, it must be set to NULL.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PRODUCT_OFFER_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (60)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Name of the product offer associated with this base product instance, or the product offer from which this companion product instance was generated.</p>
+<p class="tablebodytext">For base product instances, the product offer must be compatible with the base product.</p>
+<p class="tablebodytext">For companion product instances:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">The product offer must belong to the product offer hierarchy of the product offer assigned to this product instance's base product.</li><li class="tablelistbullet">If the base product instance is assigned a product offer, it must not be set to NULL.</li><li class="tablelistbullet">If the base product instance is not assigned a product offer, it must be set to NULL.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PRODUCT_OFFER_NODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of the product offer hierarchy node from which the product instance was allocated.</p>
+<p class="tablebodytext">If <span class="unixoutputc">PRODUCT_OFFER_ID</span> is:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">NULL, it must be set to NULL.</li><li class="tablelistbullet">Not NULL, it must not be set to NULL.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PRODUCT_OFFER_</span><br><span class="unixoutputc">ALLOCATION_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Date-time at which this product instance was allocated from the product offer specified in <span class="unixoutputc">PRODUCT_OFFER_ID</span>.</p>
+<p class="tablebodytext">For base product instances, it must be set to NULL.</p>
+<p class="tablebodytext">For companion product instances, if <span class="unixoutputc">PRODUCT_OFFER_ID</span> is:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">NULL, it must be set to NULL.</li><li class="tablelistbullet">Not NULL, it must not be set to NULL.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PREVIOUS_PRODUCT_OFFER_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of the previous product offer associated with this product instance.</p>
+<p class="tablebodytext">It is automatically modified when the product offer associated with a product is changed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PREVIOUS_PRODUCT_OFFER_</span><br><span class="unixoutputc">NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (60)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Name of the previous product offer associated with this product instance.</p>
+<p class="tablebodytext">It is automatically modified when the product offer associated with a product is changed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PREVIOUS_PRODUCT_OFFER_</span><br><span class="unixoutputc">NODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of the product offer hierarchy node from which the product instance was previously allocated.</p>
+<p class="tablebodytext">If <span class="unixoutputc">PREVIOUS_PRODUCT_OFFER_ID</span> is:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">NULL, it must be set to NULL.</li><li class="tablelistbullet">Not NULL, it must not be set to NULL.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PRODUCT_OFFER_INSTANCE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of the product offer instance that is associated with this product instance.</p>
+<p class="tablebodytext">Populated only for companion product instances that are sold as child offers in the offer hierarchy.</p>
+<p class="tablebodytext">If <span class="unixoutputc">PRODUCT_OFFER_ID</span> is NULL, it must be set to NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PARENT_PROD_OFFER_INSTANCE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of the parent product offer instance.</p>
+<p class="tablebodytext">Populated for all companion product instances created in the offer hierarchy, for which <span class="unixoutputc">PRODUCT_OFFER_INSTANCE_ID</span> is set.</p>
+<p class="tablebodytext">If <span class="unixoutputc">PRODUCT_OFFER_ID</span> is NULL, it must be set to NULL.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">The following rules apply to the statuses of base product instances and their related entities:</p>
+<ul class="listbullet"><li class="listbullet">Changing the status of a product instance to Cancelled, Moved or Upgraded will change the status of its services, companion product instances and facility group instances to Cancelled, Moved or Upgraded respectively, irrespective of their current status  and irrespective of the value of the <span class="unixoutputc">DO_NOT_UPDATE_STATUS_IND_CODE</span> field supplied to <span class="unixoutputc">biProductInstanceUpdate&amp;()</span>.</li><li class="listbullet">Changing the status of a product instance to Active will change the status of all its services, companion product instances and facility group instances to a status of Active if they have either the same status as the product instance, or a status of Provisioned, and if the <span class="unixoutputc">biProductInstanceUpdate&amp;()</span> function is called with no value specified for the <span class="unixoutputc">DO_NOT_UPDATE_STATUS_IND_CODE</span> field.  Otherwise their statuses will not be changed.</li><li class="listbullet">Changing the status of a product instance to any status other than Cancelled will change the status of all its services, companion product instances and facility group instances that had the same status as the product instance to the new status if the <span class="unixoutputc">biProductInstanceUpdate&amp;()</span> function is called with no value specified for the <span class="unixoutputc">DO_NOT_UPDATE_STATUS_IND_CODE</span> field. Otherwise their statuses will not be changed.</li><li class="listbullet">A service, companion product instance or facility group instance cannot have a status of Active unless their base product instance has a status of Active.</li><li class="listbullet">A service, companion product instance or facility group instance must have a status of Cancelled, Moved or Upgraded if their base product instance has a status of Cancelled, Moved or Upgraded respectively.</li><li class="listbullet">A service must have a status of Product Creation if its base product instance has a status of Product Creation.</li><li class="listbullet">A base product instance with a status of Product Creation cannot have any companion product instances or facility group instances.</li></ul>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="50770.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="57844.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

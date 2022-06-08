@@ -1,0 +1,247 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> biDerivedAttributeArrayUpdate&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "39711.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "11788.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('11787')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="39711.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="11788.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">biDerivedAttributeArrayUpdate&amp;()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'biDerivedAttributeArrayUpdate&amp;()' (11787)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<table class="tableintopic" width="600" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<td class="tableheading" width="276"><p class="tableheading">Interface 1</p>
+</td>
+<td width="42"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td class="tableheading" width="282"><p class="tableheading">Interface 2</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="276"><pre class="unixinputp">biDerivedAttributeArrayUpdate&amp;(    DerivedAttributeId&amp;,    OldEffectiveDate~,    var&nbsp;LastModified~,    EffectiveStartDate~,    EffectiveEndDate~,    const Opcode&amp;[],     const Seqnr&amp;[],    const Rows?[])&nbsp;</pre>
+</td>
+<td width="42"><pre class="unixinputp">&nbsp;</pre>
+</td>
+<td width="282"><pre class="unixinputp">biDerivedAttributeArrayUpdate&amp;(    DerivedAttributeId&amp;,    OldEffectiveDate~,    var&nbsp;LastModified~,    EffectiveStartDate~,     EffectiveEndDate~,    const&nbsp;Rows?[])</pre>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td class="tableheading" width="276"><p class="tableheading">Interface 3</p>
+</td>
+<td width="42"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td class="tableheading" width="282"><p class="tableheading">Interface 4</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="276"><pre class="unixinputp">biDerivedAttributeArrayUpdate&amp;(    const DerivedAttributeId&amp;,    const OldEffectiveDate~,    var&nbsp;LastModified~,    const EffectiveStartDate~,    const EffectiveEndDate~,    Opcode&amp;[],     Seqnr&amp;[],    const&nbsp;FieldNames$[],    FieldValues?[],    const DoNotPurgeIndCode&amp;)&nbsp;</pre>
+</td>
+<td width="42"><pre class="unixinputp">&nbsp;</pre>
+</td>
+<td width="282"><pre class="unixinputp">biDerivedAttributeArrayUpdate&amp;(    DerivedAttributeId&amp;,    OldEffectiveDate~,    EffectiveStartDate~,    EffectiveEndDate~,    var Opcode&amp;[],    var Seqnr&amp;[],     const FieldNames$[],    const FieldValues?[],    const DoNotPurgeIndCode&amp;)</pre>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td class="tableheading" width="276"><p class="tableheading">Interface 5</p>
+</td>
+<td width="42"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td class="tableheading" width="282"><p class="tableheading">Interface 6</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="276"><pre class="unixinputp">biDerivedAttributeArrayUpdate&amp;(    const DerivedAttributeId&amp;,    const OldEffectiveDate~,    var LastModified~,    const EffectiveStartDate~    const EffectiveEndDate~,    Opcode&amp;[],    Seqnr&amp;[],     const FieldNames$[],    const FieldValues?[])</pre>
+</td>
+<td width="42"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td width="282"><pre class="unixinputp">biDerivedAttributeArrayUpdate&amp;(    DerivedAttributeId&amp;,    OldEffectiveDate~,    EffectiveStartDate~,     EffectiveEndDate~,    const&nbsp;Rows?[])</pre>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Maintains derived attribute tables that have a storage context of Global or Global-Shared.</p>
+
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><ul class="notelistbullet"><li class="notelistbullet">Interfaces 1 and 2 are remote wrapper functions for the <span class="unixoutputc"><a id="h41366" class="jump" title="DerivedAttributeArrayUpdate&amp;()" href="14537.htm" target="_self">DerivedAttributeArrayUpdate&amp;()</a></span> function.</li><li class="notelistbullet">Interface 6 is a remote wrapper function for interface 2 of the <span class="unixoutputc"><a id="h41366_2" class="jump" title="DerivedAttributeArrayUpdate&amp;()" href="14537.htm" target="_self">DerivedAttributeArrayUpdate&amp;()</a></span> function, but does not require the derived attribute table's last modified date to be passed because the function determines it before passing the other parameters to interface 2 of <span class="unixoutputc"><a id="h41366_3" class="jump" title="DerivedAttributeArrayUpdate&amp;()" href="14537.htm" target="_self">DerivedAttributeArrayUpdate&amp;()</a></span>.</li></td></tr></table></ul><p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="288" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="bold">Function Type</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Remote Synchronous</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="bold">Service</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">biDerivedAttr</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="168"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="528"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">DerivedAttributeId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In:  ID of the derived attribute to be updated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">OldEffectiveDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In:  Date-time used to retrieve the derived attribute table.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">LastModified~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In:  Last modified date-time of the derived attribute table effective as at <span class="unixoutputc">OldEffectiveDate~</span>.</p>
+<p class="tablebodytext">Out:  Last modified date-time of the updated derived attribute table as at <span class="unixoutputc">EffectiveStartDate~</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">EffectiveStartDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In:  Start of the date-time range for which changes are to be applied.</p>
+<p class="tablebodytext">A value must be specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">EffectiveEndDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In:  End of the date-time range for which changes are to be applied.</p>
+<p class="tablebodytext">A value greater than <span class="unixoutputc">EffectiveStartDate~</span> must be specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">Opcode&amp;[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">Operations to perform on the row.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">Seqnr&amp;[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In:  If a derived attribute is using standard features, sequence number of the row or rows being inserted, updated, or deleted.</p>
+<p class="tablebodytext">The following applies when specifying sequence numbers for derived attributes using standard features:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Sequence numbers are processed (and therefore interpreted) in the order in which they are specified.  Therefore, deleted rows must be specified in descending sequence order (for example, 6,3,2), and inserted rows must be specified in ascending sequence order (for example, 2,3,6).</li><li class="tablelistbullet">The starting number for the first row is 1 (not 0).  For example, to delete the first three rows from the table, specify 3,2,1 (not 2,1,0).</li><li class="tablelistbullet">The contiguity of sequence numbers is maintained by this function.</li></ul><p class="tablebodytext">For derived attributes using extended features, it contains extended derived attribute row IDs instead of normal sequence numbers. When inserting rows, it must be specified with a placeholder value (for example, <span class="unixoutputc">null&amp;</span>) because the row IDs are allocated automatically, and cannot be specified.</p>
+<p class="tablebodytext">Rows for derived attribute tables using extended features are processed in the following order:</p>
+<ol class="tablelistnumber"><li class="tablelistnumber">Insert</li><li class="tablelistnumber">Update</li><li class="tablelistnumber">Delete.</li></ol></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">FieldNames$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In:  Names of fields for the rows being inserted or updated.</p>
+<p class="tablebodytext">Possible field names are defined in the <span class="unixoutputc">DERIVED_ATTRIBUTE_ARRAY_TRE_V</span> view.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">Only some fields from the view can be specified.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">FieldValues?[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In:  Two-dimensional array of field values (in <span class="unixoutputc">[Row][Field]</span> order) inserted, updated, or deleted.</p>
+<p class="tablebodytext">An empty row can be specified for records being deleted.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">DoNotPurgeIndCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">If set to 0 (FALSE), on successful function completion, and the derived attribute table has a storage context of:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Global, the table is purged from the global process cache.</li><li class="tablelistbullet">Global-Shared, the same row operations are applied to the global-shared derived attribute table cache.</li></ul><p class="tablebodytext">Otherwise, the derived attribute table is not purged.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">Returns 1 (TRUE) if successful.</p>
+<p class="bodytext">For all function interfaces, if the function is not successful or if either <span class="unixoutputc">EffectiveStartDate~</span> or <span class="unixoutputc">EffectiveEndDate~</span> are outside the derived attribute record's date-time range, an error is raised.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="syntaxheading">Interface 3</p>
+<p class="bodytext">This interface is used to add, update, or delete rows.</p>
+<p class="bodytext">The following applies to this interface:</p>
+<ul class="listbullet"><li class="listbullet">The operation (insert, update, or delete) is specified explicitly using <span class="unixoutputc">Opcode&amp;[]</span>.</li><li class="listbullet">No entity validation is performed on derived attribute table rows.<p class="listcontinue">The table's field names are explicitly defined using <span class="unixoutputc">FieldNames$[]</span>, rather than implicitly using the entity validation definitions. </p>
+<p class="listcontinue">Values for fields from the <span class="unixoutputc">DERIVED_ATTRIBUTE_ARRAY_TRE_V</span> view, other than the following fields, are derived by the function and ignored:</p>
+<ul class="listdashbullet2"><li class="listdashbullet2">Index value and result value fields (for example, <span class="unixoutputc">INDEX1_VALUE</span> and <span class="unixoutputc">RESULT1_VALUE</span>).</li><li class="listdashbullet2"><span class="unixoutputc">DESCRIPTION</span></li><li class="listdashbullet2"><span class="unixoutputc">ATLANTA_GROUP_ID</span>, <span class="unixoutputc">VERSION_STR</span>, and <span class="unixoutputc">CATEGORIES</span>, which are available only for derived attributes using extended features.</li></ul></li><li class="listbullet">For insert and update operations, all columns configured for the derived attribute should be specified.<p class="listcontinue">Field values that are not specified are set to NULL.</p>
+</li><li class="listbullet">If <span class="unixoutputc">DoNotPurgeIndCode&amp;</span> is FALSE, <span class="unixoutputc"><a id="h49218" class="jump" title="biDerivedTablePurge&amp;()" href="11811.htm" target="_self">biDerivedTablePurge&amp;()</a></span> is called to purge the derived attribute table from all server processes or the Global-Shared derived attribute table cache.</li><li class="listbullet">Multi-range updates are not supported.</li><li class="listbullet">On successful completion, if the updated derived attribute is of storage context:<ul class="listdashbullet2"><li class="listdashbullet2">Global, it is purged from the process caches.</li><li class="listdashbullet2">Global-Shared, it is incrementally updated from the shared cache.</li></ul></li><li class="listbullet">Other functionality and restrictions that apply to interface 1 also apply to this interface.</li></ul><p class="syntaxheading">Interface 4</p>
+<p class="bodytext">This interface provides the same functionality as interface 3.  However, it uses pessimistic locking and therefore does not use a <span class="unixoutputc">LastModified~</span> parameter.</p>
+<p class="syntaxheading">Interface 5</p>
+<p class="bodytext">This interface provides the same functionality as interface 3. However, on successful completion, the derived attribute table is purged.</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="39711.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="11788.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

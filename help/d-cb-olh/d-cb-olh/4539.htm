@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Real-time Rating (RTR) Message Exchange </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "4537.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "4541.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('4533');expand('4501');highlight('4539')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="4537.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="4541.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">Real-time Rating (RTR) Message Exchange</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Real-time Rating (RTR) Message Exchange' (4539)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Communication between the RTR and a remote host consists of exchanges of data messages and acknowledgments.  The maximum size of each of these messages is 65536 bytes.</p>
+<p class="bodytext">The originating system writes the event to be rated in an event message and sends it to the Convergent Billing process configured for RTR.  For each event received by the rating engine, either an acknowledgment message or an event error message is returned to the originator.  An acknowledgment is sent if the event was successfully decoded; otherwise, an event error message is sent which both locates the problem in the event record and indicates the reason for the error.</p>
+<p class="bodytext">After normalisation and rating, the rating engine transmits each event, with its resultant charges, in a charge message.  The maximum number of charges that can be transmitted in a single charge message is 64.  In addition, the size of the resultant charge message cannot exceed 65536 bytes.  Of these 65536 bytes, 20480 bytes are reserved for encoded event details and an additional 228 bytes are reserved for Event Rating Protocol (ERP) overhead; therefore, the total number of bytes in all encoded charges in a single charge message cannot exceed 44828 bytes.</p>
+<p class="bodytext">If an event generates too many charges to be output in a single charge message (that is, the size of the resultant charge message would exceed 65536 bytes), the rating engine outputs as many charges as possible in a single charge message.  Once an acknowledgment is received for this message, the rating engine transmits the remaining charges in additional charge messages until all the charges associated with the event have been sent.</p>
+<p class="bodytext">For each charge message transmitted, the rating engine expects to receive an acknowledgment message before the next charge message is sent.  If a negative acknowledgment message is received, the rating engine re-transmits the charge message.  If an excessive number of negative acknowledgments are received for a charge message, or if no response is received, the rating engine transmits a diagnostic message and then closes the named pipe or TCP/IP socket connection.  If a message other than an acknowledgment or negative acknowledgment is received, the rating engine transmits a diagnostic message and then closes the connection.</p>
+<p class="bodytext">Immediately before closing a connection, the rating engine transmits a diagnostic message using the connection to notify the remote host of the reason for the disconnection.</p>
+<p class="bodytext">The rating engine transmits a diagnostic message and then closes the connection if:</p>
+<ul class="listbullet"><li class="listbullet">An excessive number of negative acknowledgments are received for a charge message.</li><li class="listbullet">No response is received.</li><li class="listbullet">A message other than an acknowledgment or negative acknowledgment is received.</li></ul><table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">Reading events from a TCP/IP socket is deprecated and provided only for backward compatibility.</p></td></tr></table>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="4537.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="4541.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

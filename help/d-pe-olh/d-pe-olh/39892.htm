@@ -1,0 +1,451 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> ClientFullParamGet&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Configuration Workbench for Singleview Process Engine 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "9413.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "58683.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('57331');expand('11011');highlight('39892')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="9413.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="58683.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Configuration Workbench for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">ClientFullParamGet&amp;()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'ClientFullParamGet&amp;()' (39892)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<pre class="unixinputp">ClientFullParamGet&amp;(    ClientParams?{})</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Returns all client parameters as an unknown hash, and allows parameters to be retrieved by specifying their names.</p>
+<p class="syntaxheading">Parameter</p>
+<table class="tableintopic" width="582" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="162"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="420"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="unixoutputc">ClientParams?{}</span></p>
+</td>
+<td style="border:1px solid #010101;" width="420"><p class="tablebodytext">Hash of client parameters</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">1 if successful; otherwise, 0.  When there are no parameters in the current trigger context, no error is raised and 0 is returned.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">This function is similar to <span class="unixoutputc">ClientParamGet$</span> and only valid for On Client Request triggers.</p>
+<p class="bodytext">Operation trigger parameters (listed in Table 19) and On Drop trigger parameters (listed in Table 20) can be retrieved.</p>
+<p class="bodytext">Additional parameters can also be returned as an array of strings with a hash key of <span class="unixoutputc">ADDITIONAL_PARAM</span>.  For example, <span class="unixoutputc">ClientParams?{'ADDITIONAL_PARAM'}</span> where the first element is accessed as <span class="unixoutputc">ClientParams?{ADDITIONAL_PARAM'}[0]</span>.  The additional parameters are either message-related (<span class="unixoutputc"><a id="h9382" class="jump" title="AsyncDialog&amp;()" href="58681.htm" target="_self">AsyncDialog&amp;()</a></span>) or configurer-defined.</p>
+
+<table width="100%" class="tipstyle"><tr><td><p class="tip">Tip:</p><ul class="tiplistbullet"><li class="tiplistbullet">If the hash contains only a blob, it can be retrieved by specifying the hash key.  For example, specifying <span class="unixoutputc">ClientParams?{'PARAM:CURRENT_OBJ'}</span> returns a blob.</li><li class="tiplistbullet">If the hash contains an array of hashes, to retrieve the lower level elements, specify the parent hash key followed by an array index and the child hash key.  For example, specify: <p class="listcontinue"><span class="unixoutputc">ClientParams?{'PARAM:ALL_ACTIVE_TREE_OBJ'}[0]{'TREE_OBJ'}</span>.</p>
+</li><li class="tiplistbullet">Nested hashes can be retrieved by specifying the parent hash key followed by the child hash key (for example, <span class="unixoutputc">ClientParams?{'PARAM:MOVE_COPY'}{DESCLASS'})</span>.</li></td></tr></table></ul><p class="caption">Table 19  Client Parameters Array for Operation Trigger Parameters</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="216"><p class="tableheading">Key</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="480"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">PARAM:CONTEXT_OBJ</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Hardcoded text string.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">The <span class="unixoutputc">PARAM:CONTEXT_OBJ</span> parameters are only included if there is a context class configured on the operation, and a layout group matches the context class that displays an object.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Class Key&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Class key of the context object.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Object Key&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Object key of the context object.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">PARAM:END</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Hardcoded text string.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">PARAM:BASEVIEW_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Hardcoded text string.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">The <span class="unixoutputc">PARAM:BASEVIEW_ID </span>parameters are only included if there is a base view.  The base view is the view from which the On Client Request trigger was invoked.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Base View ID&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Number that identifies a base view instance.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">PARAM:END</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Hardcoded text string.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">PARAM:CURRENT_OBJ</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Hardcoded text string.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">The <span class="unixoutputc">PARAM:CURRENT_OBJ</span> parameters are the view's main object if the operation is configured on the view's toolbar, or the focused tab's main object if the operation is configured on the tab's toolbar.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Class Key&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Class key of the current object.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Object Key&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Object key of the current object.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">PARAM:END</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Hardcoded text string.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">PARAM:LIST_SECTION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Hardcoded text string.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">The <span class="unixoutputc">PARAM:LIST_SECTION</span> parameters are only included if the <span class="fieldname">List Section Objects</span> attribute is set in the toolbar tabs in the Interface Design Tool, or on the <span class="formname">Menu Operation Configuration</span> window in the Menu Tool.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Class Key&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Class key of the view.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Object Key&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Object key of an object in the <span class="fieldname">List </span>section.</p>
+<p class="tablebodytext">It is repeated for each object in the <span class="fieldname">List</span> section.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">PARAM:END</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Hardcoded text string.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">PARAM:ALL_ACTIVE_OBJ</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Hardcoded text string.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Class Key&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Class key of the selected object.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Object Key&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Object key of the selected object.</p>
+<p class="tablebodytext">Class Key and Object Key are repeated for each selected object.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">PARAM:END</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Hardcoded text string.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">PARAM:ALL_ACTIVE_TREE_OBJ</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Hardcoded text string.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Class Key&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Class key of the selected tree object.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Object Key&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Object key of the selected tree object.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Layout Group Key&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Key for the layout group template of the tree where the object is selected.</p>
+<p class="tablebodytext">Class Key, Object Key, and Layout Group Key are repeated for each selected tree object.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">PARAM:END</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Hardcoded text string.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">PARAM:OPERATION_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Hardcoded text string.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Operation Name&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Name of the operation that initiated the On Client Request trigger.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">PARAM:END</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Hardcoded text string.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Table 20  Client Parameters Array for On Drop Trigger Parameters</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="216"><p class="tableheading">Value</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="480"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">PARAM:MOVE</span>_<span class="unixoutputc">COPY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Hardcoded text string.</p>
+<p class="tablebodytext">Start of the move or copy operation parameters initiated by a drag and drop on a hierarchy tree (see the <span class="referrals">Configuration Workbench Tools Guide for Singleview Process Engine</span>).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Operation&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Type of operation requested, either MOVE or COPY.</p>
+<p class="tablebodytext">The COPY operation is reserved for future use.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Destination Class Key&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Class key of destination object, or 0 for the root node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Destination Object Key&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Object key of destination object, or 0 for the root node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Source Reference Subset Fact&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Reference subset fact for the source tree, or NULL for an association hierarchy tree.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Destination Reference Subset Fact&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Reference subset fact for the destination tree, or NULL for an association hierarchy tree.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Source Parent&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Parent fact for the source tree, or NULL for an association hierarchy tree.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Destination Parent&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Parent fact for the destination tree.</p>
+<p class="tablebodytext">For association hierarchy trees, the destination parent fact is the parent fact of the affected reference subset fact definition.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Source Tree Parent Class&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Class key of the parent object of the source tree, or 0 if no parent object exists.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Source Tree Parent Object&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Object key of the parent object of the source tree, or 0 if no parent object exists.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Destination Tree Parent Class&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Class key of the parent object of the destination tree, or 0 if no parent object exists.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Destination Tree Parent Object&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Object key of the parent object of the destination tree, or 0 if no parent object exists.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Start Timestamp&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Start date-time for the change if the object is date ranged, in the format ddmmyyyyhhnnss.</p>
+<p class="tablebodytext">It only contains a value if the destination object is date ranged, and one or more of the source objects are date ranged; otherwise is set to 0).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;End Timestamp&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">End date-time for the change if the object is date ranged, in the format ddmmyyyyhhnnss.</p>
+<p class="tablebodytext">It only contains a value if the destination object is date ranged, and one or more of the source objects are date ranged; otherwise is set to 0.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">START:SRC_OBJ</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Hardcoded text string.  Start of the source object list.</p>
+<p class="tablebodytext">The list is terminated by the <span class="unixoutputc">END:SRC_OBJ</span> client parameter.</p>
+<p class="tablebodytext">The group of <span class="unixoutputc">&lt;Source Class Key&gt;</span>, <span class="unixoutputc">&lt;Source Object Key&gt;</span>, <span class="unixoutputc">&lt;Source Parent Class Key&gt;</span>, <span class="unixoutputc">&lt;Source Parent Object Key&gt;</span>, and <span class="unixoutputc">&lt;Source Reference Subset Fact Key&gt;</span> elements are repeated for each selected object in the hierarchy tree.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Source Class Key&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Class key for selected object.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Source Object Key&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Object key for the selected object.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Source Parent Class Key&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Class key for the selected object's parent node (used for association hierarchy trees), or 0 if not an association hierarchy tree.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Source Parent Object Key&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Object key for the selected object's parent node (used for association hierarchy trees), or 0 if not an association hierarchy tree.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Source Reference Subset Fact Key&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Reference subset fact key used to create the source node (used for association hierarchy trees), or 0 if not an association hierarchy tree.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">END:SRC_OBJ</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Hardcoded text string.  End of the source object list.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">PARAM:END</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Hardcoded text string.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">PARAM:OPERATION_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Hardcoded text string.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">&lt;Operation Name&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Name of the operation that initiated the On Client Request trigger.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">PARAM:END</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Hardcoded text string.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Example</p>
+<p class="bodytext">The following is an On Client Request trigger for the TestParam case operation:</p>
+<pre class="unixoutputp">{<br>    var ClientParams?{};<br>    var Result&amp;;<br>    try{<br>        # Get the parameter in hash<br>        Result&amp; := ClientFullParamGet&amp;(ClientParams?{});<br>        # Print keys of hash<br>        print(keys(ClientParams?{}));<br>        # Print all parameters in hash<br>        print(ClientParams?{});<br>        # Get current object<br>        var thisCase@ := to_blob(ClientParams?{'PARAM:CURRENT_OBJ'});<br>        # Get an integer fact<br>        var myInteger&amp; := to_integer(ClientParams?{'PARAM:BASEVIEW_ID'});<br>        print(to_string(myInteger&amp;)});<br>        # Get a text fact<br>        var myText$ := ClientParams?{'PARAM:OPERATION_NAME'};<br>        print(myText$});<br>        ObjectUpdate&amp;(thisCase@, [Fact:Case.Text_Fact@, Fact:Case.Integer_Fact@], <br>        [myText$, myInteger&amp;]);<br>        #Get the first additional parameter<br>        var myAdditionalParam$ := ClientParams${'ADDITIONAL_PARAM'}[0];<br>        print(myAdditionalParam$);<br>    } except {<br>        print('Trigger failed');<br>    }<br>}</pre>
+<p class="bodytext">The following is sample output from the above example (comments in italics):</p>
+<pre class="unixoutputp">[ADDITIONAL_PARAM, PARAM:ALL_ACTIVE_OBJ, PARAM:BASEVIEW_ID, PARAM:CURRENT_OBJ, PARAM:OPERATION_NAME](Keys of hash)<br>{ADDITIONAL_PARAM =&gt; [ PARAM:MODAL, PARAM:SELECTION_METHOD, A, PARAM:END ] , PARAM:ALL_ACTIVE_OBJ =&gt; [ 0x00640000000000000000000000000063 ],<br>PARAM:BASEVIEW_ID =&gt; 1, PARAM:CURRENT_OBJ =&gt; [ 0x00640000000000000000000000000063 ], PARAM:OPERATION_NAME =&gt; TestParam }(Parameters in hash)<br>1 (myInteger&amp;)<br>TestParam (myText$)<br>PARAM:MODAL (myAdditionalParam$)</pre>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="9413.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="58683.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Configuration Workbench for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

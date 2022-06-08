@@ -1,0 +1,237 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> INV_CONSOLIDATED_STATEMENTS_V </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "50731.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "50732.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7934');highlight('45935')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="50731.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="50732.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">INV_CONSOLIDATED_STATEMENTS_V</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'INV_CONSOLIDATED_STATEMENTS_V' (45935)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="unixoutputc">INV_CONSOLIDATED_STATEMENTS_V</span> view defines statements from the current bill run, or a previous bill run, that are consolidated into a consolidated invoice for the current bill run.</p>
+<p class="bodytext">The information is similar to that in the <span class="unixoutputc">INV_INVOICE_V</span> view, but applies to consolidated statements.  Details not applicable to statements are not included in this view. </p>
+<p class="bodytext">This view allows retrieval of statement information using the default <span class="unixoutputc">WHERE</span> clause of the other invoices template type.  The following default <span class="unixoutputc">WHERE</span> clauses are used to retrieve statements associated with a consolidated invoice:</p>
+<ul class="listbullet"><li class="listbullet"><span class="unixoutputc">prime_customer_node_id=:1 AND</span><br><span class="unixoutputc">bill_run_id=:2 AND</span><br><span class="unixoutputc">invoice_seqnr=:3</span></li><li class="listbullet"><span class="unixoutputc">consolidation_invoice_id=:1 AND</span><br><span class="unixoutputc">invoice_seqnr=:2</span></li></ul><p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="216"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="354"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">PRIME_CUSTOMER_NODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Customer node for which the set of invoices is retrieved.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">INVOICE_SEQNR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (3)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Sequence number of a specific invoice format and invoice image for the customer node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">BILL_RUN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">ID of the bill run that generated the consolidated invoice.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">CONSOLIDATION_INVOICE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">ID of the invoice to which the statements pending consolidation are consolidated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">INVOICE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">ID of a statement that has been consolidated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_NODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Customer node associated with this invoice.</p>
+<p class="tablebodytext">It is always the same as the <span class="unixoutputc">PRIME_CUSTOMER_NODE_ID</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">LAST_MODIFIED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Date-time the statement was last modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_INVOICE_STR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (30)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">ID generated for the invoice.  The format may vary.</p>
+<p class="tablebodytext">The ID is usually derived from <span class="unixoutputc">INVOICE_ID</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">STATEMENT_BILL_RUN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">ID of the bill run that generated the statement.</p>
+<p class="tablebodytext">It can be the same as <span class="unixoutputc">BILL_RUN_ID</span> or the ID of an earlier bill run. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_ACCOUNT_INVOICE_</span><br><span class="unixoutputc">STR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (30)</p>
+<p class="tablebodytext">Optional</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">ID generated for this statement.</p>
+<p class="tablebodytext">ID is only unique within the account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">IMAGE_GENERATED_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Set to True (1) when all images for the invoice are successfully processed by the IGP, including images that have been suppressed.</p>
+<p class="tablebodytext">It is set by the IGP.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">Separate images are not usually generated for statements pending consolidation. </p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">APPLIED_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Set to 1 (True) when the statement is applied to the account.  </p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">Consolidated and applied statements do not have associated entries in the <span class="unixoutputc">ACCOUNT_HISTORY</span> table.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Date of the bill run that generated the statement. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">ISSUE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Original date of issue for the statement pending consolidation.</p>
+<p class="tablebodytext">It can be different from the date associated with the consolidated invoice.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">STATEMENT_AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Total amount of charges associated with the statement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">GENERAL_1 - GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">General fields containing invoice or statement pending consolidation details.</p>
+<p class="tablebodytext">They are populated as required by the invoice type expressions.</p>
+<p class="tablebodytext">The constraints for each column are defined by the entity validation associated with its invoice type.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="50731.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="50732.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

@@ -1,0 +1,339 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> FUNCTION_TRE_V </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "7458.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "53344.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7526');highlight('53388')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="7458.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="53344.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">FUNCTION_TRE_V</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'FUNCTION_TRE_V' (53388)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="unixoutputc">FUNCTION_TRE_V</span> view provides details of the functions defined in Singleview.</p>
+<p class="syntaxheading">Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="204"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="366"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">FUNCTION_DEFN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of a function definition.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Date-time at which the record becomes effective.</p>
+<p class="tablebodytext">Its granularity is one day.</p>
+<p class="tablebodytext">Time component always corresponds to midnight (that is, 00:00:00 hours).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_END_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Date-time that the record ceases to be effective.</p>
+<p class="tablebodytext">Its granularity is one day.</p>
+<p class="tablebodytext">Time component always corresponds to one second before midnight (that is, 23:59:59).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">FUNCTION_DEFN_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (67)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Name of the function.</p>
+<p class="tablebodytext">The name must start with a letter or underscore and end with the function type character.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">INTERFACE_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (3)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Interface number for the function provided to support function overloading.</p>
+<p class="tablebodytext">Multiple functions with the same name but different parameters can be created by assigning a different interface number to each function.  This allows each function to be identified.</p>
+<p class="tablebodytext">Default is 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">DESCRIPTION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (2000)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Description of the function.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">LAST_MODIFIED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Date-time at which the function was last modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">OPERATOR_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">User who created or last modified the record.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">GROUP_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Security group with access to, and control of, the function definition.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">VERSION_STR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Version identification string that can be used to tag the entity.</p>
+<p class="tablebodytext">It is provided for use by third party configuration management tools and is not used by Singleview.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">CATEGORIES</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Comma-separated list of categories associated with this function.</p>
+<p class="tablebodytext">Refer to the <span class="unixoutputc"><a id="h51496" class="jumpnowordoutput" title="CATEGORY_V" href="50728.htm" target="_self">CATEGORY_V</a></span> view for the list of available categories.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">DATA_TYPE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Date type returned by this function.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">DATA_TYPE_FUNCTION</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">REMOTE_CALL_TYPE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Method by which the function is called remotely.  If defined, the function is implemented remotely through the TRE.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">REMOTE_CALL_TYPE_CODE</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">REMOTE_NOTRANS_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Specifies if the remote function is to be executed as part of the current transaction or in a separate transaction.</p>
+<p class="tablebodytext">If set to 1 (TRUE), the function is executed as a separate transaction and its result does not affect the value of the current transaction.</p>
+<p class="tablebodytext">It is mandatory if <span class="unixoutputc">REMOTE_CALL_TYPE_CODE</span> is defined; otherwise, it is null.</p>
+<p class="tablebodytext">For asynchronous remote functions and non-transactional services, it is always 1 (TRUE). For built-in functions, this value should be 0 (FALSE).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">REMOTE_NOTIME_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Specifies if standard Tuxedo blocking timeouts are disabled when calling this function.</p>
+<p class="tablebodytext">If set to 1 (TRUE), timeouts are disabled; however, if the function is part of a transaction, it is still subject to transaction timeouts.</p>
+<p class="tablebodytext">It must be either set to 1 or be NULL.  It can only be set to 1 if <span class="unixoutputc">REMOTE_CALL_TYPE_CODE</span> is set to 0 (<span class="unixoutputc">BUILT_IN</span>) or 1 (<span class="unixoutputc">SYNCHRONOUS</span>).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">REMOTE_ALIAS_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Specifies how remote functions called by this function are handled.</p>
+<p class="tablebodytext">If set to 1 (TRUE), any remote functions called by this function are executed remotely and undergo function aliasing in accordance with the user calling the function. By default, remote functions are executed in the current server if possible and do not undergo function aliasing.</p>
+<p class="tablebodytext">It must be either set to 1 or be NULL.  It is only applicable to remote functions and can only be set to 1 if <span class="unixoutputc">REMOTE_CALL_TYPE_CODE</span> is not NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">REMOTE_QUEUESPACE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Name of the Tuxedo queue space used to queue calls to this function. </p>
+<p class="tablebodytext">It is mandatory if <span class="unixoutputc">REMOTE_CALL_TYPE_CODE</span> is set to 3 (QUEUED); otherwise, it is NULL.  If set, the default value is <span class="unixoutputc">TMQUEUE</span> for backward compatibility.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">REMOTE_SERVICE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Name of the Tuxedo service that implements the function.</p>
+<p class="tablebodytext">It is mandatory if <span class="unixoutputc">REMOTE_CALL_TYPE_CODE</span> is defined; otherwise, it is NULL.</p>
+<p class="tablebodytext">For built-in functions, the reference type <span class="unixoutputc">REMOTE_FUNCTION_SERVICES</span> defines the list of valid services. </p>
+<p class="tablebodytext">For a queued function, the service name is the same as the queue name.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">APPLICATION_ENV_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Application environment in which the function can be used. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">0 (Any)</li><li class="tablelistbullet">1 (Data Entry)</li><li class="tablelistbullet">2 (Rating)</li><li class="tablelistbullet">3 (Billing)</li><li class="tablelistbullet">4 (Invoicing)</li><li class="tablelistbullet">7 (PE)</li><li class="tablelistbullet">8 (GL_Guidance)</li><li class="tablelistbullet">9 (EVS).</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">CONTEXT_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Processing context in which this specification is used. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Rating environment <ul class="tablelistdashbullet2"><li class="tablelistdashbullet2">1 (Normalised Event)</li><li class="tablelistdashbullet2">2 (Service)</li></ul></li><li class="tablelistbullet">Billing environment<ul class="tablelistdashbullet2"><li class="tablelistdashbullet2">1 (Normalised Event)</li><li class="tablelistdashbullet2">2 (Service)</li><li class="tablelistdashbullet2">3 (Customer Node)</li><li class="tablelistdashbullet2">4 (Customer)</li><li class="tablelistdashbullet2">5 (Charge)</li></ul></li><li class="tablelistbullet">TRE Table environment<ul class="tablelistdashbullet2"><li class="tablelistdashbullet2">0 (Any).</li></ul></li></ul><p class="tablebodytext"><span class="unixoutputc">CONTEXT_RATING</span>, <span class="unixoutputc">CONTEXT_BILLING</span>, or <span class="unixoutputc">CONTEXT_TRE_TABLE</span> reference types define the possible values depending on the value of <span class="unixoutputc">APPLICATION_ENV_CODE</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">BUILTIN_FUNCTION_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Maps the function to a specific C add-on function.</p>
+<p class="tablebodytext">The list of built-in functions available is defined by the <span class="unixoutputc">BUILTIN_FUNCTION</span> reference type.</p>
+<p class="tablebodytext">If <span class="unixoutputc">REMOTE_CALL_TYPE_CODE</span> is not NULL, it must be NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">DETERMINISTIC_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Specifies if the result of this function is deterministic.</p>
+<p class="tablebodytext">This information can be used by the expression parser to evaluate calls, possibly resulting in improved performance.</p>
+<p class="tablebodytext">This value can be set to 1 (TRUE) or be NULL.  If set to 1, it must have an application environment of 0 (Any) or 7 (PE), and all parameters passed to the function are passed by value.</p>
+<p class="tablebodytext">Reference parameters (<span class="unixoutputc">var</span>) are not permitted.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">FUNCTION_DEFN_TXT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">CLOB</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Definition of the function.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">DO_NOT_PURGE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext"><a id="h79002" class="jump" title="Pseudo-columns" href="7526.htm#o79001" target="_self">Pseudo-column</a></p>
+<p class="tablebodytext">Used for inserts and updates only</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Specifies if a notification is sent to any server processes of the changes to this function during an insertion or update.</p>
+<p class="tablebodytext">If set to 1 (TRUE), no notification is sent and changes do not take effect until the server is restarted.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">AUTO_GENERATED_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Pseudo-column</p>
+<p class="tablebodytext">Used for inserts and updates only</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Specifies if this function has been automatically generated.</p>
+<p class="tablebodytext">If set to 1 (True), all database operations performed as part of inserting or updating this function are performed with an Oracle session client ID (<span class="unixoutputc">CLIENT_IDENTIFIER</span>) of <span class="unixoutputc">TPSYSADM</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">DO_NOT_VALIDATE_DEFN</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Pseudo-column</p>
+<p class="tablebodytext">Used for inserts and updates only</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Specifies that this function should not be validated for syntax or dependency errors.</p>
+<p class="tablebodytext">Typically used for multi-phase function creation, where validation is not desirable until a later time.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="7458.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="53344.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

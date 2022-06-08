@@ -1,0 +1,229 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> FileRegisterInsert&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "55206.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "56291.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('55151')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="55206.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="56291.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">FileRegisterInsert&amp;()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'FileRegisterInsert&amp;()' (55151)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<pre class="unixinputp">FileRegisterInsert&amp;(    var LastModified~,    const FieldNames$[],    const FieldValues?[])</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Inserts a file record in the File Processing Register.</p>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="288" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Method</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Local</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="138"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="558"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">LastModified~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="558"><p class="tablebodytext">Out:  Date-time when the record was inserted.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">FieldNames$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="558"><p class="tablebodytext">In:  Names of the fields from the <span class="unixoutputc">FILE_REGISTER_TRE_V</span> view whose values are to be inserted. </p>
+<p class="tablebodytext">If <span class="unixoutputc">INSTANCE</span> is:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Specified, the function converts the <span class="unixoutputc">PARTITION_NR</span> to the instance name using the <span class="unixoutputc">Rating Instance</span> value from the <span class="unixoutputc">CustomerPartition</span> derived attribute table.</li><li class="tablelistbullet">Not specified and is running a:<ul class="tablelistdashbullet2"><li class="tablelistdashbullet2">Multi-instance environment, the value of <span class="unixoutputc">INSTANCE</span> defaults to the current Singleview instance value.</li><li class="tablelistdashbullet2">Single-instance environment, the value of <span class="unixoutputc">INSTANCE</span> is set to NULL and <span class="unixoutputc">PARTITION_NR</span> is set to 1.</li></ul></li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">FieldValues?[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="558"><p class="tablebodytext">In:  Field values in the same order that the field names are specified in <span class="unixoutputc">FieldNames$[]</span>.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">File ID if successful; otherwise, an error is raised.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">The function allows an external process to register a new file.  Subsequent calls to the <span class="unixoutputc"><a id="h55226" class="jump" title="FileRegisterUpdate&amp;()" href="55225.htm" target="_self">FileRegisterUpdate&amp;()</a></span><a id="h55226_2" class="jump" title="FileRegisterUpdate&amp;()" href="55225.htm" target="_self"> function</a> are required to change the state, or update the audit record information.</p>
+<p class="bodytext">The following table lists the default values applied to fields. </p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Field Default Values</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="240"><p class="tableheading">Field Name</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="456"><p class="tableheading">Value</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">FILE_PROCESSING_STATUS_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">1 (Registered)</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">FILE_REGISTERED_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext"><span class="unixoutputc">current_date()</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">PARTITION_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">One of the following:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Default customer partition for the instance, if running in a multi-instance environment</li><li class="tablelistbullet">1, if running in a single-instance environment.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">PHYSICAL_DIRECTORY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext"><span class="unixoutputc">DIRECTORY</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">PHYSICAL_FILENAME</span> </p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext"><span class="unixoutputc">FILENAME</span></p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext"><span class="unixoutputc">PHYSICAL_FILENAME</span> can contain one or more of the file tags listed in the following table.</p>
+<p class="bodytext"><span class="unixoutputc">CONTROL_FILENAME</span>:</p>
+<ul class="listbullet"><li class="listbullet">Must contain one of the following tags:<ul class="listdashbullet2"><li class="listdashbullet2"><span class="unixoutputc">&lt;basename&gt;</span></li><li class="listdashbullet2"><span class="unixoutputc">&lt;filename&gt;</span>.</li></ul></li><li class="listbullet">Can contain both tags or multiple instances of the same tag.  The following table describes the behaviour of each tag.</li></ul><p class="bodytext">&nbsp;</p>
+<p class="caption">File Tags</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="114"><p class="tableheading">Tag</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="582"><p class="tableheading">Behaviour</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">&lt;basename&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="582"><p class="tablebodytext">The control file name replaces <span class="unixoutputc">&lt;basename&gt;</span> with <span class="unixoutputc">FILENAME</span>, but does not include the extension.</p>
+<p class="tablebodytext">For example, if <span class="unixoutputc">FILENAME</span> is <span class="unixoutputc">processing01.xml</span> and <span class="unixoutputc">CONTROL_FILENAME</span> or <span class="unixoutputc">TEMPORARY_FILENAME</span> is <span class="unixoutputc">&lt;basename&gt;.ctl</span>, the resulting file name is <span class="unixoutputc">processing01.ctl</span>. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">&lt;filename&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="582"><p class="tablebodytext">The control file name replaces <span class="unixoutputc">&lt;filename&gt;</span> with <span class="unixoutputc">FILENAME</span> and includes the extension. </p>
+<p class="tablebodytext">For example, if <span class="unixoutputc">FILENAME</span> is <span class="unixoutputc">processing01.xml</span> and <span class="unixoutputc">CONTROL_FILENAME</span> or <span class="unixoutputc">TEMPORARY_FILENAME</span> is <span class="unixoutputc">&lt;filename&gt;.ctl</span>, the resulting file name is <span class="unixoutputc">processing01.xml.ctl</span>. </p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<ul class="listbullet"><li class="listbullet">If <span class="unixoutputc">REGISTER_ONLY_IND_CODE</span> is set to 0 (FALSE) , the following operations are performed:<ul class="listdashbullet2"><li class="listdashbullet2">If <span class="unixoutputc">FILE_CHECK_CODE</span> is not specified, it is set to 1 (Check if file does not exist). </li><li class="listdashbullet2">If <span class="unixoutputc">PHYSICAL_FILENAME</span> is specified in the function call and <span class="unixoutputc">FILE_CHECK_CODE</span> is set to:<ul class="listdashbullet3"><li class="listdashbullet3">1 (Check if file does not exist), <span class="unixoutputc"><a id="h57869" class="jump" title="FileExists&amp;()" href="57841.htm" target="_self">FileExists&amp;()</a></span> is called to check that file path (combination of <span class="unixoutputc">PHYSICAL_DIRECTORY</span> and <span class="unixoutputc">PHYSICAL_FILENAME</span>) does not exist.</li><li class="listdashbullet3">2 (Check if file exists), <span class="unixoutputc"><a id="h57869_2" class="jump" title="FileExists&amp;()" href="57841.htm" target="_self">FileExists&amp;()</a></span> is called to check that file path exists.</li></ul></li><li class="listdashbullet2">If <span class="unixoutputc">CONTROL_FILENAME</span> is specified and <span class="unixoutputc">CONTROL_FILE_OPERATION_CODE</span> is set to:<ul class="listdashbullet3"><li class="listdashbullet3">1 (Check if file does not exist), <span class="unixoutputc"><a id="h57869_3" class="jump" title="FileExists&amp;()" href="57841.htm" target="_self">FileExists&amp;()</a></span> is called to check that the control file path (combination of <span class="unixoutputc">PHYSICAL_DIRECTORY</span> and <span class="unixoutputc">CONTROL_FILENAME</span>) does not exist.</li><li class="listdashbullet3">2 (Check if file exists), <span class="unixoutputc"><a id="h57869_4" class="jump" title="FileExists&amp;()" href="57841.htm" target="_self">FileExists&amp;()</a></span> is called to check that control file path exists.</li><li class="listdashbullet3">3 (Delete file if it exists), <span class="unixoutputc"><a id="h57870" class="jump" title="FileDelete&amp;()" href="57840.htm" target="_self">FileDelete&amp;()</a></span> is called to delete existing control files.</li><li class="listdashbullet3">5 (Verify Checksum), <span class="unixoutputc"><a id="h57869_5" class="jump" title="FileExists&amp;()" href="57841.htm" target="_self">FileExists&amp;()</a></span> is called to check that the control file path exists, and raise an error if the path does not exist.  If <span class="unixoutputc">CHECKSUM_TYPE_CODE</span> is specified, checks that the checksum in the control file is correct.</li></ul></li><li class="listdashbullet2">If <span class="unixoutputc">PHYSICAL_DIRECTORY</span> is set to a non-NULL value, <span class="unixoutputc"><a id="h57868" class="jump" title="FileMakeDirectory&amp;()" href="57842.htm" target="_self">FileMakeDirectory&amp;()</a></span> is called, passing the values of <span class="unixoutputc">DIRECTORY_PERMISSION</span> and <span class="unixoutputc">FILE_GROUP</span>, to ensure that the directory exists or is automatically created.  The directory's permission and group are set only when the directory is created.</li></ul></li></ul><p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists validation rules applied by this function.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Validation Rules</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="372"><p class="tableheading">Validation Rules</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="324"><p class="tableheading">Fields</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">If specified, the combination of these field values must be unique within Singleview unless <span class="unixoutputc">PRIOR_FILE_REGISTER_ID</span> or <span class="unixoutputc">DUPLICATE_IND_CODE</span> are specified.</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">FILENAME</span> and <span class="unixoutputc">FILE_TYPE_CODE</span></li><li class="tablelistbullet"><span class="unixoutputc">DIRECTORY</span>, <span class="unixoutputc">FILENAME</span>, and <span class="unixoutputc">INSTANCE</span></li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">These fields cannot be specified.</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">CHECKSUM</span></li><li class="tablelistbullet"><span class="unixoutputc">FILE_PROCESSING_STATUS</span></li><li class="tablelistbullet"><span class="unixoutputc">FILE_REGISTERED_DATE</span></li><li class="tablelistbullet"><span class="unixoutputc">FILE_REGISTER_ID</span></li><li class="tablelistbullet"><span class="unixoutputc">LAST_MODIFIED</span></li><li class="tablelistbullet"><span class="unixoutputc">LAST_PROCESSED_DATE</span></li><li class="tablelistbullet"><span class="unixoutputc">PARTITION_NR</span></li><li class="tablelistbullet"><span class="unixoutputc">PROCESSING_END_DATE</span></li><li class="tablelistbullet"><span class="unixoutputc">PROCESSING_START_DATE</span></li><li class="tablelistbullet"><span class="unixoutputc">PROCESSING_TIME </span></li><li class="tablelistbullet"><span class="unixoutputc">OPERATOR_ID</span></li><li class="tablelistbullet"><span class="unixoutputc">RECORDS_ERRORED</span></li><li class="tablelistbullet"><span class="unixoutputc">RECORDS_PROCESSED</span></li><li class="tablelistbullet"><span class="unixoutputc">RECORDS_SKIPPED</span></li><li class="tablelistbullet"><span class="unixoutputc">RECORDS_SUCCESSFUL</span></li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">These fields must be specified.</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">DIRECTORY</span></li><li class="tablelistbullet"><span class="unixoutputc">FILENAME </span></li><li class="tablelistbullet"><span class="unixoutputc">FILE_FORMAT_TYPE_CODE</span></li><li class="tablelistbullet"><span class="unixoutputc">FILE_PROCESSING_TYPE_CODE</span></li><li class="tablelistbullet"><span class="unixoutputc">FILE_TYPE_CODE </span></li></ul></td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="55206.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="56291.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

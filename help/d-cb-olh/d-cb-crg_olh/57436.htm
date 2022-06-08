@@ -1,0 +1,742 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> ENTITLEMENT_TRE_V </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "57437.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "57435.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7526');highlight('57436')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="57437.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="57435.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">ENTITLEMENT_TRE_V</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'ENTITLEMENT_TRE_V' (57436)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="unixoutputc">ENTITLEMENT_TRE_V</span> view defines each current entitlement, including the entities associated to entitlements over time. Depending on the context, an entitlement is associated with a root customer node, child customer node, or service.</p>
+<p class="bodytext">This view also records other details that are dependent on the entity with which the entitlement is associated.</p>
+<p class="bodytext">Some of the columns in this view can be updated to have different values for different effective date-ranges. These are identified below. The remaining columns are not date-ranged.</p>
+<p class="caption">Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="204"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="120"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="372"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">ENTITLEMENT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">ID of the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">LAST_MODIFIED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Date-time that this row was last modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">OPERATOR_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Operator who created or last modified the record.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">ENTITLEMENT_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-Only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Name of the entitlement. The name should be unique, but is not enforced by Singleview.</p>
+<p class="tablebodytext">If it is not specified for a new entitlement, a value is automatically generated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">PARTITION_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Number of the customer partition associated with the entitlement.</p>
+<p class="tablebodytext">It cannot be specified for inserts or updates.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">ENTITLEMENT_CATEGORY_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Reference code of the category to which the entitlement belongs.</p>
+<p class="tablebodytext">It cannot be specified for updates.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">ENTITLEMENT_CATEGORY</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">ENTITLEMENT_TYPE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">ID of the entitlement type. </p>
+<p class="tablebodytext">If not specified, it defaults from the <span class="unixoutputc">EntitlementCategory</span> derived attribute table when the entitlement is created.</p>
+<p class="tablebodytext">It cannot be specified for updates.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">ENTITLEMENT_TYPE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">VARCHAR (30)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Name of the entitlement type.</p>
+<p class="tablebodytext">If not specified, it defaults from the <span class="unixoutputc">EntitlementCategory</span> derived attribute table when the entitlement is created.</p>
+<p class="tablebodytext">It cannot be specified for updates.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">ENTITLEMENT_TYPE_</span><br><span class="unixoutputc">DISPLAY_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Name displayed to customer service representatives.</p>
+<table class="cautionstyle" width="100%"><tr><td><p class="caution">Caution:</p><p class="tablecaution">It must not be referenced by configuration code, because it may undergo language translation.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Date-time the entitlement became valid.</p>
+<p class="tablebodytext">It cannot be specified for updates.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">EXPIRY_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Date-time after which the entitlement is no longer valid.</p>
+<p class="tablebodytext">Value must be either:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Equal to or later than <span class="unixoutputc">START_DATE</span>.</li><li class="tablelistbullet">One second earlier than <span class="unixoutputc">START_DATE</span>, to support back-dated cancellations.</li></ul><p class="tablebodytext">If <span class="unixoutputc">EXPIRY_DATE</span> precedes <span class="unixoutputc">START_DATE</span>, new allocations are not created for the entitlement.</p>
+<p class="tablebodytext">If the value equals the sunset date and time, the entitlement never expires.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">INITIAL_ALLOCATION_</span><br><span class="unixoutputc">AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (22,6)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Initial amount to be allocated to the entitlement.</p>
+<p class="tablebodytext">It must contain a value if <span class="unixoutputc">ENTITLEMENT_CLASS_CODE</span> is set to One-off.</p>
+<p class="tablebodytext">It must be null if <span class="unixoutputc">ENTITLEMENT_CLASS_CODE</span> is set to Dynamic.</p>
+<p class="tablebodytext">It must not be less than zero.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">RECURRING_ALLOCATION_</span><br><span class="unixoutputc">AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (22,6)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Amount to be allocated at each repetition of the entitlement.</p>
+<p class="tablebodytext">It must contain a value if <span class="unixoutputc">ENTITLEMENT_CLASS_CODE</span> is set to Recurring.</p>
+<p class="tablebodytext">It must not be less than zero.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">SUSPENDED_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Set to 1 (True) when the entitlement is suspended.</p>
+<p class="tablebodytext">Any existing allocations for the entitlement remain current, but any scheduled allocations are cancelled. </p>
+<p class="tablebodytext">It must equal be set to 1 if not null.</p>
+<p class="tablebodytext">If set to 1, <span class="unixoutputc">ENTITLEMENT_CLASS_CODE</span> cannot be set to One-off.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">AUTO_ALLOC_FAILURE_IND_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">When set to 1 (True), an automatic allocation to the entitlement has failed, and no further automatic allocations will be attempted.</p>
+<p class="tablebodytext">If not set to 1, it must have a value of NULL.</p>
+<p class="tablebodytext">It cannot be specified for inserts.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">NEXT_ALLOCATION_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Start date of the next allocation to be created for the entitlement.</p>
+<p class="tablebodytext">It must be NULL if <span class="unixoutputc">SUSPENDED_IND_CODE</span> is set to 1.</p>
+<p class="tablebodytext">If it is not NULL, its value must be between START_DATE and EXPIRY_DATE inclusive.</p>
+<p class="tablebodytext">It cannot be specified for inserts.</p>
+<p class="tablebodytext">If specified as part of an update, the next allocation for this entitlement will be updated to occur at this date.  If there is a scheduled function in place to create the next allocation, it is updated to reflect the changed next allocation date.</p>
+<p class="tablebodytext">Specifying a value of NULL as part of an update disables the scheduling of the next allocation.  If there is currently a next allocation scheduled, it is deleted.</p>
+<p class="tablebodytext">If a non-NULL value is specified as part of an update, the entitlement cannot be aligned with the bill cycle of a customer.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">LAST_ALLOCATION_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Start date of the last allocation that was created for the entitlement.</p>
+<p class="tablebodytext">It contains a value only when <span class="unixoutputc">ENTITLEMENT_CLASS_CODE</span> is set to Recurring.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">NEXT_ALLOC_SCHED_FUNC_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">ID of the scheduled function to be evaluated to create the next allocation for the entitlement.</p>
+<p class="tablebodytext">It must be null if <span class="unixoutputc">ENTITLEMENT_CLASS_CODE</span> is not set to Recurring, or <span class="unixoutputc">SUSPENDED_IND_CODE</span> is set to 1.</p>
+<p class="tablebodytext">For a recurring entitlement, it is automatically derived and cannot be set to a value. However, it can be set to null, which: </p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Deletes the scheduled function for the next allocation (if any). </li><li class="tablelistbullet">Prevents the use of scheduled functions to create future allocations for this entitlement.</li><li class="tablelistbullet">Causes subsequent allocations to be automatically created on demand during rating whenever this entitlement is accessed.</li></ul><table class="cautionstyle" width="100%"><tr><td><p class="caution">Caution:</p><p class="tablecaution">Creating allocations during rating can negatively impact rating performance and is generally not recommended. </p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">WARNING_SCHED_FUNC_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">ID of the scheduled function to be evaluated when the entitlement is about to expire.</p>
+<p class="tablebodytext">It contains a value only when <span class="unixoutputc">WARNING_FUNCTION_DEFN_ID</span> is not null.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">EXPIRY_SCHED_FUNC_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">ID of the scheduled function to be evaluated on expiry of the entitlement.</p>
+<p class="tablebodytext">It contains a value only when <span class="unixoutputc">EXPIRY_FUNCTION_DEFN_ID</span> is not null.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">NEXT_TASK_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">ID of the task for the next bill run to be executed for the customer associated with the entitlement.</p>
+<p class="tablebodytext">It contains a value only when entitlement is aligned with customer bill cycles.</p>
+<p class="tablebodytext">The effective date-time of the task defines the <span class="unixoutputc">START_DATE</span> of the next allocation to be made to the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">RESERVATION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">VARCHAR (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">ID of the current reservation of an amount from an allocation of this entitlement.</p>
+<p class="tablebodytext">It cannot be specified for inserts.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">CHARGE_STATUS_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (2)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Current real-time charging status of this entitlement.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">ENTITLEMENT_CHARGE_STATUS</span> reference type.</p>
+<p class="tablebodytext">It cannot be specified on insert.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">CHARGED_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Indicates whether real-time charges have been generated for this entitlement.</p>
+<p class="tablebodytext">If set to 1 (True), at least one real-time charge has been generated for this entitlement.</p>
+<p class="tablebodytext">It must be NULL if <span class="unixoutputc">CHARGE_STATUS_CODE</span> is NULL. If not NULL, it must be 1.</p>
+<p class="tablebodytext">It cannot be specified for inserts or updates.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">FAIL_STATUS_UPDATE_DUE_</span><br><span class="unixoutputc">DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Date-time when the status of the companion product instance associated with the entitlement is due to be updated, following a reservation failure.</p>
+<p class="tablebodytext">It contains a value only if <span class="unixoutputc">DELAY_PERIOD</span> is null and <span class="unixoutputc">CHARGE_STATUS_CODE</span> is set to 2 or 4.</p>
+<p class="tablebodytext">It cannot be specified on insert.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">FAIL_STATUS_SCHED_FUNC_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">ID of the scheduled function used to perform the delayed update of the status of the companion product instance associated with the entitlement.</p>
+<p class="tablebodytext">It contains a value only if <span class="unixoutputc">FAIL_STATUS_UPDATE_DUE_DATE</span> is not null.</p>
+<p class="tablebodytext">It cannot be specified on insert.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Entitlement Type Columns</p>
+<p class="bodytext">The following table lists the columns that are defaulted from <span class="unixoutputc"><a id="h58543" class="jump" title="ENTITLEMENT_TYPE_TRE_V" href="57435.htm" target="_self">ENTITLEMENT_TYPE_TRE_V</a></span> columns when entitlements are created.</p>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="210"><p class="tableheading">Column Name</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="108"><p class="tableheading">Properties</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="378"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">CONTEXT_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Processing context in which the entitlement operates.</p>
+<p class="tablebodytext">It cannot be specified for updates.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">ALLOC_GEN_ADVANCE_PERIOD</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">NUMBER (6)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Duration of the advance period (seconds) for the entitlement.</p>
+<p class="tablebodytext">It must be null if <span class="unixoutputc">ENTITLEMENT_CLASS_CODE </span>is set to Dynamic. If <span class="unixoutputc">ENTITLEMENT_CLASS_CODE</span> is not set to Dynamic, it cannot be less than zero.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">ALLOC_GEN_FUNCTION_DEFN_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">NUMBER (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of a function to be evaluated to generate an allocation for the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">ALL_FIRST_USE_FUNCTION_</span><br><span class="unixoutputc">DEFN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">NUMBER (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of a function to be evaluated on the first use of an allocation for the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">WARNING_FUNCTION_DEFN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">NUMBER (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of a function to be evaluated when the entitlement is about to expire.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">WARNING_ALLOC_FUNCTION_DEFN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">NUMBER (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of a function to be evaluated when an allocation for the entitlement is about to expire.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">EXPIRY_FUNCTION_DEFN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">NUMBER (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of a function to be evaluated when the entitlement expires.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">EXPIRY_ALLOC_FUNCTION_DEFN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">NUMBER (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of a function that is to be evaluated when an allocation for the entitlement expires.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">BILL_CYCLE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">If set to 1 (True), the entitlement is aligned with bill cycles for the customer.</p>
+<p class="tablebodytext">If not null, it must be set to 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PRORATE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">If set to 1 (True), prorating applies to the entitlement.</p>
+<p class="tablebodytext">It contains a value only when the <span class="unixoutputc">BILL_CYCLE_IND_CODE</span> is set to 1.</p>
+<p class="tablebodytext">If not null, it must be set to 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PRORATE_FUNCTION_DEFN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">NUMBER (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of a function to be evaluated to prorate the entitlement.</p>
+<p class="tablebodytext">It must be null if <span class="unixoutputc">PRORATE_IND_CODE</span> is null.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">REAL_TIME_RECURRING_</span><br><span class="unixoutputc">TARIFF_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of the real-time tariff used to generate recurring charges using allocations to entitlements of this type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">REAL_TIME_ACTIVATION_</span><br><span class="unixoutputc">TARIFF_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of the real-time tariff used to generate activation charges using allocations to entitlements of this type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">REAL_TIME_CANCEL_TARIFF_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of the real-time tariff used to generate cancellation charges using allocations to entitlements of this type.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Entitlement Category Columns</p>
+<p class="bodytext">The following table lists the columns that are defaulted from the <span class="unixoutputc"><a id="h60891" class="jump" title="EntitlementCategory" href="58500.htm" target="_self">EntitlementCategory</a></span> derived attribute table when entitlements are created.</p>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="198"><p class="tableheading">Column Name</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="372"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">UNIT_OF_MEASURE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Units in which allocations to the entitlement are measured.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">ENTITLEMENT_UNIT_OF_MEASURE</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">ENTITLEMENT_CLASS_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">A general classification of the entitlement. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">1 (Recurring)</li><li class="tablelistbullet">2 (One-off)</li><li class="tablelistbullet">3 (Dynamic).</li></ul><p class="tablebodytext">It is based on the reference type <span class="unixoutputc">ENTITLEMENT_CLASS</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">RECURRING_PERIOD</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Period of time between each repetition of the entitlement.</p>
+<p class="tablebodytext">Value must and only be supplied if the <span class="unixoutputc">ENTITLEMENT_CLASS_CODE</span> is set to Recurring.</p>
+<p class="tablebodytext">When specified, the value must be greater than zero.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">RECURRING_PERIOD_UNIT_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Units for time period contained in <span class="unixoutputc">RECURRING_PERIOD</span>.</p>
+<p class="tablebodytext">If not null, units must be specified. If <span class="unixoutputc">BILL_CYCLE_IND_CODE</span> is set to 1, must be set to 0 (Bill Cycles).</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">ENTITLEMENT_PERIOD_UNIT</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">VALIDITY_PERIOD</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Time period that each allocation to the entitlement remains valid.</p>
+<p class="tablebodytext">When specified, the value must be greater than zero.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">VALIDITY_PERIOD_UNIT_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Units for the time period in <span class="unixoutputc">VALIDITY_PERIOD</span>.</p>
+<p class="tablebodytext">If not null, the units must be specified.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">ENTITLEMENT_PERIOD_UNIT</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">WARNING_PERIOD</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Time period duration of the advanced warning of entitlement expiring.</p>
+<p class="tablebodytext">The function identified by <span class="unixoutputc">WARNING_FUNCTION_DEFN_ID </span>is evaluated in advance of the expiry date-time.</p>
+<p class="tablebodytext">Value cannot be less than zero.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">WARNING_PERIOD_UNIT_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Units for the time period contained in <span class="unixoutputc">WARNING_PERIOD</span>.</p>
+<p class="tablebodytext">Must contain a value if <span class="unixoutputc">WARNING_PERIOD</span> is not null.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">ENTITLEMENT_WARNING_PERIOD_UNIT</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">WARNING_ALLOC_PERIOD</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Duration of the advance warning period before the entitlement allocation expires.</p>
+<p class="tablebodytext">The function identified by <span class="unixoutputc">WARNING_ALLOC_FUNCTION_DEFN_ID </span>is evaluated at the start of this period.</p>
+<p class="tablebodytext">Value cannot be less than zero.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">WARNING_ALLOC_PERIOD_UNIT_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Units for the advance warning period specified in <span class="unixoutputc">WARNING_ALLOC_PERIOD</span>.</p>
+<p class="tablebodytext">Must contain a value if <span class="unixoutputc">WARNING_ALLOC_PERIOD</span> is not null.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">ENTITLEMENT_WARNING_PERIOD_UNIT</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">EXPIRE_ON_SUSPENSION_</span><br><span class="unixoutputc">IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Default effect on existing allocations for the entitlement if the entitlement is suspended.</p>
+<p class="tablebodytext">It must have a value of 1 if not null.</p>
+<p class="tablebodytext">When the value is set to 1, any existing allocations are expired when the scheduled allocations are cancelled.</p>
+<p class="tablebodytext">When the value is null, existing allocations are unchanged.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CONSUMPTION_PRIORITY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not Null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Priority that determines the order in which allocations are consumed.</p>
+<p class="tablebodytext">Its value must be greater than or equal to 1.</p>
+<p class="tablebodytext">Lower numerical value is interpreted as a higher priority. 1 is the highest priority.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">DELAY_PERIOD</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Period of time to delay an update to the status of a companion product instance, following a failure to reserve an allocation for this entitlement during the evaluation of a real-time recurring tariff.</p>
+<p class="tablebodytext">Value must be greater than zero.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">DELAY_PERIOD_UNIT_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Units for the time period in <span class="unixoutputc">DELAY_PERIOD</span>.</p>
+<p class="tablebodytext">It must contain a value if <span class="unixoutputc">DELAY_PERIOD</span> is not null. </p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">ENTITLEMENT_DELAY_PERIOD_UNITS</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">GENERAL_1 - GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">General purpose fields.</p>
+<p class="tablebodytext">Use of the general fields is controlled by the entitlement type, by way of entity validation.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Date-ranged Columns</p>
+<p class="bodytext">The value of the following columns may vary over different date ranges.</p>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="180"><p class="tableheading">Column Name</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="390"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">Date-time the entitlement became associated with the entity.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_END_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">Date-time one second before the entitlement ceased to be associated with the entity.</p>
+<p class="tablebodytext">It must be later than or equal to <span class="unixoutputc">EFFECTIVE_START_DATE</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">SERVICE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">ID for a service associated to the entitlement during the effective date range.</p>
+<p class="tablebodytext">It must contain a value if the entitlement has a context of Service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">PRODUCT_INSTANCE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">ID of a companion product instance that caused the entitlement to be created.</p>
+<p class="tablebodytext">It must contain a value if the entitlement was created as a result of a product offer.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_NODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">ID of the customer node associated to the entitlement for the effective date range.</p>
+<p class="tablebodytext">It must contain a value if the entitlement has a context of Customer Node or Customer.</p>
+<p class="tablebodytext">If the context is Customer, the customer must be a root customer node at all times during the effective date range.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">ID of the account, to check during the effective date range, to determine when to reactivate the entitlement.</p>
+<p class="tablebodytext">The specified account may not be the account charged for this entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">SUB_CATEGORY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">Optional.</p>
+<p class="tablebodytext">Sub-category to assist in classifying the entitlement in the effective date range.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="57437.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="57435.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

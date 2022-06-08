@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Licensing </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "4519.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "4515.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('4501');highlight('4513')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="4519.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="4515.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Licensing</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Licensing' (4513)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Convergent Billing is subject to licensing restrictions; the conditions of a licence are negotiated between the Convergent Billing user and CSG International.  </p>
+<p class="bodytext">Each licence is based on three factors:</p>
+<ul class="listbullet"><li class="listbullet">A period of validity, from the granting of the licence to an expiry date.</li><li class="listbullet">A specified machine and, optionally, a specific database on that machine.  </li><li class="listbullet">A maximum permitted workload, defined in terms of the number of concurrent users, active customers, active customer nodes, and active service instances.</li></ul><p class="bodytext">A licence key can be affected by changes to the specified machine, causing a new key to be required.  Changes to hardware such as RAM, CPUs, or disks do not affect the licence key.  Changes that may require a new licence key are:</p>
+<ul class="listbullet"><li class="listbullet">Changes to the motherboard</li><li class="listbullet">Firmware updates</li><li class="listbullet">New system software installed (AIX)</li><li class="listbullet">Change to the IP address.</li></ul><p class="bodytext">The licence is supplied in the form of a software key, from which a configuration item is constructed in the Convergent Billing database.  A Tuxedo server, known as the Authentication server, is responsible for checking the validity and usage level of the licence.  Detection of an invalid licence (one that has expired or been tampered with) can have two outcomes:</p>
+<ul class="listbullet"><li class="listbullet">On startup, the Authentication server does not start, and does not permit the other server processes to start.  Clients are not able to log in under these circumstances.</li><li class="listbullet">In normal operation, the Authentication server continues to run.  If the key has been tampered with, the previous licence information is retained.  However, if either the Event Rating Process (BKR) or the Bill Generation Process (BGP) detect that the licence has expired (or that the licence limits have been exceeded), these processes do not start.</li></ul><p class="bodytext">Each machine in a Convergent Billing cluster must have its own Authentication Server and, therefore, its own <span class="unixoutputc">LICENCE</span> configuration item.  The Authentication Server also monitors the workload, issuing warnings as the maximum permitted level for each entity (user, customer, customer node, or service instance) is approached.  The following action is taken when the workload reaches its maximum permitted levels:</p>
+<ul class="listbullet"><li class="listbullet">If the number of concurrent users is exceeded, additional users are not permitted to log in.</li><li class="listbullet">If the number of active services is exceeded, rating and billing are disabled.</li><li class="listbullet">If the number of active customers or customer nodes is exceeded, billing is disabled.</li></ul><p class="bodytext">However, Convergent Billing will remain available for work on entities created within the workload limit.</p>
+<p class="bodytext">The licence does not distinguish between temporary and permanent services.  For example, GSM roamers and open access services (IGF) are treated in the same way as permanent services when the Authentication Server assesses workload.</p>
+<p class="bodytext">The Authentication server also checks the currency of the licence each time a user logs in.  If an invalid licence signature is detected or licence recalculation is overdue, the Authentication Server automatically initiates a task to perform a licence recalculation.  Users are unable to log in until the licence recalculation task is successful.  No further licence recalculations are issued by the Authentication server for 30 minutes.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">The Convergent Billing Invoice Design Tool is a separately licensed item.</p></td></tr></table>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="4519.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="4515.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

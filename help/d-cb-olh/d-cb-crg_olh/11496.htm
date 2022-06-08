@@ -1,0 +1,752 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> biBillRunOperationNetSummary&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "11495.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "11497.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('11496')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="11495.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="11497.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">biBillRunOperationNetSummary&amp;()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'biBillRunOperationNetSummary&amp;()' (11496)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<pre class="unixinputp">biBillRunOperationNetSummary&amp;(    BillRunId&amp;,    var&nbsp;FieldValues?[],    DeriveFailStats&amp;)</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Provides a short, net summary of a bill run, with only one line for each operation code performed, regardless of how many times the operation code was revoked and rerun, either completely or in part.</p>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="288" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Method</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Remote</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="147"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="549"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="147"><p class="tablebodytext"><span class="unixoutputc">BillRunId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="549"><p class="tablebodytext">In:  Bill run for which details are being retrieved.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="147"><p class="tablebodytext"><span class="unixoutputc">DeriveFailStats&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="549"><p class="tablebodytext">In:  If set to TRUE, the key statistics are recalculated directly from the <span class="unixoutputc">INVOICE</span> table.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="147"><p class="tablebodytext"><span class="unixoutputc">FieldValues?[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="549"><p class="tablebodytext">Out:  Result set consisting of one row for each different operation code that was performed on the bill run.</p>
+<p class="tablebodytext">Any revoke operations that have been performed are not included; their effects are combined into the row for the operation they correspond to.</p>
+<p class="tablebodytext"><span class="unixoutputc">OPERATION_COUNT</span> and <span class="unixoutputc">DURATION</span> are calculated for each row, as the function executes, and the final values attached to the results set.  The results are returned in a two-dimensional array in row, column order.</p>
+<p class="tablebodytext">The table below lists the columns returned for each row.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">Number of rows returned in <span class="unixoutputc">FieldValues?[]</span>.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">If the billing operation was revoked and rerun in its entirety, the revoke counts are subtracted from the billing counts, providing an accurate net summary.  However, if a partial revoke occurs or one or more operations fail, incorrect summary calculations may occur.</p>
+<p class="bodytext">Setting the <span class="unixoutputc">DeriveFailStats&amp;</span> parameter to True forces rederivation of some key statistics directly from the <span class="unixoutputc">INVOICE</span> table when operations fail.  This ensures the correctness of the amount, invoices count, and statements count statistics returned for the Invoice/Statement generation (BGP) operation, and the amount and invoices count for the Apply Invoices operation.</p>
+<p class="bodytext">All bill run operations for the bill run are retrieved from <span class="unixoutputc">BILL_RUN_OPERATION</span> and an empty results set is created.  For each billing operation encountered that is not a rerun, a new row is inserted into the results set.  If a rerun or revoke is encountered, the results set count for the corresponding row is updated.</p>
+<p class="bodytext">The function relies on the <span class="unixoutputc">SUCCESS_COUNT</span>, <span class="unixoutputc">INPUT_COUNT</span>, and <span class="unixoutputc">ERROR_COUNT</span> columns being populated for all operations, including billing and revoke operations that have a status of failure.</p>
+<p class="bodytext">During execution, any failed BGP or Apply Invoices operations or failed revoke of these operation types are noted. </p>
+<p class="bodytext">If <span class="unixoutputc">DeriveFailStats&amp;</span> is True and any BGP or revoke BGP operations fail, the BGP summary statistics that have been calculated are discarded and recalculated directly by querying the invoice table.  Similarly, any apply or unapply of invoices that fail force the statistics for the Apply Invoices operation to be re-derived.</p>
+<p class="bodytext">For BGP statistics, a query returns the sum of all invoices in the bill run for each currency.  The currency and effective date of the bill run are retrieved and used to convert each summed amount to the currency of the bill run type.  The converted figures are then added together to produce the amount statistic for the operation.</p>
+<p class="bodytext">Further queries are used to derive the count of the invoice records, with and without a null statement amount, that correspond to the invoice and statement counts respectively.</p>
+<p class="bodytext">The same derivation is used for the Apply Invoices statistics except for the added restriction that invoice records must be flagged with <span class="unixoutputc">APPLIED_IND_CODE</span> = 1 to be included in the calculations.  The statements count is not required for this operation.</p>
+<p class="bodytext">The following table lists the columns returned for each row.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Columns Returned for Each Row</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="210"><p class="tableheading">Column</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="486"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">BILL_RUN_OPERATION_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Operation ID for the first billing operation of this code in the bill run.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">BILL_RUN_ID</span></p>
+</td>
+<td valign="middle" style="border:1px solid #010101;" width="486"><p class="tablebodytext">Bill run ID.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">BUN_RUN_OPERATION_CODE</span></p>
+</td>
+<td valign="middle" style="border:1px solid #010101;" width="486"><p class="tablebodytext">Operation Code.</p>
+<p class="tablebodytext">One row is returned for each different operation code in the original set of operations.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">START_DATE</span></p>
+</td>
+<td valign="middle" style="border:1px solid #010101;" width="486"><p class="tablebodytext">Earliest start date for the operation code in the bill run (including revoke operations).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">END_DATE</span></p>
+</td>
+<td valign="middle" style="border:1px solid #010101;" width="486"><p class="tablebodytext">Latest end date for the operation code in the bill run (including revoke operations).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">INPUT_COUNT</span></p>
+</td>
+<td valign="middle" style="border:1px solid #010101;" width="486"><p class="tablebodytext">Effective input count for the operation code in the bill run.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">SUCCESS_COUNT</span></p>
+</td>
+<td valign="middle" style="border:1px solid #010101;" width="486"><p class="tablebodytext">Effective success count for the operation code in the bill run.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">ERROR_COUNT</span></p>
+</td>
+<td valign="middle" style="border:1px solid #010101;" width="486"><p class="tablebodytext">Effective error count for the operation code in the bill run.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PRE_SKIP_COUNT</span></p>
+</td>
+<td valign="middle" style="border:1px solid #010101;" width="486"><p class="tablebodytext">Effective number of skipped customers for the operation code in the bill run. </p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">The revoke operation must be configured to correctly revoke skipped customers for <span class="unixoutputc">PRE_SKIP_COUNT</span> to be calculated correctly.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">POST_SKIP_COUNT</span></p>
+</td>
+<td valign="middle" style="border:1px solid #010101;" width="486"><p class="tablebodytext">Effective number of suppressed customers for the operation code in the bill run.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">The revoke operation must be configured to correctly revoke suppressed customers for <span class="unixoutputc">POST_SKIP_COUNT</span> to be calculated correctly.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">AMOUNT</span></p>
+</td>
+<td valign="middle" style="border:1px solid #010101;" width="486"><p class="tablebodytext">Net amount billed for the operation code in the bill run, taking into account any revoked amounts.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">OPERATION_COUNT</span> (Derived)</p>
+</td>
+<td valign="middle" style="border:1px solid #010101;" width="486"><p class="tablebodytext">Total number of billing and revoke operations of the operation code that have been performed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">DURATION</span> (Derived)</p>
+</td>
+<td valign="middle" style="border:1px solid #010101;" width="486"><p class="tablebodytext">Total duration of all billing and revoke operations of the operation code that have been performed.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists statistics returned for step 10, Rental Adjustment Event Generation.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Statistics Returned for Step <span class="bold">10 </span>Rental Adjustment Event Generation</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="102"><p class="tableheading">Statistic</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="138"><p class="tableheading">Column</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="456"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Events</p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS7</span></p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Number of rental events generated as part of this operation. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Error Events</p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS8</span></p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Number of rental error events generated as part of this operation. </p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists statistics returned for step 20, Rental Event Generation (RGP).</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Statistics Returned for Step <span class="bold">20 Rental Event Generation (RGP)</span></p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="102"><p class="tableheading">Statistic</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="138"><p class="tableheading">Column</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="456"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Events</p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS7</span></p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Number of rental events generated as part of this operation.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Error Events</p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS8</span></p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Number of rental error events generated as part of this operation.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists statistics returned for step 30, Invoice/Statement Generation (BGP).</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Statistics Returned for Step 3<span class="bold">0 Invoice/Statement Generation (BGP)</span></p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Statistic</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="144"><p class="tableheading">Column</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="426"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Amount</p>
+</td>
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Amount invoiced in the currency of the bill run type. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Invoices</p>
+</td>
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS1</span></p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Number of invoices generated as part of the operation. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Statements</p>
+</td>
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS2</span></p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Number of statements generated as part of the operation. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Customer Nodes</p>
+</td>
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS5</span></p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Total number of customer nodes processed by the billing engine as part of this operation. </p>
+<p class="tablebodytext">The customer nodes statistic is not calculated for revoke operations; therefore, when the Bill Run Operation Net statistics or Bill Run Summary statistics are displayed, the customer nodes statistic value does not represent the net number of customer nodes that have been processed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Services</p>
+</td>
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS6</span></p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Total number of services processed by the billing engine as part of the operation.</p>
+<p class="tablebodytext">The services statistic is not calculated for revoke operations; therefore, when the Bill Run Operation Net statistics or Bill Run Summary statistics are displayed, the services statistic value does not represent the net number of services that have been processed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Events </p>
+</td>
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS7</span></p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Total number of events processed by the billing engine as part of the operation.</p>
+<p class="tablebodytext">The events statistic is not calculated for revoke operations; therefore, when the Bill Run Operation Net statistics or Bill Run Summary statistics are displayed, the events statistic value does not represent the net number of events that have been processed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Rating Charges</p>
+</td>
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS9</span></p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Total number of charges generated by the rating engine that have been updated by the billing engine as part of the operation.</p>
+<p class="tablebodytext">The rating charges statistic also includes charges generated by the rating engine associated with rental event generation.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Billing Charges</p>
+</td>
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Total number of charges inserted by the billing engine as part of the operation and includes both tariff and subtotal charge records.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists statistics returned for step 35, Invoice Consolidation.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Statistics Returned for Step 35<span class="bold"> Invoice Consolidation</span></p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Statistic</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="138"><p class="tableheading">Column</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="432"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Amount</p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="432"><p class="tablebodytext">Amount of the consolidated from statements pending consolidation into consolidated invoices in the currency of the bill run type. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Invoices</p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS1</span></p>
+</td>
+<td style="border:1px solid #010101;" width="432"><p class="tablebodytext">Number of consolidated invoices generated as part of the operation. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Statements</p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS2</span></p>
+</td>
+<td style="border:1px solid #010101;" width="432"><p class="tablebodytext">Number of statements pending consolidation consolidated into invoices as part of the operation. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Customer Nodes</p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS5</span></p>
+</td>
+<td style="border:1px solid #010101;" width="432"><p class="tablebodytext">Total number of customer nodes processed by the billing engine as part of this operation. </p>
+<p class="tablebodytext">The customer nodes statistic is not calculated for revoke operations; therefore, when the Bill Run Operation Net statistics or Bill Run Summary statistics are displayed, the customer nodes statistic value does not represent the net number of customer nodes that have been processed.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists statistics returned for step 40, Invoice/Statement Image Generation (IGP).</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Statistics Returned for Step 4<span class="bold">0 Invoice/Statement Image Generation (IGP)</span></p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="120"><p class="tableheading">Statistic</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="138"><p class="tableheading">Column</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="438"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">Images</p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS3</span></p>
+</td>
+<td style="border:1px solid #010101;" width="438"><p class="tablebodytext">Number of invoice images generated as part of the operation. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">Stored Images Size</p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS4</span></p>
+</td>
+<td style="border:1px solid #010101;" width="438"><p class="tablebodytext">Size of the generated images (in bytes) as stored in the database (after any compression). </p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">The stored image size statistic is not calculated for revoke operations, therefore, when displaying Bill Run Operation Net statistics or Bill Run Summary statistics, the stored image size statistic value will equal the total size of all invoice images generated over the life of the bill run (not the net size of invoice images stored in the database). </p></td></tr></table>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists statistics returned for step 50, Apply Invoices.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Statistics Returned for Step 5<span class="bold">0 Apply Invoices</span></p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="90"><p class="tableheading">Statistic</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="142"><p class="tableheading">Column</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="464"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Amount</p>
+</td>
+<td style="border:1px solid #010101;" width="142"><p class="tablebodytext"><span class="unixoutputc">AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="464"><p class="tablebodytext">Amount of the applied invoices in the currency of the bill run type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Invoices</p>
+</td>
+<td style="border:1px solid #010101;" width="142"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS1</span></p>
+</td>
+<td style="border:1px solid #010101;" width="464"><p class="tablebodytext">Number of invoices applied as part of the operation.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists the statistic returned for step 60, Allocate Invoices.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Statistic Returned for Step 6<span class="bold">0 Allocate Invoices</span></p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="90"><p class="tableheading">Statistic</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="142"><p class="tableheading">Column</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="464"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Invoices</p>
+</td>
+<td style="border:1px solid #010101;" width="142"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS1</span></p>
+</td>
+<td style="border:1px solid #010101;" width="464"><p class="tablebodytext">Number of invoices processed for potential allocation to existing payments and adjustments.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists the statistic returned for step 70, Print Invoices.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Statistic Returned for Step 7<span class="bold">0 Print Invoices</span></p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="90"><p class="tableheading">Statistic</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="142"><p class="tableheading">Column</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="464"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Images</p>
+</td>
+<td style="border:1px solid #010101;" width="142"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS3</span></p>
+</td>
+<td style="border:1px solid #010101;" width="464"><p class="tablebodytext">Number of invoice images printed as part of this operation.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists statistics returned for step 138, Revoke Rental Events and Adjustments.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Statistics Returned for Step 138<span class="bold"> Revoke Rental Events and Adjustments</span></p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="102"><p class="tableheading">Statistic</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="130"><p class="tableheading">Column</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="464"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Events</p>
+</td>
+<td style="border:1px solid #010101;" width="130"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS7</span></p>
+</td>
+<td style="border:1px solid #010101;" width="464"><p class="tablebodytext">Number of rental events deleted as part of the revoke operation.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Error Events</p>
+</td>
+<td style="border:1px solid #010101;" width="130"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS8</span></p>
+</td>
+<td style="border:1px solid #010101;" width="464"><p class="tablebodytext">Number of rental error events deleted as part of the revoke operation.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists statistics returned for step 158, Revoke Invoices/Statements.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Statistics Returned for Step 158 Revoke Invoices/Statements</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="120"><p class="tableheading">Statistic</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="138"><p class="tableheading">Column</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="438"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">Invoices</p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS1</span></p>
+</td>
+<td style="border:1px solid #010101;" width="438"><p class="tablebodytext">Number of invoices deleted as part of the revoke operation. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">Statements</p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS2</span></p>
+</td>
+<td style="border:1px solid #010101;" width="438"><p class="tablebodytext">Number of statements deleted as part of the revoke operation.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">Rating Charges</p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS9</span></p>
+</td>
+<td style="border:1px solid #010101;" width="438"><p class="tablebodytext">Number of rating charges updated as part of the revoke operation.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">Billing Charges</p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="438"><p class="tablebodytext">Number of billing charges deleted as part of this revoke operation.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists statistics returned for step 163, Revoke Invoice Consolidation.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Statistics Returned for Step 163<span class="bold"> Revoke Invoice Consolidation</span></p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="102"><p class="tableheading">Statistic</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="138"><p class="tableheading">Column</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="456"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Amount</p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Amount of the consolidated statements revoked from the deleted invoices in the currency of the bill run type. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Invoices</p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS1</span></p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Number of consolidated invoices deleted as part of the operation. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Statements</p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS2</span></p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Number of consolidated statements revoked as part of the operation. </p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists the statistic returned for step 168, Revoke Invoice/Statement Images.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Statistic Returned for Step <span class="bold">168 Revoke Invoice/Statement Images</span></p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="90"><p class="tableheading">Statistic</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="142"><p class="tableheading">Column</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="464"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Images</p>
+</td>
+<td style="border:1px solid #010101;" width="142"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS3</span></p>
+</td>
+<td style="border:1px solid #010101;" width="464"><p class="tablebodytext">Number of invoice images deleted as part of this revoke operation.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists statistics returned for step 178, Unapply Invoices.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Statistics Returned for Step 178 Una<span class="bold">pply Invoices</span></p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="90"><p class="tableheading">Statistic</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="142"><p class="tableheading">Column</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="464"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Amount</p>
+</td>
+<td style="border:1px solid #010101;" width="142"><p class="tablebodytext"><span class="unixoutputc">AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="464"><p class="tablebodytext">Amount of the invoices unapplied in the currency of the bill run type. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Invoices</p>
+</td>
+<td style="border:1px solid #010101;" width="142"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS1</span></p>
+</td>
+<td style="border:1px solid #010101;" width="464"><p class="tablebodytext">Number of invoices unapplied as part of the revoke operation.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists the statistic returned for step 188, Unallocate Invoices.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Statistic Returned for Step 188<span class="bold"> Unallocate Invoices</span></p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="90"><p class="tableheading">Statistic</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="142"><p class="tableheading">Column</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="464"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Invoices</p>
+</td>
+<td style="border:1px solid #010101;" width="142"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS1</span></p>
+</td>
+<td style="border:1px solid #010101;" width="464"><p class="tablebodytext">Number of invoices processed to unallocate from payments or adjustments.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists the statistic returned for step 198, Discard Printing of Invoices.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Statistic Returned for Step 198<span class="bold"> Discard Printing of Invoices</span></p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="90"><p class="tableheading">Statistic</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="142"><p class="tableheading">Column</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="464"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Images</p>
+</td>
+<td style="border:1px solid #010101;" width="142"><p class="tablebodytext"><span class="unixoutputc">GENERAL_STATS3</span></p>
+</td>
+<td style="border:1px solid #010101;" width="464"><p class="tablebodytext">Number of invoice images updated as part of the revoke operation to indicate that they were not printed.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="11495.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="11497.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

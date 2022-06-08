@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Security Groups </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "53625.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "39833.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('53625');expand('4501');highlight('55561')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="53625.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="39833.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">Security Groups</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Security Groups' (55561)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Security groups are used to control access to the data within the Singleview database.  Data belonging to a specific security group can only be seen by users who belong to the same security group.  The ability to modify or delete this data is further controlled by access level settings.</p>
+<p class="bodytext">The primary security group is associated with operational data created associated with a profile. The configuration security group is associated with configuration data created and modified by users associated with this profile.  It defaults to the Primary Security Group.  </p>
+<p class="bodytext">Data attached to the either security group can only be seen by users who belong to the same security group, if the role defined in their profile allows access to the appropriate menu items and forms.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">Users can belong to more than one security group.</p></td></tr></table>
+<p class="bodytext">The access privileges for a user belonging to the correct security group is determined by the access levels set in the security profile.  Users with sufficient access privileges can change the security group to which data is attached.</p>
+<p class="bodytext">When the security group of data is changed, any <a id="h39834" class="jump" title="Protected Data" href="39833.htm" target="_self">encrypted data</a> is automatically re-encrypted to ensure that all data within the security group is encrypted with the correct encryption key. </p>
+<p class="bodytext">When the security group of an entity with child dependencies is changed, the data associated with the dependent child entities must be re-encrypted manually.  To re-encrypt data manually, use the <span class="unixoutputc">biCustomerNodeReencrypt&amp;()</span> and <span class="unixoutputc">biDerivedAttributeArrayReencrypt&amp;()</span> functions (see the <span class="referrals">Configurer's Reference Guide for Singleview Convergent Billing (Vol. 1)</span>).</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o1558"></a><h3 class="heading3">Form Roles</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Form Roles' (1558)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Form roles provide users with access to specific forms and menu items, and control the updating privileges required when working with each form.  </p>
+<p class="bodytext">A form role determines which forms can be accessed by a user, access level settings for each form, and whether the menu item for a form is greyed-out.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o1560"></a><h3 class="heading3">Function Roles</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Function Roles' (1560)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Function roles specify which functions a user, with the appropriate security settings, can execute using the TRE.  </p>
+<p class="bodytext">Function roles also define function aliasing; for example, if a user calls one function, the TRE executes the function that is defined as the alias in the function role for that user.  TRE function aliasing reduces the configuration costs by making it easier to implement the customer's business rules.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o53611"></a><h3 class="heading3">Work Groups</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Work Groups' (53611)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">In Convergent Billing, a user or group of users responsible for progressing and resolving queries is called a work group.  A work group is similar to a security group in that queries are attached to a work group in the same way that data is attached to a security group.  To work with a query, the user profile must assign the user to the work group that created and progressed the query.</p>
+<p class="bodytext">Work groups can often be based on workflow.  When planning work groups, map the workflow of the various groups.  The map provides the information required for determining the work groups that need to be defined and to whom they need to be assigned.</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="53625.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="39833.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

@@ -1,0 +1,563 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> ClientDynamicForm&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "12285.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "12287.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('12286')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="12285.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="12287.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">ClientDynamicForm&amp;()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'ClientDynamicForm&amp;()' (12286)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<pre class="unixinputp">ClientDynamicForm&amp;(    l_FormCode$,    l_ParamNames$[],    l_ParamValues?[],    l_ReturnParamNames$[],    var l_ReturnParamValues?[])</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Displays a dynamic form, using either entity validation or a derived attribute to control validation and display characteristics.</p>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="288" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Data Entry</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="bold">Method</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Local</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="198"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="498"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">l_FormCode$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="498"><p class="tablebodytext">In:  Form code to use for security on attribute types.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">l_ParamNames$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="498"><p class="tablebodytext">In:  Array of parameter names to display.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">l_ParamValues?[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="498"><p class="tablebodytext">In:  Array of values corresponding to the parameter names specified in <span class="unixoutputc">l_ParamNames$[]</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">l_ReturnParamNames$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="498"><p class="tablebodytext">In:  Array of field names to be returned by the function.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">l_ReturnParamValues?[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="498"><p class="tablebodytext">Out:  Array of returned values of fields specified in <span class="unixoutputc">l_ReturnParamNames$[]</span>.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">If the dynamic form is set to display modally:</p>
+<ul class="listbullet"><li class="listbullet">The ID of the button pressed is returned.</li><li class="listbullet">Values are returned in <span class="unixoutputc">l_ReturnParamValues?[]</span> in the same order that they specified in <span class="unixoutputc">l_ReturnParamNames$[]</span>. If return parameters are specified for a <span class="formname">Derived Attribute</span> form, they are all returned in a single parameter as a two-dimensional array.</li></ul><p class="bodytext">If the dynamic form is not set to display modally (<span class="unixoutputc">FORM.MODAL=FALSE</span>), 0 is returned.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">The following items can also be displayed.</p>
+<ul class="listbullet"><li class="listbullet">Form caption</li><li class="listbullet">Prompt label</li><li class="listbullet">Entry and display fields</li><li class="listbullet">Grid lists</li><li class="listbullet">Buttons (including caption).</li></ul><p class="bodytext">The caller can request return parameters in the parameter <span class="unixoutputc">ReturnParamNames$[]</span>.</p>
+<p class="caption">Buttons</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="163"><p class="tableheading">Parameter Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="143"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="390"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="163"><p class="tablebodytext"><span class="unixoutputc">BUTTON.ALIGNRIGHT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="143"><p class="tablebodytext">Boolean</p>
+<p class="tablebodytext">Defaults to FALSE</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">Right alignment of the button.</p>
+<p class="tablebodytext">If TRUE, the button is aligned to the right-hand edge of the form.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="163"><p class="tablebodytext"><span class="unixoutputc">BUTTON.CANCEL</span></p>
+</td>
+<td style="border:1px solid #010101;" width="143"><p class="tablebodytext">Boolean</p>
+<p class="tablebodytext">Defaults to FALSE</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">Cancel state of the button.</p>
+<p class="tablebodytext">If set to TRUE, pressing the button does not execute any validation expressions on the form.</p>
+<p class="tablebodytext">The <strong class="buttons">Close</strong> button on the menu bar effectively has <span class="unixoutputc">BUTTON.CANCEL=TRUE</span>, and returns an ID of <span class="unixoutputc">0</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="163"><p class="tablebodytext"><span class="unixoutputc">BUTTON.CAPTION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="143"><p class="tablebodytext">String</p>
+<p class="tablebodytext">Mandatory</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">Caption for a new button.</p>
+<p class="tablebodytext">Setting <span class="unixoutputc">BUTTON.CAPTION</span> creates a new button and any further setting of <span class="unixoutputc">BUTTON</span> parameters act on that newly created button until <span class="unixoutputc">BUTTON.CAPTION</span> is set again.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="163"><p class="tablebodytext"><span class="unixoutputc">BUTTON.DEFAULT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="143"><p class="tablebodytext">Boolean</p>
+<p class="tablebodytext">Defaults to FALSE</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">Default state of the button.</p>
+<p class="tablebodytext">If TRUE, the button is triggered when the <span class="keystrokes">Enter</span> key is pressed and the cursor is in a field on the form.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="163"><p class="tablebodytext"><span class="unixoutputc">BUTTON.ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="143"><p class="tablebodytext">Integer</p>
+<p class="tablebodytext">Mandatory</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">ID of the button.</p>
+<p class="tablebodytext">If the form is called modally, the ID of the activated button is returned as <span class="unixoutputc">l_ModalResult&amp;[]</span>.</p>
+<p class="tablebodytext">The <strong class="buttons">Close</strong> button on the menu bar has an ID of <span class="unixoutputc">0</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="163"><p class="tablebodytext"><span class="unixoutputc">BUTTON.NAVBUTTON</span></p>
+</td>
+<td style="border:1px solid #010101;" width="143"><p class="tablebodytext">Boolean</p>
+<p class="tablebodytext">Defaults to FALSE</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">State of the navigation button on the form.</p>
+<p class="tablebodytext">If <span class="unixoutputc">TRUE</span>, the navigation button arrow is displayed on the form.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Form Structure</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="192"><p class="tableheading">Parameter Name</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="90"><p class="tableheading">Properties</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="414"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FORM.ALIGN</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="414"><p class="tablebodytext">Specifies the position of the form.</p>
+<p class="tablebodytext">Options are LEFT, RIGHT, TOP,and BOTTOM.</p>
+<table width="100%" class="tipstyle"><tr><td><p class="tip">Tip:</p><p class="tabletip">To anchor a child form to three edges of a parent form, use <span class="unixoutputc">FORM.ALIGN</span> and <span class="unixoutputc">FORM.ANCHORS</span>.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FORM.ANCHORS.BOTTOM</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Ignored</p>
+</td>
+<td style="border:1px solid #010101;" width="414"><p class="tablebodytext">Resizes a child form relative to the size of the parent form.</p>
+<p class="tablebodytext">Sets the form anchor to the bottom of the parent form.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FORM.ANCHORS.LEFT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Ignored</p>
+</td>
+<td style="border:1px solid #010101;" width="414"><p class="tablebodytext">Resizes a child form relative to the size of the parent form.</p>
+<p class="tablebodytext">Sets the form anchors to the left of the parent form.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FORM.ANCHORS.RIGHT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Ignored</p>
+</td>
+<td style="border:1px solid #010101;" width="414"><p class="tablebodytext">Resizes a child form relative to the size of the parent form.</p>
+<p class="tablebodytext">Sets the form anchors to the right of the parent form.</p>
+<table width="100%" class="tipstyle"><tr><td><p class="tip">Tip:</p><p class="tabletip">To horizontally resize the form when the parent form is resized, use <span class="unixoutputc">FORM.ANCHORS.LEFT</span> and <span class="unixoutputc">.RIGHT</span>.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FORM.ANCHORS.TOP</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Ignored</p>
+</td>
+<td style="border:1px solid #010101;" width="414"><p class="tablebodytext">Resizes a child form relative to the size of the parent form.</p>
+<p class="tablebodytext">Sets the form anchors to the top of the parent form.</p>
+<table width="100%" class="tipstyle"><tr><td><p class="tip">Tip:</p><p class="tabletip">To vertically resize the form when the parent form is resized, use <span class="unixoutputc">FORM.ANCHORS.TOP</span> and <span class="unixoutputc">.BOTTOM</span>.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FORM.BRINGTOFRONT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Boolean</p>
+</td>
+<td style="border:1px solid #010101;" width="414"><p class="tablebodytext">Specifies that the form can be displayed on top of other active forms.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FORM.CAPTION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">String</p>
+<p class="tablebodytext">Mandatory</p>
+</td>
+<td style="border:1px solid #010101;" width="414"><p class="tablebodytext">Caption displayed on the title bar of the form.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FORM.HEIGHT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="414"><p class="tablebodytext">Height of the form.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FORM.HELPFORNAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="414"><p class="tablebodytext">Specifies that the form can be used to control the <span class="formname">Form Field Help Dump</span> form, and be available for <span class="keystrokes">F1</span> help and form help.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FORM.LEFT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="414"><p class="tablebodytext">Left location of the form.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FORM.MINHEIGHT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="414"><p class="tablebodytext">Minimum height of the form.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FORM.MINWIDTH</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="414"><p class="tablebodytext">Minimum width of the form.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FORM.MODAL</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Boolean</p>
+<p class="tablebodytext">Defaults to TRUE</p>
+</td>
+<td style="border:1px solid #010101;" width="414"><p class="tablebodytext">Specifies whether the form is displayed modally.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FORM.POSNFORMCODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="414"><p class="tablebodytext">Creates a unique static value key used to identify the form and store its position in the system registry.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">The string supports a maximum character length of 12 characters.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FORM.PROMPT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="414"><p class="tablebodytext">Text displayed in the prompt label.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FORM.REFRESH.INTERVAL</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="414"><p class="tablebodytext">Refresh interval for the dynamic form.</p>
+<p class="tablebodytext">The interval is only implemented for the web browser.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">An interval of <span class="unixoutputc">0</span> does not activate the refresh timer.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FORM.REUSEFORMCODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="414"><p class="tablebodytext">Code that identifies the form.</p>
+<p class="tablebodytext">The form is reused if all of the following conditions are met:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">FORM.REUSEFORMCODE</span> is set.</li><li class="tablelistbullet">The reuse flag is set (using <span class="unixoutputc">ClientSetReuse&amp;</span>).</li><li class="tablelistbullet">Another call is received to display a form with the same reuse form code.</li></ul><p class="tablebodytext">If a form is reused, only parameters displayed after this parameter are used in the form.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FORM.TOP</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="414"><p class="tablebodytext">Top location of the form.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FORM.WIDTH</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="414"><p class="tablebodytext">Width of the form.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Entity Validation Definition Form</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="192"><p class="tableheading">Parameter Name</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="96"><p class="tableheading">Properties</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="408"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">ENTITY_VALIDATION_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Int64</p>
+<p class="tablebodytext">Mandatory</p>
+</td>
+<td style="border:1px solid #010101;" width="408"><p class="tablebodytext">Entity validation ID used to display the form.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">fieldname</span></p>
+<p class="tablebodytext">(for example, <span class="unixoutputc">RECEIPT_NR</span>)</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Data type of field</p>
+</td>
+<td style="border:1px solid #010101;" width="408"><p class="tablebodytext">Values for all fields accessible in the entity validation definition.</p>
+<p class="tablebodytext">Simple data type checking is performed.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">To set the values as defaults, assign the required field value to the field name.</p></td></tr></table>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Derived Attribute Definition Form</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="174"><p class="tableheading">Parameter Name</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="138"><p class="tableheading">Properties</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="384"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">DERIVED_ATTRIBUTE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext">Int64</p>
+<p class="tablebodytext">Mandatory</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Derived attribute ID to use when the form is displayed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">FIELDS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext">Two-dimensional array</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Default values for all fields as defined in the derived attribute.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote"><span class="unixoutputc">FIELDS</span> is a single parameter value that specifies a two-dimensional array (corresponding to the rows and columns in the grid).</p></td></tr></table>
+<p class="tablebodytext">Any mismatch in the number of columns between this parameter and the derived attribute definition, or the data types, specified for any of the fields, result in an automation parameter validation error.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">GRID.AUTOSIZE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext">Boolean</p>
+<p class="tablebodytext">Defaults to FALSE</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Grid sizing preference.</p>
+<p class="tablebodytext">If TRUE, the columns in the grid automatically size to the full width of the grid, ignoring the column widths specified for the derived attribute.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">GRID.CANDELETE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext">Boolean</p>
+<p class="tablebodytext">Defaults to FALSE</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Row deletion preference.</p>
+<p class="tablebodytext">If TRUE, rows can be deleted from the grid.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">GRID.CANINSERT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext">Boolean</p>
+<p class="tablebodytext">Defaults to FALSE</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Row insertion preference.</p>
+<p class="tablebodytext">If TRUE, rows can be inserted into the grid.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">GRID.COLUMNCLICK</span><br><span class="unixoutputc">SORTING</span></p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext">Boolean</p>
+<p class="tablebodytext">Defaults to FALSE</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Column sorting preference.</p>
+<p class="tablebodytext">If TRUE, columns can be sorted by clicking on the column header in the grid.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">GRID.CURRENTROW</span></p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext">Boolean</p>
+<p class="tablebodytext">Defaults to FALSE</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Row return status.</p>
+<p class="tablebodytext">If TRUE, <span class="unixoutputc">ClientDynamicForm&amp;()</span> returns the selected row. If FALSE, <span class="unixoutputc">ClientDynamicForm&amp;() </span>returns all rows in the grid.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">GRID.EDITABLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext">Boolean</p>
+<p class="tablebodytext">Defaults to FALSE</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Grid edit status.</p>
+<p class="tablebodytext">If FALSE, the grid cannot be edited and the cursor cannot be placed inside the text field of the grid.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">GRID.MULTISELECT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext">Boolean</p>
+<p class="tablebodytext">Defaults to FALSE</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Multiple row selection preference.</p>
+<p class="tablebodytext">If TRUE, multiple rows can be selected in the grid.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">GRID.ROWSELECT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext">Boolean</p>
+<p class="tablebodytext">Defaults to FALSE</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Row selection preference.</p>
+<p class="tablebodytext">If TRUE, selecting a cell on the grid selects the row.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">Do not use <span class="unixoutputc">GRID.ROWSELECT</span> in conjunction with <span class="unixoutputc">GRID.EDITABLE</span>. The combination prevents the user updating the data in the grid. For the correct behaviour, use <span class="unixoutputc">GRID.CURRENTROW</span> in conjunction with <span class="unixoutputc">GRID.EDITABLE</span>.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">GRID.ROWVALIDATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext">Boolean</p>
+<p class="tablebodytext">Defaults to FALSE</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Row validation preference.</p>
+<p class="tablebodytext">If TRUE, when a validating button is clicked, row validation is performed on the row regardless of whether any changes have been made.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">GRID.SIZEROWTODATA</span></p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext">Boolean</p>
+<p class="tablebodytext">Defaults to FALSE</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Cell text handling preference.</p>
+<p class="tablebodytext">If TRUE, the grid wraps text in the cells and resizes the rows to fit the text.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="12285.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="12287.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

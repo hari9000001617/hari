@@ -1,0 +1,847 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> DerivedTableCacheStatistics?{}() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "14545.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "14547.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('14546')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="14545.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="14547.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">DerivedTableCacheStatistics?{}()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'DerivedTableCacheStatistics?{}()' (14546)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<pre class="unixinputp">DerivedTableCacheStatistics?{}(    const Cache$)</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Returns global derived attribute cache statistics for either the process cache (the process evaluating the function), or for the shared memory cache common to all processes on the instance.</p>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="294" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="107"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="107"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Method</span></p>
+</td>
+<td style="border:1px solid #010101;" width="107"><p class="tablebodytext">Local</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="102"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="594"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext"><span class="unixoutputc">Cache$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="594"><p class="tablebodytext">In:  Identifies whether the statistics are obtained for the process cache or the shared memory cache.</p>
+<p class="tablebodytext">Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Process (for global derived attribute tables)</li><li class="tablelistbullet">Shared (for global-shared derived attribute tables).</li></ul></td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">Unknown hash containing the statistics of the requested cache if successful; otherwise, an error is raised.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">Each entry in the array <span class="unixoutputc">Statistics?{'CachedTables'}[]</span> that is returned in the unknown hash correlates to a derived attribute definition in the cache. Each array entry represents:</p>
+<ul class="listbullet"><li class="listbullet">For untenanted derived attributes, a derived attribute table because there is a one-to-one relationship between untenanted derived attribute definitions and their tables.</li><li class="listbullet">For tenanted derived attributes, the rolled-up statistics of all tenanted derived attribute tables for the derived attribute definition's date range.</li></ul>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><ul class="notelistbullet"><li class="notelistbullet">The statistics in <span class="unixoutputc">Statistics?{'CachedTables'}[]</span> that are described in the tables below as being at the derived attribute table level are at the derived attribute definition level.</li><li class="notelistbullet">The <span class="unixoutputc">{'DateRangeArray'}[]</span> array for each <span class="unixoutputc">Statistics?{'CachedTables'}[]</span> array entry can be used to identify the number of tenant-specific derived attribute tables cached for a tenanted derived attribute definition date range.</li></td></tr></table></ul><p class="bodytext">&nbsp;</p>
+<p class="bodytext">Table 1 lists statistics returned from the process cache.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Table 1: Process Cache Statistics Keys</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Key</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="114"><p class="tableheading">Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="456"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td valign="middle" style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="unixoutputc">CreatedDate</span></p>
+</td>
+<td valign="middle" style="border:1px solid #010101;" width="114"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Date the cache was opened.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="unixoutputc">Accesses</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Number of requests for derived attribute tables from the cache.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="unixoutputc">Hits</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Number of requests satisfied by existing derived attribute tables.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="unixoutputc">Misses</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Number of accesses to the derived attribute cache that did not find the requested table.</p>
+<p class="tablebodytext">It is equal to <span class="unixoutputc">Accesses</span> - <span class="unixoutputc">Hits</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="unixoutputc">Inserts</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Number of derived attribute tables inserted into the cache.</p>
+<p class="tablebodytext">It is less than or equal to <span class="unixoutputc">Misses</span>, as a missed item may not exist.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="unixoutputc">Replacements</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Number of times derived attribute tables have been automatically purged, and the least recently used algorithm has deleted a table because the cache is full.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="unixoutputc">Purges</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Number of derived attribute tables deleted by explicit <span class="unixoutputc">DerivedTable(Cache)Purge&amp;()</span> functions.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="unixoutputc">BytesUsed</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Total number of bytes used by all cached tables.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="unixoutputc">Tables</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Total number of cached tables.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="unixoutputc">CachedTables</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Unknown array</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Array of currently cached tables from earliest to latest.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">Table 2 lists statistics returned from the shared memory cache.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Table 2: Shared Memory Cache Statistics Keys</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="192"><p class="tableheading">Key</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="78"><p class="tableheading">Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="426"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">CreatedDate</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Date the cache was opened.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">CacheSize</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Total size (in bytes) of the cache.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">TableSize</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Number of derived attribute tables that can be cached.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">TablesFree</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Number of free derived attribute table entries in cache.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">Accesses</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Number of requests for derived attribute tables from the cache.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">Hits</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Number of requests satisfied by existing derived attribute tables.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">Misses</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Number of accesses to the derived attribute cache that did not find the requested table.</p>
+<p class="tablebodytext">It is equal to <span class="unixoutputc">Accesses</span> - <span class="unixoutputc">Hits</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">Inserts</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Number of derived attribute tables inserted into the cache.</p>
+<p class="tablebodytext">It is than or equal to <span class="unixoutputc">Misses</span>, as a missed item may not exist.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">Replacements</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Number of times derived attribute tables have been automatically purged, and the least recently used algorithm has deleted a table because the cache is full.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">Purges</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Number of derived attribute tables deleted by explicit calls to <span class="unixoutputc">DerivedTable(Cache)Purge&amp;()</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">Reloads</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Number of derived attribute tables reloaded with database updates as a result of calls to <span class="unixoutputc">DerivedTable(Cache)Purge&amp;()</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">BytesUsed</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Total number of bytes used by all cached tables.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">Tables</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Total number of cached tables.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">CachedTables</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Unknown array</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Array of currently cached tables with most recently used tables listed first, least recently used tables last.</p>
+<p class="tablebodytext">Each array entry is a hash containing statistics for a process or shared derived attribute table that has been cached.</p>
+<p class="tablebodytext">Table 5 defines hash contents for a process derived attribute table.</p>
+<p class="tablebodytext">Table 6 defines hash contents for a shared derived attribute table.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PoolTotalSize</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Total size of dynamic pool.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PoolAvailSize</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Number of available bytes in pool.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PoolUsedSize</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Number of bytes used in pool.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PoolMaxUsedSize</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Highest number of bytes used in pool.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PoolTotalUsedSize</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Total number of bytes allocated from pool.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PoolTotalWasted</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Total unused bytes in all allocations from pool.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PoolAllocatedBlockCnt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Number of current allocations made from the pool.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PoolFreeBlockCnt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Number of free fragments in the pool.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PoolTotalNrSuccAllocs</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Total number of successful allocations from the pool.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PoolTotalNrFailAllocs</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Total number of failed allocations from the pool.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PoolMaxAllocationSize</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Largest allocation (in bytes) from pool.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PoolMinAllocationSize</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Smallest allocation (in bytes) from pool.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PoolBlockListStats</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Unknown array</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Array of statistics from block lists in pool.</p>
+<p class="tablebodytext">Each hash in the array contains statistics aggregated from a number of block lists.</p>
+<p class="tablebodytext">Table 3 displays the contents of each hash from the pool block list statistics.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PoolFragStats</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Unknown Array</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">Array of statistics for pool fragmentation.</p>
+<p class="tablebodytext">Each hash in the array contains the number of failed allocation attempts when the portion of free memory falls within a particular range.</p>
+<p class="tablebodytext">Table 4 displays the contents of each hash for the pool fragmentation statistics. </p>
+</td>
+</tr>
+
+</table>
+<p class="tablebodytext">&nbsp;</p>
+<p class="bodytext">Table 3 lists the contents of each hash from the pool block list statistics.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Table 3: Statistics Aggregated from a Number of Block Lists</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="174"><p class="tableheading">Key</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="72"><p class="tableheading">Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="450"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">MaxBytes</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Maximum size (in bytes) of blocks in the lists from which these statistics were obtained.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">MinBytes</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Minimum size (in bytes) of blocks in the lists from which these statistics were obtained.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">TotalAllocatedBytes</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Total number of bytes allocated from these block lists for storage of data since the pool was created/reset.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">TotalWastedBytes</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Total number of bytes wasted in blocks allocated from these lists.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">TotalNrSuccAllocs</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Total number of successful memory allocations from these block lists since the pool was created/reset.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">FreeBytes</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Total number of bytes in currently unallocated blocks in these lists.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">NrFreeBlocks</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Total number of currently unallocated blocks in these lists.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">UsedBytes</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Total number of bytes in blocks currently allocated from these lists.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">NrUsedBlocks</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Total number of blocks currently allocated from these lists.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">Table 4 lists the contents of each hash for the pool fragmentation statistics.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Table 4: Statistics Returned for Pool Fragmentation</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="144"><p class="tableheading">Key</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="72"><p class="tableheading">Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="480"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">MaxFractionFree</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Double</p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Maximum fraction of free memory when an allocation attempt fails.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">MinFractionFree</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Double</p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Minimum fraction of free memory when an allocation attempt fails.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">NrFailAllocs</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Number of failed allocation attempts when the fraction of free memory is within the range <span class="unixoutputc">MinFractionFree</span> to <span class="unixoutputc">MaxFractionFree</span>.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">Table 5 lists the contents of process cache statistics keys for cached tables.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Table 5: Process Cache Statistics Keys for Cached Tables</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="114"><p class="tableheading">Key</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="78"><p class="tableheading">Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="504"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">TableName</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">Table name.</p>
+<p class="tablebodytext">That is, the <span class="unixoutputc">TABLE_NAME</span> field from the <span class="unixoutputc">DERIVED_ATTRIBUTE_HISTORY</span> table.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">StartDate</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">Start of date range for the table.</p>
+<p class="tablebodytext">It equals the start date from the <span class="unixoutputc">DERIVED_ATTRIBUTE_TABLE</span> record for the table.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">EndDate</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">End of date range for the table.</p>
+<p class="tablebodytext">It equals the end date from the <span class="unixoutputc">DERIVED_ATTRIBUTE_TABLE</span> record for the table.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">BytesUsed</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">Bytes used by the table.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">Rows</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">Total number of <span class="unixoutputc">DERIVED_ATTRIBUTE_ARRAY</span> or <span class="unixoutputc">DERIVED_ATTR_ARRAY_EXT</span> rows cached by the table.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">Accesses</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">Total number of accesses to the table.</p>
+</td>
+</tr>
+
+</table>
+<p class="caption">&nbsp;</p>
+<p class="bodytext">Table 6 lists the contents of shared memory cache statistics keys for cached tables.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Table 6: Shared Memory Cache Statistics Keys for Cached Tables</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="132"><p class="tableheading">Key</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="84"><p class="tableheading">Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="480"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">TableName</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Table name.</p>
+<p class="tablebodytext">That is, the <span class="unixoutputc">TABLE_NAME</span> field from the <span class="unixoutputc">DERIVED_ATTRIBUTE_HISTORY</span> table.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">StartDate</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Start of date range for the table.</p>
+<p class="tablebodytext">It equals the start date from the <span class="unixoutputc">DERIVED_ATTRIBUTE_HISTORY</span> record for the table. </p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">To improve readability, this key is not reported by <span class="unixoutputc">getstats</span>.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">EndDate</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">End of date range for the table.</p>
+<p class="tablebodytext">It equals the end date from the <span class="unixoutputc">DERIVED_ATTRIBUTE_HISTORY</span> record for the table. </p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">To improve readability, this key is not reported by <span class="unixoutputc">getstats</span>.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">BytesUsed</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Bytes used by the table.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">Rows</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Total number of <span class="unixoutputc">DERIVED_ATTRIBUTE_ARRAY</span> rows cached by the table.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">Accesses</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Total number of accesses to the table.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">Reloads</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Total number of reloads of data performed on this table since the table was loaded into the cache.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">Incremental</span><br><span class="unixoutputc">Updates</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Total number of incremental updates performed on the table since it was loaded into the cache.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">DateRanges</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Total number of <span class="unixoutputc">DERIVED_ATTRIBUTE_TABLE</span> records currently cached for the table.</p>
+<p class="tablebodytext">It should equal <span class="unixoutputc">DateRangeInserts</span> - <span class="unixoutputc">DateRangePurges</span>.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">This key is not reported by <span class="unixoutputc">getstats</span> because the information corresponds to the number of rows output for the table in the <span class="unixoutputc">DateRangeArray</span> hash entry.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">DateRange</span><br><span class="unixoutputc">Inserts</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Total number of <span class="unixoutputc">DERIVED_ATTRIBUTE_TABLE</span> records inserted into the cache.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">DateRange</span><br><span class="unixoutputc">Purges</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Total number of date-ranged purges performed on the table since it was loaded into the cache.</p>
+<p class="tablebodytext">Count includes least-recently-used purges and purges due to an explicit date-ranged deletion by <span class="unixoutputc">DerivedTable(Cache)Purge&amp;()</span> function.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">DateRangeArray</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Unknown Array</p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Array of hashes containing statistics for each table date range cached within the <span class="unixoutputc">DERIVED_ATTRIBUTE_HISTORY</span> date range.</p>
+<p class="tablebodytext">The entries are ordered by <span class="unixoutputc">StartDate </span>from earliest to latest.</p>
+<p class="tablebodytext">Table 7 defines the contents of this hash for each cached table date range.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">Table 7 lists the contents of each hash for the pool fragmentation statistics.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Table 7:  Statistics for Cached Date Ranges</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="138"><p class="tableheading">Key</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="66"><p class="tableheading">Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="492"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">TenantId</span></p>
+</td>
+<td style="border:1px solid #010101;" width="66"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="492"><p class="tablebodytext">ID of the tenant if the derived attribute table is tenanted, or undefined value otherwise.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">StartDate</span></p>
+</td>
+<td style="border:1px solid #010101;" width="66"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="492"><p class="tablebodytext">Start of date range.</p>
+<p class="tablebodytext">That is, the <span class="unixoutputc">EFFECTIVE_START_DATE</span> field from the <span class="unixoutputc">DERIVED_ATTRIBUTE_TABLE</span> table.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">EndDate</span></p>
+</td>
+<td style="border:1px solid #010101;" width="66"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="492"><p class="tablebodytext">End of data range.</p>
+<p class="tablebodytext">That is, the <span class="unixoutputc">EFFECTIVE_END_DATE</span> field from the <span class="unixoutputc">DERIVED_ATTRIBUTE_TABLE</span> table.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">This key is not reported by <span class="unixoutputc">getstats</span> to improve readability of the output. Except for the last row of a table, the <span class="unixoutputc">EndDate</span> can be derived as the <span class="unixoutputc">StartDate</span> of the next record minus 1 second.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">LastModified</span></p>
+</td>
+<td style="border:1px solid #010101;" width="66"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="492"><p class="tablebodytext">Date-time of last modification of this date range.</p>
+<p class="tablebodytext">That is, the <span class="unixoutputc">LAST_MODIFIED</span> field from the <span class="unixoutputc">DERIVED_ATTRIBUTE_TABLE</span> table.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">RowsEnded</span></p>
+</td>
+<td style="border:1px solid #010101;" width="66"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="492"><p class="tablebodytext">Number of <span class="unixoutputc">DERIVED_ATTRIBUTE_ARRAY</span> or <span class="unixoutputc">DERIVED_ATTR_ARRAY_EXT</span> rows for the table that have the same <span class="unixoutputc">EFFECTIVE_END_DATE</span> as the date range.</p>
+<p class="tablebodytext">It is useful in estimating the amount of memory that will become available if the date-time ranged history record is purged.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">RowsAssociated</span></p>
+</td>
+<td style="border:1px solid #010101;" width="66"><p class="tablebodytext">Long</p>
+</td>
+<td style="border:1px solid #010101;" width="492"><p class="tablebodytext">Number of <span class="unixoutputc">DERIVED_ATTRIBUTE_ARRAY</span> or <span class="unixoutputc">DERIVED_ATTR_ARRAY_EXT</span> rows for the table that are associated with this date-time range.</p>
+<p class="tablebodytext">A row from the <span class="unixoutputc">DERIVED_ATTRIBUTE_ARRAY</span> or <span class="unixoutputc">DERIVED_ATTR_ARRAY_EXT</span> may overlap multiple date ranges from <span class="unixoutputc">DERIVED_ATTRIBUTE_TABLE</span>.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">It is output with a label of 'Rows' by <span class="unixoutputc">getstats</span>.</p></td></tr></table>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="14545.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="14547.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

@@ -1,0 +1,290 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> SERVICE_CV </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "8130.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "51074.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('8101');expand('8098');highlight('60005')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="8130.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="51074.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">SERVICE_CV</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'SERVICE_CV' (60005)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="unixoutputc">SERVICE_CV</span> view defines details of all services.</p>
+<p class="syntaxheading">Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="258"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="114"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="324"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">SERVICE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">ID of the service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">SERVICE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">VARCHAR (64)</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Name associated with the service in terms of the most exact specification of the service in relation to the customer.</p>
+<p class="tablebodytext">The format of this value usually corresponds to how the service is to be displayed on customer invoices (for example, MSIDN number for a GSM service).</p>
+<p class="tablebodytext">It must be unique for the specified date range.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">NETWORK_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">VARCHAR (64)</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Name associated with the service in terms of the most exact specification of the service in relation to the network, if this is different from <span class="unixoutputc">SERVICE_NAME</span>.</p>
+<p class="tablebodytext">The format of this value usually corresponds to how the service is referenced by switching equipment, CDRs, and events generated (for example, IMSE number for a GSM service).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Date-time that the record becomes effective.</p>
+<p class="tablebodytext">Its finest granularity is one second.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_END_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Date-time of the last second that the record is effective.</p>
+<p class="tablebodytext">The record ceases to be effective one second after the <span class="unixoutputc">EFFECTIVE_END_DATE</span>.</p>
+<p class="tablebodytext">Its finest granularity is one second.</p>
+<p class="tablebodytext">It must be greater than or equal to <span class="unixoutputc">EFFECTIVE_START_DATE</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">OPERATOR_LOGIN_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">VARCHAR (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Billing system user who last modified the service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">SERVICE_TYPE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">VARCHAR (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Type of this service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">SERVICE_SUBTYPE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">VARCHAR (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Subtype of this service (for example, Dial-up and Dedicated subtypes within the service type of X.28).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_NODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">ID of the customer hierarchy element or node that this service belongs to.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">SERVICE_STATUS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">VARCHAR (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Current status of the service (for example, Active, Suspended, and Cancelled).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">SERVICE_PRODUCT_OFFER_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">VARCHAR (60)</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Name of the product offer assigned to this service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">SERVICE_PRODUCT_OFFER_ALL_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Date-time at which the service was allocated to the product offer designated in <span class="unixoutputc">SERVICE_PRODUCT_OFFER_NAME</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">SERVICE_PREV_PROD_OFFER_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">VARCHAR (60)</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Name of the previous product offer assigned to this service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">CONTRACT_REFERENCE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">VARCHAR (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Reference to the contract number of the contract stored outside of Convergent Billing.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">PERSON_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Primary contact person for this service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">A_ADDRESS_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Reference to the address details for the A-end of the service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">B_ADDRESS_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Reference to the address details for the B-end of the service.</p>
+<p class="tablebodytext">If the service does not require the destinations of a start and termination point, this reference is null.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">REQUIRED_BY_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Date-time on which the current action as specified by <span class="unixoutputc">SERVICE_STATUS_CODE</span> is due to be completed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">PROVISIONED_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Date-time that the service was provisioned for use by the exchange staff.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">ACTIVE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Date-time that the service became billable to the customer.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">GRADE_OF_SERVICE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">VARCHAR (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Speed of the service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">SERVICE_USAGE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">VARCHAR (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Main usage type for the service where different types of usage are allowed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">COMMS_TYPE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">VARCHAR (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Appropriate communications signalling type classification (for example, Synchronous and Asynchronous).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">GL_CODE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">VARCHAR (64)</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">GL code used for all financial transactions produced as part of this service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext"><span class="unixoutputc">PRODUCT_INSTANCE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Base product instance associated with the service.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="8130.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="51074.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

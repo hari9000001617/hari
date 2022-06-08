@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Table Partition Definition Form </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "3865.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "3884.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+<script language="javascript" type="text/javascript" src="dhtml_popup.js"></script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('1732');highlight('51180')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="3865.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="3884.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Table Partition Definition Form</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Table Partition Definition Form' (51180)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="formname">Table Partition Definition</span> form is used to view, define, and maintain a <a id="h3868" class="popup" title="Table Partitioning" href="javascript:void(0)" onclick="togglePopup('3868','h3868')" target="_self">table partition</a>.  The tables that can be partitioned are defined in the<span class="unixoutputc"> TablePartition</span> derived attribute table.</p>
+<div id="d3868" class="clickpopup" style="display:none"><a href="javascript:hidePopup('3868')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">Improves the management and the performance of the rating, billing and archive processes.  Database table scalability can often be compromised when tables that hold large quantities of data are seldom accessed, or when data is accessed very frequently.  Convergent Billing provides the capability to define and manage table partitions. </p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1340" class="glossaryitemjump" title="Billing Engine" href="14831.htm#o358" target="_self">Billing Engine</a> and <a id="h1093" class="glossaryitemjump" title="Rating Engine" href="14847.htm#o807" target="_self">Rating Engine</a>.</p>
+</div><p class="bodytext">If partitioning is implemented, the <span class="unixoutputc">CHARGE</span>, <span class="unixoutputc">NORMALISED_EVENT</span>,<span class="unixoutputc"> NORMALISED_EVENT_ERROR</span>, <span class="unixoutputc">SUBTOTAL_RATING_VALUE</span>, <span class="unixoutputc">SUBTOTAL_RATING_DELTA</span>, and <span class="unixoutputc">NEF_GL_GUIDANCE_DELTA</span> (not required if the GL subsystem is not enabled) tables must always be partitioned for operational reasons (for example, archiving and upgrading).</p>
+<p class="bodytext">The upper part of the form is used to enter the names of the table partition and base table used for the partition to be specified.</p>
+<p class="bodytext">The lower part of the form consists of the following tabs for viewing and updating the partition table's details:</p>
+<p class="bodytext"><a id="h40976" class="expandingblock" title="Details Tab" href="javascript:toggleBlock('40976')" target="_self"><img id="i40976" class="expandicon" src="arrowright.gif" alt="" border="0">Details</a></p>
+<div id="d40976" class="expandingblock" style="display:none"><p class="bodytext">The <span class="fieldname">Details</span> tab allows the following to be specified:</p>
+<ul class="listbullet"><li class="listbullet">Desired status of the partition.<p class="listcontinue">The default for new partitions is 'Dropped'.</p>
+</li><li class="listbullet">Table partition schedule for performing required partition changes.</li><li class="listbullet">Schedule task used to perform any required changes to the partition.<p class="listcontinue">The task defaults to the first pending task for the schedule whenever the <span class="fieldname">Schedule</span> field is changed.</p>
+</li><li class="listbullet">Operation to be performed on the table, in addition to the operations required to change the partition's <span class="fieldname">Actual Status</span> to match the <span class="fieldname">Desired Status</span>.</li></ul><table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">Compressing partitions is available only if Oracle Advanced Compression is activated.</p></td></tr></table>
+<p class="bodytext">The following fields are automatically populated and cannot be modified:</p>
+<ul class="listbullet"><li class="listbullet"><span class="fieldname">Actual Status</span></li><li class="listbullet"><span class="fieldname">Operation Outcome</span></li><li class="listbullet"><span class="fieldname">Operation Step</span></li><li class="listbullet"><span class="fieldname">Contains Unbilled charges?</span></li><li class="listbullet"><span class="fieldname">Data Tablespace</span></li><li class="listbullet"><span class="fieldname">Index Tablespace</span></li><li class="listbullet"><span class="fieldname">Exchange Table</span></li><li class="listbullet"><span class="fieldname">Archive File</span></li><li class="listbullet"><span class="fieldname">Compressed?</span></li></ul></div><p class="bodytext"><a id="h40977" class="expandingblock" title="Partition Ranges Tab" href="javascript:toggleBlock('40977')" target="_self"><img id="i40977" class="expandicon" src="arrowright.gif" alt="" border="0">Partition Ranges</a></p>
+<div id="d40977" class="expandingblock" style="display:none"><p class="bodytext">The <span class="fieldname">Partition Ranges</span> tab displays table columns and date or entity ranges used to partition the table.  The table columns cannot be modified.  The date and entity ID ranges can be modified using the <span class="fieldname">Desired</span> fields.</p>
+<p class="bodytext"><a id="h41254" class="jump" title="Graphical Partition View Search Form" href="41011.htm" target="_self">The </a><strong class="buttons"><a id="h41254_2" class="jump" title="Graphical Partition View Search Form" href="41011.htm" target="_self">View Graph...</a></strong><a id="h41254_3" class="jump" title="Graphical Partition View Search Form" href="41011.htm" target="_self"> button is used to view information about the current and related partitions</a>.</p>
+</div><p class="bodytext"><a id="h40978" class="expandingblock" title="Statistics Tab" href="javascript:toggleBlock('40978')" target="_self"><img id="i40978" class="expandicon" src="arrowright.gif" alt="" border="0">Statistics</a></p>
+<div id="d40978" class="expandingblock" style="display:none"><p class="bodytext">The <span class="fieldname">Statistics</span> tab displays the statistics for the partition in reverse date order.  All data on this tab is read-only.</p>
+<p class="bodytext">The <span class="fieldname">Uninvoiced Count</span> column is only displayed for partitions associated with the <span class="unixoutputc">CHARGE</span> table.</p>
+<p class="bodytext">The following columns are only displayed for partitions associated with the <span class="unixoutputc">CHARGE</span> or <span class="unixoutputc">NORMALISED_EVENT</span> tables:</p>
+<ul class="listbullet"><li class="listbullet"><span class="fieldname">Last Sort Count(s)</span></li><li class="listbullet"><span class="fieldname">Sort Date</span></li><li class="listbullet"><span class="fieldname">Last Sort Duration</span>.</li></ul><p class="bodytext">The <strong class="buttons">Task Details...</strong> button opens the <a id="h3918" class="jump" title="Tariff Table Search Form" href="3919.htm" target="_self">Task Details form</a> with the task responsible for generating the selected row's statistics.  This button is only available to users with sufficient security group privileges.</p>
+</div><p class="bodytext">The form can be displayed in one of three <a id="h1472" class="popup" title="Form Modes" href="javascript:void(0)" onclick="togglePopup('1472','h1472')" target="_self">form modes</a>, the current mode being indicated in the form's title.</p>
+<div id="d1472" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1472')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">A form can be displayed in one of the following modes:</p>
+<table class="tableintopic" width="528" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Form Mode</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="402"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">View Only mode</p>
+</td>
+<td style="border:1px solid #010101;" width="402"><p class="tablebodytext">Allows information held in Convergent Billing to be viewed, but not updated (modified).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Insert mode</p>
+</td>
+<td style="border:1px solid #010101;" width="402"><p class="tablebodytext">Allows new information to be recorded (entered) in Convergent Billing.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Update mode</p>
+</td>
+<td style="border:1px solid #010101;" width="402"><p class="tablebodytext">Allows information held in Convergent Billing to be viewed and updated (modified).</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">To change the form mode:</p>
+<table class="tableintopic" width="528" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="168"><p class="tableheading">Current Form Mode</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="156"><p class="tableheading">New Form Mode</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="204"><p class="tableheading">Click the <strong class="buttons">…</strong></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">View Only mode</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">Update mode</p>
+</td>
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><strong class="buttons">Update</strong> button</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">Update mode</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">View Only mode</p>
+</td>
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><strong class="buttons">Save</strong> or <strong class="buttons">Cancel</strong> button</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">View Only mode</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">Insert mode</p>
+</td>
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><strong class="buttons">Insert</strong> button</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">Insert mode</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">View Only mode</p>
+</td>
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><strong class="buttons">Save</strong> button</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+</div><p class="bodytext"><strong class="specialbold">Associated Actions</strong></p>
+<p class="bodytext"><a id="h3869" class="expandingblock" title="View a Table Partition" href="javascript:toggleBlock('3869')" target="_self"><img id="i3869" class="expandicon" src="arrowright.gif" alt="" border="0">Viewing a Table Partition</a></p>
+<div id="d3869" class="expandingblock" style="display:none"><p class="bodytext">To view a table partition:</p>
+<ol class="listnumber"><li class="listnumber">Select the <strong class="menuoptions">Maintenance</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">Server</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">Table Partitioning</strong> option.  The <span class="formname">Table Partition Search</span> form is displayed.</li><li class="listnumber">Enter or select the appropriate search criteria and search method.</li><li class="listnumber">Click the <strong class="buttons">Search</strong> button.  A list of table partition names matching the specified criteria is displayed.</li><li class="listnumber">Select the appropriate table partition name and click the <strong class="buttons">Detail...</strong> button, or double-click the appropriate table partition name.  The <span class="formname">Table Partition Definition</span> form is displayed in View Only mode.</li></ol><p class="moreinfo"><a id="h3871" class="jump" title="Table Partitioning and Scalability" href="3872.htm" target="_self">Need more information on table partitioning?</a></p>
+</div><p class="bodytext"><a id="h3877" class="expandingblock" title="Define a Table Partition" href="javascript:toggleBlock('3877')" target="_self"><img id="i3877" class="expandicon" src="arrowright.gif" alt="" border="0">Defining a Table Partition</a></p>
+<div id="d3877" class="expandingblock" style="display:none"><p class="bodytext">To define a table partition:</p>
+<ol class="listnumber"><li class="listnumber">Select the <strong class="menuoptions">Maintenance</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">Server</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">Table Partitioning</strong><strong class="specialbold"> </strong>option.  The <span class="formname">Table Partition Search</span> form is displayed.</li><li class="listnumber">Click the <strong class="buttons">New...</strong> button.  The <span class="formname">Table Partition</span> form is displayed in Insert mode.</li><li class="listnumber">Complete the appropriate data entry fields on the form.</li><li class="listnumber">Click the <strong class="buttons">Save</strong> button on the toolbar.</li></ol><p class="moreinfo"><a id="h3871_2" class="jump" title="Table Partitioning and Scalability" href="3872.htm" target="_self">Need more information on table partitioning?</a></p>
+</div><p class="bodytext"><a id="h3879" class="expandingblock" title="Update a Table Partition" href="javascript:toggleBlock('3879')" target="_self"><img id="i3879" class="expandicon" src="arrowright.gif" alt="" border="0">Updating a Table Partition</a></p>
+<div id="d3879" class="expandingblock" style="display:none"><p class="bodytext">To update a table partition:</p>
+<ol class="listnumber"><li class="listnumber"><a id="h39206" class="jump" title="View a Table Partition" href="4453.htm#o3870" target="_self">View the appropriate table partition</a>.</li><li class="listnumber">Click the <strong class="buttons">Update</strong> button on the toolbar.  The <span class="formname">Table Partition Definition</span> form is displayed in Update mode.</li><li class="listnumber">Update the table partition details as required.</li><li class="listnumber">Click the <strong class="buttons">Save</strong> button on the toolbar.<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="listnote">The <span class="fieldname">From Date</span> and <span class="fieldname">To Date</span> in the <span class="fieldname">Desired</span> group, and<span class="fieldname"> From Entity Id</span> and <span class="fieldname">To Entity Id</span> in the <span class="fieldname">Desired</span> group values can only be updated if the <span class="fieldname">Actual Status</span> field is set to 'Dropped' and the <span class="fieldname">Desired Status</span> field is set to other than 'Dropped'.</p></td></tr></table>
+</li></ol><p class="moreinfo"><a id="h3871_3" class="jump" title="Table Partitioning and Scalability" href="3872.htm" target="_self">Need more information on table partitioning?</a></p>
+</div><p class="bodytext"><a id="h3881" class="expandingblock" title="Delete a Table Partition" href="javascript:toggleBlock('3881')" target="_self"><img id="i3881" class="expandicon" src="arrowright.gif" alt="" border="0">Deleting a Table Partition</a></p>
+<div id="d3881" class="expandingblock" style="display:none"><p class="bodytext">To delete a table partition:</p>
+<ol class="listnumber"><li class="listnumber"><a id="h39206_2" class="jump" title="View a Table Partition" href="4453.htm#o3870" target="_self">View the appropriate table partition</a>.</li><li class="listnumber">Click the <strong class="buttons">Delete</strong> button on the toolbar.</li><li class="listnumber">When prompted, click the <strong class="buttons">Yes</strong> button to confirm that the table partition is to be deleted.</li></ol><table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">The table partition can only be deleted if the <span class="fieldname">Actual Status</span> field is set to Dropped.</p></td></tr></table>
+<p class="moreinfo"><a id="h3871_4" class="jump" title="Table Partitioning and Scalability" href="3872.htm" target="_self">Need more information on table partitioning?</a></p>
+</div>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="3865.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="3884.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

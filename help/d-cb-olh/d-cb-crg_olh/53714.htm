@@ -1,0 +1,468 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> FILE_REGISTER_TRE_V </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "56191.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "53387.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7526');highlight('53714')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="56191.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="53387.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">FILE_REGISTER_TRE_V</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'FILE_REGISTER_TRE_V' (53714)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="unixoutputc">FILE_REGISTER_TRE_V</span> view defines the File Processing Register (FPR), which is managed by the File Processing Manager (FPM). </p>
+<p class="bodytext">File processing extracts files from or loads files into Singleview.</p>
+<p class="syntaxheading">Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="198"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="132"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="366"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">FILE_REGISTER_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of the file record.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">LAST_MODIFIED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Date-time when this record was last modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">OPERATOR_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of the user who last modified this record.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">DESCRIPTION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Description of the intended use for this file. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">FILENAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (255)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Registered name of the file being managed, excluding the path, used for identification.</p>
+<p class="tablebodytext">It can only be specified on insert.</p>
+<p class="tablebodytext">For batch extraction, it contains the target file name. For batch loading, it contains the original file name.</p>
+<p class="tablebodytext"><span class="unixoutputc">PHYSICAL_FILENAME</span> contains the file name, as stored on disk.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">FILE_TYPE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Type of file data group classification (for example, Payments).</p>
+<p class="tablebodytext">The value does not refer to the extension of the file.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">FILE_TYPE</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">FILE_FORMAT_TYPE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Type of file contents (for example, XML).</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">FILE_FORMAT_TYPE</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">FILE_PERMISSION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">UNIX file permission.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">FILE_GROUP</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (16)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">UNIX group associated with the file.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">FILE_PROCESSING_TYPE_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Type of file processing applied to this file.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">FILE_PROCESSING_TYPE</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">FILE_PROCESSING_STATUS_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Processing status for batch loading and extracting.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">FILE_PROCESSING_STATUS</span> reference type.</p>
+<p class="tablebodytext">On update operations, if <span class="unixoutputc">REGISTER_ONLY_IND_CODE</span> is undefined or set to FALSE and <span class="unixoutputc">FILE_PROCESSING_STATUS_CODE</span> is set to Purged, <span class="unixoutputc">PHYSICAL_FILENAME</span> is set to NULL, and the physical file (on disk) is deleted.  </p>
+<p class="tablebodytext">An error is raised if the file exists but cannot be deleted; no error is raised if the file does not exist.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">DIRECTORY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (2048)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Registered server location of the file being processed, used for identification.</p>
+<p class="tablebodytext">It can only be specified on insert.</p>
+<p class="tablebodytext">For batch extraction, it contains the output directory.  For batch loading, it contains the source directory.</p>
+<p class="tablebodytext"><span class="unixoutputc">PHYSICAL_DIRECTORY</span> contains the current location of the physical file on disk.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CHECKSUM_TYPE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (2)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Checksum characters supported by the control file.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">CHECKSUM_TYPE</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CHECKSUM</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">RAW (256)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Checksum characters matching the checksum type.</p>
+<p class="tablebodytext">It can only contain a value if <span class="unixoutputc">CHECKSUM_TYPE_CODE</span> is specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CONTROL_FILENAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Name of the control file, if applicable.</p>
+<p class="tablebodytext">If the control file exists and:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">CONTROL_FILENAME</span> is changed, the control file is renamed to the new name.  </li><li class="tablelistbullet"><span class="unixoutputc">CONTROL_FILENAME</span> is set to NULL, the control file is deleted.  </li></ul><p class="tablebodytext">The valid operations on the control file are specified by <span class="unixoutputc">CONTROL_FILE_OPERATION_CODE</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CONTROL_FILE_OPERATION_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext"><a id="h79002" class="jump" title="Pseudo-columns" href="7526.htm#o79001" target="_self">Pseudo-column</a></p>
+<p class="tablebodytext">Used for inserts and updates only</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">It is only applicable</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">If <span class="unixoutputc">REGISTER_ONLY_IND_CODE</span> is set to NULL (False).</li><li class="tablelistbullet">To operations being performed on the control file.</li></ul><p class="tablebodytext">Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">1 (Check File Not Exists): Checks that the control file specified in <span class="unixoutputc">CONTROL_FILENAME</span> does not exist in <span class="unixoutputc">PHYSICAL_DIRECTORY</span>.</li><li class="tablelistbullet">2 (Check File Exists): Checks that the control file specified in <span class="unixoutputc">CONTROL_FILENAME</span> exists in <span class="unixoutputc">PHYSICAL_DIRECTORY</span>.</li><li class="tablelistbullet">3 (Delete File): Deletes the control file specified in <span class="unixoutputc">CONTROL_FILENAME</span> from <span class="unixoutputc">PHYSICAL_DIRECTORY</span>, if the control file exists.</li><li class="tablelistbullet">4 (Create File With Checksum): Creates a control file in <span class="unixoutputc">PHYSICAL_DIRECTORY</span> with the name specified in <span class="unixoutputc">CONTROL_FILENAME</span>.  If <span class="unixoutputc">CHECKSUM_TYPE_CODE</span> is specified, it calculates the checksum and populates the control file.</li><li class="tablelistbullet">5 (Verify File With Checksum): Checks that the control file specified in <span class="unixoutputc">CONTROL_FILENAME</span> exists in <span class="unixoutputc">PHYSICAL_DIRECTORY</span>.  If <span class="unixoutputc">CHECKSUM_TYPE_CODE</span> is specified, it checks that the calculated checksum of <span class="unixoutputc">PHYSICAL_FILENAME</span> matches the content of the control file.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PHYSICAL_FILENAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Current name of the physical file on disk.</p>
+<p class="tablebodytext">If set to NULL, the file does not exist or has been deleted from the file system.</p>
+<p class="tablebodytext">It defaults to <span class="unixoutputc">FILENAME</span> on insert.</p>
+<p class="tablebodytext">A file can be renamed during different stages of processing; for example, it can be assigned a temporary name during a batch extraction, or renamed following a failed batch load.</p>
+<p class="tablebodytext">On update operations, if <span class="unixoutputc">REGISTER_ONLY_IND_CODE</span> is undefined or set to False, the combination of <span class="unixoutputc">PHYSICAL_DIRECTORY</span> and <span class="unixoutputc">PHYSICAL_FILENAME</span> is used to manage the physical file's path on disk as follows:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">If <span class="unixoutputc">PHYSICAL_FILENAME</span> is changed, the file is renamed. </li><li class="tablelistbullet">If <span class="unixoutputc">PHYSICAL_FILENAME</span> is set to NULL, the file is deleted.</li><li class="tablelistbullet">If both a rename and a move are initiated in the same update, the rename and the move operations are performed simultaneously.</li><li class="tablelistbullet">If a rename or a move operation results in another file being overwritten, an error is raised unless <span class="unixoutputc">FILE_CHECK_CODE</span> is set to 3.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PHYSICAL_DIRECTORY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (2048)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Current local-server location of the file.</p>
+<p class="tablebodytext">It must be set to NULL if <span class="unixoutputc">PHYSICAL_FILENAME</span> is set to NULL.</p>
+<p class="tablebodytext">A file can be moved during different stages of processing; for example, it can be moved to an error directory following a failed batch extraction or batch load.</p>
+<p class="tablebodytext">If the control file exists and <span class="unixoutputc">PHYSICAL_DIRECTORY</span> is changed, the control file is moved to the new <span class="unixoutputc">PHYSICAL_DIRECTORY</span>.</p>
+<p class="tablebodytext">If <span class="unixoutputc">REGISTER_ONLY_IND_CODE</span> is undefined or set to FALSE, the combination of <span class="unixoutputc">PHYSICAL_DIRECTORY</span> and <span class="unixoutputc">PHYSICAL_FILENAME</span> is used to manage the physical file's path. </p>
+<p class="tablebodytext">On insert and update operations, if it does not exist, it is created.</p>
+<p class="tablebodytext">If it is changed, the file is moved.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">ERROR_MESSAGE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of the error message.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">ERROR_MESSAGE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (4000)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Error message.</p>
+<p class="tablebodytext">It can only contain a value if <span class="unixoutputc">ERROR_MESSAGE_ID</span> is specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">INTERFACE_DEFN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of the interface definition used for this file, if applicable.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">INSTANCE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (9)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Singleview instance using this file.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">FILE_REGISTERED_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Date-time when the file was registered.</p>
+<p class="tablebodytext">It is used for data partitioning of this table.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PARTITION_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Customer partition number associated with this file.</p>
+<p class="tablebodytext">It forms part of the partitioning key for this table and is automatically set to the default partition for the instance on insert.</p>
+<p class="tablebodytext">The view only supports a single customer partition per instance. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">TASK_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of the task that processed this file, if applicable.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PROCESS_IDENTIFIER</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of the controlling process performing the file processing.</p>
+<p class="tablebodytext">It is set to:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">The UNIX process ID of the controlling process, if running in a single-instance configuration.</li><li class="tablelistbullet"><span class="unixoutputc">&lt;InstanceName&gt;:&lt;UNIX Process identifier&gt;</span>, if running in a multi-instance cluster.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">AUDIT_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Set to 1 (True) if auditing is enabled.</p>
+<p class="tablebodytext">If not 1, it must be set to NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">RECORDS_PROCESSED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Total number of records processed. </p>
+<p class="tablebodytext">The value is equal to the sum of <span class="unixoutputc">RECORDS_ERRORED</span>, <span class="unixoutputc">RECORDS_SKIPPED</span>, and <span class="unixoutputc">RECORDS_SUCCESSFUL</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">RECORDS_ERRORED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Total number of records that failed to be processed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">RECORDS_SKIPPED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Total number of records skipped during processing.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">RECORDS_SUCCESSFUL</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Total number of records successfully processed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PROCESSING_START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Date-time when the file started processing.</p>
+<p class="tablebodytext">It must be greater than or equal to <span class="unixoutputc">FILE_REGISTERED_DATE</span>.</p>
+<p class="tablebodytext">It is set when <span class="unixoutputc">FILE_PROCESSING_STATUS_CODE</span> is set to In Progress.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PROCESSING_END_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Date-time when the file finished processing.</p>
+<p class="tablebodytext">It is set when <span class="unixoutputc">FILE_PROCESSING_STATUS_CODE</span> is set to one of the following:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Errored</li><li class="tablelistbullet">Complete</li><li class="tablelistbullet">Archived.</li></ul><p class="tablebodytext">It can only have a value if:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">FILE_PROCESSING_STATUS</span> is not Registered or In Progress.</li><li class="tablelistbullet"><span class="unixoutputc">PROCESSING_START_DATE</span> is specified.</li><li class="tablelistbullet"><span class="unixoutputc">PROCESSING_END_DATE</span> is greater than or equal to <span class="unixoutputc">PROCESSING_START_DATE</span>.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PROCESSING_TIME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Total file processing time in seconds.</p>
+<p class="tablebodytext">It can only have a value if <span class="unixoutputc">PROCESSING_END_DATE</span> is specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">LAST_PROCESSED_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Date-time when the file was last processed by Singleview.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PRIOR_FILE_REGISTER_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">If set to :</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">FILE_REGISTER_ID</span>, it is used for a retry file operation.</li><li class="tablelistbullet">NULL, it is used for a normal file operation.</li></ul><p class="tablebodytext">If not NULL, duplicate entries can exist for the following combinations of values:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">FILENAME</span> and <span class="unixoutputc">FILE_TYPE_CODE</span></li><li class="tablelistbullet"><span class="unixoutputc">DIRECTORY</span>, <span class="unixoutputc">FILENAME</span>, and <span class="unixoutputc">INSTANCE</span>.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">REGISTER_ONLY_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext"><a id="h79002_2" class="jump" title="Pseudo-columns" href="7526.htm#o79001" target="_self">Pseudo-column</a></p>
+<p class="tablebodytext">Used for updates only</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">If set to 1 (True), all physical file management operations are disabled.</p>
+<p class="tablebodytext">If not 1, it must be set to NULL (False).</p>
+<p class="tablebodytext">If set to NULL (False), setting specific column values initiates file operations (for example, move, rename, delete, or control file operations).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">FILE_CHECK_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Pseudo-column</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Type of check to perform on <span class="unixoutputc">PHYSICAL_FILENAME</span> in <span class="unixoutputc">PHYSICAL_DIRECTORY</span>. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">1 (Check if the file does not exist)</li><li class="tablelistbullet">2 (Check if the file exists)</li><li class="tablelistbullet">3 (Delete file if it exists).</li></ul><p class="tablebodytext">The default value is 1. </p>
+<p class="tablebodytext">It is only applicable if <span class="unixoutputc">REGISTER_ONLY_IND_CODE</span> is set to NULL (False).</p>
+<p class="tablebodytext">All checks are performed before file operations are executed; an error is raised if a check fails and the operation is aborted.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">DUPLICATE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Pseudo-column</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">If set to 1 (True), duplicate entries are allowed for the following combination of entries:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">FILENAME</span> and <span class="unixoutputc">FILE_TYPE_CODE</span></li><li class="tablelistbullet"><span class="unixoutputc">DIRECTORY</span>, <span class="unixoutputc">FILENAME</span>, and <span class="unixoutputc">INSTANCE</span>.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">DIRECTORY_PERMISSIONS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (4)</p>
+<p class="tablebodytext">Pseudo-column</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Sets the directory's UNIX permissions when it is created.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="56191.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="53387.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

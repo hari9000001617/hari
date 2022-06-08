@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Functions </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "1730.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "1635.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+<script language="javascript" type="text/javascript" src="dhtml_popup.js"></script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('4501');highlight('1633')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="1730.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="1635.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Functions</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Functions' (1633)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">A function is a specialised variable that takes zero or more parameters as input and returns a single<strong class="specialbold"> </strong>value as output.  A function has the same basic properties as other variables (Name, Start Date, End Date, Description, Data type, Context, and Application Environment), but also includes properties specific to functions (for example, function definitions).</p>
+<ul class="listbullet"><li class="listbullet"><a id="h1634" class="jump" title="EPM Function Syntax" href="1635.htm" target="_self">Syntax</a></li><li class="listbullet"><a id="h1656" class="jump" title="Function Parameters" href="1657.htm" target="_self">Parameters</a></li><li class="listbullet"><a id="h5750" class="jump" title="Function Calls" href="5748.htm" target="_self">Calls</a>.</li></ul><p class="bodytext">In Convergent Billing, expressions and functions are similar, in that both process code to return a value, and both are evaluated by the EPM.  The difference between them is that a function is passed zero or more parameters.</p>
+<p class="bodytext">Functions in Convergent Billing are similar to functions in other programming languages as they can:</p>
+<ul class="listbullet"><li class="listbullet">Assign a name to a sequence of one or more expressions. </li><li class="listbullet">Be called and executed when required; for example, to validate a service number, a sequence of checks on an entered value must be performed.  Because the sequence of steps is required in more than one place, a function can be written to identify the sequence of steps and give the sequence of steps a name.  The function can then be called from multiple places within Convergent Billing.</li></ul><p class="bodytext">The following types of function are available.</p>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="642" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="108"><p class="tableheading">Type</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="534"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">EPM built-in</p>
+</td>
+<td style="border:1px solid #010101;" width="534"><p class="tablebodytext">Intrinsic part of EPM (for example, <span class="unixoutputc">abs()</span>).  EPM built-in functions are executed by the EPM parser within the current process.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">EPM callback</p>
+</td>
+<td style="border:1px solid #010101;" width="534"><p class="tablebodytext">EPM extensions built into various processes and TRE servers.  EPM callback functions are specific to particular server or client processes and execute locally within the specific process, if available in that process.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">User-defined</p>
+</td>
+<td style="border:1px solid #010101;" width="534"><p class="tablebodytext">Written using EPM (may be supplied with Convergent Billing or user created).  User-defined functions invoked by a remote function call can be called by external applications using the <a id="h1684" class="popup" title="TRE API" href="javascript:void(0)" onclick="togglePopup('1684','h1684')" target="_self">TRE Application Programming Interface (API)</a>.  </p>
+<div id="d1684" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1684')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">Transaction Engine (TRE) Application Programming Interface (API).  The API provides the interface between the TRE and a remote host in the form of TRE function calls for the following programming languages:</p>
+<ul class="listbullet"><li class="listbullet">C</li><li class="listbullet">Object Pascal</li><li class="listbullet">Perl</li><li class="listbullet">Java.</li></ul><p class="bodytext">Context:  Convergent Billing, Process Engine</p>
+<p class="bodytext">See also <a id="h1074" class="glossaryitemjump" title="Transaction Engine (TRE)" href="14849.htm#o954" target="_self">Transaction Engine</a>.</p>
+</div></td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">Functions can be defined to execute locally or remotely:</p>
+<ul class="listbullet"><li class="listbullet">Local execution occurs in the context of, or local to, the function caller (for example, the client or a TRE server).  Remote execution takes place outside the context of, or remote from, the function caller.  </li><li class="listbullet">Remote execution occurs in a server of the TRE that is advertising the Tuxedo service associated with the function.  </li></ul><p class="bodytext">For more information about functions and function definition, refer to the <span class="referrals"><a id="h13666" class="jump" title="Configuration Fundamentals Guide for Singleview Convergent Billing" href="5533.htm" target="_self">Configuration Fundamentals Guide for Singleview Convergent Billing</a></span>.</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="1730.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="1635.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

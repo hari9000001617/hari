@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> ProductInstanceUpdate&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "58829.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "13683.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('13682')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="58829.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="13683.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">ProductInstanceUpdate&amp;()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'ProductInstanceUpdate&amp;()' (13682)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<table class="tableintopic" width="546" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<td class="tableheading" width="276"><p class="tableheading">Interface 1</p>
+</td>
+<td width="42"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td class="tableheading" width="228"><p class="tableheading">Interface 2</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="276"><pre class="unixinputp">ProductInstanceUpdate&amp;(    ProductInstanceId&amp;,    OldEffectiveDate~,    var&nbsp;LastModified~,    const&nbsp;FieldNames$[],    const StringFieldValues$[],    const IntegerFieldValues&amp;[],    const RealFieldValues#[],    const DateFieldValues~[])</pre>
+</td>
+<td width="42"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td width="228"><pre class="unixinputp">ProductInstanceUpdate&amp;(    ProductInstanceId&amp;,    OldEffectiveDate~,    var&nbsp;LastModified~,    const&nbsp;FieldNames$[],    const&nbsp;FieldValues?[])</pre>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Updates a product instance record.</p>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="288" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Method</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Local</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="185"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="511"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="185"><p class="tablebodytext"><span class="unixoutputc">ProductInstanceId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="511"><p class="tablebodytext">In:  ID of the product instance to be updated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="185"><p class="tablebodytext"><span class="unixoutputc">OldEffectiveDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="511"><p class="tablebodytext">In:  Effective date-time that identifies the product instance to be updated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="185"><p class="tablebodytext"><span class="unixoutputc">LastModified~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="511"><p class="tablebodytext">In:  Last modified date-time of the product instance to be updated.</p>
+<p class="tablebodytext">Out:  Last modified date-time of the updated product instance.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="185"><p class="tablebodytext"><span class="unixoutputc">FieldNames$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="511"><p class="tablebodytext">In:  List of fields to be updated.</p>
+<p class="tablebodytext">Specify string fields first, followed by integer, real, and date fields.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="185"><p class="tablebodytext"><span class="unixoutputc">StringFieldValues$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="511"><p class="tablebodytext">In:  Values of string fields to update.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="185"><p class="tablebodytext"><span class="unixoutputc">IntegerFieldValues&amp;[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="511"><p class="tablebodytext">In:  Values of integer fields to update.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="185"><p class="tablebodytext"><span class="unixoutputc">RealFieldValues#[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="511"><p class="tablebodytext">In:  Values of real fields to update.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="185"><p class="tablebodytext"><span class="unixoutputc">DateFieldValues~[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="511"><p class="tablebodytext">In:  Values of date fields to update.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="185"><p class="tablebodytext"><span class="unixoutputc">FieldValues?[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="511"><p class="tablebodytext">In:  Array of unknown type values.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">1 (TRUE) if successful; otherwise, an error is raised.</p>
+<p class="syntaxheading">Remarks</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">To use the supplied product offer, the effective user must have at least view security group access level for the group associated with the product offer.</p></td></tr></table>
+<p class="bodytext">The names of the fields to be updated are passed in the array <span class="unixoutputc">FieldNames$[]</span> and their values are passed in the corresponding typed value arrays or the unknown value array, depending on the interface used.</p>
+<p class="bodytext">If the status of the specified product instance is to be updated, the function ensures that the status change is valid.  The function fails if a merge operation is triggered, or the status code has any of the following conditions:</p>
+<ul class="listbullet"><li class="listbullet">Is PRODUCT_CREATION, CANCELLED, MOVED, or UPGRADED.</li><li class="listbullet">Has a new status of PRODUCT_CREATION.</li><li class="listbullet">Is to be updated to ACTIVE and an upgrade or move operation is in progress.</li><li class="listbullet">Is to be updated to CANCELLED, and future instances of this product instance exist with a status code other than CANCELLED, MOVED, or UPGRADED.</li><li class="listbullet">Is set to UPGRADED or MOVED, and incomplete optional services or equipment items exist (the optional services and equipment must be completed first).</li></ul><p class="bodytext">If the status of the specified product instance is to be updated, the status codes of associated entities are updated if necessary.  The new status of each associated entity is dependent on the new status of the product instance and the old status of the associated entity according to the rules in the following table.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Status Dependencies</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="174"><p class="tableheading">New Status of Product Instance</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="258"><p class="tableheading">Old Status of Associated Entity</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="264"><p class="tableheading">New status of Associated Entity</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" rowspan="3" width="174"><p class="tablebodytext">ACTIVE</p>
+</td>
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext">PROVISIONED</p>
+</td>
+<td style="border:1px solid #010101;" rowspan="2" width="264"><p class="tablebodytext">ACTIVE</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext">Same as old status of product instance</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext">Different from old status of product instance</p>
+</td>
+<td style="border:1px solid #010101;" width="264"><p class="tablebodytext">Unchanged</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">CANCELLED</p>
+</td>
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext">Any status</p>
+</td>
+<td style="border:1px solid #010101;" width="264"><p class="tablebodytext">CANCELLED</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" rowspan="2" width="174"><p class="tablebodytext">MOVED</p>
+</td>
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext">CANCELLED</p>
+</td>
+<td style="border:1px solid #010101;" width="264"><p class="tablebodytext">Unchanged</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext">Any status other than CANCELLED</p>
+</td>
+<td style="border:1px solid #010101;" width="264"><p class="tablebodytext">MOVED</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" rowspan="2" width="174"><p class="tablebodytext">UPGRADED</p>
+</td>
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext">CANCELLED</p>
+</td>
+<td style="border:1px solid #010101;" width="264"><p class="tablebodytext">Unchanged</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext">Any status other than CANCELLED</p>
+</td>
+<td style="border:1px solid #010101;" width="264"><p class="tablebodytext">UPGRADED</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" rowspan="3" width="174"><p class="tablebodytext">Any other status</p>
+</td>
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext">Same as old status of product instance</p>
+</td>
+<td style="border:1px solid #010101;" width="264"><p class="tablebodytext">New status of product instance</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext">ACTIVE</p>
+</td>
+<td style="border:1px solid #010101;" width="264"><p class="tablebodytext">PROVISIONED</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext">Different from old status of product instance</p>
+</td>
+<td style="border:1px solid #010101;" width="264"><p class="tablebodytext">Unchanged</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">If the status of the specified product instance is updated, the:</p>
+<ul class="listbullet"><li class="listbullet">Pending upgrade operations are completed, if appropriate.</li><li class="listbullet">Active date of each associated service is re-derived.</li><li class="listbullet">Status of each associated equipment item is re-derived (if updated from or to a value of CANCELLED, UPGRADED, or MOVED)</li></ul><p class="bodytext">If the status of the specified product instance is to be updated to a value of MOVED and the product instance contains cancelled services, the cancelled services are not moved with the product and are not affected by the move.</p>
+<p class="bodytext">If the status of a product instance is set to CANCELLED, any incomplete optional services and equipment items are deleted. All associated entitlements are expired from the effective start date of the cancellation.</p>
+<p class="bodytext">If the product instance is an instance of a service-specific companion product and the <span class="unixoutputc">SERVICE_ID</span> or <span class="unixoutputc">SERVICE_NAME</span> pseudo-column was specified; the product instance is updated and is associated with the specified service if not already associated (or, if an undefined value was supplied for <span class="unixoutputc">SERVICE_ID</span> or <span class="unixoutputc">SERVICE_NAME</span>, the product instance is disassociated from any service). The base product instance is also flagged as being incomplete.</p>
+<p class="bodytext">If the base product instance has a status of PRODUCT_CREATION and if a defined value was supplied for <span class="unixoutputc">SERVICE_ID</span> or <span class="unixoutputc">SERVICE_NAME</span>, the function creates service derived attributes and service charge categories as required by the definition of the companion product. If the <span class="unixoutputc">SERVICE_ID</span> or <span class="unixoutputc">SERVICE_NAME</span> pseudo-column is supplied for any other type of product instance this function raises an error.</p>
+<p class="bodytext">A product offer is available if:</p>
+<ul class="listbullet"><li class="listbullet">Its availability start date is not later than the effective start date for the product instance.</li><li class="listbullet">A value of 1 is not specified for <span class="unixoutputc">IGNORE_OFFER_END_DATE_IND_CODE</span>, or its availability end date is not later than the effective start date for the product instance.</li></ul><p class="bodytext">If the product instance is a base product instance that is assigned a product offer, and if the:</p>
+<ul class="listbullet"><li class="listbullet">Product instance is to be assigned a different product offer that is available and compatible, this function flags the product instance as requiring re-completion.  </li><li class="listbullet">New product offer is not available, or is incompatible with the base product, this function raises an error. </li></ul><p class="bodytext">If the product instance is a companion product instance and its source product offer is to be changed, the function checks that:</p>
+<ul class="listbullet"><li class="listbullet">The new source product offer is available.</li><li class="listbullet">The new source product offer contains the companion product.  </li><li class="listbullet">The associated base product instance is assigned a product offer.</li></ul><p class="bodytext">It is not permissible to update a companion product that is associated with a contract using this function.</p>
+<p class="bodytext"><span class="unixoutputc">biProductInstancePurge&amp; </span>is called on completion of the function to purge cached product instance details from the server cache, unless the <span class="unixoutputc">DO_NOT_PURGE_IND_CODE </span>field is set to 1 by the caller.</p>
+<p class="bodytext">This function supports product instance history records with sub-day granularity so the <span class="unixoutputc">OldEffectiveDate~</span>, <span class="unixoutputc">EFFECTIVE_START_DATE</span>,<span class="unixoutputc"> </span>and <span class="unixoutputc">EFFECTIVE_END_DATE </span>fields can specify a time component.</p>
+<p class="bodytext">The effective user must have update security group access level for the customer associated with the record manipulated by this function call.</p>
+<p class="bodytext">The customer security group access level required is determined by the effective start date of the product instance or the effective date supplied by the active user.  If the effective date of the update is less than the current date (00:00:00 timestamp), direct update security group access level is required. <span class="unixoutputc">GROUP_ACCESS_TRE_V</span> view lists security group access level values. </p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="58829.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="13683.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

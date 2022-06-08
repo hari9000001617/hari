@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Product Definition Search Form </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "60293.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "3539.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+<script language="javascript" type="text/javascript" src="dhtml_popup.js"></script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('1732');highlight('60294')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="60293.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="3539.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Product Definition Search Form</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Product Definition Search Form' (60294)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="formname">Product Definition Search</span> form is used to search for and list one or more <a id="h60291" class="popup" title="Product Definition" href="javascript:void(0)" onclick="togglePopup('60291','h60291')" target="_self">product definitions</a>, using a specific field, criteria, method, and date.</p>
+<div id="d60291" class="clickpopup" style="display:none"><a href="javascript:hidePopup('60291')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">Combination of product components that form a specific type of product.  Individual product instances based on the product type or definition can be created.</p>
+<p class="bodytext">Context:  Convergent Billing, Customer Management, Configuration Studio</p>
+<p class="bodytext">See also <a id="h1088" class="glossaryitemjump" title="Base Product" href="14831.htm#o350" target="_self">Base Product</a>, <a id="h1183" class="glossaryitemjump" title="Product" href="14845.htm#o779" target="_self">Product</a>, <a id="h1354" class="glossaryitemjump" title="Product Component" href="14845.htm#o780" target="_self">Product Component</a>, and <a id="h60126" class="glossaryitemjump" title="Product Offer" href="14845.htm#o60113" target="_self">Product Offer</a>.</p>
+</div><p class="bodytext">The lower part of the form is used to list each of the product definitions returned by the search that matches the specified criteria.</p>
+<p class="bodytext">Multiple instances of the <span class="formname">Product Definition</span> form can be displayed by clearing the <span class="fieldname"><a id="h37668" class="popup" title="Reuse Form?" href="javascript:void(0)" onclick="togglePopup('37668','h37668')" target="_self">Reuse form?</a></span> check box.</p>
+<div id="d37668" class="clickpopup" style="display:none"><a href="javascript:hidePopup('37668')"><img src="close.gif" align="right" alt="Close" border="0"></a><table class="cautionstyle" width="100%"><tr><td><p class="caution">Caution:</p><p class="caution">If multiple instances of the form are required for display (for example, to access details for several account types), do not select the <span class="fieldname">Reuse form?</span> check box.</p></td></tr></table>
+<p class="bodytext">If selected, the <span class="fieldname">Reuse form?</span> check box overrides display of information in a new form, and details are displayed in the existing form.</p>
+</div><p class="bodytext"><strong class="specialbold">Associated Actions</strong></p>
+<p class="bodytext"><a id="h3496" class="expandingblock" title="View a Product Definition" href="javascript:toggleBlock('3496')" target="_self"><img id="i3496" class="expandicon" src="arrowright.gif" alt="" border="0">Viewing a Product Definition</a></p>
+<div id="d3496" class="expandingblock" style="display:none"><p class="bodytext">To view a product definition:</p>
+<ol class="listnumber"><li class="listnumber">Select the <strong class="menuoptions">Maintenance</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">Products</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">Product Definition</strong> option.  The <span class="formname">Product Definition Search</span> form is displayed.</li><li class="listnumber">Enter or select the appropriate search criteria and search method.</li><li class="listnumber">Click the <strong class="buttons">Search</strong> button.  A list of product definitions matching the specified criteria is displayed.</li><li class="listnumber">Select the appropriate product definition and click the <strong class="buttons">Detail...</strong> button, or double-click the appropriate product definition.  The <span class="formname">Product Definition</span> form is displayed in View Only mode.</li></ol><p class="moreinfo"><a id="h2424" class="jump" title="Products" href="58148.htm" target="_self">Need more information on products?</a></p>
+</div><p class="bodytext"><a id="h60343" class="expandingblock" title="Define a Base Product" href="javascript:toggleBlock('60343')" target="_self"><img id="i60343" class="expandicon" src="arrowright.gif" alt="" border="0">Defining a Base Product</a></p>
+<div id="d60343" class="expandingblock" style="display:none">To define a base product:<ol class="listnumber"><li class="listnumber">Select the <strong class="menuoptions">Maintenance</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">Products</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">Product Definition</strong> option.  The <span class="formname">Product Definition Search</span> form is displayed.</li><li class="listnumber">Click the <strong class="buttons">New...</strong> button.  The <span class="formname">Product Definition</span> form is displayed in Insert mode.</li><li class="listnumber">Complete the appropriate data entry fields in the upper part of the form.<table width="100%" class="tipstyle"><tr><td><p class="tip">Tip:</p><p class="listtip">If a required component was not defined while specifying the product definition, define it and then return to creating the product definition.</p></td></tr></table>
+</li><li class="listnumber">Complete the appropriate data entry fields on the <span class="fieldname">Settings</span> tab.</li><li class="listnumber">Select each of the other tabs in turn and complete the data entry fields or table rows as required.<p class="listcontinue"><a id="h3500" class="jump" title="Specify Service Types and Equipment Types" href="4319.htm#o3501" target="_self">Specifying Service Types and Equipment Types</a></p>
+<p class="listcontinue"><a id="h3502" class="jump" title="Specify Tariffs" href="4319.htm#o60371" target="_self">Specifying Tariffs</a></p>
+<p class="listcontinue"><a id="h3504" class="jump" title="Specify Subtotals" href="4319.htm#o3505" target="_self">Specifying Subtotals</a></p>
+<p class="listcontinue"><a id="h3506" class="jump" title="Specify Compatible Products" href="4319.htm#o58174" target="_self">Specifying Compatible Products</a></p>
+<p class="listcontinue"><a id="h3510" class="jump" title="Specify Facility Groups" href="4319.htm#o59752" target="_self">Specifying Facility Groups</a></p>
+<p class="listcontinue"><a id="h3512" class="jump" title="Specify Derived Attribute Tables (List)" href="4319.htm#o3513" target="_self">Specifying List Types</a></p>
+</li><li class="listnumber">Click the <strong class="buttons">Save</strong> button on the toolbar.</li><li class="listnumber">Perform the necessary <a id="h3514" class="jump" title="Post-product Definition Tasks" href="4319.htm#o58158" target="_self">post-product definition tasks</a>.</li></ol><p class="moreinfo"><a id="h2424_2" class="jump" title="Products" href="58148.htm" target="_self">Need more information on products?</a></p>
+</div><p class="bodytext"><a id="h60344" class="expandingblock" title="Define a Companion Product" href="javascript:toggleBlock('60344')" target="_self"><img id="i60344" class="expandicon" src="arrowright.gif" alt="" border="0">Defining a Companion Product</a></p>
+<div id="d60344" class="expandingblock" style="display:none">To define a companion product:<ol class="listnumber"><li class="listnumber">Select the <strong class="menuoptions">Maintenance</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">Products</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">Product Definition</strong> option.  The <span class="formname">Product Definition Search</span> form is displayed.</li><li class="listnumber">Click the <strong class="buttons">New...</strong> button.  The <span class="formname">Product Definition</span> form is displayed in Insert mode.</li><li class="listnumber">In the upper part of the form, enter the name of the companion product, its description, and the period for which it is to be in effect.</li><li class="listnumber">Complete the appropriate fields on the <span class="fieldname">Settings</span> tab, and ensure that the <span class="fieldname">Companion Product?</span> option is selected.</li><li class="listnumber">Complete the appropriate fields on the <span class="fieldname"><a id="h3502_2" class="jump" title="Specify Tariffs" href="4319.htm#o60371" target="_self">Tariffs</a></span><a id="h3502_3" class="jump" title="Specify Tariffs" href="4319.htm#o60371" target="_self"> tab</a>, <span class="fieldname"><a id="h3504_2" class="jump" title="Specify Subtotals" href="4319.htm#o3505" target="_self">Subtotals</a></span><a id="h3504_3" class="jump" title="Specify Subtotals" href="4319.htm#o3505" target="_self"> tab</a>, and optionally, the <span class="fieldname"><a id="h3506_2" class="jump" title="Specify Compatible Products" href="4319.htm#o58174" target="_self">Compatibility</a></span><a id="h3506_3" class="jump" title="Specify Compatible Products" href="4319.htm#o58174" target="_self"> tab</a>, <span class="fieldname"><a id="h3512_2" class="jump" title="Specify Derived Attribute Tables (List)" href="4319.htm#o3513" target="_self">Derived Attribute Tables (Lists)</a></span><a id="h3512_3" class="jump" title="Specify Derived Attribute Tables (List)" href="4319.htm#o3513" target="_self"> tab</a>, <span class="fieldname"><a id="h58630" class="expandingblock" title="Offer Tables Tab" href="javascript:toggleBlock('58630')" target="_self"><img id="i58630" class="expandicon" src="arrowright.gif" alt="" border="0">Offer Tables</a></span><a id="h58630_2" class="expandingblock" title="Offer Tables Tab" href="javascript:toggleBlock('58630_2')" target="_self"><img id="i58630_2" class="expandicon" src="arrowright.gif" alt="" border="0"> tab</a>, and <span class="fieldname"><a id="h58928" class="jump" title="Create/Modify the Entitlement associated with a Companion Product" href="58804.htm#o58807" target="_self">Entitlement Types</a></span><a id="h58928_2" class="jump" title="Create/Modify the Entitlement associated with a Companion Product" href="58804.htm#o58807" target="_self"> tab</a>.<div id="d58630" class="expandingblock" style="display:none"><p class="bodytext">The <span class="fieldname">Offer Tables</span> tab defines the derived attribute tables used to store pricing data for companion products associated with product offers. A derived attribute table may be shared by more than one companion product. </p>
+<p class="bodytext">The tab is displayed only if the <span class="fieldname">Companion Product</span> check box is selected.</p>
+</div></li><li class="listnumber">Click the <strong class="buttons">Save</strong> button on the toolbar.</li><li class="listnumber">Perform the appropriate <a id="h3514_2" class="jump" title="Post-product Definition Tasks" href="4319.htm#o58158" target="_self">post-product definition tasks</a>.</li></ol><p class="moreinfo"><a id="h2424_3" class="jump" title="Products" href="58148.htm" target="_self">Need more information on products?</a></p>
+</div><p class="bodytext"><a id="h3520" class="expandingblock" title="Update a Product Definition" href="javascript:toggleBlock('3520')" target="_self"><img id="i3520" class="expandicon" src="arrowright.gif" alt="" border="0">Updating a Product Definition</a></p>
+<div id="d3520" class="expandingblock" style="display:none"><table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">Information in a product definition cannot be changed if it will invalidate product instances based on that product definition.  </p></td></tr></table>
+<p class="bodytext"><a id="h3522" class="popup" title="Effect of Updating Product Components on Existing Product Instances" href="javascript:void(0)" onclick="togglePopup('3522','h3522')" target="_self">Effect of Updating Product Components on Product Instances</a></p>
+<div id="d3522" class="clickpopup" style="display:none"><a href="javascript:hidePopup('3522')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="636" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<td class="tableheading" width="157"><p class="tableheading">Product Component</p>
+</td>
+<td class="tableheading" width="479"><p class="tableheading">Effect of Update on Product Instances</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="157"><p class="tablebodytext">Tariffs</p>
+</td>
+<td width="479"><p class="tablebodytext">Available immediately.  Used next time events are rated.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">Example of how <a id="h3524" class="popup" title="Limitations when Updating a Product Definition" href="javascript:void(0)" onclick="togglePopup('3524','h3524')" target="_self">changing a tariff</a> can adversely affect charges.  </p></td></tr></table>
+<div id="d3524" class="clickpopup" style="display:none"><a href="javascript:hidePopup('3524')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">When updating a product definition, the following changes cannot be made:</p>
+<ul class="listbullet"><li class="listbullet">Removing service or equipment types</li><li class="listbullet">Increasing service or equipment type minimum values</li><li class="listbullet">Decreasing service or equipment type maximum values</li><li class="listbullet">Adding new service or equipment types to product definitions with a minimum<br>value &gt; 0.</li><li class="listbullet"><a id="h3526" class="popup" title="Change a Tariff" href="javascript:void(0)" onclick="togglePopup('3526','h3526')" target="_self">Changing a tariff</a> outside of the start/end date of the bill period.<div id="d3526" class="clickpopup" style="display:none"><a href="javascript:hidePopup('3526')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">Changes to a tariff should be restricted to the start or end of a bill period, ensuring that charges are billed correctly.  The following is an example of when a tariff is changed in the middle of a bill cycle. </p>
+<ul class="listbullet"><li class="listbullet">Product 1 is effective 01/01/00 to 15/01/02 and contains Tariff 1.</li><li class="listbullet">Product 1 is effective 16/01/01 to end of time and contains Tariff 2.</li></ul><p class="bodytext">If the product is sold to a customer on 01/01/01 and the bill run is scheduled for 30/01/01, the charges for the bill run are based on Tariff 2.  The bill run picks up the tariff that is effective at the time of the bill run and bases charges for the billing period on that tariff.</p>
+</div></li></ul></div></td>
+</tr>
+<tr align="left" valign="top">
+<td width="157"><p class="tablebodytext">Charge Categories</p>
+</td>
+<td width="479"><p class="tablebodytext">Existing charge categories available immediately.</p>
+<p class="tablebodytext">Additional charge categories only available if the server process to update charge categories is run.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="157"><p class="tablebodytext">Subtotals</p>
+</td>
+<td width="479"><p class="tablebodytext">Available immediately.  Used next time rated events are aggregated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="157"><p class="tablebodytext">Service Types</p>
+</td>
+<td width="479"><p class="tablebodytext">Updating not permitted if product instances exist.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="157"><p class="tablebodytext">Equipment Types</p>
+</td>
+<td width="479"><p class="tablebodytext">Updating not permitted if product instances exist.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="157"><p class="tablebodytext">Facility Groups</p>
+</td>
+<td width="479"><p class="tablebodytext">Available to existing product instances, but only when product instance is itself updated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="157"><p class="tablebodytext">Facilities</p>
+</td>
+<td width="479"><p class="tablebodytext">Available immediately in facility groups if the facility is used in a product instance.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="157"><p class="tablebodytext">Derived Attributes</p>
+</td>
+<td width="479"><p class="tablebodytext">Existing derived attributes available immediately.</p>
+<p class="tablebodytext">Additional derived attributes only available if the process to update lists is run.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="157"><p class="tablebodytext">Product Group</p>
+</td>
+<td width="479"><p class="tablebodytext">None.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="157"><p class="tablebodytext">Product Icon</p>
+</td>
+<td width="479"><p class="tablebodytext">Available immediately.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="157"><p class="tablebodytext">Product Compatibility</p>
+</td>
+<td width="479"><p class="tablebodytext">None.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="157"><p class="tablebodytext">Payment Items</p>
+</td>
+<td width="479"><p class="tablebodytext">None.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+</div><p class="bodytext"><a id="h3524_2" class="popup" title="Limitations when Updating a Product Definition" href="javascript:void(0)" onclick="togglePopup('3524','h3524_2')" target="_self">Limitations when updating a product definition</a></p>
+<p class="bodytext">To update a product definition:</p>
+<ol class="listnumber"><li class="listnumber">Define any new product components, or modify product components required in the updated product.</li><li class="listnumber"><a id="h39195" class="jump" title="View a Product Definition" href="4319.htm#o3497" target="_self">View the appropriate product definition</a>.</li><li class="listnumber">Click the <strong class="buttons">Update</strong> button on the toolbar.  The <span class="formname">Product Definition</span> form is displayed in Update mode.</li><li class="listnumber">Update the product definition details as required.</li><li class="listnumber">Click the <strong class="buttons">Save</strong> button on the toolbar.</li><li class="listnumber">Notify the system or billing administrator that a product has been updated.  For the updated product to be available in the next rating/billing operation, some server tasks must be performed.</li></ol><p class="moreinfo"><a id="h2424_4" class="jump" title="Products" href="58148.htm" target="_self">Need more information on products?</a></p>
+</div><p class="bodytext"><a id="h3530" class="expandingblock" title="Delete a Product Definition" href="javascript:toggleBlock('3530')" target="_self"><img id="i3530" class="expandicon" src="arrowright.gif" alt="" border="0">Deleting a Product Definition</a></p>
+<div id="d3530" class="expandingblock" style="display:none"><table class="cautionstyle" width="100%"><tr><td><p class="caution">Caution:</p><p class="caution">Deleting a product definition invalidates product instances based on that product definition.</p></td></tr></table>
+<p class="bodytext">To delete a product definition:</p>
+<ol class="listnumber"><li class="listnumber"><a id="h39195_2" class="jump" title="View a Product Definition" href="4319.htm#o3497" target="_self">View the appropriate product definition</a>.</li><li class="listnumber">Click the <strong class="buttons">Delete</strong> button of the toolbar.</li><li class="listnumber">When prompted, click the <strong class="buttons">Yes</strong> button to confirm that the product definition is to be deleted.</li></ol><p class="moreinfo"><a id="h2424_5" class="jump" title="Products" href="58148.htm" target="_self">Need more information on products?</a></p>
+</div>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="60293.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="3539.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

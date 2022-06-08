@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Direct Variables </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "1686.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "4569.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('4501');highlight('1698')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="1686.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="4569.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Direct Variables</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Direct Variables' (1698)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">A direct variable is a variable mapped to data held in a database table or to a column in a database view.  The value of the variable is determined by the context in which the variable is used. For example, each field of a normalised event record is mapped to a direct variable.</p>
+<p class="bodytext">During normalisation of event data, each data field of a normalised event record is stored as a direct variable.  The variables into which the field values are mapped are defined specifically for the type of record being normalised.  Product Administrators do not need to know what these mappings are, but to know what direct variables are available.</p>
+<p class="bodytext">For example, to define a usage tariff, call data information (for example, calling party ID, called party ID, and call duration) needs to be referenced.  Data information is stored in direct variables (for example, <span class="unixoutputc">APartyId$</span>, <span class="unixoutputc">BPartyId$</span>, and <span class="unixoutputc">Duration#</span>) when a call data record is normalised and is therefore available directly.</p>
+<p class="bodytext">Direct variables therefore allow a field in a database record to be referenced, and the referenced value used in expressions.  Direct variables can also be used as the basis for other variable types.</p>
+<p class="bodytext">If required, additional direct variables can be defined, which requires knowledge of SQL and the names and structure of the Convergent Billing database tables.</p>
+<p class="bodytext">Like other variables, direct variables can be referenced in tariffs and subtotals by including the name of the variable.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">Direct variables are always defined with an application environment of Data Entry.</p></td></tr></table>
+<p class="bodytext">Direct variables created during normalisation should usually cover most requirements.  However, if required, a direct variable can be defined.  This requires knowledge of the available Convergent Billing database tables and knowledge of SQL.</p>
+<p class="bodytext">Specifically, a field/column in a database view needs to be identified by specifying a view name, column name, and column number.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">The direct variable name must be unique for the date range of the direct variable when compared to all other variables (for example, functions, derived attributes, subtotals, tariffs, and direct variables).  The rules for naming are:</p><ul class="notelistbullet"><li class="notelistbullet">For a scalar data type, the name and data type combination must be unique when compared to other variables.</li><li class="notelistbullet">For a hash type, the name must be unique when compared to other hash type variables.</li><li class="notelistbullet">For an array type, the name must be unique when compared to other array type variables.</li></td></tr></table></ul>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o50841"></a><h3 class="heading3">Direct Variables Associated with Attribute Types</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Direct Variables Associated with Attribute Types' (50841)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Direct variables associated with attribute types are configured on the <span class="fieldname">Integration</span> tab of the<span class="formname"> <a id="h1992" class="jump" title="Attribute Type Definition Form" href="1993.htm" target="_self">Attribute Type Definition form</a></span>.  The <span class="fieldname">Variable Name</span> field defines a direct variable that can be used to reference a <a id="h50133" class="jump" title="Derived Non-Stored Attributes" href="40866.htm#o50079" target="_self">derived non-stored attribute</a> value in entity validation expressions.  Completing the <span class="fieldname">Variable Name</span> field automatically creates a direct variable with:</p>
+<ul class="listbullet"><li class="listbullet">An application environment of Data Entry</li><li class="listbullet">A context of Any</li><li class="listbullet">Associated view names as appropriate for the entity.</li></ul><p class="bodytext">Direct variables associated with attribute types can be viewed on the <span class="formname"><a id="h3969" class="jump" title="Variable Definition Form" href="3970.htm" target="_self">Variable Definition form</a></span>, but cannot be updated.  They have no stored value, so the <span class="fieldname">Column Name</span><span class="formname"> </span>field is blank for these variables.</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="1686.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="4569.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

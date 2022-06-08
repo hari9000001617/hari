@@ -1,0 +1,613 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Equipment Variables (EQUIPMENT_HISTORY) </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "6306.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "76106.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('58085');highlight('6305')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="6306.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="76106.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Equipment Variables (EQUIPMENT_HISTORY)</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Equipment Variables (EQUIPMENT_HISTORY)' (6305)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The following table lists the entity validation variables associated with the <span class="unixoutputc">EQUIPMENT_HISTORY</span> view.</p>
+<p class="syntaxheading">Variable Definitions</p>
+<table class="tableintopic" width="702" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="234"><p class="tableheading">Variable</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="132"><p class="tableheading">View Field</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="96"><p class="tableheading">Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="240"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiAddressCity$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiAddressCity$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ADDRESS_CITY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">City of the address where the equipment is located.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiAddressCountry$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiAddressCountry$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ADDRESS_COUNTRY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Country of the address where the equipment is located.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiAddressGeneral1$ - evEquiAddressGeneral10$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiAddressGeneral1$ - evOldEquiAddressGeneral10$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ADDRESS_</span><br><span class="unixoutputc">GENERAL_1 - ADDRESS_</span><br><span class="unixoutputc">GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">General fields 1 - 10.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiAddressGeocode$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiAddressGeocode$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ADDRESS_GEOCODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Optional encoding of the geographical location of the equipment address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiAddressLine1$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiAddressLine1$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ADDRESS_LINE_1</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Line 1 of the address of the equipment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiAddressLine2$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiAddressLine2$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ADDRESS_LINE_2</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Line 2 of the address of the equipment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiAddressPostCode$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiAddressPostCode$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ADDRESS_POST_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Post code of the address where the equipment is located.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiAddressSuburb$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiAddressSuburb$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ADDRESS_SUBURB</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Suburb of the address where the equipment is located.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiAddressXPos#</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiAddressXPos#</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ADDRESS_XPOS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Real</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Numeric representation of the location of the address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiAddressYPos#</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiAddressYPos#</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ADDRESS_YPOS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Real</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Numeric representation of the location of the address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiAddressZPos#</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiAddressZPos#</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ADDRESS_ZPOS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Real</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Numeric representation of the location of the address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiAdmKey$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiAdmKey$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ADM_KEY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (20)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Administration key for the item of equipment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiComments$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiComments$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">COMMENTS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Comments about the item of equipment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiCustPartitionNr&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_</span><br><span class="unixoutputc">PARTITION_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">If specified with a valid customer partition number for an insert, the equipment ID is derived using the sequence for that partition.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiDecodedNetworkAddr&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiDecodedNetworkAddr&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">DECODED_</span><br><span class="unixoutputc">NETWORK_ADDRESS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">If the equipment type has a To Network Address, it holds its decoded numeric value.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiDecodedSerialNo$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiDecodedSerialNo$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">DECODED_SERIAL_</span><br><span class="unixoutputc">NUMBER</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (64)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">If the equipment type has a serial number decode expression defined, it stores its decoded numeric value.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiDecodedToNetworkAddr&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiDecodedToNetwork</span><br><span class="unixoutputc">Addr&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">DECODED_TO_</span><br><span class="unixoutputc">NETWORK_ADDRESS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">If the equipment type has a network address decode expression defined for the To Network Address, and the To Network Address is not null, it stores its decoded numeric value.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiDecodedToSerialNo$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiDecodedToSerialNo$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">DECODED_TO_</span><br><span class="unixoutputc">SERIAL_NUMBER</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (64)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">If the equipment type has a serial number decode expression defined for the To Serial Number, this variable stores its decoded numeric value.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">EvEquiDisableInitialSearch&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">DISABLE_</span><br><span class="unixoutputc">INITIAL_SEARCH</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Determines if an initial search of available equipment numbers is performed when the<span class="formname"> Equipment Allocation</span> form is first displayed.</p>
+<p class="tablebodytext">If set to 1 (TRUE) (in the default expression in the equipment allocation entity validation), the initial search is not performed; otherwise, the value of the variable is undefined.</p>
+<p class="tablebodytext">Used only to disable the initial search in the <span class="formname">Equipment Allocation</span> form. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiEndDate~</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiEndDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_END_</span><br><span class="unixoutputc">DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Effective end date-time for the equipment record.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiGeneral1$ - evEquiGeneral10$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiGeneral1$ - evOldEquiGeneral10$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">GENERAL_1 - GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">General fields 1 - 10.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiGroupId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiGroupId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ATLANTA_GROUP_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Security group that has access to the equipment record.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">EQUIPMENT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">ID of the item of equipment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiIdleInd&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiIdleInd&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">IDLE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Idle indicator.</p>
+<p class="tablebodytext">Set to 1 (TRUE) if the equipment has a status of 0 (Idle); otherwise, the value of the variable is undefined.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiLastModified~</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiLastModified~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">LAST_MODIFIED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Date-time that the information was last modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiMake$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiMake$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">MAKE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Make of the equipment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiModel$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiModel$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">MODEL</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Model of the equipment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiNetworkAddress$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiNetworkAddress$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">NETWORK_ADDRESS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (64)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Network address programmed into the item of equipment, where its value does not change dynamically or cannot be reassigned while it is in use by a customer.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiNumberItems&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiNumberItems&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">NR_ITEMS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Number of items of equipment associated with the record (normally 1).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiOperatorId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiOperatorId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ATLANTA_</span><br><span class="unixoutputc">OPERATOR_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">User who created or last modified the information.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiOrigin&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiOrigin&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">EQUIPMENT_</span><br><span class="unixoutputc">ORIGIN_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Code indicating where the equipment originally came from or who supplied it.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiPin$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiPin$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">PIN</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (20)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">PIN for the equipment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiPin2$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiPin2$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">PIN2</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (20)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Second PIN for the equipment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiPuk$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiPuk$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">PUK</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (20)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">PUK number for the equipment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiPuk2$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiPuk2$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">PUK2</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (20)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Second PUK number for the equipment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiPurchaseDate~</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiPurchaseDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">PURCHASE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Date the equipment was purchased.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiReservedCustNodeId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiReservedCustNodeId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">RESERVED_</span><br><span class="unixoutputc">CUSTOMER_NODE_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">ID for equipment reserved for a customer node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiSerialNumber$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiSerialNumber$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">SERIAL_NUMBER</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (64)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Serial number of the equipment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiStartDate~</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiStartDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_</span><br><span class="unixoutputc">START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Effective start date for the equipment record.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiState$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ADDRESS_STATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">State of the address where the equipment is held.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiStatus&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiStatus&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">EQUIPMENT_</span><br><span class="unixoutputc">STATUS_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Equipment status code. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">0 (Idle)</li><li class="tablelistbullet">3 (In-Use.)</li></ul><p class="tablebodytext">The following are recommended values for other valid statuses:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">1 (Provisioning Required)</li><li class="tablelistbullet">2 (Provisioned)</li><li class="tablelistbullet">5 (Temporary Disconnect Required)</li><li class="tablelistbullet">6 (Temporarily Disconnected)</li><li class="tablelistbullet">7 (Reactivation Required)</li><li class="tablelistbullet">8 (Cancellation Required)</li><li class="tablelistbullet">9 (Cancelled)</li><li class="tablelistbullet">10 (Reserved)</li><li class="tablelistbullet">11 (Repairs Required).</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiSubscriptionKey$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiSubscriptionKey$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">SUBSCRIPTION_</span><br><span class="unixoutputc">KEY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (32)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Subscription key for the item of equipment (typically hex encoded).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiSubtype$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiSubtype$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">EQUIPMENT_</span><br><span class="unixoutputc">SUBTYPE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Equipment subtype.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiToNetworkAddress$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiToNetworkAddress$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">TO_NETWORK_</span><br><span class="unixoutputc">ADDRESS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (64)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Inclusive end of a contiguous range of network addresses for the equipment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiToSerialNumber$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiToSerialNumber$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">TO_SERIAL_</span><br><span class="unixoutputc">NUMBER</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (64)</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Inclusive end of a contiguous range of serial numbers for this equipment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiTypeId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiTypeId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">EQUIPMENT_TYPE_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">ID for the equipment type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiWarranty&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiWarranty&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">WARRANTY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Length of the warranty in warranty units.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evEquiWarrantyUnit&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEquiWarrantyUnit&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">WARRANTY_UNIT_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext">Units in which the warranty is defined. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">0 (Days)</li><li class="tablelistbullet">1 (Weeks)</li><li class="tablelistbullet">2 (Months)</li><li class="tablelistbullet">3 (Years).</li></ul></td>
+</tr>
+
+</table>
+<p class="tablebodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="6306.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="76106.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

@@ -1,0 +1,521 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> SCHEDULE_TRE_V </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "7507.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "50772.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7526');highlight('50799')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="7507.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="50772.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">SCHEDULE_TRE_V</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'SCHEDULE_TRE_V' (50799)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="unixoutputc">SCHEDULE_TRE_V</span> view defines the valid columns for inserting, deleting, and updating schedules and one-off tasks.</p>
+<p class="bodytext">In the column descriptions, the following definitions apply:</p>
+<ul class="listbullet"><li class="listbullet">'This schedule' refers the schedule identified by <span class="unixoutputc">SCHEDULE_ID</span>.</li><li class="listbullet">'Schedule type' refers to the schedule type identified by <span class="unixoutputc">SCHEDULE_TYPE_ID</span>.</li></ul><p class="syntaxheading">Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="192"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="378"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SCHEDULE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of a schedule.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">LAST_MODIFIED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Date-time that the record was last modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SCHEDULE_TYPE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of the type of schedule.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SCHEDULE_TYPE_DISPLAY_</span><br><span class="unixoutputc">NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Name of schedule type displayed.</p>
+<p class="tablebodytext">It defaults to <span class="unixoutputc">SCHEDULE_TYPE_NAME</span>.</p>
+<table class="cautionstyle" width="100%"><tr><td><p class="caution">Caution:</p><p class="tablecaution">The value can be translated into a locale-specific language and therefore differ between implementations.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SCHEDULE_TYPE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of the type of schedule.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">TASK_TYPE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Type of task associated with the specified schedule type.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">TASK_TYPE</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">OPERATOR_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">User who entered the schedule details.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">GROUP_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of the security group to which a user has access.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">ONE_OFF_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext"><a id="h79002" class="jump" title="Pseudo-columns" href="7526.htm#o79001" target="_self">Pseudo-column</a></p>
+<p class="tablebodytext">Used for inserts only</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">It indicates that a one-off schedule is being inserted.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">EMAIL_ADDRESS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Standard internet electronic mail address that the task results are sent to.</p>
+<p class="tablebodytext">If not specified for a new schedule, it defaults to the email address associated with the user.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SCHEDULE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Unique name for the schedule.</p>
+<p class="tablebodytext">It must be specified for a schedule that is not a one-off.</p>
+<p class="tablebodytext">For a one-off schedule, the schedule name is automatically generated based on the <span class="unixoutputc">SCHEDULE_ID</span> and the user inserting the schedule.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">DESCRIPTION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (4000)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Description of the schedule.</p>
+<p class="tablebodytext">If not specified for a new schedule, it defaults to <span class="unixoutputc">SCHEDULE_NAME</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">INSTANCE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (9)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Convergent Billing instance on which all tasks associated with the schedule run.</p>
+<p class="tablebodytext">If not specified, the default instance defined for the Scheduled Task Dispatcher (STD) is used.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PURGE_PERIOD</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Maximum number of days temporary data associated with a task of this type is kept.</p>
+<p class="tablebodytext">If not specified for a new schedule, it defaults to the purge period associated with <span class="unixoutputc">SCHEDULE_TYPE</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PRESCHEDULE_COUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Number of tasks that must be scheduled in advance; this must be greater than 0.</p>
+<p class="tablebodytext">It defaults to 1 if not specified for a new schedule.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">START_REPEAT_TYPE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Repetition units allowed between scheduled tasks that correspond to the schedule definition.</p>
+<p class="tablebodytext">Where 'n' and 'k' are derived from the <span class="unixoutputc">FIRST_DATE</span>, valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">1 (Month-Start):  nth day of week of kth week from start of month.</li><li class="tablelistbullet">2 (Month-End):  nth day of week of kth week from end of month.</li><li class="tablelistbullet">3 (Month-Day):  nth day of the month.</li><li class="tablelistbullet">4 (Month-End-Day):  nth day of the month from end of month.</li><li class="tablelistbullet">5 (Week):  nth day of the week.</li><li class="tablelistbullet">6 (Day)</li><li class="tablelistbullet">7 (Hour)</li><li class="tablelistbullet">8 (Minute)</li><li class="tablelistbullet">9 (Second).</li></ul><p class="tablebodytext">It is based on the <span class="unixoutputc">REPEAT_TYPE</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_REPEAT_TYPE_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Repetition units allowed between scheduled tasks that correspond to the schedule definition.</p>
+<p class="tablebodytext">Where 'n' and 'k' are derived from the <span class="unixoutputc">EFFECTIVE_DATE</span>, valid values are the same as <span class="unixoutputc">START_REPEAT_TYPE_CODE</span>.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">REPEAT_TYPE</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">REPEAT_UNITS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Repetition units allowed between specific tasks that correspond to the schedule definition.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">FIRST_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">First date-time that the task occurs.</p>
+<p class="tablebodytext">The values from <span class="unixoutputc">START_REPEAT_TYPE_CODE</span> and <span class="unixoutputc">REPEAT_UNITS</span> are used to derive the value of the <span class="unixoutputc">START_DATE</span> for all tasks relating to a specific schedule.</p>
+<p class="tablebodytext">If not specified for a new schedule, it defaults to the current date-time.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Date-time to be used for the schedule.</p>
+<p class="tablebodytext">If not specified for a new schedule, it defaults to <span class="unixoutputc">START_REPEAT_TYPE_CODE</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SCHEDULE_STATUS_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Current status of the schedule. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">1 (Active)</li><li class="tablelistbullet">2 (Complete).</li></ul><p class="tablebodytext">It is not usually specified for new schedules.</p>
+<p class="tablebodytext">It defaults to Active.</p>
+<p class="tablebodytext">It can be specified as Complete to allow archiving of old schedules.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">SCHEDULE_STATUS</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">LAST_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Latest date-time that a task for the schedule is allowed to occur.</p>
+<p class="tablebodytext">If not specified, tasks are specified indefinitely.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">BASELINE_DURATION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Expected duration of the tasks of this schedule in seconds.</p>
+<p class="tablebodytext">It defaults from <a id="h37832" class="jump" title="SCHEDULE_TYPE_TRE_V" href="50772.htm" target="_self">the schedule type</a>, but can be overridden.</p>
+<p class="tablebodytext">The <span class="unixoutputc">BASELINE_DURATION</span> value of all newly-generated tasks defaults to this <span class="unixoutputc">BASELINE_DURATION</span>, unless <span class="unixoutputc">BASELINE_DURATION_EXPR</span> is populated on the schedule type with an expression that evaluates to something other than a constant.</p>
+<p class="tablebodytext">It must be greater than or equal to 1, and less than or equal to 2147483647.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">MAX_DURATION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Maximum permitted duration of tasks of this schedule in seconds.</p>
+<p class="tablebodytext">The TLM process terminates running tasks exceeding their <span class="unixoutputc">MAX_DURATION</span>.</p>
+<p class="tablebodytext">It defaults from the schedule type, but can be overridden.</p>
+<p class="tablebodytext"><span class="unixoutputc">MAX_DURATION</span> of all newly-generated tasks defaults to this value unless <span class="unixoutputc">MAX_DURATION_EXPR</span> is populated on the schedule type with an expression that evaluates to something other than a constant.</p>
+<p class="tablebodytext">It must be greater than or equal to <span class="unixoutputc">BASELINE_DURATION</span>, and less than or equal to 2147483647.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">IMMEDIATE_START_IND_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">If it equals 1 (TRUE), tasks of this schedule start as soon as their prerequisites are satisfied, rather than starting at the <span class="unixoutputc">SCHEDULED_START_DATE</span>.</p>
+<p class="tablebodytext">If a schedule has no prerequisites, its tasks run continuously.</p>
+<p class="tablebodytext">When a task on this schedule completes, the next task of the schedule starts, irrespective of its <span class="unixoutputc">SCHEDULE_START_DATE</span>.</p>
+<p class="tablebodytext">If not 1&nbsp;(TRUE), it must be NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">INITIAL_HELD_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">If it is 1 (TRUE), tasks that can run are updated to 8 (Held) status rather than run immediately.</p>
+<p class="tablebodytext">Manual intervention is necessary to start processing the task.</p>
+<p class="tablebodytext">Expressions on the schedule type can be used to notify users of tasks that enter 8 (Held) status.</p>
+<p class="tablebodytext">If not 1 (TRUE), it must be NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">DEPENDENCY_FAILURE_</span><br><span class="unixoutputc">IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">If set to 1 (TRUE), the failure of a prerequisite task condition causes an update of the <span class="unixoutputc">TASK_STATUS_CODE</span> of this schedule's task to 4&nbsp;(Failure) rather than 8 (Held), the default.&nbsp;</p>
+<p class="tablebodytext">If it equals 1 (TRUE), resubmitting a failed prerequisite task does not cause the schedule's corresponding task to be resubmitted.</p>
+<p class="tablebodytext">If not set to 1 (TRUE), it must be NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">TASK_CREATION_EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Optional expression invoked immediately before the STD inserts a new task.</p>
+<p class="tablebodytext">The expression can access all the task's details using task entity validation variables.  The expression can be used to change most task details before insertion by directly modifying the entity validation variables.</p>
+<p class="tablebodytext">The expression can also be used to implement more complex repeating patterns than those directly supported by the <span class="unixoutputc">START_REPEAT_TYPE_CODE</span>.</p>
+<p class="tablebodytext">The <span class="unixoutputc">TASK_CREATION_LIST</span> reference type contains a sample of expressions that can be populated in this column.</p>
+<p class="tablebodytext">Convergent Billing supplies expressions that restrict tasks to run on weekdays or weekends, or roll forward the start date of a task to the next weekday or weekend. Expressions can be created to suppress tasks from running on public holidays, or to run tasks with unusual repeating patterns.</p>
+<p class="tablebodytext">The expression must return an integer value</p>
+<p class="tablebodytext">The evaluation of the expression determines which details are used as follows:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">If the expression returns any non-zero value, the task is created using the updated task details.</li><li class="tablelistbullet">If the expression returns 0 (FALSE), the STD suppresses creation of the task, calculates the details for the next task, and calls this expression again for the next task.&nbsp; A maximum of 200 consecutive tasks can be suppressed before the STD logs a warning.</li><li class="tablelistbullet">If the expression fails, the STD logs the error and creates the task using the original details.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SUPPRESS_OVERDUE_TASK_</span><br><span class="unixoutputc">IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">If it is 1 (TRUE), the STD suppresses overdue tasks (tasks whose calculated <span class="unixoutputc">SCHEDULED_START_DATE</span> is before the current date-time).</p>
+<p class="tablebodytext">This capability can be useful in environments shut down for long periods or when loading an initial set of operational schedules into a new instance.</p>
+<p class="tablebodytext">If not 1&nbsp;(TRUE), it must be NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PENDING_TASK_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Updated<span class="unixoutputc"> </span>by the STD.</p>
+<p class="tablebodytext">If it is 1 (TRUE), the schedule has pending tasks that need to be generated or regenerated.</p>
+<p class="tablebodytext">It is NULL when the STD has generated or regenerated the pending tasks.</p>
+<p class="tablebodytext">It is set whenever a:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Schedule is created.</li><li class="tablelistbullet">Schedule is updated and the regeneration of pending tasks is requested.</li><li class="tablelistbullet">Pending task on the schedule is updated to any other status.</li></ul><p class="tablebodytext">While it is 1 (TRUE), the STD stalls generation or regeneration of pending tasks associated with any schedules dependent on this schedule.</p>
+<p class="tablebodytext">If not 1 (TRUE), it must be NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PENDING_TASK_SCHEDULE_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">If populated, identifies the prerequisite schedule that stalled task generation for this schedule.</p>
+<p class="tablebodytext">It is updated by the STD.</p>
+<p class="tablebodytext">It is populated only if <span class="unixoutputc">PENDING_TASK_IND_CODE</span> is 1 (TRUE).</p>
+<p class="tablebodytext">If populated, the schedule identified by <span class="unixoutputc">PENDING_TASK_SCHEDULE_ID</span>:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Exists as a prerequisite schedule for this schedule in the <span class="unixoutputc">SCHEDULE_PREREQUISITE_TRE_V</span> view.</li><li class="tablelistbullet">Has <span class="unixoutputc">PENDING_TASK_IND_CODE</span> set to 1&nbsp;(TRUE).</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SERVER_COMMAND_ARGS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255) </p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Additional server command-line parameters used when invoking tasks of this schedule.</p>
+<p class="tablebodytext">If specified, the command-line parameters are added to any command-line parameters specified in the schedule type.</p>
+<p class="tablebodytext">If specified, in the <span class="unixoutputc">TASK_TRE_V</span> view it is populated with <span class="unixoutputc">SERVER_COMMAND_ARGS</span> for any generated tasks.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">REPLICATE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">If set to 1 (TRUE), the schedule is replicated to instances specified by <span class="unixoutputc">REPLICATION_GROUP_CODE</span>.</p>
+<p class="tablebodytext">If not set to 1 (TRUE), it must be NULL.</p>
+<p class="tablebodytext">It can be specified when inserting or updating a schedule.</p>
+<p class="tablebodytext">If set to 1 (TRUE) before or during an update, new schedules are created on instances in the replication group that did not previously have this schedule.</p>
+<p class="tablebodytext">Existing replicated schedules are updated with the details of this schedule. </p>
+<p class="tablebodytext">If set to NULL during an update, the updated schedule details are not replicated, and previous replicated schedules are not modified as part of the update.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">REPLICATION_GROUP_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Replication group that specifies a set of instances to which the schedule is replicated.</p>
+<p class="tablebodytext">It is populated only if <span class="unixoutputc">REPLICATION_IND_CODE </span>is set to 1 (TRUE).</p>
+<p class="tablebodytext">The <span class="unixoutputc">ScheduleReplicationGroup</span> derived attribute table defines the set of instances in each replication group.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">SCHEDULE_REPLICATION_GROUP</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">MASTER_SCHEDULE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of the schedule from which this schedule is replicated.</p>
+<p class="tablebodytext">It is automatically populated when a replicated schedule is created on an instance.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">DO_NOT_NOTIFY_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext"><a id="h79002_2" class="jump" title="Pseudo-columns" href="7526.htm#o79001" target="_self">Pseudo-column</a></p>
+<p class="tablebodytext">Used for inserts or updates only</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Set to 1 (TRUE) if notification is not required to be sent to the STD about the changes to the schedule.</p>
+<p class="tablebodytext">It can be used for bulk loading of schedules where the schedule is not running or restarted on completion of the load.</p>
+<p class="tablebodytext">If specified, <span class="unixoutputc">REGENERATE_TASKS_IND_CODE</span>, <span class="unixoutputc">ACK_IND_CODE</span>, and <span class="unixoutputc">RESPONSE_IND_CODE</span> cannot be specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">REGENERATE_TASKS_IND_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Pseudo-column</p>
+<p class="tablebodytext">Used for updates only</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">If specified, indicates that any pending tasks for this schedule must be regenerated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">ACK_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Pseudo-column</p>
+<p class="tablebodytext">Used for inserts or updates only</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">If specified, the STD sends an asynchronous notification to the caller as soon as the request is received.</p>
+<p class="tablebodytext">Acknowledgments can only be sent to clients connected to the same Tuxedo domain as the STD process.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">RESPONSE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Pseudo-column</p>
+<p class="tablebodytext">Used for inserts or updates only</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">If specified, the STD sends an asynchronous notification back to the caller as soon as the next pending task for the schedule has completed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">CLIENT_INSTANCE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (9)</p>
+<p class="tablebodytext">Pseudo-column</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Name of the Convergent Billing instance to which the Tuxedo client process that made the request is connected.</p>
+<p class="tablebodytext">It only needs to be specified if a call to <span class="unixoutputc">biScheduleInsert&amp;()</span> is being made to a different instance than that on which the client is connected, and an acknowledgement or response requested.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">CLIENT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (40)</p>
+<p class="tablebodytext">Pseudo-column</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of the Tuxedo client that made the request.</p>
+<p class="tablebodytext">It must be specified only if <span class="unixoutputc">CLIENT_INSTANCE_NAME</span> is specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">GENERAL_1 - GENERAL_25</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">General fields 1 - 25 used to specify parameters to the tasks scheduled to occur.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="7507.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="50772.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

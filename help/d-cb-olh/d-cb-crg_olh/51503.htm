@@ -1,0 +1,523 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> INVOICE_TRE_V </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "50769.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "50725.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7526');highlight('51503')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="50769.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="50725.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">INVOICE_TRE_V</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'INVOICE_TRE_V' (51503)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="unixoutputc">INVOICE_TRE_V</span> view defines all invoices, statements, or statements pending consolidation known to the system.</p>
+<p class="syntaxheading">Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="192"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="378"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">INVOICE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of a customer node invoice.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">LAST_MODIFIED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Date-time that the row was last modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_INVOICE_STR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (30)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID generated for the invoice.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">INVOICE_TYPE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (30)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Redundant</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Type of invoice.</p>
+<p class="tablebodytext"><span class="unixoutputc">INVOICE_TYPE_ID</span> is derived from the account type of the invoice's account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">INVOICE_TYPE_DISPLAY_</span><br><span class="unixoutputc">NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Redundant</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Name of account type displayed.</p>
+<p class="tablebodytext">It defaults to <span class="unixoutputc">INVOICE_TYPE_NAME</span>.</p>
+<table class="cautionstyle" width="100%"><tr><td><p class="caution">Caution:</p><p class="tablecaution">The value can be translated into a locale-specific language and therefore differ between implementations.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">INVOICE_TYPE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Redundant</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Type of invoice.</p>
+<p class="tablebodytext">It is derived from the account type of the invoice's account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">BILL_RUN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of the bill run that generated the account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">RUNNING_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Set to 1 while the billing engine is in the process of calculating the value for the invoice or statement.</p>
+<p class="tablebodytext">It can be used to quickly identify incomplete invoices associated with a failed bill run that needs to be revoked.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">QA_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Set to 1 if this is an invoice or statement generated for a Quality Assurance or Statement only bill run.</p>
+<p class="tablebodytext">It can be derived from the bill run when the invoice or statement is originally created.  If it is not 1, it must be NULL.</p>
+<p class="tablebodytext">Records with this set are never applied to accounts.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SUPPRESS_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Set to 1 if this invoice is marked to be suppressed.  It is set using the Invoice Type expressions.</p>
+<p class="tablebodytext">It is not applicable and cannot be set for statements or Quality Assurance invoices.</p>
+<p class="tablebodytext">If all invoices in a customer hierarchy have this set for a bill run, the invoices and statements are revoked including any rental charges and adjustments.</p>
+<p class="tablebodytext">The <span class="unixoutputc">CUSTOMER_NODE_BILL_RUN</span> table indicates that invoice generation for the bill run was suppressed for this customer hierarchy.</p>
+<p class="tablebodytext">If only some invoices in a customer hierarchy have this set for a bill run, it has no effect.  It remains set for those invoices in the hierarchy that qualified for suppression.</p>
+<p class="tablebodytext">Revoking suppressed invoices is performed by the billing process controller, not the BGP server.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (30)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of the account to which the invoice is applied.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of the account to which the invoice is applied.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">INVOICED_ACCOUNT_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Account into which all charges associated with the invoice have been calculated and applied.</p>
+<p class="tablebodytext"><span class="unixoutputc">INVOICED_ACCOUNT_ID</span> can only contain a value if <span class="unixoutputc">INVOICE_AMOUNT</span> is 0 and <span class="unixoutputc">STATEMENT_AMOUNT</span> is not null.</p>
+<p class="tablebodytext">If null and <span class="unixoutputc">STATEMENT_AMOUNT</span> is not null, this record is a statement for an 'Other Account'.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">INVOICED_ACCOUNT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Account into which all charges associated with the invoice have been calculated and applied.</p>
+<p class="tablebodytext">It can only contain a value if <span class="unixoutputc">INVOICE_AMOUNT</span> is 0 and <span class="unixoutputc">STATEMENT_AMOUNT</span> is not null.</p>
+<p class="tablebodytext">If null and <span class="unixoutputc">STATEMENT_AMOUNT</span> is not null, this record is a statement for an 'Other Account'.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_ACCOUNT_</span><br><span class="unixoutputc">INVOICE_STR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Optional invoice ID generated for the invoice.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_NODE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (200)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Customer node that received the invoice.</p>
+<p class="tablebodytext"><span class="unixoutputc">CUSTOMER_NODE_ID</span> is derivable from the <span class="unixoutputc">ACCOUNT_ID</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_NODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Customer node that received the invoice.</p>
+<p class="tablebodytext">It is derivable from the <span class="unixoutputc">ACCOUNT_ID</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">GROUP_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Security group that has access to the query.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">IMAGE_GENERATED_IND_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Set to True (1) when all images for the invoice have been successfully processed by the IGP, including images that have been suppressed.</p>
+<p class="tablebodytext">It is set by the IGP.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">APPLIED_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Set to 1 (True) when the invoice is applied to the account by the <span class="unixoutputc">apply_invoices</span> server utility as appropriate; otherwise, the value is null.</p>
+<p class="tablebodytext">When an invoice is applied, it cannot be modified in any way (except for flagging it for reprint).</p>
+<p class="tablebodytext">Any account corrections must be made using adjustments displayed on the next invoice run for the customer.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Redundant</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Effective date of the bill run that generated the invoice.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">ISSUE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Date that the invoice was issued.</p>
+<p class="tablebodytext">It defaults, but is not necessarily equal, to the <span class="unixoutputc">EFFECTIVE_DATE</span> of the associated invoice run.</p>
+<p class="tablebodytext">It can be set to a different date using invoice type expressions if required.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">ORIGINAL_PAYMENT_DUE_</span><br><span class="unixoutputc">DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Date that the invoice was originally due to be paid.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PAYMENT_DUE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Date that the invoice is due to be paid.</p>
+<p class="tablebodytext">It is usually the same as <span class="unixoutputc">ORIGINAL_PAYMENT_DUE_DATE</span>, but can be updated by users with appropriate security privileges.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">EARLY_PAYMENT_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Date for payment to receive an additional discount.</p>
+<p class="tablebodytext">The discount will have been incorporated into the <span class="unixoutputc">INVOICE_TOTAL</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">INVOICE_AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Total amount of charges associated with the invoice, excluding the balance forward.</p>
+<p class="tablebodytext">If handling of liability accounts is:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Enabled, a positive value is always a debit, irrespective of the class of the account to which it is being applied.</li><li class="tablelistbullet">Not enabled, a positive value is a debit for an asset account and a credit for a liability account.</li></ul><p class="tablebodytext">Values stored in this column are at the limits of double precision.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">STATEMENT_AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Total amount of charges associated with the statement.</p>
+<p class="tablebodytext">It can only contain a value if <span class="unixoutputc">INVOICE_AMOUNT</span> is 0.</p>
+<p class="tablebodytext">For secondary accounts, if handling of liability accounts is enabled, a positive value is always a debit, irrespective of the class of the account to which it is being applied.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">BALANCE_FORWARD</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Balance on the account before application of the invoice.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_BALANCE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Account balance after this invoice was generated.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">It is usually equal to <span class="unixoutputc">INVOICE_AMOUNT</span> + <span class="unixoutputc">BALANCE_FORWARD</span>, unless the invoice is a statement associated with an account other than the prime account, in which case it should be equal to <span class="unixoutputc">STATEMENT_AMOUNT</span> + <span class="unixoutputc">BALANCE_FORWARD</span>.  Rounding of cents can cause this value to differ from the sum.</p></td></tr></table>
+<p class="tablebodytext">If handling of liability accounts is enabled and the account is a liability account, the value is set to either of the following:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">BALANCE_FORWARD - INVOICE_AMOUNT</span></li><li class="tablelistbullet"><span class="unixoutputc">BALANCE_FORWARD - STATEMENT_AMOUNT</span>.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_INITIAL_DUE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Initial amount due for payment on the account.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">It is usually equal to <span class="unixoutputc">ACCOUNT_BALANCE</span>, but could be different due to cents rounding or the presence of payment plans (not supported) for the account.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">CURRENT_DUE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Current amount left to be paid on the invoice.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">TOTAL_PAYMENTS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Total payments made on the account between the issuing of the previous invoice and the invoice.</p>
+<p class="tablebodytext">The payments are not recorded against the invoice.</p>
+<p class="tablebodytext">The amount is usually displayed on the invoice, and is calculated by the billing engine.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">TOTAL_ADJUSTMENTS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Total adjustments made on the account between the issuing of the previous invoice and this invoice.</p>
+<p class="tablebodytext">The adjustments are not recorded against the invoice.</p>
+<p class="tablebodytext">The amount is usually displayed on the invoice, and is calculated by the billing engine.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">EARLY_PAYMENT_DISCOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Early payment discount that applied for the invoice (if any).</p>
+<p class="tablebodytext">It is derived by the billing engine (based on the <span class="unixoutputc">INVOICE_TYPE</span> table), and can be re-derived based on details in the <span class="unixoutputc">CHARGE</span> table.</p>
+<p class="tablebodytext">The amount will have been incorporated into the <span class="unixoutputc">INITIAL_DUE</span> calculated for the account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PAYMENT_DUE_DISCOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Pay-on-time discount that was applied for the invoice (if any).</p>
+<p class="tablebodytext">It is derived by the billing engine, and can be re-derived based on details in the <span class="unixoutputc">CHARGE</span> table.</p>
+<p class="tablebodytext">The amount will have been incorporated into the <span class="unixoutputc">INITIAL_DUE</span> calculated for the account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">LATE_PAYMENT_CHARGE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Late payment charge applied to the account if payment is not made by the due date.</p>
+<p class="tablebodytext">It is not incorporated into the <span class="unixoutputc">INITIAL_DUE</span> for the invoice.</p>
+<p class="tablebodytext">It can be applied to the account if payment was not made by the due date.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">EARLY_PAYMENT_ACCOUNT_</span><br><span class="unixoutputc">BALANCE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Balance of the account at the <span class="unixoutputc">EARLY_PAYMENT_DATE</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PAYMENT_DUE_ACCOUNT_</span><br><span class="unixoutputc">BALANCE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Balance of the account at the <span class="unixoutputc">PAYMENT_DUE_DATE</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">UNBILLED_AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Total amount (in the currency of the account) rated by usage-based tariffs, with the <span class="unixoutputc">ACCOUNT_AGGREGATE_IND_CODE</span> set to 1 and associated with the invoice.</p>
+<p class="tablebodytext">It is used when invoices are applied (or un-applied) to decrement (or increment) the <span class="unixoutputc">ACCOUNT</span>.<span class="unixoutputc">UNBILLED_AMOUNT</span> for the account associated with the invoice.  The amount is calculated by the BGP.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">The customer node hierarchy account aggregations are not taken into consideration when calculating this amount; that is, it can have a non-zero value for an account associated with a non-reporting node.</p></td></tr></table>
+<p class="tablebodytext">If handling of liability accounts is enabled, a positive value is always a debit, irrespective of the class of the account to which it is being applied.  If handling of liability accounts is not enabled, a positive value is a debit for an asset account and a credit for a liability account.</p>
+<p class="tablebodytext">The <span class="unixoutputc">updated_invoice_unbilled</span> server utility validates this amount and corrects any discrepancies.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">GENERAL_1 - GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">General fields 1 - 10 controlled by the entity validation on the invoice type.</p>
+<p class="tablebodytext">They are populated, as needed, by the invoice type expressions.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PENDING_CONSOLIDATION_</span><br><span class="unixoutputc">IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Set to 1 (True) if the statement is an invoice flagged by the BGP to be suppressed for the current bill cycle.</p>
+<p class="tablebodytext">If set to 1:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">STATEMENT_AMOUNT</span> must be specified.</li><li class="tablelistbullet">The statement image is not generated.</li></ul><p class="tablebodytext">If not set to 1, it must be null.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">CONSOLIDATION_INVOICE_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of the invoice created to consolidate the statement and other statements into a single invoice.</p>
+<p class="tablebodytext">If specified:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">STATEMENT_AMOUNT</span> must be specified.</li><li class="tablelistbullet"><span class="unixoutputc">PENDING_CONSOLIDATION_IND_CODE</span> must be null.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">CONSOLIDATED_INVOICE_</span><br><span class="unixoutputc">IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">If set to 1 (True):</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">The row is a consolidated invoice for one or more statements.</li><li class="tablelistbullet"><span class="unixoutputc">STATEMENT_AMOUNT</span> must be null.</li></ul><p class="tablebodytext">If not set to 1, it must be null.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">DISPUTED_AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Total amount of disputed charges associated with the invoice.</p>
+<p class="tablebodytext">A positive value indicates a credit to the account, irrespective of the class of the account and the setting of the <span class="unixoutputc">ACCOUNT_ENABLED</span> reference type.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="50769.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="50725.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

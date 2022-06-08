@@ -1,0 +1,358 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> CHARGE_V </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "7942.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "7943.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7934');highlight('7941')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="7942.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="7943.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">CHARGE_V</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'CHARGE_V' (7941)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="unixoutputc">CHARGE_V</span> view displays details on all charges.  Any charge displayed on any invoice or statement is displayed in this view.</p>
+<p class="bodytext">The view can also be used to derive the method to calculate a charge.</p>
+<p class="syntaxheading">Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="198"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="372"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CHARGE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">ID of a charge.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">LAST_MODIFIED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Date-time when this row was last modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CHARGE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (22,6)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Value of this charge.</p>
+<p class="tablebodytext">It is mandatory, unless <span class="unixoutputc">SUBTOTAL_DATE</span> is not null.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PROPORTION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (22,6)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Proportion of the charge that this charge corresponds to.</p>
+<p class="tablebodytext">If <span class="unixoutputc">TARIFF_ID</span> is not null, it must contain a value.</p>
+<p class="tablebodytext">If it contains a value, it is usually 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CURRENCY_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">ID of the currency of the charge.</p>
+<p class="tablebodytext">It is mandatory for all charges, but not required for subtotals that are aggregations of non-currency amounts.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Account to which this charge was allocated.</p>
+<p class="tablebodytext">All charges (billable and non-billable) must be associated with an account.</p>
+<p class="tablebodytext">The customer node is identified for the aggregation of the charges by the billing engine using the account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">UNINVOICED_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Set to 1 (TRUE) if this charge is not assigned to an invoice.</p>
+<p class="tablebodytext">All records entered by processes other than the BGP have this column set to 1. The BGP clears this column after it has processed the charge and assigned it to an invoice.</p>
+<p class="tablebodytext">It must be set to 1 if <span class="unixoutputc">INVOICE_ID</span> is null, and null if <span class="unixoutputc">INVOICE_ID</span> contains a value.</p>
+<p class="tablebodytext">The mandatory value is enforced by the <span class="unixoutputc">C_CHARGE</span> check constraint.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">GL_CODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">ID of the GL code associated with this charge.</p>
+<p class="tablebodytext">Only billable charges can have a GL code associated with them.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">FROM_GL_CODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">ID of an optional second GL code to be associated with this charge.</p>
+<p class="tablebodytext">It can be specified only if this charge does not have a matching charge against another account.</p>
+<p class="tablebodytext">It allows generation of balanced transactions to the general ledger system, without all Convergent Billing charges having to be balanced.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">RECEIVABLE_TYPE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">ID of the receivable type associated with this charge, if any.</p>
+<p class="tablebodytext">For charges generated by tariffs or subtotals, it identifies the receivable type to which this charge is aggregated for this invoice.</p>
+<p class="tablebodytext">For applied payments and adjustments, it identifies the receivable type against which a portion of the payment or adjustment was made.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">NORMALISED_EVENT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Normalised event (call data) record where this charge was calculated.</p>
+<p class="tablebodytext">It is present for all charges calculated by the rating engine, and all charges with a context of Normalised Event calculated by the billing engine.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">SERVICE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Service associated with this charge (if any).</p>
+<p class="tablebodytext">It is present for all charges calculated by the rating engine with a context of Service, and all charges calculated by the billing engine with a context of Normalised Event or Service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_NODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Customer node associated with this charge (if any).</p>
+<p class="tablebodytext">It is present for all charges calculated by the billing engine (irrespective of context).</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">It is the customer node that is the <span class="unixoutputc">SOURCE</span> of the charge; that is, the customer node that the billing engine was processing that caused the generation of this charge.  It is not necessarily equal to the customer node associated with the <span class="unixoutputc">ACCOUNT_ID</span>.</p></td></tr></table>
+<p class="tablebodytext">It is always null for charges generated by the rating engine.  The billing engine does not update it for charges generated by the rating engine.</p>
+<p class="tablebodytext">For billing engine processing in a:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Normalised Event or Service context, it is set to the <span class="unixoutputc">CUSTOMER_NODE</span> that owns the service being processed.</li><li class="tablelistbullet">Customer Node context, it is the customer node being processed.</li><li class="tablelistbullet">Customer context, it is the customer being processed.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CHARGE_START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">For any charges with a not null <span class="unixoutputc">NORMALISED_EVENT_ID</span>, it is equal to <span class="unixoutputc">NORMALISED_EVENT.CHARGE_START_DATE</span>.</p>
+<p class="tablebodytext">It is verified by the DVP.</p>
+<p class="tablebodytext">It is always populated by the rating engine, but only populated by the billing engine for charges generated in a Normalised Event context.</p>
+<p class="tablebodytext">It should always be used (in conjunction with <span class="unixoutputc">NORMALISED_EVENT_ID</span>) when performing joins between the <span class="unixoutputc">CHARGE</span> and <span class="unixoutputc">NORMALISED_EVENT</span> tables, when the <span class="unixoutputc">CHARGE</span> table is the driving table (that is, the join is used to determine the <span class="unixoutputc">NORMALISED_EVENT</span> records associated with a specified <span class="unixoutputc">CHARGE</span> record).  This improves query performance if table partitioning is in use by performing partition elimination on the <span class="unixoutputc">NORMALISED_EVENT</span> table.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">If the <span class="unixoutputc">NORMALISED_EVENT</span> table is the driving table in a join with the <span class="unixoutputc">CHARGE</span> table, and the query is only interested in charges generated by the rating engine, <span class="unixoutputc">CHARGE_DATE</span> should be used instead of <span class="unixoutputc">CHARGE_START_DATE</span> so that partition elimination on the <span class="unixoutputc">CHARGE</span> table can be performed.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CHARGE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Date-time for the calculation of the charge.</p>
+<p class="tablebodytext">It is derived as follows:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">For usage based charges (or any charges generated by the rating engine based on a normalised event), it is equal to <span class="unixoutputc">CHARGE_START_DATE</span>.</li><li class="tablelistbullet">For charges generated by the billing engine, it is the effective date of the invoice that generated this charge (which is <span class="unixoutputc">INVOICE_ID</span>, or <span class="unixoutputc">FROM_INVOICE_ID</span> if it is not null).</li><li class="tablelistbullet">For payments, it is equal to <span class="unixoutputc">PAYMENT_RECEIVED_DATE</span> for acceptance, and <span class="unixoutputc">REJECTED_DATE</span> for rejections.</li><li class="tablelistbullet">For adjustments, it is equal to <span class="unixoutputc">ADJUSTMENT_RECEIVED_DATE</span>.</li><li class="tablelistbullet">For changes to receivable type allocations for payments or adjustments, it is equal to the date-time at which the changes were made.</li></ul><p class="tablebodytext">Its value is checked by the DVP.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">TARIFF_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Tariff, discount, or tax that generated this charge, if any.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">SUBTOTAL_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Subtotal, or total calculation that generated this charge.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">SUBTOTAL_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Date-time calculated by the given subtotal, if this subtotal generates a date result time.</p>
+<p class="tablebodytext">It can only contain a value if <span class="unixoutputc">SUBTOTAL_ID</span> is not null and <span class="unixoutputc">CHARGE</span> is null.</p>
+<p class="tablebodytext">It is verified by the DVP.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">ADJUSTMENT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Adjustment that generated this charge.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PAYMENT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Payment that generated this charge.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">INVOICE_TXT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Optional invoice text that can be displayed in association with this charge.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">FROM_INVOICE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Invoice that resulted in the generation of this charge.</p>
+<p class="tablebodytext">It is set by the billing engine for charges generated by the billing engine and directed to an account outside of the current customer hierarchy being processed by the billing engine.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">INVOICE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Invoice or statement with which this charge is associated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">INVOICE_SECTION_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Invoice section number associated with this charge.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">INVOICE_ITEM_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Invoice item number.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">KEY_VALUE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Hash key value or array index value associated with this charge for this tariff or subtotal.</p>
+<p class="tablebodytext">It is only populated for charges generated by hash or array tariffs, and subtotals.</p>
+<p class="tablebodytext">For:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Hash based tariffs or subtotals, it stores the string hash key associated with this charge. </li><li class="tablelistbullet">Array tariffs or subtotals, it stores the integer array index associated with this charge.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">GENERAL_1 - GENERAL_20</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">General fields 1 - 20.</p>
+<p class="tablebodytext">They can be used to store intermediate calculations and lookups performed as part of tariff evaluation during rating or billing (for example, distance band, time band, multi-time band flag).  The information contained in them is accessible by the BGP and the IGP.</p>
+<p class="tablebodytext">Only charges associated with tariffs can populate these columns.  They are always null for charges associated with subtotals, payments, or adjustments.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PARTITION_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Customer partition number associated with this charge.</p>
+<p class="tablebodytext">It is derived from information in the <span class="unixoutputc">CustomerPartitionRange</span> derived attribute table, using the <span class="unixoutputc">ACCOUNT_ID</span> column as the index for the lookup.</p>
+<p class="tablebodytext">It forms part of the partitioning key for this view.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">NORMALISED_EVENT_</span><br><span class="unixoutputc">PARTITION_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">For any charges associated with an event, it is equal to <span class="unixoutputc">NORMALISED_EVENT.PARTITION_NR</span>.</p>
+<p class="tablebodytext">It is checked by the DVP.</p>
+<p class="tablebodytext">It is mandatory if the <span class="unixoutputc">NORMALISED_EVENT_ID</span> column is specified.  This is enforced by the <span class="unixoutputc">C_CHARGE</span> check constraint.</p>
+<p class="tablebodytext">It should always be used (in conjunction with <span class="unixoutputc">NORMALISED_EVENT_ID</span> and <span class="unixoutputc">CHARGE_START_DATE</span>) when performing joins between the <span class="unixoutputc">CHARGE</span> and <span class="unixoutputc">NORMALISED_EVENT</span> tables. This improves query performance by allowing partition elimination to be performed on the <span class="unixoutputc">NORMALISED_EVENT</span> table.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="7942.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="7943.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

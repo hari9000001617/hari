@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> ProductInstanceInsert&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "13504.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "66780.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('58827')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="13504.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="66780.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">ProductInstanceInsert&amp;()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'ProductInstanceInsert&amp;()' (58827)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<table class="tableintopic" width="534" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<td class="tableheading" width="282"><p class="tableheading">Interface 1</p>
+</td>
+<td width="42"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td class="tableheading" width="210"><p class="tableheading">Interface 2</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="282"><pre class="unixinputp">ProductInstanceInsert&amp;(    StartDate~,    var&nbsp;LastModified~,    const FieldNames$[],    const StringFieldValues$[],    const IntegerFieldValues&amp;[],    const RealFieldValues#[],    const DateFieldValues~[])</pre>
+</td>
+<td width="42"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td width="210"><pre class="unixinputp">ProductInstanceInsert&amp;(    StartDate~,    var&nbsp;LastModified~,    FieldNames$[],    FieldValues?[])</pre>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Creates a product instance from the specified date-time.</p>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="294" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="bold">Method</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Local</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="189"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="507"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="189"><p class="tablebodytext"><span class="unixoutputc">StartDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="507"><p class="tablebodytext">In:  Start date-time for the new product instance.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="189"><p class="tablebodytext"><span class="unixoutputc">LastModified~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="507"><p class="tablebodytext">Out:  Last modified date-time of the new product instance.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="189"><p class="tablebodytext"><span class="unixoutputc">FieldNames$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="507"><p class="tablebodytext">In:  List of fields being inserted.</p>
+<p class="tablebodytext">The minimum set of fields that must be specified is <span class="unixoutputc">CUSTOMER_NODE_ID</span> and <span class="unixoutputc">PRODUCT_ID</span>.</p>
+<p class="tablebodytext">If specified in <span class="unixoutputc">FieldNames$[]</span>, the <span class="unixoutputc">EFFECTIVE_END_DATE</span> field must be set to the sunset date (<span class="unixoutputc">MAX_DATE</span>); otherwise, an error is raised.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="189"><p class="tablebodytext"><span class="unixoutputc">StringFieldValues$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="507"><p class="tablebodytext">In:  Values of string fields to insert.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="189"><p class="tablebodytext"><span class="unixoutputc">IntegerFieldValues&amp;[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="507"><p class="tablebodytext">In:  Values of integer fields to insert.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="189"><p class="tablebodytext"><span class="unixoutputc">RealFieldValues#[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="507"><p class="tablebodytext">In:  Values of real fields to insert.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="189"><p class="tablebodytext"><span class="unixoutputc">DateFieldValues~[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="507"><p class="tablebodytext">In:  Values of date fields to insert.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="189"><p class="tablebodytext"><span class="unixoutputc">FieldValues?[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="507"><p class="tablebodytext">In:  Values corresponding to the fields specified in <span class="unixoutputc">FieldNames$[]</span>.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">ID assigned to the new product instance (the <span class="unixoutputc">PRODUCT_INSTANCE_ID</span>) if successful; otherwise, an error is raised.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">The names of the fields being inserted are passed in the array <span class="unixoutputc">FieldNames$[]</span>.  The set of valid field names are defined in the <span class="unixoutputc">PRODUCT_INSTANCE_TRE_V</span> view.</p>
+<p class="bodytext">The effective user must have insert security group access level for the customer associated with the record manipulated by this function call.  The customer security group access level required is determined by the effective start date of the product instance or the effective date supplied by the active user.  <span class="unixoutputc">GROUP_ACCESS_TRE_V</span> view lists security group access level values.</p>
+<p class="bodytext">The customer partition and the ID of the new product instance are derived from the partition of the <span class="unixoutputc">CUSTOMER_NODE_ID</span> passed to the function. </p>
+<p class="bodytext">After creating a product instance, equipment is usually allocated to it, and services inserted. The equipment must be allocated and services inserted before calling the <span class="unixoutputc"><a id="h59679" class="jump" title="biProductInstanceComplete&amp;()" href="13020.htm" target="_self">biProductInstanceComplete&amp;()</a></span> function.</p>
+<p class="bodytext">When a <span class="unixoutputc">CONTRACT_ID</span> is supplied, the function does not allow a companion product instance to be associated with a contract.</p>
+<p class="bodytext">If a companion product instance is to be inserted, the following applies:</p>
+<ul class="listbullet"><li class="listbullet">The function ensures that as of the <span class="unixoutputc">StartDate~</span>, the companion product instance is compatible with the specified base product instance and all associated non-cancelled companion product instances.</li><li class="listbullet">If the environment variable <span class="unixoutputc">ATA_PRODINST_BACK_DATED_INSERT</span> has a value of <span class="unixoutputc">Y</span>, the function ensures status consistency with the base product instance. If the base product instance has a future (greater than <span class="unixoutputc">StartDate~</span>) status of Upgraded or Moved, the companion product instance is fragmented into one or more <span class="unixoutputc">PRODUCT_INSTANCE_HISTORY</span> records spanning the same date-ranges as the base product instance. The status code of each future companion product instance is set to match that of the base product instance of the same date-range (Upgraded or Moved). <span class="unixoutputc">ATA_PRODINST_BACK_DATED_INSERT</span> is undefined by default.<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="listnote">The function can be called multiple times to create sufficient companion product instances.</p></td></tr></table>
+</li><li class="listbullet">The companion product instance is associated with all base product instance services and equipment of the appropriate item number.<p class="listcontinue">For example, if a base product has five GSM services and the companion product definition has the GSM services, the companion product is associated with all five GSM services. </p>
+</li><li class="listbullet">If the companion product instance is service-specific (specifies a service item), <span class="unixoutputc">SERVICE_ID</span> or <span class="unixoutputc">SERVICE_NAME</span> can be set to specify a single service item to be associated with the companion product instance. The service item must exist on the base product instance; otherwise, an error is raised. The restriction does not extend equipment items. For example, if the base product instance has a service item specified by the companion product, but an equipment item different from that specified on the companion product, the insert succeeds, but an equipment item is not created for the companion product.<p class="listcontinue">If neither <span class="unixoutputc">SERVICE_ID</span> nor <span class="unixoutputc">SERVICE_NAME</span> is specified, a service is selected, and automatically associated with the companion product instance during product instance completion. </p>
+</li><li class="listbullet">If the companion product is inserted into a base product instance that requires re-completion, the incomplete services and equipment are not associated with the new companion product until the services and equipment are complete and a separate call made to <span class="unixoutputc"><a id="h59679_2" class="jump" title="biProductInstanceComplete&amp;()" href="13020.htm" target="_self">biProductInstanceComplete&amp;()</a></span>.</li><li class="listbullet">And the companion product was selected from a top-level product offer, no value can be supplied for either <span class="unixoutputc">PRODUCT_OFFER_INSTANCE_ID</span> or <span class="unixoutputc">PARENT_PROD_OFFER_INSTANCE_ID</span>.</li><li class="listbullet">If the base product instance is associated with a product offer, by defining values for <span class="unixoutputc">SERVICE_RANGE_MIN</span>, <span class="unixoutputc">SERVICE_RANGE_MAX</span>, <span class="unixoutputc">EQUIPMENT_RANGE_MIN</span>, or <span class="unixoutputc">EQUIPMENT_RANGE_MAX</span>, a companion product can alter the number of services and equipment items required to exist for the base product instance.<p class="listcontinue">If the requirements of the companion product are not met by the base product instance (for example, the companion product specifies a value of 5 for <span class="unixoutputc">SERVICE_RANGE_MIN</span> for a service type but only 3 services exist for the base product instance), and the base product is in the completed state, this function fails with an error.</p>
+</li><li class="listbullet">If the companion product instance has a status of Active, its <span class="unixoutputc">ACTIVE_DATE</span> is set to the value of <span class="unixoutputc">StartDate~</span>. <p class="listcontinue"><span class="unixoutputc">PRODUCT_OFFER_ALLOCATION_DATE</span> is also set to the value of <span class="unixoutputc">StartDate~</span> if <span class="unixoutputc">PRODUCT_OFFER_NODE_ID</span> and <span class="unixoutputc">PRODUCT_OFFER_ID</span> are not null.</p>
+</li></ul><p class="bodytext">This function supports selling more than one companion product instance for the same product offer within the offer hierarchy. Field names and rules are defined in the <span class="unixoutputc">PRODUCT_INSTANCE_TRE_V</span> view.</p>
+<p class="bodytext">If a non-cancelled companion product instance is being inserted for a base product instance that is complete and has a product offer assigned, the base product instance is flagged as requiring re-completion.</p>
+<p class="bodytext">The function supports product instance history records with sub-day granularity; that is, <span class="unixoutputc">StartDate~</span> and <span class="unixoutputc">EFFECTIVE_START_DATE</span> can specify a time component.</p>
+<p class="bodytext">If a base product instance is successfully inserted, the <span class="unixoutputc"><a id="h65514" class="jump" title="biProductInstancePurge&amp;()" href="13029.htm" target="_self">biProductInstancePurge&amp;()</a></span><a id="h65514_2" class="jump" title="biProductInstancePurge&amp;()" href="13029.htm" target="_self"> function</a> is called to replicate the entity to the appropriate separate rating instances. </p>
+<p class="bodytext">If base product instances are being updated in bulk, to prevent base product instance data being replicated, the <span class="unixoutputc">DO_NOT_PURGE_IND_CODE</span> field name with an integer value (any integer value, usually 1) must be passed to <span class="unixoutputc">ProductInstanceInsert&amp;()</span>.  If the entity needs to be replicated, the <span class="unixoutputc"><a id="h65514_3" class="jump" title="biProductInstancePurge&amp;()" href="13029.htm" target="_self">biProductInstancePurge&amp;()</a></span><a id="h65514_4" class="jump" title="biProductInstancePurge&amp;()" href="13029.htm" target="_self"> function</a> must be called.</p>
+<p class="bodytext">If a value is specified for <span class="unixoutputc">PRODUCT_OFFER_NODE_ID</span> or <span class="unixoutputc">PRODUCT_OFFER_ID</span>, the following applies:</p>
+<ul class="listbullet"><li class="listbullet">The value of one is used to derive or validate the value of the other.</li><li class="listbullet">If a base product instance is being inserted, the function ensures that the product offer is compatible with the base product.</li><li class="listbullet">If a companion product instance is being inserted, the function ensures that the specified product offer contains the companion product, and the base product instance is assigned a product offer.</li></ul><table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">If a product instance is being inserted, <span class="unixoutputc">FROM_PRODUCT_NAME</span> cannot be used to replace <span class="unixoutputc">FROM_PRODUCT_ID</span>.  <span class="unixoutputc">FROM_PRODUCT_NAME</span> is automatically populated. </p></td></tr></table>
+<p class="bodytext">If a value is specified for <span class="unixoutputc">FROM_PRODUCT_INSTANCE_ID</span>, this function triggers either a move or an upgrade operation. If a value is specified for <span class="unixoutputc">FROM_PRODUCT_ID</span>, an upgrade operation is triggered; otherwise, a move operation is triggered.</p>
+<p class="bodytext">For a move or upgrade operation, the following steps are performed:</p>
+<ol class="listnumber"><li class="listnumber">Checks that no value is specified for <span class="unixoutputc">BASE_PRODUCT_INSTANCE_ID</span>.</li><li class="listnumber">Checks that the <span class="unixoutputc">FROM_PRODUCT_INSTANCE_ID</span> exists from the specified date.<p class="listcontinue">If an upgrade operation has been triggered, an error is raised if the 'from' product instance is assigned a product offer as at <span class="unixoutputc">StartDate~</span>.</p>
+</li><li class="listnumber">Checks that from the specified date-time the customer node ID of the <span class="unixoutputc">FROM_PRODUCT_INSTANCE_ID</span> is:<ul class="listdashbullet2"><li class="listdashbullet2">Identical to the value of <span class="unixoutputc">CUSTOMER_NODE_ID</span> for an upgrade operation.</li><li class="listdashbullet2">Not identical to the value of <span class="unixoutputc">CUSTOMER_NODE_ID</span> for a move operation.</li></ul></li><li class="listnumber">Checks that the <span class="unixoutputc">FROM_PRODUCT_INSTANCE_ID</span> does not have a status of Cancelled, Moved, or Upgraded as of the <span class="unixoutputc">StartDate~</span>.</li><li class="listnumber">For an upgrade operation, calls <span class="unixoutputc"><a id="h65511" class="jump" title="biProductInstanceValUpgrade&amp;()" href="13035.htm" target="_self">biProductInstanceValUpgrade&amp;()</a></span> to check if the operation should proceed.  If this function fails, an error is raised.</li><li class="listnumber">For a move operation, an error is raised if any of the following conditions is False as of <span class="unixoutputc">StartDate~</span>:<ul class="listdashbullet2"><li class="listdashbullet2"><span class="unixoutputc">FROM_PRODUCT_INSTANCE_ID</span> is a base product instance.</li><li class="listdashbullet2"><span class="unixoutputc">FROM_PRODUCT_INSTANCE_ID</span> is associated with a single customer node.</li><li class="listdashbullet2">The customer node of the product instance being inserted must not have a status of Cancelled.</li><li class="listdashbullet2">No invoice is issued to either the customer node of the <span class="unixoutputc">FROM_PRODUCT_INSTANCE_ID</span> or the customer node of the product instance being inserted.</li></ul></li><li class="listnumber">If the value of <span class="unixoutputc">TO_PRODUCT_INSTANCE_ID</span> for the 'from' product instance is null, the <span class="unixoutputc">TO_PRODUCT_INSTANCE_ID</span> of the 'from' product instance, is set to the ID of the new product instance, and if an upgrade operation is in progress, the <span class="unixoutputc">TO_PRODUCT_ID</span> of the 'from' product instance is set to the product ID of the new product instance.</li></ol><table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">To use the supplied product offer, the effective user must have at least view security group access level for the group associated with the product offer.</p></td></tr></table>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="13504.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="66780.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

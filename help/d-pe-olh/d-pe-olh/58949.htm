@@ -1,0 +1,951 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Configuration Tab Attributes </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Configuration Workbench for Singleview Process Engine 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "11425.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "12109.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11425');expand('10987');highlight('58949')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="11425.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="12109.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Configuration Workbench for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">Configuration Tab Attributes</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Configuration Tab Attributes' (58949)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="fieldname">Configuration </span>tab is used to specify the values of Process Engine configuration items.  The tab is displayed in the Views section in the Interface Design Tool of the Configuration Workbench.</p>
+<p class="bodytext">The following table lists attributes of the configuration items listed on the <span class="fieldname">Configuration</span> tab.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Process Engine Configuration Item Attributes on the Configuration Tab</p>
+<table class="tableintopic" width="708" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr>
+<td width="168" height="0"></td>
+<td width="540" height="0"></td>
+</tr>
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="168"><p class="tableheading">Attribute Name</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="540"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" colspan="2" width="708"><table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">Unless there is additional information specific to this tool, attributes displayed on all tools are not included in this table (see the <span class="referrals">Configuration Workbench Tools Guide for Singleview Process Engine</span>).</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">Value</span></p>
+</td>
+<td style="border:1px solid #010101;" width="540"><p class="tablebodytext">Value of the item.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">Need Server Restart</span></p>
+</td>
+<td style="border:1px solid #010101;" width="540"><p class="tablebodytext">Specifies whether a server restart is required after changing the configuration item.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">Need Cache Update</span></p>
+</td>
+<td style="border:1px solid #010101;" width="540"><p class="tablebodytext">Specifies whether a client cache refresh is required after changing the configuration item.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">Description</span></p>
+</td>
+<td style="border:1px solid #010101;" width="540"><p class="tablebodytext">Description of the item.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table provides information about Process Engine configuration items defined on the <span class="fieldname">Configuration</span> tab.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Process Engine Configuration Items on the Configuration Tab</p>
+<table class="tableintopic" width="708" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr>
+<td width="132" height="0"></td>
+<td width="72" height="0"></td>
+<td width="162" height="0"></td>
+<td width="78" height="0"></td>
+<td width="78" height="0"></td>
+<td width="78" height="0"></td>
+<td width="108" height="0"></td>
+</tr>
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="132"><p class="tableheading">ItemName</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="72"><p class="tableheading">Data<br>Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="162"><p class="tableheading">Description</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="78"><p class="tableheading">Default Value</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="78"><p class="tableheading">Min. Value</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="78"><p class="tableheading">Max. Value</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="108"><p class="tableheading">Formula</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">601</span><br><span class="unixoutputc">Compatibility</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Version 6.0.1 compatibility setting.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">2</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">The table below lists valid values.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">AssocTreeBin</span><br><span class="unixoutputc">RefNodeIcon</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Icon displayed for reference subset nodes in associated tree views in Process Engine web client.</p>
+<p class="tablebodytext">If changed, requires a Process Engine web client cache update to take effect.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Struct-<br>ure List</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">Auto_Derive_</span><br><span class="unixoutputc">Expire</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Boolean</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Whether facts that expire are automatically derived after data update.</p>
+<p class="tablebodytext">Provided for backward compatibility.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0 (FALSE)</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0 (FALSE)</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">AutoMapFunc</span><br><span class="unixoutputc">RoleName</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Char</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Function role to map to when creating remote EPM functions.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Null</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ClassKeys</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Minimum keys that can be assigned for a new class. </p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">200</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">200</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">3000</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">CSVExport</span><br><span class="unixoutputc">Timeout</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Maximum number of seconds the CSVExport operation waits for asynchronous derived facts to return before exporting.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">20</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">600</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">Default_Saved_</span><br><span class="unixoutputc">Rows</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Maximum number of rows a saved search can retrieve.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">600</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&lt;= HardRowLimit</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">DynamicCache</span><br><span class="unixoutputc">Size</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Size of the Dynamic Object Cache in MB.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">8</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">8</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">65536</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">Enable_User_</span><br><span class="unixoutputc">Supplied_</span><br><span class="unixoutputc">Trace_Info</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Boolean</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">This operation is deprecated for Process Engine web client. It is maintained for backward compatibility with Process Engine Windows client.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0 (FALSE)</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">FactKeys</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Minimum keys that can be assigned for a new fact.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">2000</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">2000</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">40000</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">FactStaticKeys</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Minimum keys that can be assigned for a new static, local, fact-based class that is not a message.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1000000000</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">Frame</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Char</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Name of the toolbar used as the Main Frame toolbar.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Frame</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">GlobalStartup</span><br><span class="unixoutputc">TransTimeout</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Configurable global Tuxedo transaction timeout used during server startup.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">900</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">300</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">36000</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">GlobalTrans</span><br><span class="unixoutputc">Timeout</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Configurable global Tuxedo transaction timeout; number of seconds allowed before a transaction times out.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">900</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">300</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">36000</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">GNA_Cache</span>_<br><span class="unixoutputc">Expiry_Period</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Number of seconds after a GNA cache refresh that the cache contents remain valid.</p>
+<p class="tablebodytext">0 specifies the cache contents are always considered valid.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">GNA_Cache</span>_<br><span class="unixoutputc">Refresh_Period</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Number of seconds between GNA cache refreshes.</p>
+<p class="tablebodytext">0 disables cache refresh.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">60</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">GNA_Cache</span>_<span class="unixoutputc">Size</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Size of the Get Next Action (GNA) cache, expressed as a number of actions.</p>
+<p class="tablebodytext">If necessary, <span class="unixoutputc">GNA_Cache_Size</span> is dynamically reduced so it takes up no more than half the size of the dynamic shared memory segment<span class="unixoutputc"> (ShmDynSize</span>).</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">40000</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1000</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1000000</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Number of Concurrent users * 100</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">GNA_Candidate_</span><br><span class="unixoutputc">Size</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Maximum number of candidate actions to extract from the GNA cache.</p>
+<p class="tablebodytext">Increase <span class="unixoutputc">GNA_Candidate_Size</span> to reduce the chance of all candidate actions being locked by other users.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Number of Concurrent users / 10</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">HardRowLimit</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Maximum number of rows that can be returned in a search.</p>
+<p class="tablebodytext">When the <span class="fieldname">Use Unlimited Server Resources</span> check box is selected for a search, both the <span class="unixoutputc">HardRowLimit</span> and <span class="unixoutputc">SoftRowLimit</span> configuration items still apply.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">600</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">50</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">2000</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Based on configuration</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">IndexCacheSize</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Size of the index key cache in MB.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">8</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">8</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">4096</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">KeyAdjustCompatibility</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Boolean</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Wether customised configuration provides already adjusted keys for key adjusted classes before calls are made to <span class="unixoutputc">ObjectUpdate&amp;()</span> and <span class="unixoutputc">ObjectInsert@()</span> EPM functions.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0 (FALSE)</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0 (FALSE)</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1 (TRUE)</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">KeylessCache</span><br><span class="unixoutputc">Size</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Size of the keyless class object cache in MB.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">8</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">8</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">4096</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">LastRebuild</span><br><span class="unixoutputc">Stamp</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Time<br>Stamp</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Date-time of the last database rebuild.</p>
+<p class="tablebodytext">Cannot be set by configurers.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">10000000.0</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">LMSIntegrated</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Boolean</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Whether Process Engine is integrated with a configuration management tool.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0 (FALSE)</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0 (FALSE)</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1 (TRUE)</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">LockUnbreakable</span><br><span class="unixoutputc">Period</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Maximum number of minutes a user can lock an object before another user can break the lock.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">30</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1440</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Average case time in minutes * 5</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">LongRunningOp</span><br><span class="unixoutputc">Warning</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Maximum number of seconds after which the Long Running Operation Warning should be raised. </p>
+<p class="tablebodytext">Any RPC exceeding this time is logged. </p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">30</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">5</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">7200</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">Max_Complex_</span><br><span class="unixoutputc">Rows</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Maximum number of rows a custom search can retrieve.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">600</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&lt;= HardRowLimit</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">Max_In_Place_</span><br><span class="unixoutputc">Rows</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Maximum number of rows an advanced search can retrieve.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">600</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&lt;= HardRowLimit</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">Max_Operation_</span><br><span class="unixoutputc">Objects</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Maximum number of objects that can be created or updated in a single EPM trigger or function before an error is returned.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">200</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">100</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">10000</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Based on configuration</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">MessageKeys</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Minimum keys that can be assigned for a new message.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">45000</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">45000</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1000000000</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">NonFactStatic</span><br><span class="unixoutputc">Keys</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Minimum keys that can be assigned for a new non-fact-based class.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">100000</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" rowspan="2" width="132"><p class="tablebodytext"><span class="unixoutputc">Objkey_Offset</span></p>
+</td>
+<td style="border:1px solid #010101;" rowspan="2" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Value added to object keys in shared static and shared admin static classes with the <span class="fieldname">Key Adjusted</span> check box selected.</p>
+<p class="tablebodytext">This ensures object key values (including Convergent Billing reference codes values, which can be zero or negative) are positive when passed to the Process Engine server.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">10</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">999999</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" colspan="5" width="504"><table class="cautionstyle" width="100%"><tr><td><p class="caution">Caution:</p><p class="tablecaution">It is strongly recommended that the value of <span class="unixoutputc">ObjKey_Offset</span> be set during configuration and not changed.</p><p class="tablecaution">However, if <span class="unixoutputc">ObjKey_Offset</span> is changed, the Process Engine server must be restarted immediately; otherwise, the server has inconsistent object keys.  After restarting the Process Engine and Tomcat servers, the caches are reloaded with the new values when a user logs into Process Engine web client. For information about restarting the Process Engine server, refer to the <span class="unixoutputc">sv_stop</span> and <span class="unixoutputc">sv_start</span> server utilities in the <span class="referrals">System Reference Guide for Singleview</span>.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">OnlineDebug</span><br><span class="unixoutputc">Level</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Char</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Level of EPM debug trace collected by the Process Engine server.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Light Trace</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">Prevent</span><br><span class="unixoutputc">Additional</span><br><span class="unixoutputc">Session</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Whether a user is prevented from logging in or prompted to disconnect if an instance of the Configuration Workbench, Administration Tool, or Process Engine web client is open.</p>
+<p class="tablebodytext">Only applies if multiple logins is not set in the user's profile.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">0 = User prompted to disconnect from session.</p>
+<p class="tablebodytext">1 = User prevented from logging in to an additional session.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">PrivateCache</span><br><span class="unixoutputc">Size</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Size of the private object cache in MB.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">8</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">8</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">4096</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ShmDynSize</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Size of the dynamic shared memory segment, in MB.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1024</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Large enough to start Process Engine</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ShmLockSize</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Size of the lock shared memory segment, in MB.</p>
+<p class="tablebodytext">1MB allows for approximately 2000 locks. </p>
+<p class="tablebodytext">Systems with many concurrent users might need to increase the value.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">3</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">3</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">64</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Number of Concurrent users / 20</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ShmStatSize</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Size of the static shared memory segment, in MB.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">12</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">12</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1024</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Large enough to start Process Engine. Depends on the amount of configuration</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">SoftRowLimit</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Number of rows returned in a search after which a warning is displayed and the user must confirm that the search results should be displayed.</p>
+<p class="tablebodytext">It value must be less than or equal to <span class="unixoutputc">HardRowLimit</span>.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">50</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">50</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">2000</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&lt;= HardRowLimit</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">StaticCache</span><br><span class="unixoutputc">Size</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Size of the static object cache in MB.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">8</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">8</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">4096</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">StructValIcon</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Deprecated, retained for backward compatibility.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Struct<br>-ure List</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ThesGoodwords</span><br><span class="unixoutputc">Only</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Boolean</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Whether the keyword list contains only specified words (called good words).</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0 (FALSE)</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0 (FALSE)</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1 (TRUE)</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ThesInword</span><br><span class="unixoutputc">Remove</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Char</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Characters inside a word removed when generating a keyword list.</p>
+<p class="tablebodytext">Do not use spaces or commas to separate characters in the list.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">~!@#$%^&amp;*()[]{}\+/</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ThesInword</span><br><span class="unixoutputc">Split</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Char</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Characters in a word that cause a word to be split into two words when generating a keyword list.</p>
+<p class="tablebodytext">Do not use spaces or commas to separate characters.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">-</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ThesKeyword</span><br><span class="unixoutputc">Numerics</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Boolean</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Whether numbers are treated as words in the generation of a keyword list.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0 (FALSE)</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0 (FALSE)</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1 (TRUE)</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ThesMinWord</span><br><span class="unixoutputc">Length</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Minimum length for words included in a keyword list.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">3</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">3</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">3</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ThesOutword</span><br><span class="unixoutputc">Remove</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Char</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Characters at the beginning and end of a word removed when generating a keyword list.</p>
+<p class="tablebodytext">Do not use spaces or commas to separate characters in the list.</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">~!@#$%^&amp;*()[]{}\+/</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists valid values of the <span class="unixoutputc">601Compatibility</span> configuration item and the action taken when stored facts are retrieved.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">601Compatibility Valid Values</p>
+<table class="tableintopic" width="708" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="90"><p class="tableheading">Value</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="618"><p class="tableheading">Action</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">0</p>
+</td>
+<td style="border:1px solid #010101;" width="618"><p class="tablebodytext">No default or derivation of stored facts is performed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">1</p>
+</td>
+<td style="border:1px solid #010101;" width="618"><p class="tablebodytext">Only facts belonging to shared classes, regardless of whether they are local or remote, are defaulted or derived.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">2</p>
+</td>
+<td style="border:1px solid #010101;" width="618"><p class="tablebodytext">All stored facts in all classes are derived or defaulted. </p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="11425.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="12109.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Configuration Workbench for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

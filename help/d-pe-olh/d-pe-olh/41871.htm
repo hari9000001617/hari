@@ -1,0 +1,249 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Message Tool </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Configuration Workbench for Singleview Process Engine 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "58783.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "11425.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('10987');highlight('41871')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="58783.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="11425.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Configuration Workbench for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Message Tool</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Message Tool' (41871)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Table 7 lists the Message Tool search attributes.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Table 7  Search Attributes</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="144"><p class="tableheading">Attribute</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="552"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">Message ID</span> field</p>
+</td>
+<td style="border:1px solid #010101;" width="552"><p class="tablebodytext">Specifies the message ID for which to search.</p>
+<p class="tablebodytext">This attribute is case-insensitive and wildcard searching using the % character is supported.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">Group</span> drop-down list</p>
+</td>
+<td style="border:1px solid #010101;" width="552"><p class="tablebodytext">Specifies the message group in which to search.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">Message Text</span> field</p>
+</td>
+<td style="border:1px solid #010101;" width="552"><p class="tablebodytext">Specifies the message text to search for.</p>
+<p class="tablebodytext">Wildcard searching is implicitly performed; that is, it is not necessary to use the % character at the beginning or end of the search text.  The % character can be used within the search text.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><strong class="buttons">Clear Search</strong> button</p>
+</td>
+<td style="border:1px solid #010101;" width="552"><p class="tablebodytext">Clears the search attributes and displays all messages.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><strong class="buttons">Apply Search</strong> button</p>
+</td>
+<td style="border:1px solid #010101;" width="552"><p class="tablebodytext">Runs the search.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The attributes displayed in the <span class="fieldname">Detail</span> section depend on whether a message group or message is selected in the Object List Box.</p>
+<p class="bodytext">Table 8 lists the Message Tool attributes for message groups.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Table 8  Message Group Attributes</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="150"><p class="tableheading">Attribute</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="546"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="fieldname">Message Group Name</span> field</p>
+</td>
+<td style="border:1px solid #010101;" width="546"><p class="tablebodytext">Name for the group.</p>
+<p class="tablebodytext">A default value is provided (for example, Group_5006) and should be updated to reflect the purpose of the group.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="fieldname">Description</span> field</p>
+</td>
+<td style="border:1px solid #010101;" width="546"><p class="tablebodytext">Description for the group.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="fieldname">ID Prefix</span> field</p>
+</td>
+<td style="border:1px solid #010101;" width="546"><p class="tablebodytext">Specifies the message group prefix applied to messages in the group.</p>
+<p class="tablebodytext">If a prefix is not specified, it defaults (when the group is committed) to the first two characters of the group name followed by a hyphen.  For example, the prefix for the Default group is 'De-'.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">Table 9 lists the Message Tool attributes for messages.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Table 9  Message Attributes</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr>
+<td width="150" height="0"></td>
+<td width="546" height="0"></td>
+</tr>
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="150"><p class="tableheading">Attribute</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="546"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" colspan="2" width="696"><table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">Unless there is additional information specific to this tool, <a id="h39913" class="jump" title="Common Attributes" href="39911.htm" target="_self">attributes displayed on all tools are not included in this table</a>.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="fieldname">Message ID</span> field</p>
+</td>
+<td style="border:1px solid #010101;" width="546"><p class="tablebodytext">Generated when the message is committed.</p>
+<p class="tablebodytext">The ID prefix for the message group prefixes the ID number.  For example, a <span class="fieldname">Message ID</span> in the Default group is De-45007.</p>
+<p class="tablebodytext">It can be specified but must be unique.</p>
+<p class="tablebodytext">It is displayed in the <span class="formname">Information</span>, <span class="formname">Warning</span>, or <span class="formname">Error</span> window in the Process Engine client, <span class="formname">Message Help</span> window, <span class="formname">Commit Process Messages</span> window in the Configuration Workbench, and <span class="unixoutputc">log.out</span>.</p>
+<p class="tablebodytext">It is also used to search for messages.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="fieldname">Group</span> drop-down list</p>
+</td>
+<td style="border:1px solid #010101;" width="546"><p class="tablebodytext">Group to which the message belongs.</p>
+<p class="tablebodytext">Defaults to the group in which the message was created but can be changed by selecting another group from the drop-down list.  If the group is changed, the message is moved to that group when it is committed.</p>
+<p class="tablebodytext">The <span class="fieldname">Group</span> is also used to search for messages.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="fieldname">Name</span> field</p>
+</td>
+<td style="border:1px solid #010101;" width="546"><p class="tablebodytext">Identifies the message in the Object List Box and is not displayed in the Process Engine client.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="fieldname">Message Text </span>field</p>
+</td>
+<td style="border:1px solid #010101;" width="546"><p class="tablebodytext">Text displayed in the <span class="formname">Information</span>, <span class="formname">Warning</span>, or <span class="formname">Error</span> window in the Process Engine client, the<span class="formname"> Message Help</span> window, and the <span class="formname">Commit Process Messages</span> window in the Configuration Workbench.</p>
+<p class="tablebodytext">The message text is also used to search for messages.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="fieldname">Cause</span> field</p>
+</td>
+<td style="border:1px solid #010101;" width="546"><p class="tablebodytext">Text specifying the cause or possible cause for the error.</p>
+<p class="tablebodytext">The cause is displayed in the<span class="formname"> Message Help</span> window.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="fieldname">Action</span> field</p>
+</td>
+<td style="border:1px solid #010101;" width="546"><p class="tablebodytext">Text specifying the action required to fix the error.</p>
+<p class="tablebodytext">The action is displayed in the<span class="formname"> Message Help</span> window.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="fieldname">Core Parameters</span> field</p>
+</td>
+<td style="border:1px solid #010101;" width="546"><p class="tablebodytext">Read-only.</p>
+<p class="tablebodytext">Displays parameters used in core messages.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">It does not display parameters defined in the Business Rule Tool.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="fieldname">Compiled in Client DLL? </span>check box</p>
+</td>
+<td style="border:1px solid #010101;" width="546"><p class="tablebodytext">Read-only.</p>
+<p class="tablebodytext">Selected for messages compiled in the client DLL.</p>
+<p class="tablebodytext">Messages compiled in the client DLL can be displayed when the Process Engine client is not connected to the server (for example, messages displayed for login errors).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="fieldname">Translatable</span> check box</p>
+</td>
+<td style="border:1px solid #010101;" width="546"><p class="tablebodytext">Selected and read-only for all user-defined (that is, non-core) messages.</p>
+<p class="tablebodytext">For core messages, it is selected for messages displayed in the Process Engine client.  To reduce translation costs, it is not selected for messages displayed only in the Configuration Workbench.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><strong class="buttons">New Group</strong> button</p>
+</td>
+<td style="border:1px solid #010101;" width="546"><p class="tablebodytext">Creates a message group.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><strong class="buttons">New Message</strong> button</p>
+</td>
+<td style="border:1px solid #010101;" width="546"><p class="tablebodytext">Creates a message.</p>
+<p class="tablebodytext">Alternatively, click the <strong class="buttons">New</strong> button on the Configuration Workbench toolbar, or right-click and select the <strong class="menuoptions">New</strong> option.</p>
+</td>
+</tr>
+
+</table>
+<p class="tablebodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="58783.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="11425.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Configuration Workbench for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

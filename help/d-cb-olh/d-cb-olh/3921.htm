@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Task Details Form </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "3919.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "3929.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+<script language="javascript" type="text/javascript" src="dhtml_popup.js"></script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('1732');highlight('3921')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="3919.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="3929.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Task Details Form</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Task Details Form' (3921)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="formname">Task Details</span> form is used to enter, view, and update details about a <a id="h3308" class="popup" title="Task" href="javascript:void(0)" onclick="togglePopup('3308','h3308')" target="_self">task</a>.  </p>
+<div id="d3308" class="clickpopup" style="display:none"><a href="javascript:hidePopup('3308')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">Action or operation scheduled to be performed on behalf of a client by the Scheduled Task Dispatcher (STD) process.  The STD process generates the required tasks based on the schedule definition.  A task is executed as a server process by the Task Launch and Monitor (TLM) process.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1049" class="glossaryitemjump" title="Schedule" href="14848.htm#o855" target="_self">Schedule</a>, <a id="h1079" class="glossaryitemjump" title="Scheduled Task Dispatcher (STD) Process" href="14848.htm#o857" target="_self">Scheduled Task Dispatcher (STD) Process</a>, and <a id="h1080" class="glossaryitemjump" title="Task Launch and Monitor (TLM) Process" href="14849.htm#o931" target="_self">Task Launch and Monitor (TLM) Process</a>.</p>
+</div><p class="bodytext">The upper part of the form displays the task ID, task status, status reason, and the schedule name.</p>
+<p class="bodytext">The lower part of the form consists of the following tabs, for viewing more specific details:</p>
+<p class="bodytext"><a id="h3922" class="expandingblock" title="Details Tab" href="javascript:toggleBlock('3922')" target="_self"><img id="i3922" class="expandicon" src="arrowright.gif" alt="" border="0">Details</a></p>
+<div id="d3922" class="expandingblock" style="display:none"><p class="bodytext">The <span class="fieldname">Details</span> tab displays a summary of standard information about the task.  The following fields are displayed: <span class="fieldname">Email Address</span>, <span class="fieldname">Instance Name</span>, <span class="fieldname">Effective Date</span>, <span class="fieldname">Scheduled Start Date</span>, <span class="fieldname">Baseline</span> group with <span class="fieldname">Start Date</span>, <span class="fieldname">End Date</span>, <span class="fieldname">Duration (secs)</span>, <span class="fieldname">Maximum Duration</span>, <span class="fieldname">Purge Period (days)</span>, <span class="fieldname">Expected/Actual</span> group with <span class="fieldname">Start Date</span>, <span class="fieldname">End Date</span>, and <span class="fieldname">Duration (secs)</span>. </p>
+<p class="bodytext">From the <span class="fieldname">Details</span> tab, it is possible to resubmit or stop a task and view the details of resubmitted, original, or dependent tasks associated with the task. </p>
+</div><p class="bodytext"><a id="h3924" class="expandingblock" title="Parameters" href="javascript:toggleBlock('3924')" target="_self"><img id="i3924" class="expandicon" src="arrowright.gif" alt="" border="0">Parameters</a></p>
+<div id="d3924" class="expandingblock" style="display:none"><p class="bodytext">The <span class="fieldname">Parameters</span> tab displays parameters passed to the server process (if any).  Any parameters specified are derived from the schedule that created the task, but they can be modified before the task is run, or when the task is resubmitted.</p>
+<p class="bodytext">Clicking the <strong class="buttons">Bill Run…</strong> button displays the <span class="formname">Bill Run Detail</span> form with the bill run for this task.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">The <strong class="buttons">Bill Run…</strong> button is enabled only if:</p><ul class="notelistbullet"><li class="notelistbullet">The form is in view mode.</li><li class="notelistbullet">The task created a bill run, or the task is associated with a schedule whose schedule type has a task type of Bill Run Operation, Bill Run Customer Operation, or Bill Run Operation (Prerequisite).</li><li class="notelistbullet">The task status is Success, Failure, or Running.</li></td></tr></table></ul></div><p class="bodytext"><a id="h9948" class="expandingblock" title="Prerequisites" href="javascript:toggleBlock('9948')" target="_self"><img id="i9948" class="expandicon" src="arrowright.gif" alt="" border="0">Prerequisites</a></p>
+<div id="d9948" class="expandingblock" style="display:none"><p class="bodytext">The <span class="fieldname">Prerequisites</span> tab displays any prerequisite tasks assigned to the current task.  From the <span class="fieldname">Prerequisites</span> tab, it is possible to search for and assign tasks as prerequisite to the current task and configure the conditions that must be satisfied on the prerequisite tasks before the current task can progress. </p>
+<p class="bodytext">The <strong class="buttons">Start task immediately when all prerequisites satisfied?</strong> check box allows the task to start as soon as all prerequisites are true rather than waiting for the <strong class="buttons">Scheduled Start Date</strong>.  This can be selected even if no task prerequisites are specified. </p>
+</div><p class="bodytext"><a id="h9950" class="expandingblock" title="Resources" href="javascript:toggleBlock('9950')" target="_self"><img id="i9950" class="expandicon" src="arrowright.gif" alt="" border="0">Resources</a></p>
+<div id="d9950" class="expandingblock" style="display:none"><p class="bodytext">The <span class="fieldname">Resources</span> tab displays the details of resources that have been or will be consumed while the current task is running.  The <span class="fieldname">Dependent Resource</span> group within the <span class="fieldname">Resources</span> tab displays details of the resource that resulted in the current task&#8217;s status.</p>
+</div><p class="bodytext"><a id="h3926" class="expandingblock" title="Results Tab" href="javascript:toggleBlock('3926')" target="_self"><img id="i3926" class="expandicon" src="arrowright.gif" alt="" border="0">Results</a></p>
+<div id="d3926" class="expandingblock" style="display:none"><p class="bodytext">For bill runs, customers suppressed from billing, using either the <span class="formname">Customer Detail</span> form or <span class="formname">Billing Suppress</span> schedule type, are identified as Skipped in the <span class="fieldname">Results</span> tab.  Customers excluded from the bill run for configuration reasons (for example, invoice due amount does not reach a predetermined limit) are designated as Suppressed in the <span class="fieldname">Results</span> tab.</p>
+<p class="bodytext">Clicking the <strong class="buttons">Report…</strong> button displays the report generated by the task.</p>
+</div><p class="bodytext">The form can be displayed in one of three <a id="h1472" class="popup" title="Form Modes" href="javascript:void(0)" onclick="togglePopup('1472','h1472')" target="_self">form modes</a>, with the current mode indicated in the form&#8217;s title.</p>
+<div id="d1472" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1472')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">A form can be displayed in one of the following modes:</p>
+<table class="tableintopic" width="528" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Form Mode</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="402"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">View Only mode</p>
+</td>
+<td style="border:1px solid #010101;" width="402"><p class="tablebodytext">Allows information held in Convergent Billing to be viewed, but not updated (modified).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Insert mode</p>
+</td>
+<td style="border:1px solid #010101;" width="402"><p class="tablebodytext">Allows new information to be recorded (entered) in Convergent Billing.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Update mode</p>
+</td>
+<td style="border:1px solid #010101;" width="402"><p class="tablebodytext">Allows information held in Convergent Billing to be viewed and updated (modified).</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">To change the form mode:</p>
+<table class="tableintopic" width="528" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="168"><p class="tableheading">Current Form Mode</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="156"><p class="tableheading">New Form Mode</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="204"><p class="tableheading">Click the <strong class="buttons">…</strong></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">View Only mode</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">Update mode</p>
+</td>
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><strong class="buttons">Update</strong> button</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">Update mode</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">View Only mode</p>
+</td>
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><strong class="buttons">Save</strong> or <strong class="buttons">Cancel</strong> button</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">View Only mode</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">Insert mode</p>
+</td>
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><strong class="buttons">Insert</strong> button</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">Insert mode</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">View Only mode</p>
+</td>
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><strong class="buttons">Save</strong> button</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+</div><p class="bodytext">If the task&#8217;s status is Running, Stopping, or Resubmitted, the task cannot be updated or deleted. </p>
+<p class="bodytext"><strong class="specialbold">Associated Actions</strong></p>
+<p class="bodytext"><a id="h3685" class="expandingblock" title="View a Schedule" href="javascript:toggleBlock('3685')" target="_self"><img id="i3685" class="expandicon" src="arrowright.gif" alt="" border="0">Viewing a Task</a></p>
+<div id="d3685" class="expandingblock" style="display:none"><p class="bodytext">To view a schedule:</p>
+<ol class="listnumber"><li class="listnumber">Select the <strong class="menuoptions">Server Tasks</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">Schedules</strong> option.  The <span class="formname">Schedule Search</span> form is displayed.</li><li class="listnumber">Enter or select the appropriate search criteria and search method.</li><li class="listnumber">Click the <strong class="buttons">Search</strong> button.  A list of schedules matching the specified criteria is displayed.</li><li class="listnumber">Select the appropriate schedule and click the <strong class="buttons">Details...</strong> button, or double-click the appropriate schedule.  The <span class="formname">Schedule Definition</span> form is displayed in View Only mode.</li></ol><p class="moreinfo"><a id="h3311" class="expandingblock" title="Schedules" href="javascript:toggleBlock('3311')" target="_self"><img id="i3311" class="expandicon" src="arrowright.gif" alt="" border="0">Need more information on schedules?</a></p>
+<div id="d3311" class="expandingblock" style="display:none"><p class="bodytext">Schedules are required to run tasks at specific times and frequencies in Convergent Billing.  Schedules are used to manage all billing tasks such as the rating of events, and the preparation and printing of invoices.  Schedules are also used to generate <a id="h3314" class="jump" title="Reports" href="3315.htm" target="_self">reports</a>.  Tasks can be set up to run automatically at predefined intervals or at a specified time and date.  The schedule definition is determined in part by the associated <a id="h3319" class="jump" title="Schedule Types" href="3320.htm" target="_self">schedule type</a>.</p>
+<p class="bodytext">When setting up a schedule, an instance on Convergent Billing can be specified to run the schedule.  If an instance is not specified, the schedule is run on the default instance defined for the scheduler.  (The default instance is defined in the <span class="unixoutputc">STD</span> configuration item.)</p>
+<p class="bodytext">Preconfigured functions can be automatically executed on commencement or completion of a scheduled task, and notification messages provided to assist with system operations.</p>
+<p class="bodytext">A schedule specifies:</p>
+<ul class="listbullet"><li class="listbullet">When a task is to be run for the first time.</li><li class="listbullet">The Convergent Billing instance the schedule is run on.</li><li class="listbullet">The effective date (used as a base to compute the effective date for tasks that are created).</li><li class="listbullet">How often the task should be repeated.</li><li class="listbullet">What program the task needs to perform its function, and what parameters should be passed to it.</li><li class="listbullet">Selection parameters such as whether a report should include data on all customer nodes or only include data on a specific customer node.</li><li class="listbullet">Display parameters, such as whether the data included in a report is to be sorted, the sort order, and the sort sequence.</li></ul></div></div><p class="bodytext"><a id="h3687" class="expandingblock" title="Define a Schedule" href="javascript:toggleBlock('3687')" target="_self"><img id="i3687" class="expandicon" src="arrowright.gif" alt="" border="0">Creating a Schedule</a></p>
+<div id="d3687" class="expandingblock" style="display:none"><p class="bodytext">To define a schedule:</p>
+<ol class="listnumber"><li class="listnumber">Select the <strong class="menuoptions">Server Tasks</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">Schedules</strong> option.  The <span class="formname">Schedule Search</span> form is displayed.</li><li class="listnumber">Select the <span class="fieldname">Create a new schedule</span> option and click the <strong class="buttons">New...</strong> button.  The <span class="formname">Schedule Definition</span> form is displayed in Insert mode.</li><li class="listnumber">Complete the data entry fields in the upper part of the form.</li><li class="listnumber">Complete the data entry fields on the <span class="fieldname">Settings</span> tab.</li><li class="listnumber">Complete the data entry fields on the <span class="fieldname">Parameters</span> tab.  Some of fields on this tab may be optional, depending on the associated schedule type.</li><li class="listnumber">Click the <strong class="buttons">Save</strong> button on the toolbar.  The <span class="formname">Submit Schedule</span> form is displayed.</li><li class="listnumber"><a id="h3689" class="jump" title="Submit a Schedule" href="4373.htm#o3690" target="_self">Submit the schedule</a>.</li></ol><p class="moreinfo"><a id="h3311_2" class="expandingblock" title="Schedules" href="javascript:toggleBlock('3311_2')" target="_self"><img id="i3311_2" class="expandicon" src="arrowright.gif" alt="" border="0">Need more information on schedules?</a></p>
+<div id="d3311_2" class="expandingblock" style="display:none"><p class="bodytext">Schedules are required to run tasks at specific times and frequencies in Convergent Billing.  Schedules are used to manage all billing tasks such as the rating of events, and the preparation and printing of invoices.  Schedules are also used to generate <a id="h3314_2" class="jump" title="Reports" href="3315.htm" target="_self">reports</a>.  Tasks can be set up to run automatically at predefined intervals or at a specified time and date.  The schedule definition is determined in part by the associated <a id="h3319_2" class="jump" title="Schedule Types" href="3320.htm" target="_self">schedule type</a>.</p>
+<p class="bodytext">When setting up a schedule, an instance on Convergent Billing can be specified to run the schedule.  If an instance is not specified, the schedule is run on the default instance defined for the scheduler.  (The default instance is defined in the <span class="unixoutputc">STD</span> configuration item.)</p>
+<p class="bodytext">Preconfigured functions can be automatically executed on commencement or completion of a scheduled task, and notification messages provided to assist with system operations.</p>
+<p class="bodytext">A schedule specifies:</p>
+<ul class="listbullet"><li class="listbullet">When a task is to be run for the first time.</li><li class="listbullet">The Convergent Billing instance the schedule is run on.</li><li class="listbullet">The effective date (used as a base to compute the effective date for tasks that are created).</li><li class="listbullet">How often the task should be repeated.</li><li class="listbullet">What program the task needs to perform its function, and what parameters should be passed to it.</li><li class="listbullet">Selection parameters such as whether a report should include data on all customer nodes or only include data on a specific customer node.</li><li class="listbullet">Display parameters, such as whether the data included in a report is to be sorted, the sort order, and the sort sequence.</li></ul></div></div><p class="bodytext"><a id="h3309" class="expandingblock" title="Schedule an Immediate One-off Task" href="javascript:toggleBlock('3309')" target="_self"><img id="i3309" class="expandicon" src="arrowright.gif" alt="" border="0">Scheduling an Immediate Task</a></p>
+<div id="d3309" class="expandingblock" style="display:none"><p class="bodytext">To schedule an immediate one-off task:</p>
+<ol class="listnumber"><li class="listnumber">Select the <strong class="menuoptions">Server Tasks</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">One-off Task</strong> option.  The <a id="h3306" class="jump" title="One-Off Task Definition Form" href="52748.htm" target="_self">One-off Task Definition</a> form is displayed.</li><li class="listnumber">Select the schedule type from the drop-down list.  The lower part of the form displays the parameters associated with the schedule type.</li><li class="listnumber">Enter any parameters that may be required by the schedule.</li><li class="listnumber">Click the <strong class="buttons">Save</strong> button on the toolbar.  The schedule is saved and a one-off task is submitted.</li><li class="listnumber">Click the <strong class="buttons">Display Task…</strong> button to open the <span class="formname">Task Details</span> form and monitor the progress of the task created.</li></ol><p class="bodytext">When the task is complete, a notification is sent by email.</p>
+<p class="moreinfo"><a id="h3311_3" class="expandingblock" title="Schedules" href="javascript:toggleBlock('3311_3')" target="_self"><img id="i3311_3" class="expandicon" src="arrowright.gif" alt="" border="0">Need more information on schedules?</a></p>
+<div id="d3311_3" class="expandingblock" style="display:none"><p class="bodytext">Schedules are required to run tasks at specific times and frequencies in Convergent Billing.  Schedules are used to manage all billing tasks such as the rating of events, and the preparation and printing of invoices.  Schedules are also used to generate <a id="h3314_3" class="jump" title="Reports" href="3315.htm" target="_self">reports</a>.  Tasks can be set up to run automatically at predefined intervals or at a specified time and date.  The schedule definition is determined in part by the associated <a id="h3319_3" class="jump" title="Schedule Types" href="3320.htm" target="_self">schedule type</a>.</p>
+<p class="bodytext">When setting up a schedule, an instance on Convergent Billing can be specified to run the schedule.  If an instance is not specified, the schedule is run on the default instance defined for the scheduler.  (The default instance is defined in the <span class="unixoutputc">STD</span> configuration item.)</p>
+<p class="bodytext">Preconfigured functions can be automatically executed on commencement or completion of a scheduled task, and notification messages provided to assist with system operations.</p>
+<p class="bodytext">A schedule specifies:</p>
+<ul class="listbullet"><li class="listbullet">When a task is to be run for the first time.</li><li class="listbullet">The Convergent Billing instance the schedule is run on.</li><li class="listbullet">The effective date (used as a base to compute the effective date for tasks that are created).</li><li class="listbullet">How often the task should be repeated.</li><li class="listbullet">What program the task needs to perform its function, and what parameters should be passed to it.</li><li class="listbullet">Selection parameters such as whether a report should include data on all customer nodes or only include data on a specific customer node.</li><li class="listbullet">Display parameters, such as whether the data included in a report is to be sorted, the sort order, and the sort sequence.</li></ul></div></div><p class="bodytext"><a id="h3321" class="expandingblock" title="Schedule a Future One-off Task" href="javascript:toggleBlock('3321')" target="_self"><img id="i3321" class="expandicon" src="arrowright.gif" alt="" border="0">Scheduling a Future One-off Task</a></p>
+<div id="d3321" class="expandingblock" style="display:none"><p class="bodytext">To schedule a one-off task:</p>
+<ol class="listnumber"><li class="listnumber">Select the <strong class="menuoptions">Server Tasks</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">Schedules</strong> option.  The <span class="formname">Schedule Search</span> form is displayed.</li><li class="listnumber">Select the <span class="fieldname">Create a new schedule</span> option and click the <strong class="buttons">New...</strong> button.  The <span class="formname">Schedule Definition</span> form is displayed in Insert mode.</li><li class="listnumber">Complete the data entry fields in the upper part of the form. </li><li class="listnumber">Select the schedule type from the drop-down list.  The <span class="fieldname">Parameters</span> tab is populated with the parameters associated with the schedule type.</li><li class="listnumber">Complete the fields on the <span class="fieldname">Settings</span> tab.</li><li class="listnumber">Complete the fields on the <span class="fieldname">Parameters </span>tab.</li><li class="listnumber">Click the <strong class="buttons">Save</strong> button on the toolbar.  The <span class="formname">Submit Schedule</span> form is displayed.</li></ol><p class="moreinfo"><a id="h3311_4" class="expandingblock" title="Schedules" href="javascript:toggleBlock('3311_4')" target="_self"><img id="i3311_4" class="expandicon" src="arrowright.gif" alt="" border="0">Need more information on schedules?</a></p>
+<div id="d3311_4" class="expandingblock" style="display:none"><p class="bodytext">Schedules are required to run tasks at specific times and frequencies in Convergent Billing.  Schedules are used to manage all billing tasks such as the rating of events, and the preparation and printing of invoices.  Schedules are also used to generate <a id="h3314_4" class="jump" title="Reports" href="3315.htm" target="_self">reports</a>.  Tasks can be set up to run automatically at predefined intervals or at a specified time and date.  The schedule definition is determined in part by the associated <a id="h3319_4" class="jump" title="Schedule Types" href="3320.htm" target="_self">schedule type</a>.</p>
+<p class="bodytext">When setting up a schedule, an instance on Convergent Billing can be specified to run the schedule.  If an instance is not specified, the schedule is run on the default instance defined for the scheduler.  (The default instance is defined in the <span class="unixoutputc">STD</span> configuration item.)</p>
+<p class="bodytext">Preconfigured functions can be automatically executed on commencement or completion of a scheduled task, and notification messages provided to assist with system operations.</p>
+<p class="bodytext">A schedule specifies:</p>
+<ul class="listbullet"><li class="listbullet">When a task is to be run for the first time.</li><li class="listbullet">The Convergent Billing instance the schedule is run on.</li><li class="listbullet">The effective date (used as a base to compute the effective date for tasks that are created).</li><li class="listbullet">How often the task should be repeated.</li><li class="listbullet">What program the task needs to perform its function, and what parameters should be passed to it.</li><li class="listbullet">Selection parameters such as whether a report should include data on all customer nodes or only include data on a specific customer node.</li><li class="listbullet">Display parameters, such as whether the data included in a report is to be sorted, the sort order, and the sort sequence.</li></ul></div></div>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="3919.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="3929.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

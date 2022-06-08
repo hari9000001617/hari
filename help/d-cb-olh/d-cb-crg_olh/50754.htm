@@ -1,0 +1,588 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> ACCOUNT_TRE_V </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "7416.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "38010.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7526');highlight('50754')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="7416.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="38010.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">ACCOUNT_TRE_V</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'ACCOUNT_TRE_V' (50754)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="unixoutputc">ACCOUNT_TRE_V</span> view provides current customer account details.</p>
+<p class="bodytext">Historical and transaction details are provided using a separate interface (and the <span class="unixoutputc">ACCOUNT_HISTORY_TRE_V</span>). </p>
+<p class="syntaxheading">Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="216"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="354"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">ID for the account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (30)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Name of the account, as known by the customer and displayed in the user interface.</p>
+<p class="tablebodytext">If not specified, it is derived automatically by the system.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">ACCOUNT_ID</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">LAST_MODIFIED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Date-time that the record was last modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_SEQNR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Sequence number, starting from 1, that is incremented every time account details are modified in the account cache.</p>
+<p class="tablebodytext">It is used to perform optimistic locking of account details as part of account reservations that are externally authorised.</p>
+<p class="tablebodytext">It can only be accessed by the <span class="unixoutputc">AccountFetchRealTime&amp;()</span> function.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_NODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">ID of the customer node responsible for the account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_TYPE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (30)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Type of account.</p>
+<p class="tablebodytext">Only one of <span class="unixoutputc">ACCOUNT_TYPE_NAME</span> or <span class="unixoutputc">ACCOUNT_TYPE_ID</span> can be specified for insert or update functions.</p>
+<p class="tablebodytext">It can be updated only if the account balance is zero and no transactions exist for the account.</p>
+<p class="tablebodytext">Multiple accounts of the same type can be assigned to the same customer node only if allowed by the account type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_TYPE_DISPLAY_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Name of account type displayed.</p>
+<p class="tablebodytext">It defaults to <span class="unixoutputc">ACCOUNT_TYPE_NAME</span>.</p>
+<table class="cautionstyle" width="100%"><tr><td><p class="caution">Caution:</p><p class="tablecaution">The value can be translated into a locale-specific language and therefore differ between implementations.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_TYPE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Type of account.</p>
+<p class="tablebodytext">Only one of <span class="unixoutputc">ACCOUNT_TYPE_NAME</span> or <span class="unixoutputc">ACCOUNT_TYPE_ID</span> can be specified for insert or update functions.</p>
+<p class="tablebodytext">It can be updated only if the account balance is zero and no transactions exist for the account.</p>
+<p class="tablebodytext">Multiple accounts of the same type can be assigned to the same customer node only if allowed by the account type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_CLASS_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Class that this type of account belongs to. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">1 (Asset)</li><li class="tablelistbullet">2 (Liability).</li></ul><p class="tablebodytext">It is based on the <span class="unixoutputc">ACCOUNT_CLASS</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_CATEGORY_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Category that this type of account belongs to. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">1 (Receivable)</li><li class="tablelistbullet">2 (Payable)</li><li class="tablelistbullet">3 (Deposit)</li><li class="tablelistbullet">4 (Credit)</li><li class="tablelistbullet">5 (Bank (Cash)).</li></ul><p class="tablebodytext">It is based on the <span class="unixoutputc">ACCOUNT_CATEGORY</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_CURRENCY_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Currency in which all balances for this account are kept.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">DISPUTE_AVAIL_CREDIT_IND_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">If set to 1 (True), disputed amounts are taken into account when calculating available credit for this account. </p>
+<p class="tablebodytext">If null, disputed amounts are ignored when calculating available credit.</p>
+<p class="tablebodytext">It is derived from the account type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">BALANCE_MANAGED_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Read-only</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Indicates if the balance of an account of this type is managed in real time.</p>
+<p class="tablebodytext">If set to 1 (True), credit limit checks are performed when:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Events are generated for real-time tariffs.</li><li class="tablelistbullet">Reservations are created for these events before charging.</li><li class="tablelistbullet">The unbilled amount of the account is updated with a charge generated by a tariff configured for real-time account aggregation.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_BALANCE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Current balance of the account; for new records, it is set to 0.</p>
+<p class="tablebodytext">It is derivable from the <span class="unixoutputc">ACCOUNT_HISTORY</span> table, being equal to the <span class="unixoutputc">CURRENT_BALANCE</span> of the highest numbered transaction entry for the account. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">BALANCE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Date-time that the account balance was last updated.</p>
+<p class="tablebodytext">It is derivable from the <span class="unixoutputc">ACCOUNT_HISTORY</span> table, being equal to the <span class="unixoutputc">EFFECTIVE_START_DATE</span> of the highest numbered transaction entry for the account. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">CREDIT_LIMIT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Redundant</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Credit limit of the account (if any).</p>
+<p class="tablebodytext">For a prime account of a customer node (which is automatically created by <span class="unixoutputc">biCustomerNodeInsert&amp;()</span>), it is automatically defaulted and maintained equal to <span class="unixoutputc">CUSTOMER_NODE_HISTORY.CREDIT_LIMIT</span> (after any required currency conversion is performed).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">INVOICE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Read-only</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Current invoice associated with the account, if any.</p>
+<p class="tablebodytext">It is derivable from the <span class="unixoutputc">ACCOUNT_HISTORY</span> table and simplifies display of current invoice details for an account.</p>
+<p class="tablebodytext">To simplify archiving, the <span class="unixoutputc">F_ACCOUNT_INVOICE</span> foreign key on this column is disabled (instead, the invoice is checked by the DVP).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">INVOICE_EFFECTIVE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Read-only</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Effective date of the bill run that generated the last invoice applied to the account, if any. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">INVOICE_ISSUE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Read-only</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Issue date of the last invoice applied to the account, if any.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">PREVIOUS_INVOICE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Read-only</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Previous invoice associated with the account.</p>
+<p class="tablebodytext">It is not available using <span class="unixoutputc">AccountFetchRealTime&amp;()</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">UNBILLED_AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (22,6)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Total amount in the currency of the account rated by usage-based tariffs with the <span class="unixoutputc">ACCOUNT_AGGREGATE_IND_CODE</span> set to 1 (and committed to the database), but not yet applied to the account.</p>
+<p class="tablebodytext">The values of <span class="unixoutputc">UNBILLED_AMOUNT</span> and <span class="unixoutputc">ACCOUNT_BALANCE</span> can be used to provide a real-time indication of the total amount owed by the customer for the account.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">The customer node hierarchy account aggregations are not taken into consideration when calculating this amount.  To determine the total unbilled amount for an invoice point in a customer hierarchy, it is necessary to sum the <span class="unixoutputc">UNBILLED_AMOUNTS</span> of its contributory accounts.</p></td></tr></table>
+<p class="tablebodytext">If handling of liability accounts is:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Enabled, a positive value is always a debit, irrespective of the class of the account to which it is being applied.</li><li class="tablelistbullet">Not enabled, a positive value is a debit for an asset account and a credit for a liability account.</li></ul><p class="tablebodytext">The <span class="unixoutputc">update_unbilled_account</span> server utility validates the value of <span class="unixoutputc">UNBILLED_AMOUNT</span> and updates any discrepancies.</p>
+<p class="tablebodytext">It defaults to 0 for new accounts.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">It can be updated, but it is recommended that client programs do not update it. Run <span class="unixoutputc">biAccountPurge&amp;()</span> after the update has run and the transaction committed. </p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_ACTION_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Code that indicates the action taken in relation to the unbilled amount for an account.</p>
+<p class="tablebodytext">Valid values are installation-dependent, but may indicate one of the following:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">A service was temporarily disconnected (or is scheduled to be disconnected).</li><li class="tablelistbullet">An immediate invoice was issued.</li><li class="tablelistbullet">A warning letter or message was sent to the customer (or is scheduled to be sent).</li></ul><p class="tablebodytext">It is always null for new accounts and is only set using the<span class="unixoutputc"> biAccountUpdate&amp;()</span> function, or by the account balance function (if specified) for the account type.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">ACCOUNT_ACTION</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_ACTION_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Date-time that the <span class="unixoutputc">ACCOUNT_ACTION_CODE</span> was last set or cleared.</p>
+<p class="tablebodytext">It is set automatically by<span class="unixoutputc"> biAccountUpdate&amp;()</span> and cannot be directly modified, except by the account balance function (if specified) for the account type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">INVOICE_UNBILLED_AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (22,6)</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Total amount in the currency of the account rated by tariffs with the <span class="unixoutputc">ACCOUNT_AGGREGATE_IND_CODE</span> set to 1, but not yet applied to the account.</p>
+<p class="tablebodytext">It not only includes charges generated for the account, but also those in the Statement and No Reporting accounts below the account in the customer hierarchy, for which the account is the invoice point.</p>
+<p class="tablebodytext">To determine the total invoice unbilled amount for an invoice point in a customer hierarchy, it is necessary to sum the <span class="unixoutputc">UNBILLED_AMOUNT</span>s of its contributory accounts.</p>
+<p class="tablebodytext">It can only contain a value, and must contain a value, if the:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Account is the prime account for a customer node.</li><li class="tablelistbullet">Customer node has a report level of Invoice for the current date-time.</li></ul><p class="tablebodytext">If it contains a value, and all accounts are the same currency and have the same account class, the value is equal to:</p>
+<p class="tablebodytext"><span class="unixoutputc">UNBILLED_AMOUNT + SUM(UNBILLED_AMOUNT where INVOICE_ACCOUNT_ID = ACCOUNT_ID)</span></p>
+<p class="tablebodytext">Currency conversions must be taken into consideration if the accounts have different currencies.</p>
+<p class="tablebodytext">If handling of liability accounts is enabled, a positive value is always a debit, irrespective of the account class; otherwise, a positive value is a debit for an asset account and a credit for a liability account.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">If handling of liability accounts is not enabled, its value is calculated by first adding the sum of the <span class="unixoutputc">UNBILLED_AMOUNT</span> of all contributory accounts of the same class as this account, and then subtracting the sum of the <span class="unixoutputc">UNBILLED_AMOUNT</span> of all contributory accounts of the opposite class.</p></td></tr></table>
+<p class="tablebodytext">The <span class="unixoutputc">update_unbilled_account</span> server utility validates its value, and updates any discrepancies.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">INVOICE_ACCOUNT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Account to which all unbilled charges are rolled up at billing time if billing is performed with an effective date equal to the current date-time.</p>
+<p class="tablebodytext">It can only contain a value, and must contain a value if the:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Account is the prime account for a customer node.</li><li class="tablelistbullet">Customer node has a report level of Statement or None for the current date-time.</li></ul><p class="tablebodytext">As a consequence of the above rules, it is not valid for both <span class="unixoutputc">INVOICE_UNBILLED_AMOUNT</span> and <span class="unixoutputc">INVOICE_ACCOUNT_ID</span> to be specified for the same account.</p>
+<p class="tablebodytext">The <span class="unixoutputc">fix_invoice_account</span> server utility validates its value, and updates any discrepancies.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">SUBTYPE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Optional code to classify a secondary account associated with a customer node.</p>
+<p class="tablebodytext">Entity validation specified by the account type controls possible values.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_STATUS_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Optional code that defines the account status.</p>
+<p class="tablebodytext">Entity validation specified by the account type controls possible values.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">FIRST_USE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Date-time the account was first used.</p>
+<p class="tablebodytext">It can be used for prepay accounts to indicate when the account was first activated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_RESTRICTION_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Date-time the account is due to change to a restricted mode of operation.</p>
+<p class="tablebodytext">For example, the account can only receive calls, or make calls to the call centre.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">BALANCE_EXPIRY_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Date-time the current balance of the account is due to expire.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">GENERAL_1 - GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">General fields containing configurable details for the account.</p>
+<p class="tablebodytext">Entity validation specified by the account type controls the display and meaning of the fields.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">INVOICE_DISPUTED_AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Current disputed amount derived from one or more invoices.</p>
+<p class="tablebodytext">A positive value indicates a credit to the account, irrespective of the class of the account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_DISPUTED_AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Amount of the <span class="unixoutputc">ACCOUNT_BALANCE</span> value and the <span class="unixoutputc">UNBILLED_AMOUNT</span> value that is currently in dispute from one or more account disputes.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">TOTAL_DISPUTED_AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Total amount in dispute for the account. </p>
+<p class="tablebodytext">It is the sum of the <span class="unixoutputc">INVOICE_DISPUTED_AMOUNT</span> value and the <span class="unixoutputc">ACCOUNT_DISPUTED_AMOUNT</span> value.</p>
+<p class="tablebodytext">A positive value is always considered a credit, irrespective of the class of the account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">UNCOMMITTED_UNBILLED_</span><br><span class="unixoutputc">AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (22,6)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Total amount rated by usage-based tariffs with the <span class="unixoutputc">ACCOUNT_AGGREGATE_IND_CODE</span> set to 1, but not yet committed to the database.</p>
+<p class="tablebodytext">It can only be accessed by <span class="unixoutputc">AccountFetchRealTime&amp;()</span>.</p>
+<p class="tablebodytext">If handling of liability accounts is:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Enabled, a positive value is always a debit, irrespective of the class of the account to which it is being applied.</li><li class="tablelistbullet">Not enabled, a positive value is a debit for an asset account and a credit for a liability account.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">TOTAL_UNBILLED_AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (22,6)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Sum of the <span class="unixoutputc">UNBILLED_AMOUNT</span> value and the <span class="unixoutputc">UNCOMMITTED_UNBILLED_AMOUNT</span> value.</p>
+<p class="tablebodytext">It can only be accessed by <span class="unixoutputc">AccountFetchRealTime&amp;()</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">RESERVED_AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Amount reserved for events in progress for this account in the currency of the account. The amount considered consumed is excluded.</p>
+<p class="tablebodytext">A positive reservation decreases the available credit for the account.</p>
+<p class="tablebodytext">It can only be accessed by <span class="unixoutputc">AccountFetchRealTime&amp;()</span>.</p>
+<p class="tablebodytext">The account reservation functions (for example, <span class="unixoutputc">AccountReservationInsert&amp;()</span>) are used to insert, update, and delete reservations against an account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">CONSUMED_AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Amount consumed for events in progress for this account in the currency of the account.</p>
+<p class="tablebodytext">A positive reservation decreases the available credit for the account.</p>
+<p class="tablebodytext">The sum of <span class="unixoutputc">RESERVED_AMOUNT</span> and <span class="unixoutputc">CONSUMED_AMOUNT</span> is the total amount of reservations for this account.</p>
+<p class="tablebodytext">It can only be accessed by <span class="unixoutputc">AccountFetchRealTime&amp;()</span>.</p>
+<p class="tablebodytext">The account reservation functions (for example, <span class="unixoutputc">AccountReservationInsert&amp;()</span>) are used to insert, update, and delete reservations against an account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">AVAILABLE_CREDIT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (22,6)</p>
+<p class="tablebodytext">Read-only</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Available credit for the account.</p>
+<p class="tablebodytext">It can only be accessed by the <span class="unixoutputc">AccountFetchRealTime&amp;()</span> function. An undefined value is returned if <span class="unixoutputc">CREDIT_LIMIT</span> is null (unlimited credit).</p>
+<p class="tablebodytext">For an asset account, when disputes impact the available credit, this is equal to:</p>
+<p class="tablebodytext"><span class="unixoutputc">(CREDIT_LIMIT + INVOICE_DISPUTED_AMOUNT + ACCOUNT_DISPUTED_AMOUNT) - (ACCOUNT_BALANCE + TOTAL_UNBILLED_AMOUNT + RESERVED_AMOUNT + CONSUMED_AMOUNT)</span></p>
+<p class="tablebodytext">For an asset account, when disputes do not impact the available credit, this is equal to:</p>
+<p class="tablebodytext"><span class="unixoutputc">CREDIT_LIMIT - (ACCOUNT_BALANCE + TOTAL_UNBILLED_AMOUNT + RESERVED_AMOUNT + CONSUMED_AMOUNT)</span></p>
+<p class="tablebodytext">If handling of liability accounts is:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Enabled, the available credit for a liability account is calculated in the same way as for the asset account, except that the sign of the value of <span class="unixoutputc">ACCOUNT_BALANCE</span> is reversed (that is, the value of <span class="unixoutputc">ACCOUNT_BALANCE</span> is replaced with the value of <span class="unixoutputc">-ACCOUNT_BALANCE</span>). </li><li class="tablelistbullet">Not enabled for a liability account when disputes:<p class="tablelistcontinue">Impact the available credit, the amount is equal to:</p>
+<p class="listcontinue"><span class="unixoutputc">(CREDIT_LIMIT + INVOICE_DISPUTED_AMOUNT + ACCOUNT_DISPUTED_AMOUNT) + (ACCOUNT_BALANCE + TOTAL_UNBILLED_AMOUNT - (RESERVED_AMOUNT + CONSUMED_AMOUNT))</span></p>
+<p class="tablelistcontinue">Do not impact the available credit, the amount is equal to:</p>
+<p class="listcontinue"><span class="unixoutputc">CREDIT_LIMIT + (ACCOUNT_BALANCE + TOTAL_UNBILLED_AMOUNT - (RESERVED_AMOUNT + CONSUMED_AMOUNT))</span>.</p>
+</li><li class="tablelistbullet">Not enabled, and the <span class="unixoutputc">ACCOUNT_NEGATE_CREDIT_LIMIT</span> reference type is TRUE, the available credit is calculated in the same way as for liability accounts, except that the sign of the value of <span class="unixoutputc">CREDIT_LIMIT</span> is reversed (that is, the value of <span class="unixoutputc">CREDIT_LIMIT</span> is replaced with the value of <span class="unixoutputc">-CREDIT_LIMIT</span>).</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">UNCOMMITTED_INVOICE_</span><br><span class="unixoutputc">UNBILLED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (22,6)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Total amount, in the currency of the account, rated by usage-based tariffs with the <span class="unixoutputc">ACCOUNT_AGGREGATE_IND_CODE</span> set to 1, but not yet committed to the database.</p>
+<p class="tablebodytext">It not only includes uncommitted charges generated for the account, but for all Statement and No Reporting accounts below the account in the customer hierarchy for which the account is the invoice point.</p>
+<p class="tablebodytext">It can only be accessed by a call to <span class="unixoutputc">AccountFetchRealTime&amp;()</span>.</p>
+<p class="tablebodytext">An undefined value is returned if either of the following applies:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">The account is not the prime account for a customer node.</li><li class="tablelistbullet">The customer node associated with the prime account has a report level of Statement, Transferred Statement or None.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">TOTAL_INVOICE_UNBILLED_</span><br><span class="unixoutputc">AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (22,6)</p>
+<p class="tablebodytext">Read-only</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">The amount is equal to:</p>
+<p class="tablebodytext"><span class="unixoutputc">UNVOICE_UNBILLED_AMOUNT + UNCOMMITTED_INVOICE_UNBILLED</span></p>
+<p class="tablebodytext">It can only be accessed by a call to <span class="unixoutputc">AccountFetchRealTime&amp;()</span>.</p>
+<p class="tablebodytext">An undefined value is returned if either of the following applies:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">The account is not the prime account for a customer node.</li><li class="tablelistbullet">The customer node associated with the prime account has a report level of Statement, Transferred Statement or None.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">AVAILABLE_INVOICE_CREDIT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (22,6)</p>
+<p class="tablebodytext">Read-only</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Available credit for the account, taking into consideration unbilled amounts from all Statement and No Reporting nodes whose charges roll up to the account.</p>
+<p class="tablebodytext">For an asset account, when disputes impact the available credit, the amount is equal to:</p>
+<p class="tablebodytext"><span class="unixoutputc">(CREDIT_LIMIT + INVOICE_DISPUTED_AMOUNT + ACCOUNT_DISPUTED_AMOUNT) - (ACCOUNT_BALANCE + TOTAL_INVOICE_UNBILLED_AMOUNT + RESERVED_AMOUNT + CONSUMED_AMOUNT)</span></p>
+<p class="tablebodytext">For an asset account, when disputes do not impact the available credit, the amount is equal to:</p>
+<p class="tablebodytext"><span class="unixoutputc">CREDIT_LIMIT - (ACCOUNT_BALANCE + TOTAL_INVOICE_UNBILLED_AMOUNT + RESERVED_AMOUNT + CONSUMED_AMOUNT)</span></p>
+<p class="tablebodytext">If handling of liability accounts is:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Enabled, the available credit for a liability account is calculated in the same way as for the asset account, except that the sign of the value of <span class="unixoutputc">ACCOUNT_BALANCE</span> is reversed (that is, the value of <span class="unixoutputc">ACCOUNT_BALANCE</span> is replaced with the value of <span class="unixoutputc">-ACCOUNT_BALANCE</span>).</li><li class="tablelistbullet">Not enabled, for a liability account when disputes:<p class="tablelistcontinue">Impact the available credit, the amount is equal to:</p>
+<p class="listcontinue"><span class="unixoutputc">(CREDIT_LIMIT + INVOICE_DISPUTED_AMOUNT + ACCOUNT_DISPUTED_AMOUNT) + (ACCOUNT_BALANCE + TOTAL_INVOICE_UNBILLED_AMOUNT - (RESERVED_AMOUNT + CONSUMED_AMOUNT))</span></p>
+<p class="tablelistcontinue">Do not impact the available credit, the amount is equal to:</p>
+<p class="listcontinue"><span class="unixoutputc">CREDIT_LIMIT + (ACCOUNT_BALANCE + TOTAL_INVOICE_UNBILLED_AMOUNT - (RESERVED_AMOUNT + CONSUMED_AMOUNT))</span></p>
+</li><li class="tablelistbullet">Not enabled and the <span class="unixoutputc">ACCOUNT_NEGATE_CREDIT_LIMIT</span> reference type is TRUE, the available credit is calculated in the same way as for liability accounts, except that the sign of the value of <span class="unixoutputc">CREDIT_LIMIT</span> is reversed (that is, the value of <span class="unixoutputc">CREDIT_LIMIT</span> is replaced with the value of <span class="unixoutputc">-CREDIT_LIMIT</span>).</li></ul><p class="tablebodytext">It can only be accessed by a call to the <span class="unixoutputc">AccountFetchRealTime&amp;()</span> function.</p>
+<p class="tablebodytext">An undefined value is returned if any of the following apply:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">The account is not the prime account for a customer node.</li><li class="tablelistbullet">The customer node associated with the prime account has a report level of Statement, Transferred Statement, or None.</li><li class="tablelistbullet"><span class="unixoutputc">CREDIT_LIMIT</span> is null (unlimited credit).</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">TRANSFERRED_ACCOUNT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Account to which invoice amounts for this account are rolled up at billing time.</p>
+<p class="tablebodytext">It specifies an account outside of the current hierarchy that is responsible for paying statements for this account.</p>
+<p class="tablebodytext">It is set by <span class="unixoutputc">CustomerNodeInsert&amp;()</span> or <span class="unixoutputc">CustomerNodeUpdate&amp;()</span>.</p>
+<p class="tablebodytext">It can only contain a value, and must contain a value, if all of the following apply:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Account is the prime account of a root customer node</li><li class="tablelistbullet">Customer node has a report level of Transferred Statement for the current date-time.</li></ul><p class="tablebodytext">Its account type<span class="unixoutputc"> </span>must match this account. </p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="7416.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="38010.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

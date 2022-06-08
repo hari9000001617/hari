@@ -1,0 +1,240 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> biTrcIGP&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "40642.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "12221.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('13123')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="40642.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="12221.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">biTrcIGP&amp;()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'biTrcIGP&amp;()' (13123)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<pre class="unixinputp">biTrcIGP&amp;(    DebugLevel$)</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Sets the debug level for all treigp and treigp_tran servers running in the current instance.</p>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="288" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Method</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Remote</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="642" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="516"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="unixoutputc">DebugLevel$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">In:  Debug level.</p>
+<p class="tablebodytext">The table below lists valid debug levels.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">1 for all outcomes.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">Trace information is written to the following file:</p>
+<p class="bodytext"><span class="unixoutputc">$ATA_DATA_SERVER_LOG/igp&lt;process id&gt;.trc</span>.</p>
+<p class="bodytext">Multiple options can be enabled simultaneously by adding the decimal value of the options, or by specifying mnemonics, decimal values, or hexadecimal values in a comma-separated list.  Setting a new trace level turns off any existing trace levels, unless there is a <span class="unixoutputc">+</span> sign in front of the specified trace level, indicating that the trace level is additive.  </p>
+<p class="bodytext">The following alternative methods of specifying debug levels each turn on Oracle SQL and invoice tracing:</p>
+<ul class="listbullet"><li class="listbullet"><span class="unixoutputc">'ORA,INV'</span> or <span class="unixoutputc">'+,ORA,INV' </span></li><li class="listbullet"><span class="unixoutputc">'1,4'</span> or <span class="unixoutputc">'+,1,4'</span></li><li class="listbullet"><span class="unixoutputc">'5'</span>.</li></ul><p class="bodytext">The following table lists debug level values.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">DEBUG_LEVEL Values</p>
+<table class="tableintopic" width="642" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="78"><p class="tableheading">Decimal</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="96"><p class="tableheading">Mnemonic</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="468"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">0</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">OFF</p>
+</td>
+<td style="border:1px solid #010101;" width="468"><p class="tablebodytext">All tracing off.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">ORA</p>
+</td>
+<td style="border:1px solid #010101;" width="468"><p class="tablebodytext">Oracle tracing.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">2</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">SQL</p>
+</td>
+<td style="border:1px solid #010101;" width="468"><p class="tablebodytext">SQL call tracing within the IGP.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">4</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">INV</p>
+</td>
+<td style="border:1px solid #010101;" width="468"><p class="tablebodytext">Invoice values.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">8</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">TMP</p>
+</td>
+<td style="border:1px solid #010101;" width="468"><p class="tablebodytext">Template values.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">16</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">CMD</p>
+</td>
+<td style="border:1px solid #010101;" width="468"><p class="tablebodytext">Command values.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">32</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">CMS</p>
+</td>
+<td style="border:1px solid #010101;" width="468"><p class="tablebodytext">Compress node variable values.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">64</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">EPM</p>
+</td>
+<td style="border:1px solid #010101;" width="468"><p class="tablebodytext">EPM debug.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">If EPM and EPM_LIGHT are specified, EPM has precedence.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">128</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">MSG</p>
+</td>
+<td style="border:1px solid #010101;" width="468"><p class="tablebodytext">Message variable values.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">256</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">CHD</p>
+</td>
+<td style="border:1px solid #010101;" width="468"><p class="tablebodytext">Child process details.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">512</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">MEM</p>
+</td>
+<td style="border:1px solid #010101;" width="468"><p class="tablebodytext">Print memory report on completion.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1024</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">EPM_LIGHT</p>
+</td>
+<td style="border:1px solid #010101;" width="468"><p class="tablebodytext">EPM debug without function parameter or return values.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1023</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">ALL</p>
+</td>
+<td style="border:1px solid #010101;" width="468"><p class="tablebodytext">All of the above except EPM_LIGHT.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="40642.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="12221.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

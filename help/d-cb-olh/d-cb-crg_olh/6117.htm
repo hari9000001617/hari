@@ -1,0 +1,320 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Edit Masks for Attribute Types </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "6093.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "6124.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {highlight('6117')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="6093.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="6124.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h1 class="heading1">Edit Masks for Attribute Types</h1>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Edit Masks for Attribute Types' (6117)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The edit masks supported by Convergent Billing define the exact format of the data to be entered in a field, and are typically used only for string data types.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">Fields with an edit mask and fields with a display mask (referred to as 'masked fields') are not the same.  Edit masks define how data is entered, and display masks define how data is displayed (see the <span class="referrals">Security and Auditing Configuration Guide for Singleview</span>). </p></td></tr></table>
+<p class="bodytext">For each character that is expected, the edit mask can define exactly what type of character is expected (for example, letter, number, or either) and whether it is mandatory or optional.  Edit masks are useful for entering and displaying information like credit card numbers or phone numbers in a predefined format.</p>
+<p class="bodytext">An edit mask is made up of one, two, or three fields, separated by semi-colons.  The first field is the mask itself (that restricts the characters that can be entered).  </p>
+<p class="bodytext">The second field determines whether any literal characters included in the mask are saved as part of the data.  Literal characters are any fixed characters that the user does not input, but are displayed as part of the field to assist data entry.</p>
+<p class="bodytext">The third field contains the character used to represent a character not yet entered by the user.  For examples of use of these fields, refer to the table below that lists mask examples.</p>
+<p class="bodytext">The table below lists the characters that can be used to create an edit mask for an attribute type.  These characters make up the first field in the mask (if more than one field is being used).</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Characters Used to Create Edit Masks</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="90"><p class="tableheading">Character</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="156"><p class="tableheading">Use</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="450"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">!</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">Exclamation mark</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">If included, optional characters not entered are represented as leading blanks.</p>
+<p class="tablebodytext">If excluded, optional characters are represented as trailing blanks.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">&gt;</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">'Greater than' symbol</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">If included, all characters following the &gt; character are formatted in upper case until either the end of the mask is reached or until a '&lt;' character is encountered.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">&lt;</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">'Less than' symbol</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">If included, all characters following the &lt; character are formatted in lower case until either the end of the mask is reached or until a '&gt;' character is encountered.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">&lt;&gt;</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">'Less than' and 'greater than' symbols</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">If this pair of characters is entered, no case checking is performed and the data is formatted using the case in which a user enters the data.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">\</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">Backslash</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Allows one of the mask characters to be specified as literal in the data.</p>
+<p class="tablebodytext">The character following the backslash is regarded as the literal character.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">L</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">Upper-case 'L'</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Requires an alphabetic character in this position.</p>
+<p class="tablebodytext">For most western countries, this character must be A-Z or a-z.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">l</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">Lower-case 'l'</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Permits an alphabetic character in this position, but does not require one.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">A</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">Upper-case 'A'</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Requires an alphanumeric character in this position.</p>
+<p class="tablebodytext">For most western countries, this character must be A-Z, a-z, or 0-9.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">a</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">Lower-case 'a'</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Permits an alphanumeric character in this position, including characters such as '#', '@', '-', but does not require one.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border-left:1px solid #010101;border-right:1px solid #010101;border-top:1px solid #010101;" width="90"><p class="tablebodytext">C</p>
+</td>
+<td style="border-left:1px solid #010101;border-right:1px solid #010101;border-top:1px solid #010101;" width="156"><p class="tablebodytext">Upper-case 'C'</p>
+</td>
+<td style="border-left:1px solid #010101;border-right:1px solid #010101;border-top:1px solid #010101;" width="450"><p class="tablebodytext">Requires a character in this position (including characters such as '#', '@', '-').</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">c</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">Lower-case 'c'</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Permits a character in this position, but does not require one.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border-left:1px solid #010101;border-right:1px solid #010101;border-bottom:1px solid #010101;" width="90"><p class="tablebodytext">0</p>
+</td>
+<td style="border-left:1px solid #010101;border-right:1px solid #010101;border-bottom:1px solid #010101;" width="156"><p class="tablebodytext">Zero</p>
+</td>
+<td style="border-left:1px solid #010101;border-right:1px solid #010101;border-bottom:1px solid #010101;" width="450"><p class="tablebodytext">Requires a numeric character in this position.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">9</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">Nine</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Permits a numeric character in this position, but does not require one.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">#</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">Hash symbol</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Permits a numeric character or a plus (+) or minus (-) sign in this position, but does not require one.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">:</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">Colon</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Separates hours, minutes, and seconds in times.</p>
+<p class="tablebodytext">If the character that separates hours, minutes, and seconds is different in the International settings of the Control Panel utility, that character is used in place of the colon (:).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">/</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">Forward slash</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Separates months, days, and years in dates.</p>
+<p class="tablebodytext">If the character that separates months, days, and years is different in the International settings of the Control Panel utility, that character is used in place of the forward slash (/).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">;</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">Semicolon</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Separates the fields in the mask, if there is more than one.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">_</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">Underscore</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Automatically inserts a blank character in the edit box.</p>
+<p class="tablebodytext">When a user enters data in the field, the cursor skips the blank character.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists mask examples.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Mask Examples</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="174"><p class="tableheading">Mask</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="522"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">0000_0000_0000_0000</p>
+</td>
+<td style="border:1px solid #010101;" width="522"><p class="tablebodytext">Forces the user to enter 16 digits and spaces them automatically for ease of viewing (for example, 2345_7777_8888_6543).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">LL0000</p>
+</td>
+<td style="border:1px solid #010101;" width="522"><p class="tablebodytext">Forces the user to enter two alphabetic characters (A-Z or a-z) followed by four digits.</p>
+<p class="tablebodytext">The user must enter a digit in all of the positions where a '0' is displayed, even if that digit is zero.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">LL9999</p>
+</td>
+<td style="border:1px solid #010101;" width="522"><p class="tablebodytext">Forces the user to enter two alphabetic characters with the option of entering up to four digits after the characters.</p>
+<p class="tablebodytext">The user cannot enter more than four digits.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">&gt;LL9999</p>
+</td>
+<td style="border:1px solid #010101;" width="522"><p class="tablebodytext">Same as the previous example, except when the user enters an alphabetic character, it is automatically converted to upper case and the user cannot enter a lower-case character.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">(00) 0000-0000;0</p>
+</td>
+<td style="border:1px solid #010101;" width="522"><p class="tablebodytext">The mask has two fields:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">The first field allows the user to enter a series of digits (all of which are mandatory) formatted like a phone number.  </li><li class="tablelistbullet">The second field (the zero after the semi-colon) means the number entered is stored in the database without the brackets or dash, for example, '0732188888'.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">!9999;;*</p>
+</td>
+<td style="border:1px solid #010101;" width="522"><p class="tablebodytext">The mask has three fields:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">The first field allows the user to enter up to four digits (which are optional).  The exclamation mark means that any digits not entered are represented as blanks at the beginning of the string. For example, if '44' was entered into the field, '**44' is displayed after the user leaves the field.</li><li class="tablelistbullet">The second field is ignored, because there is nothing in the field.</li><li class="tablelistbullet">The third field means that any digits not entered are represented by an asterisk, so before anything is entered into the field '****' is displayed in the field. </li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">!99999.99</p>
+</td>
+<td style="border:1px solid #010101;" width="522"><p class="tablebodytext">Forces the user to enter a number with two decimal places.</p>
+<p class="tablebodytext">The number entered must contain five numbers before the decimal point and two after.</p>
+<p class="tablebodytext">A disadvantage of using edit masks to control the entry and format of numbers is that the user cannot enter a number greater than the specified mask (in this example, 99,999).  The use of display formats and edit formats may be more appropriate.</p>
+<p class="tablebodytext">For an example of how to restrict the number of decimal places entered using display formats, edit formats, and validation expressions, refer to the <span class="referrals">Configuration Fundamentals Guide for Singleview Convergent Billing</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">!#99999.99</p>
+</td>
+<td style="border:1px solid #010101;" width="522"><p class="tablebodytext">According to the previous example, except the hash ('#') allows a negative sign ('-') to be entered.  The negative sign is optional.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">00/00/0000</p>
+</td>
+<td style="border:1px solid #010101;" width="522"><p class="tablebodytext">Forces the user to enter a date in the format DD/MM/YYYY (for example, 27/05/1996).</p>
+<p class="tablebodytext">The mask does not validate the date entered; therefore, if the attribute type has a data type of string (as opposed to date), the user could enter any digits in the field (for example, 99/99/9999).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">\&lt;9999\&gt;</p>
+</td>
+<td style="border:1px solid #010101;" width="522"><p class="tablebodytext">The user can enter up to four digits in the field.</p>
+<p class="tablebodytext">The number is surrounded by the less than symbol ('&lt;') and the greater than symbol ('&gt;') as the forward slash symbol ('\') specifies that the following character is the literal character, not the specifier.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="6093.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="6124.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

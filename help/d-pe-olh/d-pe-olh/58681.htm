@@ -1,0 +1,239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> AsyncDialog&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Configuration Workbench for Singleview Process Engine 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "9399.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "40842.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('57331');expand('11011');highlight('58681')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="9399.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="40842.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Configuration Workbench for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">AsyncDialog&amp;()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'AsyncDialog&amp;()' (58681)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<pre class="unixinputp">AsyncDialog&amp;(    Caption$,    Message$,    Icon@,    ButtonCount&amp;,    ButtonCaption$[],    ButtonTrigger@[],    ButtonOp@[],    ZoomCount&amp;[],    ZoomView@[],    ZoomObj@[],    AdditionalParams$[],    User@)</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Sends an asynchronous message to the client, displaying a message window.  The contents of the window are defined by the function parameters.</p>
+<p class="syntaxheading">Parameters</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="168"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="528"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">Caption$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">Caption to be displayed on the message window.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">Message$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">Message to be displayed in the window.</p>
+<p class="tablebodytext">New lines are specified by <span class="unixoutputc">\r\n</span> (carriage return and line feed escape characters).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">Icon@</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">OID of the icon to display. This is ignored by Process Engine web client.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">ButtonCount&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">Number of buttons to display on the message window.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">ButtonCaption$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">Array of strings to display on the buttons.</p>
+<p class="tablebodytext">Each button has its own string array.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">ButtonTrigger@[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">Array of On Client Request triggers to execute when buttons are clicked.</p>
+<p class="tablebodytext">Each button has its own trigger.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">ButtonOp@[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">Array of operations to execute when buttons are clicked.</p>
+<p class="tablebodytext">Each button has its own operation array.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">ZoomCount&amp;[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">Array of counts of zoom objects for buttons.</p>
+<p class="tablebodytext">Each button has its own counts of zoom objects.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">ZoomView@[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">List of views to open for the zoom objects.</p>
+<p class="tablebodytext">If Null, the default view for the zoom object is opened.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">ZoomObj@[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">List of objects to be displayed on the zoom view.</p>
+<p class="tablebodytext">If there is more than one object per class, the objects for that class are displayed in the <span class="fieldname">List </span>section of the view.</p>
+<p class="tablebodytext">If the objects belong to more than one class, a new view is opened for each class.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">AdditionalParams$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">Array of strings to pass as parameters to the client.</p>
+<p class="tablebodytext">It can include configurer-defined parameters, to be used in the trigger through <span class="unixoutputc">ClientParamGet$()</span> calls, or message-related parameters used to determine the message properties.</p>
+<p class="tablebodytext">The table below lists message-related parameters.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">User@</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">User to whom the message should be sent.</p>
+<p class="tablebodytext">If Null, the facts are sent to the current Process Engine session.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists additional parameters that can be passed to the function using the <span class="unixoutputc">AdditionalParams$[]</span> parameter.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">AdditionalParams$[] Parameters</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="174"><p class="tableheading">Parameter</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="522"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">PARAM:AUTO_CLICK</span></p>
+</td>
+<td style="border:1px solid #010101;" width="522"><p class="tablebodytext">Suppresses the window from being displayed in Process Engine web client.</p>
+<p class="tablebodytext">The first button on the window is automatically clicked, the same behaviour as if the window was displayed and the user clicked the first button.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">PARAM:BASEVIEW_OBJ</span></p>
+<p class="tablebodytext">ClassKey</p>
+<p class="tablebodytext">ObjectKey</p>
+<p class="tablebodytext"><span class="unixoutputc">PARAM:END</span></p>
+</td>
+<td style="border:1px solid #010101;" width="522"><p class="tablebodytext">Specifies the class key and object key of the object open in the associated view.</p>
+<p class="tablebodytext">The associated view of an asynchronous message is the view that the message primarily interacts with.  The associated view determines:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Where the message is displayed and where it can be moved to.</li><li class="tablelistbullet">How the operations of the message execute.</li><li class="tablelistbullet">What view is blocked by modal messages.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">PARAM:DISPLAY_OPTS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="522"><p class="tablebodytext">Specifies additional display options.  The following options modify the message text:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">LEFT_ALIGN</span> left aligns the message text.</li><li class="tablelistbullet"><span class="unixoutputc">RIGHT_ALIGN</span> right aligns the message text.</li><li class="tablelistbullet"><span class="unixoutputc">WORD_WRAP_OFF</span> disables automatic wrapping of message text.</li></ul><p class="tablebodytext">For example, the following code left aligns the message text in the window:</p>
+<p class="tablebodytext"><span class="unixoutputc">AdditionalParams$[0] := 'PARAM:DISPLAY_OPTS';</span><br><span class="unixoutputc">AdditionalParams$[1] := 'LEFT_ALIGN';</span><br><span class="unixoutputc">AdditionalParams$[2] := 'PARAM:END';</span></p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">It is not used in Process Engine web client and is ignored if included in the <span class="unixoutputc">AsyncDialog&amp;()</span> function.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">PARAM:MODAL</span></p>
+</td>
+<td style="border:1px solid #010101;" width="522"><p class="tablebodytext">Displays the window as modal; that is, it cannot be minimised and the fields on the associated view cannot be edited.</p>
+<p class="tablebodytext">Only one modal window can be displayed on a view at a time.  If an attempt is made to display another modal window when another is displayed, the second modal window is not displayed until the first is closed.</p>
+<p class="tablebodytext">If the associated view of the window is closed, the window is also closed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext"><span class="unixoutputc">PARAM:ON_VIEW</span></p>
+</td>
+<td style="border:1px solid #010101;" width="522"><p class="tablebodytext">Displays the window and locks it to its associated view.</p>
+<p class="tablebodytext">If the view is closed in the period between initiating the window and the window being displayed, the window is displayed without being locked to any view.</p>
+<p class="tablebodytext">When locked to a view, the window can be minimised or moved; however, the window cannot be dragged outside of the bounds of its associated view.  It is possible to edit fields on the associated view when a window is locked to a view.</p>
+<p class="tablebodytext">Multiple windows can be displayed and locked to the same view at the same time.</p>
+<p class="tablebodytext">If the associated view is closed, all windows locked to the view are closed.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">If both the <span class="unixoutputc">PARAM:ON_VIEW</span> and <span class="unixoutputc">PARAM:MODAL</span> parameters are included, <span class="unixoutputc">PARAM:MODAL</span> takes precedence.</p></td></tr></table>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">Null if successful; otherwise, an exception is raised.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">The function passes the effective date to Process Engine web client internally; the effective date is not accessible to configurers.  Zooms and triggers executed from the asynchronous message window use the effective date passed to the client.</p>
+<p class="syntaxheading">Example</p>
+<p class="bodytext">The following example is intended to be called by an On Client Request trigger to guarantee a client in which to display the message.  If a trigger context exists, the function adds the current object and additional parameters (if any) to the message sent to the client.</p>
+<pre class="unixoutputp">{<br>    var dialogCaption$;<br>    var dialogMessage$;<br>    var dialogIcon@;<br>    var buttonCount&amp;;<br>    var buttonCaption$[];<br>    var buttonTrigger@[];<br>    var buttonOp@[];<br>    var zoomCount&amp;[];<br>    var zoomView@[];<br>    var zoomObj@[];<br>    var additionalParams$[];<br>    var dialogUser@;</pre>
+<pre class="unixoutputp">    # set up test values<br>    dialogCaption$ := 'Test Caption';<br>    dialogMessage$ := 'Test for Popup Message';<br>    dialogIcon@ := StaticObj@('Icon', 'Accept');<br>    buttonCount&amp; := 2;</pre>
+<pre class="unixoutputp">    buttonCaption$[0] := 'OK Button';<br>    buttonTrigger@[0] := StaticObj@('Triggers', 'EM_InitiateSearch');<br>    buttonOp@[0] := null@;<br>    zoomCount&amp;[0] := 0;</pre>
+<pre class="unixoutputp">    buttonCaption$[1] := 'Cancel Button';<br>    buttonTrigger@[1] := null@;<br>    buttonOp@[1] := StaticObj@('Operation', 'EM_InitiateOperation');<br>    zoomCount&amp;[1] := 0;</pre>
+<pre class="unixoutputp">    # Add message-related additional params<br>    additionalParams$[0] := 'PARAM:MODAL'; </pre>
+<pre class="unixoutputp">    # Add configurer-defined additional params<br>    additionalParams$[1] := 'PARAM:SELECTION_METHOD';<br>    additionalParams$[2] := 'A'; <br>    additionalParams$[3] := 'PARAM:END';</pre>
+<pre class="unixoutputp">    try {<br>        AsyncDialog&amp;( dialogCaption$,<br>        dialogMessage$,<br>        dialogIcon@,<br>        buttonCount&amp;,<br>        buttonCaption$[], <br>        buttonTrigger@[],<br>        buttonOp@[],<br>        zoomCount&amp;[],<br>        zoomView@[],<br>        zoomObj@[],<br>        additionalParams$[],<br>        dialogUser@);<br>        print('AsyncDialog successful');<br>    }<br>    except {<br>        print('AsyncDialog failed');<br>    }<br>}</pre>
+<pre class="unixoutputp"></pre>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="9399.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="40842.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Configuration Workbench for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

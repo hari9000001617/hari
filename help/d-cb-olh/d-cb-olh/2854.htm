@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Equipment Bulk Insert Form </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "2810.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "2856.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+<script language="javascript" type="text/javascript" src="dhtml_popup.js"></script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('1732');highlight('2854')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="2810.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="2856.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Equipment Bulk Insert Form</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Equipment Bulk Insert Form' (2854)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="formname">Equipment Bulk Insert</span> form is used to record <a id="h2811" class="popup" title="Equipment" href="javascript:void(0)" onclick="togglePopup('2811','h2811')" target="_self">equipment</a> in bulk.</p>
+<div id="d2811" class="clickpopup" style="display:none"><a href="javascript:hidePopup('2811')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">Physical components required to provide a service; for example, modem, leased line, or mobile phone.  Equipment information is stored for information purposes only, but can also be used to allocate service numbers.</p>
+<p class="bodytext">Context:  Convergent Billing, Customer Management</p>
+<p class="bodytext">See also <a id="h1238" class="glossaryitemjump" title="Service" href="14848.htm#o876" target="_self">Service</a>.</p>
+</div><p class="bodytext">To insert an equipment item on the form, click in the <span class="fieldname">Serial Number</span> or <span class="fieldname">Network Address</span> field and enter the appropriate details. </p>
+<p class="bodytext">To enter an additional serial number/network address, press the <span class="keystrokes">DownArrow</span> key to add another row to the table.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">The <span class="fieldname">Network Address</span> field is disabled if the equivalent field on the<span class="formname"> Equipment Detail</span> form is also disabled.</p></td></tr></table>
+<p class="bodytext"><strong class="specialbold">Associated Action</strong></p>
+<p class="bodytext"><a id="h42852" class="expandingblock" title="Record Equipment Details" href="javascript:toggleBlock('42852')" target="_self"><img id="i42852" class="expandicon" src="arrowright.gif" alt="" border="0">Recording Equipment Details</a></p>
+<div id="d42852" class="expandingblock" style="display:none"><p class="bodytext">Convergent Billing provides two methods in which equipment details can be recorded in the equipment inventory:</p>
+<ul class="listbullet"><li class="listbullet">Individually</li><li class="listbullet">In bulk.</li></ul><p class="bodytext">To record (enter) equipment details for individual items of equipment:</p>
+<ol class="listnumber"><li class="listnumber">Select either of the following options:<ul class="listbullet2"><li class="listbullet2"><strong class="menuoptions">Customer Care</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">Equipment</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">New Equipment Items</strong> option.  </li><li class="listbullet2"><strong class="menuoptions">Customer Care</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">Equipment</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">Manage Equipment</strong> option.  </li></ul><p class="listcontinue">The <span class="formname">Equipment Search</span> form is displayed.  </p>
+</li><li class="listnumber">Select the <span class="fieldname">Create new equipment</span><strong class="specialbold"> </strong>option.  </li><li class="listnumber">Select the equipment type and enter the equipment serial number.  </li><li class="listnumber">Click the <strong class="buttons">New…</strong> button to insert a new equipment record.  The <span class="formname">Equipment Detail</span> form is displayed in Insert mode.</li><li class="listnumber">Complete the appropriate data entry fields.</li><li class="listnumber">Click the <strong class="buttons">Save</strong> button.</li></ol><p class="bodytext">To record (enter) equipment items in bulk:</p>
+<ol class="listnumber"><li class="listnumber">Create the appropriate equipment record.</li><li class="listnumber">Click the <strong class="buttons">Bulk Insert…</strong> button.  The <span class="formname">Equipment Bulk Insert</span> form is displayed in Insert mode.</li><li class="listnumber">Enter the serial number and/or network address for a specified item of equipment.</li><li class="listnumber">To add a new item, press the <span class="keystrokes">Down Arrow</span> key to create an empty line and repeat step 3.</li><li class="listnumber">Repeat step 4 for each item of equipment to be inserted.</li><li class="listnumber">Click the <strong class="buttons">Save</strong> button on the toolbar.</li><li class="listnumber">Close the <span class="formname">Equipment Bulk Insert</span> form to return control to the <span class="formname">Equipment Detail</span> form.</li></ol><p class="moreinfo"><a id="h2422" class="jump" title="Equipment" href="2423.htm" target="_self">Need more information on equipment?</a></p>
+</div>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="2810.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="2856.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

@@ -1,0 +1,821 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> PERSON_TRE_V </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "50787.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "53384.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7526');highlight('50788')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="50787.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="53384.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">PERSON_TRE_V</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'PERSON_TRE_V' (50788)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="unixoutputc">PERSON_TRE_V</span> view is used by functions defined for the <span class="unixoutputc">biPerson </span>service.</p>
+<p class="syntaxheading">Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="210"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="360"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PERSON_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">ID of a person.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">LAST_MODIFIED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Date-time that the row was last modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Date-time that the record becomes effective.</p>
+<p class="tablebodytext">Its finest granularity is one second.</p>
+<p class="tablebodytext">It is set to the value of the <span class="unixoutputc">StartDate~</span> parameter specified when inserting a new person.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_END_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Date-time of the last second that the record is effective.</p>
+<p class="tablebodytext">The record ceases to be effective one second after the <span class="unixoutputc">EFFECTIVE_END_DATE</span>.</p>
+<p class="tablebodytext">Its finest granularity is one second. </p>
+<p class="tablebodytext">It must be greater than or equal to <span class="unixoutputc">EFFECTIVE_START_DATE</span>.</p>
+<p class="tablebodytext">It defaults to the end of time when a person record is inserted.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PERSON_TYPE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (30)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Name of the person type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PERSON_TYPE_DISPLAY_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Name of the person type displayed.</p>
+<p class="tablebodytext">It defaults to <span class="unixoutputc">PERSON_TYPE_NAME</span>.</p>
+<table class="cautionstyle" width="100%"><tr><td><p class="caution">Caution:</p><p class="tablecaution">The value can be translated into a locale-specific language and therefore differ between implementations.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PERSON_TYPE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">ID of the type of person.</p>
+<p class="tablebodytext">It also defines what values (if any) must be entered into the ten general fields, and the reference type for the <span class="unixoutputc">PERSON_STATUS_CODE</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PRIMARY_IDENTIFIER</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Optional primary ID for the person.</p>
+<p class="tablebodytext">The type of value may be dependent on the person type or values in other columns.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PRIMARY_IDENTIFIER2</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Optional secondary primary ID for the contact.</p>
+<p class="tablebodytext">The type of value may be dependent on the person type or values in other columns.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">TITLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Optional title of the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">FAMILY_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (110)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Family name or surname.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">FAMILY_NAME_UPPERCASE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (110)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Family name with all characters converted to upper case.</p>
+<p class="tablebodytext">It can be used for case-insensitive searching.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">FAMILY_NAME_SOUNDEX</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (10)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Soundex value of the <span class="unixoutputc">FAMILY_NAME</span> column.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">GIVEN_NAMES</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Contact's first name and/or middle name.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">GIVEN_NAMES_UPPERCASE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Contact's first name and/or middle name converted to upper case.</p>
+<p class="tablebodytext">It is used for case-insensitive searching.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">GIVEN_NAMES_SOUNDEX</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (10)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Soundex value of the <span class="unixoutputc">GIVEN_NAMES</span> column.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">OFFICIAL_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (200)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Official name used in corresponding with the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">OFFICIAL_NAME_UPPERCASE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (200)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext"><span class="unixoutputc">OFFICIAL_NAME_UPPERCASE</span> should be <span class="unixoutputc">UPPERCASE(OFFICIAL_NAME)</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PREFERRED_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Preferred name of the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">GENDER_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Code identifies whether the contact is male or female.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">SEX</span> reference type.</p>
+<p class="tablebodytext">It cannot have any other reference type assigned to it but the values within the reference type can be modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PERSON_STATUS_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Status of the person record.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">PERSON_STATUS</span> reference type.</p>
+<p class="tablebodytext">It cannot have any other reference type assigned to it but the values within the reference type can be modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">OPERATOR_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">User who created or last modified the record.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">GROUP_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Security group with access to the record.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">BIRTH_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Date of birth of the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">MARITAL_STATUS_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (3)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Marital status of the contact.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">MARITAL_STATUS</span> reference type.</p>
+<p class="tablebodytext">It cannot have any other reference type assigned to it but the values within the reference type can be modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">DISABILITY_TYPE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Any major disability that affects the contact.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">DISABILITY_TYPE</span> reference type.</p>
+<p class="tablebodytext">It cannot have any other reference type assigned to it but the values within the reference type can be modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">HOME_LINE_1</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Home address details for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">HOME_LINE_2</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Home address details for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">HOME_SUBURB</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Home address details for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">HOME_CITY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Home address details for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">HOME_POST_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Home address details for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">HOME_STATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Home address details for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">HOME_COUNTRY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Home address details for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">HOME_GEOCODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Configurable encoding of the geographic location of the home address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">HOME_XPOS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Configurable numeric representation of the location of the home address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">HOME_YPOS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Configurable numeric representation of the location of the home address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">HOME_ZPOS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Configurable numeric representation of the location of the home address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">HOME_GENERAL_1-</span><br><span class="unixoutputc">HOME_GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">General fields that store home address information.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">POSTAL_LINE_1</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Postal address details for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">POSTAL_LINE_2</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Postal address details for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">POSTAL_SUBURB</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Postal address details for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">POSTAL_CITY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Postal address details for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">POSTAL_POST_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Postal address details for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">POSTAL_STATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Postal address details for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">POSTAL_COUNTRY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Postal address details for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">POSTAL_GEOCODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Configurable encoding of the geographic location of the postal address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">POSTAL_XPOS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Configurable numeric representation of the location of the postal address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">POSTAL_YPOS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Configurable numeric representation of the location of the postal address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">POSTAL_ZPOS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Configurable numeric representation of the location of the postal address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">POSTAL_GENERAL_1 -</span><br><span class="unixoutputc">POSTAL_GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">General fields that store postal address information.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">WORK_LINE_1</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Work address details for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">WORK_LINE_2</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Work address details for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">WORK_SUBURB</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Work address details for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">WORK_CITY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Work address details for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">WORK_POST_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Work address details for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">WORK_STATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Work address details for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">WORK_COUNTRY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Work address details for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">WORK_GEOCODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Configurable encoding of the geographic location of the work address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">WORK_XPOS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Configurable numeric representation of the location of the work address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">WORK_YPOS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Configurable numeric representation of the location of the work address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">WORK_ZPOS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Configurable numeric representation of the location of the work address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">WORK_GENERAL_1 -</span><br><span class="unixoutputc">WORK_GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">General fields that store work address information.</p>
+<p class="tablebodytext">At least one of the above addresses must be specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">HOME_PHONE_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Standard telephone voice and fax network dial numbers.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">WORK_PHONE_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Standard telephone voice and fax network dial numbers.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">MOBILE_PHONE_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Standard telephone voice and fax network dial numbers.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">FAX_PHONE_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Standard telephone voice and fax network dial numbers.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">EMAIL_ADDRESS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Standard internet electronic mail address for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">X400_ADDRESS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Standard X.400 mail address for the contact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PROFESSION_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Occupation or job title for the contact.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">PROFESSION</span> reference type.</p>
+<p class="tablebodytext">It cannot have any other reference type assigned to it but the values within the reference type can be modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">EMPLOYER</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Name of the contact's employer or business name.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">NATIONALITY_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">As displayed on passport.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">NATIONALITY</span> reference type.</p>
+<p class="tablebodytext">It cannot have any other reference type assigned to it but the values within the reference type can be modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PASSPORT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Passport ID.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">WRITTEN_LANGUAGE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">First or most appropriate language that the contact reads or writes.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">WRITTEN_LANGUAGE</span> reference type.</p>
+<p class="tablebodytext">It cannot have any other reference type assigned to it but the values within the reference type can be modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">SPOKEN_LANGUAGE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">First or most appropriate language spoken by the contact.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">SPOKEN_LANGUAGE</span> reference type.</p>
+<p class="tablebodytext">It cannot have any other reference type assigned to it but the values within the reference type can be modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">RESIDENCY_STATUS_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Residency status of the contact.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">RESIDENCY_STATUS</span> reference type.</p>
+<p class="tablebodytext">It cannot have any other reference type assigned to it but the values within the reference type can be modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">VISA_NUMBER</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Visa number details, such as work permit or green card number.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">VISA_TYPE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Work permit, holiday, temporary residency, and so on.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">VISA_TYPE</span> reference type.</p>
+<p class="tablebodytext">It cannot have any other reference type assigned to it but the values within the reference type can be modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">VISA_EXPIRY_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Date of expiry of the contact's visa.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">SOCIAL_SECURITY_NUMBER</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Social security number.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">DRIVERS_LICENCE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Contact's driver's licence number.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PASSWORD</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Customer access or ID security password used for authentication of the contact person in phone conversations or correspondence.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">YEARLY_EARNINGS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Earnings amount for the last known year.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">YEARLY_EARNINGS_CURRENCY_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Currency of the yearly earnings.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">GENERAL_1 - GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">General fields.</p>
+<p class="tablebodytext">Use of these fields is controlled by the person type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_PARTITION_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext"><a id="h79002" class="jump" title="Pseudo-columns" href="7526.htm#o79001" target="_self">Pseudo-column</a></p>
+<p class="tablebodytext">Used for inserts only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">If specified with a valid customer partition number for an insert, the person ID is derived using the sequence for that partition.</p>
+<p class="tablebodytext">A maximum of 99 customer partitions are supported (1-99).</p>
+<p class="tablebodytext">For information about how the customer partition number is determined if <span class="unixoutputc">CUSTOMER_PARTITION_NR</span> is not specified, refer to the <span class="unixoutputc">biPersonInsert&amp;()</span> function in the <span class="referrals">Configurer's Reference Guide for Singleview Convergent Billing (Vol. 2)</span>.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="50787.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="53384.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Import/Export Map Tool  </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Configuration Workbench for Singleview Process Engine 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "41875.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "12506.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('10987');highlight('12505')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="41875.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="12506.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Configuration Workbench for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Import/Export Map Tool </h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Import/Export Map Tool ' (12505)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The import and export functionality allows data to be imported into Process Engine and to export Process Engine data to a file.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o11379"></a><h3 class="heading3">Import/Export Map Tool Attributes</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Import/Export Map Tool Attributes' (11379)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The following table lists top section attributes.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Top Section Attributes</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr>
+<td width="132" height="0"></td>
+<td width="564" height="0"></td>
+</tr>
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="132"><p class="tableheading">Attribute</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="564"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" colspan="2" width="696"><table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">Unless there is additional information specific to this tool, <a id="h39913" class="jump" title="Common Attributes" href="39911.htm" target="_self">attributes displayed on all tools are not included in this table</a>.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="fieldname">Name </span>field</p>
+</td>
+<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">Class being mapped for import or export.</p>
+<p class="tablebodytext">It is set when the import/export map is created.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="fieldname">Format </span>field</p>
+</td>
+<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">Mandatory.</p>
+<p class="tablebodytext">File format for the import/export map.  Valid formats are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">CSV (Comma Separated Values)</li><li class="tablelistbullet">TSV (Tab Separated Values)</li><li class="tablelistbullet">SDF (System Data Format)</li><li class="tablelistbullet">XML (Extensible Markup Language).<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablelistnote">XML format is used only in Process Engine web client.</p></td></tr></table>
+</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="fieldname">Header </span>check box</p>
+</td>
+<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">Indicates there is a header record in the import or export file.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="fieldname">Import Rule </span>group</p>
+</td>
+<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">Specifies whether objects are created or updated during an import.</p>
+<p class="tablebodytext">It is ignored for exports.</p>
+<p class="tablebodytext">It is disabled if XML is selected in the <span class="fieldname">Format</span> field, as this format is only used for exports.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">For imports, the order of the map fields must match the order of the fields in the import file.  For exports, the order of the map fields is the order in which the fields are exported.</p>
+<p class="bodytext">The following table lists map field attributes.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Map Field Attributes</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Attribute</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="570"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="fieldname">Key </span>column</p>
+</td>
+<td style="border:1px solid #010101;" width="570"><p class="tablebodytext">Indicates that the fact will be used to identify the object.</p>
+<p class="tablebodytext">It is not applicable if:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="fieldname">Import Rule</span> is set to Create.</li><li class="tablelistbullet">XML is selected in the <span class="fieldname">Format</span> field.</li></ul><p class="tablebodytext">It is mandatory if <span class="fieldname">Import Rule</span> is set to Update.</p>
+<p class="tablebodytext">When data is being updated during an import, Process Engine must be able to identify the Process Engine object to update.  The key is used to identify the object.  Only one fact in the import/export map can be set as the key.</p>
+<p class="tablebodytext">If a class does not contain a key fact (for example, the Name fact in the Case class), a dummy key fact must be defined to be used only for imports and exports.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="fieldname">Fact </span>column</p>
+</td>
+<td style="border:1px solid #010101;" width="570"><p class="tablebodytext">Identifies the facts to be included as map fields in the map.  At least one fact must be selected.</p>
+<p class="tablebodytext">Not all facts can be selected for use in an import or export.</p>
+<p class="tablebodytext">The special NULL fact can be specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="fieldname">Header Text</span> column</p>
+</td>
+<td style="border:1px solid #010101;" width="570"><p class="tablebodytext">Text displayed for the map field in the first record of the export file (the header record), if<span class="fieldname"> Header</span> is selected.</p>
+<p class="tablebodytext">It defaults to the fact name. </p>
+<p class="tablebodytext">Mandatory for each fact if the <span class="fieldname">Header</span> check box is selected.</p>
+<p class="tablebodytext">If the fact is NULL, it is ignored on import and export.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="fieldname">Reference</span> column</p>
+</td>
+<td style="border:1px solid #010101;" width="570"><p class="tablebodytext">Specifies the name of the foreign fact to be referenced when the selected fact is of type Reference.</p>
+<p class="tablebodytext">Default is the Name fact.</p>
+<p class="tablebodytext">Mandatory when the fact is a reference fact.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="fieldname">Skip</span> or <span class="fieldname">Width </span>column</p>
+</td>
+<td style="border:1px solid #010101;" width="570"><p class="tablebodytext">Label and effect of this column depends on the <span class="fieldname">Format</span> and <span class="fieldname">Fact</span> attributes, based on the following:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">If <span class="fieldname">Format</span> is set to SDF, the label is <span class="fieldname">Width</span> and defines the width of the map field in characters, and is mandatory.  For NULL facts, <span class="fieldname">Width</span> specifies the number of characters to ignore during import, or to pad with spaces during export.</li><li class="tablelistbullet">If <span class="fieldname">Format</span> is set to CSV or TSV, the label is <span class="fieldname">Skip</span> and defines number of comma or tab delimited fields to be ignored on import and specifies the number of empty (blank) comma or tab delimited fields to be written out on export.  <span class="fieldname">Skip</span> is only used for NULL facts, and is mandatory.</li><li class="tablelistbullet">If <span class="fieldname">Format</span> is set to XML, the label is <span class="fieldname">Width</span>, <span class="fieldname">Width</span> is set to 0, and is disabled.</li></ul></td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="41875.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="12506.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Configuration Workbench for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

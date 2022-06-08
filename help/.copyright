@@ -1,0 +1,351 @@
+Trademark Notices
+
+COPYRIGHT © 2017 CSG SYSTEMS INTERNATIONAL, INC. AND/OR ITS AFFILIATES (“CSG”). ALL RIGHTS RESERVED.
+THIS SOFTWARE AND RELATED INFORMATION IS CONFIDENTIAL AND PROPRIETARY TO CSG AND MAY NOT BE DISCLOSED, COPIED, MODIFIED, OR OTHERWISE USED EXCEPT IN ACCORDANCE WITH THE LICENSE AGREEMENT ENTERED INTO WITH CSG. THIS INFORMATION IS PROTECTED BY INTERNATIONAL COPYRIGHT LAWS AND ANY UNAUTHORIZED USE THEREOF MAY VIOLATE COPYRIGHT, TRADEMARK, AND OTHER LAWS. ANY UNAUTHORIZED USE OF THIS SOFTWARE AND/OR INFORMATION WILL AUTOMATICALLY TERMINATE YOUR RIGHT TO USE THIS SOFTWARE AND/OR INFORMATION.
+
+All third party trademarks, registered trademarks, service marks, and product names referenced are the property of their respective owners and all rights therein are reserved. 
+
+Adobe Systems Incorporated
+Adobe Acrobat, Adobe Reader, Adobe PostScript, and Adobe SVG Viewer are either registered trademarks or trademarks of Adobe Systems Incorporated in the United States and other countries. Refer to: http://www.adobe.com/legal/licenses-terms.html
+
+American Mathematical Society
+TeX is a trademark of the American Mathematical Society. Refer to: http://www.ams.org/publications/authors/tex/tex
+
+The Apache Software Foundation
+Apache Tomcat, Apache Xerces, Batik SVG Toolkit, apr, apr-util, and Subversion are trademarks or registered trademarks of The Apache Software Foundation. 
+
+Artifex Software Inc. 
+Ghostscript and GPL Ghostscript are registered trademarks of Artifex Software, Inc.
+
+BYTE Computer & Software Ltd
+Adrock is a registered trademark of BYTE Computer & Software Ltd. 
+
+The Codehaus
+Classworlds is a registered trademark of The Codehaus.
+The Codehaus hosts versions of the Jetty Project before Jetty v7. 
+Refer to: http://www.codehaus.org/
+
+Eclipse Foundation
+Eclipse are registered trademarks of The Eclipse Foundation.
+Refer to: http://www.eclipse.org/legal/logo_guidelines.php
+Eclipse Foundation hosts v7, v8, and v9 of the Jetty Project, and BPMN2 Modeler.
+
+Embarcadero Technologies, Inc.
+Delphi is a trademark or registered trademark of Embarcadero Technologies. 
+
+Free Software Foundation, Inc.
+GNU is a registered trademark of the Free Software Foundation, Inc. Refer to: http://www.gnu.org/licenses/agpl-3.0.html
+
+Gentleware AG
+Poseidon for UML is a registered trademark of Gentleware AG. 
+
+Google, Inc.
+Google and Google Chrome are registered trademarks of Google Inc.
+Refer to: http://www.google.com.au/permissions/trademark/our-trademarks.html
+
+ICEsoft Technologies Inc
+ICEfaces is a trademark of ICEsoft Technologies Inc.
+Refer to: http://www.icesoft.org/community/license-faq.jsf
+
+International Business Machines Corp.
+AIX is a registered trademark of International Business Machines Corp. 
+
+Linus Torvalds
+Linux is a registered trademark of Linus Torvalds, which is administered by the Linux Mark Institute.
+
+Massachusetts Institute of Technology
+Kerberos is a registered trademark of the Massachusetts Institute of Technology.
+Refer to: http://web.mit.edu/kerberos/
+
+Metadot Corporation
+Metadot is a trademark or registered trademark of Metadot Corporation. 
+
+Microsoft
+Windows 8, Windows 7, Windows XP, Windows Vista, Microsoft Word, Microsoft Excel, Microsoft Office Visio, Microsoft Internet Explorer, Microsoft Visual C++, Microsoft Exchange Server, Outlook, and FrontPage are trademarks of Microsoft in the USA and other countries.  
+
+Mozilla
+Firefox is a registered trademark of Mozilla. 
+Refer to: http://www.mozilla.org/en-US/about/legal.html
+
+Object Management Group, Inc.
+CORBA and Business Process Model And Notation (BPMN) Version 2.0 are either registered trademarks or trademarks of the Object Management Group, Inc. in the United States and/or other countries. 
+Refer to: http://www.omg.org/
+
+Oracle Corporation
+Oracle Solaris, Oracle Enterprise Linux, Java, JavaMail, JavaBeans Activation Framework, Oracle Tuxedo, MySQL, Hyperion SQR, Hyperion Report Builder, Instant Client, and SPARC are registered trademarks of Oracle Corporation and/or its affiliates. 
+
+Perl.org
+Perl and Perl CPAN is a registered trademark of Perl.org.
+
+Red Hat, Inc.
+Red Hat Enterprise Linux, JBoss, JBoss Business Process Management (jBPM), and JBoss Business Rules Management System (BRMS) are registered trademarks or trademarks of Red Hat, Inc. 
+
+Savarese Software Research Corporation
+Ssrc SVG is a registered trademark of the Savarese Software Research Corporation.
+
+The Open Group
+UNIX is a registered trademark of The Open Group.
+
+OW2 Consortium
+ASM is hosted by the OW2 Consortium.
+
+TIBCO Software Inc.
+TIBCO, TIBCO Rendezvous, and TIBCO ActiveEnterprise are registered trademarks or trademarks of TIBCO Software Inc. in the United States and other countries.
+
+Unicode, Inc. 
+Unicode and the Unicode logo are trademarks of Unicode, Inc.
+
+World Wide Web Consortium (W3C)
+W3C is a trademark (registered in numerous countries) of the World Wide Web Consortium; marks of W3C are registered and held by its host institutions MIT, ERCIM, Keio, and Beihang.
+
+
+The following copyrights apply to the SNMP package:
+
+CMU/UCD copyright notice: (BSD like) 
+Copyright 1989, 1991, 1992 by Carnegie Mellon University
+Derivative Work - 1996, 1998-2000
+Copyright 1996, 1998-2000 The Regents of the University of California All Rights Reserved
+Permission to use, copy, modify and distribute this software and its documentation for any purpose and without fee is hereby granted, provided that the above copyright notice appears in all copies and that both that copyright notice and this permission notice appear in supporting documentation, and that the name of CMU and The Regents of the University of California not be used in advertising or publicity pertaining to distribution of the software without specific written permission.
+CMU AND THE REGENTS OF THE UNIVERSITY OF CALIFORNIA DISCLAIM ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.  IN NO EVENT SHALL CMU OR THE REGENTS OF THE UNIVERSITY OF CALIFORNIA BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM THE LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+Networks Associates Technology, Inc copyright notice (BSD) 
+Copyright (c) 2001-2003, Networks Associates Technology, Inc
+All rights reserved. 
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+*  Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+*  Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+*  Neither the name of the Networks Associates Technology, Inc nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Cambridge Broadband Ltd. copyright notice (BSD) 
+
+Portions of this code are copyright (c) 2001-2003, Cambridge Broadband Ltd. All rights reserved.
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 
+*  Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. 
+*  Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. 
+*  The name of Cambridge Broadband Ltd. may not be used to endorse or promote products derived from this software without specific prior written permission. 
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDER ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Sun Microsystems, Inc. copyright notice (BSD)
+Copyright © 2003 Sun Microsystems, Inc., 4150 Network Circle, Santa Clara, California 95054, U.S.A. All rights reserved.
+Use is subject to license terms below.
+This distribution may include materials developed by third parties.
+Sun, Sun Microsystems, the Sun logo and Solaris are trademarks or registered trademarks of Sun Microsystems, Inc. in the U.S. and other countries.
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+*  Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+*  Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+*  Neither the name of the Sun Microsystems, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Sparta, Inc copyright notice (BSD)
+Copyright (c) 2003-2009, Sparta, Inc
+All rights reserved. 
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 
+*  Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+*  Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. 
+*  Neither the name of Sparta, Inc nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission. 
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Cisco/BUPTNIC copyright notice (BSD)
+
+Copyright (c) 2004, Cisco, Inc and Information Network
+Center of Beijing University of Posts and Telecommunications.
+All rights reserved. 
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 
+*  Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. 
+*  Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. 
+*  Neither the name of Cisco, Inc, Beijing University of Posts and Telecommunications, nor the names of their contributors may be used to endorse or promote products derived from this software without specific prior written permission. 
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Fabasoft R&D Software GmbH & Co KG copyright notice (BSD)
+
+Copyright (c) Fabasoft R&D Software GmbH & Co KG, 2003
+oss@fabasoft.com
+Author: Bernhard Penz 
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+*  Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+*  Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+*  The name of Fabasoft R&D Software GmbH & Co KG or any of its subsidiaries, brand or product names may not be used to endorse or promote products derived from this software without specific prior written permission.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDER ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Apple Inc. copyright notice (BSD)
+
+Copyright (c) 2007 Apple Inc. All rights reserved.
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+1.  Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+2.  Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+3.  Neither the name of Apple Inc. ("Apple") nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+THIS SOFTWARE IS PROVIDED BY APPLE AND ITS CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY ND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL APPLE OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND  
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+ScienceLogic, LLC copyright notice (BSD)
+
+Copyright (c) 2009, ScienceLogic, LLC
+All rights reserved. 
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 
+*  Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. 
+*  Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. 
+*  Neither the name of ScienceLogic, LLC nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission. 
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+Open Source Initiative OSI - The MIT License (MIT):Licensing
+The MIT License (MIT)
+
+Copyright (C) 2014, Massachusetts Institute of Technology
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+Copyright (c) 1998-2011 The OpenSSL Project.  All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. 
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in  the documentation and/or other materials provided with the distribution.
+3. All advertising materials mentioning features or use of this software must display the following acknowledgment:
+"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.OpenSSL.org/)"
+4. The names "OpenSSL Toolkit" and "OpenSSL Project" must not be used to endorse or promote products derived from this software without prior written permission. For written permission, please contact licensing@OpenSSL.org.
+5. Products derived from this software may not be called "OpenSSL" nor may "OpenSSL" appear in their names without prior written permission of the OpenSSL Project.
+6. Redistributions of any form whatsoever must retain the following acknowledgment:
+"This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit http://www.OpenSSL.org/)"
+THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+This product includes cryptographic software written by Eric Young (eay@cryptsoft.com).  This product includes software written by Tim Hudson (tjh@cryptsoft.com).
+
+
+zlib
+
+Copyright (C) 1995-2013 Jean-loup Gailly and Mark Adler
+
+This software is provided 'as-is', without any express or implied warranty.  In no event will the authors be held liable for any damages arising from the use of this software.
+Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:
+1. The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, an acknowledgment in the product documentation would be appreciated but is not required.
+2. Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.
+3. This notice may not be removed or altered from any source distribution.
+Jean-loup Gailly        Mark Adler
+jloup@gzip.org          madler@alumni.caltech.edu
+
+
+lodash
+
+Copyright 2012-2014 The Dojo Foundation <http://dojofoundation.org/> Based on Underscore.js 1.6.0, copyright 2009-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors <http://underscorejs.org/>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use,  copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+ng-table
+
+Copyright (c) 2013, esvit.
+All rights reserved.
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+Neither the name of the esvit nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+expat (expat XML parser)
+
+Copyright (c) 1998, 1999, 2000 Thai Open Source Software Center Ltd and Clark Cooper
+Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006 Expat maintainers.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+bsalsa
+
+bsalsa productions develop freeware solutions for users and programmers with "Embarcadero Delphi" for "Microsoft Windows" OS. Our main product is the Embedded Web Browser Component Pack. Most of its components were originally developed by Per Lindsø Larsen.
+THIS SOFTWARE IS PROVIDED TO YOU "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED INCLUDING BUT NOT LIMITED TO THE APPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE. YOU ASSUME THE ENTIRE RISK AS TO THE ACCURACY AND THE USE OF THE SOFTWARE AND ALL OTHER RISK ARISING OUT OF THE USE OR PERFORMANCE OF THIS SOFTWARE AND DOCUMENTATION. BSALSA PRODUCTIONS DOES NOT WARRANT THAT THE SOFTWARE IS ERROR-FREE OR WILL OPERATE WITHOUT INTERRUPTION. THE SOFTWARE IS NOT DESIGNED, INTENDED OR LICENSED FOR USE IN HAZARDOUS ENVIRONMENTS REQUIRING FAIL-SAFE CONTROLS, INCLUDING WITHOUT LIMITATION, THE DESIGN, CONSTRUCTION, MAINTENANCE OR OPERATION OF NUCLEAR FACILITIES, AIRCRAFT NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL, AND LIFE SUPPORT OR WEAPONS SYSTEMS. BSALSA PRODUCTIONS SPECIFICALLY DISCLAIMS ANY EXPRESS OR IMPLIED WARRANTY OF FITNESS FOR SUCH PURPOSE.
+
+
+Apache / JBoss Business Process Management (jBPM)
+
+Copyright 1997-2014 Apache Software Foundation
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. 
+
+
+Java
+
+Copyright (c) 2004-2008 QOS.ch All rights reserved.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+
+
+JRuby
+
+JRuby is Copyright (c) 2007-2014 The JRuby project, and is released under a tri EPL/GPL/LGPL license. You can use it, redistribute it and/or modify it under the terms of the:
+  Eclipse Public License version 1.0
+  GNU General Public License version 2
+  GNU Lesser General Public License version 2.1
+build_lib/bytelist.jar (http://github.com/jruby/bytelist),
+build_lib/yydebug.jar (http://svn.codehaus.org/jruby/trunk/jay/yydebug)
+are released under the same copyright/license.
+Some additional libraries distributed with JRuby are not covered by JRuby's licence. Most of these libraries and their licenses are listed below. Also see LICENSE.RUBY for most files found in lib/ruby/1.8, lib/ruby/1.9, and lib/ruby/site_ruby/1.8/rubygems*.
+ bench/rails/public/javascripts/* are distributed under the MIT license, and have the following copyrights:
+   controls.js is Copyright:
+   (c) 2005-2008 Thomas Fuchs (http://script.aculo.us, http://mir.aculo.us)
+   (c) 2005-2007 Ivan Krstic (http://blogs.law.harvard.edu/ivan)
+   (c) 2005-2007 Jon Tirsen (http://www.tirsen.com)
+   dragdrop.js is Copyright:
+   (c) 2005-2008 Thomas Fuchs (http://script.aculo.us, http://mir.aculo.us)
+   (c) 2005-2007 Sammi Williams (http://www.oriontransfer.co.nz, sammi@oriontransfer.co.nz)
+   effect.js is Copyright (c) 2005-2008 Thomas Fuchs.
+   prototype.js is Copyright (c) 2005-2007 Sam Stephenson.
+ The "rake" library (http://rake.rubyforge.org/) is distributed under the MIT license, and has the following copyright:   
+   Copyright (c) 2003, 2004 Jim Weirich
+ build_lib/*asm*jar (http://asm.objectweb.org) are distributed under the BSD license.
+ build_lib/apt-mirror-api.jar, build_lib/bnd-0.0.249.jar, build_lib/commons-logging-1.1.1.jar, build_lib/joda-time-1.6.2.jar, BSF and ant are distributed under the Apache Software License, Version 1.1 (license file inside the jars).
+ build_lib/jcodings.jar (http://github.com/jruby/jcodings) and build_lib/joni.jar (http://github.com/jruby/joni) are distributed under the MIT license.
+ build_lib/jnr-constants.jar (http://github.com/jnr/jnr-constants), build_lib/jarjar-1.0rc8.jar (http://code.google.com/p/jarjar), build_lib/joda-time-1.6.2.jar (http://joda-time.sourceforge.net), build_lib/jffi*jar (https://github.com/jnr/jffi), build_lib/jnr-ffi.jar (https://github.com/jnr/jnr-jffi), build_lib/jnr-netdb.jar (http://github.com/jnr/jnr-netdb), build_lib/dynalang-0.3.jar (http://dynalang.sourceforge.net), build_lib/nailgun-0.7.1.jar and tool/nailgun/ng.exe
+ (http://martiansoftware.com/nailgun) are distributed under the Apache License version 2.0. build_lib/emma*jar (http://emma.sourceforge.net) and build_lib/junit.jar (http://www.junit.org) are distributed under the Common Public License v1.0.
+ build_lib/jline-* (http://jline.sourceforge.net) is distributed under the following license:
+   Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+   Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+   Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+   Neither the name of JLine nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ build_lib/jsr292-mock.jar (http://code.google.com/p/jvm-language-runtime) distributed under the LGPL license. It is only used as a compile-time mock for Java 7-only features.
+ Bouncycastle is released under the MIT license, and is Copyright (c) 2000 - 2006 The Legion Of The Bouncy Castle.
+ The "yecht" library is Copyright (c) 2009-2011 Ola Bini, and released under the MIT license.
+
+
+ASM
+
+Copyright (c) 2000-2011 INRIA, France Telecom
+All rights reserved.
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+3. Neither the name of the copyright holders nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+Classworlds
+
+Copyright 2002 (C) The Codehaus. All Rights Reserved. 
+ Redistribution and use of this software and associated documentation ("Software"), with or without modification, are permitted provided that the following conditions are met:
+ 1. Redistributions of source code must retain copyright statements and notices. Redistributions must also contain a copy of this document. 
+ 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. 
+ 3. The name "classworlds" must not be used to endorse or promote products derived from this Software without prior written permission of The Codehaus. For written permission, please contact bob@codehaus.org. 
+ 4. Products derived from this Software may not be called "classworlds" nor may "classworlds" appear in their names without prior written permission of The Codehaus. "classworlds" is a registered trademark of The Codehaus. 
+ 5. Due credit should be given to The Codehaus. (http://classworlds.codehaus.org/). 
+ THIS SOFTWARE IS PROVIDED BY THE CODEHAUS AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE CODEHAUS OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+GNU Lesser General Public License version 2.1 / JBoss Business Rules Management System (BRMS)
+
+Copyright (C) 2014 Red Hat, Inc.
+This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.
+This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.
+You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+
+BPMN2 Modeler
+
+BPMN2 Modeler is Copyright (c) 2014 The Eclipse Foundation, and is released under the license. You can use it, redistribute it and/or modify it under the terms of the Eclipse Public License version 1.0.

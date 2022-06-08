@@ -1,0 +1,1112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> CUSTOMER_NODE_HISTORY_V </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "7951.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "50777.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7934');highlight('50729')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="7951.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="50777.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">CUSTOMER_NODE_HISTORY_V</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'CUSTOMER_NODE_HISTORY_V' (50729)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="unixoutputc">CUSTOMER_NODE_HISTORY_V</span> view is an unrestricted view displaying customer details.</p>
+<p class="bodytext">It is used by the billing engine and defines what information is available to the billing engine in the context of Customer Node.</p>
+<p class="syntaxheading">Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="198"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="372"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_NODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">ID of the customer node associated with this instance.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">LAST_MODIFIED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Date-time when this row was last modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Date-time that the record becomes effective.</p>
+<p class="tablebodytext">Its finest granularity is one second.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_END_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Date-time of the last second that the record is effective.</p>
+<p class="tablebodytext">The record ceases to be effective one second after the <span class="unixoutputc">EFFECTIVE_END_DATE</span>.</p>
+<p class="tablebodytext">Its finest granularity is one second.</p>
+<p class="tablebodytext">It must be greater than or equal to <span class="unixoutputc">EFFECTIVE_START_DATE</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_NODE_TYPE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (30)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Type of this customer node instance.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_NODE_TYPE_</span><br><span class="unixoutputc">DISP_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Name of the customer node type displayed.  </p>
+<p class="tablebodytext">It defaults to <span class="unixoutputc">CUSTOMER_NODE_TYPE_NAME</span>.</p>
+<table class="cautionstyle" width="100%"><tr><td><p class="caution">Caution:</p><p class="tablecaution">The value column can be translated into a locale-specific language and therefore differ between implementations.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_NODE_TYPE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Type of this customer node instance.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PRIMARY_IDENTIFIER</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Optional primary ID for the customer node that can be set to be the same as another column in this table.</p>
+<p class="tablebodytext">The type of value in this field may be dependent on the customer node type or values in other columns.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PRIMARY_IDENTIFIER2</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Optional secondary primary ID for the customer node that can be set to be the same as another column in this table.</p>
+<p class="tablebodytext">The type of value in this field may be dependent on the customer node type or values in other columns.</p>
+<p class="tablebodytext">Both primary IDs are usually not specified, but both can be, if required.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">NODE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (200)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Name associated with this node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">NODE_NAME_UPPERCASE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (200)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Node name converted to upper case.</p>
+<p class="tablebodytext">It is equal to <span class="unixoutputc">UPPERCASE(NODE_NAME)</span>.</p>
+<p class="tablebodytext">The value is enforced by the <span class="unixoutputc">C_CUSTOMER_NODE_HISTORY</span> check constraint.</p>
+<p class="tablebodytext">Duplicate names for customer nodes with the same parent may be permitted depending on the value of the <span class="unixoutputc">SYSTEM_CLIENT</span> configuration attribute <span class="unixoutputc">DUPLICATE_CHILD_NODE_NAME</span>.</p>
+<p class="tablebodytext">Root customer nodes (that is, nodes with a <span class="unixoutputc">PARENT_CUSTOMER_NODE_ID</span> value of NULL) can have duplicate node names (see the <span class="referrals">System Configuration Guide for Singleview Convergent Billing</span>).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">NODE_NAME_SOUNDEX</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (10)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Soundex value for <span class="unixoutputc">NODE_NAME</span>.</p>
+<p class="tablebodytext">It is derived using a customised version of the Soundex algorithm, and is used for soundex searches based on <span class="unixoutputc">NODE_NAME</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">GROUP_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Security group with access to this customer node.</p>
+<p class="tablebodytext">Only users with access to this security group can view the details associated with this customer node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">OPERATOR_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">User who created or last modified this record.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">GL_CODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">GL code associated with all charges for this customer node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PARENT_CUSTOMER_NODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Parent customer node for this node.</p>
+<p class="tablebodytext">Only customer node types that support hierarchies can have a value in this column.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">HIERARCHY_LEVEL</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (3)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Level in the hierarchy of this node.</p>
+<p class="tablebodytext">The root node of a hierarchy has a level of 1. Therefore, it must have a value of 1 if <span class="unixoutputc">PARENT_CUSTOMER_NODE_ID</span> is null, and a value greater than 1 otherwise.</p>
+<p class="tablebodytext">The values are enforced by the <span class="unixoutputc">C_CUSTOMER_NODE_HISTORY</span> check constraint.</p>
+<p class="tablebodytext">For values other than 1, the value must be one greater than the value assigned to the <span class="unixoutputc">PARENT_CUSTOMER_NODE_ID</span>, as verified by the DVP.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">ROOT_CUSTOMER_NODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">If this instance of a node has a <span class="unixoutputc">PARENT_CUSTOMER_NODE_ID</span>, this is the ID of the customer node at the root of the hierarchy.</p>
+<p class="tablebodytext">If <span class="unixoutputc">PARENT_CUSTOMER_NODE_ID</span> is null, this column is also null.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_NODE_STATUS_</span><br><span class="unixoutputc">ABBREV</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Status of this instance of the customer node. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">1 (Prospect)</li><li class="tablelistbullet">2 (Credit Check Required)</li><li class="tablelistbullet">3 (Active)</li><li class="tablelistbullet">4 (Cancelled)</li><li class="tablelistbullet">5 (Black-listed).</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_NODE_STATUS_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Status of this instance of the customer node. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">1 (Prospect)</li><li class="tablelistbullet">2 (Credit Check Required)</li><li class="tablelistbullet">3 (Active)</li><li class="tablelistbullet">4 (Cancelled)</li><li class="tablelistbullet">5 (Black-listed).</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CREATED_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Date-time that the customer was first added to Convergent Billing.</p>
+<p class="tablebodytext">Its finest granularity is one second.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">ACTIVE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Date-time that the customer first became an active subscriber to the network; that is, when their status first changed to Active.</p>
+<p class="tablebodytext">Its finest granularity is one second.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Primary Contact Details</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="180"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="390"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">PERSON_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">Primary contact person for this customer node.</p>
+<p class="tablebodytext">Any correspondence that relates to this customer node is addressed to this person.</p>
+<p class="tablebodytext">Other contacts are referred to in the <span class="unixoutputc">CUSTOMER_CONTACT</span> secondary contact's list table that displays the contact person's identification details and the reason for the association with the customer node.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Financial Details</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="186"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="384"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">PRIME_ACCOUNT_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (30)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Primary account associated with this customer node.</p>
+<p class="tablebodytext">Even nodes with only statement or no reporting requirements must have a primary account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">PRIME_ACCOUNT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Primary account associated with this customer node.</p>
+<p class="tablebodytext">Even nodes with only statement or no reporting requirements must have a primary account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_BALANCE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Current balance of the primary account; it is not date ranged.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">REPORT_LEVEL_ABBREV</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Level of financial reporting required for this customer node. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">1 (Invoice)</li><li class="tablelistbullet">2 (Statement)</li><li class="tablelistbullet">3 (No Reporting)</li><li class="tablelistbullet">4 (Transferred Statement).</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">REPORT_LEVEL_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Level of financial reporting required for this customer node. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">1 (Invoice)</li><li class="tablelistbullet">2 (Statement)</li><li class="tablelistbullet">3 (No Reporting)</li><li class="tablelistbullet">4 (Transferred Statement).</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">SITE_LINE_1</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Optional first line of the site address.</p>
+<p class="tablebodytext">Example:  Leckhampton</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">SITE_LINE_2</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Second line of the site address.</p>
+<p class="tablebodytext">Example:  59-69 Shafston Avenue</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">SITE_SUBURB</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Example:  Kangaroo Point</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">SITE_CITY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Example:  Brisbane</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">SITE_POST_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Example:  4169</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">SITE_STATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Example:  Queensland</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">SITE_COUNTRY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Example:  Australia</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">SITE_GEOCODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Optional implementation-specific encoding of the geographic location of this address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">SITE_XPOS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Numeric representation of the location of this address.</p>
+<p class="tablebodytext">The units and interpretation of these columns is implementation specific.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">SITE_YPOS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Numeric representation of the location of this address.</p>
+<p class="tablebodytext">The units and interpretation of these columns is implementation specific.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">SITE_ZPOS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Numeric representation of the location of this address.</p>
+<p class="tablebodytext">The units and interpretation of these columns is implementation specific.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">SITE_GENERAL_1 - SITE_GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">General fields 1 - 10 for storing address related information.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">CURRENCY_SYMBOL</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (5)</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Currency for all invoice and statement generation.</p>
+<p class="tablebodytext">No currency is required if <span class="unixoutputc">REPORT_LEVEL_CODE</span> is None.</p>
+<p class="tablebodytext"><span class="unixoutputc">CURRENCY_ID</span> also defaults the currency in which payments and adjustments are made to the account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">CURRENCY_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Currency for all invoice and statement generation; no currency is required if <span class="unixoutputc">REPORT_LEVEL_CODE</span> is None.</p>
+<p class="tablebodytext"><span class="unixoutputc">CURRENCY_ID</span> also defaults the currency in which payments and adjustments are made to the account.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Billing Details</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="198"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="120"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="378"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">SCHEDULE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Standard invoice cycle to which the customer node is assigned.</p>
+<p class="tablebodytext">If this customer node has a parent node, it must be equal to the parent node's <span class="unixoutputc">SCHEDULE_ID</span> over the date range.</p>
+<p class="tablebodytext">It is verified by the DVP.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">It is not mandatory for customer nodes associated with a prepaid without statements customer hierarchy.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PREPAID_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">If set to 1 (True), this customer node is configured as prepaid without statements; otherwise, the value must be NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">BILLING_PRIORITY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Priority associated with processing this customer node in a bill run.</p>
+<p class="tablebodytext">When a group of customer nodes are processed on a bill run, higher priority nodes are processed first.  A lower numerical value indicates a higher priority.</p>
+<p class="tablebodytext">If specified, the priority must be greater than or equal to 1, and is enforced by the <span class="unixoutputc">C_CUSTOMER_NODE_HISTORY</span> check constraint.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">BILLING_COMPLEXITY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Numerical value indicating the expected time for performing a bill run on this customer node.</p>
+<p class="tablebodytext">It is not automatically populated or directly used by Convergent Billing.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">BILLING_CONFIGURATION_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Billing configuration for processing this customer node.</p>
+<p class="tablebodytext">It may identify specific billing functions or servers to be called for the various stages in processing a bill run for this customer node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">SUPPRESS_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">If set to 1 (TRUE), this customer node hierarchy might be suppressed from standard bill runs and standard QA runs depending on the value of <span class="unixoutputc">SUPPRESS_UNTIL_ISSUE_DATE</span>; otherwise, the value is null.</p>
+<p class="tablebodytext">It can only be set to 1 for root customer nodes, and is enforced by the <span class="unixoutputc">C_CUSTOMER_NODE_HISTORY</span> check constraint.</p>
+<p class="tablebodytext">It is ignored for immediate bill, complete bill runs for customer, or QA runs.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">SUPPRESS_BILL_CYCLE_</span><br><span class="unixoutputc">COUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (2)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">If <span class="unixoutputc">SUPPRESS_IND_CODE</span> is 1, this column can be used to specify the number of bill cycles for which invoice generation should be suppressed for this customer hierarchy.</p>
+<p class="tablebodytext">It is used at the time of entry to calculate <span class="unixoutputc">SUPPRESS_UNTIL_ISSUE_DATE</span> based on the effective dates of pending tasks for this customer's bill cycle.</p>
+<p class="tablebodytext">It is not possible to specify a value greater than the number of pending tasks for this customer's bill cycle. </p>
+<p class="tablebodytext">It can only contain a value if <span class="unixoutputc">SUPPRESS_IND_CODE</span> is 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">SUPPRESS_UNTIL_ISSUE_</span><br><span class="unixoutputc">DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">If <span class="unixoutputc">SUPPRESS_IND_CODE</span> is 1, it specifies the invoice issue date on or after which invoice generation recommences for standard and QA batch bill runs. </p>
+<p class="tablebodytext">It is mandatory if <span class="unixoutputc">SUPPRESS_IND_CODE</span> is 1, and is enforced by the <span class="unixoutputc">C_CUSTOMER_NODE_HISTORY</span> check constraint.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Credit Status Details</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="198"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="132"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="366"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">TURNOVER</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (19,3)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Revenue for the last financial year for this customer node.</p>
+<p class="tablebodytext">It is required only if <span class="unixoutputc">REPORT_LEVEL</span> indicates that invoices are to be produced.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">TURNOVER_CURRENCY_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Currency for the above turnover value.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CREDIT_LIMIT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (19,3)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Amount of credit that a customer node can have at any one time.</p>
+<p class="tablebodytext">It is required only if <span class="unixoutputc">REPORT_LEVEL</span> indicates that invoices are to be produced.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CREDIT_LIMIT_CURRENCY_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Currency for the above credit limit value.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">EXPECTED_REVENUE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (19,3)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Expected revenue for this customer node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">EXPECTED_REVENUE_</span><br><span class="unixoutputc">CURRENCY_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Currency in which the expected revenue is specified.</p>
+<p class="tablebodytext">It must be specified, and can only be specified if a value is specified for <span class="unixoutputc">EXPECTED_REVENUE</span>.</p>
+<p class="tablebodytext">The currency must exist for this date range.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CREDIT_RATING_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">How a customer is to be treated regarding financial accounting practices including invoicing and payment collection.</p>
+<p class="tablebodytext">VIP customers are given the highest rating of 1.</p>
+<p class="tablebodytext">The credit rating is defaulted by the <span class="unixoutputc">CUSTOMER_NODE_TYPE</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CREDIT_COMMENTS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Comments relating to a customer's credit rating and the limit that was assigned.</p>
+<p class="tablebodytext">It provides reasons and justifications for the assigned values.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">TAX_CLASS_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Tax class with which this customer node is associated.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Preferred Method of Payment Details</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="198"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="372"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PAYMENT_METHOD_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Preferred method of payment for the customer node.</p>
+<p class="tablebodytext">It is required only if <span class="unixoutputc">REPORT_LEVEL</span> indicates that invoices must be produced.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PAYMENT_LOCATION_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Preferred location to which payments are to be made.</p>
+<p class="tablebodytext">Examples are postal delivery, third party institution such as a bank or post office, or a specific or general customer service centre.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PAYMENT_DUE_PERIOD</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Time after the issue of an invoice that the customer is given to pay.</p>
+<p class="tablebodytext">It is obtained from the customer node type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PAYMENT_DUE_UNITS_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Units in which the payment period are defined. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">0 (Days)</li><li class="tablelistbullet">1 (Weeks)</li><li class="tablelistbullet">2 (Months).</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">EARLY_PAYMENT_PERIOD</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Time after the issue of an invoice that the customer is given to pay and receive an additional discount. </p>
+<p class="tablebodytext">It is obtained from the customer node type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">EARLY_PAYMENT_UNITS_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Units in which the payment period are defined. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">0 (Days)</li><li class="tablelistbullet">1 (Weeks)</li><li class="tablelistbullet">2 (Months).</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">BANK_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (3)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Code of the bank or financial institution where a customer has their account for invoice payments.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">BRANCH_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (5)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Code or number of the branch of the customer node's defined financial institution.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">BANK_ACCOUNT_NUMBER</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Customer's account number used for automatic payments.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">BANK_ACCOUNT_REF</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Account reference number that the customer must quote with their payment at banking institutions and other third party payment collection points, allowing payments to be associated with a single bank account by payment entries.</p>
+<p class="tablebodytext">Payment entries are allocated the required user access reference number.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CARD_TYPE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Type of credit card used for payments, and is based on <span class="unixoutputc">CARD_TYPE</span> reference code.</p>
+<p class="tablebodytext">It is used as default information for payment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CARD_NUMBER</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Main or default credit card number for making payments.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CARD_EXPIRY_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Date that the main or default credit card expires.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Miscellaneous Details</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="192"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="378"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">ASSIGNED_OPERATOR_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">User assigned to liaise with this customer node in all matters.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SALES_CHANNEL_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Sales channel for this customer node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">COMPANY_NUMBER</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Official company or business registration number (for example, A.C.N).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">INDUSTRY_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Code of the type of industry or activity the customer node is involved in (for example, banking, manufacturing, government).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">REGION_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Code or map grid reference to the geographic region where the customer node is located.</p>
+<p class="tablebodytext">The region can be based on the physical address details such as suburb.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">GENERAL_1 - GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">General fields 1 - 10 that can be defined in the type definition table.</p>
+<p class="tablebodytext">The constraints with each column are defined by the details of its <span class="unixoutputc">CUSTOMER_NODE_TYPE</span>.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Details from Last Invoice Issued to Customer Node</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="204"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="366"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">INVOICE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID defining a customer node invoice.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_INVOICE_STR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID generated for this invoice.</p>
+<p class="tablebodytext">The format depends on the specific implementation, but is usually derived from <span class="unixoutputc">INVOICE_ID</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">INVOICE_TYPE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Type of this invoice, derived from the account type of the invoice's account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">INVOICE_BILL_RUN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of the bill run that generated this invoice.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_ACCOUNT_</span><br><span class="unixoutputc">INVOICE_STR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Optional ID generated for this invoice.</p>
+<p class="tablebodytext">If defined, this ID is unique only within the account.</p>
+<p class="tablebodytext">Its use is implementation-dependent.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">INVOICE_EFFECTIVE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Effective date of the bill run that generated this invoice.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">INVOICE_ISSUE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Date on which this invoice was issued.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">ORIGINAL_PAYMENT_DUE_</span><br><span class="unixoutputc">DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Date on which this invoice was originally due to be paid.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">PAYMENT_DUE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Date on which this invoice is due to be paid.</p>
+<p class="tablebodytext">It is usually the same as <span class="unixoutputc">ORIGINAL_PAYMENT_DUE_DATE</span>, but can be updated by privileged users.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">EARLY_PAYMENT_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">If the customer pays before this date, they receive an additional discount.</p>
+<p class="tablebodytext">The discount will have been incorporated into the <span class="unixoutputc">INVOICE_TOTAL</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">INVOICE_AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Total amount of charges associated with this invoice, excluding the balance forward.</p>
+<p class="tablebodytext">Values stored in this column are at the limits of double precision.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">STATEMENT_AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Total amount of charges associated with this statement.</p>
+<p class="tablebodytext">It can only contain a value if <span class="unixoutputc">INVOICE_AMOUNT</span> is 0.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">INVOICE_BALANCE_FORWARD</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Balance of the account before the application of this invoice.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">INVOICE_ACCOUNT_BALANCE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Account balance after this invoice was generated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">INVOICE_ACCOUNT_INITIAL_</span><br><span class="unixoutputc">DUE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Initial amount due to be paid on this<span class="unixoutputc"> </span>account.</p>
+<p class="tablebodytext">It is usually equal to <span class="unixoutputc">ACCOUNT_BALANCE</span>, but may be different because of cents rounding or the presence of payment plans (not supported) for the account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">INVOICE_CURRENT_DUE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Amount left to be paid on this invoice.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">TOTAL_PAYMENTS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Total payments made on this account between the issuing of the previous invoice and this invoice.</p>
+<p class="tablebodytext">The payments are not made against this invoice.</p>
+<p class="tablebodytext">The amount is usually displayed on this invoice, calculated by the billing engine.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">TOTAL_ADJUSTMENTS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Total adjustments made on this account between the issuing of the previous invoice and this invoice.</p>
+<p class="tablebodytext">The adjustments are not made against this invoice.</p>
+<p class="tablebodytext">The amount is usually displayed on this invoice, calculated by the billing engine.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">EARLY_PAYMENT_DISCOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Early payment discount that applied for this invoice (if any).</p>
+<p class="tablebodytext">The discount is derived by the billing engine (based on the<span class="unixoutputc"> INVOICE_TYPE</span> table), and can be re-derived, based on details in the <span class="unixoutputc">CHARGE</span> table.</p>
+<p class="tablebodytext">It is incorporated into the<span class="unixoutputc"> INITIAL_DUE</span> calculated for this account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">PAYMENT_DUE_DISCOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Pay on time discount applied for this invoice (if any), derived by the billing engine, and can be re-derived, based on details in the <span class="unixoutputc">CHARGE</span> table.</p>
+<p class="tablebodytext">It is incorporated into the <span class="unixoutputc">INITIAL_DUE</span> calculated for this account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">LATE_PAYMENT_CHARGE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Late payment charge that can be applied to this account if payment is not made by the due date.</p>
+<p class="tablebodytext">The charge is not incorporated into the <span class="unixoutputc">INITIAL_DUE</span> for this invoice, but can be applied to the account if payment is not made by the due date.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">EARLY_PAYMENT_ACCOUNT_</span><br><span class="unixoutputc">BALANCE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Balance of the account at the<span class="unixoutputc"> EARLY_PAYMENT_DATE</span>.</p>
+<p class="tablebodytext">It is not set by any Convergent Billing processes, but implementation-specific processing can be used to set this column if necessary to record the account balance at the early payment date.</p>
+<p class="tablebodytext">For example, this could be set by a collections or treatment module.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">PAYMENT_DUE_ACCOUNT_</span><br><span class="unixoutputc">BALANCE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Balance of the account at the <span class="unixoutputc">PAYMENT_DUE_DATE</span>.</p>
+<p class="tablebodytext">It is not set by any Convergent Billing processes, but implementation-specific processing can be used to set this column if necessary to record the account balance at the date the invoice is due to be paid.</p>
+<p class="tablebodytext">For example, this could be set by a collections or treatment module.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">INVOICE_GENERAL_1 - INVOICE_GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">General fields 1 - 10 containing configurable details about the last invoice issued to this customer node.</p>
+<p class="tablebodytext">Their use and meaning is controlled by entity validation on the invoice type.  They are populated as required by invoice type expressions.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="7951.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="50777.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

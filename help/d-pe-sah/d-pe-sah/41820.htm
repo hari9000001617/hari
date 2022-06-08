@@ -1,0 +1,279 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Searching </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Administration Tool for Singleview Process Engine 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if (False) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "<##filename for previous page>";
+   } else
+   // Don't put the following into the late page for a document
+   if (False) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "<##filename for next page>";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif')">
+<h1 class="heading1nonumbering">Searching</h1>
+<p class="bodytext">The <span class="fieldname">Search</span> tab contains the following elements:</p>
+<ul class="listbullet"><li class="listbullet">Search term field<p class="listcontinue">The field at the top of the <span class="fieldname">Search</span> tab.  Enter <a id="h41941" class="jump" title="Specifying Search Terms" href="41820.htm#o41940" target="_self">search terms</a> in the field.</p>
+</li><li class="listbullet">Buttons<p class="listcontinue">The buttons are:</p>
+<ul class="listdashbullet2"><li class="listdashbullet2">Combined <strong class="buttons">Start</strong> or <strong class="buttons">Stop</strong> search and <strong class="buttons">Open</strong> button.<p class="listcontinue2">The button is a solid circle.</p>
+<p class="listcontinue2">When a search term is entered, the button image changes to include a magnifying glass.  Click the button to start a search.  The button image changes to include a rotating octagon to indicate that a search is in progress.  If the search completes quickly, the change in the image may not be noticed.</p>
+<p class="listcontinue2">To stop a search, click the button.</p>
+<p class="listcontinue2">When a search is complete, or it has been stopped, the button image reverts to a solid button.  Topics that match the search term are displayed in the results list field.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="listnote2">The search returns a maximum of 10,000 matches.  If the maximum is reached, specify additional search terms to refine the search.</p></td></tr></table>
+</li></ul></li><li class="listbullet"><strong class="buttons">Help</strong> button. <p class="listcontinue">The <strong class="buttons">Help</strong> button is a solid circle containing a question mark character.  Clicking the button displays this information.</p>
+</li><li class="listbullet">Results list field<p class="listcontinue">The results list field is located below the search term field, and contains the results of a search.</p>
+<p class="listcontinue">Items in the list are suffixed with an <a id="h41939" class="jump" title="Acronyms and Associated Guides" href="41820.htm#o41938" target="_self">acronym in parentheses</a> to denote the location of the term. </p>
+<p class="listcontinue">To open an item, do one of the following:</p>
+<ul class="listdashbullet2"><li class="listdashbullet2">Double-click the item.  </li><li class="listdashbullet2">Select an item, which causes the <strong class="buttons">Start</strong> button to change to the <strong class="buttons">Open</strong> button (the image changes to include an arrow).  Click the <strong class="buttons">Open</strong> button.</li></ul></li></ul><table width="100%" class="tipstyle"><tr><td><p class="tip">Tip:</p><p class="tip">The search includes text in pop-up or expandable blocks and the relevant topic appears in the search results list.  When a search result item is opened, the text is not visible until the pop-up or expandable block is selected.</p></td></tr></table>
+<p class="bodytext">&nbsp;</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o41940"></a><h2 class="heading2">Specifying Search Terms</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Specifying Search Terms' (41940)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">A search term can be any of the following:</p>
+<ul class="listbullet"><li class="listbullet">Word<p class="listcontinue">Specify a word; to match, a topic must contain the specified word.</p>
+</li><li class="listbullet">Phrase<p class="listcontinue">Specify a phrase by enclosing it in quotes; to match, a topic must contain the exact phrase.</p>
+</li><li class="listbullet">Exclusion<p class="listcontinue">Specify an exclusion by inserting a minus (-) character before a word or phrase; to match, a topic must not contain the word or phrase.</p>
+</li><li class="listbullet">Logical expression<p class="listcontinue">Specify a logical expression using words, phrases, or exclusions joined by logical OR and AND operators represented by | and &amp;, respectively; to match, a topic must cause the logical expression to be true.</p>
+<p class="listcontinue">If no operator is specified between terms, an AND operator is assumed (so its use is unnecessary).  For example, multiple words in the search term field matches only topics containing all the words.  </p>
+<p class="listcontinue">A word starting with a plus (+) character is treated as one term of a logical AND expression.</p>
+</li></ul><p class="bodytext">When searching, the following rules apply:</p>
+<ul class="listbullet"><li class="listbullet">Character case is ignored.  For example, account matches Account and aCCOUNT. </li><li class="listbullet">Partial matches are made.  For example, account matches Account History form and AccountUpdate&amp;.</li><li class="listbullet">Special characters are relevant.  For example, méxico matches México, but not Me<span class="unixoutputc">xico</span>.</li></ul><p class="bodytext">If a search word contains special characters or logical operators at the beginning of the word, enclose it with quotes.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o41938"></a><h2 class="heading2">Acronyms and Associated Guides</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Acronyms and Associated Guides' (41938)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following is a list of acronyms and their associated guides.</p>
+<p class="leftmarginalign">&nbsp;</p>
+<table width="598" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<th class="tableheading" width="84"><p class="tableheading">Acronym</p>
+</th>
+<th class="tableheading" width="514"><p class="tableheading">Name</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">CB-BOG</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Basic Operations Guide for Singleview Convergent Billing</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">CB-CCP</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Customer Care and Product Configuration Guide for Singleview Convergent Billing</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">CB-CFG</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Configuration Fundamentals Guide for Singleview Convergent Billing</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">CB-CRG</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Configurer's Reference Guide for Singleview Convergent Billing</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">CB-DMG</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Data Model User Guide for Singleview Convergent Billing</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">CB-HAG</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">High Availability and Scalability Guide for Singleview Convergent Billing</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">CB-ICH</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Installation and Configuration Reference Implementation of a Commerce Engine High Availability Solution</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">CB-IDT</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">User Guide for Singleview Invoice Design Tool</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">CB-OLH</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Online Help for Singleview Convergent Billing</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">CB-OVR</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Overview for Singleview Convergent Billing</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">CB-SCG</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">System Configuration Guide for Singleview Convergent Billing</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">CB-SOG</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">System Operations Guide for Singleview Convergent Billing</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">CB-TIG</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Technical Integration Guide for Singleview Convergent Billing</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">PE-CFG</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Configuration Guide for Singleview Process Engine</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">PE-CLH</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Online Help for Singleview Process Engine Client</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">PE-CWT</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Configuration Workbench Tools Guide for Singleview Process Engine</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">PE-OLH</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Online Help for Singleview Process Engine Configuration Workbench</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">PE-SAH</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Online Help for Singleview Process Engine Administration Tool</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">SV-AOV</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Architecture Overview for Singleview</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">SV-FIG</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Finance Guide for Singleview</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">SV-GOT</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Glossary of Terms for Singleview</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">SV-ICG</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Internationalisation Configuration Guide for Singleview</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">SV-ING</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Installation Guide for Singleview</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">SV-PFM</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Performance Guide for Singleview</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">SV-SAC</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Security and Auditing Configuration Guide for Singleview</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">SV-REP</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Reports Guide for Singleview</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">SV-SAG</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">System Administration Guide for Singleview</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">SV-SRG</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">System Reference Guide for Singleview</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="84"><p class="tablebodytext">SV-TUX</p>
+</td>
+<td width="514"><p class="tablebodytext"><span class="referrals">Tuxedo Guide for Singleview</span></p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70"></td>        <td class="bodytext">Online Help for Administration Tool for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

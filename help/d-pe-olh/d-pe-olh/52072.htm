@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> ObjectFactGetOldSecure?() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Configuration Workbench for Singleview Process Engine 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "9423.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "52071.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('57331');expand('11011');highlight('52072')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="9423.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="52071.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Configuration Workbench for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">ObjectFactGetOldSecure?()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'ObjectFactGetOldSecure?()' (52072)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<pre class="unixinputp">ObjectFactGetOldSecure?(    Object@,    fact?,    includeObsolete&amp;)</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">This function is similar to <span class="unixoutputc"><a id="h9422" class="jump" title="ObjectFactGetOld?()" href="9423.htm" target="_self">ObjectFactGetOld?()</a></span>, except that this is a secure function.</p>
+<p class="bodytext">The following table lists variations of this function that are used to determine the data type of the result.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Function Variations</p>
+<table class="tableintopic" width="498" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="300"><p class="tableheading">Variation </p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="198"><p class="tableheading">Data Type of Result</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="300"><p class="tablebodytext"><span class="unixoutputc">ObjectFactGetOldSecure?()</span></p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Unknown</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="300"><p class="tablebodytext"><span class="unixoutputc">ObjectFactGetOldSecure&amp;()</span></p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Long</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="300"><p class="tablebodytext"><span class="unixoutputc">ObjectFactGetOldSecure$()</span></p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Text</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="300"><p class="tablebodytext"><span class="unixoutputc">ObjectFactGetOldSecure#()</span></p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Double</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="300"><p class="tablebodytext"><span class="unixoutputc">ObjectFactGetOldSecure~()</span></p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Date</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="300"><p class="tablebodytext"><span class="unixoutputc">ObjectFactGetOldSecure@()</span></p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Blob</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="300"><p class="tablebodytext"><span class="unixoutputc">ObjectFactGetoldSecure@[]()</span></p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Array of blobs</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="300"><p class="tablebodytext"><span class="unixoutputc">ObjectFactGetOldSecureAsKey&amp;[]()</span></p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Array of longs</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">CSG International recommends caution in the use of the function for updating unprotected text facts with values retrieved from encrypted and masked facts. For security reasons, subsequent use of the retrieved data must be carefully considered, as protected data could be displayed to a user who does not have permission to view it.</p></td></tr></table>
+<p class="syntaxheading">Parameters</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="156"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="540"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext"><span class="unixoutputc">Object@</span></p>
+</td>
+<td style="border:1px solid #010101;" width="540"><p class="tablebodytext">OID of the object from which the fact is retrieved.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext"><span class="unixoutputc">fact?</span></p>
+</td>
+<td style="border:1px solid #010101;" width="540"><p class="tablebodytext">OID of the fact to retrieve.</p>
+<p class="tablebodytext">Fact OID or Fact Name may be specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext"><span class="unixoutputc">includeObsolete&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="540"><p class="tablebodytext">Specifies whether the fact value of obsolete object should be returned.</p>
+<p class="tablebodytext">A value of zero results in an error being raised, if the requested object is obsolete. </p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">Fact's value; otherwise, an exception is raised if no object is retrieved for a local class.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">For shared classes, if an object does not exist, it is assumed the object was deleted from Convergent Billing, a dummy obsolete object is created in the Process Engine, and no exception raised.</p></td></tr></table>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">The function is used by APIs, and returns reference facts as integers representing the object key and reference subset facts as arrays of integers. For API usage it is more efficient to process integer keys, especially for generated functions for external definitions.</p>
+<p class="bodytext">This behaviour is the same as <span class="unixoutputc"><a id="h9422_2" class="jump" title="ObjectFactGetOld?()" href="9423.htm" target="_self">ObjectFactGetOld?()</a></span>, except:</p>
+<ul class="listbullet"><li class="listbullet">Full security is enforced.</li><li class="listbullet">A check for obsolete objects can be controlled by the <span class="unixoutputc">IncludeObsolete</span> parameter.</li></ul><p class="syntaxheading">Example</p>
+<p class="bodytext">With a trigger on the Issue class, get the Case Type Name value of the case associated with the current issue, and print it to <span class="unixoutputc">stdout</span> on the server:</p>
+<pre class="unixoutputp">{<br>    var thisIssue@ := CurrentObjectGet@();<br>    var case@ := to_blob(ObjectFactGetOldSecure?(thisIssue@,<br>        Fact:Issue.Case?, TRUE));<br>    var caseType@ := to_blob(ObjectFactGetOldSecure?(case@,<br>        Fact:Case.Type?, TRUE)); <br>    var caseTypeName$ :=<br>        to_string(ObjectFactGetOldSecure?(caseType@,<br>                               Fact:Case_Type.Name?, TRUE));<br>    print('Case_Type.Name = ' + caseTypeName$);<br>}</pre>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="9423.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="52071.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Configuration Workbench for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

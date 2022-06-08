@@ -1,0 +1,965 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> TASK_TRE_V </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "7522.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "53404.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7526');highlight('50774')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="7522.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="53404.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">TASK_TRE_V</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'TASK_TRE_V' (50774)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="unixoutputc">TASK_TRE_V</span> view defines the valid columns for use by the <span class="unixoutputc">biTask</span> TRE functions.</p>
+<p class="bodytext">The<span class="unixoutputc"> biTask</span> TRE functions are used for viewing, updating, and deleting tasks.</p>
+<p class="bodytext">In the column descriptions, the following definitions apply:</p>
+<ul class="listbullet"><li class="listbullet">'This task' refers the task identified by <span class="unixoutputc">TASK_ID</span>.</li><li class="listbullet">'The schedule' refers the schedule identified by <span class="unixoutputc">SCHEDULE_ID</span>.</li><li class="listbullet">'The schedule type' refers the schedule type identified by <span class="unixoutputc">SCHEDULE_TYPE_ID</span>.</li><li class="listbullet">'This task's prerequisites' refers to the prerequisite tasks defined for this task in the <span class="unixoutputc">TASK_PREREQUISITE_TRE_V</span>.</li></ul><p class="syntaxheading">Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="210"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="360"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">TASK_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">ID of the task.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">LAST_MODIFIED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Date-time that the record was last modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">SCHEDULE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">ID of the schedule associated with this task.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">SCHEDULE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Name of the schedule associated with this task.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">SCHEDULE_TYPE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Name of the schedule type associated with this task.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">TASK_TYPE</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">SCHEDULE_TYPE_DISPLAY_</span><br><span class="unixoutputc">NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Name of schedule type displayed.</p>
+<p class="tablebodytext">It defaults to <span class="unixoutputc">SCHEDULE_TYPE_NAME</span>.</p>
+<table class="cautionstyle" width="100%"><tr><td><p class="caution">Caution:</p><p class="tablecaution">The value can be translated into a locale-specific language and therefore differ between implementations.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">SCHEDULE_TYPE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">ID of the schedule type associated with this task.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">TASK_TYPE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Type of task defined by the schedule type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">OPERATOR_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">User who entered the schedule details, or who last modified the task.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">GROUP_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Security group associated with this record.</p>
+<p class="tablebodytext">It controls access and update privileges to the operational attributes of this record.</p>
+<p class="tablebodytext">Only a suitably privileged user can change <span class="unixoutputc">GROUP_ID</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">INSTANCE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (9)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Convergent Billing instance on which this task is to be run.</p>
+<p class="tablebodytext">It defaults from the schedule definition for tasks generated by the STD.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">This column is NULL for tasks created for schedules with a NULL <span class="unixoutputc">INSTANCE_NAME</span>, and the scheduler is configured to dispatch such tasks to the TLM running on the same instance as the scheduler, and the server is configured to support multiple Convergent Billing instances.</p></td></tr></table>
+<p class="tablebodytext">For completed tasks, it is populated only if the server is configured to support multiple Convergent Billing instances.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">EMAIL_ADDRESS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Standard internet electronic mail address that the task results are sent to.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">SCHEDULED_START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Date-time this task is scheduled to start.</p>
+<p class="tablebodytext">For a newly-inserted task, it is derived from the schedule's <span class="unixoutputc">REPEAT_UNITS</span> and can be modified by the schedule's <span class="unixoutputc">TASK_CREATION_EXPR</span>.</p>
+<p class="tablebodytext">It can be updated only if <span class="unixoutputc">TASK_STATUS_CODE</span> is 1 (Pending), 5 (Stalled), or 8 (Held).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">BASELINE_START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Date-time this task is expected to start.</p>
+<p class="tablebodytext">It is set when the task is created.</p>
+<p class="tablebodytext">If a task does not have any prerequisites, it equals <span class="unixoutputc">SCHEDULED_START_DATE</span>. Otherwise, it is based on <span class="unixoutputc">SCHEDULED_START_DATE</span>, and the <span class="unixoutputc">BASELINE_START_DATE</span> and <span class="unixoutputc">BASELINE_DURATION</span> fields of this task's prerequisite tasks.</p>
+<p class="tablebodytext">It is usually static for the existence of a task.&nbsp;However, it is updated when <span class="unixoutputc">SCHEDULED_START_DATE</span> or the relevant baseline details on prerequisite tasks are updated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">For a pending, stalled, or held task,<span class="unixoutputc"> </span>it is the date-time this task is scheduled to start. Otherwise, it is the date-time the task started.</p>
+<p class="tablebodytext">For a newly-created task, it defaults to <span class="unixoutputc">BASELINE_START_DATE</span>. However, as prerequisite tasks are run, it is updated to closer approximate the start date of the task until the task is run.</p>
+<p class="tablebodytext">If <span class="unixoutputc">TASK_STATUS</span> becomes 5 (Stalled) or 8 (Held), <span class="unixoutputc">START_DATE</span> is updated periodically.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Date-time used to select the related information stored in the database.</p>
+<p class="tablebodytext">It<span class="unixoutputc"> </span>defines the effective date for record definitions and the calculation of relevant charges.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">BASELINE_DURATION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Expected duration of this task in seconds.</p>
+<p class="tablebodytext">It defaults from the schedule, but can be overridden by:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">The baseline duration expression (<span class="unixoutputc">BASELINE_DURATION_EXPR</span>) on the <span class="unixoutputc"><a id="h37832" class="jump" title="SCHEDULE_TYPE_TRE_V" href="50772.htm" target="_self">SCHEDULE_TYPE_TRE_V</a></span><a id="h37832_2" class="jump" title="SCHEDULE_TYPE_TRE_V" href="50772.htm" target="_self"> view</a> if the expression does not evaluate to a constant.</li><li class="tablelistbullet">Entity validation.</li><li class="tablelistbullet">The user.</li></ul><p class="tablebodytext">If the schedule type is configured using the <span class="unixoutputc">TaskAverageDuration&amp;()</span> function, for new tasks it is derived from the duration of the last 'n' successfully completed tasks on the schedule.</p>
+<p class="tablebodytext">It is usually static for the life of a task.</p>
+<p class="tablebodytext">It must be greater than or equal to 1, and less than or equal to 2147483647.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">MAX_DURATION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Maximum permitted duration of this task in seconds.</p>
+<p class="tablebodytext">The TLM terminates running tasks that exceed <span class="unixoutputc">MAX_DURATION</span>.</p>
+<p class="tablebodytext">It defaults from the schedule, but can be overridden by:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">The maximum duration expression (<span class="unixoutputc">MAX_DURATION_EXPR</span>) on the <span class="unixoutputc"><a id="h37832_3" class="jump" title="SCHEDULE_TYPE_TRE_V" href="50772.htm" target="_self">SCHEDULE_TYPE_TRE_V</a></span><a id="h37832_4" class="jump" title="SCHEDULE_TYPE_TRE_V" href="50772.htm" target="_self"> view</a> if the expression does not evaluate to a constant.</li><li class="tablelistbullet">Entity validation.</li><li class="tablelistbullet">The user.</li></ul><p class="tablebodytext">It must be one of the following:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">NULL.</li><li class="tablelistbullet">Greater than or equal to<span class="unixoutputc"> BASELINE_DURATION</span>, and less than 2147483647.</li></ul><p class="tablebodytext">If NULL, the task runs indefinitely unless it terminates itself.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">BASELINE_END_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+<p class="tablebodytext">Redundant</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Date-time this task is expected to end.</p>
+<p class="tablebodytext">It is set when the task is created.</p>
+<p class="tablebodytext">It is calculated as follows:</p>
+<p class="tablebodytext"><span class="unixoutputc">BASELINE_END_DATE = BASELINE_START_DATE + BASELINE_DURATION - 1</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">DURATION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Expected or actual duration of the task in seconds.</p>
+<p class="tablebodytext">It must be greater than or equal to 1, and less than 2147483647.</p>
+<p class="tablebodytext">For a newly-created task, it defaults to <span class="unixoutputc">BASELINE_DURATION</span>.</p>
+<p class="tablebodytext">When a task is running and the time taken for the task to run exceeds <span class="unixoutputc">DURATION</span>, the STD updates it to the time taken for the task to run.  </p>
+<p class="tablebodytext">When a task completes, it is updated to the complete duration of the task.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">END_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Redundant</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Before a task completes, it is the date-time this task is expected to end.</p>
+<p class="tablebodytext">For a completed task, it is the date-time this task completed with success or failure.</p>
+<p class="tablebodytext">It is calculated as follows:</p>
+<p class="tablebodytext"><span class="unixoutputc">END_DATE = START_DATE + DURATION - 1</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">TASK_STATUS_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Current execution status of this task.</p>
+<p class="tablebodytext">Valid values are defined in Table 6.</p>
+<p class="tablebodytext">User-initiated updates to the <span class="unixoutputc">TASK_STATUS_CODE</span> are supported by<span class="unixoutputc"> biTaskUpdate&amp;()</span>.</p>
+<p class="tablebodytext">Table 7 lists valid <span class="unixoutputc">TASK_STATUS_CODE</span> transitions. For example, the first row of the table indicates that if <span class="unixoutputc">TASK_STATUS_CODE</span> is 1 (Pending), the user is permitted to update <span class="unixoutputc">TASK_STATUS_CODE</span> to 8 (Held).</p>
+<p class="tablebodytext">When it is updated from 3 (Success), 4 (Failure), or 7 (Stopped) to 1 (Pending), this update is interpreted as a resubmission of the task. Depending on the schedule type's configuration this update may result in the creation of a new task.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">TASK_STATUS</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">TASK_STATUS_REASON_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (3)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Code that provides further explanation of this task's status.</p>
+<p class="tablebodytext">It is populated only when <span class="unixoutputc">TASK_STATUS_CODE</span> is one of the following:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">4 (Failure)</li><li class="tablelistbullet">5 (Stalled)</li><li class="tablelistbullet">6 (Stopping)</li><li class="tablelistbullet">7 (Stopped)</li><li class="tablelistbullet">8 (Held).</li></ul><p class="tablebodytext">It is based on the <span class="unixoutputc">TASK_STATUS_REASON</span> reference type.</p>
+<p class="tablebodytext">Table 8 to Table 12 list the <span class="unixoutputc">TASK_STATUS_REASON_CODE</span> codes and their corresponding meanings.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PREREQUISITE_TASK_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">If <span class="unixoutputc">TASK_STATUS_REASON_CODE</span> equals 5 (Task prerequisite), it specifies the prerequisite task that resulted in this task's status.</p>
+<p class="tablebodytext">If multiple prerequisite tasks contributed to this task's status, one of the tasks is chosen to populate it. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">DEPENDENT_RESOURCE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">If <span class="unixoutputc">TASK_STATUS_REASON_CODE</span> equals 6&nbsp;(Resource&nbsp;compatibility) or 7 (Resource profile limit), it specifies the name of a resource that resulted in this task's status.&nbsp;</p>
+<p class="tablebodytext">If multiple resources contributed to this task's status, one of the resources is chosen to populate it.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">DEPENDENT_RESOURCE_KEY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">If <span class="unixoutputc">TASK_STATUS_REASON_CODE</span> equals 6&nbsp;(Resource&nbsp;compatibility) or 7 (Resource profile limit), it defines the name of the resource key of<span class="unixoutputc"> DEPENDENT_RESOURCE_NAME</span> that resulted in this task's status.</p>
+<p class="tablebodytext">If multiple resource keys contributed to this task's status, one of the resource keys is chosen to populate it.</p>
+<p class="tablebodytext">It is populated only when <span class="unixoutputc">DEPENDENT_RESOURCE_NAME</span> is populated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PROCESS_IDENTIFIER</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">ID of the server process running this task.</p>
+<p class="tablebodytext">The TLM process populates it when the TLM starts the task.</p>
+<p class="tablebodytext">It is populated only when <span class="unixoutputc">TASK_STATUS</span> equals 2 (Running) or 6 (Stopping).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PURGE_PERIOD</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Maximum number of days that the task and any of its associated data will be kept online after it has completed.</p>
+<p class="tablebodytext">It defaults to the value contained in the schedule definition.</p>
+<p class="tablebodytext">If not specified, the task is maintained indefinitely online.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">IMMEDIATE_START_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Contains a bit mask of settings that control the immediate starting of a task, as listed in Table 13.</p>
+<p class="tablebodytext">It defaults from the task's schedule.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">INITIAL_HELD_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">If it equals 1 (TRUE) when this task is scheduled to run, <span class="unixoutputc">TASK_STATUS_CODE</span> is set to 8 (Held) and <span class="unixoutputc">TASK_STATUS_REASON_CODE</span> is set to 11 (user request).</p>
+<p class="tablebodytext">Manual intervention is necessary to start processing the task.</p>
+<p class="tablebodytext">If populated, the <span class="unixoutputc">HELD_NOTIFICATION_EXPR</span> column in the <span class="unixoutputc">SCHEDULE_TYPE_TRE_V</span> view is evaluated (for example, to notify users of tasks entering 8 (Held) status).</p>
+<p class="tablebodytext">If it equals NULL when this task can be run, the task executes immediately.</p>
+<p class="tablebodytext">If it does not equal 1 (TRUE), it must be NULL.</p>
+<p class="tablebodytext">It defaults from the schedule.</p>
+<p class="tablebodytext">It can be updated only for tasks either with a status of 1 (Pending) or tasks being updated to a status of 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PREREQUISITE_FAILURE_IND_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">If it equals 1 (TRUE), the failure of a prerequisite task condition causes the STD to update <span class="unixoutputc">TASK_STATUS</span> to 4&nbsp;(Failure) rather than the default, 8 (Held).</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">The resubmission of the failed prerequisite task does not result in the resubmission of this task.</p></td></tr></table>
+<p class="tablebodytext">If it is not 1&nbsp;(TRUE), it must be NULL.</p>
+<p class="tablebodytext">It defaults from the schedule.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">RESUBMITTED_TASK_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">If this task was created resulting from resubmission of a failed task, it equals the <span class="unixoutputc">TASK_ID</span> of the failed task.</p>
+<p class="tablebodytext">If resubmission only updates the failed task, it is set to this task's <span class="unixoutputc">TASK_ID</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PENDING_UPDATE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Set to 1&nbsp;(TRUE) when a task is updated and the update requires the regeneration of the task's attributes (for example, resources).</p>
+<p class="tablebodytext">While set, the task's attributes are possibly out of date.</p>
+<p class="tablebodytext">It is set by a <span class="unixoutputc">biTaskUpdate&amp;()</span> call, and cleared by the STD after it has regenerated the task's attributes.</p>
+<p class="tablebodytext">If not set to 1 (TRUE), it must be NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">SERVER_COMMAND_ARGS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Additional server command-line parameters used when invoking this task.</p>
+<p class="tablebodytext">If specified, they are added to any command-line parameters specified in the schedule type.</p>
+<p class="tablebodytext">It defaults from this task's schedule.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">UPDATE_EFF_DATE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext"><a id="h79002" class="jump" title="Pseudo-columns" href="7526.htm#o79001" target="_self">Pseudo-column</a></p>
+<p class="tablebodytext">Used for updates only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">If set to 1 (TRUE), the <span class="unixoutputc">EFFECTIVE_DATE</span> of the task referenced by <span class="unixoutputc">NEXT_TASK_ID</span> of an <a id="h58595" class="jump" title="ENTITLEMENT_TRE_V" href="57436.htm" target="_self">entitlement</a> can be updated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">DO_NOT_NOTIFY_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Pseudo-column</p>
+<p class="tablebodytext">Used for updates only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Set to 1 (TRUE) if notification is not required to be sent to the STD about the changes to the schedule.</p>
+<p class="tablebodytext">It can be used for bulk loading of schedules where the schedule is not running or will be restarted on completion of the load.</p>
+<p class="tablebodytext">If specified, <span class="unixoutputc">RESPONSE_IND_CODE</span> cannot be specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">RESPONSE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Pseudo-column</p>
+<p class="tablebodytext">Used for updates only</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">If specified, the STD sends an asynchronous notification back to the caller as soon as the next pending task for the schedule has completed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">CLIENT_INSTANCE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (9)</p>
+<p class="tablebodytext">Pseudo-column</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Name of instance to which the Tuxedo client that made this request is connected.</p>
+<p class="tablebodytext">Specify only if the <span class="unixoutputc">biTaskUpdate&amp;()</span> call is being made to an instance different from that on which the client is connected, and an acknowledgement or response has been requested.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">CLIENT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (40)</p>
+<p class="tablebodytext">Pseudo-column</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">ID of the Tuxedo client that made this request.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">It must be specified if <span class="unixoutputc">CLIENT_INSTANCE_NAME</span> is specified.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">GENERAL_1 - GENERAL_25</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">General fields 1 - 25 for specifying parameters for scheduled tasks.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">Table 6 lists valid <span class="unixoutputc">TASK_STATUS_CODE</span> transitions.  For example, its first row indicates that, if <span class="unixoutputc">TASK_STATUS_CODE</span> is 1 (Pending), the user is permitted to update <span class="unixoutputc">TASK_STATUS_CODE</span> to 8 (Held).</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Table 6  TASK_STATUS_CODE Values</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="168"><p class="tableheading">TASK_STATUS_CODE</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="102"><p class="tableheading">Label</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="426"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">1</p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Pending</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">This task was created, but not run.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">2</p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Running</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">This task is running.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">3</p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Success</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">This task has completed and was successful.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">4</p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Failure</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">This task has completed, but has failed.  *</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">5</p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Stalled</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">This task is due to run immediately, but cannot run for a specific reason.  *</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">6</p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Stopping</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">A user requested to stop this task and the STD is in the process of stopping it.  *</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">7</p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Stopped</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">The STD successfully stopped this task on request by a user.</p>
+<p class="tablebodytext">The task results can be examined to identify at what point the task stopped.  *</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">8</p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Held</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">This task is waiting for user input or the resubmission of a failed prerequisite task before it can proceed.  *</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">9</p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Resubmitted</p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">This task failed, but a copy of the task is resubmitted.</p>
+<p class="tablebodytext">A task with this status can no longer be updated.</p>
+<p class="tablebodytext">The <span class="unixoutputc">TASK_ID</span> of the original task is copied to the <span class="unixoutputc">RESUBMITTED_TASK_ID</span> of the copied task. </p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">* The&nbsp;<span class="unixoutputc">TASK_STATUS_REASON_CODE</span> provides further explanation of the task's status.</p>
+<p class="bodytext">User-initiated updates to the <span class="unixoutputc">TASK_STATUS_CODE</span> are supported by <span class="unixoutputc">biTaskUpdate&amp;()</span>.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Table 7  User-initiated Transitions of TASK_STATUS_CODE</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr>
+<td width="126" height="0"></td>
+<td width="180" height="0"></td>
+<td width="132" height="0"></td>
+<td width="258" height="0"></td>
+</tr>
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" colspan="2" width="306"><p class="tableheading">Current TASK_STATUS_CODE</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" colspan="2" width="390"><p class="tableheading">May be Updated To</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Code</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="180"><p class="tableheading">Meaning</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="132"><p class="tableheading">Code</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="258"><p class="tableheading">Meaning</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">1</p>
+</td>
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext">Pending</p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">8</p>
+</td>
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext">Held</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">2</p>
+</td>
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext">Running</p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">6</p>
+</td>
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext">Stopping</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">3</p>
+</td>
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext">Success</p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">1</p>
+</td>
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext">Pending</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">4</p>
+</td>
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext">Failure</p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">1</p>
+</td>
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext">Pending</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">5</p>
+</td>
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext">Stalled</p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">8</p>
+</td>
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext">Held</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">7</p>
+</td>
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext">Stopped</p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">1</p>
+</td>
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext">Pending</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">8</p>
+</td>
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext">Held</p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">1</p>
+</td>
+<td style="border:1px solid #010101;" width="258"><p class="tablebodytext">Pending</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Table 8  TASK_STATUS_REASON_CODE for TASK_STATUS_CODE is '4' (Failure)</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="57"><p class="tableheading">Code</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="141"><p class="tableheading">Reason</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="498"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="57"><p class="tablebodytext">2</p>
+</td>
+<td style="border:1px solid #010101;" width="141"><p class="tablebodytext">TLM shut down</p>
+</td>
+<td style="border:1px solid #010101;" width="498"><p class="tablebodytext">The task was forced to terminate abnormally as part of the TLM shutting down.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="57"><p class="tablebodytext">5</p>
+</td>
+<td style="border:1px solid #010101;" width="141"><p class="tablebodytext">Task prerequisite</p>
+</td>
+<td style="border:1px solid #010101;" width="498"><p class="tablebodytext">A prerequisite task condition has failed and this task was configured to fail under these circumstances.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="57"><p class="tablebodytext">8</p>
+</td>
+<td style="border:1px solid #010101;" width="141"><p class="tablebodytext">Failure exit</p>
+</td>
+<td style="border:1px solid #010101;" width="498"><p class="tablebodytext">The task completed with a non-zero exit code.</p>
+<p class="tablebodytext">The exit code is in the log.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="57"><p class="tablebodytext">9 </p>
+</td>
+<td style="border:1px solid #010101;" width="141"><p class="tablebodytext">Signal exit</p>
+</td>
+<td style="border:1px solid #010101;" width="498"><p class="tablebodytext">The task terminated abnormally due to the receipt of a signal not generated by the TLM.</p>
+<p class="tablebodytext">The signal name received by the task is in the log.</p>
+<p class="tablebodytext">If a core file was generated by the task, it is renamed to <span class="unixoutputc">core.&lt;schedule type&gt;.&lt;process id&gt;</span> by the TLM and stored in the <span class="unixoutputc">$ATA_DATA_SERVER_LOG</span> directory for later analysis.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="57"><p class="tablebodytext">10 </p>
+</td>
+<td style="border:1px solid #010101;" width="141"><p class="tablebodytext">TLM startup</p>
+</td>
+<td style="border:1px solid #010101;" width="498"><p class="tablebodytext">The task was forced to a 4 (Failure) status as part of TLM starting up on an instance.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="57"><p class="tablebodytext">14</p>
+</td>
+<td style="border:1px solid #010101;" width="141"><p class="tablebodytext">TLM internal</p>
+</td>
+<td style="border:1px solid #010101;" width="498"><p class="tablebodytext">The TLM process was unable to access details of the schedule.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Table 9  TASK_STATUS_REASON_CODE for TASK_STATUS_CODE is '5' (Stalled)</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="57"><p class="tableheading">Code</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="171"><p class="tableheading">Meaning</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="468"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="57"><p class="tablebodytext">1</p>
+</td>
+<td style="border:1px solid #010101;" width="171"><p class="tablebodytext">Instance shut down</p>
+</td>
+<td style="border:1px solid #010101;" width="468"><p class="tablebodytext">The Convergent Billing instance associated with this task is not active.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="57"><p class="tablebodytext">2</p>
+</td>
+<td style="border:1px solid #010101;" width="171"><p class="tablebodytext">TLM shut down </p>
+</td>
+<td style="border:1px solid #010101;" width="468"><p class="tablebodytext">The TLM process associated with the task's Convergent Billing instance is not running or is in the process of shutting down.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="57"><p class="tablebodytext">3</p>
+</td>
+<td style="border:1px solid #010101;" width="171"><p class="tablebodytext">Cluster task limit </p>
+</td>
+<td style="border:1px solid #010101;" width="468"><p class="tablebodytext">The cluster wide limit for the number of concurrent tasks of this schedule type is reached.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="57"><p class="tablebodytext">4</p>
+</td>
+<td style="border:1px solid #010101;" width="171"><p class="tablebodytext">Instance task limit </p>
+</td>
+<td style="border:1px solid #010101;" width="468"><p class="tablebodytext">The instance-specific limit for the number of concurrent tasks of this schedule type is reached.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="57"><p class="tablebodytext">5</p>
+</td>
+<td style="border:1px solid #010101;" width="171"><p class="tablebodytext">Task prerequisite </p>
+</td>
+<td style="border:1px solid #010101;" width="468"><p class="tablebodytext">This task is waiting on a prerequisite task condition to be satisfied.&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="57"><p class="tablebodytext">6 </p>
+</td>
+<td style="border:1px solid #010101;" width="171"><p class="tablebodytext">Resource compatibility</p>
+</td>
+<td style="border:1px solid #010101;" width="468"><p class="tablebodytext">This task is waiting for a resource to become available.&nbsp; Task incompatibilities are preventing this task from running.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="57"><p class="tablebodytext">7</p>
+</td>
+<td style="border:1px solid #010101;" width="171"><p class="tablebodytext">Resource profile limit</p>
+</td>
+<td style="border:1px solid #010101;" width="468"><p class="tablebodytext">A resource profile is in use and running this task will cause a resource to exceed its allotted usage.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="57"><p class="tablebodytext">13</p>
+</td>
+<td style="border:1px solid #010101;" width="171"><p class="tablebodytext">Schedule limit </p>
+</td>
+<td style="border:1px solid #010101;" width="468"><p class="tablebodytext">Another task for this schedule is running.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Table 10  TASK_STATUS_REASON_CODE for TASK_STATUS_CODE is '6' (Stopping)</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="57"><p class="tableheading">Code</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="141"><p class="tableheading">Reason</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="498"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="57"><p class="tablebodytext">2</p>
+</td>
+<td style="border:1px solid #010101;" width="141"><p class="tablebodytext">TLM shut down</p>
+</td>
+<td style="border:1px solid #010101;" width="498"><p class="tablebodytext">The TLM process is being shut down and requested to stop the task.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="57"><p class="tablebodytext">11 </p>
+</td>
+<td style="border:1px solid #010101;" width="141"><p class="tablebodytext">User request</p>
+</td>
+<td style="border:1px solid #010101;" width="498"><p class="tablebodytext">A user requested to stop the task.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Table 11  TASK_STATUS_REASON_CODE when TASK_STATUS_CODE is '7' (Stopped)</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="57"><p class="tableheading">Code</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="135"><p class="tableheading">Reason</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="504"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="57"><p class="tablebodytext">11</p>
+</td>
+<td style="border:1px solid #010101;" width="135"><p class="tablebodytext">User request</p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">The schedule has requested that runnable tasks be placed into a Held status initially.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="57"><p class="tablebodytext">12</p>
+</td>
+<td style="border:1px solid #010101;" width="135"><p class="tablebodytext">Task overdue</p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">The <span class="unixoutputc">MAXIMUM_DURATION</span> of the task is exceeded.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Table 12  TASK_STATUS_REASON_CODE when TASK_STATUS_CODE is '8' (Held)</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="57"><p class="tableheading">Code</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="135"><p class="tableheading">Reason</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="504"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="57"><p class="tablebodytext">5</p>
+</td>
+<td style="border:1px solid #010101;" width="135"><p class="tablebodytext">Task prerequisite</p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">A prerequisite task condition failed and this task is configured to transition to 8 (Held) status on this condition.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="57"><p class="tablebodytext">11</p>
+</td>
+<td style="border:1px solid #010101;" width="135"><p class="tablebodytext">User request</p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">A user requested to stop the task.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Table 13  IMMEDIATE_START_IND_CODE Bit Mask Settings</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="78"><p class="tableheading">Bit</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="618"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">1 (LSB)</p>
+</td>
+<td style="border:1px solid #010101;" width="618"><p class="tablebodytext">The task is started when its prerequisite conditions are satisfied, rather than waiting for the <span class="unixoutputc">SCHEDULED_START_DATE</span>.</p>
+<p class="tablebodytext">A task with no prerequisites commences when the previous task in the schedule is completed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">2 or 3</p>
+</td>
+<td style="border:1px solid #010101;" width="618"><p class="tablebodytext">The task runs immediately, regardless of the status of any prerequisite tasks, resource profile constraints, or resource compatibility constraints.</p>
+<p class="tablebodytext">It can only be set on a task that has a status of Stalled (5). However, when set, it remains on the task during its subsequent processing as a record that it was updated to run immediately.</p>
+<p class="tablebodytext">It can never be set for tasks with a status of Pending or Held.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="7522.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="53404.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

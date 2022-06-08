@@ -1,0 +1,348 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> treVariantCall </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "49236.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "49207.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7634');expand('51074');highlight('49206')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="49236.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="49207.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">treVariantCall</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'treVariantCall' (49206)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">C</p>
+<pre class="unixinputp">TRE_RESULT treVariantCall(    char *FnName,    jtime_t EffectiveDate,    INTSV Flags,    TRE_VARIANT *ReturnValue,    INTSV NrParams,    TRE_VARIANT *Arglist)</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Object Pascal</p>
+<pre class="unixinputp">function treVariantCall(    FnName: PChar; EffectiveDate: TJTime_t;    Flags: Int64;    ReturnValue: PTreVariant;    NrParams: Int64;    ArgList: PTreVariant): TRE_RESULT</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Perl</p>
+<p class="bodytext">Not applicable.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Purpose</p>
+<p class="bodytext">Provides a primary interface for the TRE to initiate remote functions.</p>
+<p class="syntaxheading">Parameters</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="132"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="564"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">FnName</span></p>
+</td>
+<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">In:  Name of the remote function to call. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">EffectiveDate</span></p>
+</td>
+<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">In:  Effective date to use when retrieving the remote function definition.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">Flags</span></p>
+</td>
+<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">In:  Specifies how the function is called and should be set to 0.</p>
+<p class="tablebodytext">The <span class="unixoutputc">TRE_AUTOLOAD</span> flag can be used, but is provided only for backward compatibility and is effectively ignored.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ReturnValue</span></p>
+</td>
+<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">In:  Variable that holds the value returned by the function.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">NrParams</span></p>
+</td>
+<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">In:  Number of parameters required by the remote function.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">Arglist</span></p>
+</td>
+<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">In:  Array of parameter values passed to the function.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="132"><p class="tableheading">Value</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="564"><p class="tableheading">Cause</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">TRE_SUCC</span></p>
+</td>
+<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">The function was successful.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">TRE_FAIL</span></p>
+</td>
+<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">A generic failure occurred (but not one of the other specific errors).</p>
+<p class="tablebodytext">The TRE sets <span class="unixoutputc">treErrno</span> to indicate the type of error.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">TRE_NOTEXISTS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">The specified function name does not exist for the specified date.</p>
+<p class="tablebodytext"><span class="unixoutputc">treErrno</span> is also set to indicate this error.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">TRE_REMOTEFAIL</span></p>
+</td>
+<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">The call to the remote function was successful, but the remote function returned a failure status.</p>
+<p class="tablebodytext">In this case, <span class="unixoutputc">treErrno</span> is set to the error number returned by the remote function.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext"><span class="unixoutputc">treVariantCall()</span> is the preferred interface for calling all TRE functions from C or Object Pascal and is the only interface that can be used for TRE functions that have hashes, multi-dimensional arrays, multi-dimensional hashes, or variables of unknown type as parameters.</p>
+<p class="bodytext">The value of <span class="unixoutputc">EffectiveDate</span> is ignored if this function call is part of a transaction, or <span class="unixoutputc">treSetEffectiveDate()</span> is called outside of a transaction. </p>
+<p class="bodytext">The <span class="unixoutputc">TreType</span> member of the <span class="unixoutputc">TRE_VARIANT</span> structure specifies the type of each parameter.  The data part of the structure defines each parameter's value.  Possible base type values for <span class="unixoutputc">TreType</span> (<span class="unixoutputc">TRE_DATATYPE</span>) are:</p>
+<ul class="listbullet"><li class="listbullet"><span class="unixoutputc">TRE_LONG</span> (<span class="unixoutputc">INTSV</span> value)</li><li class="listbullet"><span class="unixoutputc">TRE_DOUBLE</span> (real value)</li><li class="listbullet"><span class="unixoutputc">TRE_STRING</span> (string value)</li><li class="listbullet"><span class="unixoutputc">TRE_WSTRING</span> (wide char string value)</li><li class="listbullet"><span class="unixoutputc">TRE_DATETIME</span> (Date-time value)</li><li class="listbullet"><span class="unixoutputc">TRE_UNKNOWN</span> (unknown value).<p class="listcontinue">The above base types are optionally combined (using the C bitwise or operator, '|', or Pascal 'or' operator) with one of the following types:</p>
+</li><li class="listbullet"><span class="unixoutputc">TRE_ARRAY</span> (array of base type)</li><li class="listbullet"><span class="unixoutputc">TRE_HASH</span> (hash of base type).</li></ul><p class="bodytext">The constant <span class="unixoutputc">TRE_VAR</span> bit is set for <span class="unixoutputc">TreType</span> to indicate that a value is being passed by reference.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">The <span class="unixoutputc">TRE_NULLIND</span> bit is never set for <span class="unixoutputc">TreType</span>; <span class="unixoutputc">TRE_NULLIND</span> is not defined in the Object Pascal interface).  The <span class="unixoutputc">NullInd</span> member must be set to either <span class="unixoutputc">TRE_NULL</span> or <span class="unixoutputc">TRE_NOTNULL</span> to indicate if the parameter contains a value.  When <span class="unixoutputc">NullInd</span> is set to <span class="unixoutputc">TRE_NULL</span>, the contents of the rest of the structure are ignored.</p></td></tr></table>
+<p class="bodytext">All <span class="unixoutputc">TRE_STRING</span> parameters and hash key values are passed as null-terminated character arrays and memory is allocated using <span class="unixoutputc">treMalloc()</span> or <span class="unixoutputc">treMallocString()</span>.  All arrays of<span class="unixoutputc"> TRE_VARIANT</span> or <span class="unixoutputc">TRE_HASHVALUE</span> within a structure are allocated using <span class="unixoutputc">treMalloc()</span>.</p>
+<p class="bodytext"><span class="unixoutputc">treVariantCall()</span> reallocates all memory for all character strings, arrays, or hashes with the <span class="unixoutputc">TRE_VAR</span> flag defined, and may decrease the amount of memory allocated for a string.  <span class="unixoutputc">treVariantCall()</span> specifies the error message associated with the most recent value of <span class="unixoutputc">treErrno</span> returned by <span class="unixoutputc">treGetErrno()</span>.</p>
+<p class="bodytext"><span class="unixoutputc">TRE_WSTRING</span> parameters can be used instead of <span class="unixoutputc">TRE_STRING</span> if the server is running UTF-8, which can be determined by calling the function <span class="unixoutputc">treIsServerUTF8()</span>.  <span class="unixoutputc">TRE_WSTRING</span> parameters are passed as null-terminated wide character arrays.  The memory for the parameters must be allocated using <span class="unixoutputc">treMalloc()</span> or <span class="unixoutputc">treMallocWString()</span>.</p>
+
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><ul class="notelistbullet"><li class="notelistbullet">64-bit long values that cannot be represented as a signed 32-bit quantity can be converted to real values by using the <span class="unixoutputc">treSetLongConversion()</span> function. </li><li class="notelistbullet">It is not possible to make concurrent calls to this function and <span class="unixoutputc">treVariantGetReply()</span>.</li></td></tr></table></ul><p class="syntaxheading">Notes for Use of Base Types</p>
+<p class="bodytext">The following rules relate to the use of the <span class="unixoutputc">TRE_UNKNOWN</span> base type:</p>
+<ul class="listbullet"><li class="listbullet">A scalar type can only be passed or returned as <span class="unixoutputc">TRE_UNKNOWN</span> if its value is undefined<span class="unixoutputc"> (NullInd = TRE_NULL</span>).  In a function declaration, a scalar parameter of unknown type means that any scalar value may be passed to the function, and if it is passed by reference, that it may be set to a scalar value of any type on return.</li><li class="listbullet">An array of <span class="unixoutputc">TRE_UNKNOWN</span> type means that each element in the array can be of any type (and may even be an array or hash).</li><li class="listbullet">A hash of <span class="unixoutputc">TRE_UNKNOWN</span> type means that each element in the hash can be of any type (and may even be an array or hash).</li><li class="listbullet">A <span class="unixoutputc">TRE</span>_<span class="unixoutputc">UNKNOWN</span> parameter that returns a type <span class="unixoutputc">TRE</span>_<span class="unixoutputc">STRING</span> can be converted to a UTF-16 string if the <span class="unixoutputc">UnknownString</span> environment variable is set to '<span class="unixoutputc">TRE_WSTRING</span>'.  The same applies for any strings encountered in single and multi-dimensional arrays and hashes passed in as an unknown arrays or hashes.</li><li class="listbullet"><span class="unixoutputc">treFreeVariantArray()</span> should be used to free all memory associated with an array of <span class="unixoutputc">TRE_VARIANT</span> structures.</li></ul><p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">C Interface Example</p>
+<p class="bodytext">To call the <span class="unixoutputc">biServiceFetchById()</span> function declared, the following code is required:</p>
+<pre class="unixoutputp">TRE_RESULT rv;</pre>
+<pre class="unixoutputp">TRE_VARIANT result;</pre>
+<pre class="unixoutputp">TRE_VARIANT params[7];</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">/* Initialise parameters for biServiceFetchById(): function declaration</pre>
+<pre class="unixoutputp"> * is: biServiceFetchById&amp;(ServiceId&amp;, EffectiveDate~, FieldNames$[],</pre>
+<pre class="unixoutputp"> *    var StringFieldValues$[], var IntegerFieldValues&amp;[],</pre>
+<pre class="unixoutputp"> *    var RealFieldValues#[],   varDateFieldValues~[])</pre>
+<pre class="unixoutputp"> */</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">/* Service ID we wish to fetch */</pre>
+<pre class="unixoutputp">params[0].NullInd = TRE_NOTNULL;</pre>
+<pre class="unixoutputp">params[0].TreType = TRE_LONG;</pre>
+<pre class="unixoutputp">params[0].Data.VLong = 100012;</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">/* Get service details as of current date and time */</pre>
+<pre class="unixoutputp">params[1].NullInd = TRE_NOTNULL;</pre>
+<pre class="unixoutputp">params[1].TreType = TRE_DATETIME;</pre>
+<pre class="unixoutputp">params[1].Data.VDateTime = jtime_now();    /* Look as of current date</pre>
+<pre class="unixoutputp">                                                            and time */</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">/* Wish to find service name and type of service.  For biService </pre>
+<pre class="unixoutputp"> * functions, the SERVICE_TRE_V defines the valid set of Field Names</pre>
+<pre class="unixoutputp"> * that can be queried, inserted or updated. We will get the</pre>
+<pre class="unixoutputp"> * SERVICE_NAME and SERVICE_TYPE_NAME here.</pre>
+<pre class="unixoutputp"> */</pre>
+<pre class="unixoutputp">params[2].NullInd = TRE_NOTNULL;</pre>
+<pre class="unixoutputp">params[2].TreType = TRE_STRING | TRE_ARRAY;</pre>
+<pre class="unixoutputp">params[2].Data.VArray.Size = 2;</pre>
+<pre class="unixoutputp">params[2].Data.VArray.Elements = treMalloc(2 * sizeof (TRE_VARIANT));</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">/* First element: SERVICE_NAME */</pre>
+<pre class="unixoutputp">params[2].Data.VArray.Elements[0].NullInd = TRE_NOTNULL;</pre>
+<pre class="unixoutputp">params[2].Data.VArray.Elements[0].TreType = TRE_STRING;</pre>
+<pre class="unixoutputp">params[2].Data.VArray.Elements[0].Data.VString =</pre>
+<pre class="unixoutputp">                treMallocString(&quot;SERVICE_NAME&quot;);</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">/* Second element: SERVICE_TYPE */</pre>
+<pre class="unixoutputp">params[2].Data.VArray.Elements[1].NullInd = TRE_NOTNULL;</pre>
+<pre class="unixoutputp">params[2].Data.VArray.Elements[1].TreType = TRE_STRING;</pre>
+<pre class="unixoutputp">params[2].Data.VArray.Elements[1].Data.VString =</pre>
+<pre class="unixoutputp">                treMallocString(&quot;SERVICE_TYPE_NAME&quot;);</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">/* Return arrays: All undefined */</pre>
+<pre class="unixoutputp">params[3].NullInd = TRE_NULL;</pre>
+<pre class="unixoutputp">params[3].TreType = TRE_VAR | TRE_STRING | TRE_ARRAY;</pre>
+<pre class="unixoutputp">params[4].NullInd = TRE_NULL;</pre>
+<pre class="unixoutputp">params[4].TreType = TRE_VAR | TRE_LONG | TRE_ARRAY;</pre>
+<pre class="unixoutputp">params[5].NullInd = TRE_NULL;</pre>
+<pre class="unixoutputp">params[5].TreType = TRE_VAR | TRE_DOUBLE | TRE_ARRAY;</pre>
+<pre class="unixoutputp">params[6].NullInd = TRE_NULL;</pre>
+<pre class="unixoutputp">params[6].TreType = TRE_VAR | TRE_DATETIME | TRE_ARRAY;</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">/* Result */</pre>
+<pre class="unixoutputp">result.NullInd = TRE_NULL;</pre>
+<pre class="unixoutputp">result.TreType = TRE_LONG;</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">/* Call function */</pre>
+<pre class="unixoutputp">rv = treVariantCall(&quot;biServiceFetchById&amp;&quot;,   /* Function to call */</pre>
+<pre class="unixoutputp">jtime_now(),                    /* Current date and time */</pre>
+<pre class="unixoutputp">0,                                      /* No flags */</pre>
+<pre class="unixoutputp">&amp;result,                                /* Functions return value */</pre>
+<pre class="unixoutputp">7,                                      /* Number of parameters */</pre>
+<pre class="unixoutputp">params);                                /* Array of parameters */</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">/* Do something with the results ... Just print them here */</pre>
+<pre class="unixoutputp">if (rv == TRE_SUCC)  {</pre>
+<pre class="unixoutputp">    /* Does the service exist? */</pre>
+<pre class="unixoutputp">    if (result.Data.VLong == 1)  { </pre>
+<pre class="unixoutputp">        /* Service does exist */</pre>
+<pre class="unixoutputp">printf(&quot;Service Name: %s\n&quot;,</pre>
+<pre class="unixoutputp">params[3].Data.VArray.Elements[0].Data.VString);</pre>
+<pre class="unixoutputp">printf(&quot;Service Type: %s\n&quot;,</pre>
+<pre class="unixoutputp">params[3].Data.VArray.Elements[1].Data.VString);</pre>
+<pre class="unixoutputp">    }</pre>
+<pre class="unixoutputp">    else {</pre>
+<pre class="unixoutputp">printf(&quot;Service Id %id does not exist.\n&quot;,</pre>
+<pre class="unixoutputp">params[0].Data.VLong);</pre>
+<pre class="unixoutputp">    } </pre>
+<pre class="unixoutputp">}</pre>
+<pre class="unixoutputp">else {</pre>
+<pre class="unixoutputp">printf(&quot;biServiceFetchById&amp;() failed with error: %s\n&quot;,</pre>
+<pre class="unixoutputp">treErrmsg());</pre>
+<pre class="unixoutputp">}</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">/* Finally, free memory */</pre>
+<pre class="unixoutputp">treFreeVariant(&amp;result);       /* Not necessary for longs, but good</pre>
+<pre class="unixoutputp">/* practice */</pre>
+<pre class="unixoutputp">treFreeVariantArray(7, params);</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Object Pascal Interface Example</p>
+<pre class="unixoutputp">var</pre>
+<pre class="unixoutputp">Str: String;</pre>
+<pre class="unixoutputp">Rv: TRE_RESULT;</pre>
+<pre class="unixoutputp">Result: TTreVariant;</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">Params: array[0..6] of TTreVariant;</pre>
+<pre class="unixoutputp">ArrayElement: PTreVariant;</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">begin</pre>
+<pre class="unixoutputp">{ Service id we wish to fetch }</pre>
+<pre class="unixoutputp">Params[0].NullInd := TRE_NOTNULL;</pre>
+<pre class="unixoutputp">Params[0].TreType := TRE_LONG;</pre>
+<pre class="unixoutputp">Params[0].VLong := 100012;</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">{ Get service details as of current date and time }</pre>
+<pre class="unixoutputp">Params[1].NullInd := TRE_NOTNULL;</pre>
+<pre class="unixoutputp">Params[1].TreType := TRE_DATETIME;</pre>
+<pre class="unixoutputp">Params[1].VTJTime_t := treDateTimeToJTime_t(Now);</pre>
+<pre class="unixoutputp">{ Wish to find service name and type of service. For biService</pre>
+<pre class="unixoutputp">functions, the SERVICE_TRE_V defines the valid set of Field Names</pre>
+<pre class="unixoutputp">that can be queried, inserted or updated. We will get the SERVICE_NAME and SERVICE_TYPE_NAME here }</pre>
+<pre class="unixoutputp">Params[2].NullInd := TRE_NOTNULL;</pre>
+<pre class="unixoutputp">Params[2].TreType := TRE_STRING or TRE_ARRAY;</pre>
+<pre class="unixoutputp">Params[2].VArraySize := 2;</pre>
+<pre class="unixoutputp">Params[2].VArrayElements := treMalloc(2 * sizeof (TRE_VARIANT));</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">{ First element: SERVICE_NAME }</pre>
+<pre class="unixoutputp">ArrayElement := Params[2].VArrayElememts;</pre>
+<pre class="unixoutputp">ArrayElement^.NullInd := TRE_NOTNULL;</pre>
+<pre class="unixoutputp">ArrayElement^.TreType := TRE_STRING;</pre>
+<pre class="unixoutputp">ArrayElement^.VPChar := treMallocString('SERVICE_NAME');</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">{ Second element: SERVICE_TYPE }</pre>
+<pre class="unixoutputp">Inc(ArrayElement);</pre>
+<pre class="unixoutputp">ArrayElement^.NullInd := TRE_NOTNULL;</pre>
+<pre class="unixoutputp">ArrayElement^.TreType := TRE_STRING;</pre>
+<pre class="unixoutputp">ArrayElement^.VPChar := treMallocString('SERVICE_TYPE_NAME');</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">{ Return arrays: All undefined }</pre>
+<pre class="unixoutputp">Params[3].NullInd := TRE_NULL;</pre>
+<pre class="unixoutputp">Params[3].TreType := TRE_VAR or TRE_STRING or TRE_ARRAY;</pre>
+<pre class="unixoutputp">Params[4].NullInd := TRE_NULL;</pre>
+<pre class="unixoutputp">Params[4].TreType := TRE_VAR or TRE_LONG or TRE_ARRAY;</pre>
+<pre class="unixoutputp">Params[5].NullInd := TRE_NULL;</pre>
+<pre class="unixoutputp">Params[5].TreType := TRE_VAR or TRE_DOUBLE or TRE_ARRAY;</pre>
+<pre class="unixoutputp">Params[6].NullInd := TRE_NULL;</pre>
+<pre class="unixoutputp">Params[6].TreType := TRE_VAR or TRE_DATETIME or TRE_ARRAY;</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">{ Result }</pre>
+<pre class="unixoutputp">Result.NullInd := TRE_NULL;</pre>
+<pre class="unixoutputp">Result.TreType := TRE_LONG;</pre>
+<pre class="unixoutputp">Rv := treVariantCall('biServiceFetchById&amp;',   { Function to call }</pre>
+<pre class="unixoutputp">treDateTimeToJTime_t(Now), {Current date and time}</pre>
+<pre class="unixoutputp">0,           		  { No flags }</pre>
+<pre class="unixoutputp">@Result,                                        { Functions return value }</pre>
+<pre class="unixoutputp">7,                                              { Number of parameters }</pre>
+<pre class="unixoutputp">@Params);                                       { Pointer to parameters }</pre>
+<pre class="unixoutputp">{ Do something with the results ... Just print them here }</pre>
+<pre class="unixoutputp">if (Rv = TRE_SUCC) then</pre>
+<pre class="unixoutputp">begin</pre>
+<pre class="unixoutputp">ArrayElement := Params[3].VArrayElements;</pre>
+<pre class="unixoutputp">Str := 'Service Name: ' + ArrayElement^.VPChar;</pre>
+<pre class="unixoutputp">Inc(ArrayElement);</pre>
+<pre class="unixoutputp">Str := Str + ',  Service Type: ' + ArrayElement^.VPChar;</pre>
+<pre class="unixoutputp">ShowMessage(Str);</pre>
+<pre class="unixoutputp">end</pre>
+<pre class="unixoutputp">else</pre>
+<pre class="unixoutputp">begin</pre>
+<pre class="unixoutputp">ShowMessage('biServiceFetchById&amp;() failed with error: ' +</pre>
+<pre class="unixoutputp">treErrmsg());</pre>
+<pre class="unixoutputp">end;</pre>
+<pre class="unixoutputp">{ Finally, free memory }</pre>
+<pre class="unixoutputp">treFreeVariant(@Result);       { Not necessary for Longs, but good</pre>
+<pre class="unixoutputp">                                           practice }</pre>
+<pre class="unixoutputp">treFreeVariantArray(7, @Params);</pre>
+<pre class="unixoutputp">end;</pre>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="49236.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="49207.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

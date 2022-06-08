@@ -1,0 +1,226 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Product Instance Detail Form </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "60144.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "51408.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+<script language="javascript" type="text/javascript" src="dhtml_popup.js"></script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('1732');highlight('58479')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="60144.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="51408.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Product Instance Detail Form</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Product Instance Detail Form' (58479)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="formname">Product Instance Detail</span> form is used to enter, view, and update details about a <a id="h2432" class="popup" title="Product Instance" href="javascript:void(0)" onclick="togglePopup('2432','h2432')" target="_self">product instance</a>.</p>
+<div id="d2432" class="clickpopup" style="display:none"><a href="javascript:hidePopup('2432')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">Specific combination of services and the associated tariff structure offered to a customer based on the framework provided by the corresponding product definition.  The original product definition is preserved, with the product instance being tailored to a specific customer's requirements.  Any changes made to the product definition affect only product instances created after the changes are made, not existing product instances.</p>
+<p class="bodytext">Referred to as a Purchased Product in Customer Management.</p>
+<p class="bodytext">Context:  Convergent Billing, Customer Management</p>
+<p class="bodytext">See also <a id="h1214" class="glossaryitemjump" title="Product Definition" href="14845.htm#o60123" target="_self">Product Definition</a> and <a id="h1356" class="glossaryitemjump" title="Product Model" href="14845.htm#o60127" target="_self">Product Model</a>.</p>
+</div><p class="bodytext">The upper part of the form displays the product name, status of this instance of the product, and start and end dates (where relevant).</p>
+<p class="bodytext">The lower part of the form consists of the following tabs for entering more specific details:</p>
+<p class="bodytext"><a id="h3559" class="expandingblock" title="Detail Tab" href="javascript:toggleBlock('3559')" target="_self"><img id="i3559" class="expandicon" src="arrowright.gif" alt="" border="0">Detail</a></p>
+<div id="d3559" class="expandingblock" style="display:none"><p class="bodytext">The <span class="fieldname">Detail</span> tab of the <span class="formname">Product Instance Detail</span> form lists items that must be created for the specified product.  Typically, this tab lists the service types for which a service must be created and any associated equipment types.  An item of each type listed on this tab must be completed before the product instance is complete and made active.</p>
+<p class="bodytext">The following buttons can be used:</p>
+<ul class="listbullet"><li class="listbullet"><strong class="buttons">Create…</strong> button to create a service of the required service type.<p class="listcontinue">Enabled only when one of the service types is selected.</p>
+</li><li class="listbullet"><strong class="buttons">Allocate…</strong> button to allocate an existing item of equipment to the specified service.<p class="listcontinue">Enabled only when one of the equipment types is selected.</p>
+</li><li class="listbullet"><strong class="buttons">Add Service…</strong> button to select an optional service.<p class="listcontinue">Enabled only when there are optional services available.</p>
+</li><li class="listbullet"><strong class="buttons">Add Equipment…</strong> button to select an optional equipment item.<p class="listcontinue">Enabled only when optional equipment items are available.</p>
+</li><li class="listbullet"><strong class="buttons">Details…</strong> button to view more details on the equipment or service.</li></ul><p class="bodytext">The information on this tab displays the current status of each component of the product instance.</p>
+</div><p class="bodytext"><a id="h58552" class="expandingblock" title="Offers Tab" href="javascript:toggleBlock('58552')" target="_self"><img id="i58552" class="expandicon" src="arrowright.gif" alt="" border="0">Offers</a> (available if the base product is associated with a product offer)</p>
+<div id="d58552" class="expandingblock" style="display:none"><p class="bodytext">The <span class="fieldname">Offers</span> tab is used to:</p>
+<ul class="listbullet"><li class="listbullet">View details about the product offers and companion products associated with the product instance.</li><li class="listbullet">Add new product offers or companion products to the current product instance.</li><li class="listbullet">Add another instance of the selected offer node and its children to the current product instance.</li><li class="listbullet">Move companion product instances between compatible product offers.</li></ul></div><p class="bodytext"><a id="h3561" class="expandingblock" title="Facility Groups Tab" href="javascript:toggleBlock('3561')" target="_self"><img id="i3561" class="expandicon" src="arrowright.gif" alt="" border="0">Facility Groups</a> (available if the base product is not associated with a product offer)</p>
+<div id="d3561" class="expandingblock" style="display:none"><p class="bodytext">The <span class="fieldname">Facility Groups</span> tab is used to:</p>
+<ul class="listbullet"><li class="listbullet">Select one or more of the facility groups to be used by this instance of the current base product (and companion products if any have been added to the base product).</li><li class="listbullet">Enter details required by that facility group for the current product instance.</li></ul><table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">The available facility groups are defined when the product (on which this instance is based) is defined.</p></td></tr></table>
+<p class="bodytext">Facility groups are listed on this tab only when the product instance is completed.</p>
+</div><p class="bodytext"><a id="h59528" class="expandingblock" title="Companion Products Tab" href="javascript:toggleBlock('59528')" target="_self"><img id="i59528" class="expandicon" src="arrowright.gif" alt="" border="0">Companion Products</a></p>
+<div id="d59528" class="expandingblock" style="display:none">If the base product is associated with a product offer, the <span class="fieldname">Companion Products</span> tab is used to view and change the status of companion product instances selected for this base product instance. Companion product instances are added using the <span class="fieldname">Offer </span>tab and can be created before the product instance has been completed.  Any companion instances created on an incomplete product instance receive the initial status of Product Creation.<p class="bodytext">If the base product is not associated with a product offer, the <span class="fieldname">Companion Products</span> tab is used to select one or more companion products to be added to this instance of the base product. The available companion products are defined when the product on which this instance is based, is defined. Companion products can be added to this tab only when the product instance is completed.</p>
+</div><p class="bodytext"><a id="h3565" class="expandingblock" title="Upgrade/Move Details Tab" href="javascript:toggleBlock('3565')" target="_self"><img id="i3565" class="expandicon" src="arrowright.gif" alt="" border="0">Upgrade/Move Details</a></p>
+<div id="d3565" class="expandingblock" style="display:none"><p class="bodytext">The <span class="fieldname">Upgrade/Move Details</span> tab is used to:</p>
+<ul class="listbullet"><li class="listbullet">Replace the current base product (on which this instance is based) with an alternative, compatible base product.  The compatible base products are defined when the product (on which this instance is based) is defined.</li><li class="listbullet">View details of any product moves.</li></ul></div><p class="bodytext"><a id="h42196" class="expandingblock" title="Industry Tab" href="javascript:toggleBlock('42196')" target="_self"><img id="i42196" class="expandicon" src="arrowright.gif" alt="" border="0">Industry</a></p>
+<div id="d42196" class="expandingblock" style="display:none"><p class="bodytext">The <span class="fieldname">Industry</span> tab is used to display other fields to provide additional (general) information about this product instance, if configured.</p>
+</div><p class="bodytext"><a id="h3567" class="expandingblock" title="General Tab" href="javascript:toggleBlock('3567')" target="_self"><img id="i3567" class="expandicon" src="arrowright.gif" alt="" border="0">General</a></p>
+<div id="d3567" class="expandingblock" style="display:none"><p class="bodytext">The <span class="fieldname">General</span> tab displays other fields to provide additional (general) information about this product instance.  </p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">If fields are present on this tab, they should be completed.</p></td></tr></table>
+</div><p class="bodytext">The lower part of the form is also used to:</p>
+<ul class="listbullet"><li class="listbullet">View and enter details of any new up-front charges required before the product instance can be activated (using the <strong class="buttons">New Up-Front Charge…</strong> button).</li><li class="listbullet">View details of the customer associated with the product instance (using the <strong class="buttons">Customer Details…</strong> button),</li><li class="listbullet">View changes made to the product instance record (using the <strong class="buttons">Changes…</strong> button).</li></ul><p class="bodytext">The form can be displayed in one of three <a id="h1472" class="popup" title="Form Modes" href="javascript:void(0)" onclick="togglePopup('1472','h1472')" target="_self">form modes</a>, with the current mode being indicated in the form&#8217;s title.</p>
+<div id="d1472" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1472')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">A form can be displayed in one of the following modes:</p>
+<table class="tableintopic" width="528" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Form Mode</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="402"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">View Only mode</p>
+</td>
+<td style="border:1px solid #010101;" width="402"><p class="tablebodytext">Allows information held in Convergent Billing to be viewed, but not updated (modified).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Insert mode</p>
+</td>
+<td style="border:1px solid #010101;" width="402"><p class="tablebodytext">Allows new information to be recorded (entered) in Convergent Billing.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Update mode</p>
+</td>
+<td style="border:1px solid #010101;" width="402"><p class="tablebodytext">Allows information held in Convergent Billing to be viewed and updated (modified).</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">To change the form mode:</p>
+<table class="tableintopic" width="528" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="168"><p class="tableheading">Current Form Mode</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="156"><p class="tableheading">New Form Mode</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="204"><p class="tableheading">Click the <strong class="buttons">…</strong></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">View Only mode</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">Update mode</p>
+</td>
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><strong class="buttons">Update</strong> button</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">Update mode</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">View Only mode</p>
+</td>
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><strong class="buttons">Save</strong> or <strong class="buttons">Cancel</strong> button</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">View Only mode</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">Insert mode</p>
+</td>
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><strong class="buttons">Insert</strong> button</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">Insert mode</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">View Only mode</p>
+</td>
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><strong class="buttons">Save</strong> button</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+</div><p class="bodytext">A product instance is considered complete if all required service and equipment information has been entered.  Only completed product instances can be made active (that is, available for use and inclusion in a bill cycle).</p>
+<p class="bodytext"><strong class="specialbold">Associated Actions</strong></p>
+<p class="bodytext"><a id="h2418" class="expandingblock" title="View a Product Instance (Summary)" href="javascript:toggleBlock('2418')" target="_self"><img id="i2418" class="expandicon" src="arrowright.gif" alt="" border="0">Viewing a Product Instance</a></p>
+<div id="d2418" class="expandingblock" style="display:none"><p class="bodytext">To view summary information about each product instance:</p>
+<ol class="listnumber"><li class="listnumber"><a id="h2092" class="jump" title="Display the Customer Hierarchy Form" href="4115.htm#o2093" target="_self">Display the </a><span class="formname"><a id="h2092_2" class="jump" title="Display the Customer Hierarchy Form" href="4115.htm#o2093" target="_self">Customer Hierarchy</a></span><a id="h2092_3" class="jump" title="Display the Customer Hierarchy Form" href="4115.htm#o2093" target="_self"> form</a> for the appropriate customer.</li><li class="listnumber">Select <span class="fieldname">Products</span> or <span class="fieldname">Companion Products </span>options from the <span class="fieldname">Display for customer</span> group.  Summary information about each product instance associated with the specified customer is displayed in the right-hand panel.</li></ol><p class="moreinfo"><a id="h2424" class="jump" title="Products" href="58148.htm" target="_self">Need more information on products?</a></p>
+</div><p class="bodytext"><a id="h60355" class="expandingblock" title="Create a Product Instance" href="javascript:toggleBlock('60355')" target="_self"><img id="i60355" class="expandicon" src="arrowright.gif" alt="" border="0">Creating a Product Instance</a></p>
+<div id="d60355" class="expandingblock" style="display:none"><p class="bodytext">Products are typically implemented with product offers, to simplify product configuration and product instance creation. </p>
+<p class="bodytext">If a <span class="fieldname">Product Offer</span> drop-down list is not displayed on the <span class="formname">Product Instance Detail </span>form, the product is not associated with a product offer.  In this case, follow procedure 2 to create the product instance.</p>
+<p class="subheading">Procedure 1</p>
+<p class="bodytext">To create a product instance from a product associated with a product offer:</p>
+<ol class="listnumber"><li class="listnumber"><a id="h3571" class="jump" title="Assign a Product to a Customer" href="4157.htm#o58073" target="_self">Assign a product</a> to a customer or customer node.</li><li class="listnumber">Select a product offer to use with the product instance. The <span class="fieldname">Offer </span>tab is displayed.</li><li class="listnumber">Expand the <span class="fieldname">Offer Hierarchy</span> tree, if required.</li><li class="listnumber">Select optional child product offers and companion products by ticking the check boxes beside their entry in the tree. Mandatory child product offers and companion products will be selected automatically.<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="listnote">Placement of a companion product in the tree may affect the charges and entitlements configured for the product. Check configuration in the Companion Products tab to ensure that the desired settings are available.</p></td></tr></table>
+</li><li class="listnumber">Click the <strong class="buttons">Apply Changes</strong> button. The <span class="fieldname">Companion Products</span> tab is displayed.</li><li class="listnumber">Select each of the companion products displayed, and add any further configuration information required.</li><li class="listnumber"><a id="h39184" class="jump" title="Allocate Equipment" href="4219.htm#o3345" target="_self">Allocate equipment</a> to each service (where required).</li><li class="listnumber"><a id="h39185" class="jump" title="Create a Service" href="4157.htm#o3343" target="_self">Create the required services</a>.<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="listnote">One service must be created before the product instance is complete and can become active.</p></td></tr></table>
+</li><li class="listnumber">If required, select one or more of the available optional product components.</li><li class="listnumber">If required, select one or more of the available lists on the <span class="formname">Customer Detail</span> or <span class="formname">Service Detail</span> forms and <a id="h39186" class="jump" title="Create a List" href="4157.htm#o3582" target="_self">create list items</a> for each of those lists.</li><li class="listnumber">To save the product instance, click the <strong class="buttons">Save</strong> button on the toolbar.</li></ol><p class="subheading">Procedure 2</p>
+<p class="bodytext">To create a product instance from a product not associated with a product offer:</p>
+<ol class="listnumber"><li class="listnumber"><a id="h3571_2" class="jump" title="Assign a Product to a Customer" href="4157.htm#o58073" target="_self">Assign a product</a> to a customer or customer node.</li><li class="listnumber"><a id="h39184_2" class="jump" title="Allocate Equipment" href="4219.htm#o3345" target="_self">Allocate required equipment</a> to each service.</li><li class="listnumber"><a id="h39185_2" class="jump" title="Create a Service" href="4157.htm#o3343" target="_self">Create the required services</a>.<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="listnote">One service must be created before the product instance is complete and can become active.</p></td></tr></table>
+</li><li class="listnumber">If required, select one or more of the available optional product components.</li><li class="listnumber">If required, <a id="h3577" class="jump" title="Select a Facility Group" href="4157.htm#o59818" target="_self">select one or more of the available facility groups</a>.</li><li class="listnumber">If required, <a id="h3579" class="jump" title="Select a Companion Product" href="4157.htm#o58079" target="_self">select one or more of the available companion products</a>.</li><li class="listnumber">If required, select one or more of the available lists on the <span class="formname">Customer Detail</span> or <span class="formname">Service Detail</span> forms and <a id="h39186_2" class="jump" title="Create a List" href="4157.htm#o3582" target="_self">create list items</a> for each of those lists.</li><li class="listnumber">If required, record any up-front charges associated with the product.</li><li class="listnumber">Click the <strong class="buttons">Save</strong> button on the toolbar.</li></ol><p class="moreinfo"><a id="h2424_2" class="jump" title="Products" href="58148.htm" target="_self">Need more information on products?</a></p>
+</div><p class="bodytext"><a id="h60359" class="expandingblock" title="Modify a Product Instance" href="javascript:toggleBlock('60359')" target="_self"><img id="i60359" class="expandicon" src="arrowright.gif" alt="" border="0">Modify a Product Instance</a></p>
+<div id="d60359" class="expandingblock" style="display:none">A product instance can be modified by:<ul class="listbullet"><li class="listbullet"><a id="h3587" class="jump" title="Change Status of a Product Instance" href="4157.htm#o3588" target="_self">Changing its status</a> by activating, suspending, cancelling, and reactivating the instance.</li><li class="listbullet"><a id="h60164" class="jump" title="Change Product Offer Associated with a Product Instance" href="4157.htm#o60162" target="_self">Changing the product offer</a> that the product instance is associated with.</li><li class="listbullet"><a id="h3589" class="jump" title="Change Status of a Service" href="4157.htm#o3590" target="_self">Changing the status of a specific service</a> within the product instance, by activating, suspending, temporarily disconnecting, cancelling, and reactivating a service.</li><li class="listbullet">Changing the <a id="h3591" class="jump" title="Change Status of a Facility Group" href="4157.htm#o3592" target="_self">status of a facility group</a>, by activating, suspending, cancelling, and reactivating the facility group.</li><li class="listbullet">Adding one or more of the available <a id="h3577_2" class="jump" title="Select a Facility Group" href="4157.htm#o59818" target="_self">facility groups</a>.</li><li class="listbullet">Changing the <a id="h3593" class="jump" title="Change Status of a Companion Product" href="4157.htm#o3594" target="_self">status of a companion product</a>.</li><li class="listbullet">Adding one or more of the available <a id="h3579_2" class="jump" title="Select a Companion Product" href="4157.htm#o58079" target="_self">companion products</a>.</li><li class="listbullet"><a id="h39199" class="jump" title="Upgrade a Product Instance" href="4157.htm#o58086" target="_self">Changing (upgrading or downgrading) the base product</a>.</li></ul><p class="moreinfo"><a id="h2424_3" class="jump" title="Products" href="58148.htm" target="_self">Need more information on products?</a></p>
+</div><p class="bodytext"><a id="h3597" class="expandingblock" title="Delete a Product Instance" href="javascript:toggleBlock('3597')" target="_self"><img id="i3597" class="expandicon" src="arrowright.gif" alt="" border="0">Deleting a Product Instance</a></p>
+<div id="d3597" class="expandingblock" style="display:none"><table class="cautionstyle" width="100%"><tr><td><p class="caution">Caution:</p><p class="caution">A product instance can only be removed/deleted if it has a status of Product Creation.  If a product instance is not in this state, deleting a product instance is identical to <a id="h2416" class="jump" title="Cancel a Product Instance" href="4157.htm#o2417" target="_self">cancelling that instance</a>.</p></td></tr></table>
+<p class="bodytext">To delete an incomplete product instance (a product instance with a status of Product Creation):</p>
+<ol class="listnumber"><li class="listnumber"><a id="h39145" class="jump" title="View a Product Instance (Summary)" href="4157.htm#o2419" target="_self">View the appropriate product instance</a>.</li><li class="listnumber">Click the <strong class="buttons">Delete</strong> button on the toolbar.</li><li class="listnumber">When prompted, specify the date from which to delete the product instance.  Depending on security settings, the date consists of a single component, the date, or two components, the <a id="h6664" class="jump" title="Date-time Granularity" href="6461.htm" target="_self">date and time</a>.</li><li class="listnumber">When prompted, click the <strong class="buttons">Yes</strong> button to confirm that the product instance is to be deleted.  The product instance and all associated services are deleted.</li></ol><p class="moreinfo"><a id="h2424_4" class="jump" title="Products" href="58148.htm" target="_self">Need more information on products?</a></p>
+</div><p class="bodytext"><a id="h60345" class="expandingblock" title="Upgrade a Product Instance" href="javascript:toggleBlock('60345')" target="_self"><img id="i60345" class="expandicon" src="arrowright.gif" alt="" border="0">Upgrading a Product Instance</a></p>
+<div id="d60345" class="expandingblock" style="display:none">Options on the <span class="fieldname">Upgrade/Move Details</span> tab of the <span class="formname">Product Instance Detail</span> form cannot be selected while creating a product instance. Product instances that are created as part of a product offer, or have been previously moved, upgraded, or cancelled, cannot be upgraded.<p class="bodytext">To upgrade a product:</p>
+<ol class="listnumber"><li class="listnumber"><a id="h39145_2" class="jump" title="View a Product Instance (Summary)" href="4157.htm#o2419" target="_self">View the appropriate product instance</a>.</li><li class="listnumber">Select the <span class="fieldname">Upgrade/Move Details</span> tab.</li><li class="listnumber">Click the <strong class="buttons">Update</strong> button on the toolbar.  The <span class="formname">Product Instance Detail</span> form is displayed in Update mode.<ul class="listdashbullet2"><li class="listdashbullet2">The <strong class="buttons">From Product</strong> button is enabled if the product was merged or is the result of an upgrade. </li><li class="listdashbullet2">The <strong class="buttons">To Product</strong> button is only enabled if the product instance was previously upgraded. </li><li class="listdashbullet2">Clicking the <strong class="buttons">From Product</strong> button displays details of the product from which the product instance being viewed was upgraded or moved.  </li><li class="listdashbullet2">Clicking the<strong class="specialbold"> </strong><strong class="buttons">To Product</strong> button displays details of the product to which the product instance being viewed was upgraded or moved.</li></ul></li><li class="listnumber">Click the <strong class="buttons">Upgrade</strong><strong class="specialbold"> </strong>button.  A message is displayed prompting selection of the product to which the current product instance is to be upgraded.</li><li class="listnumber">Select the <span class="fieldname">Detail</span> tab and, if necessary, update the services required to make the new product instance active.</li><li class="listnumber">Complete the appropriate fields on the <span class="fieldname">Facility Groups</span> and <span class="fieldname">Companion Product</span> tabs for the upgraded product instance.</li><li class="listnumber">Click the <strong class="buttons">Save</strong> button on the toolbar.</li></ol><p class="moreinfo"><a id="h2424_5" class="jump" title="Products" href="58148.htm" target="_self">Need more Information about products?</a></p>
+</div><p class="bodytext"><a id="h3342" class="expandingblock" title="Create a Service" href="javascript:toggleBlock('3342')" target="_self"><img id="i3342" class="expandicon" src="arrowright.gif" alt="" border="0">Creating a Service</a></p>
+<div id="d3342" class="expandingblock" style="display:none"><p class="bodytext">To create a service:</p>
+<ol class="listnumber"><li class="listnumber"><a id="h39145_3" class="jump" title="View a Product Instance (Summary)" href="4157.htm#o2419" target="_self">View the relevant product instance</a>.</li><li class="listnumber">Highlight one of the service types listed.</li><li class="listnumber">Click the <strong class="buttons">Create…</strong> button.  A message is displayed prompting confirmation that the start and end dates for the product instance are correct.</li><li class="listnumber">Click the <strong class="buttons">Yes</strong> button to continue creating the service with the specified dates.  The <span class="formname">Service Detail</span> form is displayed.</li><li class="listnumber">If the dates are not correct, click the <strong class="buttons">No</strong> or <strong class="buttons">Cancel</strong> button to return to the <span class="formname">Product Instance Detail</span> form to change the dates.</li><li class="listnumber">Complete the form for the selected service.</li><li class="listnumber">Click the <strong class="buttons">Save</strong> button on the toolbar.  Control is returned to the <span class="formname">Product Instance Detail</span> form.</li><li class="listnumber">To allocate an optional service to the product instance, click the <strong class="buttons">Add Service…</strong> button.  The <span class="formname">Optional Product Component</span> form is displayed.</li><li class="listnumber">Select the optional component and click the <strong class="buttons">Add</strong> button.  The additional component is added to the <span class="formname">Product Instance Detail</span> form, the <span class="formname">Optional Product Component</span> form is closed, and control is returned to the <span class="formname">Product Instance Detail</span> form.</li><li class="listnumber">Complete steps 2 to 6 for each additional component to be allocated to the product instance.</li><li class="listnumber">Click the <strong class="buttons">Save</strong> button on the toolbar.</li></ol><p class="moreinfo"><a id="h3151" class="jump" title="Services" href="3152.htm" target="_self">Need more information on services?</a></p>
+</div><p class="bodytext"><a id="h3149" class="expandingblock" title="View a Service (Summary)" href="javascript:toggleBlock('3149')" target="_self"><img id="i3149" class="expandicon" src="arrowright.gif" alt="" border="0">Viewing a Service</a></p>
+<div id="d3149" class="expandingblock" style="display:none"><p class="bodytext">To view summary information about each service:</p>
+<ol class="listnumber"><li class="listnumber"><a id="h2092_4" class="jump" title="Display the Customer Hierarchy Form" href="4115.htm#o2093" target="_self">Display the Customer Hierarchy form</a> for the appropriate customer.</li><li class="listnumber">Select the <span class="fieldname">Products</span> and <span class="fieldname">Services</span> options in the <span class="fieldname">Display for customer</span> group.  Summary information about each product instance and its associated services for the specified customer is displayed in the right-hand panel.</li></ol><p class="moreinfo"><a id="h3151_2" class="jump" title="Services" href="3152.htm" target="_self">Need more information on services?</a></p>
+</div><p class="bodytext"><a id="h58553" class="expandingblock" title="Move Companion Product Instances between Product Offers" href="javascript:toggleBlock('58553')" target="_self"><img id="i58553" class="expandicon" src="arrowright.gif" alt="" border="0">Move Companion Product Instances between Product Offers</a></p>
+<div id="d58553" class="expandingblock" style="display:none"><p class="bodytext">The companion product must be associated with the origin and destination product offers.</p>
+<p class="bodytext">To move a companion product instance from one product offer node to another:</p>
+<ol class="listnumber"><li class="listnumber"><a id="h5745" class="jump" title="View a Product Instance (Detailed)" href="4157.htm#o5718" target="_self">View the product instance</a> for the customer.</li><li class="listnumber">Click on the <span class="fieldname">Offers</span> tab.</li><li class="listnumber">Ensure that both the origin and destination product offer nodes are visible.</li><li class="listnumber">Hold down the <span class="keystrokes">CTRL</span> key and drag and drop the instance to the target offer node.<p class="listcontinue">To drag and drop product instances: </p>
+<ol class="listalpha2"><li class="listalpha2"><a id="h2468" class="jump" title="Select Multiple Product Instances" href="4115.htm#o2469" target="_self">Select the product instances</a> and hold down the left mouse button.</li><li class="listalpha2">Move the cursor into the left-hand panel until the target node is highlighted.</li><li class="listalpha2">Release the mouse button to drop the product instance onto the target node.</li></ol><p class="listcontinue">As the product instances are dragged from the right-hand to the left-hand panel, the cursor changes from depicting a stop symbol to depicting an arrow.  If the icon is dropped when the stop symbol is displayed, no action is taken.</p>
+<p class="listcontinue">The <span class="formname">Move Confirm</span> form is displayed.</p>
+</li><li class="listnumber">Click the <strong class="buttons">Continue</strong> button.  The <span class="formname">Move Progress</span> form is displayed.</li></ol><p class="moreinfo">Need more information on product offers?</p>
+</div><p class="bodytext"><a id="h58554" class="expandingblock" title="Remove a Companion Product Instance from a Product Offer" href="javascript:toggleBlock('58554')" target="_self"><img id="i58554" class="expandicon" src="arrowright.gif" alt="" border="0">Remove a Companion Product Instance from a Product Offer</a></p>
+<div id="d58554" class="expandingblock" style="display:none"><p class="bodytext">To remove a companion product instance from a product offer node:</p>
+<ol class="listnumber"><li class="listnumber"><a id="h5745_2" class="jump" title="View a Product Instance (Detailed)" href="4157.htm#o5718" target="_self">View the product instance</a> for the customer.</li><li class="listnumber">Click on the <span class="fieldname">Offers</span> tab.</li><li class="listnumber">Expand the product offer node.</li><li class="listnumber">Deselect the check box next to the companion product instance being removed. All instances of the companion product in that node are removed.</li><li class="listnumber">Click the <strong class="buttons">Apply Changes</strong> button.</li></ol><p class="bodytext">To remove a single companion product instance from a product offer node containing more than one instance of the companion product:</p>
+<ol class="listnumber"><li class="listnumber"><a id="h5745_3" class="jump" title="View a Product Instance (Detailed)" href="4157.htm#o5718" target="_self">View the product instance</a> for the customer.</li><li class="listnumber">Click the <span class="fieldname">Companion Products</span> tab.</li><li class="listnumber">Do either of the following:<ul class="listbullet2"><li class="listbullet2">Delete the record by selecting it and clicking the <strong class="buttons">Delete</strong> button.</li><li class="listbullet2">Cancel the product instance by selecting Cancelled in the <span class="fieldname">Status</span> drop-down list.</li></ul></li></ol><p class="moreinfo">Need more information on product offers?</p>
+</div><p class="bodytext"><a id="h58556" class="expandingblock" title="Change Service Associated with a Product Offer" href="javascript:toggleBlock('58556')" target="_self"><img id="i58556" class="expandicon" src="arrowright.gif" alt="" border="0">Change the Service Associated with a Product Offer</a></p>
+<div id="d58556" class="expandingblock" style="display:none"><p class="bodytext">Changing the service for any child in the same service-specific sub-tree changes it for all product offers and companion products in the sub-tree. However, only the offer node at the top of the sub-tree is assigned to the service.</p>
+<p class="bodytext">To change the service associated with a product offer:</p>
+<ol class="listnumber"><li class="listnumber"><a id="h5745_4" class="jump" title="View a Product Instance (Detailed)" href="4157.htm#o5718" target="_self">View the product instance</a> for the customer.</li><li class="listnumber">Click on the <span class="fieldname">Offers</span> tab. </li><li class="listnumber">Click the <strong class="buttons">Update</strong> button on the toolbar.  The <span class="formname">Product Instance Detail</span> form is displayed in Update mode.</li><li class="listnumber">Select the product offer to be updated.</li><li class="listnumber">Select the required service in the <span class="fieldname">Service Specific</span> drop-down list.</li><li class="listnumber">Click on the <strong class="buttons">Apply Changes</strong> button.</li></ol><p class="moreinfo">Need more information on product offers?</p>
+</div><p class="bodytext"><a id="h60107" class="expandingblock" title="Associate a Service with a Product Offer" href="javascript:toggleBlock('60107')" target="_self"><img id="i60107" class="expandicon" src="arrowright.gif" alt="" border="0">Associate a Service with a Product Offer</a></p>
+<div id="d60107" class="expandingblock" style="display:none"><p class="bodytext">A service can be associated with a product offer if the offer is:</p>
+<ul class="listbullet"><li class="listbullet">Not a top-level offer</li><li class="listbullet">Configured as a service-specific offer</li></ul><p class="bodytext">To associate a service with a product offer:</p>
+<ol class="listnumber"><li class="listnumber">Display the <span class="formname">Product Offer Definition</span> form.</li><li class="listnumber">Ensure that the <span class="fieldname">Service Specific?</span> checkbox is selected.</li><li class="listnumber">Select a service from the <span class="fieldname">Service</span> drop-down list.</li><li class="listnumber">Click the <strong class="buttons">Save</strong> button on the toolbar.</li></ol><p class="moreinfo">Need more information on product offers?</p>
+</div>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="60144.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="51408.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

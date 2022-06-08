@@ -1,0 +1,927 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> EXTERNAL_DEFN_ELEMENT_TRE_V </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "51844.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "51846.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7526');highlight('51845')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="51844.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="51846.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">EXTERNAL_DEFN_ELEMENT_TRE_V</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'EXTERNAL_DEFN_ELEMENT_TRE_V' (51845)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="unixoutputc">EXTERNAL_DEFN_ELEMENT_TRE_V</span> view displays the elements in an external definition.</p>
+<p class="syntaxheading">Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="198"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="132"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="366"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">EXTERNAL_DEFN_ELEMENT_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of an external definition element.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">EXTERNAL_DEFN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of the external definition that the element belongs to.</p>
+<p class="tablebodytext">For more information, refer to <span class="unixoutputc"><a id="h51964" class="jump" title="EXTERNAL_DEFN_TRE_V" href="51847.htm" target="_self">EXTERNAL_DEFN_TRE_V</a></span><a id="h51964_2" class="jump" title="EXTERNAL_DEFN_TRE_V" href="51847.htm" target="_self"> view</a>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">SEQNR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (4)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Order of elements within the external definition.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">It must form a contiguous range starting at 1.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">SRC_EXTERNAL_DEFN_</span><br><span class="unixoutputc">ELEMENT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of the source external definition element that this element was generated from.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">The element must be part of an external definition that has been generated from a source external definition, and the value must be a valid element associated with the source.  Otherwise, it must be null.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">ELEMENT_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (60)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Name of the element.</p>
+<p class="tablebodytext">If specified, this must be unique within the external definition. It can only be specified if <span class="unixoutputc">ATTRIBUTE_NAME</span> is null.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">If <span class="unixoutputc">SRC_EXTERNAL_DEFN_ELEMENT_ID</span> is specified, the value must be the same as the value of <span class="unixoutputc">ELEMENT_NAME</span> in the source external definition.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">COLUMN_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Name of the element's column if the external definition is used to create a view.  The default value is <span class="unixoutputc">ELEMENT_NAME</span>.</p>
+<p class="tablebodytext">It can only be specified if <span class="unixoutputc">ELEMENT_NAME</span> or <span class="unixoutputc">ATTRIBUTE_NAME</span> are specified, and <span class="unixoutputc">XML_DATA_TYPE_CODE</span> is specified.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">It must be unique within this external definition.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">ATTRIBUTE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (60)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Name of the attribute.</p>
+<p class="tablebodytext">It can only be specified if <span class="unixoutputc">ELEMENT_NAME</span> is null.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">If <span class="unixoutputc">SRC_EXTERNAL_DEFN_ELEMENT_ID</span> is specified, the value must be the same as the value of <span class="unixoutputc">ATTRIBUTE_NAME</span> in the source external definition.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">ATTR_EXTERNAL_DEFN_</span><br><span class="unixoutputc">ELEMENT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of the element to which the attribute belongs.</p>
+<p class="tablebodytext">It can only be specified if <span class="unixoutputc">ATTRIBUTE_NAME</span> is specified.  If specified, the referenced element must be a part of this definition.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">If specified, the combination of <span class="unixoutputc">ATTRIBUTE_NAME</span> and <span class="unixoutputc">ATTR_EXTERNAL_DEFN_ELEMENT_ID</span> must be unique.</p><p class="tablenote">If <span class="unixoutputc">ATTRIBUTE_NAME</span> is specified and this column is null:</p><ul class="tablenotelistbullet"><li class="tablenotelistbullet">This attribute must be a part of an attribute group.</li><li class="tablenotelistbullet">The combination of <span class="unixoutputc">EXTERNAL_DEFN_ID</span> and <span class="unixoutputc">ATTRIBUTE_NAME</span> must be unique.</li></td></tr></table></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">DESCRIPTION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (4000)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Description of the element or attribute.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">XML_DATA_TYPE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (3)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">XML simple data type of the element or attribute.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">EXTERNAL_DEFN_XML_DATA_TYPE</span> reference type.</p>
+<p class="tablebodytext">The supported data types are a subset of the full set of XML schema built-in data types.  </p>
+<p class="tablebodytext">It must be specified for a validated external definition if <span class="unixoutputc">REF_EXTERNAL_DEFN_ID</span> and <span class="unixoutputc">REF_EXTERNAL_DEFN_ELEMENT_ID</span> are null, and <span class="unixoutputc">ELEMENT_NAME</span> or <span class="unixoutputc">ATTRIBUTE_NAME</span> are specified.  This constraint is not enforced for a non-validated definition.</p>
+<p class="tablebodytext">It must be null if both <span class="unixoutputc">ELEMENT_NAME</span> and <span class="unixoutputc">ATTRIBUTE_NAME</span> are null.</p>
+<p class="tablebodytext">If <span class="unixoutputc">SRC_EXTERNAL_DEFN_ELEMENT_ID</span> is specified, its value must be the same as the value of the <span class="unixoutputc">XML_DATA_TYPE_CODE</span> of the source external definition element.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">REF_EXTERNAL_DEFN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of the external definition referenced by this element.</p>
+<p class="tablebodytext">If <span class="unixoutputc">XML_DATA_TYPE_CODE</span> is:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Null, the referenced external definition is embedded in the current definition at this element position.  If <span class="unixoutputc">ELEMENT_NAME</span> is also null, the referenced external definition is embedded at the current nesting level; otherwise, it is embedded under <span class="unixoutputc">ELEMENT_NAME</span>.</li><li class="tablelistbullet">Not null, no embedding occurs.  The value associated with this element is assumed to be a reference (for example, an internal identifier) to the entity associated with <span class="unixoutputc">REF_EXTERNAL_DEFN_ID</span>.</li></ul><p class="tablebodytext">If this external definition and <span class="unixoutputc">REF_EXTERNAL_DEFN_ID</span> have views associated with them, a foreign key between the two views is created for the column associated with this element.</p>
+<p class="tablebodytext">If <span class="unixoutputc">REF_EXTERNAL_DEFN_ELEMENT_ID</span> is specified, it must be null.</p>
+<p class="tablebodytext">If <span class="unixoutputc">ATTRIBUTE_TYPE_ID</span> and <span class="unixoutputc">PE_FACT_ID</span> are null for this element, <span class="unixoutputc">REF_EXTERNAL_DEFN_ID</span> must have the same entity (<span class="unixoutputc">CB_ENTITY</span> or <span class="unixoutputc">PE_CLASS_ID</span>) as either of the following:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">The external definition this element is associated with.</li><li class="tablelistbullet">An external definition that is linked to the external definition this element is associated with. </li></ul><p class="tablebodytext">If <span class="unixoutputc">ATTRIBUTE_TYPE_ID</span> or <span class="unixoutputc">PE_FACT_ID</span> are specified for this element, they must be a reference to an entity (scalar or array), and <span class="unixoutputc">REF_EXTERNAL_DEFN_ID</span> must reference the same entity.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">REF_EXTERNAL_DEFN_</span><br><span class="unixoutputc">ELEMENT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of a linked external definition from which this element obtains its value. </p>
+<p class="tablebodytext">If <span class="unixoutputc">REF_EXTERNAL_DEFN_ID</span> is specified, it must be null.</p>
+<p class="tablebodytext">If <span class="unixoutputc">XML_DATA_TYPE_CODE</span> is null, this element is not exposed in any external interface.  It is used to provide a value for this entity for a Convergent Billing or a Process Engine interface.</p>
+<p class="tablebodytext">If specified on input, the value of the referenced element is passed through to the Convergent Billing or the Process Engine interface.  For output interfaces, the referenced value can be used to perform a fetch on the entity, if no other direct links are provided to define search or fetch criteria.</p>
+<p class="tablebodytext">If <span class="unixoutputc">XML_DATA_TYPE_CODE</span> is:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Null, <span class="unixoutputc">INTERFACE_LABEL</span> must be specified.</li><li class="tablelistbullet">Not null and the referenced element is a part of the interface, the value of this element must match the value of the referenced element.  For output interfaces, the value is duplicated from the referenced element to return its value.  For input interfaces, the two supplied values must be identical.</li></ul><p class="tablebodytext">If the referenced element is associated with a fetch external definition (<span class="unixoutputc">FETCH_IND_CODE</span> is set to 1) and this element is a part of a different external definition, the fetch is performed before this definition is called.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CHOICE_DEFAULT_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">If set to 1 (True), it is the default choice element for a choice content model.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CHOICE_VALUE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Exact value of the choice element that will result in the use of this element. </p>
+<p class="tablebodytext">It can only be set if <span class="unixoutputc">EXTERNAL_DEFN_ID</span> is of a choice content model.</p>
+<p class="tablebodytext">The value specified must be compatible with the data type of the choice element.  If the choice element is not mandatory, it can be null.</p>
+<p class="tablebodytext">If there are multiple potential values that could result in the use of this element, the additional non-null values can be specified in the <span class="unixoutputc"><a id="h51971" class="jump" title="EXTERNAL_DEFN_CHOICE_TRE_V" href="51844.htm" target="_self">EXTERNAL_DEFN_CHOICE_TRE_V</a></span><a id="h51971_2" class="jump" title="EXTERNAL_DEFN_CHOICE_TRE_V" href="51844.htm" target="_self"> view</a>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">MANDATORY_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">If set to 1 (True), the following applies:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Element is mandatory.</li><li class="tablelistbullet"><span class="unixoutputc">NILLABLE_IND_CODE</span> must be NULL.</li></ul><p class="tablebodytext">A non-null value must be specified on input or output. </p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">If <span class="unixoutputc">MANDATORY_IND_CODE</span> and <span class="unixoutputc">NILLABLE_IND_CODE</span> are set, <span class="unixoutputc">MANDATORY_IND_CODE</span> is used.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_DATE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">If set to 1 (True), it defines the effective date to be used for query or access on this date-ranged entity.</p>
+<p class="tablebodytext">This element can have an attribute type or fact associated with it.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">KEY_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">If set to 1 (True), it:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Defines part of the lookup key for this entity.</li><li class="tablelistbullet">Must have an <span class="unixoutputc">INTERFACE_LABE</span>L specified for it unless <span class="unixoutputc">EFFECTIVE_DATE_IND_CODE</span> is also set to 1 (True).</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">NILLABLE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">If set to 1 (True), the following applies:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Element supports the XML schema instance <span class="unixoutputc">nil</span> attribute being specified to indicate that a null value has been specified.</li><li class="tablelistbullet"><span class="unixoutputc">MANDATORY_IND_CODE</span> must be NULL.<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">If <span class="unixoutputc">MANDATORY_IND_CODE</span> and <span class="unixoutputc">NILLABLE_IND_CODE</span> are set, <span class="unixoutputc">MANDATORY_IND_CODE</span> is used.</p></td></tr></table>
+</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">MIN_OCCURS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (6)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Minimum number of occurrences.</p>
+<p class="tablebodytext">The value specified must be greater than or equal to 0.  The default value is 1.  A value of 0 implies that the element is optional.</p>
+<p class="tablebodytext">If it is greater than or equal to 1, the element is mandatory, regardless of the value of <span class="unixoutputc">MANDATORY_IND_CODE</span>.</p>
+<p class="tablebodytext">If <span class="unixoutputc">MANDATORY_IND_CODE</span> is set to 1, it must have a value greater than or equal to 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">MAX_OCCURS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (6)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Maximum number of occurrences.</p>
+<p class="tablebodytext">The default value is 1.  If undefined, there is no maximum.  This corresponds to a value of 'unbounded' when defined in an XML schema.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Element Restrictions/Facets</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="198"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="132"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="366"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">LENGTH</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (6)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of characters for this element.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">MIN_LENGTH</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (6)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Minimum number of characters for this element.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">MAX_LENGTH</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (6)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Maximum number of characters for this element.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">TOTAL_DIGITS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (2)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Total number of digits that can be used to represent a numeric element.</p>
+<p class="tablebodytext">It is equivalent to the Oracle precision of a <span class="unixoutputc">NUMBER</span> column.</p>
+<p class="tablebodytext">It is applicable to numeric data types such as decimal, integer, and long.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">FRACTION_DIGITS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (2)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Maximum number of digits that can appear after the decimal point.</p>
+<p class="tablebodytext">It is equivalent to the Oracle scale of a <span class="unixoutputc">NUMBER</span> column.</p>
+<p class="tablebodytext">It is applicable to real and decimal data types.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">MIN_INCLUSIVE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Minimum inclusive value for a numeric element.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">MIN_INCLUSIVE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Minimum inclusive value for a date-based element.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">MIN_EXCLUSIVE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Minimum exclusive value for a numeric element.</p>
+<p class="tablebodytext">Only one of <span class="unixoutputc">MIN_INCLUSIVE</span> and <span class="unixoutputc">MIN_EXCLUSIVE</span> can be specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">MIN_EXCLUSIVE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Minimum exclusive value for a date-based element.</p>
+<p class="tablebodytext">Only one of <span class="unixoutputc">MIN_INCLUSIVE_DATE</span> and <span class="unixoutputc">MIN_EXCLUSIVE_DATE</span> can be specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">MAX_INCLUSIVE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Maximum inclusive value for a numeric element.</p>
+<p class="tablebodytext">Only one of <span class="unixoutputc">MAX_INCLUSIVE</span> and <span class="unixoutputc">MAX_EXCLUSIVE</span> can be specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">MAX_INCLUSIVE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Maximum inclusive value for a date-based element.</p>
+<p class="tablebodytext">Only one of <span class="unixoutputc">MAX_INCLUSIVE_DATE</span> and <span class="unixoutputc">MAX_EXCLUSIVE_DATE</span> can be specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">MAX_EXCLUSIVE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Maximum exclusive value for a numeric element.</p>
+<p class="tablebodytext">Only one of <span class="unixoutputc">MAX_INCLUSIVE</span> and <span class="unixoutputc">MAX_EXCLUSIVE</span> can be specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">MAX_EXCLUSIVE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Maximum exclusive value for a date-based element.</p>
+<p class="tablebodytext">Only one of <span class="unixoutputc">MAX_INCLUSIVE_DATE</span> and <span class="unixoutputc">MAX_EXCLUSIVE_DATE</span> can be specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">DEFAULT_VALUE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Default value to be applied to this element.</p>
+<p class="tablebodytext">On input, it is used if this element is not specified, or if the element is mandatory and an empty string or NULL value has been specified.</p>
+<p class="tablebodytext">On output, it is used if the element is not linked to a Convergent Billing attribute type or Process Engine fact, or it is linked but a NULL value was returned from Convergent Billing or Process Engine for this element.</p>
+<p class="tablebodytext">The XML Schema format for the value is used to store the value in this column.  For example, for date-time values, the format yyyy-mm-ddThh:mm:ss is used.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">FIXED_VALUE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Fixed value that is always used for this element.</p>
+<p class="tablebodytext">On input, this element must be specified and its value must match the value specified in this column.</p>
+<p class="tablebodytext">If <span class="unixoutputc">ELEMENT_NAME</span> and <span class="unixoutputc">ATTRIBUTE_NAME</span> are null, this element is not specified on input and <span class="unixoutputc">FIXED_VALUE</span> is used as the default value of a Convergent Billing attribute type or a Process Engine fact as part of this interface.</p>
+<p class="tablebodytext">On output, this value is always output for this element.  If this element is linked to an attribute type or fact, the value of the attribute type or fact must match this value.</p>
+<p class="tablebodytext">The XML Schema format for the value is used to store the value in this column.  For example, for date-time values, the format yyyy-mm-ddThh:mm:ss is used.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">ATTRIBUTE_TYPE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of the Convergent Billing attribute type that is associated with this element.</p>
+<p class="tablebodytext">If this column and <span class="unixoutputc">REF_EXTERNAL_DEFN_ID</span> are specified, <span class="unixoutputc">ATTRIBUTE_TYPE</span> must have a <span class="unixoutputc">REFERENCE_ENTITY_NAME</span> that equals the value of <span class="unixoutputc">CB_ENTITY</span> for the <span class="unixoutputc">REF_EXTERNAL_DEFN_ID</span>.</p>
+<p class="tablebodytext">If <span class="unixoutputc">REF_EXTERNAL_DEFN_ID</span> is not specified, one of the following must apply to this attribute type:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">No <span class="unixoutputc">ENTITY_NAME</span> specified.</li><li class="tablelistbullet">An <span class="unixoutputc">ENTITY_NAME</span> specified that matches the entity of this external definition, or an external definition linked to this definition.</li><li class="tablelistbullet"><span class="unixoutputc">FETCH_IND_CODE</span> set to 1 (True).</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PE_FACT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (20)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of the Process Engine fact associated with this element</p>
+<p class="tablebodytext">If this column and <span class="unixoutputc">REF_EXTERNAL_DEFN_ID</span> are specified, <span class="unixoutputc">PE_FACT_ID</span> must correspond to an object reference or <span class="unixoutputc">binref</span> whose associated class equals the <span class="unixoutputc">PE_CLASS_ID</span> for the <span class="unixoutputc">REF_EXTERNAL_DEFN_ID</span>.</p>
+<p class="tablebodytext">If <span class="unixoutputc">REF_EXTERNAL_DEFN_ID</span> is not specified, this fact must reference the same class as this external definition, or an external definition linked to this definition.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">INTERFACE_LABEL</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (64)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Name of this element used when interfacing to Singleview APIs.  </p>
+<p class="tablebodytext">For an element linked to a Process Engine fact, it must be set to the name of the fact.</p>
+<p class="tablebodytext">For an element linked to a Convergent Billing attribute type or a Convergent Billing external definition, it is one of the following:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Name of the <span class="unixoutputc">INTERFACE_LABEL</span> associated with the attribute type, if specified.</li><li class="tablelistbullet">Name of the <span class="unixoutputc">LABEL</span> associated with this attribute type, if it has no <span class="unixoutputc">INTERFACE_LABEL</span>, and <span class="unixoutputc">LABEL</span> is unique for the Convergent Billing entity.</li><li class="tablelistbullet">Convergent Billing column name for this Convergent Billing entity.  If an attribute type is specified for this element, it must be associated with this column name using entity validation.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">INTERFACE_DATA_TYPE_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Redundant</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">EPM data type expected for the value of this element being passed to or from Singleview APIs.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">DATA_TYPE_ATTRIBUTE_TYPE</span> reference type.</p>
+<p class="tablebodytext">For an element linked to a:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Convergent Billing attribute type, it is always equal to the <span class="unixoutputc">DATA_TYPE_CODE</span> of the attribute type.</li><li class="tablelistbullet">Process Engine fact, it is derived from the type of the fact.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">FACT_PROCESS_SEQNR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (3)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Order in which Process Engine facts associated with this external definition are to be processed by Process Engine.</p>
+<p class="tablebodytext">It must be specified for external definitions that support insert or update interfaces.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PARAMETER_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (60)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Name of a parameter defined in the search SQL, if this external definition is for a search. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">PE_PARAM_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (20)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of a Process Engine parameter. </p>
+<p class="tablebodytext">It can only be specified if the associated external definition is a search associated with a Process Engine class that references a saved search, or a Process Engine SXP expression.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">DENORMALISE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Set to 1 (True) if this element is to be converted to or from an integer representation to a string representation of the value. </p>
+<p class="tablebodytext">It can only be set to 1 if the <span class="unixoutputc">XML_DATA_TYPE_CODE</span> is a string data type and either of the following applies:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">An attribute type based on a reference type is specified for <span class="unixoutputc">ATTRIBUTE_TYPE_ID</span>.</li><li class="tablelistbullet"><span class="unixoutputc">PE_FACT_ID</span> is specified and corresponds to an object reference.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">NAME_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Set to 1 (True) if this element is denormalised and the string representation should be based on the <span class="unixoutputc">NAME</span> field for the configuration entity rather than the <span class="unixoutputc">DISPLAY_NAME</span> field. </p>
+<p class="tablebodytext">For Convergent Billing attribute types associated with a reference type, it is interpreted as the string representation being based on <span class="unixoutputc">CODE_LABEL</span> rather than the <span class="unixoutputc">ABBREVIATION</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">ENUMERATION_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Set to 1 (True) if the XML schema representation of this element should explicitly define an enumeration for this element containing all possible values. </p>
+<p class="tablebodytext">If <span class="unixoutputc">DENORMALISE_IND_CODE</span> is NULL, the enumeration is a list of numeric values.  If it is 1 (True), the enumeration is a list of strings.</p>
+<p class="tablebodytext">It can only be set to 1 (True) if either of the following applies:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">An attribute type based on a reference type is specified for <span class="unixoutputc">ATTRIBUTE_TYPE_ID</span>.</li><li class="tablelistbullet"><span class="unixoutputc">PE_FACT_ID</span> is specified and corresponds to an object reference.</li></ul><p class="tablebodytext">The enumeration must consist of all:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Reference codes of the associated reference type.</li><li class="tablelistbullet">Configured entities of the specified <span class="unixoutputc">REFERENCE_CONFIG_ENTITY_CODE</span> as of the current date and time.</li><li class="tablelistbullet">Objects associated with the same class as the object referenced by <span class="unixoutputc">PE_FACT_ID</span>.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">DISPLAY_FORMAT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Display format for this attribute.</p>
+<p class="tablebodytext">It is only applicable on output if the XML data type is string and the corresponding attribute type or Process Engine fact is not a string. </p>
+<p class="tablebodytext">For supported formats, refer to the <span class="unixoutputc">to_string()</span> EPM function.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">FETCH_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Set to 1 (True) if the value of a Convergent Billing attribute type or Process Engine fact must be retrieved after the insert or update operation has completed, or before the delete operation is performed.</p>
+<p class="tablebodytext">It allows:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Additional information about the entity that has been inserted, updated, or deleted to be accessible to linked external definitions.</li><li class="tablelistbullet">Information provided in the interface to be modified by Convergent Billing and Process Engine, and for the modified information to be made available to linked external definitions.</li></ul><p class="tablebodytext">If not set to 1 (True), it must be NULL.</p>
+<p class="tablebodytext">It can only be set to 1 if:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">INTERFACE_LABEL</span> is specified.</li><li class="tablelistbullet">The associated external definition supports insert, update, or delete operations.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">SENSITIVE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Set to 1 (True) if this element contains sensitive data (for example, when using a masked or encrypted attribute type or fact).</p>
+<p class="tablebodytext">It allows external definition interfaces to manage protected data.</p>
+<p class="tablebodytext">It must be Null or 1.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Supported Data Type Codes</p>
+<p class="bodytext">The following table lists:</p>
+<ul class="listbullet"><li class="listbullet">Supported types and corresponding integer value stored in the <span class="unixoutputc">XML_DATA_TYPE_CODE</span> field of the <span class="unixoutputc"><a id="h52030" class="jump" title="EXTERNAL_DEFN_ELEMENT_TRE_V" href="51845.htm" target="_self">EXTERNAL_DEFN_ELEMENT_TRE_V</a></span><a id="h52030_2" class="jump" title="EXTERNAL_DEFN_ELEMENT_TRE_V" href="51845.htm" target="_self"> view</a>. </li><li class="listbullet">For each XML data type, the EPM data type used to represent the XML type in generated external definition interfaces.</li><li class="listbullet">Oracle data type used in generated views.</li><li class="listbullet">Specific limitations on support for the data type, if any.</li></ul><p class="caption">&nbsp;</p>
+<p class="caption">Supported Data Type Codes</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="60"><p class="tableheading">Code</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">XML Data Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="114"><p class="tableheading">EPM Data Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="120"><p class="tableheading">Oracle Data Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="276"><p class="tableheading">Constraints</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">1</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">string</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">VARCHAR or CLOB</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">2</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">boolean</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Integer</p>
+<p class="tablebodytext">Constant (FALSE and TRUE)</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">VARCHAR</p>
+<p class="tablebodytext">Strings (false and true)</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">3</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">decimal</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Real</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">Precision is restricted by EPM's binary floating point representation.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">4</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">float</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Real</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">Restriction to 32-bit floating point is not enforced.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">5</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">double</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Real</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">6</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">duration</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Date</p>
+<p class="tablebodytext">Days and fractions of a day between two dates</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER</p>
+<p class="tablebodytext">Days and fractions of a day between two dates</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">Selected EPM and Oracle formats are their natural representations obtained from subtracting two dates from each other.  However, these formats do not allow specification of:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Durations in years and months</li><li class="tablelistbullet">Fractions of a second.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">7</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">dateTime</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">Can contain a timezone component.  If so, it is converted to the server timezone.</p>
+<p class="tablebodytext">For seconds, the fractional component is one or more digits followed by a timezone, if required.</p>
+<p class="tablebodytext">Supported formats are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">yyyy-mm-ddThh:nn:ss</span><p class="tablelistcontinue"><span class="unixoutputc">Datetime</span> data type in the server timezone.</p>
+</li><li class="tablelistbullet"><span class="unixoutputc">yyyy-mm-ddThh:nn:ssZ</span><p class="tablelistcontinue">UTC <span class="unixoutputc">Datetime</span> data type.</p>
+</li><li class="tablelistbullet"><span class="unixoutputc">yyyy-mm-ddThh:nn:ss±HH:MM</span><p class="tablelistcontinue"><span class="unixoutputc">Datetime</span> data type with UTC offset specified in <span class="unixoutputc">Hours:Minutes</span>.</p>
+</li><li class="tablelistbullet"><span class="unixoutputc">yyyy-mm-ddThh:nn:ss(.d+)?(zzzzzz)?</span><p class="tablelistcontinue"><span class="unixoutputc">Datetime</span> data type with a fractional time component of one or more digits followed by the timezone, if required. The timezone represented by <span class="unixoutputc">zzzzzz</span> is either of the following:</p>
+<ul class="tablelistdashbullet2"><li class="tablelistdashbullet2"><span class="unixoutputc">Z</span></li><li class="tablelistdashbullet2"><span class="unixoutputc">±HH:MM</span>.</li></ul></li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">8</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">time</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Date</p>
+<p class="tablebodytext">Fraction of a day</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER</p>
+<p class="tablebodytext">Fraction of a day</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">Can contain a timezone component. If so, it is converted to the server timezone.</p>
+<p class="tablebodytext">For seconds, the fractional component is one or more digits followed by a timezone, if required.</p>
+<p class="tablebodytext">Supported formats are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">hh:nn:ss</span><p class="tablelistcontinue"><span class="unixoutputc">Time</span> data type, in the server timezone.</p>
+</li><li class="tablelistbullet"><span class="unixoutputc">hh:nn:ssZ</span><p class="tablelistcontinue">UTC <span class="unixoutputc">Time</span> data type.</p>
+</li><li class="tablelistbullet"><span class="unixoutputc">hh:nn:ss±HH:MM</span><p class="tablelistcontinue"><span class="unixoutputc">Time</span> data type with UTC offset specified in <span class="unixoutputc">Hours:Minutes</span>.</p>
+</li><li class="tablelistbullet"><span class="unixoutputc">hh:nn:ss(.d+)?(zzzzzz)?</span><p class="tablelistcontinue"><span class="unixoutputc">Time</span> data type with a fractional time component of one or more digits followed by the timezone, if required.  The timezone represented by <span class="unixoutputc">zzzzzz</span> is either of the following:</p>
+<ul class="tablelistdashbullet2"><li class="tablelistdashbullet2"><span class="unixoutputc">Z</span></li><li class="tablelistdashbullet2"><span class="unixoutputc">±HH:MM</span>.</li></ul></li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">9</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">date</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">Can contain a timezone component.  If so, it is converted to the server timezone.  For seconds, the fractional component .000 is allowed.</p>
+<p class="tablebodytext">Supported formats are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">yyy-mm-dd</span><p class="tablelistcontinue"><span class="unixoutputc">Date</span> data type. </p>
+</li><li class="tablelistbullet"><span class="unixoutputc">yyyy-mm-ddZ</span><p class="tablelistcontinue">UTC <span class="unixoutputc">Date</span> data type. </p>
+</li><li class="tablelistbullet"><span class="unixoutputc">yyyy-mm-dd±HH:MM</span><p class="tablelistcontinue"><span class="unixoutputc">Date</span> data type with UTC offset specified in <span class="unixoutputc">Hours:Minutes</span>.</p>
+</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">10</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">hexBinary</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">blob</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">BLOB</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">11</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">base64Binary</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">blob</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">BLOB</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">12</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">anyURI</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">string</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">VARCHAR</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">Not validated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">13</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">QName</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">string</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">VARCHAR</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">Not validated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">14</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">normalizedString</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">string</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">VARCHAR</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">Not validated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">15</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">token</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">string</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">VARCHAR</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">Not validated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">16</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">language</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">string</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">VARCHAR</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">Not validated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">17</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Name</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">string</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">VARCHAR</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">Not validated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">18</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NCName</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">string</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">VARCHAR</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">Not validated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">19</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">integer</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">integer</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">-2,147,483,648 to 2,147,483,647 (Windows 32-bit)</p>
+<p class="tablebodytext">-9223372036854775808 to 9223372036854775807 (Windows 32-bit with 64-bit integers)</p>
+<p class="tablebodytext">-9223372036854775808 to 9223372036854775807 (Server 64-bit integers)</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">20</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">long</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">integer</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">21</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">int</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">integer</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">Not validated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">22</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">short</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">integer</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">Not validated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">23</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">byte</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">integer</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">Not validated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">24</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">unsignedLong</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">integer</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">Not validated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">25</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">unsignedInt</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">integer</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">Not validated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">26</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">unsignedShort</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">integer</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">Not validated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="60"><p class="tablebodytext">27</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">unsignedByte</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">integer</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="276"><p class="tablebodytext">Not validated.</p>
+</td>
+</tr>
+
+</table>
+<p class="tablebodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="51844.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="51846.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

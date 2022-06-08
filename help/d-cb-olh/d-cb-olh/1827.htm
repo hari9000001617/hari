@@ -1,0 +1,187 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Charge Category Examples </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "1852.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "2162.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+<script language="javascript" type="text/javascript" src="dhtml_popup.js"></script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('1825');expand('4501');highlight('1827')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="1852.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="2162.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">Charge Category Examples</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Charge Category Examples' (1827)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The following table lists examples of how charge categories can be defined, overridden, and used.</p>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="516" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">Example 1</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext"><a id="h1828" class="popup" title="Example 1: Basic Charge Category" href="javascript:void(0)" onclick="togglePopup('1828','h1828')" target="_self">Basic Charge Category</a></p>
+<div id="d1828" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1828')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="syntaxheading">Requirement</p>
+<p class="bodytext">Costs and benefits are to be posted to the primary account of the customer node.  GL codes are not used.</p>
+<p class="syntaxheading">Solution</p>
+<p class="bodytext">Define the base default charge category without specifying either an account number or a GL code, but specifying the same account type as the primary account.  The account number of the customer node's primary account is selected automatically when the charge category instance is defined.</p>
+</div></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">Example 2</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext"><a id="h1836" class="popup" title="Example 2: Assigning Charges to Another Customer Node" href="javascript:void(0)" onclick="togglePopup('1836','h1836')" target="_self">Assigning Charges to Another Customer Node</a></p>
+<div id="d1836" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1836')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="syntaxheading">Requirement</p>
+<p class="bodytext">Another department (with its own customer node) agrees to pay the charges for a service defined at a customer node.</p>
+<p class="syntaxheading">Solution</p>
+<p class="bodytext">Amend the charge category instance for the service, by replacing the account number with the primary account number of the other customer node.</p>
+</div></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">Example 3</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext"><a id="h1838" class="popup" title="Example 3: Splitting a Charge between Customer Nodes" href="javascript:void(0)" onclick="togglePopup('1838','h1838')" target="_self">Splitting a Charge between Customer Nodes</a></p>
+<div id="d1838" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1838')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="syntaxheading">Requirement</p>
+<p class="bodytext">Two customer nodes share a service defined at one of the nodes.  The other customer node agrees to pay 30% of the charges for the service.</p>
+<p class="syntaxheading">Solution</p>
+<ol class="listnumber"><li class="listnumber">Define a duplicate of the charge category instance, with the account number set to the primary account of the other node, and the proportion set to 0.3 (the proportion this node will pay).</li><li class="listnumber">Amend the existing charge category instance, by changing the proportion to 0.7 (the proportion paid by this customer node).<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="listnote">When charges are split in this way, the sum of all the proportions defined must be 1.</p></td></tr></table>
+</li></ol></div></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">Example 4</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext"><a id="h1840" class="popup" title="Example 4: Using a Different Account Type" href="javascript:void(0)" onclick="togglePopup('1840','h1840')" target="_self">Using a different Account Type</a></p>
+<div id="d1840" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1840')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="syntaxheading">Requirement</p>
+<p class="bodytext">The company awards loyalty points based on usage.  The number of points accumulated is to be recorded in an account of type Loyalty, defined at the customer node.</p>
+<p class="syntaxheading">Solution</p>
+<p class="bodytext">Define the base charge category with the account number empty, and the account type set to Loyalty.  When the charge category instance is defined, the number of the Loyalty account at the customer node is entered automatically.</p>
+
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><ul class="notelistbullet"><li class="notelistbullet">The appropriate account type must be defined before it can be used in the default charge category.</li><li class="notelistbullet">The service instance cannot be activated if the customer node does not have an account of the appropriate type.</li></td></tr></table></ul></div></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">Example 5</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext"><a id="h1842" class="popup" title="Example 5: Tracking Payments Owing to a Supplier" href="javascript:void(0)" onclick="togglePopup('1842','h1842')" target="_self">Tracking Payments Owing to a Supplier</a></p>
+<div id="d1842" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1842')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="syntaxheading">Requirement</p>
+<p class="bodytext">Another service provider provides a service being sold to customers, and it is necessary to track the payments due to this provider.</p>
+<p class="syntaxheading">Solution</p>
+<ol class="listnumber"><li class="listnumber">Create a customer node for the supplier.  Payments due to this supplier can then be accumulated in the primary account.</li><li class="listnumber">Define a tariff for the charges to be paid by customers in the usual way and include it in the product definition.  A charge category instance at each customer node posts charges to the appropriate account.</li><li class="listnumber">Define another tariff to calculate the payment due to the provider, and include it in the product definition. </li><li class="listnumber">Set the account number of its default charge category to point to the primary account of the provider's customer node.  The charge category instance for this tariff then posts charges to the supplier's account.</li></ol></div></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">Example 6</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext"><a id="h1844" class="popup" title="Example 6: Using the 'From' Account" href="javascript:void(0)" onclick="togglePopup('1844','h1844')" target="_self">Using the &#8216;From&#8217; Account</a></p>
+<div id="d1844" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1844')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="syntaxheading">Requirement</p>
+<p class="bodytext">A tax based on usage is payable by the customer.  The tax due to the tax authority, for whom the company is acting as a collecting agent, must be recorded.</p>
+<p class="syntaxheading">Solution</p>
+<ol class="listnumber"><li class="listnumber">Create a customer node for the tax authority.</li><li class="listnumber">Define a tariff for the tax payable, and add it to the product definition.</li><li class="listnumber">Define the base default charge category with the 'to' account number empty (for automatic assignment of the customer's account number when the charge category instance is created), and the 'from' account number set to the primary account number of the tax authority's customer node.<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="listnote">The charge type of the base default charge category should be set to 'Charge Transfer'.</p></td></tr></table>
+</li></ol></div></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">Example 7</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext"><a id="h1846" class="popup" title="Example 7: Charge Category for a Global Tariff" href="javascript:void(0)" onclick="togglePopup('1846','h1846')" target="_self">Charge Category for a Global Tariff</a></p>
+<div id="d1846" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1846')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="syntaxheading">Requirement</p>
+<p class="bodytext">The company wants to keep a record of all calls to a specified destination switch.</p>
+<p class="syntaxheading">Solution</p>
+<p class="bodytext">Define:</p>
+<ol class="listnumber"><li class="listnumber">A global tariff with context Normalised Event that calculates the desired quantity.  Set the eligibility for this tariff to identify the calls to be recorded.</li><li class="listnumber">The base default charge category for this tariff to point to the account in which to store the call information.<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="listnote">The solution is one of the few times when an account number is defined in the base default charge category, because a global tariff uses this default directly, rather than an instance of it.  If the base default charge category does not include an account number, the tariff does not work.</p></td></tr></table>
+</li></ol></div></td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o1829"></a><h3 class="heading3">Example 1: Basic Charge Category</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Example 1: Basic Charge Category' (1829)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Requirement</p>
+<p class="bodytext">Costs and benefits are to be posted to the primary account of the customer node.  GL codes are not used.</p>
+<p class="syntaxheading">Solution</p>
+<p class="bodytext">Define the base default charge category without specifying either an account number or a GL code, but specifying the same account type as the primary account.  The account number of the customer node's primary account is selected automatically when the charge category instance is defined.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o1837"></a><h3 class="heading3">Example 2: Assigning Charges to Another Customer Node</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Example 2: Assigning Charges to Another Customer Node' (1837)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Requirement</p>
+<p class="bodytext">Another department (with its own customer node) agrees to pay the charges for a service defined at a customer node.</p>
+<p class="syntaxheading">Solution</p>
+<p class="bodytext">Amend the charge category instance for the service, by replacing the account number with the primary account number of the other customer node.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o1839"></a><h3 class="heading3">Example 3: Splitting a Charge between Customer Nodes</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Example 3: Splitting a Charge between Customer Nodes' (1839)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Requirement</p>
+<p class="bodytext">Two customer nodes share a service defined at one of the nodes.  The other customer node agrees to pay 30% of the charges for the service.</p>
+<p class="syntaxheading">Solution</p>
+<ol class="listnumber"><li class="listnumber">Define a duplicate of the charge category instance, with the account number set to the primary account of the other node, and the proportion set to 0.3 (the proportion this node will pay).</li><li class="listnumber">Amend the existing charge category instance, by changing the proportion to 0.7 (the proportion paid by this customer node).<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="listnote">When charges are split in this way, the sum of all the proportions defined must be 1.</p></td></tr></table>
+</li></ol>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o1841"></a><h3 class="heading3">Example 4: Using a Different Account Type</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Example 4: Using a Different Account Type' (1841)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Requirement</p>
+<p class="bodytext">The company awards loyalty points based on usage.  The number of points accumulated is to be recorded in an account of type Loyalty, defined at the customer node.</p>
+<p class="syntaxheading">Solution</p>
+<p class="bodytext">Define the base charge category with the account number empty, and the account type set to Loyalty.  When the charge category instance is defined, the number of the Loyalty account at the customer node is entered automatically.</p>
+
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><ul class="notelistbullet"><li class="notelistbullet">The appropriate account type must be defined before it can be used in the default charge category.</li><li class="notelistbullet">The service instance cannot be activated if the customer node does not have an account of the appropriate type.</li></td></tr></table></ul>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o1843"></a><h3 class="heading3">Example 5: Tracking Payments Owing to a Supplier</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Example 5: Tracking Payments Owing to a Supplier' (1843)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Requirement</p>
+<p class="bodytext">Another service provider provides a service being sold to customers, and it is necessary to track the payments due to this provider.</p>
+<p class="syntaxheading">Solution</p>
+<ol class="listnumber"><li class="listnumber">Create a customer node for the supplier.  Payments due to this supplier can then be accumulated in the primary account.</li><li class="listnumber">Define a tariff for the charges to be paid by customers in the usual way and include it in the product definition.  A charge category instance at each customer node posts charges to the appropriate account.</li><li class="listnumber">Define another tariff to calculate the payment due to the provider, and include it in the product definition. </li><li class="listnumber">Set the account number of its default charge category to point to the primary account of the provider's customer node.  The charge category instance for this tariff then posts charges to the supplier's account.</li></ol>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o1845"></a><h3 class="heading3">Example 6: Using the 'From' Account</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Example 6: Using the 'From' Account' (1845)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Requirement</p>
+<p class="bodytext">A tax based on usage is payable by the customer.  The tax due to the tax authority, for whom the company is acting as a collecting agent, must be recorded.</p>
+<p class="syntaxheading">Solution</p>
+<ol class="listnumber"><li class="listnumber">Create a customer node for the tax authority.</li><li class="listnumber">Define a tariff for the tax payable, and add it to the product definition.</li><li class="listnumber">Define the base default charge category with the 'to' account number empty (for automatic assignment of the customer's account number when the charge category instance is created), and the 'from' account number set to the primary account number of the tax authority's customer node.<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="listnote">The charge type of the base default charge category should be set to 'Charge Transfer'.</p></td></tr></table>
+</li></ol>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o1847"></a><h3 class="heading3">Example 7: Charge Category for a Global Tariff</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Example 7: Charge Category for a Global Tariff' (1847)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Requirement</p>
+<p class="bodytext">The company wants to keep a record of all calls to a specified destination switch.</p>
+<p class="syntaxheading">Solution</p>
+<p class="bodytext">Define:</p>
+<ol class="listnumber"><li class="listnumber">A global tariff with context Normalised Event that calculates the desired quantity.  Set the eligibility for this tariff to identify the calls to be recorded.</li><li class="listnumber">The base default charge category for this tariff to point to the account in which to store the call information.<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="listnote">The solution is one of the few times when an account number is defined in the base default charge category, because a global tariff uses this default directly, rather than an instance of it.  If the base default charge category does not include an account number, the tariff does not work.</p></td></tr></table>
+</li></ol>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="1852.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="2162.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

@@ -1,0 +1,240 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> biGLAccountingPeriodAllocate?[]() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "12596.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "57738.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('63504')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="12596.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="57738.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">biGLAccountingPeriodAllocate?[]()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'biGLAccountingPeriodAllocate?[]()' (63504)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<pre class="unixinputp">biGLAccountingPeriodAllocate?[](    const EffectiveDate~,     const Transactions?[],     const AccountingPeriods?[],     const AccountingPeriodCloseFlg&amp;)</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Called by the <span class="unixoutputc">gl_sales_journal_post</span> server utility to allocate transaction amounts to accounting periods.</p>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="312" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">GL Guidance</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="bold">Method</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Remote</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="186"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="510"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">EffectiveDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">In: Effective date-time of a Sales Journal posting task.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">Transactions?[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">In: Details of the financial transactions to be allocated to accounting periods.</p>
+<p class="tablebodytext">Each element in the array is a hash representing a transaction.</p>
+<p class="tablebodytext">The table below lists the hash keys.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">AccountingPeriods?[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">In: Array of details of accounting periods, ordered by <span class="unixoutputc">START_DATE</span>.</p>
+<p class="tablebodytext">The transaction amounts are allocated to accounting periods that exist in the array.  Each element in the array is a hash representing an accounting period.</p>
+<p class="tablebodytext">The table below lists the hash keys.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">CloseFlg&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">In: Indicates whether the task is part of an operation to close an accounting period.</p>
+<p class="tablebodytext">It is True if the Sales Journal posting task is part of the operation to close an accounting period, and False otherwise.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">An array of hashes, with each hash representing the allocation of a transaction amount to a number of accounting periods.  The keys of the hash are text representations of <span class="unixoutputc">ACCOUNTING_PERIOD_ID</span> values.  </p>
+<p class="bodytext">For example, a transaction amount of 97.14 is to be allocated to the accounting periods with IDs 1001, 1002, and 1003; the amounts to be allocated to these accounting periods are (respectively) 23.89, 56.23, and 17.02.  This allocation is represented by the following hash:</p>
+<p class="bodytext"><span class="unixoutputc">{ '1001' =&gt; 23.89, '1002' =&gt; 56.23, '1003' =&gt; 17.02 } </span></p>
+<p class="bodytext">The <span class="unixoutputc">nth</span> element in the returned array represents the allocations for the <span class="unixoutputc">nth</span> transaction in <span class="unixoutputc">Transactions?[]</span>. </p>
+<p class="bodytext">The number of hashes in the returned array must match the number of elements in the <span class="unixoutputc">Transactions?[]</span> parameter.  A hash can be empty, indicating that none of the transaction's amount is to be allocated to any accounting period. </p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">This function can be used to return details of the previous allocations for the transactions, in order to calculate a delta posting per accounting period. The following must be specified:</p>
+<ul class="listbullet"><li class="listbullet"><span class="unixoutputc">POSTED_AMOUNT</span> parameter.</li><li class="listbullet">Previous value of <span class="unixoutputc">AMOUNT</span> from the normalised event file GL guidance record in the <span class="unixoutputc">AMOUNT</span> parameter.</li><li class="listbullet">Second <span class="unixoutputc">Transaction?[]</span> element with:<ul class="listdashbullet2"><li class="listdashbullet2"><span class="unixoutputc">POSTED_AMOUNT</span> unspecified</li><li class="listdashbullet2"><span class="unixoutputc">AMOUNT</span> equal to the new <span class="unixoutputc">AMOUNT</span> value from the normalised event file GL guidance record.</li></ul></li></ul><p class="bodytext">This function can be customised, usually for modifying the allocation logic.</p>
+<p class="bodytext">A default implementation is provided for this function.  It iterates over the <span class="unixoutputc">Transactions?[]</span> array, passing each element to the <span class="unixoutputc">zGLAccountingPeriodAllocateDefault#{}()</span> function, and returning the aggregate of the results from each call.</p>
+<p class="bodytext">The following table lists the <span class="unixoutputc">Transactions?[]</span> hash keys.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Transactions?[] Hash Keys</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="151"><p class="tableheading">Key</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="545"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="151"><p class="tablebodytext"><span class="unixoutputc">AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="545"><p class="tablebodytext">Amount to be allocated over accounting periods.</p>
+<p class="tablebodytext">When the function is being used to return details of the previous allocations for the transaction, it is the previous value of <span class="unixoutputc">AMOUNT</span> from the normalised event file GL guidance record or invoice GL guidance record.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="151"><p class="tablebodytext"><span class="unixoutputc">CURRENCY_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="545"><p class="tablebodytext">ID of the currency of the amount.</p>
+<p class="tablebodytext">It can be used for rounding allocation amounts to an appropriate number of decimal places.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="151"><p class="tablebodytext"><span class="unixoutputc">START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="545"><p class="tablebodytext">Start date-time of period of allocation.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="151"><p class="tablebodytext"><span class="unixoutputc">END_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="545"><p class="tablebodytext">End date-time of period of allocation.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="151"><p class="tablebodytext"><span class="unixoutputc">EARLIEST_END_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="545"><p class="tablebodytext">No amount can be apportioned to an accounting period that ends before this date-time.</p>
+<p class="tablebodytext">It is usually identical to <span class="unixoutputc">START_DATE</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="151"><p class="tablebodytext"><span class="unixoutputc">POSTED_AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="545"><p class="tablebodytext">Amount of the transaction that has been posted to date.</p>
+<p class="tablebodytext">It exists only if the transaction has been partially posted during an earlier Sales Journal posting task.</p>
+<p class="tablebodytext">For a normalised event file with a recognition period, it is the <span class="unixoutputc">POSTED_AMOUNT</span> from an normalised event file GL guidance record. </p>
+<p class="tablebodytext">For an invoice with a deferral amount, it is the <span class="unixoutputc">BE_POSTED_AMOUNT</span> from an invoice GL guidance record.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="151"><p class="tablebodytext"><span class="unixoutputc">FLAGS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="545"><p class="tablebodytext">Bitmask controlling how this amount is to be allocated to accounting periods. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">0<p class="tablelistcontinue">The function raises an error if a required accounting period is absent from the <span class="unixoutputc">AccountingPeriods?[]</span> parameter. </p>
+</li><li class="tablelistbullet">1<p class="tablelistcontinue">The function does not raise an error if a required accounting period is absent.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">It is recommended that customisations keep this functionality.</p></td></tr></table>
+</li></ul></td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists the <span class="unixoutputc">AccountingPeriods?[]</span> hash keys.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">AccountingPeriods?[] Hash Keys</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="192"><p class="tableheading">Key</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="504"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">ACCOUNTING_PERIOD_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">ID of accounting period.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">Start date-time of accounting period.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">END_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">End date-time of accounting period.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="12596.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="57738.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

@@ -1,0 +1,274 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> ACCOUNT_RESERVATION_TRE_V </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "51579.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "50754.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7526');highlight('7416')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="51579.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="50754.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">ACCOUNT_RESERVATION_TRE_V</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'ACCOUNT_RESERVATION_TRE_V' (7416)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="unixoutputc">ACCOUNT_RESERVATION_TRE_V</span> view defines details that can be created, updated, and retrieved for both volatile and non-volatile account reservations.</p>
+<p class="syntaxheading">Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="210"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="132"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="354"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">RESERVATION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (40)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">ID of a reservation.</p>
+<p class="tablebodytext">If not specified for a new reservation, a value is automatically generated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">ID of the account against which the reservation was made.</p>
+<p class="tablebodytext">It supports multiple account reservations (volatile only).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">SEQNR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Sequence number (a number starting at and increasing in increments of 1) indicating the number of times the reservation was created and updated.</p>
+<p class="tablebodytext">It is used to provide fine-grained optimistic locking of reservations and to identify replicated operations being applied out of order during cache replication.</p>
+<p class="tablebodytext">When updating a reservation, it must be specified and set to the last value retrieved.</p>
+<p class="tablebodytext">It is automatically incremented: </p>
+<ul class="tablelistbullet"><li class="tablelistbullet">As part of the <span class="unixoutputc">AccountReservationUpdate&amp;()</span> call and the incremented value is returned.</li><li class="tablelistbullet">If event rating updates the reservation rather than cancelling it. The update may partially consume the reservation or disassociate it from an account.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">LAST_MODIFIED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Date-time that the record was last modified.</p>
+<p class="tablebodytext">It is automatically updated (cannot be manually modified).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_SEQNR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Optional column that can be passed to the <span class="unixoutputc">AccountReservationInsert&amp;()</span> and <span class="unixoutputc">AccountReservationUpdate&amp;()</span> functions.</p>
+<p class="tablebodytext">If specified, its value should be set to the value returned by <span class="unixoutputc">AccountFetchRealTime&amp;()</span> for the account.</p>
+<p class="tablebodytext">When specified for <span class="unixoutputc">AccountReservationInsert&amp;()</span> or <span class="unixoutputc">AccountReservationUpdate&amp;()</span>, the standard credit authorisation check performed by these functions is disabled.  Credit authorisation then becomes the responsibility of the caller and it is assumed that authorisation is successful if <span class="unixoutputc">AccountReservationInsert&amp;()</span> or<span class="unixoutputc"> AccountReservationUpdate&amp;()</span> is called.</p>
+<p class="tablebodytext">The value passed to these functions for <span class="unixoutputc">ACCOUNT_SEQNR</span> is used to verify that none of the account details have been updated since the last<span class="unixoutputc"> AccountFetchRealTime&amp;()</span> call was made.</p>
+<p class="tablebodytext">If account details have been updated since the last <span class="unixoutputc">AccountFetchRealTime&amp;()</span> call and external authorisation check was made, <span class="unixoutputc">AccountReservationInsert&amp;()</span> or <span class="unixoutputc">AccountReservationUpdate&amp;()</span> fail with an error indicating that the account details have been updated by another user.</p>
+<p class="tablebodytext">On failure, the caller should re-fetch the account details, re-execute the credit authorisation check, and, if the check is successful, call <span class="unixoutputc">AccountReservationInsert$()</span> or <span class="unixoutputc">AccountReservationUpdate&amp;()</span> again.</p>
+<p class="tablebodytext">It supports multiple account reservations (volatile only).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">RESERVED_AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">REAL (19,3)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Amount associated with the reservation.</p>
+<p class="tablebodytext">It supports multiple account reservations (volatile only).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">RESERVED_AMOUNT_CURRENCY_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">ID of the currency of the reserved amount.</p>
+<p class="tablebodytext">If not specified, the reserved amount is in the currency of the account.</p>
+<p class="tablebodytext">It supports multiple account reservations (volatile only).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_RESERVED_AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Amount of the reservation in the currency of the account.</p>
+<p class="tablebodytext">If<span class="unixoutputc"> </span>NULL, it equals <span class="unixoutputc">RESERVED_AMOUNT</span>.</p>
+<p class="tablebodytext">It supports multiple account reservations (volatile only).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">CONSUMED_AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Amount considered consumed from the reservation.</p>
+<p class="tablebodytext">It supports multiple account reservations (volatile only).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_CONSUMED_AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (19,3)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Amount considered consumed from the reservation in the currency of the account.</p>
+<p class="tablebodytext">If <span class="unixoutputc">RESERVED_AMOUNT_CURRENCY_ID</span> is NULL, this amount is the value and in the currency of <span class="unixoutputc">CONSUMED_AMOUNT</span>.</p>
+<p class="tablebodytext">It cannot be specified for inserts or updates.</p>
+<p class="tablebodytext">It supports multiple account reservations (volatile only).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">CREATION_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Date-time the reservation was first created.</p>
+<p class="tablebodytext">It is automatically populated when a reservation is first created and cannot be directly specified for inserts or updates.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">EXPIRY_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Date-time the reservation is due to expire.</p>
+<p class="tablebodytext">If the reservation is associated with multiple accounts, the same expiry date-time is applied to all reserved amounts.</p>
+<p class="tablebodytext">If not specified, the reservation never expires.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">NON_VOLATILE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">If set to 1 (TRUE), the reservation is stored in the database.</p>
+<p class="tablebodytext">A single account reservation that was originally volatile can be updated to be non-volatile. </p>
+<p class="tablebodytext">Reservations across multiple accounts are supported as volatile only.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">RECOVERY_MODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext"><a id="h79002" class="jump" title="Pseudo-columns" href="7526.htm#o79001" target="_self">Pseudo-column</a></p>
+<p class="tablebodytext">Insert only</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">If specified and set to 1 (TRUE), the reservation is non-volatile and was recovered as part of a system restart.</p>
+<p class="tablebodytext"><span class="unixoutputc">AccountReservationInsert&amp;()</span> should not be used in an attempt to reinsert this reservation.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">INVOICE_CREDIT_MODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext"><a id="h79002_2" class="jump" title="Pseudo-columns" href="7526.htm#o79001" target="_self">Pseudo-column</a></p>
+<p class="tablebodytext">Insert and update only</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Pseudo-column used for inserts or updates. </p>
+<p class="tablebodytext">If specified and set to 1 (TRUE), credit limit checking should be done using <span class="unixoutputc">AVAILABLE_INVOICE_CREDIT</span> for the account rather than <span class="unixoutputc">AVAILABLE_CREDIT</span>.</p>
+<p class="tablebodytext">If set to 1 and the specified account is not the prime account for a customer node with its report level set to Invoice, an error is raised.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">GENERAL_1 - GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">General fields 1 - 10 that can be stored for this reservation.</p>
+<p class="tablebodytext">Entity validation associated with the account type of the account define how these fields are displayed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">AUTO_CONSUMPTION_MODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Pseudo-column</p>
+<p class="tablebodytext">Insert only</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Determines how a reservation is allocated between <span class="unixoutputc">RESERVED_AMOUNT</span> and <span class="unixoutputc">CONSUMED_AMOUNT</span>. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">0 (Reserve All): The reserved amount is not automatically considered as being consumed. The <span class="unixoutputc">CONSUMED_AMOUNT</span> is always zero.</li><li class="tablelistbullet">1 (Consume All): The reserved amount is automatically considered as being consumed. The <span class="unixoutputc">RESERVED_AMOUNT</span> is always zero.</li><li class="tablelistbullet">2 (Consume Update): When a reservation is updated, any previously reserved amounts are added to the consumed amount. </li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">NO_AUTO_INSERT_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Pseudo-column</p>
+<p class="tablebodytext">Update only</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">By default, when an update is performed for a reservation that does not exist, the reservation is automatically inserted. No error is returned.</p>
+<p class="tablebodytext">If this column is set to 1, the update returns an error if the reservation does not exist and no insertion occurs. This is used when the default behaviour is undesirable; for example, during synchronisation of the backup cache to the master cache during rating.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="51579.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="50754.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

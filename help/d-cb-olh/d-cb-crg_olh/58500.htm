@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> EntitlementCategory </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "41620.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "61398.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('8157');highlight('58500')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="41620.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="61398.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">EntitlementCategory</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'EntitlementCategory' (58500)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="unixoutputc">EntitlementCategory</span> derived attribute table defines the categories that apply to entitlements.</p>
+<p class="syntaxheading">Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="216"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="90"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="390"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">Category (Index 1)</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">ID of an entitlement category.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">Type (Result 1)</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">Name of an entitlement type to which the category is associated. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">Unit of Measure (Result 2)</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">Units in which allocations to entitlements of the category are measured.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">ENTITLEMENT_UNIT_OF_MEASURE</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">Class (Result 3)</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">Classification of entitlements for the category. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">1 (Recurring)</li><li class="tablelistbullet">2 (One-off)</li><li class="tablelistbullet">3 (Dynamic).</li></ul><p class="tablebodytext">It is based on the <span class="unixoutputc">ENTITLEMENT_CLASS</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">Recurring Period (Result 4)</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">Period of time between each repetition of an entitlement for the category. </p>
+<p class="tablebodytext">This column is mandatory and only available when the entitlement has a class of Recurring. The value must be greater than zero.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">Recurring Period Units (Result 5)</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">Units for the duration specified by Recurring Period. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">0 (Bill Cycles)</li><li class="tablelistbullet">1 (Months)</li><li class="tablelistbullet">2 (Days)</li><li class="tablelistbullet">3 (Hours).</li></ul><p class="tablebodytext">It is based on the <span class="unixoutputc">ENTITLEMENT_PERIOD_UNIT</span> reference type.</p>
+<p class="tablebodytext">If entitlements are aligned with bill cycles, the value must be 0 (Bill Cycles).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">Validity Period (Result 6)</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">Period of time for which allocations to the entitlement remain valid.</p>
+<p class="tablebodytext">The value must be greater than zero.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">Validity Period Units (Result 7)</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">Units for the duration specified by Validity Period. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">0 (Bill Cycles)</li><li class="tablelistbullet">1 (Months)</li><li class="tablelistbullet">2 (Days)</li><li class="tablelistbullet">3 (Hours).</li></ul><p class="tablebodytext">It is based on the <span class="unixoutputc">ENTITLEMENT_PERIOD_UNIT</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">Warning Period (Result 8)</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">Duration of the advance period before the entitlement expires. </p>
+<p class="tablebodytext">At the start of the advance period, a warning function (defined in the entitlement type) is evaluated, if specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">Warning Period Units (Result 9)</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">Units for the duration specified by Warning Period. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">2 (Days)</li><li class="tablelistbullet">3 (Hours)</li><li class="tablelistbullet">4 (Minutes).</li></ul><p class="tablebodytext">If Warning Period is specified, a value must be supplied for this column.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">ENTITLEMENT_WARNING_PERIOD_UNIT</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">Expire on Suspension? (Result 10)</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">If set to 1 (TRUE), entitlement allocations expire when an entitlement associate with this category is suspended.</p>
+<p class="tablebodytext">If set to 0 (FALSE), entitlement allocations are unchanged. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">Consumption Priority (Result 11)</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">Order in which allocations associated with this category are consumed, relative to entitlements of other categories.</p>
+<p class="tablebodytext">The value must be greater than zero.</p>
+<p class="tablebodytext">A lower value is considered as a higher priority.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">Delay Period (Result 12)</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">Duration to delay an update to the status of a Units for the duration specified by Warning Period. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">2 (Days)</li><li class="tablelistbullet">3 (Hours).</li><li class="tablelistbullet">4 (Minutes)</li></ul><p class="tablebodytext">If Warning Period is specified, a value must be supplied for this column.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">ENTITLEMENT_WARNING_PERIOD_UNIT</span> reference type.companion product.</p>
+<p class="tablebodytext">The update occurs when a recurring real time tariff is evaluated, and fails to reserve an amount from an allocation to an entitlement of this category.</p>
+<p class="tablebodytext">The value must be greater than 0.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">Delay Period Units (Result 13)</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">Units for the duration specified by Delay Period. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">2 (Days)</li><li class="tablelistbullet">3 (Hours).</li></ul><p class="tablebodytext">If Delay Period is specified, a value must be supplied for this column.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">ENTITLEMENT_DELAY_PERIOD_UNIT</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">Warning Allocation Period (Result 14)</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">Duration of the advance period before the entitlement allocation expires.</p>
+<p class="tablebodytext">At the start of the advance period, a warning function (defaulted from the entitlement type) is evaluated, if specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">Warning Allocation Period Units (Result 15)</span></p>
+</td>
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">Units for the duration specified by Warning Allocation Period. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">2 (Days)</li><li class="tablelistbullet">3 (Hours)</li><li class="tablelistbullet">4 (Minutes).</li></ul><p class="bodytext">If Warning Allocation Period is specified, a value must be supplied for this column.</p>
+<p class="bodytext">It is based on the <span class="unixoutputc">ENTITLEMENT_WARNING_PERIOD_UNIT</span> reference type.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="41620.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="61398.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

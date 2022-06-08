@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> TRE Named Servers </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "4643.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "4633.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('4637');expand('4501');highlight('4609')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="4643.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="4633.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">TRE Named Servers</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'TRE Named Servers' (4609)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">TRE named servers advertise services available to clients.  Each service is made up of one or more remote functions that carry out some operation within the service.  For example, the service designed to work with the person entity in the Convergent Billing database (biPerson) contains functions for locating, adding, updating, and deleting a person record in the database.</p>
+<p class="bodytext">The named servers are:</p>
+<ul class="listbullet"><li class="listbullet">Authentication Server (<a id="h60500" class="jump" title="Authentication Server (authsvr)" href="24362.htm" target="_self">authsvr</a>)</li><li class="listbullet">Bill Generation Server (<a id="h4610" class="jump" title="trebgp" href="4611.htm" target="_self">trebgp</a>)</li><li class="listbullet">Database Read-Only Server (<a id="h4612" class="jump" title="trerodb" href="4613.htm" target="_self">trerodb</a>)</li><li class="listbullet">Invoice Generation Server (<a id="h5756" class="jump" title="treigp" href="4759.htm" target="_self">treigp</a>)</li><li class="listbullet">Monitor Services Server (<a id="h4600" class="jump" title="tremon" href="4601.htm" target="_self">tremon</a>)</li><li class="listbullet">Rating Server (<a id="h4616" class="jump" title="trerate" href="4617.htm" target="_self">trerate</a>)</li><li class="listbullet">Remote Services Server (<a id="h4618" class="jump" title="treproxy" href="4619.htm" target="_self">treproxy</a>)</li><li class="listbullet">Rental Generation Server (<a id="h4624" class="jump" title="trergp" href="59558.htm" target="_self">trergp</a>)</li><li class="listbullet">Simple Network Management Protocol (SNMP) trap server (<a id="h4626" class="jump" title="tresnmp" href="4627.htm" target="_self">tresnmp</a>)</li><li class="listbullet">Socket Interface Server (<a id="h4628" class="jump" title="tresok" href="4629.htm" target="_self">tresok</a>)</li><li class="listbullet">Transactional Rating Server (<a id="h42369" class="jump" title="trerate_tran" href="40533.htm" target="_self">trerate_tran</a>)</li><li class="listbullet">Transactional Server (<a id="h4630" class="jump" title="trerwdb" href="4631.htm" target="_self">trerwdb</a>)</li></ul><p class="bodytext">All of these servers have common services, as follows:</p>
+<ul class="listbullet"><li class="listbullet"><span class="unixoutputc">biPurge</span><p class="listcontinue">Receives events sent out when cached configuration (for example, functions or derived attribute tables) changes.</p>
+</li><li class="listbullet"><span class="unixoutputc">biTrcInvoice</span><p class="listcontinue">Receives events that invoke a specified EPM function in the server with a given set of parameters.  <span class="unixoutputc">biTrcInvoice</span> is used to gather performance statistics from the servers.</p>
+</li><li class="listbullet"><span class="unixoutputc">biTrcMem</span><p class="listcontinue">Processes the event that outputs a memory report for the server.</p>
+</li><li class="listbullet"><span class="unixoutputc">biTrcTre</span><p class="listcontinue">Processes the event that activates or deactivates TRE message tracing.</p>
+</li></ul>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="4643.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="4633.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

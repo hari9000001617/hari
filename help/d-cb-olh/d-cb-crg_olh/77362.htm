@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>  fEV_ProductInstanceOfferUpgrade&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "58587.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "42781.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('51544');expand('28068');expand('45618');highlight('77362')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="58587.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="42781.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h4 class="heading4"> fEV_ProductInstanceOfferUpgrade&amp;()</h4>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic ' fEV_ProductInstanceOfferUpgrade&amp;()' (77362)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<pre class="unixinputp">fEV_ProductInstanceOfferUpgrade&amp;(    ProductInstanceId&amp;,    EffectiveDate~,    var LastModified~,    NreProdOfferNodeId&amp;)</pre>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Upgrades a product instance to a different offer, including all associated companion product instances. If the new product offer includes new companion products, the appropriate companion product instances are created. </p>
+<p class="syntaxheading">Context</p>
+<p class="bodytext">The following groups of variables are available throughout all stages of processing a product instance offer upgrade request, except where otherwise specified:</p>
+<ul class="listbullet"><li class="listbullet">System client</li><li class="listbullet">Operator</li><li class="listbullet">Miscellaneous<ul class="listdashbullet2"><li class="listdashbullet2"><span class="unixoutputc">evFormCode$</span> contains the value <span class="unixoutputc">PRODSVR</span>.</li><li class="listdashbullet2"><span class="unixoutputc">evLastRowInd&amp;</span> contains the value <span class="unixoutputc">0</span> during all stages of processing except for the evaluation of the product instance pre-commit expressions.</li><li class="listdashbullet2"><span class="unixoutputc">evRowStatus$</span> contains the value <span class="unixoutputc">Update</span>.</li></ul></li><li class="listbullet">Product instance<p class="listcontinue">The product instance variables are available only during the processing of a base product instance. Companion product instances have access to the companion product instance variables only.</p>
+<ul class="listdashbullet2"><li class="listdashbullet2"><span class="unixoutputc">evProdAllocate&amp;</span> contains the value of 1 if <span class="unixoutputc">ALLOCATE_IND_CODE </span>is specified and<span class="unixoutputc"> </span>equipment is to be allocated.</li><li class="listdashbullet2"><span class="unixoutputc">evProdComplete&amp;</span> contains the value of 1 if <span class="unixoutputc">COMPLETE_IND_CODE </span>is specified and the product instance is to be completed.</li></ul></li><li class="listbullet">Companion product instance<p class="listcontinue">The companion product instance variables may only be available during the companion product instance processing stages.</p>
+</li></ul><p class="syntaxheading">Parameters</p>
+<table class="tableintopic" width="702" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="186"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="516"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">ProductInstanceId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">In:  ID of the base product instance to upgrade with the new top-level product offer.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">EffectiveDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">In:  Effective date-time of the base product instance record to upgrade.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">LastModified~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">In/Out:  Last modified date-time of the base product instance record to upgrade.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">NewProductOfferNodeId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">In:  ID of the new top-level product offer node to assign to the base product instance.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Processing</p>
+<p class="bodytext">This function calls the following functions to perform the required processing: </p>
+<ul class="listbullet"><li class="listbullet"><span class="unixoutputc"><a id="h28185" class="jump" title="fEV_ProdInstInsert&amp;()" href="28119.htm" target="_self">fEV_ProdInstInsert&amp;()</a></span></li><li class="listbullet"><span class="unixoutputc"><a id="h28186" class="jump" title="fEV_ProdInstUpdate&amp;()" href="58587.htm" target="_self">fEV_ProdInstUpdate&amp;()</a></span></li><li class="listbullet"><a id="h28183" class="jump" title="fEV_ProdInstDelete&amp;()" href="28117.htm" target="_self">fEV_ProdInstDelete&amp;()</a>.</li></ul><p class="syntaxheading">Returns</p>
+<p class="bodytext">1 if successful; otherwise, an error is raised.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">This function updates the <span class="unixoutputc"><a id="h59522" class="jump" title="PRODUCT_INSTANCE_TRE_V" href="59094.htm" target="_self">PRODUCT_INSTANCE_TRE_V</a></span> view for the specified base product instance and its associated companion products, assigning the specified top-level offer to the base product and allocating the companion instance to offers within the hierarchy, if possible.  It also creates additional mandatory companion product instances required by the upgraded offer hierarchy.</p>
+<p class="bodytext">When allocating companion product instances to the new hierarchy, the following rules apply:</p>
+<ul class="listbullet"><li class="listbullet">Preference is given to the largest sub-tree match between the hierarchies.&nbsp; The largest sub-tree above the current companion product is the highest parent node in the original branch that matches an offer in the new hierarchy.&nbsp; This parent node can be the immediate parent of the companion product, its grandparent, or a node further up the hierarchy. </li><li class="listbullet">After an offer node match is made, the entire sub-tree below it is mapped from the old hierarchy into the new hierarchy; any other companion products that fall within this sub-tree are automatically allocated to the new hierarchy based on this mapping.&nbsp;&nbsp;<p class="listcontinue">If the highest matching node can be matched to more than one node in the new hierarchy (that is, the same offer is used in multiple locations), the following order of preference is used with the best option implemented:</p>
+<ol class="listnumber2"><li class="listnumber2">Previously unmapped active nodes.<p class="listcontinue2">A node is defined as active when: </p>
+<ul class="listdashbullet3"><li class="listdashbullet3">A companion product instance is allocated to the new hierarchy, its new parent node becomes active, its grandparent node becomes active, and so on, up the chain to the top-level node.</li><li class="listdashbullet3">Setting the node to active, mandatory nodes below it are also made active, which in turn activates mandatory nodes below to propagate the activation down the tree. </li><li class="listdashbullet3">The new hierarchy's top-level node is set to active before the allocation begins.</li></ul></li><li class="listnumber2">Offer node with the highest hierarchy level. </li><li class="listnumber2">First matching node detected when a breadth-first traversal (across) is performed in the offer node hierarchy. <p class="listcontinue2">The traversal starts at the root node of the hierarchy. Child offer nodes of a specific node are traversed in ascending order of their sequence number (<span class="unixoutputc">SEQNR</span> in <span class="unixoutputc">PRODUCT_OFFER_OFFER_TRE_V</span>).</p>
+</li></ol></li><li class="listbullet">Companion products that cannot be allocated using their parent offer are put aside until all other companion products are processed. </li><li class="listbullet">The new hierarchy is searched for any product matches for unallocated companion products.&nbsp; <table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="listnote">If a match is made now, it is with nodes whose offer is different from the companion product's original offer. </p></td></tr></table>
+</li><li class="listbullet">If there is more than one product match in the new hierarchy (that is, the same companion product appears under multiple offer nodes), the following order of preference is used with the best option implemented: <ol class="listnumber2"><li class="listnumber2">Mandatory products on active offer nodes, where the offer node was not previously mapped in sub-tree matching. </li><li class="listnumber2">Products on active offer nodes, where the offer node was not previously mapped in sub-tree matching. </li><li class="listnumber2">Products on any offer nodes not previously mapped in sub-tree matching. </li><li class="listnumber2">Mandatory products on any active offer nodes. </li><li class="listnumber2">Products on any active offer nodes. </li><li class="listnumber2">Any product match. </li></ol></li><li class="listbullet">Matching can assign multiple instances of a companion product to the same offer node. </li></ul><p class="bodytext">The method used to select the best matched offer node is by assigning a numeric score to each of the candidate offer nodes, then selecting the offer node with the highest score. This score is calculated by comparing the <span class="unixoutputc">OFFER_MIN</span> and <span class="unixoutputc">OFFER_MAX</span> of the original node with the candidate offer node; the values that best match between the two pairs are allocated the highest score. In addition, the score is adjusted so that offer nodes are selected in the following order:</p>
+<ol class="listnumber"><li class="listnumber">No product offer instances is to be created or, cancelled or removed.</li><li class="listnumber">Product offer instances may be cancelled or removed in order to comply with the limit imposed by <span class="unixoutputc">OFFER_MAX</span>.</li><li class="listnumber">Additional product offer instances may be created in order to comply with the limit imposed by <span class="unixoutputc">OFFER_MIN</span>.</li><li class="listnumber">Additional product offer instances may be created in order to comply with the limit imposed by <span class="unixoutputc">OFFER_MIN,</span> and may require product offer instances to be cancelled or removed in order to comply with the limit imposed by <span class="unixoutputc">OFFER_MAX</span>.</li></ol><p class="bodytext">Although the rules attempt to handle ambiguities in matching, it is recommended that hierarchies intended for offer upgrades contain matching parent offers that group features that can be upgraded and appear only once within each hierarchy. </p>
+<p class="bodytext">When a match is found in the new hierarchy, the row is updated.  If no match is found, the offer and offer node are set to Null, and the status column is set to Cancelled, unless the previous status was Product Creation, in which case it is marked for deletion. </p>
+<p class="bodytext">When all allocations are made, the hierarchy is scanned for mandatory components on active nodes that have not been allocated. For each component found, a row is inserted, adding the minimum information to complete the row, and the row is marked for insertion.</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="58587.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="42781.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

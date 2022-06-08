@@ -1,0 +1,420 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> C Function Calls </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "61387.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "7629.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7625');expand('51074');highlight('49281')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="61387.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="7629.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">C Function Calls</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'C Function Calls' (49281)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Data Structures</p>
+<pre class="unixoutputp">/* The following definitions are provided.  */<br>#define TRE_NULL               1<br>#define TRE_NOTNULL            0</pre>
+<pre class="unixoutputp">/* API function result */</pre>
+<pre class="unixoutputp">typedef enum {</pre>
+<pre class="unixoutputp">    TRE_FAIL,</pre>
+<pre class="unixoutputp">    TRE_SUCC,</pre>
+<pre class="unixoutputp">    TRE_NOTREGISTERED,</pre>
+<pre class="unixoutputp">    TRE_NOTEXISTS,</pre>
+<pre class="unixoutputp">    TRE_REMOTEFAIL,</pre>
+<pre class="unixoutputp">    TRE_TIMEOUT</pre>
+<pre class="unixoutputp">} TRE_RESULT;</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">/* TRE error codes */</pre>
+<pre class="unixoutputp">typedef enum {</pre>
+<pre class="unixoutputp">    TRE_NOERROR = TRE_ERROR_START,/*  0: No error */</pre>
+<pre class="unixoutputp">    TRE_INTERNAL,		   /*  1: Internal error */</pre>
+<pre class="unixoutputp">    TRE_PARAMETER,         /*  2: Invalid function parameter */</pre>
+<pre class="unixoutputp">    TRE_TUXEDO,            /*  3: Tuxedo error */</pre>
+<pre class="unixoutputp">    TRE_MEMORY,            /*  4: Memory exception */</pre>
+<pre class="unixoutputp">    TRE_EXCEPTION,         /*  5: Unknown exception */</pre>
+<pre class="unixoutputp">    TRE_NOUPDATE,		   /*  6: Cannot update function details */</pre>
+<pre class="unixoutputp">    TRE_FUNCTION,		   /*  7: Invalid function definition */</pre>
+<pre class="unixoutputp">    TRE_PARAMETER_MISMATCH,/*  8: Parameter details do not match */</pre>
+<pre class="unixoutputp">    TRE_ASYNC_FUNCTION,    /*  9: Invalid asyncronous function definition*/</pre>
+<pre class="unixoutputp">    TRE_ORACLE,            /* 10: Oracle error */</pre>
+<pre class="unixoutputp">    TRE_DATABASE,          /* 11: Database validation error */</pre>
+<pre class="unixoutputp">    TRE_SERVICE,           /* 12: Internal error in service */</pre>
+<pre class="unixoutputp">    TRE_BUFFER,            /* 13: Communications buffer overflow */</pre>
+<pre class="unixoutputp">    TRE_BAD_TYPE,          /* 14: Parameter is incorrect type */</pre>
+<pre class="unixoutputp">    TRE_ERR_NOTREGISTERED, /* 15: Specified function is not registered */</pre>
+<pre class="unixoutputp">    TRE_ERR_NOTEXISTS,     /* 16: Specified function does not exist */</pre>
+<pre class="unixoutputp">    TRE_RETURN_MISMATCH,   /* 17: Return type details do not match */</pre>
+<pre class="unixoutputp">    TRE_NRPARAMS_MISMATCH, /* 18: Number of parameters does not match */</pre>
+<pre class="unixoutputp">		/* 19: Unsupported parameter type of &lt;&gt; for this interface */</pre>
+<pre class="unixoutputp">    TRE_PARAMETER_UNSUPPORTED,</pre>
+<pre class="unixoutputp">		/* 20: Element type does not match that of its array or hash */</pre>
+<pre class="unixoutputp">    TRE_ELEMENT_MISMATCH,  </pre>
+<pre class="unixoutputp">		/* 21: Can't pass a NOT NULL scalar value of UNKNOWN type. */</pre>
+<pre class="unixoutputp">    TRE_UNKNOWN_NOTNULL,  </pre>
+<pre class="unixoutputp">  		/* 22: Tuxedo error while calling function &lt;&gt; in service &lt;&gt; */</pre>
+<pre class="unixoutputp">    TRE_TUXEDO_SERVICE,  </pre>
+<pre class="unixoutputp">		/* 23: Invalid array or hash size of &lt;&gt; specified. */  </pre>
+<pre class="unixoutputp">    TRE_BAD_SIZE,         </pre>
+<pre class="unixoutputp">		/* 24: Bad date and time value passed to perl TRE interface */ </pre>
+<pre class="unixoutputp">    TRE_BAD_DATETIME,	 </pre>
+<pre class="unixoutputp">    TRE_DIAGNOSTIC,          /* 25: Diagnostic error */</pre>
+<pre class="unixoutputp">    TRE_ERR_NOTAUTHORISED,   /* 26: Not authorised to call function */</pre>
+<pre class="unixoutputp">    TRE_ERR_INVALIDOPERATOR, /* 27: Operator does not exist */</pre>
+<pre class="unixoutputp">    TRE_ERR_INVALIDSUPERUSER,/* 28: Operator does not have su privilege */</pre>
+<pre class="unixoutputp">    TRE_ERR_OPERATORSET,     /* 29: Not authorised to change operator */</pre>
+<pre class="unixoutputp">    TRE_SERVER_FUNCTION_DECODE,    /* 30: Error decoding function */</pre>
+<pre class="unixoutputp">    TRE_ERROR_RETURN_UNSET,	     /* 31: TRE Error return not set*/</pre>
+<pre class="unixoutputp">    TRE_LONG_OVERFLOW,             /* 32: A long value overflowed */</pre>
+<pre class="unixoutputp">		/* 33: partial character in source, but hit end */</pre>
+<pre class="unixoutputp">    TRE_UTF_SOURCEEXHAUSTED,   </pre>
+<pre class="unixoutputp">		/* 34: insuff. room in target for conversion  */</pre>
+<pre class="unixoutputp">    TRE_UTF_TARGETEXHAUSTED,</pre>
+<pre class="unixoutputp">    TRE_UTF_SOURCEILLEGAL,  /* 35: source sequence is illegal/malformed  */</pre>
+<pre class="unixoutputp">    TRE_UTF_DEFAULT,        /* 36: default UTF Conversion Error  */</pre>
+<pre class="unixoutputp">    TRE_MULTI_UTF16,        /* 37: Multibytes to UTF16 conversion error */</pre>
+<pre class="unixoutputp">    TRE_UTF16_MULTI,        /* 38: UTF16 to Multibyte conversion error  */</pre>
+<pre class="unixoutputp">    TRE_PARAM_MISMATCH,     /* 39: Parameters mismatch error            */</pre>
+<pre class="unixoutputp">    TRE_INV_OLD_PASSWD = TRE_ERROR_START+40, /* 40: Invalid old password */</pre>
+<pre class="unixoutputp">                /* 41: Exception retrieving user's CB operator id */</pre>
+<pre class="unixoutputp">    TRE_CB_OPERATOR_EXC = TRE_ERROR_START+41,</pre>
+<pre class="unixoutputp">                /* 42: User is not a CB operator */</pre>
+<pre class="unixoutputp">    TRE_NOT_CB_OPERATOR = TRE_ERROR_START+42,  </pre>
+<pre class="unixoutputp">                /* 43: Exception retrieving client count */</pre>
+<pre class="unixoutputp">    TRE_CLIENT_COUNT_EXC = TRE_ERROR_START+43, </pre>
+<pre class="unixoutputp">                /* 44: Maximum client count exceeded */</pre>
+<pre class="unixoutputp">    TRE_MAX_CLIENT_COUNT = TRE_ERROR_START+44,</pre>
+<pre class="unixoutputp">                /* 45: Exception performing licence recalculation */</pre>
+<pre class="unixoutputp">    TRE_LIC_RECALC_EXC = TRE_ERROR_START+45,   </pre>
+<pre class="unixoutputp">                /* 46: Invalid software key */</pre>
+<pre class="unixoutputp">    TRE_INV_SW_KEY = TRE_ERROR_START+46,    </pre>
+<pre class="unixoutputp">                /* 47: Exception performing supplemental authentication*/</pre>
+<pre class="unixoutputp">    TRE_SUPPL_AUTH_EXC = TRE_ERROR_START+47,</pre>
+<pre class="unixoutputp">                /* 48: Supplemental authentication failed */</pre>
+<pre class="unixoutputp">    TRE_SUPPL_AUTH_FAIL = TRE_ERROR_START+48,  </pre>
+<pre class="unixoutputp">                /* 49: Unhandled Oracle error during authentication */</pre>
+<pre class="unixoutputp">    TRE_ORACLE_EXC = TRE_ERROR_START+49, </pre>
+<pre class="unixoutputp">                /* 50: Cannot register function with EPM */</pre>
+<pre class="unixoutputp">    TRE_REGISTER = TRE_ERROR_START+50,</pre>
+<pre class="unixoutputp">                /* 51: Oracle not available */</pre>
+<pre class="unixoutputp">    TRE_NO_ORACLE = TRE_ERROR_START+51,</pre>
+<pre class="unixoutputp">                /* 52: No authentication data */</pre>
+<pre class="unixoutputp">    TRE_NO_AUTH_DATA = TRE_ERROR_START+52,</pre>
+<pre class="unixoutputp">                /* 53: Invalid username/password */</pre>
+<pre class="unixoutputp">    TRE_INV_USER_PASSWD = TRE_ERROR_START+53,</pre>
+<pre class="unixoutputp">                /* 54: Invalid character in password */</pre>
+<pre class="unixoutputp">    TRE_INV_PASSWD_CHAR = TRE_ERROR_START+54,</pre>
+<pre class="unixoutputp">    TRE_ACC_LOCKED = TRE_ERROR_START+55,  /* 55: Account locked */</pre>
+<pre class="unixoutputp">    TRE_PASSWD_EXP = TRE_ERROR_START+56,  /* 56: Password expired */</pre>
+<pre class="unixoutputp">                /* 57: Invalid new password */</pre>
+<pre class="unixoutputp">    TRE_INV_NEW_PASSWD = TRE_ERROR_START+57,</pre>
+<pre class="unixoutputp">                /* 58: Password cannot be reused */</pre>
+<pre class="unixoutputp">    TRE_NO_PASSWD_REUSE = TRE_ERROR_START+58,</pre>
+<pre class="unixoutputp">                /* 59: Invalid authentication data */</pre>
+<pre class="unixoutputp">    TRE_INV_AUTH_DATA = TRE_ERROR_START+59,</pre>
+<pre class="unixoutputp">                /* 60: Default username not supported */</pre>
+<pre class="unixoutputp">    TRE_NO_DEF_USER = TRE_ERROR_START+60,</pre>
+<pre class="unixoutputp">                /* 61: Null password */</pre>
+<pre class="unixoutputp">    TRE_NULL_PASSWD = TRE_ERROR_START+61,</pre>
+<pre class="unixoutputp">                /* 62: External authentication failed */</pre>
+<pre class="unixoutputp">    TRE_EXT_AUTH_FAIL = TRE_ERROR_START+62, </pre>
+<pre class="unixoutputp">                /* 63: External authentication function not defined */</pre>
+<pre class="unixoutputp">    TRE_EXT_AUTH_UNDEF = TRE_ERROR_START+63,   </pre>
+<pre class="unixoutputp">                /* 64: Invalid request id */</pre>
+<pre class="unixoutputp">    TRE_INVALID_REQID = TRE_ERROR_START+64,</pre>
+<pre class="unixoutputp">                /* 65: Request has timed out */</pre>
+<pre class="unixoutputp">    TRE_ASYNC_TIMEOUT = TRE_ERROR_START+65,  </pre>
+<pre class="unixoutputp">                /* 66: Response cancellation failed */</pre>
+<pre class="unixoutputp">    TRE_ASYNC_CANCEL_FAILED = TRE_ERROR_START+66,</pre>
+<pre class="unixoutputp">                /* 67: Request forwarded */</pre>
+<pre class="unixoutputp">    TRE_REQ_FORWARDED = TRE_ERROR_START+67,  </pre>
+<pre class="unixoutputp">                /* 68: Blocking condition detected,TRE_NOBLOCK specified */</pre>
+<pre class="unixoutputp">    TRE_WOULD_BLOCK = TRE_ERROR_START+68,</pre>
+<pre class="unixoutputp">                /* 69: Response received with unknown request id */</pre>
+<pre class="unixoutputp">    TRE_UNKNOWN_RESPONSE = TRE_ERROR_START+69</pre>
+<pre class="unixoutputp">} TRE_ERROR;</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">/* TRE data types */</pre>
+<pre class="unixoutputp">typedef enum {</pre>
+<pre class="unixoutputp">    TRE_LONG     		= 1,</pre>
+<pre class="unixoutputp">    TRE_DOUBLE      	= 2,</pre>
+<pre class="unixoutputp">    TRE_STRING      	= 4,</pre>
+<pre class="unixoutputp">    TRE_WSTRING		= 5,</pre>
+<pre class="unixoutputp">    TRE_DATETIME    	= 8,</pre>
+<pre class="unixoutputp">    TRE_BLOB        	= 9,</pre>
+<pre class="unixoutputp">    TRE_UNKNOWN     	= 16,</pre>
+<pre class="unixoutputp">    TRE_VAR         	= 32,</pre>
+<pre class="unixoutputp">    TRE_ARRAY       	= 64,</pre>
+<pre class="unixoutputp">    TRE_HASH        	= 128,</pre>
+<pre class="unixoutputp">    TRE_NULLIND     	= 256,</pre>
+<pre class="unixoutputp">    TRE_CONSTANT        = 512,</pre>
+<pre class="unixoutputp">    TRE_HIDDEN          = 1024</pre>
+<pre class="unixoutputp">} TRE_DATATYPE;</pre>
+
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><ul class="notelistbullet"><li class="notelistbullet"><span class="unixoutputc">TRE_WSTRING</span> is only supported for wide characters in the UTF-16 character set when the Convergent Billing server is configured to use the UTF-8 character set. </li><li class="notelistbullet"><span class="unixoutputc">TRE_HIDDEN</span> prevents sensitive values being displayed in trace, print, or debug outputs.  Any data with the <span class="unixoutputc">TRE_HIDDEN</span> flag set is displayed as a fixed mask of six asterisks ('<span class="unixoutputc">******</span>').  If a hash or array has the <span class="unixoutputc">TRE_HIDDEN</span> flag set, all elements of the hash or array are treated as hidden data.<pre class="unixoutputp">/* TRE_long_conversion modes */<br>typedef enum {</pre>
+<pre class="unixoutputp">    TRE_CONVERT_NONE			= 1,<br>    TRE_CONVERT_UNKNOWN,<br>    TRE_CONVERT_ALL</pre>
+<pre class="unixoutputp">}  TRE_LONG_CONVERSION;</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">/* TRE Client Types  */</pre>
+<pre class="unixoutputp">typedef enum {</pre>
+<pre class="unixoutputp">    TRE_CT_INTERNAL    = 1,</pre>
+<pre class="unixoutputp">    TRE_CT_FRONTOFFICE = 2,</pre>
+<pre class="unixoutputp">    TRE_CT_CWB         = 3,</pre>
+<pre class="unixoutputp">    TRE_CT_ADMINTOOL   = 4,</pre>
+<pre class="unixoutputp">    TRE_CT_WEB         = 5,</pre>
+<pre class="unixoutputp">    TRE_CT_APICLIENT   = 7,</pre>
+<pre class="unixoutputp">    TRE_CT_CONFIGTOOL  = 8</pre>
+<pre class="unixoutputp">} TRE_CLIENT_TYPE;</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">/* TRE_VARIANT */</pre>
+<pre class="unixoutputp">typedef struct trevariant_struct TRE_VARIANT;</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">/* Forward declaration of hash value structure */</pre>
+<pre class="unixoutputp">typedef struct tre_hashvalue_struct TRE_HASHVALUE;</pre>
+<pre class="unixoutputp">struct trevariant_struct {</pre>
+<pre class="unixoutputp">    short NullInd;           /* Mandatory: Set to TRE_NULL or TRE_NOTNULL */</pre>
+<pre class="unixoutputp">    TRE_DATATYPE TreType;    /* Mandatory: TRE data type */</pre>
+<pre class="unixoutputp">    union trevariant_datatype {</pre>
+<pre class="unixoutputp">        INTSV VLong;             /* TRE_LONG, TRE_VAR or TRE_LONG */</pre>
+<pre class="unixoutputp">        double VDouble;         /* TRE_DOUBLE, TRE_VAR or TRE_DOUBLE */</pre>
+<pre class="unixoutputp">        char *VString;          /* TRE_STRING, TRE_VAR or TRE_STRING */</pre>
+<pre class="unixoutputp">        wchar_t *VWString;      /* TRE_WSTRING, TRE_VAR or TRE_WSTRING */</pre>
+<pre class="unixoutputp">        jtime_t VDateTime;      /* TRE_DATETIME, TRE_VAR or TRE_DATETIME */</pre>
+<pre class="unixoutputp">        struct treblob_struct { /* TRE_BLOB, TRE_VAR or TRE_BLOB */</pre>
+<pre class="unixoutputp">            INTSV Size;			 /* Size of blob (bytes) */</pre>
+<pre class="unixoutputp">    		    unsigned char *Blob; /* Array of Size bytes forming Blob */</pre>
+<pre class="unixoutputp">		} VBlob;</pre>
+<pre class="unixoutputp">		struct trearray_struct { /* All TRE_ARRAY types */</pre>
+<pre class="unixoutputp">		    INTSV Size;           /* Size of array */</pre>
+<pre class="unixoutputp">		    TRE_VARIANT *Elements;   /* Array of elements */</pre>
+<pre class="unixoutputp">		} VArray;</pre>
+<pre class="unixoutputp">		struct trehash_struct {  /* All TRE_HASH types */</pre>
+<pre class="unixoutputp">		    INTSV Size;           /* Number of values in hash */</pre>
+<pre class="unixoutputp">                TRE_HASHVALUE *Elements; /* Array of key value pairs in hash */</pre>
+<pre class="unixoutputp">		} VHash;</pre>
+<pre class="unixoutputp">    } Data;</pre>
+<pre class="unixoutputp">};</pre>
+<pre class="unixoutputp"></pre>
+</li></td></tr></table></ul><table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note"><span class="unixoutputc">INTSV</span> is the variant data type that resolves to long for server and 32-bit integer client builds, and <span class="unixoutputc">_int64</span> for 64-bit integer client builds.</p></td></tr></table>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">/* HashValue structure */</pre>
+<pre class="unixoutputp">struct tre_hashvalue_struct {</pre>
+<pre class="unixoutputp">    char *Key;         /* Hash key value */</pre>
+<pre class="unixoutputp">    TRE_VARIANT Value; /* Value associated with key */<br>};</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">typedef INTSV TRE_CONTEXT;</pre>
+<p class="syntaxheading">Memory Management</p>
+<pre class="unixoutputp">void *treMalloc(size_t Size)</pre>
+<pre class="unixoutputp">void *treReAlloc(void *Ptr, size_t Size)</pre>
+<pre class="unixoutputp">char *treMallocString(const char *String)</pre>
+<pre class="unixoutputp">wchar_t *treMallocWString(const wchar_t *WString)</pre>
+<pre class="unixoutputp">TRE_RESULT treCopyVariant(TRE_VARIANT *Destination , TRE_VARIANT *Source)</pre>
+<pre class="unixoutputp">TRE_RESULT treFreeVariant(TRE_VARIANT *Value)</pre>
+<pre class="unixoutputp">TRE_RESULT treFreeVariantArray(INTSV NrParams, TRE_VARIANT *Array)</pre>
+<p class="syntaxheading">Deprecated Interfaces</p>
+<pre class="unixoutputp">TRE_RESULT treFree(void *Ptr)</pre>
+<pre class="unixoutputp">TRE_RESULT treFreeArray(TRE_DATATYPE DataType, ...)</pre>
+<p class="syntaxheading">Connection Management</p>
+<pre class="unixoutputp">TRE_RESULT treInit(char *LoginName,</pre>
+<pre class="unixoutputp">				char *ConfigDir,</pre>
+<pre class="unixoutputp">				char *LogDir,</pre>
+<pre class="unixoutputp">				char *EnvFile)</pre>
+<pre class="unixoutputp">				char *treGetEnv(char *EnvVarName)</pre>
+<pre class="unixoutputp">TRE_RESULT treConnect(char *Username,</pre>
+<pre class="unixoutputp">				char *Password,</pre>
+<pre class="unixoutputp">				char *ClientName)</pre>
+<pre class="unixoutputp">TRE_RESULT treConnectFlags(char *Username,</pre>
+<pre class="unixoutputp">				char *Password,</pre>
+<pre class="unixoutputp">				char*ClientName,</pre>
+<pre class="unixoutputp">				INTSV Flags)</pre>
+<pre class="unixoutputp">TRE_RESULT treConnectNewPassword(const char *Username,</pre>
+<pre class="unixoutputp">				const char *OldPassword,</pre>
+<pre class="unixoutputp">				const char *NewPassword,</pre>
+<pre class="unixoutputp">				const char *ClientName)</pre>
+<pre class="unixoutputp">TRE_RESULT treConnectNewPasswordFlags(const char *Username,</pre>
+<pre class="unixoutputp">				const char *OldPassword,</pre>
+<pre class="unixoutputp">				const char *NewPassword,</pre>
+<pre class="unixoutputp">				const char *ClientName, INTSV Flags)</pre>
+<pre class="unixoutputp">TRE_RESULT treConnectFlagsPE(const char *Username,</pre>
+<pre class="unixoutputp">				const char *OldPassword,</pre>
+<pre class="unixoutputp">				const char *NewPassword,</pre>
+<pre class="unixoutputp">				const char *ClientName,</pre>
+<pre class="unixoutputp">				INTSV Flags,</pre>
+<pre class="unixoutputp">				TRE_CT_CLIENT_TYPE ClientType,</pre>
+<pre class="unixoutputp">				const char *VerClient,</pre>
+<pre class="unixoutputp">				const char *ISOCode)</pre>
+<pre class="unixoutputp">TRE_RESULT treConnectExternal(const char *Username,</pre>
+<pre class="unixoutputp">				const void *Blob,</pre>
+<pre class="unixoutputp">				size_t Len, </pre>
+<pre class="unixoutputp">				const char *ClientName)</pre>
+<pre class="unixoutputp">TRE_RESULT treConnectExternalFlags(const char *Username,</pre>
+<pre class="unixoutputp">				const void *Blob,</pre>
+<pre class="unixoutputp">				size_t Len, <br>				const char *ClientName,</pre>
+<pre class="unixoutputp">				INTSV Flags)</pre>
+<pre class="unixoutputp">TRE_RESULT treConnectExternalFlagsPE(const char *Username,</pre>
+<pre class="unixoutputp">				const void *Blob,</pre>
+<pre class="unixoutputp">				size_t Len,<br>				const char *ClientName,</pre>
+<pre class="unixoutputp">				INTSV Flags,</pre>
+<pre class="unixoutputp">				TRE_CT_CLIENT_TYPE ClientType, </pre>
+<pre class="unixoutputp">				const char *VerClient,</pre>
+<pre class="unixoutputp">				const char *ISOCode)</pre>
+<pre class="unixoutputp">TRE_RESULT treDisconnect(void)</pre>
+<pre class="unixoutputp">void treClientSetNetworkAddress(const char *ClientIP, </pre>
+<pre class="unixoutputp">				int ClientPort)</pre>
+<pre class="unixoutputp">void treServerSetNetworkAddress(const char *ServerIP,</pre>
+<pre class="unixoutputp">				int ServerPort)</pre>
+<pre class="unixoutputp">void treClientGetNetworkAddress(char* ClientIP,</pre>
+<pre class="unixoutputp">				size_t Len,</pre>
+<pre class="unixoutputp">				int *ClientPort)</pre>
+<pre class="unixoutputp">void treServerGetNetworkAddress(char* ServerIP,</pre>
+<pre class="unixoutputp">				size_t Len,</pre>
+<pre class="unixoutputp">				int *ServerPort)</pre>
+<p class="syntaxheading">Transaction Management</p>
+<pre class="unixoutputp">TRE_RESULT treBegin(INTSV Timeout)</pre>
+<pre class="unixoutputp">TRE_RESULT treCommit(void)</pre>
+<pre class="unixoutputp">TRE_RESULT treRollback(void)</pre>
+<p class="syntaxheading">Error Handling</p>
+<pre class="unixoutputp">TRE_ERROR treGetErrno(void)</pre>
+<pre class="unixoutputp">void treSetErrno(TRE_ERROR l_errno)</pre>
+<pre class="unixoutputp">void treSetError(TRE_ERROR l_errno, char *l_errmsg)</pre>
+<pre class="unixoutputp">char *treErrmsg(void)</pre>
+<p class="syntaxheading">Overflow Handling</p>
+<pre class="unixoutputp">TRE_LONG_CONVERSION treGetLongConversion(void)</pre>
+<pre class="unixoutputp">void treSetLongConversion(TRE_LONG_CONVERSION mode)</pre>
+<p class="syntaxheading">Remote Function Invocation</p>
+<pre class="unixoutputp">TRE_RESULT treRegisterEpmFn(EPM *Epm, char *FnDefn, jtime_t EffectiveStartDate, jtime_t EffectiveEndDate, char *ServiceName, INTSV Flags)</pre>
+<pre class="unixoutputp">TRE_RESULT treFunctionCache(char *FnName, jtime_t EffectiveDate)</pre>
+<pre class="unixoutputp">TRE_RESULT treVariantCall(char *FnName,</pre>
+<pre class="unixoutputp">				jtime_t EffectiveDate,</pre>
+<pre class="unixoutputp">				INTSV Flags,</pre>
+<pre class="unixoutputp">				TRE_VARIANT *ReturnValue,</pre>
+<pre class="unixoutputp">				INTSV NrParams,</pre>
+<pre class="unixoutputp">				TRE_VARIANT *Arglist)</pre>
+<pre class="unixoutputp">TRE_RESULT treVariantCallASync(char *FnName,</pre>
+<pre class="unixoutputp">				jtime_t EffectiveDate,</pre>
+<pre class="unixoutputp">				INTSV Flags,</pre>
+<pre class="unixoutputp">				INTSV NrParams,</pre>
+<pre class="unixoutputp">				TRE_VARIANT *Arglist,</pre>
+<pre class="unixoutputp">				double Timeout,</pre>
+<pre class="unixoutputp">				INTSV *RequestId)</pre>
+<pre class="unixoutputp">TRE_RESULT treVariantGetReply(INTSV *RequestId,</pre>
+<pre class="unixoutputp">				INTSV Flags,</pre>
+<pre class="unixoutputp">				TRE_VARIANT *ReturnValue,</pre>
+<pre class="unixoutputp">				INTSV *NrVarParams,</pre>
+<pre class="unixoutputp">				TRE_VARIANT **VarArglist)</pre>
+<pre class="unixoutputp">TRE_RESULT treCancelReply(INTSV RequestId)</pre>
+<pre class="unixoutputp">void treQueueTimeSet(jtime_t DequeueTime)</pre>
+<pre class="unixoutputp">void treforward (const char* l_service_name)</pre>
+<p class="syntaxheading">Deprecated Interfaces</p>
+<pre class="unixoutputp">TRE_RESULT treCall(char *FnName, jtime_t EffectiveDate, INTSV Flags,</pre>
+<pre class="unixoutputp">				TRE_DATATYPE ReturnType, void *ReturnValue,</pre>
+<pre class="unixoutputp">				INTSV NrParams,...)</pre>
+<pre class="unixoutputp">TRE_RESULT trevCall(char *FnName, time_t EffectiveDate, INTSV Flags,</pre>
+<pre class="unixoutputp">				TRE_DATATYPE ReturnType, void *ReturnValue,</pre>
+<pre class="unixoutputp">				INTSV NrParams, va_list Arglist)</pre>
+<pre class="unixoutputp">TRE_RESULT treRegisterFn(char *FnDefn, jtime_t EffectiveStartDate,</pre>
+<pre class="unixoutputp">				jtime_t EffectiveEndDate, char *ServiceName,</pre>
+<pre class="unixoutputp">				INTSV Flags)</pre>
+<p class="syntaxheading">Event Handling and Client Notification</p>
+<pre class="unixoutputp">TRE_RESULT treClientNotify(char *ClientID, char *NotificationName,</pre>
+<pre class="unixoutputp">				TRE_VARIANT FieldValues)</pre>
+<pre class="unixoutputp">TRE_RESULT treClientNotifyWait(char *ClientID, char *NotificationName,</pre>
+<pre class="unixoutputp">				TRE_VARIANT FieldValues)</pre>
+<pre class="unixoutputp">TRE_RESULT treEventPost(char *EventName, INTSV ErrorId, char *ErrorMsg,</pre>
+<pre class="unixoutputp">				char *Param1, char *Param2, char *Param3,</pre>
+<pre class="unixoutputp">				char *Param4, char *Param5)</pre>
+<pre class="unixoutputp">TRE_RESULT treEventCheck(INTSV *EventCount)</pre>
+<pre class="unixoutputp">TRE_RESULT treEventPostWait(char *EventName, INTSV ErrorId, char *ErrorMsg,</pre>
+<pre class="unixoutputp">				char *Param1, char *Param2, char *Param3,</pre>
+<pre class="unixoutputp">				char *Param4, char *Param5,</pre>
+<pre class="unixoutputp">				INTSV *NrRecipients)</pre>
+<pre class="unixoutputp">TRE_RESULT treEventPostWaitx(char *EventName, TRE_VARIANT FieldValues)</pre>
+<pre class="unixoutputp">TRE_RESULT treEventPostx(char *EventName, TRE_VARIANT FieldValues)</pre>
+<pre class="unixoutputp">TRE_RESULT treEventEpmHandlerx(void (*Handler)(char *EventName,</pre>
+<pre class="unixoutputp">				EPM_VALUE *FieldValues))</pre>
+<pre class="unixoutputp">TRE_RESULT treEventSetHandler(void (*Handler)(char *EventName,</pre>
+<pre class="unixoutputp">				INTSV ErrorId, char *ErrorMsg,</pre>
+<pre class="unixoutputp">				char *Param1, char *Param2, char *Param3,</pre>
+<pre class="unixoutputp">				char *Param4, char *Param5))</pre>
+<pre class="unixoutputp">TRE_RESULT treEventSetHandlerx (void (*Handler)(char *EventName,</pre>
+<pre class="unixoutputp">				TRE_VARIANT FieldValues))</pre>
+<pre class="unixoutputp">INTSV treEventSubscribe(char *EventPattern)</pre>
+<pre class="unixoutputp">INTSV treEventSubscribeService(char *EventPattern char *ServiceName)</pre>
+<pre class="unixoutputp">TRE_RESULT treEventUnsubscribe(INTSV SubscribeHandle)</pre>
+<p class="syntaxheading">Tracing</p>
+<pre class="unixoutputp">void treTraceOn(char *FileName)</pre>
+<pre class="unixoutputp">void treTraceOff(void)</pre>
+<pre class="unixoutputp">c-bool treTraceEnabled()</pre>
+<p class="syntaxheading">Miscellaneous</p>
+<pre class="unixoutputp">TRE_RESULT treParseFn(char *FnDefn, char *FnName, TRE_DATATYPE *ReturnType,</pre>
+<pre class="unixoutputp">				INTSV *NrParams, TRE_DATATYPE *ParamTypes)</pre>
+<pre class="unixoutputp">INTSV treOperatorGetId()</pre>
+<pre class="unixoutputp">TRE_RESULT treOperatorSetId (INTSV NewOperatorId)</pre>
+<pre class="unixoutputp">INTSV treOperatorGetSessionId()</pre>
+<pre class="unixoutputp">TRE_RESULT treOperatorSetSessionId(INTSV l_session_id)</pre>
+<pre class="unixoutputp">char *treClientGetId()</pre>
+<pre class="unixoutputp">const char *treDataTypeDecode(TRE_DATATYPE type)</pre>
+<pre class="unixoutputp">INTSV treIsServerUTF8()</pre>
+<pre class="unixoutputp">void treThreadDtor(void* Dummy)</pre>
+<pre class="unixoutputp">TRE_RESULT treGetContext(TRE_CONTEXT *l_context)</pre>
+<pre class="unixoutputp">TRE_RESULT treSetContext(TRE_CONTEXT l_context, INTSV l_flags)</pre>
+<pre class="unixoutputp">TRE_VARIANT* treGetContexts()</pre>
+<pre class="unixoutputp">TRE_RESULT treSetProtocolVersion(char *l_protocol_version)</pre>
+<pre class="unixoutputp">c_bool treTransactionActive()</pre>
+<pre class="unixoutputp">TRE_RESULT treSetEffectiveDate(jtime_t l_effective_date)</pre>
+<p class="syntaxheading">Statistics</p>
+<pre class="unixoutputp">void treStatsOn(void)<br>void treStatsOff(void)<br>TRE_VARIANT *treStats(void)<br>TRE_VARIANT *treStatsMinMaxReset(void)<br>void treStatsReset(void)<br>TRE_VARIANT *treStatsDate(void)<br>TRE_VARIANT *treStatsMinMaxResetDate(void)<br>void treStatsThresholdsSet(TRE_VARIANT *Thresholds)<br>TRE_VARIANT *treStatsThresholdsGet(void)<br>void treStatsFunctionThresholdsSet(const char *FunctionName,<br>short InterfaceNr, TRE_VARIANT *Thresholds)</pre>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="61387.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="7629.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

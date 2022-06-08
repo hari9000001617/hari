@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> QUEUE_MAXIMUM Limitations </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "61374.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "55855.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('61374');expand('55793');highlight('75849')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="61374.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="55855.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">QUEUE_MAXIMUM Limitations</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'QUEUE_MAXIMUM Limitations' (75849)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">To prevent a single category of scheduled functions filling the SFM's internal queue and starving threads allocated to other categories of work, the SFM limits the number of scheduled functions from each category that can be queued internally. </p>
+<p class="bodytext">The number of scheduled functions per category is restricted to a value calculated by dividing <span class="unixoutputc">QUEUE_MAXIMUM</span> by:</p>
+<ul class="listbullet"><li class="listbullet"><span class="unixoutputc">5</span>, if the <span class="unixoutputc">-c</span> SFM command-line option has not been specified, or the number of categories specified by <span class="unixoutputc">-c</span> is greater than or equal to <span class="unixoutputc">5</span>.<p class="listcontinue">For more information about SFM command-line options, refer to the <span class="referrals">System Reference Guide for Singleview</span>.</p>
+</li><li class="listbullet"><span class="unixoutputc">&lt;number_of_categories&gt;</span>, in all other cases.</li></ul><p class="bodytext">After the number of queued scheduled functions in any single category exceeds this limit, any further scheduled functions in that category are skipped. This provides space in the internal queue for scheduled functions of other categories to be stored and processed by available threads. </p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o75848"></a><h3 class="heading3">Setting QUEUE_MAXIMUM</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Setting QUEUE_MAXIMUM' (75848)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">To determine an appropriate value for <span class="unixoutputc">QUEUE_MAXIMUM</span>, the following must be considered. Setting a value that is:</p>
+<ul class="listbullet"><li class="listbullet">Too low, could result in one or more evaluation threads being left idle waiting for the main query to retrieve eligible pending scheduled functions. This reduces overall throughput and can result in the SFM not being able to keep up with the incoming rate of eligible pending scheduled functions, even if additional evaluation threads are configured. </li><li class="listbullet">Too high, results in increased memory usage and slightly higher CPU usage for the SFM. It is recommended that 2KB of additional memory is allowed for each queued scheduled function. That means that a <span class="unixoutputc">QUEUE_MAXIMUM</span> of 30,000 is expected to consume around 60MB of memory. </li></ul><p class="bodytext">To prevent evaluation threads being left idle when there are eligible pending scheduled functions, the following information is required for each category: </p>
+<ul class="listbullet"><li class="listbullet">The average response time to process a scheduled function in this category (<span class="unixoutputc">CatRspTime</span>) </li><li class="listbullet">The number of evaluation threads configured for this category (<span class="unixoutputc">CatThreads</span>) </li><li class="listbullet">The maximum likely number of eligible pending scheduled functions that can be present in the system at any time (<span class="unixoutputc">MaxEligPending</span>) </li><li class="listbullet">The average time to retrieve a scheduled function from the main query (<span class="unixoutputc">FuncFetchTime</span>). </li></ul><p class="bodytext">The expected average time to retrieve a scheduled function from the main query should be no worse than 1ms (that is, 1000 scheduled functions per second). </p>
+<p class="bodytext">To prevent evaluation threads being left idle, the number of functions that can be queued for a category must be sufficient so that the threads do not evaluate all queued functions during an iteration of the main query. For each category, <span class="unixoutputc">CatMaxQueue</span> must be calculated as follows: </p>
+<p class="bodytext"><span class="unixoutputc">CatMaxQueue = FuncFetchTime * MaxEligPending * CatThreads / CatRspTime</span> </p>
+<p class="bodytext">Since the maximum number of scheduled functions that are queued for any category is limited to one fifth of the value of <span class="unixoutputc">QUEUE_MAXIMUM</span> for all categories, the value of <span class="unixoutputc">QUEUE_MAXIMUM</span> is calculated as follows: </p>
+<p class="bodytext"><span class="unixoutputc">QUEUE_MAXIMUM = 5 * MAX ( CatMaxQueue )</span>  </p>
+<p class="syntaxheading">Example</p>
+<p class="bodytext">In this example, <span class="unixoutputc">QUEUE_MAXIMUM</span> is calculated based on the following scenario:</p>
+<ul class="listbullet"><li class="listbullet">Maximum number of eligible pending scheduled functions is 200,000</li><li class="listbullet">Average response time for processing a schedule function from the TREATMENT category is 90ms</li><li class="listbullet">Three evaluation threads are configured for the TREATMENT category</li><li class="listbullet">Average main query response time for a scheduled function is 3ms.</li></ul><p class="bodytext">For the TREATMENT category, <span class="unixoutputc">CatMaxQueue</span> is calculated as follows: </p>
+<p class="bodytext"><span class="unixoutputc">CatMaxQueue = 0.001 * 200,000 * 3 / 0.09 = 6,667</span> </p>
+<p class="bodytext">Assuming this is the maximum for all categories, <span class="unixoutputc">QUEUE_MAXIMUM</span> should be set to: </p>
+<p class="bodytext"><span class="unixoutputc">QUEUE_MAXIMUM = 5 * 6,667 = 33,335</span> </p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="61374.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="55855.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

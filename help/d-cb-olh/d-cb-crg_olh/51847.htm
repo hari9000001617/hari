@@ -1,0 +1,571 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> EXTERNAL_DEFN_TRE_V </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "51846.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "7454.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7526');highlight('51847')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="51846.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="7454.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">EXTERNAL_DEFN_TRE_V</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'EXTERNAL_DEFN_TRE_V' (51847)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="unixoutputc">EXTERNAL_DEFN_TRE_V</span> view displays the external definitions configured for use with Singleview.</p>
+<p class="bodytext">External definitions are used to define the format of data that is imported into or exported out of Singleview.  They provide a mapping from the internal representation of Singleview to an external representation of the data.</p>
+<p class="syntaxheading">Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="210"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="360"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">EXTERNAL_DEFN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">ID of the external definition.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">EXTERNAL_DEFN_NAMESPACE_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">ID of the XML namespace, as defined in the <span class="unixoutputc"><a id="h52425" class="jump" title="EXTERNAL_DEFN_NAMESPACE_TRE_V" href="51846.htm" target="_self">EXTERNAL_DEFN_NAMESPACE_TRE_V</a></span><a id="h52425_2" class="jump" title="EXTERNAL_DEFN_NAMESPACE_TRE_V" href="51846.htm" target="_self"> view</a>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">EXTERNAL_DEFN_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Name given for this external definition within this namespace.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">EXTERNAL_VIEW_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Name of the view to be generated from this external definition.</p>
+<p class="tablebodytext">Views must be unique system-wide.</p>
+<p class="tablebodytext">A view name can only be specified if the external definition is flagged as external; that is, <span class="unixoutputc">EXTERNAL_IND_CODE</span> is set to 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">VIEW_SECURITY_ENABLE_IND_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Set to 1 (True) if the view generated for this external definition must enforce Singleview group security on the rows returned. </p>
+<p class="tablebodytext">It can only be set to 1 if <span class="unixoutputc">EXTERNAL_VIEW_NAME</span> is specified.  If not set to 1, it must be NULL.</p>
+<p class="tablebodytext">If set, only the rows for which the Oracle user performing the query has Singleview group security view access are returned.</p>
+<p class="tablebodytext">If the Oracle user performing the query is <span class="unixoutputc">$ATADBACONNECT</span> or <span class="unixoutputc">$ATASVRCONNECT</span>, the Oracle session's <span class="unixoutputc">CLIENT_IDENTIFIER</span> is used to identify the Singleview user.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">LAST_MODIFIED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Date-time when this row was last modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">DESCRIPTION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (4000)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Description of the purpose or intended use of the external definition.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">OPERATOR_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">User that last modified this record.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">GROUP_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Security group associated with this record.</p>
+<p class="tablebodytext">It controls access privileges to the data.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">VERSION_STR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Version identification string used to tag this entity.</p>
+<p class="tablebodytext">It is used by third-party configuration management tools, and not directly by Singleview.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">CATEGORIES</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Comma-separated list of categories associated with this entity.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">STATUS_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Status of this external definition.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">EXTERNAL_DEFN_STATUS</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">EXTERNAL_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">If set to 1 (True), this external definition is suitable for the generation of interfaces to integrate with external systems.</p>
+<p class="tablebodytext">If not set to 1, it must be NULL.</p>
+<p class="tablebodytext">If NULL, it is only available internally. It is a building block for the generation of complete external definitions.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">INTERFACE_GENERATION_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Status of the interface generation for this external definition.</p>
+<p class="tablebodytext">It can only be populated if <span class="unixoutputc">EXTERNAL_IND_CODE</span> is set to 1.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">EXTERNAL_DEFN_GENERATION</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">SCHEMA_GENERATION_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Status of XML schema generation for this external definition.</p>
+<p class="tablebodytext">It can only be populated if <span class="unixoutputc">EXTERNAL_IND_CODE</span> is set to 1.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">EXTERNAL_DEFN_GENERATION</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">VIEW_GENERATION_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Status of the view generation for this external definition.</p>
+<p class="tablebodytext">It can only be populated if <span class="unixoutputc">EXTERNAL_IND_CODE</span> is set to 1 and <span class="unixoutputc">EXTERNAL_VIEW_NAME</span> is specified.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">EXTERNAL_DEFN_GENERATION</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">CONTENT_MODEL_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Type of content formed by the elements of this external definition.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">EXTERNAL_DEFN_CONTENT_MODEL</span> reference type.</p>
+<p class="tablebodytext">The table below lists available content types.</p>
+<p class="tablebodytext">If <span class="unixoutputc">ATTRIBUTE_GROUP_IND_CODE</span> is set, only content model 1 (Simple Content) and 4 (All) are valid values.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">CHOICE_EXT_DEFN_ELEMENT_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Element whose value determines the element in the current Choice content model to be selected.</p>
+<p class="tablebodytext">It can only contain a value if <span class="unixoutputc">CONTENT_MODEL_CODE</span> is set to 3 (Choice).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">MODEL_GROUP_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Set to 1 (True) if this entry defines an XML schema model group.</p>
+<p class="tablebodytext">It can only be set to 1 if <span class="unixoutputc">EXTERNAL_IND_CODE</span> and <span class="unixoutputc">ATTRIBUTE_IND_CODE</span> are NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">ATTRIBUTE_GROUP_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Set to 1 (True) if this entry defines an XML attribute group.</p>
+<p class="tablebodytext">It can only be set to 1 if <span class="unixoutputc">EXTERNAL_IND_CODE</span> and <span class="unixoutputc">MODEL_GROUP_IND_CODE</span> are NULL.</p>
+<p class="tablebodytext">If set to 1, all rows in the <span class="unixoutputc"><a id="h52030" class="jump" title="EXTERNAL_DEFN_ELEMENT_TRE_V" href="51845.htm" target="_self">EXTERNAL_DEFN_ELEMENT_TRE_V</a></span><a id="h52030_2" class="jump" title="EXTERNAL_DEFN_ELEMENT_TRE_V" href="51845.htm" target="_self"> view</a> associated with this external definition must be defined as attributes and the <span class="unixoutputc">CONTENT_MODEL_CODE</span> must be set to 1 (Simple Content) or 4 (All).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">CB_ENTITY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Name of the Convergent Billing entity linked to this external definition.</p>
+<p class="tablebodytext">It corresponds to the supported set of entity validation table names.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">ENTITY_VALIDATION_TABLE</span> reference type.</p>
+<p class="tablebodytext">Only one of <span class="unixoutputc">CB_ENTITY</span> or <span class="unixoutputc">PE_CLASS_ID</span> can be specified.  If neither <span class="unixoutputc">CB_ENTITY</span> nor <span class="unixoutputc">PE_CLASS_ID</span> are specified, the external definition is an abstract definition and cannot have <span class="unixoutputc">EXTERNAL_IND_CODE</span> set to 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">CB_ENTITY_TYPE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Reference to the specific Convergent Billing entity type (for example, <span class="unixoutputc">CUSTOMER_NODE_TYPE_ID</span>) that is being used for this external definition.</p>
+<p class="tablebodytext">It can only be specified if <span class="unixoutputc">CB_ENTITY</span> is specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">ENTITY_VALIDATION_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Convergent Billing entity validation ID associated with this external definition.</p>
+<p class="tablebodytext">The value is derived from <span class="unixoutputc">CB_ENTITY_TYPE_ID</span>, if specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PE_CLASS_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Process Engine class associated with this external definition.</p>
+<p class="tablebodytext">For information about the Process Engine classes that can be specified in an external definition, refer to the <span class="unixoutputc"><a id="h52031" class="jump" title="ED_CLASS_CONFIG_V" href="51779.htm" target="_self">ED_CLASS_CONFIG_V</a></span><a id="h52031_2" class="jump" title="ED_CLASS_CONFIG_V" href="51779.htm" target="_self"> view</a>.</p>
+<p class="tablebodytext">Only one of <span class="unixoutputc">CB_ENTITY</span> or <span class="unixoutputc">PE_CLASS_ID</span> can be specified.  If neither <span class="unixoutputc">CB_ENTITY</span> nor <span class="unixoutputc">PE_CLASS_ID</span> are specified, the external definition is an abstract definition and can have <span class="unixoutputc">EXTERNAL_IND_CODE</span> set to 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PE_OBJECT_TYPE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Process Engine object type associated with this class.</p>
+<p class="tablebodytext">If specified, only global facts or facts associated with this object type can be referenced by this external definition.</p>
+<p class="tablebodytext">It can only be specified if <span class="unixoutputc">PE_CLASS_ID</span> is specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">API_PROCESSING_SEQNR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (3)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Order in which underlying external definition APIs are called for each external definition in a linked set of definitions.</p>
+<p class="tablebodytext">The default processing order is:</p>
+<ol class="tablelistnumber"><li class="tablelistnumber">Hierarchy depth</li><li class="tablelistnumber">Element sequence.</li></ol><p class="tablebodytext">If this processing order is not appropriate, it can be used to explicitly specify a different order in which the APIs are called for each external definition.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">DATE_RANGED_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Derived</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Set to 1 (True) if the underlying Convergent Billing or Process Engine entity is date-ranged.</p>
+<p class="tablebodytext">It is automatically defaulted based on the value of either <span class="unixoutputc">CB_ENTITY</span> or <span class="unixoutputc">PE_CLASS_ID</span>.</p>
+<p class="tablebodytext">If not set to 1 (True), it is NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">DATE_RANGED_NEW_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Set to 1 (True) if the default behaviour for updating a date-ranged record is to insert a new record as of the effective date of the transaction.</p>
+<p class="tablebodytext">If NULL, the default behaviour is to update the record identified by the effective date of the transaction.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">INPUT_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Set to 1 (True) if this external definition is appropriate for use with input from external systems.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">OUTPUT_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Set to 1 (True) if this external definition is appropriate for use for output to external systems.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">INSERT_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Set to 1 (True) if this external definition is appropriate for the input of new data from an external system.</p>
+<p class="tablebodytext">It can only be True if <span class="unixoutputc">INPUT_IND_CODE</span> is set to 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">UPDATE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Set to 1 (True) if this external definition is appropriate to update data from an external system.</p>
+<p class="tablebodytext">It can only be True if <span class="unixoutputc">INPUT_IND_CODE</span> is set to 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">UPDATE_INSERT_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Set to 1 (True) if the update interface generated for this external definition should automatically perform an insert if the update fails due to the referenced entity not existing in Singleview.</p>
+<p class="tablebodytext">It can only be set to 1 if <span class="unixoutputc">INPUT_IND_CODE</span> and <span class="unixoutputc">UPDATE_IND_CODE</span> are set to 1.</p>
+<p class="tablebodytext">If not set to 1, it must be NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">UPDATE_CHILD_SYNC_IND_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Set to 1 (True) if the update interface generated for this external definition should automatically:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Delete child entities that are not referenced in the updated data supplied in the interface.</li><li class="tablelistbullet">Insert child entities included in the data that do not already exist in Singleview.  </li></ul><p class="tablebodytext">It is usually set when the external system supplies all required data and Singleview needs to synchronise its data with the external system.</p>
+<p class="tablebodytext">If not set to 1 (True), it must be NULL.</p>
+<p class="tablebodytext">It can only be set to 1 if <span class="unixoutputc">INPUT_IND_CODE</span> and <span class="unixoutputc">UPDATE_IND_CODE</span> are set to 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">DELETE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Set to 1 (True) if this external definition can be used for deleting data when specified by an external system.</p>
+<p class="tablebodytext">It can only be set to 1 if <span class="unixoutputc">INPUT_IND_CODE</span> is set to 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">SEARCH_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Set to 1 (True) if this external definition can be used for receiving search parameters from an external system.</p>
+<p class="tablebodytext">It can only be set to 1 if <span class="unixoutputc">OUTPUT_IND_CODE</span> is set to 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">FETCH_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Set to 1 (True) if this external definition can be used for retrieving data for use by an external system.</p>
+<p class="tablebodytext">It can only be set to 1 if <span class="unixoutputc">OUTPUT_IND_CODE</span> is set to 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">SOURCE_EXTERNAL_DEFN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">ID of the external definition from which this external definition was copied for a generated external definition.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PARENT_EXTERNAL_DEFN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">ID of the external definition for which this generation was performed for a generated external definition.</p>
+<p class="tablebodytext">If <span class="unixoutputc">SOURCE_EXTERNAL_DEFN_ID</span> is specified, it is mandatory.  Otherwise, it must be NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">FETCH_EXTERNAL_DEFN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">If this is a search external definition, it references the fetch external definition to be used.</p>
+<p class="tablebodytext">If this is an insert, update, or delete external definition, this definition can be used to define the format of the response, if one is required.</p>
+<p class="tablebodytext">It must be set to a fetch external definition or a search external definition linked to a fetch external definition.</p>
+<p class="tablebodytext">The specified external definition must have access to the input elements for this external definition to perform the necessary queries to construct the response.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">WHERE_CLAUSE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">CLOB</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext"><span class="unixoutputc">WHERE</span> clause for filtering the rows to be retrieved for a search external definition.</p>
+<p class="tablebodytext">Elements from the search external definition can be used as parameters in the <span class="unixoutputc">WHERE</span> clause. </p>
+<p class="tablebodytext">It can only be specified if <span class="unixoutputc">SEARCH_IND_CODE</span> is set to 1. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">ORDER_BY_CLAUSE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">CLOB</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext"><span class="unixoutputc">ORDER BY</span> clause for filtering the rows to be retrieved for a search external definition.</p>
+<p class="tablebodytext">Elements from the search definition can be used as parameters in the <span class="unixoutputc">WHERE</span> clause.</p>
+<p class="tablebodytext">It can only be specified if <span class="unixoutputc">SEARCH_IND_CODE</span> is set to 1. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PE_SEARCH_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">ID of the Process Engine search to be used for a search external definition on a Process Engine class.</p>
+<p class="tablebodytext">Elements from the search definition can be used as parameters for the Process Engine search.</p>
+<p class="tablebodytext">It can only be specified if <span class="unixoutputc">SEARCH_IND_CODE</span> is set to 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PE_SXP_SEARCH</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">CLOB</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Process Engine SXP expression to be used to perform the search for a search external definition.</p>
+<p class="tablebodytext">Elements from the search definition can be used as parameters for the expression.</p>
+<p class="tablebodytext">It can only be specified if <span class="unixoutputc">SEARCH_IND_CODE</span> is set to 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext"><span class="unixoutputc">PE_ABSTRACT_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Number (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">Set to 1 (True) if this is an abstract external definition used in a Process Engine context; otherwise, it is used in a Convergent Billing context.</p>
+<p class="tablebodytext">Applicable only to external definitions that are completely abstract; that is, the parent and children have no Convergent Billing entity or Process Engine class.</p>
+<p class="tablebodytext">It can only be specified if <span class="unixoutputc">CB_ENTITY</span> and <span class="unixoutputc">PE_CLASS_ID</span> are set to NULL, and <span class="unixoutputc">EXTERNAL_IND_CODE</span> is set to 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="210"><p class="tablebodytext">COMMIT_IND_CODE</p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Number (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="360"><p class="tablebodytext">If this column is set to 1 (True), then the generated interfaces will be configured to execute as remote functions in a non-transactional server that will auto-commit all changes made before returning. </p>
+<p class="tablebodytext">For interfaces that perform both insert or update and fetch operations, a commit will be performed after the insert or update has completed and before the fetch is performed. </p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Content Types for CONTENT_MODEL_CODE</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="90"><p class="tableheading">Reference Code</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="120"><p class="tableheading">Abbreviation</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="486"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">1</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">Simple Content</p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Restricted to a single element, and zero or more attributes.</p>
+<p class="tablebodytext">It is used to define additional restrictions on an element that can be reused in another definition, or to extend a single element with additional attributes.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">2</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">Sequence</p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">One or more elements that must appear in the order specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">3</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">Choice</p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Two or more elements, only one of which can be present in the data.</p>
+<p class="tablebodytext">The XML schema does not define how a choice is made.</p>
+<p class="tablebodytext">The choice of the value can be either:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">At the discretion of the external system supplying the data.</li><li class="tablelistbullet">Determined by the value of any other Simple Content element in the current or linked external definition.  For more information, refer to the <span class="unixoutputc"><a id="h52030_3" class="jump" title="EXTERNAL_DEFN_ELEMENT_TRE_V" href="51845.htm" target="_self">EXTERNAL_DEFN_ELEMENT_TRE_V</a></span> and <span class="unixoutputc"><a id="h51971" class="jump" title="EXTERNAL_DEFN_CHOICE_TRE_V" href="51844.htm" target="_self">EXTERNAL_DEFN_CHOICE_TRE_V</a></span> views.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">4</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">All</p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Two or more elements that can appear in any order.</p>
+<p class="tablebodytext">This type of content is not appropriate for use with interfaces where elements are determined by their position in the data stream.  </p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="51846.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="7454.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

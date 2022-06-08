@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> biClusterConfigure&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "11663.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "11665.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('11664')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="11663.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="11665.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">biClusterConfigure&amp;()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'biClusterConfigure&amp;()' (11664)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<table class="tableintopic" width="462" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<td class="tableheading" width="210"><p class="tableheading">Interface 1</p>
+</td>
+<td width="42"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td class="tableheading" width="210"><p class="tableheading">Interface 2</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="210"><pre class="unixinputp">biClusterConfigure&amp;(    const Incremental&amp;)</pre>
+</td>
+<td width="42"><pre class="unixinputp">&nbsp;</pre>
+</td>
+<td width="210"><pre class="unixinputp">biClusterConfigure&amp;(    const Incremental&amp;,    const Instance$)</pre>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Configures a specific set of functions for use in a clustered environment.</p>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="288" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Method</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Remote</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="570"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="unixoutputc">Incremental&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="570"><p class="tablebodytext">In:  If set to a non-zero value (TRUE), the function is run in incremental mode.</p>
+<p class="tablebodytext">For more information, refer to <span class="referrals">Remarks</span> below.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="unixoutputc">Instance$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="570"><p class="tablebodytext">In:  Name of the instance for which a specific set of functions are to be configured.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">1 (TRUE) if successful; 0 (FALSE) if there are no instance names to configure (that is, <span class="unixoutputc">InstanceStatus</span> derived attribute table is empty); otherwise, an error is raised.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">The functions to be configured are defined in the <span class="unixoutputc">InstanceFunctions</span> derived attribute table and the instances to configure the functions for are defined in the <span class="unixoutputc">InstanceStatus</span> derived attribute table.</p>
+<p class="bodytext">The function performs the following steps for <span class="unixoutputc">Instance$</span> or for each function listed in the <span class="unixoutputc">InstanceFunctions</span> derived attribute table if the <span class="unixoutputc">Instance$</span> is not specified:</p>
+<ol class="listnumber"><li class="listnumber">The original function is duplicated for each instance listed in the <span class="unixoutputc">InstanceStatus</span> derived attribute table with a new name of <span class="unixoutputc">&lt;InstanceName&gt;::&lt;FunctionName&gt;</span>.</li><li class="listnumber">The remote service name or the queue space name of the new, instance-specific functions are changed based on the following conditions:<ul class="listdashbullet2"><li class="listdashbullet2">If the <span class="unixoutputc">Adjust Queuespace?</span> column of the <span class="unixoutputc">InstanceFunctions</span> derived attribute table record for the original function is set to 'Yes' , the queuespace name of the new function is changed to an instance specific queuespace name using the format <span class="unixoutputc">&lt;Queuespace Name&gt;&lt;INSTANCE NAME&gt;</span>. </li><li class="listdashbullet2">If the <span class="unixoutputc">Adjust Queuespace?</span> column is set to 'No', the remote service name of the new function is changed using the format <span class="unixoutputc">&lt;Remote Service Abbreviation&gt;&lt;INSTANCE NAME&gt;</span>, where <span class="unixoutputc">&lt;Remote Service Abbreviation&gt;</span> is based on the original function's remote service name, as defined in the <span class="unixoutputc">TuxedoServiceAbbreviation</span> derived attribute table.<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="listnote">This function does not support changing both the remote service name and the queuespace name for a given function.</p></td></tr></table>
+</li></ul></li><li class="listnumber">If the <span class="unixoutputc">Modify Text?</span> column of the <span class="unixoutputc">InstanceFunctions</span> derived attribute table record for the original function is set to 'Yes', the function definition text of the new, instance-specific function is modified based on markup within the original function definition.  The <span class="unixoutputc">Modify Text?</span> option is useful when instance-specific versions of the functions do not require all of the code contained in the original function definition.  For example, most of the shared memory cache functions duplicated by <span class="unixoutputc">biClusterConfigure&amp;()</span> do not require the try-except expression.  For more information about how the function definitions are modified, refer to <span class="referrals">Remarks</span> later in this topic.</li></ol><p class="bodytext">The function can be run either in standard or incremental mode.  In standard mode (<span class="unixoutputc">Incremental&amp;</span> is 0 (FALSE)), all instance-specific functions for the functions defined in the <span class="unixoutputc">InstanceFunctions</span> derived attribute table are deleted and reconfigured as described in the steps above. </p>
+<p class="bodytext">In incremental mode (<span class="unixoutputc">Incremental&amp;</span> is a non-zero value (TRUE)):</p>
+<ul class="listbullet"><li class="listbullet">Only functions in the <span class="unixoutputc">InstanceFunctions</span> derived attribute table for which instance-specific functions were not created are configured.</li><li class="listbullet">Any instance-specific functions in the database that do not have a matching function in the <span class="unixoutputc">InstanceFunctions</span> derived attribute table are deleted from the database.  The function assumes that all instance-specific functions have been created successfully and correctly.</li></ul><p class="bodytext">Incremental mode is useful when adding or deleting functions from the <span class="unixoutputc">InstanceFunctions</span> derived attribute table; the necessary adjustments can be made without affecting existing functions and possibly interrupting functionality.  Incremental mode can be also used when instance names have been added to the <span class="unixoutputc">InstanceStatus</span> derived attribute table; the appropriate functions are created as required. </p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">Incremental mode does not support the removal of instance-specific functions when instances are removed from the <span class="unixoutputc">InstanceStatus</span> derived attribute table.  To remove instances and their functions use <span class="unixoutputc">biClusterInstanceDelete&amp;()</span>.</p></td></tr></table>
+<p class="bodytext">Instance-specific functions created by this function have the same function role mapping as the original function on which the clustered functions are based.  The group ID of all instance-specific functions is set to INSTALLATION.</p>
+<p class="syntaxheading">Function Definition Modification</p>
+<p class="bodytext">This section describes how the function modifies the function definition if the <span class="unixoutputc">Modify Text?</span> column of the <span class="unixoutputc">InstanceFunctions</span> derived attribute table record is set to Yes.</p>
+<p class="bodytext">In the function definition of the original function (on which instance-based functions are configured), code that needs to be included in instance-specific versions of the function must be included between an <span class="unixoutputc">&lt;INSTANCE&gt;</span> and <span class="unixoutputc">&lt;/INSTANCE&gt;</span> pair of tags. </p>
+<p class="bodytext">The following rules and hints apply when defining a function using <span class="unixoutputc">&lt;INSTANCE&gt;</span> tags:</p>
+<ul class="listbullet"><li class="listbullet">Each tag must be displayed on a line by itself and the line must begin with the comment character, '#'. </li><li class="listbullet">Any comments, whether in the header of the function (that is, the function name and parameter block, lines before the function name, or in the function body itself, are not included.</li><li class="listbullet">Any variables and constants required by the instance-specific code must be included within <span class="unixoutputc">&lt;INSTANCE&gt;</span> tags.</li><li class="listbullet">The correct number of expression block characters ('{' and '}') must be included so the generated function is syntactically correct.</li><li class="listbullet">The <span class="unixoutputc">Auto Include Parameters?</span> column of the <span class="unixoutputc">InstanceFunctions</span> derived attribute table record indicates whether or not all parameters of the function are to be automatically included in the instance-specific version of the function.  If <span class="unixoutputc">Auto Include Parameters?</span> is set to <span class="unixoutputc">False</span>, only those parameters contained between <span class="unixoutputc">&lt;INSTANCE&gt;</span> and <span class="unixoutputc">&lt;/INSTANCE&gt;</span> tags are included.</li><li class="listbullet">The start of an expression block (that is, a '{' character) must be the last character on the line (not including white space); otherwise, the indenting of the output will be incorrect.  Not following this rule does not result in an invalid function definition text; however, the function is not indented correctly.</li><li class="listbullet">The end of an expression block (that is, a '}' character) must be the first non-white space character on the line for the output to be correctly indented.  Not following this rule does not result in an invalid function definition text; however, the function is not indented correctly.</li></ul><p class="bodytext"><span class="unixoutputc">zGenerateInstanceFunction$()</span> is the function used to modify the function text and can be used to test the tags to ensure the correct output is achieved. </p>
+<table width="100%" class="tipstyle"><tr><td><p class="tip">Tip:</p><p class="tip">After using <span class="unixoutputc">zGenerateInstanceFunction$()</span> to test the output, save the output as a new, temporary function to ensure it parses successfully.</p></td></tr></table>
+<p class="bodytext"><span class="unixoutputc"><a id="h38428" class="jump" title="biAccountPurge&amp;()" href="11099.htm" target="_self">biAccountPurge&amp;()</a></span> is an example of a function that uses the <span class="unixoutputc">&lt;INSTANCE&gt;</span> tags.  The following is the modified function text for <span class="unixoutputc">biAccountPurge&amp;()</span>:</p>
+<pre class="unixoutputp">&lt;instance&gt;::biAccountPurge&amp;(AccountIds&amp;[]) =</pre>
+<pre class="unixoutputp">{</pre>
+<pre class="unixoutputp">    if (length(AccountIds&amp;[]) = 0) { return 0; };</pre>
+<pre class="unixoutputp"></pre>
+<pre class="unixoutputp">    var&nbsp;lIx&amp;;</pre>
+<pre class="unixoutputp">    var&nbsp;lQueued&amp; := 1;</pre>
+<pre class="unixoutputp">    for (lIx&amp; := 0; lIx&amp; &lt; length(AccountIds&amp;[]); ++lIx&amp;) {</pre>
+<pre class="unixoutputp">        try {</pre>
+<pre class="unixoutputp">            AccountPurge&amp;(AccountIds&amp;[lIx&amp;]);</pre>
+<pre class="unixoutputp">        }</pre>
+<pre class="unixoutputp">        except {</pre>
+<pre class="unixoutputp">            MessageLog&amp;(90, ['AccountPurge&amp;', error_message()]);</pre>
+<pre class="unixoutputp">        }</pre>
+<pre class="unixoutputp">    }</pre>
+<pre class="unixoutputp">    return lQueued&amp;;</pre>
+<pre class="unixoutputp">}</pre>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="11663.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="11665.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

@@ -1,0 +1,493 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> SCHEDULE_TYPE_TRE_V </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "50799.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "58498.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7526');highlight('50772')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="50799.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="58498.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">SCHEDULE_TYPE_TRE_V</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'SCHEDULE_TYPE_TRE_V' (50772)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="unixoutputc">SCHEDULE_TYPE_TRE_V</span> view provides details of the types of schedules supported in Singleview.</p>
+<p class="syntaxheading">Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="168"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="138"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="390"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext"><span class="unixoutputc">SCHEDULE_TYPE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="390"><p class="tablebodytext">ID of the schedule type.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Operational Details</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="192"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="378"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">LAST_MODIFIED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Date-time that any details for this schedule type were last modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">OPERATOR_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">User who last modified this record.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">GROUP_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Security group associated with this record.</p>
+<p class="tablebodytext">It controls access and update privileges to the operational attributes of this record.</p>
+<p class="tablebodytext">When a schedule type is created, it defaults to <span class="unixoutputc">TYPE_GROUP_ID</span>.</p>
+<p class="tablebodytext">Only a suitably privileged user can change <span class="unixoutputc">GROUP_ID</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SCHEDULE_GROUP_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of the security group of users that can create schedules of this schedule type.</p>
+<p class="tablebodytext">A user must have Insert privileges for the specified schedule group to create new schedules of this schedule type.</p>
+<p class="tablebodytext">When a schedule type is created, it defaults to the <span class="unixoutputc">TYPE_GROUP_ID</span>.</p>
+<p class="tablebodytext">Only a suitably privileged user can change <span class="unixoutputc">SCHEDULE_GROUP_ID</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SERVER_COMMAND_ARGS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Command-line parameters passed to the server command when it is run.</p>
+<p class="tablebodytext">If <span class="unixoutputc">SERVER_COMMAND</span> includes command-line parameters, any parameters specified here replace those specified in <span class="unixoutputc">SERVER_COMMAND</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">BASELINE_DURATION_EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Expression for calculating the default <span class="unixoutputc">BASELINE_DURATION</span> of the type's schedules and its tasks.</p>
+<p class="tablebodytext">The expression can access entity validation variables from the <span class="unixoutputc">TASK_QUEUE</span> table.</p>
+<p class="tablebodytext">The <span class="unixoutputc">TaskAverageDuration&amp;()</span> function can be used to return the average duration of the last 'n' successfully completed tasks.</p>
+<p class="tablebodytext">When evaluated for the <span class="unixoutputc">SCHEDULE</span> entity, only <span class="unixoutputc">TASK_QUEUE</span> entity validation variables for column names that exist in both the <span class="unixoutputc">SCHEDULE</span> and <span class="unixoutputc">TASK_QUEUE</span> table are populated.  However, the entity validation variables for <span class="unixoutputc">START_DATE</span>, <span class="unixoutputc">BASELINE_START_DATE</span>, and <span class="unixoutputc">SCHEDULED_START_DATE</span> are set to the value of <span class="unixoutputc">FIRST_DATE</span>.</p>
+<p class="tablebodytext">It must return an integer.&nbsp;If it returns:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">An undefined value when evaluated for a task, the schedule's <span class="unixoutputc">BASELINE_DURATION </span>is used. </li><li class="tablelistbullet">An undefined value when evaluated for a schedule, an error is returned.</li><li class="tablelistbullet">A defined value, the returned value must be greater than or equal to 1, and less than or equal to 2147483647.  Values outside of this range cause an error to be logged and are treated as undefined.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">MAX_DURATION_EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Expression for calculating the <span class="unixoutputc">MAX_DURATION</span> of schedules of this type and their tasks.</p>
+<p class="tablebodytext">It can access entity validation variables from <span class="unixoutputc">TASK_QUEUE</span>.</p>
+<p class="tablebodytext">It must return an integer.  If it returns an undefined value, the schedule's <span class="unixoutputc">MAX_DURATION</span> is used for each schedule of this type and its tasks.</p>
+<p class="tablebodytext">If it parses to a simple constant value, it is used to default only the schedule's <span class="unixoutputc">MAXIMUM_DURATION</span>.</p>
+<p class="tablebodytext">It is always evaluated after the associated schedules and tasks <span class="unixoutputc">BASELINE_DURATION</span> columns are calculated.  Therefore, it is possible to define <span class="unixoutputc">MAX_DURATION_EXPR</span> as a simple multiple of the <span class="unixoutputc">BASELINE_DURATION</span> of a schedule or task if required.</p>
+<p class="tablebodytext">If specified, <span class="unixoutputc">MAX_DURATION</span> must be greater than or equal to <span class="unixoutputc">BASELINE_DURATION</span>, and less than or equal to 2147483647.  Values outside of this range cause an error to be logged and are treated as undefined.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PURGE_PERIOD</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Minimum number of days that tasks of this schedule type are kept online.</p>
+<p class="tablebodytext">The archiving process archives and/or deletes all data associated with tasks completed more than <span class="unixoutputc">PURGE_PERIOD</span> days before the effective date of the archive.</p>
+<p class="tablebodytext">The default purge period of schedules is set to <span class="unixoutputc">PURGE_PERIOD</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">RESUBMIT_COPY_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">If it equals 1 (TRUE) and a stopped or failed task is resubmitted, a copy of the original task is made and submitted.  </p>
+<p class="tablebodytext">If it does not equal 1 and a stopped or failed task is resubmitted, no copy is made, and the original task is submitted.</p>
+<p class="tablebodytext">To improve system auditing, it is recommended that it be set to 1 (TRUE) for all but the most trivial of schedule types.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">A copy of the original task is always made when a successful task is resubmitted.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">ERROR_MESSAGE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of the error message used when constructing the email message sent when a task completes.</p>
+<p class="tablebodytext">The specified error message is generated with two parameters supplied:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Name of the schedule</li><li class="tablelistbullet">ID of the completed task.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">DELAY_START_</span><br><span class="unixoutputc">NOTIFICATION_EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Optional expression invoked for tasks of this schedule type not running when the tasks' <span class="unixoutputc">BASELINE_START_DATE</span> has passed. </p>
+<p class="tablebodytext">The expression can access entity validation variables from <span class="unixoutputc">TASK_QUEUE</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">OVERDUE_NOTIFICATION_</span><br><span class="unixoutputc">EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Optional expression invoked for tasks of this schedule type not completed by the tasks' <span class="unixoutputc">BASELINE_END_DATE</span>.</p>
+<p class="tablebodytext">The expression can access entity validation variables from <span class="unixoutputc">TASK_QUEUE</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">HELD_NOTIFICATION_EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Optional expression invoked for tasks of this schedule type when a task enters 8 (Held) status.</p>
+<p class="tablebodytext">The expression can access entity validation variables from <span class="unixoutputc">TASK_QUEUE</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">VERSION_STR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Version ID used to tag operational details of this schedule type.</p>
+<p class="tablebodytext">It is provided for use by third party configuration management tools and is not directly used by Singleview.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">CATEGORIES</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Comma-separated list of categories associated with this schedule type.</p>
+<p class="tablebodytext">Refer to the <span class="unixoutputc"><a id="h51496" class="jumpnowordoutput" title="CATEGORY_V" href="50728.htm" target="_self">CATEGORY_V</a></span> view for the list of available categories.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Generic Details</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="192"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="378"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">LAST_MODIFIED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Date-time that the generic details of this schedule type were last modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SCHEDULE_TYPE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Name for this schedule type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SCHEDULE_TYPE_DISPLAY_</span><br><span class="unixoutputc">NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Name of schedule type displayed.</p>
+<p class="tablebodytext">It defaults to <span class="unixoutputc">SCHEDULE_TYPE_NAME</span>.</p>
+<table class="cautionstyle" width="100%"><tr><td><p class="caution">Caution:</p><p class="tablecaution">The value can be translated into a locale-specific language and therefore differ between implementations.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">DESCRIPTION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (4000)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Description of this schedule type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">OPERATOR_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">User who last modified the generic details of this schedule type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">GROUP_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Security group associated with the schedule type's generic details.</p>
+<p class="tablebodytext"><span class="unixoutputc">TYPE_GROUP_ID</span> controls access to the record.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">TASK_TYPE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Standard characteristics of where and how the task generation process is handled.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">TASK_TYPE</span> reference type.</p>
+<p class="tablebodytext">The table below lists supported task types.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">MAX_TASKS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Maximum number of tasks of this schedule type that can run concurrently across the Convergent Billing cluster.</p>
+<p class="tablebodytext">If NULL, there is no limit to the number of tasks.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">MAX_INSTANCE_TASKS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Maximum number of tasks of this schedule type that can run concurrently on each Convergent Billing instance in the cluster.</p>
+<p class="tablebodytext">If NULL, there is no limit to the number of tasks.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SERVER_COMMAND</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Command or parameters to execute on the server for this schedule type.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">The scheduler spawns a separate process for each scheduled task. </p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">CLIENT_COMMAND</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Command and/or parameters to execute on the client to view the results of this schedule type.</p>
+<p class="tablebodytext">The interpretation of its contents is dependent on <span class="unixoutputc">TASK_TYPE_CODE</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">ENTITY_VALIDATION_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Entity validation that defines up to 25 parameters that can be passed as parameters to tasks of this schedule type.</p>
+<p class="tablebodytext">If specified, the validation tablename must be set to <span class="unixoutputc">TASK_QUEUE</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PARAMETERS_DISABLE_</span><br><span class="unixoutputc">IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">By default, when the scheduler invokes a server command, the scheduler adds the <span class="unixoutputc">TASK_ID</span>, <span class="unixoutputc">EFFECTIVE_DATE</span>, and any entity validation parameters specified to the end of the server command line.</p>
+<p class="tablebodytext">If set to 1 (TRUE), no columns are added to the server command line.  It allows the scheduler to support the execution of arbitrary UNIX commands not specifically designed to work with the STD.</p>
+<p class="tablebodytext">It can be specified only if <span class="unixoutputc">ENTITY_VALIDATION</span> is NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">TYPE_VERSION_STR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Optional version identification string used to tag the generic details of this schedule type.</p>
+<p class="tablebodytext">It is provided for use by third party configuration management tools.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">TYPE_CATEGORIES</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Comma-separated list of categories associated with this schedule type.</p>
+<p class="tablebodytext">See <span class="unixoutputc">CATEGORY_V</span> for a list of available categories.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Scheduling Task Types</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="192"><p class="tableheading">Task Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="504"><p class="tableheading">Schedule Type Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="formname">Bill Cycle Schedule</span></p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">Corresponds to a standard batch invoice generation cycle.</p>
+<p class="tablebodytext">Only schedules of this task type can be referenced in forms where the schedule corresponds to an invoice cycle (for example, the <span class="formname">Customer Detail</span> or <span class="formname">Invoice Message</span> forms.</p>
+<p class="tablebodytext">Schedules of this type create rows in the<span class="unixoutputc"> BILL_RUN</span> table when their tasks are run for the first time.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="formname">Client Based Report</span></p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">Invokes a client-based report, implemented using Impromptu.</p>
+<p class="tablebodytext">Client-based report types are not supported.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="formname">Report</span></p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">Reports are generated by the server and stored in an image format in the <span class="unixoutputc">TASK_QUEUE_RESULT</span> table.</p>
+<p class="tablebodytext">The report can be viewed by clicking the <strong class="buttons">Report</strong> button on the<span class="formname"> Task Detail</span> form.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="formname">Server Command</span></p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">General purpose server commands.</p>
+<p class="tablebodytext">The command performs some action on the server with progress and results displayed in the <span class="unixoutputc">TASK_QUEUE_RESULT</span> table.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="formname">Bill Run Operation</span></p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">Performs an operation or set of operations on a bill run.</p>
+<p class="tablebodytext">These schedules are usually configured to commence immediately.&nbsp; The first parameter to any schedules of this type is always the ID of the bill run on which the schedule operates.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="formname">Bill Run Customer Operation</span></p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">Performs an operation or set of operations for a specific customer hierarchy on a bill run.</p>
+<p class="tablebodytext">These schedules are usually configured to commence immediately.</p>
+<p class="tablebodytext">The first parameter to any schedules of this type is always the ID of the bill run on which the schedule operates.</p>
+<p class="tablebodytext">The second parameter to any schedules of this type is always the ID of the root customer node on which the bill run operation is performed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="formname">QA Bill Cycle</span></p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">Corresponds to a Quality Assurance or Temporary invoice generation cycle.</p>
+<p class="tablebodytext">The first parameter for this schedule type references the main invoice generations bill cycle for which a QA run is performed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="formname">Immediate Invoice Run</span></p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">Performs an immediate invoice run for a customer hierarchy.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="formname">Immediate Statement Run</span></p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">Performs an immediate statement (QA) run for a customer hierarchy.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="formname">Bill Run Operation (Prerequisite)</span></p>
+</td>
+<td style="border:1px solid #010101;" width="504"><p class="tablebodytext">Performs an operation or set of operations on a bill run.</p>
+<p class="tablebodytext">This is the same as Bill Run Operation task type, except that tasks of this type derive the bill run ID to operate on from a prerequisite task. </p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="50799.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="58498.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

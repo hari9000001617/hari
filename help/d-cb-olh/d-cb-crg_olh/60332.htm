@@ -1,0 +1,433 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> TARIFF_CACHE_V </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "8005.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "58339.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7934');highlight('60332')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="8005.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="58339.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">TARIFF_CACHE_V</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'TARIFF_CACHE_V' (60332)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="unixoutputc">TARIFF_CACHE_V</span> view lists tariff information that has been cached. This information can be retrieved using the <span class="unixoutputc">TariffFetchById?()</span> function.</p>
+<p class="bodytext">For a specific <span class="unixoutputc">TARIFF_ID</span> and date-time, only a single row is returned from this view.</p>
+<p class="syntaxheading">Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="198"><p class="tableheading">Column Name</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="372"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">TARIFF_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">ID of the tariff.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Date-time that the record becomes effective.</p>
+<p class="tablebodytext">Its granularity is one day. Time component always corresponds to midnight (that is, 00:00:00 hours).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_END_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Date-time that the record ceases to be effective.</p>
+<p class="tablebodytext">Its granularity is one day. Time component always corresponds to one second before midnight (that is, 23:59:59).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">TARIFF_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (67)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Name of the tariff.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">TARIFF_CLASS_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Class of the tariff.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">TARIFF_CLASS</span> reference type.</p>
+<p class="tablebodytext">If set to null, this tariff is not accessed by the RGP.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">TARIFF_TYPE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Type of tariff.</p>
+<p class="tablebodytext">It is not used by the rating or billing engines. It is based on the <span class="unixoutputc">TARIFF_TYPE</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">MASTER_TARIFF_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">ID of the master tariff of this tariff.</p>
+<p class="tablebodytext">If set, it is used instead of <span class="unixoutputc">TARIFF_ID</span> to retrieve tariff details.</p>
+<p class="tablebodytext">The following restrictions apply:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">A tariff can only be a master tariff if it has a non-null <span class="unixoutputc">CHARGE_EXPR</span>.</li><li class="tablelistbullet"><span class="unixoutputc">NR_CONDITIONS</span> and <span class="unixoutputc">NR_CHARGE_COMPONENTS</span> for the tariff and its master must match.</li><li class="tablelistbullet">Tariff must have a <span class="unixoutputc">CONTEXT_CODE</span> and an <span class="unixoutputc">APPLICATION_ENV_CODE</span> greater than or equal to those of its master.</li><li class="tablelistbullet">A master tariff can only be assigned on insert.</li><li class="tablelistbullet">The date range of a tariff and its master must match.</li></ul><p class="tablebodytext">If set, <span class="unixoutputc">TARIFF_ID</span> cannot be associated with any rows in the <span class="unixoutputc">TARIFF_CONDITION_DEFN</span>, <span class="unixoutputc">TARIFF_CHARGE_DEFN</span>, or <span class="unixoutputc">TARIFF_CHARGE</span> tables.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">BILLABLE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">If set to 1 (true), the tariff generates billable charges.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CONTEXT_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Processing context in which this tariff operates.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">CONTEXT_TARIFF</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">APPLICATION_ENV_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Application environment in which the tariff operates.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">APPLICATION_TARIFF</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">KEY_SUBSTITUTION_EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Expression defining the values to be substituted into the key variable.</p>
+<p class="tablebodytext">Where the tariff has a data type of:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Real, it must be null.</li><li class="tablelistbullet">Real Array, it is mandatory and must return an integer result. It defines the number of values substituted in <span class="unixoutputc">KEY_VARIABLE_NAME</span>.</li><li class="tablelistbullet">Real Hash, it is mandatory and must return a string array result. It defines the string values to be substituted in <span class="unixoutputc">KEY_VARIABLE_NAME</span>.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">KEY_VARIABLE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (66)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Name of the local expression variable used in tariff expressions.</p>
+<p class="tablebodytext">It can only and must contain a value if the data type is Real Array or Real Hash.</p>
+<p class="tablebodytext">Variable name must start with the <span class="unixoutputc">@</span> character, indicating a local expression variable. It must be terminated by the appropriate type suffix:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">&amp;</span> (integer) for a tariff with a data type of Real Array</li><li class="tablelistbullet"><span class="unixoutputc">$</span> (string) for a tariff with a data type of Real Hash.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">DEFAULT_CHARGE_EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Default charge expression for this tariff if none of the conditional expressions match or <span class="unixoutputc">NR_CONDITIONS</span> is zero.</p>
+<p class="tablebodytext">The expression must return a real value.</p>
+<p class="tablebodytext">If the expression references the key variable, it is evaluated for each key variable value.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CHARGE_EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Expression for the charges associated with this tariff.</p>
+<p class="tablebodytext">The charge components in the expression are referenced as the local variables '<span class="unixoutputc">@charge1#</span>' to '<span class="unixoutputc">@charge10#</span>' (depending on the number of charge components).</p>
+<p class="tablebodytext">Key variable can be referenced if applicable.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">For discounts, it must generate a negative value.</p></td></tr></table>
+<p class="tablebodytext">The following rules apply:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">It must be null if <span class="unixoutputc">NR_CHARGE_COMPONENTS</span> is 0. <span class="unixoutputc">DEFAULT_CHARGE_EXPR</span> is used to evaluate the value of this tariff.</li><li class="tablelistbullet">It can only be null if <span class="unixoutputc">NR_CHARGE_COMPONENTS</span> is 0 or 1.</li><li class="tablelistbullet">It cannot reference charge variables greater than <span class="unixoutputc">NR_CHARGE_COMPONENTS</span>.</li><li class="tablelistbullet">It must return a real result.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">DEFAULT_INVOICE_TXT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Invoice text that will appear for each charge created by this tariff.</p>
+<p class="tablebodytext">It is overridden by the <span class="unixoutputc">INVOICE_TXT</span> column in the <span class="unixoutputc">TARIFF_CHARGE</span> table.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CURRENCY_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Currency in which the charge of tariff is calculated.</p>
+<p class="tablebodytext">Either <span class="unixoutputc">CURRENCY_ID</span> or <span class="unixoutputc">CURRENCY_EXPR</span> must be specified, but not both.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CURRENCY_EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Expression defining the currency to be used for any charges generated by this tariff.</p>
+<p class="tablebodytext">If it is specified, <span class="unixoutputc">CURRENCY_ID</span> must be null.</p>
+<p class="tablebodytext">It must return a positive integer value corresponding to a valid internal currency identifier.</p>
+<p class="tablebodytext">If it:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">References the key variable, it is evaluated for each eligible key variable value. Therefore, different components of a tariff can be in different currencies.</li><li class="tablelistbullet">Does not reference the key variable, the expression is evaluated only once and the same currency is used for all key values.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">SUPPRESS_ZERO_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">If set to 1 (True) and the resultant charge is calculated to be zero, no charge is recorded.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">GLOBAL_EVENT_APPLY_IND_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">If set to 1 (True), it is applied for all events in the context and application environment matching the tariff's eligibility criteria.</p>
+<p class="tablebodytext">All calculated charges are applied to the account specified by the <span class="unixoutputc">TO_ACCOUNT_ID</span> and <span class="unixoutputc">FR_ACCOUNT_ID</span> (if specified) of the charge category.</p>
+<p class="tablebodytext">The account(s) may be overridden by the <span class="unixoutputc">TO_ACCOUNT_ID_EXPR</span> and <span class="unixoutputc">FROM_ACCOUNT_ID_EXPR</span> expressions.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">SERVICE_NOT_FOUND_IND_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">If set to 1 (True), it is only applied if the service specified by the <span class="unixoutputc">C_PARTY_ID</span> in the normalised event was not found in the database.</p>
+<p class="tablebodytext">It can only be set to 1 (True) if:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">CONTEXT_CODE</span> is set to Normalised Event.</li><li class="tablelistbullet"><span class="unixoutputc">APPLICATION_ENV_CODE</span> is set to Rating.</li><li class="tablelistbullet"><span class="unixoutputc">GLOBAL_EVENT_APPLY_IND_CODE</span> is set to 1.</li></ul><p class="tablebodytext">Otherwise, it must be NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">CHARGE_CATEGORY_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Charge category to which all charges associated with this tariff are applied.</p>
+<p class="tablebodytext">It defines both account and general ledger details for the charge.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">TO_ACCOUNT_ID_EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Expression defining the To account to be used for any charges generated by this tariff.</p>
+<p class="tablebodytext">It must return an integer value corresponding to a valid account ID.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">FROM_ACCOUNT_ID_EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Expressions defining the From account to be used for any charges generated by this tariff.</p>
+<p class="tablebodytext">It must return an integer value corresponding to a valid account ID.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">TO_GL_CODE_ID_EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Expression defining the To GL code to be used for any charges generated by this tariff.</p>
+<p class="tablebodytext">It must return an integer value corresponding to a valid GL code ID.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">FROM_GL_CODE_ID_EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Expression defining the From GL code to be used for any charges generated by this tariff.</p>
+<p class="tablebodytext">If specified, it overrides the GL code details inferred by the charge category.</p>
+<p class="tablebodytext">It must return an integer value corresponding to a valid GL code ID.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">RECEIVABLE_TYPE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Receivable type associated with all charges generated by this tariff. It must exist for at least the date range of this tariff.</p>
+<p class="tablebodytext">If specified, <span class="unixoutputc">RECEIVABLE_TYPE_EXPR</span> must be NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">RECEIVABLE_TYPE_EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Expression that defines the receivable type to be used for any charges generated by this tariff.</p>
+<p class="tablebodytext">If specified, <span class="unixoutputc">RECEIVABLE_TYPE_ID</span> must be NULL.</p>
+<p class="tablebodytext">It must return an integer value corresponding to a receivable type ID.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">INVOICE_SECTION_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Invoice section number assigned to all charges generated by this tariff.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_AGGREGATE_IND_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">If set to 1 (True) values calculated by this tariff are aggregated during rating.</p>
+<p class="tablebodytext">It can only be set to 1 if the <span class="unixoutputc">APPLICATION_ENV_CODE</span> is set to Rating.</p>
+<p class="tablebodytext">Otherwise, it must be NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_CHECK_EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="372"><p class="tablebodytext">Expression used to check the balance of the account during rating.</p>
+<p class="tablebodytext">It can perform actions if the balance exceeds preset amounts.</p>
+<p class="tablebodytext">The key variable cannot be accessed by this expression.</p>
+<p class="tablebodytext">It can only contain a value if <span class="unixoutputc">ACCOUNT_AGGREGATE_IND_CODE</span> is set to 1 (True).</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Recurring Tariff Details</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="192"><p class="tableheading">Column Name</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="120"><p class="tableheading">Properties</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="384"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">NORMALISED_EVENT_TYPE_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Type of normalised event generated by the RGP for rental or one-off events based on this tariff.</p>
+<p class="tablebodytext">It also controls the list of possible values for <span class="unixoutputc">EVENT_TYPE_CODE</span> and <span class="unixoutputc">ADJUSTMENT_EVENT_TYPE_CODE</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">EVENT_TYPE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Event type generated by the RGP for normalised events based on this tariff.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">EVENT_TYPE</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">EVENT_SUB_TYPE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Event sub-type to be generated by the RGP for normalised events based on this tariff.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">EVENT_SUBTYPE</span> reference type.</p>
+<p class="tablebodytext">Valid values are dependent on <span class="unixoutputc">EVENT_TYPE_CODE</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">REAL_TIME_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Read only</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">If set to 1 (True), it is a real-time tariff.</p>
+<p class="tablebodytext">If the associated eligibility criteria are satisfied, an event is generated and rated for this tariff immediately, instead of being generated at billing time by the RGP.</p>
+<p class="tablebodytext">If not set to 1, it must be NULL.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="8005.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="58339.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

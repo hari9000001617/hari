@@ -1,0 +1,373 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> treStats </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "49267.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "7691.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7634');expand('51074');highlight('7690')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="49267.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="7691.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">treStats</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'treStats' (7690)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">C</p>
+<pre class="unixinputp">TRE_VARIANT *treStats (void)</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Object Pascal</p>
+<pre class="unixinputp">function treStats: PTreVariant</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Perl</p>
+<pre class="unixinputp">treStats()</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Purpose</p>
+<p class="bodytext">Returns function call statistics for the current process.</p>
+<p class="syntaxheading">Parameters</p>
+<p class="bodytext">None.</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">Pointer to a <span class="unixoutputc">TRE_VARIANT</span> structure, containing an array of hashes of performance statistics.  </p>
+<p class="bodytext">The elements in the hash are listed in the following table.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Hash Elements</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="114"><p class="tableheading">Key</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="96"><p class="tableheading">Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="486"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">Function</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_STRING</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Name of the function for which these statistics have been gathered.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">Direction</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_STRING</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Only present when TRE statistics are being collected from a Tuxedo server process.  Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">IN</span></li><li class="tablelistbullet"><span class="unixoutputc">OUT</span>.</li></ul><p class="tablebodytext">In:  Statistics are for incoming requests for the specified function.</p>
+<p class="tablebodytext">Out:  Statistics are for outgoing calls for the specified function.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">Calls</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_LONG</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Number of times this function was called while statistics are enabled.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">ElapsedTime</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_DOUBLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Total amount of elapsed time in seconds spent in this function while statistics are enabled.</p>
+<p class="tablebodytext">The accuracy of this time is dependent on the platform.  On server platforms, this should be accurate to approximately 1/10000th of a second.</p>
+<p class="tablebodytext">On the client (Windows) platform, it may only be accurate to 1/100th of a second.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">ElapsedMin</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_DOUBLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Minimum elapsed time of all calls to this function while statistics are enabled.</p>
+<p class="tablebodytext">It is undefined if <span class="unixoutputc">Calls=0</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">ElapsedMax</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_DOUBLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Maximum elapsed time of all calls to this function while statistics are enabled.</p>
+<p class="tablebodytext">It is undefined if <span class="unixoutputc">Calls=0</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">ElapsedAvg</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_DOUBLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Average elapsed time per call spent in this function.</p>
+<p class="tablebodytext">It is equal to <span class="unixoutputc">ElapsedTime/Calls</span> and is undefined if <span class="unixoutputc">Calls=0</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">ElapsedStd</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_DOUBLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Standard deviation for calls to this function (<span class="unixoutputc">N-1</span>).</p>
+<p class="tablebodytext">It is undefined if <span class="unixoutputc">Calls &lt;= 1</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">NetTime</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_DOUBLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Time spent in this function, excluding outgoing calls made to other user-defined and registered functions from within this function.</p>
+<p class="tablebodytext">It is a measure of the time required to execute the code in this function within this server process.</p>
+<p class="tablebodytext"><span class="unixoutputc">NetTime</span> is only present if <span class="unixoutputc">Direction=IN</span>. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">NetAvg</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_DOUBLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Average net time spent in this function per call.</p>
+<p class="tablebodytext">It is equal to <span class="unixoutputc">NetTime/Calls</span>.</p>
+<p class="tablebodytext">It is only present if <span class="unixoutputc">Direction=IN</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">DataRX</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_DOUBLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Total amount of data received (in bytes) for incoming function requests or outgoing function responses.</p>
+<p class="tablebodytext">Tuxedo and network message overheads are not included.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">DataTX</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_DOUBLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Total amount of data transmitted (in bytes) for incoming function responses or outgoing function requests.</p>
+<p class="tablebodytext">Tuxedo and network message overheads are not included.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">T0</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_DOUBLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Threshold, or upper limit, (in seconds) for the first elapsed band.</p>
+<p class="tablebodytext"><span class="unixoutputc">T0</span> is defined only if thresholds are specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">T1</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_DOUBLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Threshold, or upper limit, (in seconds) for the second elapsed band (if defined).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">T2</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_DOUBLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Threshold, or upper limit, (in seconds) for the third elapsed band (if defined).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">T3</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_DOUBLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Threshold, or upper limit, (in seconds) for the fourth elapsed band (if defined).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">T4</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_DOUBLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Threshold, or upper limit, (in seconds) for the fifth elapsed band (if defined).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">T5</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_DOUBLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Threshold, or upper limit, (in seconds) for the sixth elapsed band (if defined).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">T0Count</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_LONG</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Number of times the function executed with an elapsed time less than <span class="unixoutputc">T0</span>.</p>
+<p class="tablebodytext"><span class="unixoutputc">T0Count</span> is output only if thresholds are specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">T1Count</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_LONG</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Number of times the function executed with an elapsed time within the second band (if defined)</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">T2Count</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_LONG</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Number of times the function executed with an elapsed time within the third band (if defined)</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">T3Count</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_LONG</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Number of times the function executed with an elapsed time within the fourth band (if defined).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">T4Count</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_LONG</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Number of times the function executed with an elapsed time within the fifth band (if defined).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">T5Count</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_LONG</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Number of times the function executed with an elapsed time within the sixth band (if defined).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">T6Count</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_LONG</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Number of times the function executed with an elapsed time within the seventh band (if defined).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">T0Elapsed</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_DOUBLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Sum of elapsed times where the function executed with an elapsed time in the first band.</p>
+<p class="tablebodytext"><span class="unixoutputc">T0Elapsed</span> is defined only if thresholds have been specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">T1Elapsed</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_DOUBLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Sum of elapsed times where the function executed with an elapsed time in the second band (if defined).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">T2Elapsed</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_DOUBLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Sum of elapsed times where the function executed with an elapsed time in the third band (if defined).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">T3Elapsed</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_DOUBLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Sum of elapsed times where the function executed with an elapsed time in the fourth band (if defined).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">T4Elapsed</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_DOUBLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Sum of elapsed times where the function executed with an elapsed time in the fifth band (if defined).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">T5Elapsed</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_DOUBLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Sum of elapsed times where the function executed with an elapsed time in the sixth band (if defined).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">T6Elapsed</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext"><span class="unixoutputc">TRE_DOUBLE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="486"><p class="tablebodytext">Sum of elapsed times where the function executed with an elapsed time in the seventh band (if defined).</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">For C and Object Pascal interfaces the caller must free the memory referenced by the structure, and memory for the structure, by calling <span class="unixoutputc">treFreeVariant()</span> followed by <span class="unixoutputc">treFree()</span>.</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="49267.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="7691.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

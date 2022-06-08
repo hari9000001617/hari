@@ -1,0 +1,271 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> fCMN_TREProductInstanceCreate_R&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "26985.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "70155.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('26961');expand('26960');expand('40664');highlight('26986')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="26985.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="70155.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h4 class="heading4">fCMN_TREProductInstanceCreate_R&amp;()</h4>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'fCMN_TREProductInstanceCreate_R&amp;()' (26986)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<pre class="unixinputp">fCMN_TREProductInstanceCreate_R&amp;(    l_ProdInst?{})</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Creates a product instance and related product instance entities required when selling a product.</p>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="288" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="132"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="564"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">l_ProdInst?{}</span></p>
+</td>
+<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">In:  Hash containing the values for all mandatory and optional fields for the product instance and related entities.</p>
+<p class="tablebodytext">For more information, refer to <span class="referrals">Remarks</span> below.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">New product instance ID, if successful; otherwise, an error is raised.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">The high-level processing is:</p>
+<ol class="listnumber"><li class="listnumber">Retrieve the product definition to be generated.</li><li class="listnumber">Retrieve the product order rules from Convergent Billing configuration.</li><li class="listnumber">Insert the product instance.</li><li class="listnumber">If the base product instance has a product offer, instantiate any optional companion products.</li><li class="listnumber">Use the creation and order rules to insert mandatory and optional services and equipment.</li><li class="listnumber">Complete the product instance.</li><li class="listnumber">Insert and populate other optional entities in the following order:<ol class="listalpha2"><li class="listalpha2">Non-standard facility groups</li><li class="listalpha2">Product-based service lists</li><li class="listalpha2">Companion products.</li></ol></li></ol><p class="bodytext">The following diagram displays the Convergent Billing entities created by the function.</p>
+<p class="bodytext"><img src="27097_productentities.png" alt="Convergent Billing Entities Created by fCMN_TREProductInstanceCreate[_R]&amp;()" height="385" width="593" vspace="2" hspace="2" align="bottom" border="0"></p>
+<p class="caption">Convergent Billing Entities Created by fCMN_TREProductInstanceCreate_R&amp;()</p>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists <span class="unixoutputc">l_ProdInst?{}</span> parameter keys.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">l_ProdInst?{} Parameter Keys</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="198"><p class="tableheading">Key</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="78"><p class="tableheading">Data Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="420"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">{'&lt;PRODUCT_INSTANCE_</span><br><span class="unixoutputc">TRE_V&gt;'}</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Various</p>
+</td>
+<td style="border:1px solid #010101;" width="420"><p class="tablebodytext">Details for the product instance using fields from<span class="unixoutputc"> PRODUCT_INSTANCE_TRE_V</span> with the field name as the hash key (represented by <span class="unixoutputc">&lt;PRODUCT_INSTANCE_TRE_V&gt;)</span>; for example:</p>
+<p class="tablebodytext"><span class="unixoutputc">l_ProdInst&amp;{'PRODUCT_ID'} := 9999;</span></p>
+<p class="tablebodytext">The data type depends on the attribute types in the entity validation for a product.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">{'NODE_NAME'}</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="420"><p class="tablebodytext">Name of the customer node to create the product instance for.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">{'CUSTOMER_NODE_ID'}</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="420"><p class="tablebodytext">Customer node ID of the customer for which to create the product instance.</p>
+<p class="tablebodytext"><span class="unixoutputc">CUSTOMER_NODE_ID</span> overrides<span class="unixoutputc"> NODE_NAME</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">{'ACCOUNT_ID'}</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="420"><p class="tablebodytext">Can be used with <span class="unixoutputc">NODE_NAME</span> to reduce the likelihood of ambiguity of multiple identical customer node names existing.</p>
+<p class="tablebodytext">If <span class="unixoutputc">ACCOUNT_ID</span> is specified, <span class="unixoutputc">ACCOUNT_NAME</span> cannot be specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">{'ACCOUNT_NAME'}</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="420"><p class="tablebodytext">Can be used with <span class="unixoutputc">NODE_NAME</span> to reduce the likelihood of ambiguity of multiple identical customer node names existing.</p>
+<p class="tablebodytext">If <span class="unixoutputc">ACCOUNT_NAME</span> is specified,<span class="unixoutputc"> ACCOUNT_ID</span> cannot be specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">{'SERVICES'}</span><br><span class="unixoutputc">[&lt;SERVICE_ITEM_SEQNR&gt;]</span><br><span class="unixoutputc">[&lt;SERVICE_RANGE_SEQNR&gt;]</span><br><span class="unixoutputc">{'&lt;SERVICE_TRE_V&gt;'}</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Various</p>
+</td>
+<td style="border:1px solid #010101;" width="420"><p class="tablebodytext">Service details for the product instance using fields from <span class="unixoutputc">SERVICE_TRE_V</span> with the field name as the <span class="unixoutputc">&lt;SERVICE_TRE_V&gt;</span> hash key.</p>
+<p class="tablebodytext">The data type of the hash entries correspond to the service fields.</p>
+<p class="tablebodytext"><span class="unixoutputc">[&lt;SERVICE_ITEM_SEQNR&gt;]</span> is an array (1..n) of service items.</p>
+<p class="tablebodytext"><span class="unixoutputc">[&lt;SERVICE_RANGE_SEQNR&gt;]</span> is an array (1..n) of services ranges.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">{'SERVICES'}</span><br><span class="unixoutputc">[&lt;SERVICE_ITEM_SEQNR&gt;]</span><br><span class="unixoutputc">[&lt;SERVICE_RANGE_SEQNR&gt;]</span><br><span class="unixoutputc">{'EQUIPMENT'}</span><br><span class="unixoutputc">[&lt;EQUIP_ITEM_SEQNR&gt;]</span><br><span class="unixoutputc">[&lt;EQUIP_RANGE_SEQNR&gt;]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Unknown</p>
+</td>
+<td style="border:1px solid #010101;" width="420"><p class="tablebodytext"><span class="unixoutputc">[&lt;EQUIP_ITEM_SEQNR&gt;]</span> is an array (1..n) of equipment items.</p>
+<p class="tablebodytext"><span class="unixoutputc">[&lt;EQUIP_RANGE_SEQNR&gt;]</span> is an array (1..n) of equipment ranges.</p>
+<p class="tablebodytext">Only required for optional equipment (mandatory equipment is automatically allocated).</p>
+<p class="tablebodytext">The data type of the element is either integer or hash. Any other data type causes an error to be raised.</p>
+<p class="tablebodytext">If the data type is integer, a value of 1 specifies automatic allocation of the first available equipment item of the appropriate type.</p>
+<p class="tablebodytext">If the data type is hash, identifies specific equipment for allocation whether equipment is optional or mandatory. Equipment is identified by <span class="unixoutputc">SERIAL_NUMBER</span> or <span class="unixoutputc">NETWORK_ADDRESS</span>; the elements of the hash use these strings as keys and the associated values identify the item of equipment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">{'SERVICES'}</span><br><span class="unixoutputc">[&lt;SERVICE_ITEM_SEQNR&gt;]</span><br><span class="unixoutputc">[&lt;SERVICE_RANGE_SEQNR&gt;]</span><br><span class="unixoutputc">{'LISTS'}</span><br><span class="unixoutputc">{'&lt;TABLE_NAME&gt;'}</span><br><span class="unixoutputc">[&lt;ROW_NUMBER&gt;]</span><br><span class="unixoutputc">{'&lt;COLUMN_NAME&gt;'}</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Various</p>
+</td>
+<td style="border:1px solid #010101;" width="420"><p class="tablebodytext">Lists for the service.</p>
+<p class="tablebodytext"><span class="unixoutputc">&lt;TABLE_NAME&gt;</span> refers to the derived attribute table name.</p>
+<p class="tablebodytext"><span class="unixoutputc">[&lt;ROW_NUMBER&gt;]</span> is an array (0..n) of list rows for the table.</p>
+<p class="tablebodytext">Values for the columns for each row of a list are specified in the <span class="unixoutputc">{&lt;COLUMN_NAME&gt;}</span> hash.  The key for an entry can either be the display label of a column's attribute type (if defined), or a column name (for example, <span class="unixoutputc">INDEX1_VALUE</span>) from the database definition for the derived attribute table content (<span class="unixoutputc">DERIVED_ATTRIBUTE_ARRAY</span>).</p>
+<p class="tablebodytext">The EVS section has more information about specifying keys and values.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">{'FACILITY_GROUPS'}</span><br><span class="unixoutputc">[&lt;ROW_NUMBER&gt;]</span><br><span class="unixoutputc">{'&lt;FAC_GROUP_INSTANCE_</span><br><span class="unixoutputc">TRE_V&gt;'}</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Various</p>
+</td>
+<td style="border:1px solid #010101;" width="420"><p class="tablebodytext">Facility groups (which must be defined as compatible facility groups in the product definition) for the product instance.</p>
+<p class="tablebodytext">Facility groups only need to be specified if the facility group required is not configured in the product definition.</p>
+<p class="tablebodytext"><span class="unixoutputc">[&lt;ROW_NUMBER&gt;]</span> is an array (0..n) of facility groups.</p>
+<p class="tablebodytext">The data type of the hash entries correspond to the facility group fields.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">{'COMPANION_PRODUCTS'}</span><br><span class="unixoutputc">[&lt;ROW_NUMBER&gt;]</span><br><span class="unixoutputc">{'&lt;PRODUCT_INSTANCE_</span><br><span class="unixoutputc">TRE_V&gt;'}</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Various</p>
+</td>
+<td style="border:1px solid #010101;" width="420"><p class="tablebodytext">Companion products (which must be defined as compatible products in the product definition) for the product instance.</p>
+<p class="tablebodytext"><span class="unixoutputc">[&lt;ROW_NUMBER&gt;]</span> is an array (0..n) of companion products.</p>
+<p class="tablebodytext">Refer to <span class="unixoutputc">PRODUCT_INSTANCE_TRE_V</span> view for details of mandatory and optional fields. The data type of the hash entries correspond to the attribute types in the entity validation for a product.</p>
+<p class="tablebodytext"><span class="unixoutputc">CUSTOMER_NODE_ID</span> is optional, and is implied. The base product ID is also implied.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">{'SERVICES'}</span><br><span class="unixoutputc">[&lt;SERVICE_ITEM_SEQNR&gt;]</span><br><span class="unixoutputc">[&lt;SERVICE_RANGE_SEQNR&gt;]</span><br><span class="unixoutputc">{'CONTRACT'}</span><br><span class="unixoutputc">{'&lt;CONTRACT_TRE_V&gt;'}</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Various</p>
+</td>
+<td style="border:1px solid #010101;" width="420"><p class="tablebodytext">Contracts for the product instance using fields from <span class="unixoutputc">CONTRACT_TRE_V</span> view with field names as keys for <span class="unixoutputc">{&lt;CONTRACT_TRE_V&gt;}</span>.</p>
+<p class="tablebodytext">The data type of the hash entries correspond to the attribute types in the entity validation for a contract.</p>
+<p class="tablebodytext">If either <span class="unixoutputc">CONTRACT_ID</span> or <span class="unixoutputc">CONTRACT_NAME</span> are specified and the contract exists in Convergent Billing, the contract ID is used for the service being created.</p>
+<p class="tablebodytext">If the contract does not exist in Convergent Billing, the contract is created and the service created is assigned to the contract. <span class="unixoutputc">CONTRACT_ID</span> overrides <span class="unixoutputc">CONTRACT_NAME</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">{'FROM_ACCOUNT_TYPE_</span><br><span class="unixoutputc">IDS'}[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="420"><p class="tablebodytext">Optional array of account type IDs.</p>
+<p class="tablebodytext">It is required if the product definition requires creation of charge category information with credit (transfer) account information. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">{'FROM_ACCOUNT_IDS'}[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="420"><p class="tablebodytext">Optional array of account IDs.</p>
+<p class="tablebodytext">It is required if the product definition requires creation of charge category information with credit (transfer) account information. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">{'COMPLETE_PARAMS'}{}</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Unknown</p>
+</td>
+<td style="border:1px solid #010101;" width="420"><p class="tablebodytext">Optional hash specifying user-defined data for entity validation.</p>
+<p class="tablebodytext">It is assigned to the <span class="unixoutputc">evsCallParams?{}</span> global variable on entry to the function for use in entity validation expressions.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="26985.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="70155.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

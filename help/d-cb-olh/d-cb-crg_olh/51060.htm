@@ -1,0 +1,727 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Variables Based on INV_CUSTOMER_NODE_HISTORY_V </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "51059.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "51061.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('6124');highlight('51060')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="51059.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="51061.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Variables Based on INV_CUSTOMER_NODE_HISTORY_V</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Variables Based on INV_CUSTOMER_NODE_HISTORY_V' (51060)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">All direct variables based on the <span class="unixoutputc">INV_CUSTOMER_NODE_HISTORY_V</span> view have an application environment of Invoicing and a context of Customer Node.</p>
+<p class="syntaxheading">Variable Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="228"><p class="tableheading">Variable</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="84"><p class="tableheading">Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="384"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvAssignedOperatorId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">ID of the user assigned the customer.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvBankAccountNumber$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Customer's bank account number.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvBankAccountRef$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Customer's bank account reference number.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvBankCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Code or number of the bank or financial institution where a customer has their account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvBranchCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Code or number that identifies the location of the bank or financial institute where a customer has their account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvCardExpiryDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Date when the main or default credit card will expire.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvCardNumber$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Main or default credit card number used for making payments.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvCardTypeCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Code or number which identifies the credit card type used by the customer node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvCompanyNumber$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Official company or business registration number (for example, ACN).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvCreditComments$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Comments relating to a customer's credit rating and the assigned limit.</p>
+<p class="tablebodytext">It provides reasons and justification for the assigned values.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvCreditLimitCurrencyId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Currency for the customer's credit limit value.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">It is strongly recommended that a customer node's credit limit be specified in the same currency as the customer's prime account.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvCreditRatingCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Indicator for how a customer is treated regarding financial accounting practices including invoicing and payment collection.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvCurrencyId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Preferred currency of this customer node to be used for all invoice and statement generation.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvCurrencySymbol$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Currency symbol associated with the customer.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvCustomerActiveDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Date that the customer became active.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvCustomerCreatedDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Date the customer is created.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvCustomerCreditLimit#</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Real </p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Customer's credit limit.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvCustomerNodeGeneral1$ -</span><br><span class="unixoutputc">InvCustomerNodeGeneral10$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">General fields 1 - 10.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvCustomerNodeHierarchy</span><br><span class="unixoutputc">Level&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Level in the hierarchy of the customer node.  The root node of a hierarchy has a level of 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvCustomerNodeName$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Name of the customer node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvCustomerNodePersonId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">ID of the primary contact person for the customer node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvCustomerNodeReportLevel&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Level of reporting required for the customer. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">1 (Invoice)</li><li class="tablelistbullet">2 (Statement)</li><li class="tablelistbullet">3 (No reporting)</li><li class="tablelistbullet">4 (Transferred Statement).</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvCustomerNodeSeqnr&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">A sequence number that identifies a specific invoice image for the customer.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvCustomerNodeStatusCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Status code for the customer node. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">1 (Prospect)</li><li class="tablelistbullet">2 (Credit Check Required)</li><li class="tablelistbullet">3 (Active)</li><li class="tablelistbullet">4 (Cancelled)</li><li class="tablelistbullet">5 (Black-list).</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvCustomerNodeTypeId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">ID of the customer node type for the node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvCustomerNodeTypeName$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Name of the customer node type for the node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvCustomerNodeTypeDisplay</span><br><span class="unixoutputc">Name$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String (60)</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Name of the customer node type displayed.  Defaults to <span class="unixoutputc">InvCustomerNodeTypeName$</span>.</p>
+<table class="cautionstyle" width="100%"><tr><td><p class="caution">Caution:</p><p class="tablecaution">The value can be translated into a locale-specific language and therefore differ between implementations.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvEffectiveDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Effective date for the information.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvIndustryCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Code that is used to identify what type of industry or activity the customer node is involved in.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvParentCustomerNodeId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">ID of the parent customer node for the node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPaymentLocationCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Identifies the preferred location where payments will be made; for example, postal delivery, third party institution such as a bank or post office, or in person at a specific or general customer service centre.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPaymentMethod&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">ID of the official method of payment for the customer.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonBirthDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Date of birth of the person.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonDisabilityType&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Disability type, if any, of the person.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonDriversLicence$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Driver's licence of the person.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonEmailAddress$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Standard email address of the person.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonEmployer$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Employer of the person.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonFamilyName$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Family name or surname of the primary contact for the node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonFaxNumber$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Fax number of the person.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonGender$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Sex of the primary contact for the node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonGivenNames$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Given names of the primary contact for the node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonHomePhoneNumber$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Home phone number of the person.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonMaritalStatus&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Marital status of the person.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonMobilePhoneNumber$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Mobile phone number of the person.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonNationality&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Nationality of the person.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonPassport$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Passport number of the person.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonPreferredName$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Preferred name for the primary contact for the node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonProfession&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Code indicator for the profession of the person.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonOfficialName$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Official name for the primary contact for the node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonResidencyStatus&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Residential status of the person.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonSocialSecurityNo&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Social security number of the person.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonSpokenLanguage&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">First language of the person.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonStatus$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Status code of the primary contact for the node.  Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">0 (Cancelled)</li><li class="tablelistbullet">1 (Prospect)</li><li class="tablelistbullet">2 (Subscriber)</li><li class="tablelistbullet">3 (Business Contact)</li><li class="tablelistbullet">4 (Subscriber &amp; Business Contact)</li><li class="tablelistbullet">5 (VIP)</li><li class="tablelistbullet">6 (Bad Risk).</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonTitle$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Title of the primary contact for the node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonTypeId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">ID of the person type defined in the <span class="unixoutputc">PERSON_TYPE</span> table.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonWorkPhoneNumber$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Work phone number of the person.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPersonWrittenLanguage&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">First written language of the person.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPostalAddressId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">ID of the postal address used for the node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPostalCity$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">City of the postal address of the node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPostalCountry$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Country of the postal address of the node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPostalGeneral1$ - InvPostalGeneral10$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">General fields 1 - 10 for storing address-related information.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPostalGeocode$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Geographic location of the address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPostalLine1$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Line 1 of the node's postal address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPostalLine2$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Line 2 of the node's postal address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPostalPostCode$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Postal code of the node's postal address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPostalState$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">State of the node's postal address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPostalSuburb$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Suburb of the node's postal address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPostalXPos#</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Real</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Numeric representation of the location of the address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPostalYPos#</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Real</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Numeric representation of the location of the address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPostalZPos#</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Real</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Numeric representation of the location of the address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPrimaryIdentifier$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Optional primary ID of this customer node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPrimaryIdentifier2$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Second optional ID of the customer node.</p>
+<p class="tablebodytext">It is not expected that both primary IDs would be specified for the same customer node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPrimeAccountId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Primary account associated with this customer node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvPrimeAccountName$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Name of the node's primary account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvRegionCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Code or map grid reference used to identify the geographic region where the customer node is located.</p>
+<p class="tablebodytext">The region can be based on physical address details such as suburb.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvRootCustomerNodeId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">ID of the root customer node for the node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvSalesChannelCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Sales channel for this customer node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvTaxClassCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Tax class to which this customer node is associated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvTurnover#</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Real</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Revenue for the last financial year for this customer node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext"><span class="unixoutputc">InvTurnoverCurrencyId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">Currency for the revenue above.</p>
+</td>
+</tr>
+
+</table>
+<p class="tablebodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="51059.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="51061.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

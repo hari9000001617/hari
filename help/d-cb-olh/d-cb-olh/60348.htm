@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Rating and Billing Process </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "53615.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "2926.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('4501');highlight('60348')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="53615.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="2926.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Rating and Billing Process</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Rating and Billing Process' (60348)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Many billing systems restrict data input to call data records, and in some cases, to specific types of call data record.  In Convergent Billing, any event that results in a charge or benefit being passed on to a customer can be input to, or generated within, the system.  </p>
+<p class="bodytext">Events can originate from any source of charge information, including network elements, other service providers, other mediation systems, customer contacts such as one-off rebates, service enquiries, and faults).  All such events can be input to Convergent Billing if the format of the data is known and is consistent for each type of input.  Because Convergent Billing does not restrict data input to call data records, the term event record refers to a record that contains information that may result in a charge or benefit being passed on to a customer.</p>
+<p class="bodytext">Figure 5 displays the rating and billing process.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext"><img src="60301_ratebill.png" alt="Rating and Billing Process" height="622" width="724" vspace="2" hspace="2" align="bottom" border="0"></p>
+<p class="caption">Figure 5  Rating and Billing Process</p>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The full<a id="h2920" class="jump" title="Rating and Billing Process" href="60348.htm" target="_self"> rating and billing process</a> is divided into the following logical operations:</p>
+<ul class="listbullet"><li class="listbullet"><a id="h2923" class="jump" title="Balance Management" href="2924.htm" target="_self">Balance Management</a>, which provides service authorisation, advice of charge information, and customer credit reservations.</li><li class="listbullet"><a id="h2925" class="jump" title="Event Normalisation" href="2926.htm" target="_self">Event Normalisation</a>, in which input data is converted into a standard record format.  The output from this stage is a set of normalised event records.</li><li class="listbullet"><a id="h2940" class="jump" title="Event Rating" href="60349.htm" target="_self">Event Rating</a>, in which the normalised event records are rated (costed) by applying the appropriate tariffs.  The output from this stage is a set of costed event charges.</li><li class="listbullet">Event output, in which the costed event records are stored in the Convergent Billing database.</li><li class="listbullet"><a id="h2944" class="jump" title="Billing" href="2945.htm" target="_self">Billing</a>, in which the costed event records are aggregated and any applicable discounts are applied, using Convergent Billing server processes.  The output from this stage is a set of billing data records.</li><li class="listbullet"><a id="h2946" class="jump" title="Invoicing" href="2947.htm" target="_self">Invoicing</a>, in which billing data is combined with customer detail records and incorporated into an invoice or statement.</li><li class="listbullet"><a id="h2948" class="jump" title="Invoice Distribution" href="2947.htm#o2949" target="_self">Invoice distribution</a> or output, in which invoices and statements are printed or converted for electronic distribution.</li></ul>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="53615.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="2926.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

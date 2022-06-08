@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> fEV_EntitlementInsert&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "59609.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "58608.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('51544');expand('28068');expand('45618');highlight('58585')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="59609.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="58608.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h4 class="heading4">fEV_EntitlementInsert&amp;()</h4>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'fEV_EntitlementInsert&amp;()' (58585)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<table class="tableintopic" width="564" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<td class="tableheading" width="234"><p class="tableheading">Interface 1</p>
+</td>
+<td width="48"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td class="tableheading" width="282"><p class="tableheading">Interface 2</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="234"><pre class="unixinputp">fEV_EntitlementInsert&amp;(    varLastModified~,    const StartDate~,    const FieldNames$[],    const FiledValues?[])</pre>
+</td>
+<td width="48"><pre class="unixinputp">&nbsp;</pre>
+</td>
+<td width="282"><pre class="unixinputp">fEV_EntitlementInsert&amp;(    var LastModified~,    const StartDate~,    const EntitlementValues?{})</pre>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Inserts an entitlement into the database. The function is similar to and wraps around the <span class="unixoutputc">biEntitlementInsert&amp;()</span> function.</p>
+<p class="syntaxheading">Context</p>
+<p class="bodytext">The following groups of variables are available during attribute type normalisation and data resolution:</p>
+<ul class="listbullet"><li class="listbullet">System client</li><li class="listbullet">Operator</li><li class="listbullet">Miscellaneous<ul class="listdashbullet2"><li class="listdashbullet2"><span class="unixoutputc">ev_FormCode$</span> contains the value <span class="unixoutputc">ENTLSVR</span>.</li><li class="listdashbullet2"><span class="unixoutputc">ev_LastRowInd&amp;</span> contains the value 0 during all stages of processing except for the evaluation of the entitlement pre-commit expressions.</li><li class="listdashbullet2"><span class="unixoutputc">ev_RowStatus$</span> contains the value <span class="unixoutputc">Insert</span>.</li></ul></li><li class="listbullet">Entitlement.</li></ul><p class="syntaxheading">Parameter</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="180"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="516"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">LastModified~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">In:  Initial value is ignored.</p>
+<p class="tablebodytext">On successful return, date-time of this insertion.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">StartDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">In:  Date-time when entitlement becomes effective.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">EntitlementValues?{}</span></p>
+<p class="tablebodytext"><span class="unixoutputc">FieldNames$[]</span></p>
+<p class="tablebodytext"><span class="unixoutputc">FieldValues?[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">In:  Data for the entitlement to be inserted.</p>
+<p class="tablebodytext">Data can be keyed by corresponding column name in the <span class="unixoutputc">ENTITLEMENT_TRE_V</span> view. Data passed must match both expected type and value.</p>
+<p class="tablebodytext">If attribute validation is enabled, data can also be keyed by the display label specified in the appropriate entity validation, or in core defaults.</p>
+<p class="tablebodytext">When keyed by interface or display label, the data passed must match the type and value expected as defined in the appropriate attribute type. Denormalised fields must pass the denormalised string values. Other fields must pass data of the type defined in the attribute type.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Processing</p>
+<p class="bodytext">Assuming that all processing stages are enabled, the following is the evaluation order for the insertion of an entitlement:</p>
+<ol class="listnumber"><li class="listnumber">Bundle direct variables if the call is nested.</li><li class="listnumber">Apply attribute type defaults and validation.</li><li class="listnumber">Apply entitlement defaults.</li><li class="listnumber">Apply configuration specific defaults.</li><li class="listnumber">Check mandatory fields.</li><li class="listnumber">Evaluate attribute type validation expressions.</li><li class="listnumber">Evaluate entitlement row expressions.</li><li class="listnumber">Evaluate entitlement pre-commit expressions.</li><li class="listnumber">Encrypt the necessary variable values.</li><li class="listnumber">Insert the entitlement.</li></ol><p class="bodytext">After inserting an entitlement that is real-time charged (that is, any of the real-time tariffs are defined for this type of entitlement):</p>
+<ul class="listbullet"><li class="listbullet">Any real-time cancellation tariff is ignored.</li><li class="listbullet">If the entitlement type has a real-time recurring tariff and the entitlement has a category of one-off, the recurring tariff is ignored.</li><li class="listbullet">If the account has an account type that is balance-managed and the <span class="unixoutputc">evOldProdStatus&amp;</span> variable matches the value of the <span class="unixoutputc">TRIGGER_RESERVE_PI_STATUS_CODE</span> column in the <span class="unixoutputc">TARIFF_RECURRING</span> table:<ul class="listdashbullet2"><li class="listdashbullet2"><span class="unixoutputc"><a id="h59597" class="jump" title="EntitlementChargeCalc&amp;()" href="58433.htm" target="_self">EntitlementChargeCalc&amp;()</a></span> function is used to determine which account to apply a reservation to.</li><li class="listdashbullet2"><span class="unixoutputc"><a id="h59599" class="jump" title="EntitlementReservationGen$()" href="58439.htm" target="_self">EntitlementReservationGen$()</a></span> function is called to generate a reservation for either the activation or recurring tariff.</li><li class="listdashbullet2">If an activation and recurring tariff are found and the <span class="unixoutputc">ACCOUNT_ID</span> of both match, a reservation is created only for the activation tariff. Otherwise, an error is raised if both of the tariffs are not associated with the same account.</li><li class="listdashbullet2">Reservation name is stored in the <span class="unixoutputc">ENTITLEMENT</span> table and the <span class="unixoutputc">ACCOUNT_ID</span> is stored in the <span class="unixoutputc">ENTITLEMENT_HISTORY</span> table.</li></ul></li><li class="listbullet">If <span class="unixoutputc">evProdStatus&amp; </span>matches the <span class="unixoutputc">TRIGGER_DEBIT_PI_STATUS_CODE</span> column in the <span class="unixoutputc">TARIFF_RECURRING</span> table, the <span class="unixoutputc"><a id="h59598" class="jump" title="EntitlementEventRate&amp;()" href="58445.htm" target="_self">EntitlementEventRate&amp;()</a></span> function is called to charge for the activation or recurring tariff. If a reservation has already been generated for this tariff, it is passed to <span class="unixoutputc"><a id="h59598_2" class="jump" title="EntitlementEventRate&amp;()" href="58445.htm" target="_self">EntitlementEventRate&amp;()</a></span>, which deletes the reservation, and clears the <span class="unixoutputc">RESERVATION</span> column in the <span class="unixoutputc">ENTITLEMENT</span> table.</li></ul><p class="bodytext">When committing insertion of an entitlement, the following sequence of post-commit actions occur:</p>
+<ol class="listnumber"><li class="listnumber">Evaluate the entitlement post-commit expression.</li><li class="listnumber">Unbundle direct variables if previously stored.</li></ol><p class="syntaxheading">Returns</p>
+<p class="bodytext">Internal ID for the new entitlement; if any stage up to and including the entitlement insert fails, an error is raised, and the function call does not return.</p>
+<p class="bodytext">If any error occurs during any later processing stage and an error handler is defined, the error handler function is called with the relevant details.</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="59609.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="58608.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

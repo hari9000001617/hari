@@ -1,0 +1,284 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> ProductOfferFetch?[]() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "13684.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "68105.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('58832')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="13684.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="68105.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">ProductOfferFetch?[]()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'ProductOfferFetch?[]()' (58832)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<table class="tableintopic" width="516" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<td class="tableheading" width="228"><p class="tableheading">Interface 1</p>
+</td>
+<td width="42"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td class="tableheading" width="246"><p class="tableheading">Interface 2</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="228"><pre class="unixinputp">ProductOfferFetch?[](    const ProductOfferId&amp;,    const FieldNames$[])</pre>
+</td>
+<td width="42"><pre class="unixinputp">&nbsp;</pre>
+</td>
+<td width="246"><pre class="unixinputp">ProductOfferFetch?[](    const ProductOfferName$,    const FieldNames$[])</pre>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Retrieves details of a product offer from the product offer cache. If the product offer does not exist in the cache, it is retrieved from the database and stored in the cache.</p>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="288" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="bold">Function Type</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Built-in</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="bold">Service</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">(Local)</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="162"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="534"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="unixoutputc">ProductOfferId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="534"><p class="tablebodytext">In:  ID of product offer to retrieve.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="unixoutputc">ProductOfferName$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="534"><p class="tablebodytext">In:  Name of product offer to retrieve.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="unixoutputc">FieldNames$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="534"><p class="tablebodytext">In:  List of field names to retrieve. Names are not case-sensitive. </p>
+<p class="tablebodytext">If a requested field has no value for the retrieved product offer, an undefined value is returned for that field.</p>
+<p class="tablebodytext">Names of valid fields are the same as the names of the columns in the <span class="unixoutputc">PRODUCT_OFFER</span> table, except that the following columns cannot be specified in <span class="unixoutputc">FieldNames$[]</span>:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">ATLANTA_GROUP_ID</span></li><li class="tablelistbullet"><span class="unixoutputc">ATLANTA_OPERATOR_ID</span></li><li class="tablelistbullet"><span class="unixoutputc">CATEGORIES</span></li><li class="tablelistbullet"><span class="unixoutputc">DESCRIPTION</span></li><li class="tablelistbullet"><span class="unixoutputc">LAST_MODIFIED</span></li><li class="tablelistbullet"><span class="unixoutputc">VERSION_STR.</span></li></ul><p class="tablebodytext">The table below lists field names that are also valid.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">Array of values corresponding to, and in the same order as, the fields specified in <span class="unixoutputc">FieldNames$[]</span>. If an invalid field name is requested, or if the specified product offer does not exist, an error is raised.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">When fetching by:</p>
+<ul class="listbullet"><li class="listbullet"><span class="unixoutputc">ProductOfferId&amp;</span>, a product offer is retrieved if security groups have appropriate permissions.</li><li class="listbullet"><span class="unixoutputc">ProductOfferName$</span>, a product offer is retrieved based on the product offer name and tenant ID belonging to effective user. Where no tenant is assigned, the product offer name without a tenant ID is retrieved.</li></ul><p class="bodytext">The following table lists valid fields for <span class="unixoutputc">FieldNames$[]</span>.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Valid Field Names</p>
+<table class="tableintopic" width="702" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="192"><p class="tableheading">Field Name</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="510"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">CHILD_PRODUCT_OFFER</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">Array of details of child product offers for this product offer.</p>
+<p class="tablebodytext">Each element in the array is a hash with the keys listed in the table below. </p>
+<p class="tablebodytext">Its value is undefined if this product offer has no child product offers.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">COMPANION_PRODUCT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">Array of details of companion products contained in this product offer.</p>
+<p class="tablebodytext">Each element in the array is a hash with the keys listed in second table below.</p>
+<p class="tablebodytext">Its value is undefined if this product offer contains no companion products.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PRODUCT_OFFER_NODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">Array of product offer node IDs that reference this product offer.</p>
+<p class="tablebodytext">It contains one ID if the product offer is a root product offer; otherwise, it contains one or more IDs.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SERVICE_TYPE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">Array of IDs of all service types with which this product offer is compatible.</p>
+<p class="tablebodytext">It contains at least one ID if the product offer is service-specific; otherwise, it is undefined.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists child product offer key values.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Child Product Offer Key Values</p>
+<table class="tableintopic" width="702" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="192"><p class="tableheading">Key</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="510"><p class="tableheading">Value</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PRODUCT_OFFER_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">ID of child product offer.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">DEFAULT_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">Set to 1 if the child product offer is a default component of this product offer. </p>
+<p class="tablebodytext">It is not present if the child product offer is not a default component.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">MANDATORY_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">Set to 1 if the child product offer is a mandatory component of this product offer.</p>
+<p class="tablebodytext">It is not present if the child product offer is optional.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">OFFER_MIN</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">Minimum number of times the same offer can be sold under each instance of a product offer.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">OFFER_MAX</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">Maximum number of times the same offer can be sold under each instance of a product offer.</p>
+<p class="tablebodytext">If no maximum is specified, this key is not present.  </p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists companion product key values.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Companion Product Key Values</p>
+<table class="tableintopic" width="702" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="192"><p class="tableheading">Key</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="510"><p class="tableheading">Value</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PRODUCT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">ID of the companion product.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">DEFAULT_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">Set to 1 if the companion product is a default component of this product offer.</p>
+<p class="tablebodytext">It is not present if the companion product is not a default component.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">MANDATORY_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">Set to 1 if the companion product is a mandatory component of this product offer.</p>
+<p class="tablebodytext">It is not present if the companion product is optional.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">GENERAL_1 - GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">General purpose attributes.</p>
+<p class="tablebodytext">If a general purpose attribute has no value, its key is not present.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="13684.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="68105.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

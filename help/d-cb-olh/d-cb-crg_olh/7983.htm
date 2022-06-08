@@ -1,0 +1,369 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> NORMALISED_EVENT_FILE_V </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "50746.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "7984.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7934');highlight('7983')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="50746.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="7984.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">NORMALISED_EVENT_FILE_V</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'NORMALISED_EVENT_FILE_V' (7983)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="unixoutputc">NORMALISED_EVENT_FILE_V</span> view is used by the ERO process to perform threshold-driven behaviour during rating.</p>
+<p class="syntaxheading">Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="204"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="366"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">NORMALISED_EVENT_FILE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of a normalised event file.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">FILENAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">If the file was processed on the rating machine, the name of the file (excluding the directory component).</p>
+<p class="tablebodytext">If the file is a logical file (corresponding to a logical grouping of records passed to Convergent Billing by a third party), the name is defined by the remote system.</p>
+<p class="tablebodytext">The name should be unique system-wide and is usually based on the system date-time. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">ATLANTA_OPERATOR_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">User who initiated the processing of the file.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">TASK_QUEUE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of the task that rated the file, if applicable.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">NORMALISED_EVENT_FT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Normalised event file type associated with the file and specifies the mechanism by which the events in the file were decoded.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">It can only be NULL if <span class="unixoutputc">INPUT_EVENT_COUNT</span> is 0.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">PROCESS_START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Date-time at which events from the file commenced to be processed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">PROCESS_END_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Date-time at which all events from the file were processed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">EVENT_SOURCE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (40)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of the source from which the group of normalised events originated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">RATER_VERSION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (20)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Version of the rating engine that rated the file (for example, 4.00.07).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">EXTERNAL_INPUT_EVENT_</span><br><span class="unixoutputc">COUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of events that should have been processed in association with the file.</p>
+<p class="tablebodytext">It can be defined in the file header, or specified by the external event feed.  For some logical grouping of normalised events, it may not be specified.</p>
+<p class="tablebodytext">When rating has completed, it should equal <span class="unixoutputc">INPUT_EVENT_COUNT</span>.  If not equal, the DVP reports a warning that the file may be corrupted.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">INPUT_EVENT_COUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Redundant</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of events that have been processed in association with the file.</p>
+<p class="tablebodytext">It is calculated and updated each time the record is updated during rating of the file.</p>
+<p class="tablebodytext">Its value is the sum of <span class="unixoutputc">DECODED_EVENT_COUNT</span> and <span class="unixoutputc">CORRUPT_EVENT_COUNT</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">DECODED_EVENT_COUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Redundant</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of events from the file decoded successfully during normalisation.</p>
+<p class="tablebodytext">An event is considered to be decoded when the values of its data attributes have been assigned successfully to direct variables associated with the <span class="unixoutputc">NORMALISED_EVENT_V</span> view.</p>
+<p class="tablebodytext">It is calculated and updated each time the record is updated during rating of the file.</p>
+<p class="tablebodytext">The value is the sum of <span class="unixoutputc">DISCARDED_EVENT_COUNT</span>, <span class="unixoutputc">RATED_EVENT_COUNT</span>, <span class="unixoutputc">UNRATED_EVENT_COUNT</span>, <span class="unixoutputc">NORM_ERROR_EVENT_COUNT</span>, <span class="unixoutputc">RATING_ERROR_EVENT_COUNT</span>, and <span class="unixoutputc">TRACER_EVENT_COUNT</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">CORRUPT_EVENT_COUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of events from the file that could not be decoded during normalisation.</p>
+<p class="tablebodytext">An event is considered to be decoded when the values of its data attributes have been assigned successfully to direct variables associated with the <span class="unixoutputc">NORMALISED_EVENT_V</span> view.</p>
+<p class="tablebodytext">It is updated each time the record is updated during rating of the file.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">DISCARDED_EVENT_COUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of events from the file discarded during normalisation or discarded after being rated.</p>
+<p class="tablebodytext">It is updated each time the record is updated during rating of the file.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">RATED_EVENT_COUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of events from the file successfully rated.</p>
+<p class="tablebodytext">It is updated each time the record is updated during rating of the file.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">UNRATED_EVENT_COUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of events from the file flagged by an ENM process as not to be rated, and are stored in the <span class="unixoutputc">NORMALISED_EVENT</span> table but have no associated charges.</p>
+<p class="tablebodytext">It is updated each time the record is updated during rating of the file.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">TRACER_EVENT_COUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of events from the file flagged as tracer events by an ENM process.</p>
+<p class="tablebodytext">It is updated each time the record is updated during rating of the file.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">NORM_ERROR_EVENT_COUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of events from the file that could not be normalised by an ENM process because of an error condition.</p>
+<p class="tablebodytext">It is updated each time the record is updated during rating of the file.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">RATING_ERROR_EVENT_COUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of events from the file that could not be rated by one or more ERT processes because of an error condition.</p>
+<p class="tablebodytext">It is updated each time the record is updated during rating of the file.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">REPROCESSED_EVENT_COUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of successfully rated events that have been reprocessed and deleted from the <span class="unixoutputc">NORMALISED_EVENT</span> table, and no longer directly associated with the file.</p>
+<p class="tablebodytext">It is set to 0 by the rating engine.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">REPROCESSED_ERROR_EVENT_</span><br><span class="unixoutputc">COUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of error events that have been reprocessed and deleted from the <span class="unixoutputc">NORMALISED_EVENT_ERROR</span> table, and no longer directly associated with the file.</p>
+<p class="tablebodytext">It is set to 0 by the rating engine.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">DELETED_EVENT_COUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of successfully rated events that have been deleted (with their charges) and not reprocessed.</p>
+<p class="tablebodytext">It is used to track revoking of rental events and rental adjustment events associated with a given customer hierarchy.</p>
+<p class="tablebodytext">It is set to 0 by the rating engine.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">DELETED_ERROR_EVENT_</span><br><span class="unixoutputc">COUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of error events that have been deleted and not reprocessed.</p>
+<p class="tablebodytext">It may contain a value if an event is deleted using the Convergent Billing client or schedule types, or revoking of errored rental events and errored rental adjustment events associated with a given customer hierarchy.</p>
+<p class="tablebodytext">It is set to 0 by the rating engine.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">NEF_EXPORT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of an export file that contains events exported from this file.</p>
+<p class="tablebodytext">It can only be populated for complete records if <span class="unixoutputc">PROCESS_END_DATE</span> is specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">EXPORTED_EVENT_COUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of events associated with the export file exported to the file specified by <span class="unixoutputc">NEF_EXPORT_ID</span>.</p>
+<p class="tablebodytext">It can only be populated if <span class="unixoutputc">NEF_EXPORT_ID</span> is specified.</p>
+<p class="tablebodytext">The value must be less than or equal to the sum of <span class="unixoutputc">RATED_EVENT_COUNT</span> and <span class="unixoutputc">UNRATED_EVENT_COUNT</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">EXPORTED_CHARGE_COUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of charges associated with the events exported to the export file specified by <span class="unixoutputc">NEF_EXPORT_ID</span>.</p>
+<p class="tablebodytext">It can only be populated if <span class="unixoutputc">NEF_EXPORT_ID</span> is specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">EXPORTED_RECORD_COUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of records exported to the export file specified by <span class="unixoutputc">NEF_EXPORT_ID</span>.</p>
+<p class="tablebodytext">It can only be populated if <span class="unixoutputc">NEF_EXPORT_ID</span> is specified.</p>
+<p class="tablebodytext">The value is the sum of <span class="unixoutputc">EXPORTED_CHARGE_COUNT</span> and the number of exported unrated events.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">MIN_CHARGE_START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Minimum charge start date for normalised events from this file.</p>
+<p class="tablebodytext">It is not updated for revoked, archived, or reprocessed events.</p>
+<p class="tablebodytext">If the sum of <span class="unixoutputc">RATED_EVENT_COUNT</span> and <span class="unixoutputc">UNRATED_EVENT_COUNT</span> is greater than zero, it contains a value.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">MAX_CHARGE_START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Maximum charge start date for normalised events from this file.</p>
+<p class="tablebodytext">It is not updated for revoked, archived, or reprocessed events.</p>
+<p class="tablebodytext">If the sum of <span class="unixoutputc">RATED_EVENT_COUNT</span> and <span class="unixoutputc">UNRATED_EVENT_COUNT</span> is greater than zero, it contains a value.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="50746.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="7984.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

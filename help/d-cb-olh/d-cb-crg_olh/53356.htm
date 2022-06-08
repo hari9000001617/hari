@@ -1,0 +1,515 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> SUBTOTAL_TRE_V </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "78981.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "58483.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7526');highlight('53356')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="78981.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="58483.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">SUBTOTAL_TRE_V</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'SUBTOTAL_TRE_V' (53356)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="unixoutputc">SUBTOTAL_TRE_V</span> view contains all details of subtotals known to Singleview.</p>
+<p class="bodytext">Subtotals can be queried, inserted, updated, and deleted using the <span class="unixoutputc">biSUBTOTAL</span> functions.</p>
+<p class="syntaxheading">Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="204"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="366"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">SUBTOTAL_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">ID of the subtotal.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Date-time that the record becomes effective.</p>
+<p class="tablebodytext">Its granularity is one day. Time component always corresponds to midnight (that is, 00:00:00 hours). </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_END_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Date-time that the record ceases to be effective.</p>
+<p class="tablebodytext">Its granularity is one day.</p>
+<p class="tablebodytext">Time component always corresponds to one second before midnight (that is, 23:59:59).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">SUBTOTAL_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (67)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Name of the subtotal.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">DESCRIPTION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (2000)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Description of the subtotal.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">LAST_MODIFIED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Date-time at which this row was last modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">OPERATOR_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">User who created or last modified this subtotal.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">GROUP_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Security group associated with, and controlling access to, this subtotal.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">VERSION_STR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Version ID used to tag this entity.</p>
+<p class="tablebodytext">It is provided for use by third party configuration tools and is not used by Singleview.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">CATEGORIES</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Comma-separated list of categories associated with this entity.</p>
+<p class="tablebodytext">Refer to the <span class="unixoutputc"><a id="h51496" class="jumpnowordoutput" title="CATEGORY_V" href="50728.htm" target="_self">CATEGORY_V</a></span> view for the list of available categories.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">APPLICATION_ENV_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Application environment of this subtotal.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">APPLICATION_SUBTOTAL</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">MASTER_SUBTOTAL_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Subtotal from which the values of this subtotal are derived.</p>
+<p class="tablebodytext">It can only contain a value if the subtotal has an application environment of Rating.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">DATA_TYPE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Possible data types for this subtotal.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">DATA_TYPE_SUBTOTAL</span> and <span class="unixoutputc">DATA_TYPE_SUBTOTAL_RATING</span> reference types.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">CONTEXT_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Processing context in which this specification is used. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Rating environment <ul class="tablelistdashbullet2"><li class="tablelistdashbullet2">1 (Normalised Event)</li><li class="tablelistdashbullet2">2 (Service)</li></ul></li><li class="tablelistbullet">Billing environment<ul class="tablelistdashbullet2"><li class="tablelistdashbullet2">1 (Normalised Event)</li><li class="tablelistdashbullet2">2 (Service)</li><li class="tablelistdashbullet2">3 (Customer Node)</li><li class="tablelistdashbullet2">4 (Customer)</li><li class="tablelistdashbullet2">5 (Charge)</li></ul></li><li class="tablelistbullet">TRE Table environment<ul class="tablelistdashbullet2"><li class="tablelistdashbullet2">0 (Any).</li></ul></li></ul><p class="tablebodytext"><span class="unixoutputc">CONTEXT_RATING</span>, <span class="unixoutputc">CONTEXT_BILLING</span>, or<span class="unixoutputc"> CONTEXT_TRE_TABLE</span> reference types define the possible values depending on the value of <span class="unixoutputc">APPLICATION_ENV_CODE</span>. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">CURRENCY_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Currency of this subtotal.</p>
+<p class="tablebodytext">A currency can only be specified if the data type is Real, Real Array, or Real Hash, and <span class="unixoutputc">DONT_STORE_IND_CODE</span> is null, <span class="unixoutputc">CURRENCY_EXPR</span> is null, and the <span class="unixoutputc">APPLICATION_ENV_CODE</span> is Billing.</p>
+<p class="tablebodytext">The currency must exist for at least this date range.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">CURRENCY_EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Expression that defines the currency to be used for any charges generated by this subtotal.</p>
+<p class="tablebodytext">It must return an integer value corresponding to a valid internal currency identifier. An error is raised if a negative or undefined value is returned.</p>
+<p class="tablebodytext">This expression may reference the key variable if it is defined.  If it references the key variable, it is evaluated for each eligible key variable value. Therefore, different components of a tariff can be in different currencies.</p>
+<p class="tablebodytext">If the key variable is not referenced, the expression is evaluated only once and the same value is used for all key values.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">SUBTOTAL_STATUS_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (2)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Current status of this instance of the subtotal.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">SUBTOTAL_STATUS</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">ELIGIBILITY_EXPRESSION_</span><br><span class="unixoutputc">LIST_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">List of conditional expressions that must be satisfied for this subtotal to be calculated.</p>
+<p class="tablebodytext">If any of these conditions fail, the subtotal is not calculated.</p>
+<p class="tablebodytext">Its value is set to zero for referencing by other entities. No entries appear for the subtotal in the <span class="unixoutputc">CHARGE</span> table. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">DEFAULT_INVOICE_TXT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Invoice text for each charge created by this subtotal.</p>
+<p class="tablebodytext">It must be null if the subtotal has an application environment of Rating.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">SUPPRESS_ZERO_INC_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">No entry is recorded when the subtotal is zero.</p>
+<p class="tablebodytext">It must be null if the subtotal has an application environment of Rating.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">AGGREGATE_FUNCTION_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Type of aggregation for this subtotal.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">AGGREGATE_FUNCTION</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">AGGREGATE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Relevant only if the <span class="unixoutputc">CONTEXT_CODE</span> is Customer Node and the <span class="unixoutputc">APPLICATION_ENV_CODE</span> is Billing.</p>
+<p class="tablebodytext">If 1 (True), the subtotal is calculated based on the aggregation of all charges to this customer node and all customer nodes below it in the hierarchy.</p>
+<p class="tablebodytext">If 0 (False), the subtotal is calculated based only on charges directly associated with this customer node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">DO_NOT_AGGREGATE_EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Conditional expression which prevents the value of this subtotal from being aggregated into the parent customer node's aggregated expression parser.</p>
+<p class="tablebodytext">It can only contain a value if <span class="unixoutputc">AGGREGATE_IND_CODE</span> is 1 (True).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">RUNNING_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">If 1 (True), the value of this subtotal can be used before its final value is calculated.  </p>
+<p class="tablebodytext">This allows for tariffs and other subtotals to be defined whose value changes based on the current amount processed to be defined.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">RETAIN_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Relevant only if the <span class="unixoutputc">APPLICATION_ENV_CODE</span> is Billing and the <span class="unixoutputc">CONTEXT_CODE</span> is not Normalised Event or Charge.</p>
+<p class="tablebodytext">If 1 (True), the values calculated for this subtotal are inserted into the <span class="unixoutputc">SUBTOTAL_VALUE</span> table.</p>
+<p class="tablebodytext">It must be null or 0 (False) if the subtotal has a context of Normalised Event or Charge.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">GLOBAL_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">If set to 1 (True), this subtotal is applied to all normalised events, services, customer nodes, or customers.</p>
+<p class="tablebodytext">If set to 1 and the subtotal has an <span class="unixoutputc">APPLICATION_ENV_CODE</span> of Rating, the <span class="unixoutputc">CONTEXT_CODE</span> must be set to Global.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">TOTAL_SERVICE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">If set to 1 (True), all normalised events applicable to the service, in all accounts in the hierarchy, are examined.</p>
+<p class="tablebodytext">It can only contain a value if the <span class="unixoutputc">APPLICATION_ENV_CODE</span> is Billing and the <span class="unixoutputc">CONTEXT_CODE</span> is Service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">DONT_STORE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">If set to 1 (True), this subtotal is not stored in the <span class="unixoutputc">CHARGE</span> table.</p>
+<p class="tablebodytext">It must be null if <span class="unixoutputc">RETAIN_IND_CODE</span> is 1 (True).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">DONT_DISPLAY_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">If set to 1 (True), this subtotal is not displayed in the <span class="formname">Invoice Item Detail</span> Form.</p>
+<p class="tablebodytext">It must be null if:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">DONT_STORE_IND_CODE</span> is 1.</li><li class="tablelistbullet">The subtotal has an <span class="unixoutputc">APPLICATION_ENV_CODE</span> of Rating.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">KEY_VARIABLE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (66)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Name of the local expression variable used (if any) in <span class="unixoutputc">GL_Code</span> or <span class="unixoutputc">Receivable_Type</span> expressions. </p>
+<p class="tablebodytext">It can only contain a value if the subtotal is an array or hash type and <span class="unixoutputc">DONT_STORE_IND_CODE</span> is null.</p>
+<p class="tablebodytext">If specified, the <span class="unixoutputc">GL_CODE</span> expression or <span class="unixoutputc">RECEIVABLE_TYPE</span> expression is evaluated for each defined array element or hash element in the subtotal, with the variable set to each index or key value in turn. This allows different <span class="unixoutputc">GL_CODES</span> or <span class="unixoutputc">RECEIVABLE_TYPES</span> to be associated with different elements in the array or hash.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">GL_CODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">General Ledger code to be associated with values generated by this subtotal.</p>
+<p class="tablebodytext">A <span class="unixoutputc">GL_CODE</span> can only be specified if a currency is specified and <span class="unixoutputc">DONT_STORE_IND_CODE</span> is null.</p>
+<p class="tablebodytext">If specified, <span class="unixoutputc">GL_CODE_EXPR</span> must be null.</p>
+<p class="tablebodytext">It must be null if the subtotal has an <span class="unixoutputc">APPLICATION_ENV_CODE</span> of Rating.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">GL_CODE_EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Expression used in the general ledger code, which must return a valid <span class="unixoutputc">GL_CODE_ID</span>.</p>
+<p class="tablebodytext">It can only be specified if a currency is specified, <span class="unixoutputc">DONT_STORE_IND_CODE</span> is null, and <span class="unixoutputc">GL_CODE_ID</span> is null.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">FROM_GL_CODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext"><span class="unixoutputc">GL_CODE</span> to be associated with values generated by this subtotal.</p>
+<p class="tablebodytext">A <span class="unixoutputc">FROM_GL_CODE_ID</span> can only be specified if a currency is specified, and <span class="unixoutputc">DONT_STORE_IND_CODE</span> is null.</p>
+<p class="tablebodytext">The <span class="unixoutputc">GL_CODE</span> must exist for this date range.</p>
+<p class="tablebodytext">If specified, <span class="unixoutputc">FROM_GL_CODE_EXPR</span> must be null.</p>
+<p class="tablebodytext">It must be null if the subtotal has an <span class="unixoutputc">APPLICATION_ENV_CODE</span> of Rating.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">FROM_GL_CODE_EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Expression to define the From GL code, which must return a valid <span class="unixoutputc">GL_CODE_ID</span>.</p>
+<p class="tablebodytext">It can only be specified if a currency is specified, and <span class="unixoutputc">DONT_STORE_IND_CODE</span> and <span class="unixoutputc">FROM_GL_CODE_ID</span> are null.</p>
+<p class="tablebodytext">It must be null if the subtotal has an <span class="unixoutputc">APPLICATION_ENV_CODE</span> of Rating.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">RECEIVABLE_TYPE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Receivable type associated with this subtotal.</p>
+<p class="tablebodytext">It can only be specified if a currency is specified, and <span class="unixoutputc">DONT_STORE_IND_CODE</span> is null.</p>
+<p class="tablebodytext">If specified, <span class="unixoutputc">RECEIVABLE_TYPE_EXPR</span> must be null.</p>
+<p class="tablebodytext">It must be null if the subtotal has an <span class="unixoutputc">APPLICATION_ENV_CODE</span> of Rating.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">RECEIVABLE_TYPE_EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Expression defining the receivable type used for charges generated by this subtotal.</p>
+<p class="tablebodytext">It can only be specified if a currency is specified, and if <span class="unixoutputc">DONT_STORE_IND_CODE</span> and <span class="unixoutputc">RECEIVABLE_TYPE_ID</span> are null.</p>
+<p class="tablebodytext">It must be null if the subtotal has an <span class="unixoutputc">APPLICATION_ENV_CODE</span> of Rating (2).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">INVOICE_SECTION_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Invoice section number associated with all charges created using this subtotal.</p>
+<p class="tablebodytext">It is mandatory if the subtotal has an <span class="unixoutputc">APPLICATION_ENV_CODE </span>of Billing (3); otherwise, it must be null.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">ASSIGNMENT_EXPRESSION_</span><br><span class="unixoutputc">LIST_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">List of assignment expressions to be evaluated in order to assign values to direct variables associated with the <span class="unixoutputc">CHARGE_V</span> view. </p>
+<p class="tablebodytext">It can only be specified if <span class="unixoutputc">DONT_STORE_IND_CODE</span> is null, and <span class="unixoutputc">APPLICATION_ENV_CODE</span> is Billing (3).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">BILL_CYCLE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Applicable only if the subtotal has an <span class="unixoutputc">APPLICATION_ENV_CODE</span> of Rating (2). </p>
+<p class="tablebodytext">If set to 1 (True), values for this rating subtotal are aggregated across periods corresponding to the customer's bill cycle.</p>
+<p class="tablebodytext">If set to 1, <span class="unixoutputc">FROM_DATE_EXPR</span> and <span class="unixoutputc">TO_DATE_EXPR</span> must be null.</p>
+<p class="tablebodytext">If not set to 1, it must be null.</p>
+<p class="tablebodytext">If a <span class="unixoutputc">MASTER_SUBTOTAL_ID</span> is defined, the master subtotal must either have <span class="unixoutputc">BILL_CYCLE_IND_CODE</span> set to 1, or a date range corresponding to a single day. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">RATING_CONTEXT_ACCESS_</span><br><span class="unixoutputc">IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Applicable only if the subtotal has an <span class="unixoutputc">APPLICATION_ENV_CODE</span> of Rating (2), and <span class="unixoutputc">BILL_CYCLE_IND_CODE</span> is null.</p>
+<p class="tablebodytext">If set to 1 (True), the date period expressions for this subtotal are allowed to access Rating application environment variables and functions.<span class="unixoutputc"> </span></p>
+<p class="tablebodytext">If not 1 (True), it must be null.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">FROM_DATE_EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Defines the start of the date period to aggregate values for this rating subtotal.</p>
+<p class="tablebodytext">It is only applicable if the subtotal has an <span class="unixoutputc">APPLICATION_ENV_CODE</span> of Rating (2), and <span class="unixoutputc">BILL_CYCLE_IND_CODE</span> is null. </p>
+<p class="tablebodytext">If <span class="unixoutputc">RATING_CONTEXT_ACCESS_IND_CODE</span> is null, the expression has access only to functions with an application environment of Any and a context of Any.</p>
+<p class="tablebodytext">It also has access to the local variable <span class="unixoutputc">@EffectiveDate~</span>, which is set to the effective date.</p>
+<p class="tablebodytext">If <span class="unixoutputc">RATING_CONTEXT_ACCESS_IND_CODE</span> is 1 (True), all variables and functions with an application environment of Rating are accessible to the expression. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">TO_DATE_EXPR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Expression that defines the end of the date period to aggregate values for this rating subtotal.</p>
+<p class="tablebodytext">It is only applicable if the subtotal has an <span class="unixoutputc">APPLICATION_ENV_CODE</span> of Rating (2), and <span class="unixoutputc">BILL_CYCLE_IND_CODE</span> is null.</p>
+<p class="tablebodytext">If <span class="unixoutputc">RATING_CONTEXT_ACCESS_IND_CODE</span> is null, the expression has access only to functions with an application environment of Any and a context of Any.</p>
+<p class="tablebodytext">It also has access to the local variables <span class="unixoutputc">@EffectiveDate~</span> and <span class="unixoutputc">@FromDate~</span>, which are set to the effective date, and the value calculated for <span class="unixoutputc">FROM_DATE_EXPR</span>.</p>
+<p class="tablebodytext">If <span class="unixoutputc">RATING_CONTEXT_ACCESS_IND_CODE </span>is 1 (True), all variables and functions with an application environment of Rating are accessible to the expression.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">RATING_ACCESS_VALUE_IND_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">If set to 1 (True), the value of this rating subtotal can be accessed during rating.</p>
+<p class="tablebodytext">Applicable only if the subtotal has <span class="unixoutputc">APPLICATION_ENV_CODE</span> set to 2 (Rating).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">DO_NOT_FIX_DEPENDENCIES</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext"><a id="h79002" class="jump" title="Pseudo-columns" href="7526.htm#o79001" target="_self">Pseudo-column</a></p>
+<p class="tablebodytext">Used for updates only</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">If specified with a 1 (TRUE), variable dependencies are not fixed. </p>
+<p class="tablebodytext">It is used for multi-phase tariff updates to delay fixing of variable dependencies. </p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="78981.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="58483.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

@@ -1,0 +1,250 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> WorkflowEngine </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "77733.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "57881.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('55793');highlight('69536')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="77733.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="57881.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">WorkflowEngine</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'WorkflowEngine' (69536)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">This interface type is used for generating configuration settings for the Singleview Workflow Engine.  When an interface definition based on this interface type is saved, the <span class="unixoutputc">TREWFE</span> and associated <span class="unixoutputc">REMOTE_SERVICE</span> configuration items are automatically created. </p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">To create interface definitions based on this interface type, users must have security group access level for 'View decrypted data that has been encrypted using this security group'. </p></td></tr></table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Interface Type Parameters</p>
+<table class="tableintopic" width="684" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="96"><p class="tableheading">Tab</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="144"><p class="tableheading">Parameter</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="78"><p class="tableheading">Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="366"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" rowspan="15" width="96"><p class="tablebodytext"><span class="fieldname">Process Details</span></p>
+<p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">Enabled</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">List</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Specifies if the Singleview Workflow Engine is automatically started by the BMP. </p>
+<p class="tablebodytext">Default is True.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">SV Instance</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">[List]</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Singleview instance on which the Singleview Workflow Engine runs in a multi-instance environment.</p>
+<p class="tablebodytext">Default is MASTER.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">Ignored if <span class="fieldname">Cluster Managed</span> is True.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">TREWFE Sequence Number</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Sequence number that identifies the <span class="unixoutputc">TREWFE</span> configuration item.</p>
+<p class="tablebodytext">By default, it is set to the highest value of the next available sequence number of the following configuration items:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">TREWFE</span> </li><li class="tablelistbullet"><span class="unixoutputc">REMOTE_SERVICE</span>. <table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">The sequence number of the configuration items always match.</p></td></tr></table>
+</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">SV Username</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Text</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Singleview user name for logging in to the Singleview Workflow Engine.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">SV Password</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Text</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Password for the specified <span class="fieldname">SV Username</span>.</p>
+<p class="tablebodytext">It is masked.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">TRE Client Name</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">[Text]</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Name displayed by Tuxedo to identify the Singleview connection to the Singleview Workflow Engine. </p>
+<p class="tablebodytext">Default is TREWFE.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">THP Instance</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">List</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Name of the THP configuration item to which the Singleview Workflow Engine connects. </p>
+<p class="tablebodytext">Default is THP1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">THP Group</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">List</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">THP group to associate with the Workflow configuration item in a clustered environment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">Process Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">[Text]</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Environment variables to be set before the Singleview Workflow Engine executes.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">Command Line Args</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">[Text]</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Command line arguments that the BMP passes to the Singleview Workflow Engine.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">Java Options</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">[Text]</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Java Virtual Machine (JVM) options added to the Singleview Workflow Engine Java execution.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">Wait Period</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">[Integer]</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Time, in seconds, that the BMP waits after starting the Singleview Workflow Engine before it starts the next process. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">Cluster Managed</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">List</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Indicates if this instance is managed by a high availability configuration, and determines the number of <span class="unixoutputc">REMOTE_SERVICE</span> configuration items generated.</p>
+<p class="tablebodytext">Default is False. If set to:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">False, only one <span class="unixoutputc">REMOTE_SERVICE</span> configuration item is created</li><li class="tablelistbullet">True, a <span class="unixoutputc">REMOTE_SERVICE</span> configuration item is created for each instance in the <span class="unixoutputc">InstanceStatus</span> derived attribute table of type Billing<strong class="menuoptions"> </strong>or Combined.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">Default SFM Partition</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">[Integer]</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Partition number to use when inserting scheduled functions for work items.</p>
+<p class="tablebodytext">Can only be set if <span class="fieldname">Cluster Managed</span> is set to True.</p>
+<p class="tablebodytext">The specified value must:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Correspond to a row in the <span class="unixoutputc">CustomerPartition</span> derived attribute table representing a billing partition.  That is, where the billing instance is set to the value specified in the <span class="fieldname">SV Instance</span> field and all other columns are blank.</li><li class="tablelistbullet">Not be the default partition number for <span class="fieldname">SV Instance,</span> which is configured in the <span class="unixoutputc">InstanceStatus </span>derived attribute table.<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">Used in high availability configurations where the instance name associated with the partition number will change after a failover. When the SFM on the new active instance restarts, it processes scheduled functions inserted with this partition number.</p></td></tr></table>
+</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">Duplicate Detection Period</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">[Integer]</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Time, in seconds, during which duplicate workflows with matching process names and parameters will be rejected with an error. </p>
+<p class="tablebodytext">It defaults to 900 seconds (15 minutes). If set to 0, duplicate workflows are allowed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" rowspan="3" width="96"><p class="tablebodytext"><span class="fieldname">TRE Listener</span></p>
+</td>
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">TREPROXY Server Group</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">[Text]</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Tuxedo group of the treproxy server.</p>
+<p class="tablebodytext">Default is IMP.  </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">TREPROXY Port</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Text</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Port used by the treproxy server to connect to the Singleview Workflow Engine.</p>
+<p class="tablebodytext">The value can be one of:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Port number</li><li class="tablelistbullet">Service name, as defined in <span class="unixoutputc">/etc/services</span>.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">Number Concurrent Requests</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="bodytext">Number of treproxy servers to create.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="77733.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="57881.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

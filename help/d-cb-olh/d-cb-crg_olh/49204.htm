@@ -1,0 +1,254 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> treConnectFlags </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "39485.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "39648.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7634');expand('51074');highlight('49204')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="39485.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="39648.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">treConnectFlags</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'treConnectFlags' (49204)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">C</p>
+<pre class="unixinputp">TRE_RESULT treConnectFlags(char *Username, char *Password, char *ClientName, INTSV Flags)</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Object Pascal</p>
+<p class="bodytext">Not applicable.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Perl</p>
+<pre class="unixinputp">treConnectFlags(USERNAME, PASSWORD, CLIENTNAME, FLAGS)</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Purpose</p>
+<p class="bodytext">Establishes a connection to the TRE with the characteristics specified by the passed flags.</p>
+<p class="syntaxheading">Parameters</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="120"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="576"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">Username</span></p>
+</td>
+<td style="border:1px solid #010101;" width="576"><p class="tablebodytext">In:  Valid Singleview user name.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">Password</span></p>
+</td>
+<td style="border:1px solid #010101;" width="576"><p class="tablebodytext">In:  Valid Singleview password.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">ClientName</span></p>
+</td>
+<td style="border:1px solid #010101;" width="576"><p class="tablebodytext">In:  Name of the machine or workstation from which the client is connecting.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">Flags</span></p>
+</td>
+<td style="border:1px solid #010101;" width="576"><p class="tablebodytext">In:  Type of connection.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext"><span class="unixoutputc">TRE_SUCC</span> if successful; otherwise, <span class="unixoutputc">TRE_FAIL</span>.  The TRE sets <span class="unixoutputc">treErrno</span> to indicate the type of error.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext"><span class="unixoutputc">treConnectFlags()</span> is similar to <span class="unixoutputc">treConnect()</span>.</p>
+<p class="bodytext">For information about validation requirements for user name and password parameters, refer to the <span class="referrals">Security and Auditing Configuration Guide for Singleview</span>. </p>
+<p class="bodytext">The TRE can be made thread-safe by setting the <span class="unixoutputc">TRE_ENABLE_THREADS</span> flag.  If only the <span class="unixoutputc">TRE_ENABLE_THREADS</span> flag is specified, a single connection is shared across all threads.  If <span class="unixoutputc">TRE_ENABLE_THREADS</span> and <span class="unixoutputc">TRE_ENABLE_MULTICONTEXT</span> are specified, multiple connections are distributed over multiple threads with a single connection per context allowed.</p>
+<p class="bodytext">The value of <span class="unixoutputc">Flags</span> is set by bitwise ORing the appropriate individual flags.  Valid flags are listed in the following table.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Flags for treConnectFlags()</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="204"><p class="tableheading">Flag</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="492"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">0</span></p>
+</td>
+<td style="border:1px solid #010101;" width="492"><p class="tablebodytext">Clear all flags.</p>
+<p class="tablebodytext">Setting <span class="unixoutputc">Flags</span> to 0 is equivalent to calling <span class="unixoutputc">treConnect()</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">TRE_POLL</span></p>
+</td>
+<td style="border:1px solid #010101;" width="492"><p class="tablebodytext">Receive unsolicited notification by dip-in (polling).</p>
+<p class="tablebodytext">This is the default setting.</p>
+<p class="tablebodytext">The flag is not supported by the Perl TRE API.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">TRE_SIGNAL</span></p>
+</td>
+<td style="border:1px solid #010101;" width="492"><p class="tablebodytext">Receive unsolicited notification by signals.</p>
+<p class="tablebodytext">The flag:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Applies only to connections attempted from another UNIX client.</li><li class="tablelistbullet">Is not supported by the Perl TRE API.</li><li class="tablelistbullet">Cannot be used in multi-threaded or multi-context mode.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">TRE_THREAD</span></p>
+</td>
+<td style="border:1px solid #010101;" width="492"><p class="tablebodytext">Receive unsolicited notification by an event thread.</p>
+<p class="tablebodytext">The flag:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Applies only to connections attempted from another UNIX client.</li><li class="tablelistbullet">Is not supported by the Perl TRE API.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">TRE_NONOTIFY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="492"><p class="tablebodytext">Ignore unsolicited notification.</p>
+<p class="tablebodytext">The flag is implicitly set internally by the Perl TRE API.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">TRE_ENABLE_THREADS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="492"><p class="tablebodytext">Enable thread-safe calls to the TRE.</p>
+<p class="tablebodytext">A single client connection must be shared between the threads unless <span class="unixoutputc">TRE_ENABLE_MULTICONTEXT</span> is also specified.</p>
+<p class="tablebodytext">The flag:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Applies only to connections attempted from another UNIX client.</li><li class="tablelistbullet">Applies only to non-Windows platforms.</li><li class="tablelistbullet">Is not supported by the Perl TRE API.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">TRE_ENABLE_MULTICONTEXT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="492"><p class="tablebodytext">Enable multi-context mode.</p>
+<p class="tablebodytext">Multiple TRE connections are allowed by the same process with each connection having a unique context.</p>
+<p class="tablebodytext">Calls to the TRE are thread-safe. Each thread must be associated with a valid context before making most TRE calls.  Multiple threads can be associated with the same context.  Each context supports a single outstanding transaction.</p>
+<p class="tablebodytext">The flag:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Applies only to non-Windows platforms. </li><li class="tablelistbullet">Applies only to connections attempted from another UNIX client.</li><li class="tablelistbullet">Is not supported by the Perl TRE API.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">TRE_DISABLE_CONVERSIONS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="492"><p class="tablebodytext">Disable character-set conversions to and from UTF-8.</p>
+<p class="tablebodytext">The flag is only applicable if the server is running UTF-8.&nbsp;</p>
+<p class="tablebodytext">The flag is implicitly set internally by the Perl TRE API (as Perl has internal support for UTF-8 and performs its own character- set conversions).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">TRE_PE_CLIENT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="492"><p class="tablebodytext">Establish a session using Process Engine transaction semantics.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">All other Process Engine flags are ignored if this flag is not specified.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">TRE_PE_ERRPARAM</span></p>
+</td>
+<td style="border:1px solid #010101;" width="492"><p class="tablebodytext">Set the format for returned session messages to <span class="unixoutputc">ErrorCode: ParameterList</span> format.</p>
+<p class="tablebodytext">If <span class="unixoutputc">TRE_PE_CLIENT</span> is not set, this flag is ignored.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">TRE_PE_ASYNC</span></p>
+</td>
+<td style="border:1px solid #010101;" width="492"><p class="tablebodytext">Allow asynchronous fact derivations and searches to be used.</p>
+<p class="tablebodytext">If the flag is not set, the Process Engine server uses synchronous evaluations.</p>
+<p class="tablebodytext">If <span class="unixoutputc">TRE_PE_CLIENT</span> is not set, this flag is ignored.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">TRE_PE_OVERRIDE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="492"><p class="tablebodytext">Notify the Process Engine server to allow the user to log in more than once.</p>
+<p class="tablebodytext">Applies only when users are not able to log in more than once.</p>
+<p class="tablebodytext">This flag is deprecated and provided only for backward compatibility.</p>
+<p class="tablebodytext">If <span class="unixoutputc">TRE_PE_CLIENT</span> is not set, this flag is ignored.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">This flag is superseded by <span class="unixoutputc">TRE_LOGIN_OVERRIDE</span> which should be used instead.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">TRE_PE_CONFIG</span></p>
+</td>
+<td style="border:1px solid #010101;" width="492"><p class="tablebodytext">Deprecated and ignored by the TRE.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">TRE_ENABLE_CONVERSIONS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="492"><p class="tablebodytext">Enable the TRE client to perform single-byte (8-bit) character set conversions between the client and server character sets (if they are different).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">TRE_PE_WARNING_OVERRIDE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="492"><p class="tablebodytext">Notify the Process Engine server that all warnings raised by any RPC associated with this session will be overridden.</p>
+<p class="tablebodytext">If <span class="unixoutputc">TRE_PE_CLIENT</span> is not set, this flag is ignored.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">TRE_LOGIN_OVERRIDE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="492"><p class="tablebodytext">Allow the connection even if the maximum number of concurrent sessions for this user has been exceeded.</p>
+<p class="tablebodytext">If the limit is exceeded, forcibly disconnect one of the other sessions before allowing this connection request.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following constraints apply to the flags:</p>
+<ul class="listbullet"><li class="listbullet"><span class="unixoutputc">TRE_POLL</span>, <span class="unixoutputc">TRE_SIGNAL</span>, <span class="unixoutputc">TRE_THREAD, TRE_ENABLE_THREADS</span>, and <span class="unixoutputc">TRE_ENABLE_MULTICONTEXT</span> are not supported by the Perl TRE API.</li><li class="listbullet"><span class="unixoutputc">TRE_SIGNAL</span>, <span class="unixoutputc">TRE_THREAD</span>, <span class="unixoutputc">TRE_ENABLE_THREADS</span>, and <span class="unixoutputc">TRE_ENABLE_MULTICONTEXT</span> are applicable only for connections attempted from a UNIX client.</li><li class="listbullet"><span class="unixoutputc">TRE_ENABLE_THREADS</span> and <span class="unixoutputc">TRE_ENABLE_MULTICONTEXT</span> only apply to non-Windows platforms.  </li><li class="listbullet">Only one of <span class="unixoutputc">TRE_POLL</span>, <span class="unixoutputc">TRE_SIGNAL</span>, <span class="unixoutputc">TRE_THREAD</span>, or <span class="unixoutputc">TRE_NONOTIFY</span> can be specified to indicate the notification mechanism.</li><li class="listbullet"><span class="unixoutputc">TRE_SIGNAL</span> cannot be used in multi-threaded or multi-context mode.</li></ul>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="39485.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="39648.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

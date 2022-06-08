@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> treVariantGetReply </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "49207.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "7642.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7634');expand('51074');highlight('7699')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="49207.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="7642.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">treVariantGetReply</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'treVariantGetReply' (7699)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">C</p>
+<pre class="unixinputp">TRE_RESULT treVariantGetReply(    INTSV *RequestId,    INTSV Flags,    TRE_VARIANT *ReturnValue,    INTSV *NrVarParams,    TRE_VARIANT **VarArglist)</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Object Pascal</p>
+<p class="bodytext">Not applicable.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Perl</p>
+<p class="bodytext">Not applicable.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Purpose</p>
+<p class="bodytext">Retrieves the response for the specific request identified by the <span class="unixoutputc">RequestId</span>.</p>
+<p class="syntaxheading">Parameters</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="120"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="576"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">RequestId</span></p>
+</td>
+<td style="border:1px solid #010101;" width="576"><p class="tablebodytext">In:  ID of the request.</p>
+<p class="tablebodytext">Out:  If <span class="unixoutputc">RequestId</span> is set to 0, the next outstanding request is retrieved and <span class="unixoutputc">RequestId</span> is set to the <span class="unixoutputc">RequestId</span> for the next request.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">Flags</span></p>
+</td>
+<td style="border:1px solid #010101;" width="576"><p class="tablebodytext">Not used.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">ReturnValue</span></p>
+</td>
+<td style="border:1px solid #010101;" width="576"><p class="tablebodytext">Out:  Returned value.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">NrVarParams</span></p>
+</td>
+<td style="border:1px solid #010101;" width="576"><p class="tablebodytext">Out:  Number of pass-by-reference parameters returned for the request.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">VarArglist</span></p>
+</td>
+<td style="border:1px solid #010101;" width="576"><p class="tablebodytext">Out:  Values of all return by reference parameters.</p>
+<p class="tablebodytext"><span class="unixoutputc">TRE_VARIANT</span> array of size <span class="unixoutputc">NrVarParams</span>.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="130"><p class="tableheading">Value</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="566"><p class="tableheading">Cause</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="130"><p class="tablebodytext"><span class="unixoutputc">TRE_SUCC</span></p>
+</td>
+<td style="border:1px solid #010101;" width="566"><p class="tablebodytext">The function was successful.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="130"><p class="tablebodytext"><span class="unixoutputc">TRE_FAIL</span></p>
+</td>
+<td style="border:1px solid #010101;" width="566"><p class="tablebodytext">A generic failure occurred (but not one of the other specific errors).</p>
+<p class="tablebodytext">The TRE sets <span class="unixoutputc">treErrno</span> to indicate the type of error.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="130"><p class="tablebodytext"><span class="unixoutputc">TRE_TIMEOUT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="566"><p class="tablebodytext">The request timed out.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="130"><p class="tablebodytext"><span class="unixoutputc">TRE_REMOTEFAIL</span></p>
+</td>
+<td style="border:1px solid #010101;" width="566"><p class="tablebodytext">The call to the remote function was successful, but the remote function returned a failure status.</p>
+<p class="tablebodytext"><span class="unixoutputc">treErrno</span> is set to the error number returned by the remote function.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">If&nbsp;the <span class="unixoutputc">RequestId</span> is set to 0, the next outstanding request is retrieved and the <span class="unixoutputc">RequestId</span> is reset to the ID for the next request.  If <span class="unixoutputc">RequestId </span>is set to 0 and there are no outstanding replies, <span class="unixoutputc">treVariantGetReply()</span> blocks and waits for a reply.</p>
+<p class="bodytext"><span class="unixoutputc">treVariantGetReply()</span> blocks until either the response is received or the request times out.</p>
+<p class="bodytext">If <span class="unixoutputc">RequestId</span> is not a valid ID representing an outstanding request, or is not 0, <span class="unixoutputc">treVariantGetReply()</span> fails with a <span class="unixoutputc">TRE_FAIL</span> error and an error message is logged.</p>
+<p class="bodytext">If the TRE client is disconnected (including by another thread on UNIX systems), <span class="unixoutputc">treVariantGetReply()</span> fails with a <span class="unixoutputc">TRE_FAIL</span> error, and an error message is logged.</p>
+<p class="bodytext">The memory assigned for <span class="unixoutputc">ReturnValue</span>, <span class="unixoutputc">VarArgList</span> must be freed by the caller.</p>
+<p class="bodytext">Timeouts are only checked on entry to <span class="unixoutputc">treVariantGetReply()</span>. <span class="unixoutputc">treCancelReply()</span> is called if the timeout limit is reached and <span class="unixoutputc">TRE_TIMEOUT</span> is returned.  </p>
+<p class="bodytext">It is not possible to concurrently make calls to <span class="unixoutputc">treVariantGetReply()</span> and <span class="unixoutputc">treVariantCall()</span> by threads in the same context.</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="49207.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="7642.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

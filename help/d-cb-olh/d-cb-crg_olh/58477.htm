@@ -1,0 +1,266 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> fEVS_ValidateDefaultKeys&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "33137.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "40664.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('51544');expand('28068');expand('45618');highlight('58477')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="33137.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="40664.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h4 class="heading4">fEVS_ValidateDefaultKeys&amp;()</h4>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'fEVS_ValidateDefaultKeys&amp;()' (58477)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<pre class="unixinputp">fEVS_ValidateDefaultKeys&amp;(    const Entity$,    const KeyNames$[],    var ImplicitEffectiveDate&amp;)</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Checks if the supplied key names are a valid identifying key combination for the specified entity type. </p>
+<p class="syntaxheading">Context</p>
+<p class="bodytext">Not applicable.</p>
+<p class="syntaxheading">Parameters</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="198"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="498"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">Entity$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="498"><p class="tablebodytext">Name of the entity to validate the keys for.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">KeyNames$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="498"><p class="tablebodytext">Names of the keys to validate.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext"><span class="unixoutputc">ImplicitEffectiveDate&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="498"><p class="tablebodytext">Function output.</p>
+<p class="tablebodytext">Indicates if an effective date key is implicit in the key combination.</p>
+<p class="tablebodytext">If True, indicates the entity is date ranged, but no effective date or date range key was supplied.</p>
+<p class="tablebodytext">If False, indicates that the entity is either of the following:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Date-ranged, and an effective date range key was supplied. </li><li class="tablelistbullet">Not date-ranged.</li></ul></td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Processing</p>
+<p class="bodytext">The function has no configurable processing steps. </p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">For date-ranged entities, an effective date key is optional in a valid key combination.  A lookup of a date-ranged entity can be performed with an implicit effective date range key. </p>
+<p class="bodytext">The following table lists valid key combinations for available entities.  Attempting to validate an unknown entity results in error.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Valid Keys</p>
+<table class="tableintopic" width="702" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="222"><p class="tableheading">Entity</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="384"><p class="tableheading">Key Combinations</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="96"><p class="tableheading">Date-ranged</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="222"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="384"><ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">ACCOUNT_ID</span></li><li class="tablelistbullet"><span class="unixoutputc">ACCOUNT_NAME</span></li></ul></td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">No</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="222"><p class="tablebodytext"><span class="unixoutputc">ADJUSTMENT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="384"><ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">ADJUSTMENT_ID</span></li><li class="tablelistbullet"><span class="unixoutputc">ADJUSTMENT_NR</span></li></ul></td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">No</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="222"><p class="tablebodytext"><span class="unixoutputc">CONTRACT_HISTORY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="384"><ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">CONTRACT_ID</span></li><li class="tablelistbullet"><span class="unixoutputc">CONTRACT_NAME</span></li><li class="tablelistbullet"><span class="unixoutputc">CUSTOMER_REFERENCE</span></li></ul></td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Yes</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="222"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_CONTACT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="384"><ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">CUSTOMER_NODE_ID</span>, <span class="unixoutputc">PERSON_ID</span></li></ul></td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Yes</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="222"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_NODE_DA_ARRAY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="384"><ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">CUSTOMER_NODE_ID</span>, <span class="unixoutputc">DERIVED_ATTRIBUTE_ID</span>, <span class="unixoutputc">SEQNR</span></li><li class="tablelistbullet"><span class="unixoutputc">CUSTOMER_NODE_ID</span>, <span class="unixoutputc">TABLE_NAME</span>, <span class="unixoutputc">SEQNR</span></li></ul></td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Yes</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="222"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_NODE_HISTORY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="384"><ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">CUSTOMER_NODE_ID</span></li><li class="tablelistbullet"><span class="unixoutputc">NODE_NAME</span></li><li class="tablelistbullet"><span class="unixoutputc">PRIMARY_IDENTIFIER</span></li><li class="tablelistbullet"><span class="unixoutputc">PRIMARY_IDENTIFIER2</span></li><li class="tablelistbullet"><span class="unixoutputc">PARENT_CUSTOMER_NODE_ID</span>, <span class="unixoutputc">NODE_NAME</span></li><li class="tablelistbullet"><span class="unixoutputc">PARENT_CUSTOMER_NODE_ID</span>, <span class="unixoutputc">PRIMARY_IDENTIFIER</span></li><li class="tablelistbullet"><span class="unixoutputc">PARENT_CUSTOMER_NODE_ID</span>, <span class="unixoutputc">PRIMARY_IDENTIFIER2</span></li></ul></td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Yes</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="222"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_NODE_INV_FORMAT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="384"><ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">CUSTOMER_NODE_ID, SEQNR</span></li></ul></td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Yes</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="222"><p class="tablebodytext"><span class="unixoutputc">DERIVED_ATTRIBUTE_ARRAY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">For standard derived attributes:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">DERIVED_ATTRIBUTE_ID</span>, <span class="unixoutputc">SEQNR</span></li><li class="tablelistbullet"><span class="unixoutputc">DERIVED_ATTRIBUTE_NAME</span>, <span class="unixoutputc">SEQNR</span></li><li class="tablelistbullet"><span class="unixoutputc">TABLE_NAME</span>, <span class="unixoutputc">SEQNR</span></li></ul><p class="tablebodytext">For extended derived attributes:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">DERIVED_ATTRIBUTE_ARRAY_EXT_ID</span></li><li class="tablelistbullet"><span class="unixoutputc">DERIVED_ATTRIBUTE_ID, HASH_KEY</span></li><li class="tablelistbullet"><span class="unixoutputc">DERIVED_ATTRIBUTE_NAME, HASH_KEY</span></li><li class="tablelistbullet"><span class="unixoutputc">TABLE_NAME, HASH_KEY</span></li></ul></td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Yes</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="222"><p class="tablebodytext"><span class="unixoutputc">ENTITLEMENT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="384"><ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">ENTITLEMENT_ID</span></li><li class="tablelistbullet"><span class="unixoutputc">ENTITLEMENT_NAME</span></li></ul></td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Yes</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="222"><p class="tablebodytext"><span class="unixoutputc">ENTITLEMENT_ALLOCATION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="384"><ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">ENTITLEMENT_ALLOCATION_ID</span></li></ul></td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">No</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="222"><p class="tablebodytext"><span class="unixoutputc">EQUIPMENT_HISTORY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="384"><ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">EQUIPMENT_ID</span></li><li class="tablelistbullet"><span class="unixoutputc">SERIAL_NUMBER</span></li><li class="tablelistbullet"><span class="unixoutputc">SERIAL_NUMBER</span>, <span class="unixoutputc">EQUIPMENT_TYPE_ID</span></li><li class="tablelistbullet"><span class="unixoutputc">SERIAL_NUMBER</span>, <span class="unixoutputc">EQUIPMENT_TYPE_NAME</span></li><li class="tablelistbullet"><span class="unixoutputc">NETWORK_ADDRESS</span></li><li class="tablelistbullet"><span class="unixoutputc">NETWORK_ADDRESS</span>, <span class="unixoutputc">EQUIPMENT_TYPE_ID</span></li><li class="tablelistbullet"><span class="unixoutputc">NETWORK_ADDRESS</span>, <span class="unixoutputc">EQUIPMENT_TYPE_NAME</span></li></ul></td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Yes</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="222"><p class="tablebodytext"><span class="unixoutputc">FAC_GROUP_INSTANCE_HISTORY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="384"><ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">FAC_GROUP_INSTANCE_ID</span></li></ul></td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Yes</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="222"><p class="tablebodytext"><span class="unixoutputc">INTERFACE_DEFN_DA_ARRAY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="384"><p class="tablebodytext">For interface definitions and templates:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">INTERFACE_DEFN_ID</span></li><li class="tablelistbullet"><span class="unixoutputc">INTERFACE_DEFN_NAME</span></li></ul><p class="tablebodytext">For the name of the tab that is displayed on the <span class="formname">Interface Definition</span> and the <span class="formname">Interface Template</span> forms:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">INTERFACE_DEFN_ID</span>, <span class="unixoutputc">TAB_NAME</span>, and <span class="unixoutputc">SEQNR</span></li><li class="tablelistbullet"><span class="unixoutputc">INTERFACE_DEFN_NAME</span>, <span class="unixoutputc">TAB_NAME</span>, and <span class="unixoutputc">SEQNR</span></li></ul></td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">No</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="222"><p class="tablebodytext"><span class="unixoutputc">PAYMENT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="384"><ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">PAYMENT_ID</span></li><li class="tablelistbullet"><span class="unixoutputc">RECEIPT_NR</span></li></ul></td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">No</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="222"><p class="tablebodytext"><span class="unixoutputc">PERSON_HISTORY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="384"><ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">PERSON_ID</span></li><li class="tablelistbullet"><span class="unixoutputc">PRIMARY_IDENTIFIER</span></li><li class="tablelistbullet"><span class="unixoutputc">PRIMARY_IDENTIFIER2</span></li></ul></td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Yes</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="222"><p class="tablebodytext"><span class="unixoutputc">PRODUCT_INSTANCE_HISTORY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="384"><ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">PRODUCT_INSTANCE_ID</span></li></ul><p class="tablebodytext">For the service associated with this base product instance:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">SERVICE_ID</span></li><li class="tablelistbullet"><span class="unixoutputc">SERVICE_NAME</span></li><li class="tablelistbullet"><span class="unixoutputc">NETWORK_NAME</span></li></ul></td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Yes</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="222"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_QUERY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="384"><ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">QUERY_ID</span></li><li class="tablelistbullet"><span class="unixoutputc">QUERY_NR</span></li></ul></td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">No</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="222"><p class="tablebodytext"><span class="unixoutputc">SERVICE_HISTORY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="384"><ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">SERVICE_ID</span></li><li class="tablelistbullet"><span class="unixoutputc">SERVICE_NAME</span></li><li class="tablelistbullet"><span class="unixoutputc">NETWORK_NAME</span></li><li class="tablelistbullet"><span class="unixoutputc">NETWORK_NAME</span>, <span class="unixoutputc">SERVICE_TYPE_ID</span></li><li class="tablelistbullet"><span class="unixoutputc">NETWORK_NAME</span>, <span class="unixoutputc">SERVICE_TYPE_NAME</span></li></ul></td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Yes</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="222"><p class="tablebodytext"><span class="unixoutputc">SERVICE_DA_ARRAY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="384"><ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">SERVICE_ID</span>, <span class="unixoutputc">DERIVED_ATTRIBUTE_ID</span>, <span class="unixoutputc">SEQNR</span></li><li class="tablelistbullet"><span class="unixoutputc">SERVICE_ID</span>, <span class="unixoutputc">TABLE_NAME</span>, <span class="unixoutputc">SEQNR</span></li></ul></td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Yes</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">1 if supplied keys are valid, 0 if supplied keys are invalid; otherwise, an appropriate error.</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="33137.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="40664.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

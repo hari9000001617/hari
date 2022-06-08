@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> ClassFetchDetails?{}() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Configuration Workbench for Singleview Process Engine 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "38213.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "9413.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('57331');expand('11011');highlight('38210')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="38213.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="9413.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Configuration Workbench for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">ClassFetchDetails?{}()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'ClassFetchDetails?{}()' (38210)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<pre class="unixinputp">ClassFetchDetails?{}(    ClassOid@)</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Retrieves class attribute information for a specified class.  For example, the function can be used to detect if a class is date-ranged.</p>
+<p class="syntaxheading">Parameter</p>
+<table class="tableintopic" width="612" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="114"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="498"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">ClassOid@</span></p>
+</td>
+<td style="border:1px solid #010101;" width="498"><p class="tablebodytext">In:  Object ID of the class for which to retrieve attribute information.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">Hash containing details of the class if successful; otherwise, an exception is raised.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">The hash only contains a defined value for a key if the class has a value set for the attribute; otherwise, the value is Null.  For example, the <span class="unixoutputc">ObjStartDate_Fact</span> and <span class="unixoutputc">ObjEndDate_Fact</span> key values are Null for classes not date-ranged.</p>
+<p class="bodytext">Where applicable, object IDs are returned in the hash.  All other information is either text or integers.</p>
+<p class="bodytext">The hash contains the following keys (representing the class attributes):</p>
+<ul class="listbullet"><li class="listbullet"><span class="unixoutputc">Name</span></li><li class="listbullet"><span class="unixoutputc">DisplayName</span></li><li class="listbullet"><span class="unixoutputc">ClassKey</span></li><li class="listbullet"><span class="unixoutputc">ThisParam</span></li><li class="listbullet"><span class="unixoutputc">Static</span></li><li class="listbullet"><span class="unixoutputc">DateRanged</span></li><li class="listbullet"><span class="unixoutputc">DateTimeRanged</span></li><li class="listbullet"><span class="unixoutputc">DefaultSearch</span></li><li class="listbullet"><span class="unixoutputc">TableName</span></li><li class="listbullet"><span class="unixoutputc">RemoteTable</span></li><li class="listbullet"><span class="unixoutputc">EntityName</span></li><li class="listbullet"><span class="unixoutputc">ExpiryDuration</span></li><li class="listbullet"><span class="unixoutputc">ObjStartDate_Fact</span></li><li class="listbullet"><span class="unixoutputc">ObjEndDate_Fact</span></li><li class="listbullet"><span class="unixoutputc">Type_Fact</span></li><li class="listbullet"><span class="unixoutputc">AssocRefA_Fact</span></li><li class="listbullet"><span class="unixoutputc">AssocRefB_Fact</span></li><li class="listbullet"><span class="unixoutputc">Name_Fact</span></li><li class="listbullet"><span class="unixoutputc">DisplayName_Fact</span></li><li class="listbullet"><span class="unixoutputc">Status_Fact</span></li><li class="listbullet"><span class="unixoutputc">LastUpdate_Fact</span></li><li class="listbullet"><span class="unixoutputc">SecGrp_Fact</span></li><li class="listbullet"><span class="unixoutputc">Obsolete_Fact</span></li><li class="listbullet"><span class="unixoutputc">Class_Facts</span>.</li></ul><p class="syntaxheading">Example</p>
+<p class="bodytext">The following code displays the attributes for the Case class:</p>
+<pre class="unixoutputp">{<br>    var lClassAttribs?{};<br>    try {<br>        lClassAttribs?{} := ClassFetchDetails?{}(Class:Case@);<br>        print('ClassDef HASH contents:');<br>        print(lClassAttribs?{});<br>    } except {<br>        print('ClassFetchDetails failed');<br>    }<br>}</pre>
+<p class="bodytext">The following is output from the above code example:</p>
+<pre class="unixoutputp">ClassDef HASH contents:{ AssocRefA_Fact =&gt; , AssocRefB_Fact =&gt; , ClassKey =&gt; 100, Class_Facts =&gt; [ 0x0002000000000000000000000000004D, 0x0002000000000000000000000000004E, 0x0002000000000000000000000000004F, 0x00020000000000000000000000000050, 0x00020000000000000000000000000052, 0x00020000000000000000000000000053, 0x00020000000000000000000000000054, 0x00020000000000000000000000000057, 0x00020000000000000000000000000058, 0x00020000000000000000000000000059, 0x0002000000000000000000000000005A, 0x00020000000000000000000000000880, 0x00020000000000000000000000000883, 0x00020000000000000000000000000885, 0x00020000000000000000000000000887, 0x00020000000000000000000000000888, 0x0002000000000000000000000000088B, 0x0002000000000000000000000000088C, 0x0002000000000000000000000000088D, 0x0002000000000000000000000000088F, 0x00020000000000000000000000000891, 0x00020000000000000000000000000892, 0x00020000000000000000000000000894, 0x00020000000000000000000000000895, 0x00020000000000000000000000000CA8, 0x00020000000000000000000000000D10, 0x00020000000000000000000000000EFA, 0x000200000000000000000000000011DA, 0x000200000000000000000000000011EF, 0x000200000000000000000000000011FE, 0x000200000000000000000000000013F5, 0x00020000000000000000000000001435, 0x00020000000000000000000000001436, 0x00020000000000000000000000001437, 0x00020000000000000000000000001438, 0x00020000000000000000000000001439, 0x00020000000000000000000000001488, 0x00020000000000000000000000001707, 0x00020000000000000000000000001894, 0x00020000000000000000000000001AE5, 0x00020000000000000000000000001B85, 0x00020000000000000000000000001B86, 0x00020000000000000000000000001B8E, 0x00020000000000000000000000001C07, 0x00020000000000000000000000001D0D, 0x00020000000000000000000000001D1E, 0x00020000000000000000000000001EC5, 0x00020000000000000000000000001F44, 0x00020000000000000000000000001F4B, 0x00020000000000000000000000001F4C, 0x00020000000000000000000000001F56, 0x00020000000000000000000000002326, 0x00020000000000000000000000002333, 0x0002000000000000000000000000233E, 0x0002000000000000000000000000233F, 0x00020000000000000000000000002343, 0x00020000000000000000000000002344, 0x00020000000000000000000000002346, 0x00020000000000000000000000002350, 0x00020000000000000000000000002353, 0x00020000000000000000000000002354, 0x0002000000000000000000000000237B, 0x0002000000000000000000000000237C, 0x000200000000000000000000000023A9, 0x000200000000000000000000000023AA, 0x00020000000000000000000000002CBF, 0x00020000000000000000000000002CE9, 0x00020000000000000000000000002D4D, 0x00020000000000000000000000003115, 0x00020000000000000000000000003116, 0x00020000000000000000000000003156, 0x0002000000000000000000000000330E, 0x0002000000000000000000000000330F, 0x00020000000000000000000000003310, 0x00020000000000000000000000003377, 0x00020000000000000000000000003383, 0x00020000000000000000000000003385, 0x00020000000000000000000000003386, 0x000200000000000000000000000033DC, 0x000200000000000000000000000033DD, 0x000200000000000000000000000033DE, 0x000200000000000000000000000033E3, 0x000200000000000000000000000033E4 ], DateRanged =&gt; 0, DateTimeRanged =&gt; 0, DisplayName =&gt; Case, DisplayName_Fact =&gt; 0x00020000000000000000000000000054, EntityName =&gt; , ExpiryDuration =&gt; 0, LastUpdate_Fact =&gt; 0x00020000000000000000000000000053, Name =&gt; Case, Name_Fact =&gt; 0x00020000000000000000000000000054, ObjEndDate_Fact =&gt; , ObjStartDate_Fact =&gt; , Obsolete_Fact =&gt; 0x00020000000000000000000000000057, RemoteTable =&gt; , SecGrp_Fact =&gt; 0x00020000000000000000000000000058, Status_Fact =&gt; 0x00020000000000000000000000000059, TableName =&gt; CASE_VAL, ThisParam =&gt; 100, Type_Fact =&gt; 0x0002000000000000000000000000005A }</pre>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="38213.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="9413.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Configuration Workbench for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

@@ -1,0 +1,206 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> CustomerNodeMove&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "14504.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "14506.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('58569')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="14504.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="14506.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">CustomerNodeMove&amp;()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'CustomerNodeMove&amp;()' (58569)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<table class="tableintopic" width="510" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<td class="tableheading" width="204"><p class="tableheading">Interface 1</p>
+</td>
+<td width="42"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td class="tableheading" width="264"><p class="tableheading">Interface 2</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="204"><pre class="unixinputp">CustomerNodeMove&amp;(    CustomerNodeId&amp;,    ToCustomerNodeId&amp;,    StartDate~,    EndDate~,    var&nbsp;LastModified~)</pre>
+</td>
+<td width="42"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td width="264"><pre class="unixinputp">CustomerNodeMove&amp;(    CustomerNodeId&amp;,    ToCustomerNodeId&amp;,    StartDate~,    EndDate~,    var&nbsp;LastModified~,    AllowDuplicateChildNames&amp;)</pre>
+</td>
+</tr>
+
+</table>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Moves a customer node and all child nodes to a different position in the customer hierarchy.</p>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="294" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="bold">Method</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Local</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="216"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="480"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">CustomerNodeId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">In:  ID of the customer node to move.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">ToCustomerNodeId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">In:  ID of the customer node to move to.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">StartDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">In:  Move from this date-time.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">EndDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">In:  Move to this date-time inclusive.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">LastModified~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">In:  Last modified date-time of the customer node before the move.</p>
+<p class="tablebodytext">Out:  Last modified date-time of the customer node after the move.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">AllowDuplicateChildNames&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">In:  Indicates whether duplicate child names are allowed in the hierarchy where this customer node is being moved to.</p>
+<p class="tablebodytext">If True, duplicate names are allowed; otherwise, an error is raised.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">1 (TRUE) if successful.  If the move cannot be performed over the specified date range, an error containing suggested move dates is raised.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">In interface 2, if <span class="unixoutputc">AllowDuplicateChildNames&amp;</span> is set to TRUE, customer nodes can be moved to hierarchies that contain children with the same name.  If set to FALSE, interface 2 behaves the same as interface 1; customer nodes cannot be moved to hierarchies that have a child customer with the same name.</p>
+<p class="syntaxheading">Date Range</p>
+<p class="bodytext">If the customer node is to be moved to the root level, the parent and root nodes of the customer node must not change for the range of the move, and the value passed for <span class="unixoutputc">ToCustomerNodeId&amp; </span>must be <span class="unixoutputc">-1</span>.</p>
+<p class="bodytext">If the customer node is moved to a place other than the root node of a hierarchy, the new parent and root nodes of the customer node must not change for the range of the move.</p>
+<p class="bodytext">If the move range splits a record, either the record's <span class="unixoutputc">EFFECTIVE_START_DATE</span>, <span class="unixoutputc">EFFECTIVE_END_DATE</span>, or both, are updated.  <span class="unixoutputc">ATLANTA_OPERATOR_ID</span> and <span class="unixoutputc">LAST_MODIFIED</span> is updated for each record modified.</p>
+<p class="syntaxheading">Contracts</p>
+<p class="bodytext">If a root customer node is being moved, any contracts associated with it are assigned to its new root node for the duration of the move.</p>
+<p class="bodytext">In addition, any contracts defined with the <span class="fieldname">Allocate All Services?</span> field selected (the contract is associated with all services in the customer hierarchy available for selection) are updated so the <span class="fieldname">Allocate All Services?</span> field is cleared from <span class="unixoutputc">StartDate~</span> to <span class="unixoutputc">EndDate~</span>.</p>
+<p class="bodytext">After the move end date, the contracts are associated with the original root customer again, unless the move end date is to the end-of-time.</p>
+<p class="bodytext">When a root customer node with associated contracts is moved, a multi-record <span class="unixoutputc">Insert/Update</span> is performed on the <span class="unixoutputc">CONTRACT_HISTORY</span> table to set the <span class="unixoutputc">CUSTOMER_NODE_ID</span> to the new root <span class="unixoutputc">CUSTOMER_NODE_ID</span>.  The <span class="unixoutputc">EFFECTIVE_START_DATE</span> and <span class="unixoutputc">EFFECTIVE_END_DATE</span> are updated to align with the <span class="unixoutputc">CUSTOMER_NODE_HISTORY</span> effective dates for the move date range.  As part of the Insert/Update, the <span class="unixoutputc">LAST_MODIFIED</span> date is updated and the <span class="unixoutputc">SELECT_ALL_IND_CODE</span> is set to 0.</p>
+<p class="syntaxheading">Derived Attributes</p>
+<p class="bodytext">If the customer node being moved changes its <span class="unixoutputc">ROOT_CUSTOMER_NODE_ID</span>, a check is performed to ensure that the new root node's associated derived attributes and charge categories are consistent with those of its new descendants.  </p>
+<p class="bodytext">Operations are also performed to ensure services and companion product instances under the moved hierarchy are consistent with the contracts of the new hierarchy.  These operations are performed after moving the contracts from the old hierarchy to the new and turning the corresponding <span class="unixoutputc">SELECT_ALL_IND_CODE</span> to 0 if the moved node is a root node.  If the move end date-time is not the end of time, the move can be considered to be two separate moves from the:</p>
+<ul class="listbullet"><li class="listbullet">Old hierarchy to the new</li><li class="listbullet">New hierarchy back to the old.</li></ul><p class="syntaxheading">Accounts</p>
+<p class="bodytext">Moving a customer node also causes the <span class="unixoutputc">INVOICE_ACCOUNT_ID</span> and <span class="unixoutputc">INVOICE_ACCOUNT_UNBILLED</span> values from the <span class="unixoutputc">ACCOUNT</span> table to be re-derived for all accounts affected by the move. Entitlements associated with the customer node, or with the services of this customer node, are updated accordingly. </p>
+<p class="bodytext">Re-deriving these values is achieved by calling <span class="unixoutputc">CustomerNodeFixInvoiceAccount&amp;[]()</span>.</p>
+<p class="syntaxheading">Partitions</p>
+<p class="bodytext">If inter-partition moves occur, the validation, with a start date-time less or equal to the current date-time and an end date-time equal to the end of time, is applied to these moves.</p>
+<p class="bodytext">If the <span class="unixoutputc">ToCustomerNodeId&amp;</span> is in a different partition to <span class="unixoutputc">FromCustomerNodeId&amp;</span> and this validation restriction is satisfied, all customer nodes, accounts, and services associated with <span class="unixoutputc">FromCustomerNodeId&amp;</span> are added to, or updated in, the <span class="unixoutputc">CustomerPartitionException</span>, <span class="unixoutputc">AccountPartitionException</span>, and <span class="unixoutputc">ServicePartitionException</span> derived attribute tables respectively. </p>
+<p class="syntaxheading">Validation</p>
+<p class="bodytext">The following validation is performed:</p>
+<ul class="listbullet"><li class="listbullet">The user must have appropriate group update privileges for the source and destination customers.</li><li class="listbullet">The user must have update security group access level for the group associated with the record manipulated by this function call.  If the effective date of the update is less than the current date (00:00:00 timestamp), direct update security group access level is required.  <p class="listcontinue">If the updated node is a child customer node, the user must also have update or direct update access to the parent customer node's security group.  <span class="unixoutputc">GROUP_ACCESS_TRE_V</span> lists security group access level values.</p>
+</li><li class="listbullet">The source and the destination customer must each have the same parent and root node for the duration of the move.</li><li class="listbullet">The time component of the move start date must be 00:00:00</li><li class="listbullet">The time component of the move end date must be 23:59:59</li><li class="listbullet">If <span class="unixoutputc">AllowDuplicateChildNames&amp;</span> is set to TRUE, customer nodes can be moved to hierarchies that contain children with the same name. </li><li class="listbullet">The customer cannot be moved to a customer which was a descendant at any time during the move range.</li><li class="listbullet">The customer cannot be moved if it, its parent, or the destination customer have been cancelled at any time during the move range.</li><li class="listbullet">The customer cannot be moved if it or its parent is black-listed at any point in time during the move period and where the user does not possess the View Black-listed Customers access on the Customer Form.</li><li class="listbullet">The customer cannot be moved if it is: <ul class="listdashbullet2"><li class="listdashbullet2">A prepaid without statements customer moving to a customer with an invoice cycle.</li><li class="listdashbullet2">An invoice cycle customer moving to a prepaid without statements customer. </li></ul></li></ul><p class="bodytext">When the root node is changed, the following constraints must be maintained:</p>
+<ul class="listbullet"><li class="listbullet">Any derived attribute instances with a storage context of Customer associated with products in the customer hierarchy being moved must exist in the <span class="unixoutputc">CUSTOMER_NODE_DA</span> table for the new root customer node.  Also, if the node being moved is becoming a root node, any missing derived attributes with a storage context of Customer required by the customer type (in the <span class="unixoutputc">CUSTOMER_NODE_TYPE_DA</span> table) must be created. </li><li class="listbullet">Any charge categories required by tariffs with a context of Customer associated with products in the customer hierarchy being moved must exist in the <span class="unixoutputc">CUSTOMER_NODE_CHARGE_CAT</span> table for the new root customer node. </li><li class="listbullet">Services and the associated companion product instances are updated to be correctly associated with the contracts in the new hierarchy.  The operations are done after moving the contracts from the old hierarchy to the new and setting the corresponding <span class="unixoutputc">SELECT_ALL_IND_CODE</span> if the moved node is a root node.  If the move end date-time is not the end of time, the move can be considered to be separate moves:<ul class="listdashbullet2"><li class="listdashbullet2">Moving from the old hierarchy to the new</li><li class="listdashbullet2">Moving from the new hierarchy back to the old. </li></ul><p class="listcontinue">Each move includes:</p>
+<ul class="listdashbullet2"><li class="listdashbullet2">Detaching:  Scan for any contracts missing from the new hierarchy (exist only in the old hierarchy, but not in the new).  If there are any, remove the contracts from the services under the moved hierarchy. </li><li class="listdashbullet2">Reattaching: Scan for any contracts with <span class="unixoutputc">SELECT_ALL_IND_CODE</span> = 1 in the new hierarchy.  If there are any, update the compatible services that have a null contract under the moved hierarchy to be associated with these contracts. </li></ul><p class="listcontinue">The detaching and reattaching of services to contracts is a multi-record update.</p>
+</li></ul><p class="bodytext">Re-derivation of <span class="unixoutputc">INVOICE_ACCOUNT_ID</span> and <span class="unixoutputc">INVOICE_ACCOUNT_UNBILLED</span> values for accounts affected by the move is performed by <span class="unixoutputc">CustomerNodeFixInvoiceAccount&amp;[]</span>.</p>
+<p class="syntaxheading">Data Location</p>
+<p class="bodytext">All data to be modified occurs in the <span class="unixoutputc">CUSTOMER_NODE_HISTORY</span>, <span class="unixoutputc">CUSTOMER_NODE_CHARGE_CAT</span>, and <span class="unixoutputc">CUSTOMER_NODE_DA</span> tables.</p>
+<p class="syntaxheading">Customer Node IDs</p>
+<p class="bodytext">The <span class="unixoutputc">ROOT_CUSTOMER_NODE_ID</span> of the customer being moved is set to be that of the parent customer being moved to, or set to <span class="unixoutputc">NULL</span> if the customer is being moved to the root level.  The <span class="unixoutputc">ROOT_CUSTOMER_NODE_ID</span> of all child nodes under the customer node being moved is set to the new <span class="unixoutputc">ROOT_CUSTOMER_NODE_ID</span> of the customer node being moved.</p>
+<p class="bodytext">The <span class="unixoutputc">PARENT_CUSTOMER_NODE_ID</span> is set to be that of the customer node being moved to, or set to NULL if being moved to the root level.  The <span class="unixoutputc">PARENT_CUSTOMER_NODE_ID</span> of the child nodes under the customer node being moved remain as they are.</p>
+<p class="syntaxheading">Schedule</p>
+<p class="bodytext">The customer node being moved and all of its child nodes inherit the <span class="unixoutputc">SCHEDULE_ID</span> of the customer node being moved to, or if being moved to the root level, retain the current <span class="unixoutputc">SCHEDULE_ID</span>. </p>
+<p class="bodytext">Customer hierarchies cannot contain a mix of prepaid without statements and invoice cycle customers. A customer node with <span class="unixoutputc">SCHEDULE_ID</span> of: </p>
+<ul class="listbullet"><li class="listbullet"><span class="unixoutputc">NULL</span> is configured as a prepaid without statements customer. </li><li class="listbullet">Not-null is configured as an invoice cycle customer. </li></ul><p class="bodytext">The <span class="unixoutputc">SCHEDULE_ID</span> of invoice cycle customer nodes cannot be set to <span class="unixoutputc">NULL.</span></p>
+<p class="syntaxheading">Hierarchy</p>
+<p class="bodytext">The <span class="unixoutputc">HIERARCHY_LEVEL</span> of the customer node being moved is set to one greater than the <span class="unixoutputc">HIERARCHY_LEVEL</span> of its new parent, or to 1 if being moved to the root level.  The <span class="unixoutputc">HIERARCHY_LEVEL</span> of the child nodes is resequenced so that their <span class="unixoutputc">HIERARCHY_LEVEL</span> is one greater than that of their respective immediate parent.</p>
+<ul class="listbullet"><li class="listbullet">Any derived attribute instances with a storage context of Customer associated with products in the customer hierarchy being moved must exist in the table for the new root customer node.  Also, if the node being moved is becoming a root node, then any missing derived attributes with a storage context of Customer required by the customer type (in the table) must be created. </li><li class="listbullet">Any charge categories required by tariffs with a context of Customer associated with products in the customer hierarchy being moved must exist in the table for the new root customer node. </li><li class="listbullet">Services and the associated companion product instances are updated to be correctly associated with the contracts in the new hierarchy.  These operations are done after moving the contracts from the old hierarchy to the new and setting the corresponding if the moved node is a root node.  If the move end date-time is not the end of time, the move can be considered to be two separate moves.</li></ul><p class="syntaxheading">Subtotals</p>
+<p class="bodytext">If the customer node is moving between hierarchies, updates need to be made to the <span class="unixoutputc">SUBTOTAL_RATING_VALUE</span> and <span class="unixoutputc">SUBTOTAL_RATING_DELTA</span> tables.  In the following description, a <span class="unixoutputc">DELTA</span> is considered to be a distinct combination of <span class="unixoutputc">subtotal_ID</span>, <span class="unixoutputc">customer_node_id</span>, <span class="unixoutputc">service_id</span>, <span class="unixoutputc">key_value</span>.</p>
+<p class="bodytext">If moving between hierarchies, the following steps are performed:</p>
+<ul class="listbullet"><li class="listbullet">All services are found in the old hierarchy at or below the node that is moving.</li><li class="listbullet">All <span class="unixoutputc">DELTAS</span> that occur for each <span class="unixoutputc">service_ID</span> and old <span class="unixoutputc">root_customer_node_ID</span> on or after the <span class="unixoutputc">move_date</span> are found. </li><li class="listbullet"><span class="unixoutputc">customer_node_ID</span>s are updated in the <span class="unixoutputc">SUBTOTAL_RATING_DELTA</span> table for these deltas to reflect the new <span class="unixoutputc">root_customer_node_id</span>.</li><li class="listbullet">The delta value in the <span class="unixoutputc">SUBTOTAL_RATING_DELTA</span> table is decremented from the value column in the <span class="unixoutputc">SUBTOTAL_RATING_VALUE</span> table for these deltas.</li><li class="listbullet">A new row is inserted into the <span class="unixoutputc">SUBTOTAL_RATING_VALUE</span> table for the deltas associated with the new <span class="unixoutputc">root_customer_node_id</span>.<p class="listcontinue">These deltas have the same start and end date as the old deltas in the <span class="unixoutputc">SUBTOTAL_RATING_VALUE</span> table.  The <span class="unixoutputc">event_start_date</span> is equal to the minimum charge start date that falls between <span class="unixoutputc">start_date</span> and <span class="unixoutputc">end</span>_date, and the <span class="unixoutputc">event_end_date</span> is equal to the maximum <span class="unixoutputc">charge_start_date</span> that falls between <span class="unixoutputc">start_date</span> and <span class="unixoutputc">end_date</span>.  The value column equals the aggregate of all <span class="unixoutputc">delta_values</span> for the <span class="unixoutputc">DELTA</span> in the <span class="unixoutputc">SUBTOTAL_RATING_DELTA</span> table that occur after the move date. </p>
+</li><li class="listbullet">A <span class="unixoutputc">SubtotalPurge&amp;()</span> is issued for each subtotal that is affected by the move.</li></ul>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="14504.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="14506.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

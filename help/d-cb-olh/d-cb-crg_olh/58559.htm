@@ -1,0 +1,300 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> EntitlementConsume&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "58433.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "58382.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('58559')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="58433.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="58382.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">EntitlementConsume&amp;()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'EntitlementConsume&amp;()' (58559)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<table class="tableintopic" width="498" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<td class="tableheading" width="228"><p class="tableheading">Interface 1</p>
+</td>
+<td width="42"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td class="tableheading" width="228"><p class="tableheading">Interface 2</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="228"><pre class="unixinputp">EntitlementConsume&amp;(    Context&amp;,    EntityId&amp;,    Category&amp;,    EffectiveDate~,     Amount#)</pre>
+</td>
+<td width="42"><pre class="unixinputp">&nbsp;</pre>
+</td>
+<td width="228"><pre class="unixinputp">EntitlementConsume&amp;(    Context&amp;,    EntityId&amp;,    Category&amp;,    const SubCategory$,    EffectiveDate~,    Amount#)&nbsp;</pre>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td class="tableheading" width="228"><p class="tableheading">Interface 3</p>
+</td>
+<td width="42"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td class="tableheading" width="228"><p class="tableheading">Interface 4</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="228"><pre class="unixinputp">EntitlementConsume&amp;(    Context&amp;,     EntityId&amp;,     EntitlementId&amp;,    AllocationId&amp;,    EffectiveDate~,     Amount#)&nbsp;</pre>
+</td>
+<td width="42"><pre class="unixinputp">&nbsp;</pre>
+</td>
+<td width="228"><pre class="unixinputp">EntitlementConsume&amp;(    Context&amp;,    EntityId&amp;,    Category&amp;,    Amount#)</pre>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td class="tableheading" width="228"><p class="tableheading">Interface 5</p>
+</td>
+<td width="42"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td class="tableheading" width="228"><p class="tableheading">Interface 6</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="228"><pre class="unixinputp">EntitlementConsume&amp;(    Context&amp;,     EntityId&amp;,     Category&amp;,     const SubCategory$,    Amount#)&nbsp;</pre>
+</td>
+<td width="42"><pre class="unixinputp">&nbsp;</pre>
+</td>
+<td width="228"><pre class="unixinputp">EntitlementConsume&amp;(    Context&amp;,     EntityId&amp;,    EntitlementId&amp;,    AllocationId&amp;,    Amount#)&nbsp;</pre>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td class="tableheading" width="228"><p class="tableheading">Interface 7</p>
+</td>
+<td width="42"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td class="tableheading" width="228"><p class="tableheading">Interface 8</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="228"><pre class="unixinputp">EntitlementConsume&amp;(    Context&amp;,     EntityId&amp;,     const Category&amp;[],     const SubCategory$[],    EffectiveDate~,    Amount#)&nbsp;</pre>
+</td>
+<td width="42"><pre class="unixinputp">&nbsp;</pre>
+</td>
+<td width="228"><pre class="unixinputp">EntitlementConsume&amp;(    Context&amp;,     EntityId&amp;,     const Category&amp;[],    EffectiveDate~,     Amount#)&nbsp;</pre>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td class="tableheading" width="228"><p class="tableheading">Interface 9</p>
+</td>
+<td width="42"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td class="tableheading" width="228"><p class="tableheading">Interface 10</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="228"><pre class="unixinputp">EntitlementConsume&amp;(    Context&amp;,     EntityId&amp;,     const Category&amp;[],     const SubCategory$[],    Amount#)&nbsp;</pre>
+</td>
+<td width="42"><pre class="unixinputp">&nbsp;</pre>
+</td>
+<td width="228"><pre class="unixinputp">EntitlementConsume&amp;(    Context&amp;,     EntityId&amp;,     const Category&amp;[],     Amount#)&nbsp;</pre>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td class="tableheading" width="228"><p class="tableheading">Interface 11</p>
+</td>
+<td width="42"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td class="tableheading" width="228"><p class="tableheading">Interface 12</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="228"><pre class="unixinputp">EntitlementConsume&amp;(    Context&amp;,    EntityId&amp;,    Category&amp;,    EffectiveDate~,     ReservedAmount#,    ConsumedAmount#)&nbsp;</pre>
+</td>
+<td width="42"><pre class="unixinputp">&nbsp;</pre>
+</td>
+<td width="228"><pre class="unixinputp">EntitlementConsume&amp;(    Context&amp;,    EntityId&amp;,    Category&amp;,    const SubCategory$,    EffectiveDate~,     ReservedAmount#,    ConsumedAmount#)&nbsp;</pre>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td class="tableheading" width="228"><p class="tableheading">Interface 13</p>
+</td>
+<td width="42"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td width="228"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="228"><pre class="unixinputp">EntitlementConsume&amp;(    Context&amp;,    EntityId&amp;,    EntitlementId&amp;,    AllocationId&amp;,    EffectiveDate~,     ReservedAmount#,    ConsumedAmount#)&nbsp;</pre>
+</td>
+<td width="42"><pre class="unixinputp">&nbsp;</pre>
+</td>
+<td width="228"><pre class="unixinputp">&nbsp;</pre>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Consumes the available amount of an allocation. </p>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="288" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="bold">Function Type</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Local</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="bold">Service</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">(Local)</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="138"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="558"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">Context&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="558"><p class="tablebodytext">In:  Context of the entity being consumed. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">2 (Service).</li><li class="tablelistbullet">3 (CustomerNode).</li><li class="tablelistbullet">4 (Customer).</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">EntityId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="558"><p class="tablebodytext">In:  ID of the entity to which the entitlement being consumed<span class="unixoutputc"> </span>belongs. It depends on the context of the entitlement.</p>
+<p class="tablebodytext">For a context of:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Service, it corresponds to the service ID.</li><li class="tablelistbullet">CustomerNode and Customer, it corresponds to the customer node ID.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">Category&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="558"><p class="tablebodytext">In:  Reference code of the entitlement category being consumed.</p>
+<p class="tablebodytext">It must match a reference code in the <span class="unixoutputc">ENTITLEMENT_CATEGORY</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">SubCategory$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="558"><p class="tablebodytext">In:  Sub-category of the entitlement being consumed.</p>
+<p class="tablebodytext">It may be passed as an empty string.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">EntitlementId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="558"><p class="tablebodytext">In:  ID of the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">AllocationId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="558"><p class="tablebodytext">In:  ID of the allocation.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">EffectiveDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="558"><p class="tablebodytext">In:  Effective date of the consumption.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">Amount#</span></p>
+</td>
+<td style="border:1px solid #010101;" width="558"><p class="tablebodytext">In:  Amount being consumed.</p>
+<p class="tablebodytext">It must be positive; otherwise, an error is raised.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">An error is raised if the requested amount is greater than the available amount for the entitlement.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">ReservedAmount#</span></p>
+</td>
+<td style="border:1px solid #010101;" width="558"><p class="tablebodytext">In: Amount reserved for the reservation. This amount excludes the consumed amount. Only applies in rate and return mode.</p>
+<p class="tablebodytext">The total amount of the reservation is the sum of this reserved amount and the consumed amount.  This total must be positive; otherwise, an error is raised.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext"><span class="unixoutputc">ConsumedAmount#</span></p>
+</td>
+<td style="border:1px solid #010101;" width="558"><p class="tablebodytext">In: Amount consumed from the reservation. Only applies in rate and return mode.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">Consumed amounts are unavailable to concurrent usage sessions.</p></td></tr></table>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">1 if successful; otherwise, an error is raised.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">The allocations are consumed in order of priority and expiry date, as follows:</p>
+<ul class="listbullet"><li class="listbullet">Highest priority, which is the lowest numerical value.</li><li class="listbullet">Earliest expiry date.</li></ul><p class="bodytext">Multiple categories can be specified using interfaces 4, 5, or 6.  In this case, allocations are consumed based first on the order of priority, and then expiry date.</p>
+<p class="bodytext">If an interface is called with no <span class="unixoutputc">EffectiveDate~</span> parameter, the effective date of the expression is used.  In a Rating context, <span class="unixoutputc">EffectiveDate~</span> is the charge start date.</p>
+<p class="bodytext">In rate and return mode, the reserved and consumed amount of the reservation can be explicitly specified using interfaces 11-13.  The other interfaces specify a single amount which is automatically split into the reserved and consumed components on commit, according to the mode of reservation consumption specified in <span class="unixoutputc"><a id="h75504" class="jump" title="EntitlementEventCommit&amp;()" href="58558.htm" target="_self">EntitlementEventCommit&amp;()</a></span><span class="unixoutputc">.  </span>Both the manual and automatic<span class="unixoutputc"> <a id="h59498" class="jump" title="EntitlementConsume&amp;()" href="58559.htm" target="_self">EntitlementConsume&amp;()</a></span> interfaces may be called within the same session.  The manual amounts are added to the automatically split components when the changes are committed.</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="58433.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="58382.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

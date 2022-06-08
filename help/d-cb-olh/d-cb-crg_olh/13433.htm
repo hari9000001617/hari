@@ -1,0 +1,362 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> MonitorLog&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "13432.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "13434.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('13433')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="13432.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="13434.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">MonitorLog&amp;()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'MonitorLog&amp;()' (13433)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<table class="tableintopic" width="396" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<td class="tableheading" width="174"><p class="tableheading">Interface 1</p>
+</td>
+<td width="48"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td class="tableheading" width="174"><p class="tableheading">Interface 2</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="174"><pre class="unixinputp">biMonitorLog&amp;(    TimeStamp~,    ProcessName$,    Version$,     PrimaryId&amp;,    SecondaryId&amp;,    Event?{},    LogToFile&amp;)</pre>
+</td>
+<td width="48"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td width="174"><pre class="unixinputp">MonitorLog&amp;(    TimeStamp~,    ProcessName$,    Version$,    PrimaryId&amp;,    SecondaryId&amp;,    Event?{})</pre>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Stores the <span class="unixoutputc">Event?{}</span> statistics for the specified <span class="unixoutputc">ProcessName$</span>.</p>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="288" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Method</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Local</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="132"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="564"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">TimeStamp~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">In:  Date-time the statistics were generated or obtained by the sender.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ProcessName$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">In:  Name used to identify the process generating the details.</p>
+<p class="tablebodytext">It is usually the process name (for example, ENM, BGP, APPLY_INVOICES).</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">Convergent Billing process names are reserved for Convergent Billing internal statistic use.  Use unique process names when manually calling functions.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">Version$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">In:  Version of the application (for example, <span class="unixoutputc">$Revision:1.20.2.2$</span>).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">PrimaryId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">In:  Primary ID of the process.</p>
+<p class="tablebodytext">The value can be a UNIX process ID, and for Tuxedo servers <span class="unixoutputc">PrimaryId&amp;</span> is the group ID.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">SecondaryId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">In:  Secondary ID of the process (for example, <span class="unixoutputc">task_queue_id</span> or configuration item number for daemon processes).</p>
+<p class="tablebodytext">For Tuxedo servers the server ID is used.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">Event?{}</span></p>
+</td>
+<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">In:  Variant data type hash of event details.</p>
+<p class="tablebodytext">Hash values can be multi-dimensional.</p>
+<p class="tablebodytext">The table below lists the parameter hash keys</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">LogToFile&amp;</span></p>
+</td>
+<td valign="middle" style="border:1px solid #010101;" width="564"><p class="tablebodytext">In:  If set to FALSE (0), the event is not logged to the <span class="unixoutputc">TREMON</span> log file (even if file logging is enabled for the TRE Monitor). </p>
+<p class="tablebodytext">It defaults to TRUE (1) if not specified.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">1 (TRUE) if successful; otherwise, an error is raised.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">The <span class="unixoutputc">Event?{}</span> key values correspond to the names of the process's performance monitoring attributes.  The values of these keys can be scalars, hashes, or arrays (depending on the performance monitoring requirements of the individual process).  <span class="unixoutputc">Event?{}</span> may be deeply nested.</p>
+<p class="bodytext">Unless explicitly stated otherwise, the values are totals made since the instrumentation was last started.</p>
+<p class="bodytext">If the <span class="unixoutputc">TREMON</span> configuration attribute <span class="unixoutputc">ENABLE_LOGGING</span> has a value of True, events are appended to the <span class="unixoutputc">TREMON</span> log file (<span class="unixoutputc">tremon.xml</span>) and cached in memory.  To improve performance, the writing of data to the log file is batched (writing to the log file takes place every <span class="unixoutputc">LOG_FLUSH_TIME</span> minutes).</p>
+<p class="bodytext">The following table lists <span class="unixoutputc">Event?{}</span> hash keys.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Event?{} Hash Keys</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="162"><p class="tableheading">Event Key</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="78"><p class="tableheading">Type</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="456"><p class="tableheading">Expected Value</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="unixoutputc">Instance</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Convergent Billing instance name.</p>
+<p class="tablebodytext">It is usually the value of the <span class="unixoutputc">$ATA_INSTANCE</span> environment variable.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="unixoutputc">ResetDate</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Date that any counters were last reset.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="unixoutputc">StartDate</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Date that the process was started.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="unixoutputc">ProcessId</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">ID of the process.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="unixoutputc">Uptime</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Time that the process has been running in seconds.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="unixoutputc">HostName</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Name of the host machine running the process.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="unixoutputc">HostId</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Real</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">ID of the host machine running the process.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="unixoutputc">UserTime</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Real</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">CPU user time consumed by process in seconds.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="unixoutputc">SysTime</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Real</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">CPU system time consumed by process in seconds.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="unixoutputc">RSS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Maximum resident set size (memory) used by process in kilobytes.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="unixoutputc">SwapIn</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Number of pages swapped into memory from disk for process (major page faults).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="unixoutputc">SwapOut</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Number of pages swapped out of memory for process.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="unixoutputc">BlockIn</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Number of times the file system had to perform input when servicing a read request from the process.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="unixoutputc">BlockOut</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Number of times the file system had to perform output when servicing a write request from the process.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="unixoutputc">SocketIn</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Number of messages received over sockets.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="unixoutputc">SocketOut</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Number of messages sent over sockets.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="unixoutputc">ContextSwitchVol</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Number of times the process was context switched voluntarily, usually when waiting for a resource.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="unixoutputc">ContextSwitchinVol</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Number of times the process was context switched involuntarily, usually because a higher priority process could be run, or its time slice was exceeded.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The data is logged to the file with XML formatting.  The DTD (Document Type Definition) of the log file is as follows:</p>
+<pre class="unixoutputp"><span class="unixoutputc">&lt;!ELEMENT Log (TreMonRecord*)</span></pre>
+<pre class="unixoutputp"><span class="unixoutputc">&lt;!ELEMENT TreMonRecord (TimeStamp, ProcessName,Version, PrimaryId, SecondaryId, Event)&gt;</span></pre>
+<pre class="unixoutputp"><span class="unixoutputc">&lt;!ELEMENT TimeStamp   (#PCDATA)&gt;</span></pre>
+<pre class="unixoutputp"><span class="unixoutputc">&lt;!ELEMENT ProcessName (#PCDATA)&gt;</span></pre>
+<pre class="unixoutputp"><span class="unixoutputc">&lt;!ELEMENT Version     (#PCDATA)&gt;</span></pre>
+<pre class="unixoutputp"><span class="unixoutputc">&lt;!ELEMENT PrimaryId   (#PCDATA)&gt;</span></pre>
+<pre class="unixoutputp"><span class="unixoutputc">&lt;!ELEMENT SecondaryId (#PCDATA)&gt;</span></pre>
+<pre class="unixoutputp"><span class="unixoutputc">&lt;!ELEMENT Event       (Hash+)&gt;</span></pre>
+<pre class="unixoutputp"><span class="unixoutputc">&lt;!ELEMENT Hash ( (Key, (LongValue | DoubleValue | </span></pre>
+<pre class="unixoutputp"><span class="unixoutputc">    StringValue | DateValue | Hash | Array)*)* )&gt;</span></pre>
+<pre class="unixoutputp"><span class="unixoutputc">&lt;!ELEMENT Array ( (LongValue | DoubleValue |</span></pre>
+<pre class="unixoutputp"><span class="unixoutputc">    StringValue | DateValue | Hash | Array)* )&gt;</span></pre>
+<pre class="unixoutputp"><span class="unixoutputc">&lt;!ELEMENT Key (#PCDATA)&gt;</span></pre>
+<pre class="unixoutputp"><span class="unixoutputc">&lt;!ELEMENT LongValue (#PCDATA)&gt;</span></pre>
+<pre class="unixoutputp"><span class="unixoutputc">&lt;!ELEMENT DoubleValue (#PCDATA)&gt;</span></pre>
+<pre class="unixoutputp"><span class="unixoutputc">&lt;!ELEMENT StringValue (#PCDATA)&gt;</span></pre>
+<pre class="unixoutputp"><span class="unixoutputc">&lt;!ELEMENT DateValue (#PCDATA)&gt;</span></pre>
+<pre class="unixoutputp"></pre>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note"><span class="unixoutputc">Hash</span> is a recursive structure.</p></td></tr></table>
+<p class="bodytext"><span class="unixoutputc">TimeStamp~</span> is in ISO8601 standard date form of <span class="unixoutputc">yyyy-mm-dd hh:mm:ss</span>.</p>
+<p class="bodytext">When the event is logged, it is checked against the event publish criteria registered by the <span class="unixoutputc">biMonitorPublish&amp;()</span>, <span class="unixoutputc">biMonitorPublishFnCall&amp;()</span>, and <span class="unixoutputc">biMonitoryNotify&amp;()</span> functions.  If the event matches the criteria registered by any of these calls, it is published using the intended transport (TRE event, function, or client notification).</p>
+<p class="bodytext">The character set encoding of the XML log file is that of the current Convergent Billing environment.</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="13432.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="13434.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

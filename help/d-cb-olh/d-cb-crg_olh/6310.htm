@@ -1,0 +1,735 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Normalised Event Error Variables (NORMALISED_EVENT_ERROR) </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "6309.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "6311.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('58085');highlight('6310')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="6309.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="6311.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Normalised Event Error Variables (NORMALISED_EVENT_ERROR)</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Normalised Event Error Variables (NORMALISED_EVENT_ERROR)' (6310)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The following table lists the entity validation variables associated with the <span class="unixoutputc">NORMALISED_EVENT_ERROR</span> table.</p>
+<p class="syntaxheading">Variable Definitions</p>
+<table class="tableintopic" width="702" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="234"><p class="tableheading">Variable</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="120"><p class="tableheading">View Field</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="96"><p class="tableheading">Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="252"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrAPartyCarrierCode&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrAPartyCarrierCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">A_PARTY_</span><br><span class="unixoutputc">CARRIER_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Carrier from where the call arrived.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrAPartyCellId$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrAPartyCellId$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">A_PARTY_CELL_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (20)</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Mobile cell ID of the calling party (A party).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrAPartyId$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrAPartyId$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">A_PARTY_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Full national number of the A party.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">EvRerrAPartyLocationCode&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrAPartyLocationCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">A_PARTY_</span><br><span class="unixoutputc">LOCATION_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Location code of the A party.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrAPartyName$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrAPartyName$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">A_PARTY_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Name of the A party.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrAPartyNetworkId$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrAPartyNetworkId$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">A_PARTY_</span><br><span class="unixoutputc">NETWORK_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Network ID of the A party.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrAPartyRoute$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrAPartyRoute$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">A_PARTY_ROUTE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Incoming route.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrAPartyTonCode&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrAPartyTonCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">A_PARTY_TON_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Type of number of A party.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrBillRunId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrBillRunId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">BILL_RUN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Bill run for which this event was generated (if it was generated specifically for a bill run).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrBPartyCarrierCode&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrBPartyCarrierCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">B_PARTY_</span><br><span class="unixoutputc">CARRIER_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Destination party of the call.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrBPartyCellId$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrBPartyCellId$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">B_PARTY_CELL_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (20)</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Called party (B party) mobile cell ID.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrBPartyId$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrBPartyId$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">B_PARTY_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Full national number for the B party service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrBPartyLocationCode&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrBPartyLocationCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">B_PARTY_</span><br><span class="unixoutputc">LOCATION_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">B party location code.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrBPartyName$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrBPartyName$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">B_PARTY_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Name of the B party.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrBPartyNetworkId$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrBPartyNetworkId$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">B_PARTY_</span><br><span class="unixoutputc">NETWORK_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Network ID of the B party.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrBPartyRoute$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrBPartyRoute$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">B_PARTY_ROUTE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Outgoing route.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrBPartyTonCode&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrBPartyTonCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">B_PARTY_TON_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">B party type of number.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrCascadeCarrierCode&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrCascadeCarrierCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">C_PARTY_</span><br><span class="unixoutputc">CARRIER_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Carrier closest to the current network, which is used in the completion of the call.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrCharge#</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrCharge#</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">CHARGE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Real</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Charge as received from the switch.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrChargeStartDate~</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrChargeStartDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">CHARGE_START_</span><br><span class="unixoutputc">DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Date-time used for charging purposes.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrCPartyCarrierCode&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrCPartyCarrierCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">C_PARTY_</span><br><span class="unixoutputc">CARRIER_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Destined carrier of the call.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrCPartyCellId$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrCPartyCellId$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">C_PARTY_CELL_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (20)</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Charge party network cell ID.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrCPartyId$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrCPartyId$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">C_PARTY_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Full national number of the chargeable party (C party).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrCPartyInternalId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrCPartyInternalId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">C_PARTY_</span><br><span class="unixoutputc">INTERNAL_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">ID for the C party.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrCPartyLocationCode&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrCPartyLocationCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">C_PARTY_</span><br><span class="unixoutputc">LOCATION_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">C party location code.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrCPartyName$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrCPartyName$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">C_PARTY_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (64)</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">C party name.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrCPartyNetworkId$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrCPartyNetworkId$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">C_PARTY_</span><br><span class="unixoutputc">NETWORK_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Network ID of the C party.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrCPartyRoute$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrCPartyRoute$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">C_PARTY_ROUTE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Incoming/outgoing route of the C party.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrCPartyTonCode&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrCPartyTonCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">C_PARTY_TON_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">C party type of number.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrCurrencyId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrCurrencyId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">CURRENCY_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">ID of the currency used for the charge.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrDuration#</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrDuration#</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">DURATION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Real</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Duration of call.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrErrorClassCode&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrErrorClassCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">ERROR_CLASS_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Class of the error.  Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">1 (Normalisation error): The error condition was detected during normalisation.</li><li class="tablelistbullet">2 (Rating error): The error condition was detected during rating.</li><li class="tablelistbullet">3 (Reprocessed) The error event was a normalised event and has subsequently been reprocessed.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrErrorMessage$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrErrorMessage$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">ERROR_MESSAGE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Error message text, which displays reasons for the event failure.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrErrorMessageId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrErrorMessageId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">ERROR_MESSAGE_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Error number of the associated error message.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrEventClassCode&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrEventClassCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">EVENT_CLASS_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">General classification of the event that is used for reporting purposes.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrEventSource$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrEventSource$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">EVENT_SOURCE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Source of the event.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrEventSubTypeCode&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrEventSubTypeCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">EVENT_SUB_</span><br><span class="unixoutputc">TYPE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Event subtype.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrEventTypeCode&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrEventTypeCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">EVENT_TYPE_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Event type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrExternalFileRecordNr&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrExternalFileRecord</span><br><span class="unixoutputc">Nr&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">EXTERNAL_FILE_</span><br><span class="unixoutputc">RECORD_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Number of the record as specified in the <span class="unixoutputc">FILE_RECORD_NR</span> field of the original external event, before event normalisation.</p>
+<p class="tablebodytext">It is not used to track reprocessed events.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrFileRecordNr&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrFileRecordNr&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">FILE_RECORD_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Number of the record within the file.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrFullPath$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrFullPath$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">FULL_PATH</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">All available details relating to the route taken by the call.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrGeneral1$</span> - <span class="unixoutputc">evRerrGeneral20$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrGeneral1$</span> - <span class="unixoutputc">evOldRerrGeneral20$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">GENERAL_1</span> - <span class="unixoutputc">GENERAL_20</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">General fields 1 - 20.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrLastModified~</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrLastModified~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">LAST_MODIFIED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Date-time the row was last modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrNormEventFileId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrNormEventFileId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">NORMALISED_</span><br><span class="unixoutputc">EVENT_FILE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">ID of the file from which the normalised event record was originally obtained.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrNormEventId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrNormEventId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">NORMALISED_</span><br><span class="unixoutputc">EVENT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">ID of the normalised event.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrNormEventTypeId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrNormEventTypeId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">NORMALISED_</span><br><span class="unixoutputc">EVENT_TYPE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Normalised event type associated with this event.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrOriginalFileId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrOriginalFileId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">ORIGINAL_FILE_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">ID of the normalised event file from which this event was originally processed.</p>
+<p class="tablebodytext">If specified, it indicates that this event is a reprocessed event.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">EvRerrOriginalFileRecordNr&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrOriginalFileRecord</span><br><span class="unixoutputc">Nr&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">ORIGINAL_FILE_</span><br><span class="unixoutputc">RECORD_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Number of this record within the original file.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrParentNormEventId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrParentNormEventId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">PARENT_</span><br><span class="unixoutputc">NORMALISED_</span><br><span class="unixoutputc">EVENT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">For conference calls, or calls with multiple components that are costed separately, this points to the parent event record that relates to this component.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrPeriodEndDate~</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrPeriodEndDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">PERIOD_END_</span><br><span class="unixoutputc">DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Date-time at the end of the event.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrPeriodStartDate~</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrPeriodStartDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">PERIOD_START_</span><br><span class="unixoutputc">DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Date-time at the start of the event.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrPulses&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrPulses&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">PULSES</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Number of meter pulses associated with the call.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrRateBand$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrRateBand$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">RATE_BAND</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Time or rate band calculated for the call.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrReprFileId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrReprFileId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">REPROCESSED_</span><br><span class="unixoutputc">FILE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">If a normalised event was adjusted and reprocessed, this is the ID of the file into which it is reprocessed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrReprFileRecordNr&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrReprFileRecordNr&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">REPROCESSED_</span><br><span class="unixoutputc">FILE_RECORD_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Record number of the normalised event in the file for reprocessing.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrReprocessedCount&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrReprocessedCount&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">REPROCESSED_</span><br><span class="unixoutputc">COUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Number of times this event was reprocessed. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrRootCustomerNodeId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrRootCustomerNodeId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">ROOT_CUSTOMER_</span><br><span class="unixoutputc">NODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">ID of the root node of the customer hierarchy for which this event was generated. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrSwitchStartDate~</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrSwitchStartDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">SWITCH_START_</span><br><span class="unixoutputc">DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Date-time as produced by the network switch equipment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evRerrVolume#</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldRerrVolume#</span></p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">VOLUME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Real</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext">Volume of data associated with the call.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="6309.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="6311.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

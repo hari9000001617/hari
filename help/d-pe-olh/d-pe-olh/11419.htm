@@ -1,0 +1,176 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Remote Facts Tab Attributes </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Configuration Workbench for Singleview Process Engine 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "10098.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "55299.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11418');expand('10987');highlight('11419')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="10098.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="55299.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Configuration Workbench for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">Remote Facts Tab Attributes</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Remote Facts Tab Attributes' (11419)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Attributes are divided on the <span class="fieldname">Remote Facts</span> tab by group.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o10106"></a><h4 class="heading4">Remote Table Columns Group</h4>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Remote Table Columns Group' (10106)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="fieldname">Remote Table Columns</span> group displays a list of column names from the remote table and any assigned facts.  </p>
+<p class="bodytext">Because it is possible to map a single remote column to multiple facts, the first assigned fact is displayed in the <span class="fieldname">Assigned Fact</span> column; to view the other facts assigned to a column, refer to the <span class="fieldname">Facts</span> group.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o10107"></a><h4 class="heading4">Facts Group</h4>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Facts Group' (10107)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="fieldname">Facts</span> group displays the facts in the class and their attributes, as they relate to the remote columns.</p>
+<p class="bodytext">The following table lists fact attributes that can be updated.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Fact Group Attributes That Can Be Updated</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="156"><p class="tableheading">Attribute</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="540"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext"><span class="fieldname">Fact Name </span>column</p>
+</td>
+<td style="border:1px solid #010101;" width="540"><p class="tablebodytext">Fact name.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext"><span class="fieldname">Fact Type </span>column</p>
+</td>
+<td style="border:1px solid #010101;" width="540"><p class="tablebodytext">Local fact type, which maps the Process Engine fact type to the remote data type.</p>
+<p class="tablebodytext">Depending on the data type being mapped to, a fact type can be changed when:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">A fact is created to map by clicking the <strong class="buttons">Create Fact to Assign</strong> button. <p class="tablelistcontinue">By default, the new fact is the same fact type as the column data type.  The <span class="fieldname">Fact Type</span> field can be used to override the default fact type.  For example, a reference fact needs to be mapped to an integer column.  By default, an integer fact is created for the integer column.  The fact type can be changed to reference before saving.</p>
+</li><li class="tablelistbullet">The data type in the remote column changes after a Process Engine fact is mapped to the column.<p class="tablelistcontinue">The fact type can be updated to match the data type of the remote column to which it is mapped.</p>
+</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext"><span class="fieldname">Length </span>column</p>
+</td>
+<td style="border:1px solid #010101;" width="540"><p class="tablebodytext">Length of the field.</p>
+<p class="tablebodytext">It is applicable only to text facts.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext"><span class="fieldname">RefClass </span>column</p>
+</td>
+<td style="border:1px solid #010101;" width="540"><p class="tablebodytext">Reference class.</p>
+<p class="tablebodytext">It is applicable only to reference facts.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext"><span class="fieldname">Column Name </span>column</p>
+</td>
+<td style="border:1px solid #010101;" width="540"><p class="tablebodytext">Read-only.</p>
+<p class="tablebodytext">Name of the column in the remote table.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext"><span class="fieldname">DataType </span>column</p>
+</td>
+<td style="border:1px solid #010101;" width="540"><p class="tablebodytext">Read-only.</p>
+<p class="tablebodytext">Data type of the remote table column.</p>
+<p class="tablebodytext">The Process Engine fact type is mapped to a valid remote data type (see the <span class="referrals">Configuration Guide for Singleview Process Engine</span>).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext"><span class="fieldname">PrimaryKey </span>column</p>
+</td>
+<td style="border:1px solid #010101;" width="540"><p class="tablebodytext">Specifies if the fact is part of the primary key. </p>
+<p class="tablebodytext">It is applicable to keyless classes (see the <span class="referrals">Configuration Guide for Singleview Process Engine</span>).</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists valid fact types that map to remote data types.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Mapping of Fact Type to Remote Data Type</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="600"><p class="tableheading">Fact Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="96"><p class="tableheading">Data Type</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="600"><p class="tablebodytext">Boolean, Currency, Date Time, Decimal, Duration, Integer, Memo, Percent, Reference, Text</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">String</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="600"><p class="tablebodytext">Date Time</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Date</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="600"><p class="tablebodytext">Boolean, Decimal, Integer, Reference </p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Integer</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="600"><p class="tablebodytext">Currency, Date Time, Decimal, Duration, Integer, Percent.</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Decimal</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">It is only possible to change the local fact type from this tab.</p></td></tr></table>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="10098.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="55299.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Configuration Workbench for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

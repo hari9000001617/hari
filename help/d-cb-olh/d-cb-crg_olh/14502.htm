@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> CustomerNodeInvFormatUpdate&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "14501.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "14503.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('14502')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="14501.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="14503.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">CustomerNodeInvFormatUpdate&amp;()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'CustomerNodeInvFormatUpdate&amp;()' (14502)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<pre class="unixinputp">CustomerNodeInvFormatUpdate&amp;(    CustomerNodeId&amp;,    OldEffectiveDate~,    var&nbsp;LastModified~,    EffectiveStartDate~,    EffectiveEndDate~,    const&nbsp;Opcode&amp;[],    const&nbsp;Seqnr&amp;[],    const&nbsp;FieldNames$[],    const&nbsp;FieldValues?[])</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Inserts, updates, or deletes invoice formats for a specified customer node.</p>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="288" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="bold">Method</span></p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Local</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="175"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="521"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="175"><p class="tablebodytext"><span class="unixoutputc">CustomerNodeId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="521"><p class="tablebodytext">In:  ID of the customer node whose invoice format is to be updated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="175"><p class="tablebodytext"><span class="unixoutputc">OldEffectiveDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="521"><p class="tablebodytext">In:  Date-time used to retrieve the correct <span class="unixoutputc">CUSTOMER_NODE_HISTORY</span> row.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="175"><p class="tablebodytext"><span class="unixoutputc">LastModified~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="521"><p class="tablebodytext">In:  Last modified date-time of the <span class="unixoutputc">CUSTOMER_NODE_HISTORY</span> row effective as at <span class="unixoutputc">OldEffectiveDate~</span>.</p>
+<p class="tablebodytext">Out:  Last modified date-time of the <span class="unixoutputc">CUSTOMER_NODE_HISTORY</span> row effective as at <span class="unixoutputc">EffectiveStartDate~</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="175"><p class="tablebodytext"><span class="unixoutputc">EffectiveStartDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="521"><p class="tablebodytext">In:  Start of date-time range for which changes are to be applied.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="175"><p class="tablebodytext"><span class="unixoutputc">EffectiveEndDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="521"><p class="tablebodytext">In:  End of date-time range for which changes are to be applied.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="175"><p class="tablebodytext"><span class="unixoutputc">Opcode&amp;[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="521"><p class="tablebodytext">Operations to perform on the row.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="175"><p class="tablebodytext"><span class="unixoutputc">Seqnr&amp;[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="521"><p class="tablebodytext">In:  Sequence number of the row being inserted, updated or deleted from the <span class="unixoutputc">CUSTOMER_NODE_INV_FORMAT</span> table.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="175"><p class="tablebodytext"><span class="unixoutputc">FieldNames$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="521"><p class="tablebodytext">In:  Names given to the set of fields being inserted or updated.</p>
+<p class="tablebodytext">The same fields must be specified for all rows.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="175"><p class="tablebodytext"><span class="unixoutputc">FieldValues?[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="521"><p class="tablebodytext">In:  Two-dimensional array of field values in [Row][Field] order being inserted, updated or deleted.</p>
+<p class="tablebodytext">An empty row may be specified for records being deleted.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">Number of rows successfully processed (which should equal the size of <span class="unixoutputc">Opcode&amp;[]</span>); otherwise, an error is raised.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">A last modified check and date-time ranged update is automatically performed on the <span class="unixoutputc">CUSTOMER_NODE_HISTORY</span> record associated with this change, with the updated <span class="unixoutputc">CUSTOMER_NODE_HISTORY</span> last modified date-time being returned in <span class="unixoutputc">LastModified~</span>.</p>
+<p class="bodytext">A date-time range update is also performed on the <span class="unixoutputc">CUSTOMER_NODE_INV_FORMAT</span> table.  Multi-range update is not supported; therefore, if either the <span class="unixoutputc">EffectiveStartDate~</span> or <span class="unixoutputc">EffectiveEndDate~</span> fall outside the&nbsp;<span class="unixoutputc">CUSTOMER_NODE_HISTORY</span> record's date-time range, an error is raised.</p>
+<p class="bodytext">The field names to be updated can be placed in any order in the <span class="unixoutputc">FieldNames$[]</span> array, but must be valid fields from <span class="unixoutputc">CUSTOMER_NODE_INV_FORMAT_TRE_V</span> view.</p>
+<p class="bodytext">The update operations that can be performed on a customer nodes' invoice format are 1 (Insert), 2 (Update), and 3 (Delete) and are represented by the value placed in the <span class="unixoutputc">Opcode&amp;[]</span> array.  If multiple updates are to be performed on this customer node, the number of the values in&nbsp;the <span class="unixoutputc">Seqnr&amp;[]</span> array must equal the number of values in the <span class="unixoutputc">Opcode&amp;[]</span> array.</p>
+<p class="bodytext">The effective user must have update security group access level for the group of the customer associated with the record manipulated by this function call.  If the effective date of the update is less than the current date (00:00:00 timestamp), direct update security group access level is required.</p>
+<p class="bodytext"><span class="unixoutputc">GROUP_ACCESS_TRE_V</span> view lists security group access level values.</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="14501.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="14503.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

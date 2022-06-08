@@ -1,0 +1,416 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> biEventReprocess?{}() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "58528.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "58581.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('58620')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="58528.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="58581.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">biEventReprocess?{}()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'biEventReprocess?{}()' (58620)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<pre class="unixinputp">biEventReprocess?{}(    const&nbsp;TaskQueueId&amp;,    const&nbsp;FileWhereClause$,    const&nbsp;FileParamNames$[],    const&nbsp;FileParamValues?[],    const&nbsp;EventWhereClause$,    const&nbsp;EventParamNames$[],    const&nbsp;EventParamValues?[],    const&nbsp;ErrorEventWhereClause$,    const&nbsp;ErrorEventParamNames$[],    const&nbsp;ErrorEventParamValues?[],    const&nbsp;ChargeWhereClause$,    const&nbsp;ChargeParamNames$[],    const&nbsp;ChargeParamValues?[]    const&nbsp;SortExpressions$,    const&nbsp;ConfirmOnly&amp;,    const&nbsp;Limits?{},    const&nbsp;TransformFunction$,    const&nbsp;EventRateAndStoreFunction$)</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Reprocesses normalised events or normalised error event records that have generated charges (that have been aggregated into a rating subtotal).</p>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="294" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="bold">Method</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Remote</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="714" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="186"><p class="tableheading">Parameters</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="528"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">TaskQueueId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In:  ID of the task.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">FileWhereClause$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In:  SQL <span class="unixoutputc">WHERE</span> clause that determines an initial set of normalised event files whose events require reprocessing.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">FileParamNames$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In: List of parameter names to be used in the <span class="unixoutputc">FileWhereClause$</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">FileParamValues?[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In: List of parameter values to be used in the <span class="unixoutputc">FileWhereClause$</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">EventWhereClause$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In: SQL <span class="unixoutputc">WHERE</span> clause that determines an initial set of normalised events that require reprocessing.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">EventParamNames$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In: List of parameter names to be used in the <span class="unixoutputc">EventWhereClause$</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">EventParamValues?[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In: List of parameter values to be used in the <span class="unixoutputc">EventWhereClause$</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">ErrorEventWhere</span><br><span class="unixoutputc">Clause$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In: SQL <span class="unixoutputc">WHERE</span> clause that determines an initial set of normalised error events that require reprocessing.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">EventParamNames$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In: List of parameter names to be used in the <span class="unixoutputc">ErrorEventWhereClause$</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">EventParamValues?[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In: List of parameter values to be used in the <span class="unixoutputc">ErrorEventWhereClause$</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">ChargeWhereClause$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In: SQL <span class="unixoutputc">WHERE</span> clause that determines an initial set of charges whose associated normalised events require reprocessing.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">ChargeParamNames$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In: List of parameter names to be used in the <span class="unixoutputc">ChargeWhereClause$</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">ChargeParamValues?[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In: List of parameter values to be used in the <span class="unixoutputc">ChargeWhereClause$</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">SortExpressions$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In:  Expression to use for sorting the events to be reprocessed.</p>
+<p class="tablebodytext">The events can be sorted by any value in both the <span class="unixoutputc">NORMALISED_EVENT</span> and <span class="unixoutputc">NORMALISED_EVENT_ERROR</span> table. By default, events are sorted on their <span class="unixoutputc">CHARGE_START_DATE</span> before reprocessing.</p>
+<p class="tablebodytext">For example, to sort events by Call Completion Date (duration is in seconds):</p>
+<pre class="unixoutputp">@a~{'CHARGE_START_DATE'} + to_date(@a#{'DURATION'}, SECOND) &lt;=&gt;</pre>
+<pre class="unixoutputp">@b~{'CHARGE_START_DATE'} + to_date(@b#{'DURATION'}, SECOND)</pre>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">ConfirmOnly&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In:  Indicates whether the function runs in confirmation mode or not.</p>
+<p class="tablebodytext">A non-zero value (TRUE) specifies that the number of events to be reprocessed is confirmed, but events are not reprocessed.</p>
+<p class="tablebodytext">0 (FALSE) specifies that events are reprocessed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">Limits?{}</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">In:  If any of the limits in this unknown hash are exceeded, the function aborts processing.</p>
+<p class="tablebodytext">Any or all of the keys in <span class="unixoutputc">Limits?{}</span> can be empty (in which case, no limits apply for those values).</p>
+<p class="tablebodytext">The table below lists the hash keys in the <span class="unixoutputc">Limits?{}</span> parameter.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">TransformFunction$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">Function to perform any required updates on all events or error events that satisfy the initial search criteria.</p>
+<p class="tablebodytext">For more information, refer to <span class="referrals">Transform Function</span> below. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">EventRateAndStore</span><br><span class="unixoutputc">Function$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="528"><p class="tablebodytext">User-defined function that rates and stores a one-off charge event to simulate the occurrence of an event.</p>
+<p class="tablebodytext">If specified, it overrides the <span class="unixoutputc">EventRateAndStore&amp;()</span> function.</p>
+<p class="tablebodytext">The interface for the function specified in <span class="unixoutputc">EventRateAndStoreFunction$</span> must be same as the interface for <span class="unixoutputc"><a id="h37692" class="jump" title="biEventRateAndStore&amp;()" href="12541.htm" target="_self">EventRateAndStore&amp;()</a></span>.  Only the function name can be passed in <span class="unixoutputc">EventRateAndStoreFunction$</span>.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">Hash that contains details of the reprocessing.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">An error is raised and the function terminates, if:</p>
+<ul class="listbullet"><li class="listbullet">Events in the initial set are associated with an exported file.</li><li class="listbullet">During retrieval of events, any of the values specified in <span class="unixoutputc">Limits{}?</span> are exceeded.</li><li class="listbullet">Any charges generated by a normalised event have already been invoiced.</li><li class="listbullet">The reprocessing task is not being performed on a valid rating instance.</li></ul><p class="bodytext">The function determines the initial set of events that must be reprocessed using the specified SQL <span class="unixoutputc">WHERE</span> clauses.  The charges associated with these events, and the rating subtotals to which these charges have been aggregated, are then determined.</p>
+<p class="bodytext">Reprocessing an event that references a rating subtotal requires that the subtotal itself be re-evaluated, either partly or wholly, based on whether <span class="unixoutputc">SUBTOTAL_RATING_DELTA</span> entries are enabled at the time of the event.  The <span class="unixoutputc">SUBTOTAL_CACHE</span> configuration item attribute <span class="unixoutputc">DELTA_ENABLED_DATE</span> holds the date on which rating subtotals were enabled.</p>
+<p class="bodytext">If rating subtotal deltas are not available, every event producing a charge aggregated in the rating subtotal must be reprocessed.  If rating subtotal deltas are available, only events that produce a charge in the rating subtotal after the initial event must be reprocessed.  </p>
+<p class="bodytext">When rating subtotal deltas are available, the cascade effect is restricted to rating subtotals that can be accessed at rating time.</p>
+<p class="bodytext">If the function is run in confirmation mode (<span class="unixoutputc">ConfirmOnly&amp;</span> is non-zero value (TRUE)), the function returns when a list of the events requiring reprocessing is created, but no events are reprocessed.</p>
+<p class="bodytext">If a normalised event is being reprocessed, the event is recreated as an error event that is associated with a reprocessed file.  The original event and associated charge are then deleted.  If the event being reprocessed is a normalised error event, the error event is updated to be associated with the new reprocessed file.  <span class="unixoutputc">BiEventRevoke&amp;()</span> is used to revoke events to be reprocessed.</p>
+<p class="bodytext">If a successfully rated event is reprocessed, a check is performed to determine if the reprocessing tasks are performed on master or backup rating instances for the partition of the event as determined by the <span class="unixoutputc">CustomerPartition</span> derived attribute table.</p>
+<p class="bodytext">If error events are reprocessed, a check is performed to determine if the reprocessing task is being performed on the destination rating instance or the backup rating instance from the <span class="unixoutputc">InstanceStatus</span> derived attribute table.  The destination rating instance is obtained from the <span class="unixoutputc">EventErrorPartitionMap</span> derived attribute table by the function querying against the event error partition number.</p>
+<p class="bodytext">If the checks determine that reprocessing is not run on a correct instance, an error is raised. </p>
+<p class="bodytext">The following table lists <span class="unixoutputc">Limits?{}</span> hash keys.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Limits?{} Parameter Hash Keys</p>
+<table class="tableintopic" width="714" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Key</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="588"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="unixoutputc">MaxEvents</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Maximum number of events that can be reprocessed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="unixoutputc">MaxCharges</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Maximum number of charges that can be deleted.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="unixoutputc">MaxServices</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Maximum number of services that can be associated with the events to be reprocessed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="unixoutputc">MaxAccounts</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Maximum number of accounts associated with events to be reprocessed that can be purged.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="unixoutputc">MaxSubtotals</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Maximum number of subtotal aggregates to be deleted.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="unixoutputc">MaxFiles</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Maximum number of normalised event files associated with events to be reprocessed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="unixoutputc">MinDate</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Minimum charge start date of all events to be reprocessed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext"><span class="unixoutputc">MaxDate</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Maximum charge start date of all events to be reprocessed.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table lists the keys of the returned hash.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Returned Hash Keys</p>
+<table class="tableintopic" width="714" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="192"><p class="tableheading">Key</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="72"><p class="tableheading">Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="450"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">Events</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Total number of events selected for reprocessing.</p>
+<p class="tablebodytext"><span class="unixoutputc">Events = ReprocessedEvents + TransformErrorEvents + EventRateAndStoreErrorEvents.</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">ReprocessedEvents</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Number of events eligible to be reprocessed if <span class="unixoutputc">ConfirmOnly&amp;</span> is specified as TRUE.</p>
+<p class="tablebodytext">If specified as FALSE, number of events reprocessed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">TransformErrorEvents</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Number of events not reprocessed because <span class="unixoutputc">TransformFunction$</span> raised an error.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">EventRateAndStoreError</span><br><span class="unixoutputc">Events</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Number of events not reprocessed because <span class="unixoutputc">EventRateAndStoreFunction$</span> raised an error.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">Charges</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Total number of charges to be deleted.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">Services</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Total number of services associated with the events that need to be reprocessed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">Subtotals</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Number of rating subtotal aggregates eligible to be deleted if <span class="unixoutputc">ConfirmOnly&amp;</span> was specified as TRUE.</p>
+<p class="tablebodytext">If specified as FALSE, number of rating subtotal aggregates deleted.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">Accounts</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Total number of accounts associated with events that needs to be purged.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">Files</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Total number of normalised event files associated with the events that needs to be reprocessed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">MinDate</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Minimum charge start date of all events to be reprocessed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">MaxDate</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="450"><p class="tablebodytext">Maximum charge start date of all events to be reprocessed.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Transform Function</p>
+<p class="bodytext">If the <span class="unixoutputc">TransformFunction$</span> parameter is specified, the function must have an interface of:</p>
+<p class="bodytext"><span class="unixoutputc">&lt;TransformFunction$&gt;&amp;(var&nbsp;Event?{})</span></p>
+<p class="bodytext">where the keys of <span class="unixoutputc">Event?{}</span> are the columns of the event from the <span class="unixoutputc">NORMALISED_EVENT_V</span> view.</p>
+<p class="bodytext">Undefining <span class="unixoutputc">Event?{}</span> stops an event from being reprocessed.  Only the function name can be passed in this parameter.</p>
+<p class="bodytext">The reprocessing details (<span class="unixoutputc">ORIGINAL_FILE_ID</span>, <span class="unixoutputc">ORIGINAL_FILE_RECORD_NR</span>, and <span class="unixoutputc">REPROCESSED_COUNT</span>) are assigned by <span class="unixoutputc">biEventReprocess?{}()</span> and must not be updated by the transform function.  </p>
+<p class="bodytext">For example, if the <span class="unixoutputc">GENERAL_1</span> field of the normalised event was incorrect in a batch of rated events causing the events to fail, the failed events could be reprocessed to set the<span class="unixoutputc"> GENERAL_1</span> field to the correct value. The following transform function could be specified to do this:</p>
+<pre class="unixoutputp">EventTransform&amp;(var Event?{}) {</pre>
+<pre class="unixoutputp">&nbsp;&nbsp;&nbsp;&nbsp;Event${'GENERAL_1'} := &lt;correct value&gt;;</pre>
+<pre class="unixoutputp">&nbsp;&nbsp;&nbsp;&nbsp;return 1;</pre>
+<pre class="unixoutputp">}</pre>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="58528.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="58581.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

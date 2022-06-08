@@ -1,0 +1,669 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> SERVICE_TRE_V </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "7513.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "78981.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7526');highlight('50773')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="7513.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="78981.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">SERVICE_TRE_V</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'SERVICE_TRE_V' (50773)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="unixoutputc">SERVICE_TRE_V</span> view defines the accessible set of columns for inserting and updating services.</p>
+<p class="syntaxheading">Column Definitions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="192"><p class="tableheading">Column Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Properties</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="378"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SERVICE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of a service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">LAST_MODIFIED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Date-time that the row was last modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Date-time that the record becomes effective.</p>
+<p class="tablebodytext">Its finest granularity is one second.</p>
+<p class="tablebodytext">It must match the <span class="unixoutputc">EFFECTIVE_START_DATE</span> for the base product instance associated with the service. This is checked by the DVP.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_END_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">End date-time that the record ceases to be effective for the service.</p>
+<p class="tablebodytext">It must match an <span class="unixoutputc">EFFECTIVE_END_DATE</span> for the base product instance associated with the service.</p>
+<p class="tablebodytext">For a new service, it defaults to the sunset date-time. This is checked by the DVP.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">OPERATOR_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">User who created or last modified the service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SERVICE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (64)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Name associated with the service.</p>
+<p class="tablebodytext">Its format usually corresponds to how the service is to be displayed on customer invoices (for example, MSIDN number for a GSM service).</p>
+<p class="tablebodytext">The name must be unique for the specified date range.</p>
+<p class="tablebodytext">If not specified for a service insertion, it is automatically generated (if possible) based on the equipment allocated to the base product instance (if any).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">NETWORK_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (64)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Name associated with the service, in relation to the network, if this is different from <span class="unixoutputc">SERVICE_NAME</span>.</p>
+<p class="tablebodytext">Its format usually corresponds to how the service is referenced by switching equipment and the user and events generated (for example, the full country number for a voice service or IMSE number for a GSM service).</p>
+<p class="tablebodytext">If not specified for a service insertion, it is automatically generated (if possible), based on the equipment allocated to the base product instance (if any).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SERVICE_TYPE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Name of service type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SERVICE_TYPE_DISPLAY_</span><br><span class="unixoutputc">NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Name of service type displayed.</p>
+<p class="tablebodytext">It defaults to <span class="unixoutputc">SERVICE_TYPE_NAME</span>.</p>
+<table class="cautionstyle" width="100%"><tr><td><p class="caution">Caution:</p><p class="tablecaution">The value can be translated into a locale-specific language and therefore differ between implementations.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SERVICE_TYPE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of service type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SERVICE_SUBTYPE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Subtype of this service (for example, Dial-up and Dedicated subtypes within the service type of X.28).</p>
+<p class="tablebodytext">It should be encoded using a reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_NODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID if the customer hierarchy element or node that this service belongs to.</p>
+<p class="tablebodytext">The customer node must exist for at least the duration of this record.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">It is derived from the <span class="unixoutputc">BASE_PRODUCT_INSTANCE_ID</span> specified.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SERVICE_STATUS_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Status of the service. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">0 (Product Creation): A temporary status during the creation of a product.  When product creation is complete this status is updated.</li><li class="tablelistbullet">1 (Provision Required)</li><li class="tablelistbullet">2 (Provisioned)</li><li class="tablelistbullet">3 (Active)</li><li class="tablelistbullet">4 (Suspended)</li><li class="tablelistbullet">5 (Temporary Disconnect Required)</li><li class="tablelistbullet">6 (Temporarily Disconnected)</li><li class="tablelistbullet">7 (Re-activation Required)</li><li class="tablelistbullet">8 (Cancellation Required)</li><li class="tablelistbullet">9 (Cancelled).</li></ul><p class="tablebodytext">It cannot be specified in <span class="unixoutputc">biServiceInsert&amp;()</span>, which automatically defaults to 0.</p>
+<p class="tablebodytext">It is based on the <span class="unixoutputc">SERVICE_STATUS</span> reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">BASE_PRODUCT_INSTANCE_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+<p class="tablebodytext">Not null</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Base product instance for the service.</p>
+<p class="tablebodytext">For date ranging, the service is handled as a child of the product instance.</p>
+<p class="tablebodytext">If the product instance has a status of Cancelled, so must the service.  A cancelled service can be on a non-cancelled base product instance.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">CREATION_ORDER</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+<p class="tablebodytext">Not null</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Creation order of the service for its base product instance.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SERVICE_RANGE_SEQNR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Sequence number of the service instance to be created for the creation order.</p>
+<p class="tablebodytext">If not specified, it defaults to 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PERSON_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Primary contact person for the service.</p>
+<p class="tablebodytext">Any correspondence that relates to the service is addressed to this person.</p>
+<p class="tablebodytext">It defaults to the primary contact for the customer node.</p>
+<p class="tablebodytext">The person must exist for at least the duration of the record</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">CONTRACT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Contract under which the service is covered.</p>
+<p class="tablebodytext">The contract must exist for at least the duration of the record.</p>
+<p class="tablebodytext">The service must be compatible with the contract.</p>
+<p class="tablebodytext">It is based on details in the <span class="unixoutputc">CONTRACT_TYPE</span> and <span class="unixoutputc">CONTRACT_TYPE_PRODUCT</span> tables.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">CONTRACT_REFERENCE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Reference to the contract number of the contract stored outside of Convergent Billing.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">A_LINE_1</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Reference to the address details for the A end of the service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">A_LINE_2</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Reference to the address details for the A end of the service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">A_SUBURB</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Reference to the address details for the A end of the service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">A_CITY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Reference to the address details for the A end of the service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">A_POST_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Reference to the address details for the A end of the service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">A_STATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Reference to the address details for the A end of the service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">A_COUNTRY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Reference to the address details for the A end of the service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">A_GEOCODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Optional implementation specific encoding of the geographic location of the A end address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">A_XPOS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Numeric representation of the location of the A end address.</p>
+<p class="tablebodytext">The units and interpretation of these columns is implementation-specific.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">A_YPOS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Numeric representation of the location of the A end address.</p>
+<p class="tablebodytext">The units and interpretation of these columns is implementation-specific.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">A_ZPOS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Numeric representation of the location of the A end address.</p>
+<p class="tablebodytext">The units and interpretation of these columns is implementation-specific.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">A_GENERAL_1 -</span><br><span class="unixoutputc">A_GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">General fields for storing address-related information for the A end address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">B_LINE_1</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Reference to the address details for the B end of the service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">B_LINE_2</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Reference to the address details for the B end of the service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">B_SUBURB</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Reference to the address details for the B end of the service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">B_CITY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Reference to the address details for the B end of the service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">B_POST_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Reference to the address details for the B end of the service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">B_STATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Reference to the address details for the B end of the service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">B_COUNTRY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Reference to the address details for the B end of the service.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">B_GEOCODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Optional implementation specific encoding of the geographic location of the B end address.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">B_XPOS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Numeric representation of the location of the B end address.</p>
+<p class="tablebodytext">The units and interpretation of these columns is implementation-specific.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">B_YPOS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Numeric representation of the location of the B end address.</p>
+<p class="tablebodytext">The units and interpretation of these columns is implementation-specific.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">B_ZPOS</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Numeric representation of the location of the B end address.</p>
+<p class="tablebodytext">The units and interpretation of these columns is implementation-specific.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">B_GENERAL_1 -</span><br><span class="unixoutputc">B_GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">General fields for storing address-related information for the B end address</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">REQUIRED_BY_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Date-time that the current action as specified by <span class="unixoutputc">SERVICE_STATUS_CODE</span> is due to be completed.</p>
+<p class="tablebodytext">If the <span class="unixoutputc">SERVICE_STATUS_CODE</span> is 1, 5, 7, or 8, it is mandatory; otherwise, it is left at its previous value.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PROVISIONED_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Date-time that the service was provisioned for use by the exchange staff.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">ACTIVE_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Date-time that the service is billable to the customer.</p>
+<p class="tablebodytext">It should correspond to the date-time that the customer has accepted the service (or at least been notified that the service is available).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">BILLING_PRIORITY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Priority that events on this service are processed in relation to other services on the same customer node.</p>
+<p class="tablebodytext">It only has an effect if the bill generation server (BGP) processing this service is running with service level multi-processing enabled.</p>
+<p class="tablebodytext">Services with a higher priority are processed before services with a lower priority on the same customer node. A lower numerical value indicates a higher priority.</p>
+<p class="tablebodytext">If specified, the priority must have a value greater than or equal to 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">BILLING_COMPLEXITY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Numerical value that gives an indication of the expected time to perform a bill run on the service.</p>
+<p class="tablebodytext">It is not automatically populated or directly used by the system.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">GRADE_OF_SERVICE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Speed of the service.</p>
+<p class="tablebodytext">It should be encoded using a reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">SERVICE_USAGE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Main usage type for the service where different types of usage are allowed.</p>
+<p class="tablebodytext">It is dependent on the type of the service.</p>
+<p class="tablebodytext">It should be encoded using a reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">COMMS_TYPE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Appropriate communications signalling type classification such as Synchronous or Asynchronous.</p>
+<p class="tablebodytext">It is dependent on the type of the service.</p>
+<p class="tablebodytext">It should be encoded using a reference type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">GL_CODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">GL code used for all financial transactions produced as part of the service.</p>
+<p class="tablebodytext">It must exist for at least the duration of the record.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">INDUSTRY_GENERAL_1 -</span><br><span class="unixoutputc">INDUSTRY_GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">General fields for use as common attributes for a given type of service (for example, GSM services, irrespective of individual client customisation).</p>
+<p class="tablebodytext">Client customisation should be performed using the <span class="unixoutputc">GENERAL_1</span> to <span class="unixoutputc">GENERAL_10</span> fields.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">GENERAL_1 - GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">General fields that can be defined in the type definition table.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PRODUCT_OFFER_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of the product offer associated with this service.</p>
+<p class="tablebodytext">The product offer must be: </p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Configured as service-specific.</li><li class="tablelistbullet">Belong to the same hierarchy as the product offer assigned to the base product instance for this service.</li></ul><p class="tablebodytext">If the service is not assigned a product offer, it must be set to NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PRODUCT_OFFER_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Name of the product offer associated with this service.</p>
+<p class="tablebodytext">The product offer must belong to the same hierarchy as the product offer assigned to the base product instance for this service.</p>
+<p class="tablebodytext">If the service is not assigned a product offer, it must be set to NULL.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PRODUCT_OFFER_NODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of the product offer hierarchy node from which the product offer in <span class="unixoutputc">PRODUCT_OFFER_ID</span> was allocated.</p>
+<p class="tablebodytext">If <span class="unixoutputc">PRODUCT_OFFER_ID</span> is:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">NULL, it must be set to NULL.</li><li class="tablelistbullet">Not NULL, it must not be set to NULL.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PRODUCT_OFFER_</span><br><span class="unixoutputc">ALLOCATION_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">DATE</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Date-time at which this service was allocated the product offer specified in <span class="unixoutputc">PRODUCT_OFFER_ID</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PREVIOUS_PRODUCT_OFFER_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of the previous product offer associated with this service.</p>
+<p class="tablebodytext">It is automatically modified when the product offer associated with a service is changed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PREVIOUS_PRODUCT_OFFER_</span><br><span class="unixoutputc">NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">VARCHAR (60)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">Name of the previous product offer associated with this service.</p>
+<p class="tablebodytext">It is automatically modified when the product offer associated with a service is changed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">PREVIOUS_PRODUCT_OFFER_</span><br><span class="unixoutputc">NODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (8)</p>
+<p class="tablebodytext">Read-only</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">ID of the product offer hierarchy node from which the product offer in <span class="unixoutputc">PREVIOUS_PRODUCT_OFFER_ID</span> was previously allocated.</p>
+<p class="tablebodytext">If <span class="unixoutputc">PREVIOUS_PRODUCT_OFFER_ID</span> is:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">NULL, it must be set to NULL.</li><li class="tablelistbullet">Not NULL, it must not be set to NULL.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">DO_NOT_PURGE_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext"><a id="h79002" class="jump" title="Pseudo-columns" href="7526.htm#o79001" target="_self">Pseudo-column</a></p>
+<p class="tablebodytext">Used for updates only</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">If set to 1 (TRUE), no notification is sent to the service cache for any changes to the service.</p>
+<p class="tablebodytext">Notification is not required when updating services in bulk where it is known that the service cache will be restarted on completion of the load.</p>
+<p class="tablebodytext">If not specified, the service cache is purged after the update is committed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="unixoutputc">IGNORE_OFFER_END_DATE_</span><br><span class="unixoutputc">IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">NUMBER (1)</p>
+<p class="tablebodytext">Pseudo-column</p>
+<p class="tablebodytext">Used for inserts or updates only</p>
+</td>
+<td style="border:1px solid #010101;" width="378"><p class="tablebodytext">If set to 1 (TRUE), the end of the availability period of the product offer specified by <span class="unixoutputc">PRODUCT_OFFER_ID</span>, <span class="unixoutputc">PRODUCT_OFFER_NAME</span>, or <span class="unixoutputc">PRODUCT_OFFER_NODE_ID</span> is ignored. </p>
+<p class="tablebodytext">The insert or update succeeds if the start of the availability period of the product offer is no later than the <span class="unixoutputc">EFFECTIVE_START_DATE</span> of the service, regardless of the end of the availability period of the product offer.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="7513.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="78981.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

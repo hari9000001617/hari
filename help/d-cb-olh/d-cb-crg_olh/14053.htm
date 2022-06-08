@@ -1,0 +1,330 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> to_date() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "14052.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "14054.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('14053')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="14052.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="14054.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">to_date()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'to_date()' (14053)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<table class="tableintopic" width="468" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<td class="tableheading" width="246"><p class="tableheading">Interface 1</p>
+</td>
+<td width="36"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td class="tableheading" width="186"><p class="tableheading">Interface 2</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="246"><pre class="unixinputp">to_date(    value?)</pre>
+</td>
+<td width="36"><pre class="unixinputp">&nbsp;</pre>
+</td>
+<td width="186"><pre class="unixinputp">to_date(    value$,    format_string$)</pre>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td class="tableheading" width="246"><p class="tableheading">Interface 3</p>
+</td>
+<td width="36"><pre class="unixinputp">&nbsp;</pre>
+</td>
+<td width="186"><pre class="unixinputp">&nbsp;</pre>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="246"><pre class="unixinputp">to_date(    value&amp;,    SECOND|MINUTE|HOUR|DAY)</pre>
+</td>
+<td width="36"><pre class="unixinputp">&nbsp;</pre>
+</td>
+<td width="186"><pre class="unixinputp">&nbsp;</pre>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Interface 1 converts the supplied value to a date value.  The value passed must be a date value or a runtime error is raised.  </p>
+<p class="bodytext">Interface 2 converts a string value in the specified format to a date value.  If the string does not conform to the specified format, an error is raised.  </p>
+<p class="bodytext">Interface 3 returns a date duration that can be used to perform date arithmetic with other date values.  For example, the following sets the due date to 14 days after the issue date:</p>
+<p class="bodytext"><span class="unixoutputc">InvDuedate~ :=</span> <span class="unixoutputc">InvIssuedate~ + to_date(14, DAY)</span></p>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="288" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Method</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Built-in</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="630" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="204"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="426"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">value</span></p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">In:  Value to be cast or converted to a date.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">SECOND|MINUTE|HOUR|DAY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">In:  Integer keywords (use exactly as displayed).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><span class="unixoutputc">format_string$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="426"><p class="tablebodytext">In:  Date format picture as follows.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">A date.</p>
+<p class="syntaxheading">Remarks</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">System locale settings are taken from the platform on which the expression is evaluated (see the <span class="referrals">Internationalisation Configuration Guide for Singleview</span>).</p></td></tr></table>
+<p class="bodytext">The <span class="unixoutputc">format_string$</span> parameter may include the format specifiers listed in the following table.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Format Specifiers</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="108"><p class="tableheading">Specifier</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="588"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">c</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Interprets the string as a representation of the date 'short date' format, followed by the time in the long time format.</p>
+<p class="tablebodytext">The short date and long time formats are specified in the system locale settings.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">d</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Interprets the string as a numerical representation of a day of the month without a leading 0 (for example, 1 or 31).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">dd</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Interprets the string as a two-digit number representing of a day of the month with a leading 0 if required (for example, 01 or 31).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">ddd</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Interprets the string as a case-sensitive abbreviation of a day of the week using the abbreviation format specified in the system locale settings.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">dddd</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Interprets the string as a case-sensitive day of the week using the full name format specified in the system locale settings.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">ddddd</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Interprets the string as a representation of a date using the short date format specified in the system locale settings.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">dddddd</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Interprets the string as a representation of a date using the long date format specified in the system locale settings.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">m</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Interprets the string as a numerical representation of a month without a leading 0 (for example, 1 or 12).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">mm</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Interprets the string as a two-digit number representing a month with a leading 0 if required (for example, 01 or 12).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">mmm</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Interprets the string as a case-sensitive abbreviation of a month using the abbreviation format specified in the system locale settings.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">mmmm</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Interprets the string as a case-sensitive month using the full name format specified in the system locale settings.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">yy</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Interprets the string as a two-digit number representing a year.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">yyyy</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Interprets the string as a four-digit number representing a year.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">h</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Interprets the string as a numerical representation of the hour without a leading 0 (for example, 1 or 12).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">hh</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Interprets the string as a two-digit number representing the hour with a leading 0 if required (for example, 01 or 12).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">n</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Interprets the string as a numerical representation of the minute without a leading 0 (for example, 1 or 59).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">nn</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Interprets the string as a two-digit number representing the minute with a leading 0 if required (for example, 01 or 59).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">s</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Interprets the string as a numerical representation of the seconds without a leading 0 (for example, 1 or 59).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">ss</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Interprets the string as a two-digit number representing the seconds with a leading 0 if required (for example, 01 or 59).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">t</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Interprets the string as a representation of the time using the short time format specified in the system locale settings.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">tt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Interprets the string as a representation of the time using the long time format specified in the system locale settings.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">am/pm</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">A string matching am indicates a time before noon.  A string matching pm indicates a time after noon.  Matches are not case-sensitive.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">a/p</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">As for am/pm.  Also accepts a for am and p for pm.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">ampm</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">A string matching the 'am' indicator specified in the system locale settings indicates a time before noon.</p>
+<p class="tablebodytext">A string matching the 'pm' indicator specified in the system locale settings indicates a time after noon.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext"><span class="unixoutputc">'xx'/&quot;xx&quot;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="588"><p class="tablebodytext">Characters enclosed in single or double quotes are output as they are, and do not affect formatting.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="14052.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="14054.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

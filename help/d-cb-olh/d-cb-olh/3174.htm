@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Invoice Format Search Form </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "3172.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "3176.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+<script language="javascript" type="text/javascript" src="dhtml_popup.js"></script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('1732');highlight('3174')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="3172.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="3176.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Invoice Format Search Form</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Invoice Format Search Form' (3174)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="formname">Invoice Format Search</span> form is used to search for one or more <a id="h2500" class="popup" title="Invoice Format" href="javascript:void(0)" onclick="togglePopup('2500','h2500')" target="_self">invoice formats</a>, using a specific field, criteria, method, and date.</p>
+<div id="d2500" class="clickpopup" style="display:none"><a href="javascript:hidePopup('2500')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">Specifies the format of generated invoices.  The format specified determines which invoice template is used during the Invoice Generation Process (IGP).  Can be specified on a per customer node basis.</p>
+<p class="bodytext">Context:  Convergent Billing, Configuration Studio</p>
+<p class="bodytext">See also <a id="h1091" class="glossaryitemjump" title="Invoice Generation Process (IGP)" href="14838.htm#o645" target="_self">Invoice Generation Process (IGP)</a> and <a id="h1234" class="glossaryitemjump" title="Invoice Template" href="14838.htm#o649" target="_self">Invoice Template</a>.</p>
+</div><p class="bodytext">The lower part of the form is used to list invoice formats returned by the search that match the specified criteria.</p>
+<p class="bodytext">Multiple instances of the form can be displayed by clearing the <span class="fieldname"><a id="h37668" class="popup" title="Reuse Form?" href="javascript:void(0)" onclick="togglePopup('37668','h37668')" target="_self">Reuse form?</a></span> check box.</p>
+<div id="d37668" class="clickpopup" style="display:none"><a href="javascript:hidePopup('37668')"><img src="close.gif" align="right" alt="Close" border="0"></a><table class="cautionstyle" width="100%"><tr><td><p class="caution">Caution:</p><p class="caution">If multiple instances of the form are required for display (for example, to access details for several account types), do not select the <span class="fieldname">Reuse form?</span> check box.</p></td></tr></table>
+<p class="bodytext">If selected, the <span class="fieldname">Reuse form?</span> check box overrides display of information in a new form, and details are displayed in the existing form.</p>
+</div><p class="bodytext"><strong class="specialbold">Associated Actions</strong></p>
+<p class="bodytext"><a id="h2112" class="expandingblock" title="Search for an Invoice" href="javascript:toggleBlock('2112')" target="_self"><img id="i2112" class="expandicon" src="arrowright.gif" alt="" border="0">Viewing an Invoice</a></p>
+<div id="d2112" class="expandingblock" style="display:none"><table width="100%" class="tipstyle"><tr><td><p class="tip">Tip:</p><p class="tip">The method to use to search for and view the details of an invoice depends on whether the assigned invoice number is known.</p></td></tr></table>
+<p class="bodytext">If the invoice number is known:</p>
+<ol class="listnumber"><li class="listnumber">Select the <strong class="menuoptions">Accounts</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">Invoices</strong> option.  The <span class="formname">Invoice Search</span> form is displayed.</li><li class="listnumber">Ensure that the <span class="fieldname">Search</span> field is set to Invoice Number and enter the invoice number in the<strong class="specialbold"> </strong><span class="fieldname">Search Criteria</span> field.</li><li class="listnumber">Click the <strong class="buttons">Search</strong> button.  If a valid invoice number is entered, the invoice is displayed. </li><li class="listnumber">Click the <strong class="buttons">Detail…</strong> button.  The <span class="formname">Invoice Detail</span> form is displayed with details of the invoice.</li></ol><p class="bodytext">If the invoice number is not known:</p>
+<ol class="listnumber"><li class="listnumber"><a id="h39086" class="jump" title="View an Account" href="4113.htm#o1763" target="_self">View the customer&#8217;s account history</a>.</li><li class="listnumber">Double-click the appropriate invoice transaction in the list of transactions.  The <span class="formname">Invoice Detail</span> form is displayed with details of the specified invoice.</li></ol><table width="100%" class="tipstyle"><tr><td><p class="tip">Tip:</p><p class="tip">To locate the correct invoice transaction within the list of transactions, ask the enquirer for the date of the invoice; the date is usually printed prominently on the invoice in a predefined location.</p></td></tr></table>
+<p class="moreinfo"><a id="h2114" class="jump" title="Invoices" href="2115.htm" target="_self">Need more information on invoices?</a></p>
+</div><p class="bodytext"><a id="h3155" class="expandingblock" title="View an Invoice Image" href="javascript:toggleBlock('3155')" target="_self"><img id="i3155" class="expandicon" src="arrowright.gif" alt="" border="0">Viewing an Invoice Image</a></p>
+<div id="d3155" class="expandingblock" style="display:none"><p class="bodytext"><a id="h3157" class="popup" title="Image Viewer Requirements" href="javascript:void(0)" onclick="togglePopup('3157','h3157')" target="_self">Image Viewer Requirements</a></p>
+<div id="d3157" class="clickpopup" style="display:none"><a href="javascript:hidePopup('3157')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">An image can be generated in a number of different formats; the appropriate image viewer must therefore be available.  Consult the System Administrator about the relevant viewer used.</p>
+</div><p class="bodytext">To view the image:</p>
+<ol class="listnumber"><li class="listnumber"><a id="h39116" class="jump" title="Search for an Invoice" href="4185.htm#o2113" target="_self">View the appropriate invoice</a>.</li><li class="listnumber">Select the <span class="fieldname">Images</span> tab.</li><li class="listnumber">If the image has been generated, click the <strong class="buttons">Invoice Image...</strong> button.  If not, click the <strong class="buttons">Generate Image</strong> button.</li><li class="listnumber">Depending on whether the invoice image is generated, Convergent Billing may ask whether the user wants to:<ul class="listdashbullet2"><li class="listdashbullet2">View the image<p class="listcontinue2">Click the <strong class="buttons">Yes</strong> button to display the image using the appropriate viewer, or the <strong class="buttons">No</strong> button to regenerate the image.</p>
+</li><li class="listdashbullet2">Schedule a task to generate the image<p class="listcontinue2">Click the <strong class="buttons">OK</strong> button to schedule the appropriate task.  A message indicating that the schedule was submitted to and reached the server is displayed.  When the scheduled task is complete, the appropriate viewer is run automatically to display the generated image.</p>
+<p class="listcontinue2">To cancel the request to schedule a task to generate the image, click the<strong class="buttons"> Cancel</strong> button.</p>
+</li></ul></li></ol><p class="moreinfo"><a id="h2114_2" class="jump" title="Invoices" href="2115.htm" target="_self">Need more information on invoices?</a></p>
+</div><p class="bodytext"><a id="h3161" class="expandingblock" title="View an Invoice Format" href="javascript:toggleBlock('3161')" target="_self"><img id="i3161" class="expandicon" src="arrowright.gif" alt="" border="0">Viewing an Invoice Format</a></p>
+<div id="d3161" class="expandingblock" style="display:none"><p class="bodytext">To view an invoice format:</p>
+<ol class="listnumber"><li class="listnumber">Select the <strong class="menuoptions">Maintenance</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">Printing</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">Invoice Formats</strong> option.  The <span class="formname">Invoice Format Search</span> form is displayed.</li><li class="listnumber">Enter or select the appropriate search criteria and search method.</li><li class="listnumber">Click the <strong class="buttons">Search</strong> button.  A list of invoice formats matching the specified criteria is displayed.</li><li class="listnumber">Select the appropriate invoice format and click the <strong class="buttons">Detail…</strong> button, or double-click the appropriate invoice format.  The <span class="formname">Invoice Format Definition</span> form is displayed in View Only mode.</li></ol><p class="moreinfo"><a id="h2114_3" class="jump" title="Invoices" href="2115.htm" target="_self">Need more information on invoice formats?</a></p>
+</div><p class="bodytext"><a id="h3163" class="expandingblock" title="Update an Invoice Format" href="javascript:toggleBlock('3163')" target="_self"><img id="i3163" class="expandicon" src="arrowright.gif" alt="" border="0">Updating an Invoice Format</a></p>
+<div id="d3163" class="expandingblock" style="display:none"><p class="bodytext">To update an invoice format:</p>
+<ol class="listnumber"><li class="listnumber"><a id="h39177" class="jump" title="View an Invoice Format" href="4397.htm#o3162" target="_self">View the appropriate invoice format</a>.</li><li class="listnumber">Click the <strong class="buttons">Update</strong> button on the toolbar.  The <span class="formname">Invoice Format Definition</span> form is displayed in Update mode.</li><li class="listnumber">Update the invoice format details as required.</li><li class="listnumber">Click the <strong class="buttons">Save</strong> button on the toolbar.</li></ol><p class="moreinfo"><a id="h2114_4" class="jump" title="Invoices" href="2115.htm" target="_self">Need more information on invoice formats?</a></p>
+</div><p class="bodytext"><a id="h3165" class="expandingblock" title="Define an Invoice Format" href="javascript:toggleBlock('3165')" target="_self"><img id="i3165" class="expandicon" src="arrowright.gif" alt="" border="0">Defining an Invoice Format</a></p>
+<div id="d3165" class="expandingblock" style="display:none"><p class="bodytext">To define an invoice format:</p>
+<ol class="listnumber"><li class="listnumber">Select the <strong class="menuoptions">Maintenance</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">Printing</strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions">Invoice Formats</strong> option.  The <span class="formname">Invoice Format Search</span> form is displayed.</li><li class="listnumber">Click the <strong class="buttons">New…</strong> button.  The <span class="formname">Invoice Format Definition</span> form is displayed in Insert mode.</li><li class="listnumber">Complete the appropriate data entry fields on the form.</li><li class="listnumber">Click the <strong class="buttons">Save</strong> button on the toolbar.</li></ol><p class="moreinfo"><a id="h2114_5" class="jump" title="Invoices" href="2115.htm" target="_self">Need more information on invoice formats?</a></p>
+</div><p class="bodytext"><a id="h3167" class="expandingblock" title="Delete an Invoice Format" href="javascript:toggleBlock('3167')" target="_self"><img id="i3167" class="expandicon" src="arrowright.gif" alt="" border="0">Deleting an Invoice Format</a></p>
+<div id="d3167" class="expandingblock" style="display:none"><p class="bodytext">To delete an invoice format:</p>
+<ol class="listnumber"><li class="listnumber"><a id="h39177_2" class="jump" title="View an Invoice Format" href="4397.htm#o3162" target="_self">View the appropriate invoice format</a>.</li><li class="listnumber">Click the <strong class="buttons">Delete</strong> button on the toolbar.</li><li class="listnumber">When prompted, click the <strong class="buttons">Yes</strong> button to confirm that the invoice format is to be deleted.</li></ol><p class="moreinfo"><a id="h2114_6" class="jump" title="Invoices" href="2115.htm" target="_self">Need more information on invoice formats?</a></p>
+</div>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="3172.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="3176.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

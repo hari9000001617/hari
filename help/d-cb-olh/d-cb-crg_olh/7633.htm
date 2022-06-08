@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Perl Interface Notes </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "49282.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "7634.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('7625');expand('51074');highlight('7633')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="49282.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="7634.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">Perl Interface Notes</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Perl Interface Notes' (7633)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">All parameters of type <span class="unixoutputc">TRE_DATETIME</span> should be passed as strings in the standard server date format (<span class="unixoutputc">'DD-MM-YYYY HH:NN:SS'</span>).  Array parameters in Perl should be passed as an array reference, even if the data type of the parameter is not <span class="unixoutputc">TRE_VAR</span>.  For example, the array <span class="unixoutputc">@A</span> is passed to <span class="unixoutputc">treCall</span> as <span class="unixoutputc">\@A</span>. </p>
+<p class="bodytext">Hash parameters should always be passed as a hash reference, even if the data type of the parameter is not <span class="unixoutputc">TRE_VAR</span>.  For example, the hash <span class="unixoutputc">%B</span> is passed to <span class="unixoutputc">treCall</span> as <span class="unixoutputc">\%B</span>.</p>
+<p class="bodytext">Because the Perl programming language does not support constants, <span class="unixoutputc">TRE.pm</span> exports the following list of scalars.  The values correspond to the constants of the same name defined in the TRE C API.</p>
+<p class="syntaxheading">Data Types</p>
+<p class="bodytext"><span class="unixoutputc">$TRE_LONG</span>, <span class="unixoutputc">$TRE_DOUBLE</span>, <span class="unixoutputc">$TRE_STRING</span>, <span class="unixoutputc">$TRE_DATETIME</span>, <span class="unixoutputc">$TRE_BLOB</span>, <span class="unixoutputc">$TRE_UNKNOWN</span>, <span class="unixoutputc">$TRE_VAR</span>, <span class="unixoutputc">$TRE_ARRAY</span>,<span class="unixoutputc"> $TRE_HASH</span>, <span class="unixoutputc">$TRE_NULLIND</span>, <span class="unixoutputc">$TRE_CONSTANT</span>, <span class="unixoutputc">$TRE_HIDDEN</span>.</p>
+<p class="syntaxheading">Flags</p>
+<p class="bodytext"><span class="unixoutputc">$TRE_NOFLAGS</span>, <span class="unixoutputc">$TRE_ASYNC</span>, <span class="unixoutputc">$TRE_QUEUE</span>, <span class="unixoutputc">$TRE_NOTRANS</span>, <span class="unixoutputc">$TRE_NOTIME</span>,&nbsp;<span class="unixoutputc">$TRE_PE_CLIENT</span>, <span class="unixoutputc">$TRE_PE_ERRPARAM</span>, <span class="unixoutputc">$TRE_PE_ASYNC</span>, <span class="unixoutputc">$TRE_PE_OVERRIDE</span>, <span class="unixoutputc">$TRE_PE_CONFIG</span>, <span class="unixoutputc">$TRE_PE_WARNING_OVERRIDE</span>.</p>
+<p class="syntaxheading">Function Results</p>
+<p class="bodytext"><span class="unixoutputc">$TRE_FAIL</span>, <span class="unixoutputc">$TRE_SUCC</span>, <span class="unixoutputc">$TRE_NOTREGISTERED</span>, <span class="unixoutputc">$TRE_NOTEXISTS</span>, <span class="unixoutputc">$TRE_REMOTEFAIL</span>, <span class="unixoutputc">$TRE_CONVERT_NONE</span>, <span class="unixoutputc">$TRE_CONVERT_UNKNOWN</span>, <span class="unixoutputc">$TRE_CONVERT_ALL</span>.</p>
+<p class="bodytext">The following header information must be included before any function calls can be made in Perl:</p>
+<p class="bodytext"><span class="unixoutputc">uses TRE;</span></p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="49282.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="7634.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

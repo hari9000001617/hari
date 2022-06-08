@@ -1,0 +1,185 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> biEventRateAndReturnTran&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "40491.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "12541.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('58550')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="40491.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="12541.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">biEventRateAndReturnTran&amp;()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'biEventRateAndReturnTran&amp;()' (58550)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<table class="tableintopic" width="582" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<td class="tableheading" width="264"><p class="tableheading">Interface 1</p>
+</td>
+<td width="48"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td class="tableheading" width="270"><p class="tableheading">Interface 2</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="264"><pre class="unixinputp">biEventRateAndReturnTran&amp;(    const&nbsp;FieldNames$[],    const&nbsp;FieldValues?[],    const&nbsp;ChargeFieldNames$[],    var&nbsp;ChargeFieldValues?[],    DebugLevel&amp;,    var&nbsp;TraceFile$,    var ErrorId&amp;,    var ErrorMessage$)</pre>
+</td>
+<td width="48"><pre class="unixinputp">&nbsp;</pre>
+</td>
+<td width="270"><pre class="unixinputp">biEventRateAndReturn&amp;(    const&nbsp;FieldNames$[],    const&nbsp;FieldValues?[],    const&nbsp;ChargeFieldNames$[],    var&nbsp;ChargeFieldValues?[])</pre>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Calculates and returns charge information based on the event parameters set in the <span class="unixoutputc">FieldNames$[]</span> and <span class="unixoutputc">FieldValues$[]</span> arrays.</p>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="288" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="bold">Method</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Remote</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="186"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="510"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">FieldNames$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">In:  Field names from <span class="unixoutputc">NORMALISED_EVENT_V</span> view of the details of the event to be rated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">FieldValues?[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">In:  Field values, in the same order that their names are specified in <span class="unixoutputc">FieldNames$[]</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">ChargeFieldNames$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">In:  Charge fields to be returned for each charge calculation.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">ChargeFieldValues?[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">Out:  Charge values, corresponding to <span class="unixoutputc">ChargeFieldNames$[]</span>.</p>
+<p class="tablebodytext">Each row in the array corresponds to the requested charge fields.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">DebugLevel&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">In:  Level of rating debug to turn on for rating the event.</p>
+<p class="tablebodytext">If set to 0, no debug tracing is activated.</p>
+<p class="tablebodytext">For information about available debug levels, refer to the Event Normalisation (ENM) process in the <span class="referrals">System Configuration Guide for Singleview Convergent Billing</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">TraceFile$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">Out:  Path to the file containing the debug information (if <span class="unixoutputc">DebugLevel&amp;</span> is set).</p>
+<p class="tablebodytext">The file name is based on current date-time.</p>
+<p class="tablebodytext">The path to the file is contained in the <span class="unixoutputc">TRACE_DIR</span> attribute of the <span class="unixoutputc">TRERATE_TRAN</span> configuration item for the process rating the event.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">ErrorId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">Out:  Error ID if an error occurred during rating.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">ErrorMessage$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">Out:  Error message if an error occurred during rating.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">Number of charges if successful; otherwise, an error is raised.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">The number of values in each data type array is returned in that type's return parameter.</p>
+<p class="bodytext">The function can used for providing a quote for service usage.  For example, to answer the question &quot;How much will a 10 minute call to Pakistan at 9:45pm tonight cost?&quot;.</p>
+<p class="bodytext">During calls to the function, subtotal values accessed include any current reservations in their returned values (except for the current reservation being processed). </p>
+<p class="bodytext">If this function is called to determine the amount to reserve for an account and either <span class="unixoutputc">AccountReservationInsert$()</span> or <span class="unixoutputc">AccountReservationUpdate&amp;()</span>executed (to create or update the account reservation), a call should be made to <span class="unixoutputc">SubtotalEventCommit&amp;()</span> or <span class="unixoutputc">EntitlementEventCommit&amp;()</span> to make reservations against rating subtotals and entitlements.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">Reservations are available only as part of the separate Commerce Engine licence option.</p><p class="note">The function only implicitly populates the direct variables from the <span class="unixoutputc">NORMALISED_EVENT_V</span> view that have been passed into it. </p></td></tr></table>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="40491.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="12541.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

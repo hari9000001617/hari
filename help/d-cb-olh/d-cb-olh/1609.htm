@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Expressions </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "59341.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "1619.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+<script language="javascript" type="text/javascript" src="dhtml_popup.js"></script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('4501');highlight('1609')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="59341.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="1619.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Expressions</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Expressions' (1609)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The expressions defined in Convergent Billing<a id="h13666" class="jump" title="Configuration Fundamentals Guide for Singleview Convergent Billing" href="5533.htm" target="_self"> (see the <span class="referrals">Configuration Fundamentals Guide for Singleview Convergent Billing</span>)</a> consist of operators and variables that when evaluated return a single value.  The Expression Parser Module (EPM) which provides a set of built-in functions for both parsing and evaluating an expression performs the evaluation of expressions.  Expressions are used in Convergent Billing to:</p>
+<ul class="listbullet"><li class="listbullet">Determine which tariff to apply.</li><li class="listbullet">Define and calculate tariffs.</li><li class="listbullet">Perform table lookup.</li><li class="listbullet">Validate raw event records as they are normalised.</li><li class="listbullet">Validate data entered by a user.</li><li class="listbullet">Define functions, derived attributes, and define subtotals.</li><li class="listbullet">Substitute values in an invoice template.</li></ul><p class="bodytext">An expression can be defined whenever it is required.  When defining a tariff or subtotal and where a set of conditions or eligibility criteria need to be evaluated, an expression needs to be defined.  Expressions can be used in combination so that the result of one expression is used as input to another expression.  The <a id="h13666_3" class="jump" title="Configuration Fundamentals Guide for Singleview Convergent Billing" href="5533.htm" target="_self"><a id="h13666_2" class="jump" title="Configuration Fundamentals Guide for Singleview Convergent Billing" href="5533.htm" target="_self"><span class="formname"></a><a id="h1610" class="jump" title="Expression Test Form" href="1611.htm" target="_self">Expression Test</a></span></a><a id="h1610_2" class="jump" title="Expression Test Form" href="1611.htm" target="_self"> form</a> can be used to validate expressions.</p>
+<p class="bodytext"><a id="h1618" class="jump" title="Operators" href="1619.htm" target="_self">Operators</a> can be arithmetic or relational.  Any type of variable can be used in an expression (direct variables, functions, derived attributes, tariffs, subtotals, and list types).  A variable can only be used in an expression, if it is the correct data type, has the correct syntax, and has the correct application environment.</p>
+<p class="bodytext">The following expression types are available in Convergent Billing:</p>
+<ul class="listbullet"><li class="listbullet"><a id="h1628" class="popup" title="Control Expression" href="javascript:void(0)" onclick="togglePopup('1628','h1628')" target="_self">Control Expressions</a><div id="d1628" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1628')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">Expression used to control the flow of processing using conditions.  A condition is an expression that returns 0 or 0.0 when the condition is FALSE, or a non-zero number if the condition is TRUE.  The condition need not be a conditional expression, formed by using conditional operators.</p>
+<p class="bodytext">The following control expressions can be used:</p>
+<ul class="listbullet"><li class="listbullet"><a id="h13666_4" class="jump" title="Configuration Fundamentals Guide for Singleview Convergent Billing" href="5533.htm" target="_self"><span class="unixoutputc"></a><a id="h62709" class="jump" title="if-then-else Expression" href="14838.htm#o621" target="_self">if-then-else</a><a id="h13666_5" class="jump" title="Configuration Fundamentals Guide for Singleview Convergent Billing" href="5533.htm" target="_self"></span></a></li><li class="listbullet"><a id="h13666_6" class="jump" title="Configuration Fundamentals Guide for Singleview Convergent Billing" href="5533.htm" target="_self"><span class="unixoutputc"></a><a id="h62710" class="jump" title="if Expression" href="14838.htm#o620" target="_self">if</a><a id="h13666_7" class="jump" title="Configuration Fundamentals Guide for Singleview Convergent Billing" href="5533.htm" target="_self"></span></a></li><li class="listbullet"><a id="h13666_8" class="jump" title="Configuration Fundamentals Guide for Singleview Convergent Billing" href="5533.htm" target="_self"><span class="unixoutputc"></a><a id="h62711" class="jump" title="while Expression" href="14852.htm#o1002" target="_self">while</a><a id="h13666_9" class="jump" title="Configuration Fundamentals Guide for Singleview Convergent Billing" href="5533.htm" target="_self"></span></a></li><li class="listbullet"><a id="h13666_10" class="jump" title="Configuration Fundamentals Guide for Singleview Convergent Billing" href="5533.htm" target="_self"><span class="unixoutputc"></a><a id="h62712" class="jump" title="try-except Expression" href="14849.htm#o966" target="_self">try-except</a><a id="h13666_11" class="jump" title="Configuration Fundamentals Guide for Singleview Convergent Billing" href="5533.htm" target="_self"></span></a></li><li class="listbullet"><a id="h13666_12" class="jump" title="Configuration Fundamentals Guide for Singleview Convergent Billing" href="5533.htm" target="_self"><span class="unixoutputc"></a><a id="h62713" class="jump" title="for Expression" href="14835.htm#o578" target="_self">for</a><a id="h13666_13" class="jump" title="Configuration Fundamentals Guide for Singleview Convergent Billing" href="5533.htm" target="_self"></span></a>.</li></ul><p class="bodytext">Context:  Convergent Billing, Process Engine</p>
+<p class="bodytext">See also <a id="h1078" class="glossaryitemjump" title="Expression" href="14834.htm#o551" target="_self">Expression</a> and <a id="h1168" class="glossaryitemjump" title="Expression Type" href="14834.htm#o556" target="_self">Expression Type</a>.</p>
+</div></li><li class="listbullet"><a id="h1629" class="popup" title="Variable Definition Expression" href="javascript:void(0)" onclick="togglePopup('1629','h1629')" target="_self">Variable Definition Expressions</a><div id="d1629" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1629')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">Used to define a local variable.  The scope of the variable begins when it is defined, and lasts to the end of the current expression block or function.  The variable can be assigned a value as it is declared.  Within its scope, this type of variable takes precedence over any other variable of the same name.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1078_2" class="glossaryitemjump" title="Expression" href="14834.htm#o551" target="_self">Expression</a> and <a id="h1168_2" class="glossaryitemjump" title="Expression Type" href="14834.htm#o556" target="_self">Expression Type</a>.</p>
+</div></li><li class="listbullet"><a id="h1630" class="popup" title="Single Expression" href="javascript:void(0)" onclick="togglePopup('1630','h1630')" target="_self">Single Expressions</a>.<div id="d1630" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1630')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">Assignment, variable, function call, value, or two variables linked by an operator.</p>
+<p class="bodytext">Context:  Convergent Billing, Process Engine</p>
+<p class="bodytext">See also <a id="h1078_3" class="glossaryitemjump" title="Expression" href="14834.htm#o551" target="_self">Expression</a> and <a id="h1168_3" class="glossaryitemjump" title="Expression Type" href="14834.htm#o556" target="_self">Expression Type</a>.</p>
+</div></li></ul>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="59341.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="1619.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

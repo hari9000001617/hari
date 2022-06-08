@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Scheduled Functions Form </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "52746.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "50410.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+<script language="javascript" type="text/javascript" src="dhtml_popup.js"></script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('1732');highlight('50413')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="52746.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="50410.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Scheduled Functions Form</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Scheduled Functions Form' (50413)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="formname">Scheduled Functions</span> form is used to view and update a scheduled function. </p>
+<p class="bodytext">The upper part is used for viewing general information about the scheduled function such as its name, interface number, interface name, partition number, status, category, sub category, and description.  </p>
+<p class="bodytext">The status of the specified scheduled functions can be updated using the following valid statuses:</p>
+<ul class="listbullet"><li class="listbullet">Failure to Failure (Retries Pending), which allows reprocessing of the scheduled function. </li><li class="listbullet">Pending or Failure (Retries Pending) to Failure, which stops reprocessing of the scheduled function.</li></ul><p class="bodytext">The lower part of the form contains the following tabs for updating the scheduled functions:</p>
+<p class="bodytext"><a id="h50490" class="expandingblock" title="Details Tab" href="javascript:toggleBlock('50490')" target="_self"><img id="i50490" class="expandicon" src="arrowright.gif" alt="" border="0">Details</a></p>
+<div id="d50490" class="expandingblock" style="display:none"><p class="bodytext">Details of scheduled functions are displayed on the <span class="fieldname">Details</span> tab.</p>
+<p class="bodytext">The <span class="fieldname">Scheduled Start Date</span>, <span class="fieldname">Effective Date</span>, <span class="fieldname">Retry Count</span>, and <span class="fieldname">Retry Period</span> fields of the scheduled functions can be updated. </p>
+<p class="bodytext">Clicking the <strong class="buttons">Transaction Group...</strong> button displays the functions associated with the same transaction ID as the displayed function in the <span class="formname"><a id="h60874" class="jump" title="Scheduled Functions Transaction List Form" href="60869.htm" target="_self">Scheduled Functions Transaction List</a></span><a id="h60874_2" class="jump" title="Scheduled Functions Transaction List Form" href="60869.htm" target="_self"> form</a>.</p>
+</div><p class="bodytext"><a id="h50495" class="expandingblock" title="Audit/Performance" href="javascript:toggleBlock('50495')" target="_self"><img id="i50495" class="expandicon" src="arrowright.gif" alt="" border="0">Audit/Performance</a></p>
+<div id="d50495" class="expandingblock" style="display:none"><p class="bodytext">Audit and performance information for schedule functions is displayed on the <span class="fieldname">Audit/Performance</span> tab.</p>
+</div><p class="bodytext"><a id="h50496" class="expandingblock" title="Function Parameters" href="javascript:toggleBlock('50496')" target="_self"><img id="i50496" class="expandicon" src="arrowright.gif" alt="" border="0">Function Parameters</a></p>
+<div id="d50496" class="expandingblock" style="display:none"><p class="bodytext">Parameters passed to scheduled functions are displayed on the <span class="fieldname">Function Parameters</span> tab. </p>
+</div><p class="bodytext"><a id="h70744" class="expandingblock" title="Workflow Tab" href="javascript:toggleBlock('70744')" target="_self"><img id="i70744" class="expandicon" src="arrowright.gif" alt="" border="0">Workflow</a></p>
+<div id="d70744" class="expandingblock" style="display:none">Details of work item scheduled functions are displayed on the <span class="fieldname">Workflow</span> tab.<p class="bodytext"></div></p>
+<p class="bodytext">The form can be displayed in one of two <a id="h1472" class="popup" title="Form Modes" href="javascript:void(0)" onclick="togglePopup('1472','h1472')" target="_self">form modes</a>, with the current mode being indicated in the form's title. </p>
+<div id="d1472" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1472')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">A form can be displayed in one of the following modes:</p>
+<table class="tableintopic" width="528" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="126"><p class="tableheading">Form Mode</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="402"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">View Only mode</p>
+</td>
+<td style="border:1px solid #010101;" width="402"><p class="tablebodytext">Allows information held in Convergent Billing to be viewed, but not updated (modified).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Insert mode</p>
+</td>
+<td style="border:1px solid #010101;" width="402"><p class="tablebodytext">Allows new information to be recorded (entered) in Convergent Billing.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="126"><p class="tablebodytext">Update mode</p>
+</td>
+<td style="border:1px solid #010101;" width="402"><p class="tablebodytext">Allows information held in Convergent Billing to be viewed and updated (modified).</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">To change the form mode:</p>
+<table class="tableintopic" width="528" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="168"><p class="tableheading">Current Form Mode</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="156"><p class="tableheading">New Form Mode</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="204"><p class="tableheading">Click the <strong class="buttons">…</strong></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">View Only mode</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">Update mode</p>
+</td>
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><strong class="buttons">Update</strong> button</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">Update mode</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">View Only mode</p>
+</td>
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><strong class="buttons">Save</strong> or <strong class="buttons">Cancel</strong> button</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">View Only mode</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">Insert mode</p>
+</td>
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><strong class="buttons">Insert</strong> button</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">Insert mode</p>
+</td>
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext">View Only mode</p>
+</td>
+<td style="border:1px solid #010101;" width="204"><p class="tablebodytext"><strong class="buttons">Save</strong> button</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+</div><p class="bodytext"><strong class="specialbold">Associated Actions</strong></p>
+<p class="bodytext"><a id="h50511" class="expandingblock" title="Create Scheduled Functions" href="javascript:toggleBlock('50511')" target="_self"><img id="i50511" class="expandicon" src="arrowright.gif" alt="" border="0">Creating Scheduled Functions</a></p>
+<div id="d50511" class="expandingblock" style="display:none"><p class="bodytext">Scheduled functions are created during configuration of Convergent Billing.  If new functionality or a change in the configuration of existing scheduled functions is required, contact the CSG International Contact Centre.</p>
+</div><p class="bodytext"><a id="h50510" class="expandingblock" title="View Scheduled Functions" href="javascript:toggleBlock('50510')" target="_self"><img id="i50510" class="expandicon" src="arrowright.gif" alt="" border="0">Viewing Scheduled Functions</a></p>
+<div id="d50510" class="expandingblock" style="display:none"><p class="bodytext">To view a scheduled function:</p>
+<ol class="listnumber"><li class="listnumber">Select the <strong class="menuoptions"><strong class="menuoptions">Server Tasks <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> Scheduled Functions</strong></strong> option.  The <span class="formname">Scheduled Functions Search</span> form is displayed.</li><li class="listnumber">Enter or select the appropriate search criteria and search method.</li><li class="listnumber">Click the <strong class="buttons">Search</strong> button.  A list of scheduled functions summary rows matching the specified criteria is displayed.</li><li class="listnumber">Highlight the appropriate scheduled function summary row and select the <strong class="buttons">View List...</strong> button, or double-click the appropriate scheduled function summary row.  A list of scheduled functions matching the criteria of the summary row is displayed. </li><li class="listnumber">Select the appropriate scheduled function row and click the <strong class="buttons">Details...</strong> button, or double-click the appropriate scheduled function row.  The <span class="formname">Scheduled Functions</span> form is displayed in View Only mode.</li></ol><p class="bodytext"><a id="h50507" class="jump" title="Scheduled Functions" href="50506.htm" target="_self">Need more information on scheduled functions?</a></p>
+</div><p class="bodytext"><a id="h50513" class="expandingblock" title="Update or Bulk Update Scheduled Functions" href="javascript:toggleBlock('50513')" target="_self"><img id="i50513" class="expandicon" src="arrowright.gif" alt="" border="0">Updating and Bulk Updating Scheduled Functions</a></p>
+<div id="d50513" class="expandingblock" style="display:none"><p class="bodytext">To update scheduled functions:</p>
+<ol class="listnumber"><li class="listnumber">Select the <strong class="menuoptions"><strong class="menuoptions">Server Tasks</strong></strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions"><strong class="menuoptions">Scheduled Functions</strong></strong> option.  The <span class="formname"><a id="h50470" class="formhelpjump" title="Scheduled Functions Search Form" href="50188.htm" target="_self">Scheduled Functions Search</a></span><a id="h50470_2" class="formhelpjump" title="Scheduled Functions Search Form" href="50188.htm" target="_self"> form</a> is displayed.</li><li class="listnumber">Enter or select the appropriate search criteria and search method.</li><li class="listnumber">Click the <strong class="buttons">Search</strong> button.  The <span class="formname"><a id="h50469" class="formhelpjump" title="Scheduled Functions List Form" href="50410.htm" target="_self">Scheduled Functions List</a></span><a id="h50469_2" class="formhelpjump" title="Scheduled Functions List Form" href="50410.htm" target="_self"> form</a> with summary rows matching the search criteria is displayed on the <span class="fieldname">Summary</span> grid.</li><li class="listnumber">Select the scheduled functions to update, and do one of the following:<ul class="listdashbullet2"><li class="listdashbullet2">Highlight the appropriate summary row or rows and click the <strong class="buttons">Bulk Update</strong> button.</li><li class="listdashbullet2">Highlight the appropriate summary row and click the <strong class="buttons">View List...</strong> button, or double-click the appropriate summary row.  A list of scheduled functions matching the criteria in the summary row is displayed in the <span class="fieldname">List</span> grid.  Select the appropriate row or rows and click the <strong class="buttons">Update...</strong> button.</li><li class="listdashbullet2">If viewing scheduled functions in the <span class="formname">Scheduled Functions</span> form, click the <strong class="buttons">Update</strong> button on the toolbar.</li></ul><p class="listcontinue">The <span class="formname"><a id="h50471" class="formhelpjump" title="Scheduled Functions Form" href="50413.htm" target="_self">Scheduled Functions</a></span><a id="h50471_2" class="formhelpjump" title="Scheduled Functions Form" href="50413.htm" target="_self"> form</a> is displayed in Update mode.</p>
+</li><li class="listnumber">Update the required details.</li><li class="listnumber">Click the <strong class="buttons">Save</strong> button on the toolbar.  The updated scheduled function is saved and submitted for reprocessing.</li></ol><p class="bodytext"><a id="h50507_2" class="jump" title="Scheduled Functions" href="50506.htm" target="_self">Need more information on scheduled functions?</a></p>
+</div><p class="bodytext"><a id="h50573" class="expandingblock" title="Reschedule Scheduled Functions" href="javascript:toggleBlock('50573')" target="_self"><img id="i50573" class="expandicon" src="arrowright.gif" alt="" border="0">Rescheduling Scheduled Functions</a></p>
+<div id="d50573" class="expandingblock" style="display:none"><p class="bodytext">To reschedule a scheduled function:</p>
+<ol class="listnumber"><li class="listnumber">Select the <strong class="menuoptions"><strong class="menuoptions">Server Tasks</strong></strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions"><strong class="menuoptions">Scheduled Functions</strong></strong> option.  The <span class="formname">Scheduled Functions Search</span> form is displayed.</li><li class="listnumber">Enter or select the appropriate search criteria and search method.</li><li class="listnumber">Click the <strong class="buttons">Search</strong> button.  A list of summary rows matching the specified criteria is displayed.</li><li class="listnumber">Select the scheduled functions to update, and do one of the following:<ul class="listdashbullet2"><li class="listdashbullet2">Highlight the appropriate summary row or rows and click the <strong class="buttons">Bulk Update</strong> button.  </li><li class="listdashbullet2">Highlight the appropriate summary row and click the <strong class="buttons">View List...</strong> button, or double-click the appropriate summary row.  A list of scheduled functions matching the criteria in the summary row is displayed in the <span class="fieldname">List</span> grid.  Select the appropriate row or rows and click the <strong class="buttons">Update...</strong> button.  </li><li class="listdashbullet2">If viewing a scheduled function in the <span class="formname">Scheduled Functions</span> form, click the <strong class="buttons">Update</strong> button on the toolbar.</li></ul><p class="listcontinue">The S<span class="formname">cheduled Functions</span> form is displayed in Update mode.</p>
+</li><li class="listnumber">Update the <span class="fieldname">Status</span> field of the specified scheduled functions from Failure to Failure (Retries Pending).  Update other required details.</li><li class="listnumber">Click the <strong class="buttons">Save</strong> button on the toolbar.  The updated scheduled function is saved and submitted for reprocessing.</li></ol><p class="bodytext"><a id="h50507_3" class="jump" title="Scheduled Functions" href="50506.htm" target="_self">Need more information on scheduled functions?</a></p>
+</div><p class="bodytext"><a id="h50512" class="expandingblock" title="Stop Scheduled Functions" href="javascript:toggleBlock('50512')" target="_self"><img id="i50512" class="expandicon" src="arrowright.gif" alt="" border="0">Stopping Scheduled Functions</a></p>
+<div id="d50512" class="expandingblock" style="display:none"><p class="bodytext">To stop a scheduled function:</p>
+<ol class="listnumber"><li class="listnumber">Select the <strong class="menuoptions"><strong class="menuoptions">Server Tasks</strong></strong> <img src="menu_arrow.jpg" alt="" height="10" width="13" vspace="2" hspace="2" align="bottom" border="0"> <strong class="menuoptions"><strong class="menuoptions">Scheduled Functions</strong></strong> option.  The <span class="formname">Scheduled Functions Search</span> form is displayed.</li><li class="listnumber">Enter or select the appropriate search criteria and search method.</li><li class="listnumber">Click the <strong class="buttons">Search</strong> button.  A list of summary rows matching the specified criteria is displayed.</li><li class="listnumber">Select the scheduled functions to update, and do one of the following:<ul class="listdashbullet2"><li class="listdashbullet2">Highlight the appropriate summary row or rows and click the <strong class="buttons">Bulk Update</strong> button.  </li><li class="listdashbullet2">Highlight the appropriate summary row and click the <strong class="buttons">View List...</strong> button, or double-click the appropriate summary row.  A list of scheduled functions matching the criteria in the summary row is displayed in the <span class="fieldname">List</span> grid.  Select the appropriate row or rows and click the <strong class="buttons">Update...</strong> button.  </li><li class="listdashbullet2">If viewing a scheduled function in the <span class="formname">Scheduled Functions</span> form, click the <strong class="buttons">Update</strong> button on the toolbar.</li></ul><p class="listcontinue">The <span class="formname">Scheduled Functions</span> form is displayed in Update mode.</p>
+</li><li class="listnumber">Update the <span class="fieldname">Status</span> field of the scheduled functions.  Valid status updates to stop processing a scheduled function are:<ul class="listdashbullet2"><li class="listdashbullet2">Pending to Failure  </li><li class="listdashbullet2">Failure (Retries Pending) to Failure.  </li></ul></li><li class="listnumber">Click the <strong class="buttons">Save</strong> button on the toolbar.  The updated scheduled functions are saved and submitted for reprocessing.</li></ol><p class="bodytext"><a id="h50507_4" class="jump" title="Scheduled Functions" href="50506.htm" target="_self">Need more information on scheduled functions?</a></p>
+</div></div>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="52746.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="50410.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

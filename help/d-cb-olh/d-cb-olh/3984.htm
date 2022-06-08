@@ -1,0 +1,234 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Variables Declared with the @ Symbol </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "40675.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "3982.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('3978');expand('4501');highlight('3984')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="40675.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="3982.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">Variables Declared with the @ Symbol</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Variables Declared with the @ Symbol' (3984)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Local variables with scope only within a single expression are implicitly declared by Convergent Billing using the <span class="unixoutputc">@</span> symbol.  The variables are declared for use in expression in the client application.</p>
+<p class="bodytext">Location and description of variables declared with <span class="unixoutputc">@</span> are listed in the following table.</p>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="648" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="144"><p class="tableheading">Form Containing Variable</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="180"><p class="tableheading">Variable Identifier</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="324"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="formname">Subtotal Definition</span></p>
+</td>
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">@EffectiveDate&lt;type&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Contains effective date of evaluation.  Available only to <span class="fieldname">From Date Expression</span> and <span class="fieldname">To Date Expression</span> fields.</p>
+<p class="tablebodytext"><span class="unixoutputc">&lt;type&gt;</span> contains type declaration character.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="formname">Subtotal Definition</span></p>
+</td>
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">@FromDate&lt;type&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Contains the result of the <span class="fieldname">From Date Expression</span> field.  Available only to <span class="fieldname">To Date Expression field</span>.</p>
+<p class="tablebodytext"><span class="unixoutputc">&lt;type&gt;</span> contains type declaration character.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="formname">Tariff Definition</span></p>
+<p class="tablebodytext"><span class="formname">Derived Attribute Definition</span></p>
+</td>
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">@&lt;key_variable_name&gt;</span><br><span class="unixoutputc">&lt;type&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Contains value to evaluate tariff and derived attribute expressions in <span class="fieldname">Variable Name</span> field.</p>
+<p class="tablebodytext"><span class="unixoutputc">&lt;key_variable_name&gt;</span> is a user-declared variable followed by type declaration character (for example, <span class="unixoutputc">@myKeyVariable$</span> or <span class="unixoutputc">@tier1&amp;</span>).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext">Forms using <span class="unixoutputc">@value</span> variable are listed below.</p>
+</td>
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">@value&lt;type&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Contains value for encoding and decoding sequence or serial numbers.</p>
+<p class="tablebodytext"><span class="unixoutputc">&lt;type&gt;</span> contains type declaration character.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="formname">Tariff Definition</span></p>
+</td>
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">@charge1&lt;type&gt; to @charge10&lt;type&gt;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="324"><p class="tablebodytext">Contains value that refers to charges defined in the <span class="formname">Tariff Definition</span> form.  Each variable refers to one of the charges defined in the grid on the <span class="fieldname">Charges</span> tab (for more information, refer to the <span class="referrals"><a id="h13673" class="jump" title="Customer Care and Product Configuration Guide for Singleview Convergent Billing" href="5535.htm" target="_self">Customer Care and Product Configuration Guide for Singleview Convergent Billing</a></span>).</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">A variable with scope only within a single expression can be declared using the <span class="unixoutputc">@</span> symbol.  The most common example of this is the <span class="unixoutputc">@value&lt;type&gt;</span> variable, used in the Convergent Billing client for encoding and decoding sequence or serial numbers.</p>
+<p class="bodytext">Users can define an expression to format the account number for a customer node by entering an expression such as:</p>
+<p class="bodytext"><span class="unixoutputc">'ACC' + to_string (@value&amp;, '00000000')</span></p>
+<p class="bodytext">The expression takes the account ID of the account being declared in the database, converts it to a string of eight numerals, and prefixes it with the letters '<span class="unixoutputc">ACC'</span>.</p>
+<p class="bodytext">The <span class="unixoutputc">@value</span> variable is used for the purposes listed in the following table.</p>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="642" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="156"><p class="tableheading">Form containing expression</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="198"><p class="tableheading">@value refers to</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="288"><p class="tableheading">Expression returns</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext"><span class="formname">Account Type</span></p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Account ID</p>
+</td>
+<td style="border:1px solid #010101;" width="288"><p class="tablebodytext">Account number</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext"><span class="formname">Adjustment Type</span></p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Adjustment ID</p>
+</td>
+<td style="border:1px solid #010101;" width="288"><p class="tablebodytext">Adjustment number</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext"><span class="formname">Adjustment Type</span></p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Adjustment Batch ID</p>
+</td>
+<td style="border:1px solid #010101;" width="288"><p class="tablebodytext">Adjustment Batch number</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext"><span class="formname">Attribute Type</span></p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">User-entered value</p>
+</td>
+<td style="border:1px solid #010101;" width="288"><p class="tablebodytext">Field validation</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext"><span class="formname">Customer Type</span></p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Customer ID</p>
+</td>
+<td style="border:1px solid #010101;" width="288"><p class="tablebodytext">Customer number</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext"><span class="formname">Derived Attribute</span></p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">List Entry</p>
+</td>
+<td style="border:1px solid #010101;" width="288"><p class="tablebodytext">Current item in list</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext"><span class="formname">Equipment Type</span></p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Equipment ID</p>
+</td>
+<td style="border:1px solid #010101;" width="288"><p class="tablebodytext">Serial No. (encode and decode)</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext"><span class="formname">Equipment Type</span></p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Equipment ID</p>
+</td>
+<td style="border:1px solid #010101;" width="288"><p class="tablebodytext">Network Address (encode and decode)</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext"><span class="formname">Payment Type</span></p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Payment ID</p>
+</td>
+<td style="border:1px solid #010101;" width="288"><p class="tablebodytext">Payment number</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext"><span class="formname">Payment Type</span></p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Receipt ID</p>
+</td>
+<td style="border:1px solid #010101;" width="288"><p class="tablebodytext">Receipt number</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="156"><p class="tablebodytext"><span class="formname">Payment Type</span></p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Payment Batch ID</p>
+</td>
+<td style="border:1px solid #010101;" width="288"><p class="tablebodytext">Batch Payment number</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="40675.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="3982.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

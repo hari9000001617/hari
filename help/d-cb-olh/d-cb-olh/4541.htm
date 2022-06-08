@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Real-time Rating (RTR) Message Formats </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "4539.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "57864.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('4533');expand('4501');highlight('4541')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="4539.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="57864.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">Real-time Rating (RTR) Message Formats</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Real-time Rating (RTR) Message Formats' (4541)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The protocol used for RTR messages is known as the Event Rating Protocol (ERP), and is designed for compatibility with other Convergent Billing message protocols.  Messages consist of ASCII characters and two reserved control characters in a byte stream with no parity.</p>
+<p class="bodytext">ERP messages are generally comprised of variable-length fields with each field terminated by a field delimiter, which is an ASCII 0 (null) character.  Each field delimiter is denoted by a | character.</p>
+<p class="bodytext">The first field in each message is called the length field.  The length field is always eight bytes in length, and contains a text representation of the total (decimal) number of bytes in the message (including the length field itself and all field delimiters).  The maximum length of each message is therefore 65536 bytes.  The length field contains leading zeros.</p>
+<p class="bodytext">Charge messages output by the rating engine include event records and charge records encoded in embedded format.  Each event record and charge record is prefixed with an ASCII 254 (decimal) character when encoded into a charge message.  Each record start byte is represented by a <span class="unixoutputc">@</span> character.</p>
+<p class="bodytext"><strong class="specialbold">Related Topics</strong></p>
+<p class="bodytext">Incoming Messages</p>
+<p class="bodytext"><a id="h4544" class="jump" title="Outgoing Responses" href="4545.htm" target="_self">Outgoing Responses</a></p>
+<p class="bodytext"><a id="h4550" class="jump" title="Outgoing Messages" href="4551.htm" target="_self">Outgoing Messages</a></p>
+<p class="bodytext"><a id="h4560" class="jump" title="Incoming Responses" href="4561.htm" target="_self">Incoming Responses</a></p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o4563"></a><h3 class="heading3">Real-time Rating (RTR) Network Interface</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Real-time Rating (RTR) Network Interface' (4563)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The RTR interface to the rating engine is implemented using named pipes or Berkeley stream sockets over the internet domain.  The RTR interface uses the TCP component of TCP/IP.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">Reading events from a TCP/IP socket is deprecated and provided only for backward compatibility.</p></td></tr></table>
+<p class="bodytext"><strong class="specialbold">Related Topics</strong></p>
+<p class="bodytext">Connection Procedures</p>
+<p class="bodytext"><a id="h4568" class="jump" title="Disconnection Procedures" href="4569.htm" target="_self">Disconnection Procedures</a></p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o4571"></a><h3 class="heading3">Real-time Rating (RTR) Process Configuration</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Real-time Rating (RTR) Process Configuration' (4571)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The following processes need to be configured for RTR, in the order in which they should be configured.  The following processes are only applicable to rating pipelines.  For rating circuits, the rating server (trerate) should be used.</p>
+<p class="bodytext"><strong class="specialbold">Related Topics</strong></p>
+<p class="bodytext"><a id="h4572" class="jump" title="Event Rating (ERT) Configuration" href="4573.htm" target="_self">Event Rating (ERT) Process</a></p>
+<p class="bodytext"><a id="h4574" class="jump" title="Event Rating Output (ERO) Configuration" href="4575.htm" target="_self">Event Rating Output (ERO)</a></p>
+<p class="bodytext"><a id="h4576" class="jump" title="ENM Configuration" href="4577.htm" target="_self">Event Normalisation (ENM) Process</a></p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="4539.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="57864.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

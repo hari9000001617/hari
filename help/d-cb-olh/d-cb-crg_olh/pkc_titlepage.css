@@ -1,0 +1,22 @@
+body
+{
+	padding-left: 15px;
+	background-image:url(titlepage.png);
+	background-repeat:no-repeat;
+	background-color:#ffffff;
+	width: 500px;
+
+}
+
+h1.heading1
+{
+	font-size:0pt;
+	color:#FFFFFF;
+	border:none;
+}
+
+p.titlepagetitle
+{
+	
+}
+

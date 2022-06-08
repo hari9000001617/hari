@@ -1,0 +1,292 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Interface Configuration </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "45829.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "6684.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('6675');highlight('6680')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="45829.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="6684.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Interface Configuration</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Interface Configuration' (6680)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">By default, the Java TRE API uses configuration information from a file called <span class="unixoutputc">EJIENVFILE</span>.  At runtime, the API searches the Java <span class="unixoutputc">CLASSPATH</span> for the<span class="unixoutputc"> EJIENVFILE</span> when a<span class="unixoutputc"> TreConnection</span> class instance is constructed.</p>
+<p class="bodytext"><span class="unixoutputc">EJIENVFILE</span> is a text file that specifies the properties listed in the following table.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Properties Specified by EJIENVFILE</p>
+<table class="tableintopic" width="726" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="144"><p class="tableheading">Property</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="108"><p class="tableheading">Optional/ Mandatory</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="354"><p class="tableheading">Description</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="120"><p class="tableheading">Default</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">HandlerType</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Optional</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext"><span class="unixoutputc">TreHandler</span> instance to use for handling the internal connection to the TRE.</p>
+<p class="tablebodytext">If set to <span class="unixoutputc">Thp</span>, a <span class="unixoutputc">ThpTreHandler</span> instance is created; otherwise, the value is treated as a fully qualified class name.</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">Thp</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">ThpHost</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Mandatory</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Host name for the TRE used by the handler to establish a connection.</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="bodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">ThpPort</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Mandatory</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Host port for the TRE used by the handler to establish a connection.</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="bodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">MessageFiles</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Mandatory (if<span class="unixoutputc"> Message</span><br><span class="unixoutputc">IndexFile</span> is not set)</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Full path of the directory containing the Convergent Billing XML message files.</p>
+<p class="tablebodytext">It is not required if the XML message files are loaded from a jar file (that is, if the <span class="unixoutputc">MessageIndexFile</span> property is set).</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="bodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">MessageIndexFile</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Mandatory (if<span class="unixoutputc"> Message</span><br><span class="unixoutputc">Files</span> is not set)</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Name of the index file in the <span class="unixoutputc">CLASSPATH</span> that contains a list of XML message files.  The name of the index file can include the path.</p>
+<p class="tablebodytext">The XML message files referenced in the index file must reside in the same jar file as the index file in the <span class="unixoutputc">CLASSPATH</span>. The path of the XML message files in the index file should be relative to the root of the jar file.</p>
+<p class="tablebodytext">Using a jar file that contains the XML message files allows the files to be loaded like any other Java class, avoiding problems reading from the disk in security-restricted Java environments.</p>
+<p class="tablebodytext">For example, a jar file containing an index file (<span class="unixoutputc">indexFile</span>) and five XML message files are created:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">indexFile</li><li class="tablelistbullet">msg/00001-00099.xml</li><li class="tablelistbullet">msg/00100-00199.xml</li><li class="tablelistbullet">msg/00200-00209.xml</li><li class="tablelistbullet">msg/00210-00219.xml</li><li class="tablelistbullet">msg/00220-00249.xml</li></ul><p class="tablebodytext">The contents of the index file (<span class="unixoutputc">indexFile</span>) would be:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">msg/00001-00099.xml</li><li class="tablelistbullet">msg/00100-00199.xml</li><li class="tablelistbullet">msg/00200-00209.xml</li><li class="tablelistbullet">msg/00210-00219.xml</li><li class="tablelistbullet">msg/00220-00249.xml</li></ul><p class="tablebodytext">The property would be set <span class="unixoutputc">indexFile</span>.</p>
+<p class="tablebodytext">It is not required if messages are loaded from the file system (that is, if the <span class="unixoutputc">MessageFiles</span> property is set).</p>
+<p class="tablebodytext">If <span class="unixoutputc">MessageFiles</span> and <span class="unixoutputc">MessageIndexFile</span> properties are both set, the <span class="unixoutputc">MessageIndexFile</span> property is used.</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="bodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">LogStats</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Optional</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Flag to enable the connection for subscribing and responding to requests from the TRE Monitor for statistics. If set to any value other than TRUE, remote logging is disabled. </p>
+<p class="tablebodytext">If set to TRUE, <span class="unixoutputc">AsyncEvents</span> should also be enabled.</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">FALSE</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">UseInteger</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Optional</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Flag enabling decoding of <span class="unixoutputc">TRE_LONG</span> parameters to <span class="unixoutputc">java.lang.Integer</span> rather than <span class="unixoutputc">java.lang.Long</span>.</p>
+<p class="tablebodytext">It can be used for backward compatibility with Java TRE API client code written originally for 32 bit Convergent Billing.</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">FALSE</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">ThpSslEnabled</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Optional</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Flag enabling security on the connection to the THP.</p>
+<p class="tablebodytext">The connection is secured using the protocol defined by the <span class="unixoutputc">ThpSslProtocol </span>property or another secure protocol selected by the THP. </p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">FALSE</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">ThpSslProtocol</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Optional</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Protocol to use for securing the connection to the THP.</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">TLSv1.2 (Java 7 and Java 8)</span></p>
+<p class="tablebodytext"><span class="unixoutputc">TLSv1 (Java 6)</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">ThpSslCertVerify</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Optional</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Flag indicating whether or not the security certificate provided by the THP should be verified.</p>
+<p class="tablebodytext">When set to FALSE, it provides a simple way of accepting self-signed security certificates. </p>
+<p class="tablebodytext">Flag is ignored if <span class="unixoutputc">ThpSslEnabled</span> is set to FALSE.</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">TRUE</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">AsyncEvents</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Optional</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Flag enabling the connection to handle events asynchronously as they are received rather than requiring calls to <span class="unixoutputc">treEventCheck()</span>.</p>
+<p class="tablebodytext">Handlers are invoked on an internal thread, therefore, any registered event handlers should be thread safe and should not perform any long running code, blocking calls, or re-entrant calls (for example, TRE calls).</p>
+<p class="tablebodytext">It must be enabled for TRE Monitor statistics support, that is, if <span class="unixoutputc">LogStats</span> is set to TRUE. </p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">FALSE</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">Charset</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Optional</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Character set used for encoding and decoding <span class="unixoutputc">TRE_STRING</span> parameters in TRE calls. </p>
+<p class="tablebodytext">If <span class="unixoutputc">Charset</span> is: </p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Set by the user, the specified value is used. </li><li class="tablelistbullet">Not set by the user, the value is obtained automatically from the server. </li></ul></td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">Default locale character set</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">NoWaitAsync</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Optional</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Flag enabling the <span class="unixoutputc">ThpTreHandler</span> to not wait for confirmation messages from the THP for <span class="unixoutputc">treVariantCall()</span> on ASYNC and QUEUED remote functions, <span class="unixoutputc">treEventPostx()</span> and <span class="unixoutputc">treClientNotify()</span>.</p>
+<p class="tablebodytext">Disabling waiting can improve performance in some circumstances.</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">FALSE</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">ThpTimeout</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Optional</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Socket timeout in milliseconds for <span class="unixoutputc">ThpTreHandler</span> connection to the THP.</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">0 (infinite)</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">ThpInputBuffer</span><br><span class="unixoutputc">Size</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Optional</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Socket receive buffer in bytes for <span class="unixoutputc">ThpTreHandler</span> connection to the THP.</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">0 (platform default)</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">ThpOutputBuffer</span><br><span class="unixoutputc">Size</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Optional</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Socket send buffer in bytes for <span class="unixoutputc">ThpTreHandler</span> connection to the THP.</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext">0 (platform default)</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="unixoutputc">ThpKeepAlive</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Optional</p>
+</td>
+<td style="border:1px solid #010101;" width="354"><p class="tablebodytext">Socket keep-alive option for <span class="unixoutputc">ThpTreHandler</span> connection to the THP.</p>
+<p class="tablebodytext">If socket timeout errors are occurring, set to <span class="unixoutputc">TRUE</span>.</p>
+</td>
+<td style="border:1px solid #010101;" width="120"><p class="tablebodytext"><span class="unixoutputc">FALSE</span></p>
+</td>
+</tr>
+
+</table>
+<p class="tablebodytext">&nbsp;</p>
+<p class="bodytext">The following is an example of a <span class="unixoutputc">EJIENVFILE</span> file:</p>
+<pre class="unixoutputp">HandlerType=Thp</pre>
+<pre class="unixoutputp">ThpHost=raven</pre>
+<pre class="unixoutputp">ThpPort=17805</pre>
+<pre class="unixoutputp">MessageFiles=/home/acct/xps_501/data/java/config</pre>
+<pre class="unixoutputp">LogStats=true</pre>
+<pre class="unixoutputp">UseInteger=false</pre>
+<pre class="unixoutputp">AsyncEvents=true</pre>
+<pre class="unixoutputp">Charset=ISO-8859-1</pre>
+<pre class="unixoutputp">ThpKeepAlive=true</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">As the THP acts as a proxy for a Java applet or application accessing the TRE, the THP must be running before the Java API will work.</p>
+<p class="bodytext">For more information about:</p>
+<ul class="listbullet"><li class="listbullet">The THP, refer to the <span class="referrals">System Reference Guide for Singleview</span>. </li><li class="listbullet">Configuring the THP, refer to the <span class="referrals">System Configuration Guide for Singleview Convergent Billing</span>.</li></ul><p class="bodytext">The Java TRE API uses the Long class rather than the Integer class when working with values of type <span class="unixoutputc">TRE_LONG</span>.  The <span class="unixoutputc">treUseInteger</span> method enables the use of integers for backward compatibility.  The <span class="unixoutputc">UseInteger</span> option specifies that all decoding of <span class="unixoutputc">TRE_LONG</span> will use the <span class="unixoutputc">Integer</span> class.  By default, <span class="unixoutputc">TRE_LONG</span> values are decoded as objects of class Long.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o6683"></a><h3 class="heading3">Support for Process Engine</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Support for Process Engine' (6683)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The Java Transaction Engine supports direct connections to Process Engine.  When a socket connection to the THP process is established (and the <span class="unixoutputc">ThpTreHandler</span> has determined that the socket is connected to a Process Engine server), separate requests are sent to determine the Process Engine session key for the connection and whether the client has system administrator privileges.</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="45829.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="6684.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

@@ -1,0 +1,533 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Identifying Core Facts in Extensible Classes </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Configuration Workbench for Singleview Process Engine 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "9617.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "55517.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('9617');expand('11011');highlight('9618')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="9617.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="55517.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Configuration Workbench for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">Identifying Core Facts in Extensible Classes</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Identifying Core Facts in Extensible Classes' (9618)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Extensible core classes can contain both core and user-defined facts.  Only some attributes of core facts can be updated; for example, the <span class="fieldname">Fact Name</span> attribute cannot be updated for core facts. </p>
+<p class="bodytext">To identify core facts in extensible classes:</p>
+<ul class="listbullet"><li class="listbullet">Select the <strong class="buttons">Lock</strong> option and select the fact in the Fact Tool.  If the <span class="fieldname">Fact Name</span> attribute is greyed-out, the fact is a core fact. </li><li class="listbullet">If the fact key (displayed in the <span class="fieldname">Key</span> field) is less than 2000, the fact is a core fact.</li></ul>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o55539"></a><h3 class="heading3">Extensible Core Classes</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Extensible Core Classes' (55539)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">All extensible core classes can be referenced by a reference fact.</p>
+<p class="bodytext">The following table lists extensible core classes.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Extensible Core Classes</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="174"><p class="tableheading">Class</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="270"><p class="tableheading">Contains</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="252"><p class="tableheading">Database Table</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Action</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Actions, events, milestones, procedures, and comments.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ACTION_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">ACTION_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Action_Classification</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Action classifications (for example, campaign). </p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ACTION_CLASSIFICATION_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">ACTION_CLASSIFICATION_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Audit_Log</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Maintains audit log records.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">AUDIT_LOG_VAL</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Audit_Operation</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Defines the four core operations (Create, Retrieve, Update, and Obsolete) that are selected in an audit profile.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">AUDIT_OPERATION_VAL</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Banner_Message</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Communications banner messages.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">BANNER_MESSAGE_VAL</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Case</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Cases.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">CASE_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">CASE_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Case_Action</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Associations between cases and actions.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">CASE_ACTION_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">CASE_ACTION_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Case_Action_Type</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Types of case action associations (for example, request).</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">CASE_ACTION_TYPE_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">CASE_ACTION_TYPE_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Case_Contact</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Associations between cases and contacts.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">CASE_CONTACT_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">CASE_CONTACT_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Case_Contact_Type</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Types of case contact associations; for example, primary.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">CASE_CONTACT_TYPE_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">CASE_CONTACT_TYPE_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Case_Type</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Types of cases.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">CASE_TYPE_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">CASE_TYPE_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Chart_Type</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Types of chart that can be displayed in the Process Engine web client Graph gadget.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">Process Engine web client ignores extensions to this class.</p></td></tr></table>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">UDOC_VAL</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Contact</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Organisations, people, and users.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">CONTACT_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">CONTACT_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Contact_Action</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Associations between contacts and actions.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">CONTACT_ACTION_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">CONTACT_ACTION_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Contact_Action_Type</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Type of contact action associations (for example, sender).</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">CONTACT_ACTION_TYPE_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">CONTACT_ACTION_TYPE_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Contact_Number</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Contact methods (for example, telephone).</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">CONTACT_NUMBER_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">CONTACT_NUMBER_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Contact_Number_Type</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Types of contact numbers (for example, work).</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">CONTACT_NUMBER_TYPE_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">CONTACT_NUMBER_TYPE_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Contact_Type</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Types of contacts (for example, business).</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">CONTACT_TYPE_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">CONTACT_TYPE_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Content_Types</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Content types.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">CONTENT_TYPES_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">CONTENT_TYPES_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Country</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Countries.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">COUNTY_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">COUNTRY_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Document</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Microsoft Word document that can be automatically generated by an action type.</p>
+<p class="tablebodytext">An action type can have document merge definitions assigned to it, and automatically generate the document when the action is triggered or created.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">DOCUMENT_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">DOCUMENT_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Document_Template</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Document template</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">TEMPLATE_ID</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">External_Defn</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">External definitions.</p>
+<p class="tablebodytext">This class is shared with Convergent Billing.</p>
+<p class="tablebodytext">Process Engine definitions have a non-null <span class="unixoutputc">PE_CLASS_ID</span>.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EXTERNAL_DEFN_TRE_V</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">External_Defn_Element</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">External definition elements for Process Engine external definitions.</p>
+<p class="tablebodytext">This class is shared with Convergent Billing. </p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EXTERNAL_DEFN_ELEMENT_TRE_V</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">External_Defn_<br>Namespace </p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">External definition namespaces.</p>
+<p class="tablebodytext">This class is shared with Convergent Billing. </p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EXTERNAL_DEFN_NAMESPACE_TRE_V</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Gadget_Configuration</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Configuration for Process Engine web client gadgets.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">Process Engine web client ignores extensions to this class.</p></td></tr></table>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">UDOC_VAL</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Gadget_Configuration_<br>Type</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Types of optional Process Engine web client gadgets.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">Process Engine web client ignores extensions to this class.</p></td></tr></table>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">UDOC_VAL</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Gadget_URL</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">External Content URLs available for display in Process Engine web client gadgets.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">Process Engine web client ignores extensions to this class.</p></td></tr></table>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">GADGET_URL_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">GADGET_URL_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Issue</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Issues.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ISSUE_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">ISSUE_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Issue_Action</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Associations between issues and actions.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ISSUE_ACTION_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">ISSUE_ACTION_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Issue_Action_Type</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Types of issue action associations (for example, request).</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ISSUE_ACTION_TYPE_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">ISSUE_ACTION_TYPE_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Issue_Contact</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Associations between issues and contacts.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ISSUE_CONTACT_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">ISSUE_CONTACT_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Issue_Contact_Type</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Types of issues contact associations (for example, complained about).</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ISSUE_CONTACT_TYPE_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">ISSUE_CONTACT_TYPE_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Issue_Type</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Issue types (for example, troubleshooting).</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ISSUE_TYPE_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">ISSUE_TYPE_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Permission</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Permissions that can be assigned to security groups.</p>
+<p class="tablebodytext">Permission is a remote keyless class, mapped to the Convergent Billing <span class="unixoutputc">ATLANTA_PROFILE_GROUP_MAP</span> table.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">Permissions are maintained in Convergent Billing.</p></td></tr></table>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ATLANTA_PROFILE_GROUP_MAP</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Priority</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Priorities (for example, urgent).</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">PRIORITY_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">PRIORITY_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Report</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Objects stored every time a report is run.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">REPORT_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">REPORT_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Report_Definition</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">All reports, which can be run using the <span class="unixoutputc">pe_report</span> server utility.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">REPORT_DEFINITION_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">REPORT_DEFINITION_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Role_Work_Group</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Associations between work groups and profiles.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">Work groups and profiles are maintained in Convergent Billing.</p></td></tr></table>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ATLANTA_PROFILE_WF_MAP</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Sex</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Sex of users and contacts.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">SEX_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">SEX_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Suffix</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Suffixes (for example, Ph.D).</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">SUFFIX_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">SUFFIX_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Team</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Teams (for example, wireless).</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">TEAM_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">TEAM_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Tenant</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Tenant.</p>
+<p class="tablebodytext">Used to support multi-tenancy in PE.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">Maintained in Convergent Billing.</p></td></tr></table>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">TENANT_TRE_V</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Tenant_Status</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Tenant Status.</p>
+<p class="tablebodytext">Represents the current status of the tenant.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">Maintained in Convergent Billing.</p></td></tr></table>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">REFERENCE_CODE</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Title</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Titles of contacts and users (for example, Ms).</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">TITLE_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">TITLE_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Transform_Names</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Transform names.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">TRANSFORM_NAMES_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">TRANSFORM_NAMES_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">User_Profile</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Profiles.</p>
+<p class="tablebodytext">This class is required for display purposes only and enables users to select a Convergent Billing profile when maintaining users in Process Engine.</p>
+<p class="tablebodytext">The profiles are maintained in Convergent Billing.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">PROFILE_TRE_V</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">User_Type</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">User types into which users are grouped.</p>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">USER_TYPE_VAL</span></p>
+<p class="tablebodytext"><span class="unixoutputc">USER_TYPE_BIN</span></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="174"><p class="tablebodytext">Work_Group</p>
+</td>
+<td style="border:1px solid #010101;" width="270"><p class="tablebodytext">Groups of users for assigning action types to a group (instead of individual users) (for example, customer care).</p>
+<p class="tablebodytext">The Work_Group_Manager fact specifies a manager for the work group.  If an action is assigned to a work group but not a specific user, notifications for the assigned user are sent to the work group manager.  Only one manager can be assigned for a work group.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">The Work_Group class is remote and mapped to the Convergent Billing <span class="unixoutputc">WORK_FORCE</span> table. Process Engine cannot create or updated objects in this class.</p></td></tr></table>
+</td>
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">WORK_FORCE</span></p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="9617.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="55517.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Configuration Workbench for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

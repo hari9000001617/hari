@@ -1,0 +1,212 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> B </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "14829.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "14832.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('14827');highlight('14831')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="14829.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="14832.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div>
+<p class="glossaryheading">B</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o347"></a><p class="glossaryitem">Backend Monitor Process (BMP)</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Backend Monitor Process (BMP)' (347)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Server process responsible for controlling and monitoring the Event Rating Broker (BKR) process, the server processes that control scheduling, namely, Scheduled Task Dispatcher (STD) process, and Task Launch and Monitor (TLM) process.  The BMP monitors the status of each process and restarts any that have failed.</p>
+<p class="bodytext">The BMP also listens on a TCP/IP socket for connections, and subsequent commands, from the Expression Control Program (ECP).</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1076" class="glossaryitemjump" title="Expression Control Program (ECP)" href="14834.htm#o554" target="_self">Expression Control Program (ECP)</a>, <a id="h1077" class="glossaryitemjump" title="Event Rating Broker (BKR) Process" href="14834.htm#o545" target="_self">Event Rating Broker (BKR) Process</a>, <a id="h1078" class="glossaryitemjump" title="Expression" href="14834.htm#o551" target="_self">Expression</a>,<a id="h1079" class="glossaryitemjump" title="Scheduled Task Dispatcher (STD) Process" href="14848.htm#o857" target="_self"> Scheduled Task Dispatcher (STD) Process</a>, <a id="h1080" class="glossaryitemjump" title="Task Launch and Monitor (TLM) Process" href="14849.htm#o931" target="_self">Task Launch and Monitor (TLM) Process</a>, and <a id="h1081" class="glossaryitemjump" title="TRE API" href="14849.htm#o961" target="_self">TRE API</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o73833"></a><p class="glossaryitem">Backup</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Backup' (73833)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">An instance state used in multi-instance clusters. This state may differ in detail from the standby state, hence the separate terms.</p>
+<p class="bodytext">Context:  Singleview, High Availability</p>
+<p class="bodytext">See also <a id="h73834" class="glossaryitemjump" title="Standby" href="14848.htm#o73831" target="_self">Standby</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o348"></a><p class="glossaryitem">Balance Forward</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Balance Forward' (348)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Accounting term.  Accounting method used to track outstanding balances, issue invoices and statements, and apply adjustments on customer accounts in the general ledger by maintaining a single on-going balance of a customer's account.  The balance is modified by the posting of transactions to the account.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1082" class="glossaryitemjump" title="Open Item Accounting" href="14844.htm#o726" target="_self">Open Item Accounting</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o349"></a><p class="glossaryitem">Balance Management</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Balance Management' (349)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Process in which customer credit balances are maintained in real time, using a reservations system, for account balance management and event authorisation.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1153" class="glossaryitemjump" title="Commerce Engine" href="14832.htm#o410" target="_self">Commerce Engine</a> and <a id="h1084" class="glossaryitemjump" title="Reservation" href="14847.htm#o59822" target="_self">Reservation</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o73013"></a><p class="glossaryitem">Base64</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Base64' (73013)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">An encoding scheme used to represent binary data in an ASCII format. This encoding scheme is useful when transferring encoded binary data over media that deals with textual data.</p>
+<p class="bodytext">Base64 is commonly used in email using MIME, and when storing complex data in XML.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h58207" class="glossaryitemjump" title="MIME" href="14842.htm#o57962" target="_self">MIME</a> and <a id="h53461" class="jump" title="XML Schema" href="14853.htm#o53459" target="_self">XML Schema</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o350"></a><p class="glossaryitem">Base Product</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Base Product' (350)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Combination of service types, equipment types, tariffs, subtotals, facility groups, and derived attributes required to deliver a competitive product offering.  A product is the only entity sold to a customer.</p>
+<p class="bodytext">Context:  Convergent Billing, Configuration Studio</p>
+<p class="bodytext">See also <a id="h1085" class="glossaryitemjump" title="Base Product Compatibility" href="14831.htm#o351" target="_self">Base Product Compatibility</a>, <a id="h1086" class="glossaryitemjump" title="Companion Product" href="14832.htm#o411" target="_self">Companion Product</a>, and <a id="h1087" class="glossaryitemjump" title="Companion Product Compatibility" href="14832.htm#o412" target="_self">Companion Product Compatibility</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o351"></a><p class="glossaryitem">Base Product Compatibility</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Base Product Compatibility' (351)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Determines whether a:</p>
+<ul class="listbullet"><li class="listbullet">Base product can be used to replace (upgrade) the current base product.</li><li class="listbullet">Companion product can be added to the current base product.</li></ul><p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1088" class="glossaryitemjump" title="Base Product" href="14831.htm#o350" target="_self">Base Product</a>, <a id="h1086_2" class="glossaryitemjump" title="Companion Product" href="14832.htm#o411" target="_self">Companion Product</a>, and <a id="h1087_2" class="glossaryitemjump" title="Companion Product Compatibility" href="14832.htm#o412" target="_self">Companion Product Compatibility</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o11249"></a><p class="glossaryitem">Basis of Accounting</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Basis of Accounting' (11249)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Accounting term.  Accounting method used to determine when expenses and revenue are recognised in the accounts for accounting purposes.  The two bases of accounting methods are: </p>
+<ul class="listbullet"><li class="listbullet">Cash</li><li class="listbullet">Accrual.</li></ul><p class="bodytext">Context:  Singleview</p>
+<p class="bodytext">See also <a id="h11252" class="glossaryitemjump" title="Cash Basis of Accounting" href="14832.htm#o11251" target="_self">Cash Basis of Accounting</a> and <a id="h11254" class="glossaryitemjump" title="Accrual Basis of Accounting" href="14829.htm#o11253" target="_self">Accrual Basis of Accounting</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o57300"></a><p class="glossaryitem">Batch Extractor</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Batch Extractor' (57300)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">A component of batch file processing that extracts Singleview data to a file.</p>
+<p class="bodytext">Context:  Convergent Billing, Singleview</p>
+<p class="bodytext">See also <a id="h57650" class="jump" title="Batch File Processing" href="14831.htm#o55269" target="_self">Batch File Processing</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o55269"></a><p class="glossaryitem">Batch File Processing</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Batch File Processing' (55269)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">File processing that includes batch extraction and batch loading of files from and into Singleview.  </p>
+<p class="bodytext">Context:  Convergent Billing, Singleview</p>
+<p class="bodytext">See also <a id="h55087" class="jump" title="File Processing Manager (FPM)" href="14835.htm#o55085" target="_self">File Processing Manager (FPM)</a>, <a id="h57304" class="jump" title="Batch Extractor" href="14831.htm#o57300" target="_self">Batch Extractor</a>, and <a id="h58873" class="jump" title="Batch Loader" href="14831.htm#o57649" target="_self">Batch Loader</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o57649"></a><p class="glossaryitem">Batch Loader</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Batch Loader' (57649)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">A component of batch file processing that loads files into Singleview.</p>
+<p class="bodytext">Context:  Convergent Billing, Singleview</p>
+<p class="bodytext">See also <a id="h57650_2" class="jump" title="Batch File Processing" href="14831.htm#o55269" target="_self">Batch File Processing</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o435"></a><p class="glossaryitem">Batch Processing</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Batch Processing' (435)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Processing initiated by Convergent Billing processes such as batch billing, report generation, and one-off tasks.  Batch processing does not require a real-time response to external systems.  Batch processing can interact with external systems.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o58193"></a><p class="glossaryitem">Bcc</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Bcc' (58193)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Method of sending an email without revealing the recipient's address to other recipients of an email. It is a field in the email where the addresses of hidden recipients are entered.</p>
+<p class="bodytext">Context:  Process Engine web client, Customer Management</p>
+<p class="bodytext">See also <a id="h58204" class="glossaryitemjump" title="Cc" href="14832.htm#o58192" target="_self">Cc</a></p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o352"></a><p class="glossaryitem">BGP</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'BGP' (352)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Refer to <a id="h1089" class="glossaryitemjump" title="Bill Generation Process (BGP)" href="14831.htm#o353" target="_self">Bill Generation Process (BGP)</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o357"></a><p class="glossaryitem">Bill Cycle</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Bill Cycle' (357)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Period between individual bill runs.  The billing cycle determines the frequency at which invoices (or statements) are sent to customers.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1097" class="glossaryitemjump" title="Billing Process Cycle" href="14831.htm#o359" target="_self">Billing Process Cycle</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o353"></a><p class="glossaryitem">Bill Generation Process (BGP)</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Bill Generation Process (BGP)' (353)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">TRE server (trebgp) that generates billing data based on the costed event records output from the rating engine and customer details extracted from the database.  During this process, the BGP aggregates (accumulates) the costed event records and applies tariffs to the aggregated data before generating billing data records.  The tariffs applied to the aggregated data are generally discount tariffs rather than charge tariffs.</p>
+<p class="bodytext">Like the rating engine, the BGP supports parallel tariffing.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1090" class="glossaryitemjump" title="Costed Event Record" href="14832.htm#o443" target="_self">Costed Event Record</a>, <a id="h1091" class="glossaryitemjump" title="Invoice Generation Process (IGP)" href="14838.htm#o645" target="_self">Invoice Generation Process (IGP)</a>, <a id="h1092" class="glossaryitemjump" title="Parallel Tariffing" href="14845.htm#o739" target="_self">Parallel Tariffing</a>, <a id="h1093" class="glossaryitemjump" title="Rating Engine" href="14847.htm#o807" target="_self">Rating Engine</a>,<strong class="specialbold"> </strong>and <a id="h1074" class="glossaryitemjump" title="Transaction Engine (TRE)" href="14849.htm#o954" target="_self">Transaction Engine</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o354"></a><p class="glossaryitem">Bill Run</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Bill Run' (354)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Process of applying events to a customer record to generate an invoice or a statement.  The two possible operation modes for a bill run are single stream and pipeline.  Single stream is used to process a single customer, pipeline is used to process multiple customers.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1094" class="glossaryitemjump" title="Bill Run Type" href="14831.htm#o355" target="_self">Bill Run Type</a>, <a id="h1095" class="glossaryitemjump" title="Billing" href="14831.htm#o356" target="_self">Billing</a>, and <a id="h1049" class="glossaryitemjump" title="Schedule" href="14848.htm#o855" target="_self">Schedule</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o355"></a><p class="glossaryitem">Bill Run Type</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Bill Run Type' (355)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Specifies any defaults or entity validation for bill runs specified with that type.</p>
+<p class="bodytext">Context:  Convergent Billing, Configuration Studio</p>
+<p class="bodytext">See also <a id="h1096" class="glossaryitemjump" title="Bill Run" href="14831.htm#o354" target="_self">Bill Run</a>, <a id="h1095_2" class="glossaryitemjump" title="Billing" href="14831.htm#o356" target="_self">Billing</a>, and <a id="h1049_2" class="glossaryitemjump" title="Schedule" href="14848.htm#o855" target="_self">Schedule</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o356"></a><p class="glossaryitem">Billing</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Billing' (356)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Stage in the billing process cycle where the costed event records (from the rating engine) are aggregated and any applicable tariffs (typically discount tariffs) are applied.  The output from this stage is a set of invoice data records.  Typically, these records include billed data records, invoice subtotals, and invoice totals.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1097_2" class="glossaryitemjump" title="Billing Process Cycle" href="14831.htm#o359" target="_self">Billing Process Cycle</a> and <a id="h1093_2" class="glossaryitemjump" title="Rating Engine" href="14847.htm#o807" target="_self">Rating Engine</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o358"></a><p class="glossaryitem">Billing Engine</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Billing Engine' (358)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Refer to <a id="h1089_2" class="glossaryitemjump" title="Bill Generation Process (BGP)" href="14831.htm#o353" target="_self">Bill Generation Process (BGP)</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o31393"></a><p class="glossaryitem">Billing Error</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Billing Error' (31393)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Occurs during a bill cycle process.  Errors are a result of incomplete or incorrect customer and service data; for example, when tariffs are entered incorrectly, the wrong termination date is placed on a pricing discount, or when customer accounts and services are delayed by provisioning and final posting.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1098" class="glossaryitemjump" title="Bill Cycle" href="14831.htm#o357" target="_self">Bill Cycle</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o359"></a><p class="glossaryitem">Billing Process Cycle</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Billing Process Cycle' (359)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Full normalisation, rating, billing, and invoice generation cycle for a set of event records input to, and generated by Convergent Billing.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1098_2" class="glossaryitemjump" title="Bill Cycle" href="14831.htm#o357" target="_self">Bill Cycle</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o31394"></a><p class="glossaryitem">Billing Reconciliation</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Billing Reconciliation' (31394)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Describes the actions and processes required when two separate data streams represent the same physical or financial conditions.  Billing reconciliation can be a simple process of reporting on expected inputs compared to actual outputs.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o360"></a><p class="glossaryitem">BKR</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'BKR' (360)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Refer to <a id="h1077_2" class="glossaryitemjump" title="Event Rating Broker (BKR) Process" href="14834.htm#o545" target="_self">Event Rating Broker (BKR) Process</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o361"></a><p class="glossaryitem">BLOB</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'BLOB' (361)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Binary Large Object.  A data type used in Singleview.</p>
+<p class="bodytext">Context:  Singleview</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o363"></a><p class="glossaryitem">Blocked Action</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Blocked Action' (363)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Action that cannot be started because it is dependent on the completion of another action.</p>
+<p class="bodytext">Context:  Process Engine, Customer Management</p>
+<p class="bodytext">See also <a id="h1036" class="glossaryitemjump" title="Action" href="14829.htm#o308" target="_self">Action</a> and <a id="h1033" class="glossaryitemjump" title="Action Group" href="14829.htm#o310" target="_self">Action Group</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o362"></a><p class="glossaryitem">BLOCKTIME</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'BLOCKTIME' (362)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Controls how long a Tuxedo message can block before it times out.  <span class="unixoutputc">SCANUNIT * BLOCKTIME</span> must not exceed 32,767.  The default is such that <span class="unixoutputc">SCANUNIT * BLOCKTIME</span> is approximately 60 seconds.  <span class="unixoutputc">SCANUNIT</span> controls the granularity of check intervals and timeouts.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o364"></a><p class="glossaryitem">BMP</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'BMP' (364)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Refer to <a id="h1099" class="glossaryitemjump" title="Backend Monitor Process (BMP)" href="14831.htm#o347" target="_self">Backend Monitor Process (BMP)</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o56315"></a><p class="glossaryitem">BOM</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'BOM' (56315)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Refer to <a id="h56316" class="glossaryitemjump" title="Byte-Order Marker (BOM)" href="14831.htm#o56313" target="_self">Byte-Order Marker (BOM)</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o365"></a><p class="glossaryitem">Boolean Fact</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Boolean Fact' (365)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Fact with an attribute type with a value of Boolean.  Boolean facts used in layouts are displayed as check boxes.  A Boolean value is either Yes or No.</p>
+<p class="bodytext">Context:  Process Engine, Customer Management</p>
+<p class="bodytext">See also <a id="h1072" class="glossaryitemjump" title="Fact" href="14835.htm#o563" target="_self">Fact</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o366"></a><p class="glossaryitem">Boolean Operator</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Boolean Operator' (366)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Operator used in Boolean expressions.  Valid Boolean operators are AND, OR, and NOT.</p>
+<p class="bodytext">Context:  Process Engine, Customer Management</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o75208"></a><p class="glossaryitem">BP</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'BP' (75208)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Refer to <a id="h75209" class="jump" title="WS-I Basic Profiles (BP)" href="14852.htm#o75207" target="_self">WS-I Basic Profiles (BP)</a>. </p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o69448"></a><p class="glossaryitem">BPMN</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'BPMN' (69448)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">See <a id="h69437" class="glossaryitemjump" title="Business Process Model and Notation (BPMN)" href="14831.htm#o69436" target="_self">Business Process Model and Notation (BPMN)</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o70734"></a><p class="glossaryitem">BPMN Editor</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'BPMN Editor' (70734)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Graphical modelling tool that allows creation and editing of BPMN diagrams.  It is an optional Configuration Studio plug-in.</p>
+<p class="bodytext">Context:  Singleview</p>
+<p class="bodytext">See also <a id="h69438" class="glossaryitemjump" title="Business Process" href="14831.htm#o69435" target="_self">Business Process</a>, <a id="h69437_2" class="glossaryitemjump" title="Business Process Model and Notation (BPMN)" href="14831.htm#o69436" target="_self">Business Process Model and Notation (BPMN)</a>, and <a id="h69450" class="glossaryitemjump" title="JBoss Business Process Management (jBPM)" href="14839.htm#o69447" target="_self">JBoss Business Process Management (jBPM)</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o45972"></a><p class="glossaryitem">Breadcrumb Navigation Path</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Breadcrumb Navigation Path' (45972)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Location of the current page in relation to the Process Engine web client page hierarchy.  The page links in the navigation path represent pages visited to reach the current page.  The links can be used to navigate back to a previous page in the path.</p>
+<p class="bodytext">Context: Process Engine web client, Customer Management</p>
+<p class="bodytext">See also <a id="h46238" class="jump" title="Details Page" href="14833.htm#o46234" target="_self">Details Page</a></p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o368"></a><p class="glossaryitem">BuildStaticInterface Tool</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'BuildStaticInterface Tool' (368)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Static interface creation tool that can be run from the command line and used to create a Java source file with method definitions for Convergent Billing remote functions.  The tool uses the Java Interface to extract data from the billing database to generate corresponding Java function call stubs.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o369"></a><p class="glossaryitem">Built-in Class</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Built-in Class' (369)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Built-in classes are included in Process Engine core software.</p>
+<p class="bodytext">Context:  Process Engine</p>
+<p class="bodytext">See also <a id="h1101" class="glossaryitemjump" title="Process Engine" href="14845.htm#o771" target="_self">Process Engine</a>, <a id="h1102" class="glossaryitemjump" title="Process Engine Business Solutions" href="14845.htm#o773" target="_self">Process Engine Business Solutions</a>, and <a id="h1103" class="glossaryitemjump" title="Core Class" href="14832.htm#o440" target="_self">Core Class</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o370"></a><p class="glossaryitem">Built-in Function</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Built-in Function' (370)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Refer to <a id="h1275" class="glossaryitemjump" title="Function Type" href="14835.htm#o590" target="_self">Function Type</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o69435"></a><p class="glossaryitem">Business Process</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Business Process' (69435)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Sequence of activities, performed by users or systems, to complete a business goal.  When modelled using Business Process Model and Notation (BPMN), the process is represented by a flowchart.</p>
+<p class="bodytext">Context:  Singleview</p>
+<p class="bodytext">See also <a id="h69437_3" class="glossaryitemjump" title="Business Process Model and Notation (BPMN)" href="14831.htm#o69436" target="_self">Business Process Model and Notation (BPMN)</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o69436"></a><p class="glossaryitem">Business Process Model and Notation (BPMN)</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Business Process Model and Notation (BPMN)' (69436)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Graphical representation for specifying business processes in a business process model.</p>
+<p class="bodytext">Context:  Singleview</p>
+<p class="bodytext">See also <a id="h69438_2" class="glossaryitemjump" title="Business Process" href="14831.htm#o69435" target="_self">Business Process</a>, and <a id="h69450_2" class="glossaryitemjump" title="JBoss Business Process Management (jBPM)" href="14839.htm#o69447" target="_self">JBoss Business Process Management (jBPM)</a>.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o56313"></a><p class="glossaryitem">Byte-Order Marker (BOM)</p>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Byte-Order Marker (BOM)' (56313)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The starting bytes of a Unicode file that represent the byte ordering (for example, little endian and big endian).</p>
+<p class="bodytext">Context:  Convergent Billing, Singleview</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="14829.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="14832.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

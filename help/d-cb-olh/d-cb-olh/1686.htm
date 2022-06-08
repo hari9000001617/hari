@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Derived Attributes </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "41341.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "1698.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+<script language="javascript" type="text/javascript" src="dhtml_popup.js"></script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('4501');highlight('1686')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="41341.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="1698.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Derived Attributes</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Derived Attributes' (1686)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Derived attributes are used to derive a new variable based on the values of other variables.  Deriving new variables can be achieved using a simple expression, conditional evaluation (similar to functions), list evaluation type, or table lookup based on single, multiple, or range indexes.</p>
+<p class="bodytext">Regardless of how it is derived, a derived attribute has the same basic properties as other variables and can be used in the same way.  In addition, however, a derived attribute possesses two further attributes: the <a id="h1687" class="popup" title="Result Value Attribute Type" href="javascript:void(0)" onclick="togglePopup('1687','h1687')" target="_self">Result Value Attribute Type</a> and the <a id="h1688" class="popup" title="Evaluation Type" href="javascript:void(0)" onclick="togglePopup('1688','h1688')" target="_self">Evaluation Type</a>.</p>
+<div id="d1688" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1688')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">Specifies the mechanism used to derive the value returned by a derived attribute.  The value of the attribute is derived by evaluating one or more expressions, or by looking up the value in a predefined table of values.  If no value is derived, the value of a predefined default expression is used.  One of the following evaluation types can be specified:</p>
+<ul class="listbullet"><li class="listbullet">Conditional:  Single Value Returned</li><li class="listbullet">Conditional:  Multiple Values Returned</li><li class="listbullet">List</li><li class="listbullet">Simple Expression</li><li class="listbullet">Table Lookup by Best Match</li><li class="listbullet">Table Lookup by Multiple (1-10) Keys</li><li class="listbullet">Table Lookup by Searching</li><li class="listbullet">Table Lookup by Single Range.</li></ul><p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1155" class="glossaryitemjump" title="Derived Attribute" href="14833.htm#o488" target="_self">Derived Attribute</a>, <a id="h38735" class="glossaryitemjump" title="Conditional Expression: Single Value Returned" href="14832.htm#o419" target="_self">Conditional: Single Value Returned</a>, <a id="h38736" class="glossaryitemjump" title="Conditional Expression: Multiple Values Returned" href="14832.htm#o418" target="_self">Conditional: Multiple Values Returned</a>, <a id="h38737" class="glossaryitemjump" title="Lists" href="14841.htm#o672" target="_self">Lists</a>, <a id="h38738" class="glossaryitemjump" title="Simple Expression" href="14848.htm#o881" target="_self">Simple Expression</a>, <a id="h38739" class="glossaryitemjump" title="Table Lookup by Best Match" href="14849.htm#o918" target="_self">Table Lookup by Best Match</a>, <a id="h38740" class="glossaryitemjump" title="Table Lookup by Multiple (1 - 10) Keys" href="14849.htm#o919" target="_self">Table Lookup by Multiple (1-10) Keys</a>, and <a id="h38741" class="glossaryitemjump" title="Table Lookup by Searching" href="14849.htm#o37441" target="_self">Table Lookup by Searching</a>.</p>
+</div><div id="d1687" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1687')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">Specifies the data type of the result value returned by a derived attribute.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1043" class="glossaryitemjump" title="Attribute Type" href="14829.htm#o342" target="_self">Attribute Type</a>, <a id="h1155_2" class="glossaryitemjump" title="Derived Attribute" href="14833.htm#o488" target="_self">Derived Attribute</a>, and <a id="h1295" class="glossaryitemjump" title="Result Value" href="14847.htm#o841" target="_self">Result Value</a>.</p>
+</div><p class="bodytext">One of eight evaluation types can be specified:</p>
+<ul class="listbullet"><li class="listbullet"><a id="h1691" class="popup" title="Conditional Expression: Multiple Values Returned" href="javascript:void(0)" onclick="togglePopup('1691','h1691')" target="_self">Conditional: Multiple Values Returned</a><div id="d1691" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1691')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">Evaluation type used to derive the value of a derived attribute.  Returns the value of the expression associated with each conditional expression that evaluates to TRUE.  The returned values are concatenated, separated by commas.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1155_3" class="glossaryitemjump" title="Derived Attribute" href="14833.htm#o488" target="_self">Derived Attribute</a> and <a id="h1156" class="glossaryitemjump" title="Evaluation Type" href="14834.htm#o538" target="_self">Evaluation Type</a>.</p>
+</div></li><li class="listbullet"><a id="h1690" class="popup" title="Conditional Expression: Single Value Returned" href="javascript:void(0)" onclick="togglePopup('1690','h1690')" target="_self">Conditional: Single Value Returned</a><div id="d1690" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1690')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">Evaluation type used to derive the value of a derived attribute.  Returns the value of the expression corresponding to the first conditional expression that evaluates to TRUE.  If none of the conditions evaluate to TRUE, the value of the specified default expression is returned.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1155_4" class="glossaryitemjump" title="Derived Attribute" href="14833.htm#o488" target="_self">Derived Attribute</a> and <a id="h1156_2" class="glossaryitemjump" title="Evaluation Type" href="14834.htm#o538" target="_self">Evaluation Type</a>.</p>
+</div></li><li class="listbullet"><a id="h1692" class="popup" title="Lists" href="javascript:void(0)" onclick="togglePopup('1692','h1692')" target="_self">List</a><div id="d1692" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1692')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">Derived attribute, with an evaluation type of List, can be used as a component of a product definition, customer type, or service type that defines the type of information to be held in an associated list.  The list defines a set of values that identify items having similar properties or uses (for example, frequently called numbers).</p>
+<p class="bodytext">The values stored in the list are added in response to information obtained from the customer.</p>
+<p class="bodytext">Generally this type of derived attribute is defined for special tariffs to be applied if one or more of the list items are matched during the rating process.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1155_5" class="glossaryitemjump" title="Derived Attribute" href="14833.htm#o488" target="_self">Derived Attribute</a> and <a id="h1156_3" class="glossaryitemjump" title="Evaluation Type" href="14834.htm#o538" target="_self">Evaluation Type</a>.</p>
+</div></li><li class="listbullet"><a id="h1689" class="popup" title="Simple Expression" href="javascript:void(0)" onclick="togglePopup('1689','h1689')" target="_self">Simple Expression</a><div id="d1689" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1689')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">Evaluation type used to derive the value of a derived attribute.  Returns the value of a single expression; no other evaluation is performed.  Typically, this evaluation type is used to define a derived attribute from a direct variable.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1155_6" class="glossaryitemjump" title="Derived Attribute" href="14833.htm#o488" target="_self">Derived Attribute</a> and <a id="h1391" class="glossaryitemjump" title="Direct Variable" href="14833.htm#o495" target="_self">Direct Variable</a>.</p>
+</div></li><li class="listbullet"><a id="h1694" class="popup" title="Table Lookup by Best Match" href="javascript:void(0)" onclick="togglePopup('1694','h1694')" target="_self">Table Lookup by Best Match</a><div id="d1694" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1694')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">Evaluation type used to derive the value of a derived attribute.  Table Lookup by Best Match allows up to ten indexes to be defined as the keys into the look-up table.  Any result value returned must match all of the indexes specified.  </p>
+<p class="bodytext">Table Lookup by Best Match compares the index expression with each predefined index value held in a table of values (known as a look-up table).  The best match (the value having the longest matching prefix) for the specified index is determined and the corresponding result value (also held in the look-up table) is returned.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1155_7" class="glossaryitemjump" title="Derived Attribute" href="14833.htm#o488" target="_self">Derived Attribute</a>, <a id="h1156_4" class="glossaryitemjump" title="Evaluation Type" href="14834.htm#o538" target="_self">Evaluation Type</a>, <a id="h1296" class="glossaryitemjump" title="Index Expression" href="14838.htm#o624" target="_self">Index Expression</a>, <a id="h1294" class="glossaryitemjump" title="Lookup Table" href="14841.htm#o682" target="_self">Lookup Table</a>, and <a id="h1295_2" class="glossaryitemjump" title="Result Value" href="14847.htm#o841" target="_self">Result Value</a>.</p>
+</div></li><li class="listbullet"><a id="h1695" class="popup" title="Table Lookup by Multiple (1 - 10) Keys" href="javascript:void(0)" onclick="togglePopup('1695','h1695')" target="_self">Table Lookup by Multiple (1-10) Keys</a><div id="d1695" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1695')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">Evaluation type used to derive the value of a derived attribute.  Table Lookup by Multiple allows up to ten indexes to be defined as the keys into the look-up table.  Any result value returned must match all of the indexes specified.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1155_8" class="glossaryitemjump" title="Derived Attribute" href="14833.htm#o488" target="_self">Derived Attribute</a>, <a id="h1156_5" class="glossaryitemjump" title="Evaluation Type" href="14834.htm#o538" target="_self">Evaluation Type</a>, and <a id="h1295_3" class="glossaryitemjump" title="Result Value" href="14847.htm#o841" target="_self">Result Value</a>.</p>
+</div></li><li class="listbullet"><a id="h37442" class="popup" title="Table Lookup by Searching" href="javascript:void(0)" onclick="togglePopup('37442','h37442')" target="_self">Table Lookup by Searching</a><div id="d37442" class="clickpopup" style="display:none"><a href="javascript:hidePopup('37442')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">Evaluation type used to derive the value of a derived attribute.  Table Lookup by Searching allows up to ten indexes to be specified as the keys into the lookup table and supports population of wildcards.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1155_9" class="glossaryitemjump" title="Derived Attribute" href="14833.htm#o488" target="_self">Derived Attribute</a>, <a id="h1156_6" class="glossaryitemjump" title="Evaluation Type" href="14834.htm#o538" target="_self">Evaluation Type</a>, <a id="h1293" class="glossaryitemjump" title="Index Value" href="14838.htm#o625" target="_self">Index Value</a>, and <a id="h1295_4" class="glossaryitemjump" title="Result Value" href="14847.htm#o841" target="_self">Result Value</a>.</p>
+</div></li><li class="listbullet"><a id="h1696" class="popup" title="Table Lookup by Single Range" href="javascript:void(0)" onclick="togglePopup('1696','h1696')" target="_self">Table Lookup by Single Range</a>.<div id="d1696" class="clickpopup" style="display:none"><a href="javascript:hidePopup('1696')"><img src="close.gif" align="right" alt="Close" border="0"></a><p class="bodytext">Evaluation type used to derive the value of a derived attribute.  Table Lookup by Single Range allows a single index expression to be defined as the key into a look-up table that contains one or more ranges of values.  When a table row is found with a range that includes the value of the index expression, the corresponding result value is returned.</p>
+<p class="bodytext">Context:  Convergent Billing</p>
+<p class="bodytext">See also <a id="h1155_10" class="glossaryitemjump" title="Derived Attribute" href="14833.htm#o488" target="_self">Derived Attribute</a>, <a id="h1156_7" class="glossaryitemjump" title="Evaluation Type" href="14834.htm#o538" target="_self">Evaluation Type</a>, and <a id="h1295_5" class="glossaryitemjump" title="Result Value" href="14847.htm#o841" target="_self">Result Value</a>.</p>
+</div></li></ul><p class="bodytext">The value of the attribute is usually derived by evaluating one or more expressions or by looking up the value in a predefined table of values.  If no value is derived, the value of the specified default expression is used.</p>
+<p class="bodytext">The name of a derived attribute must be unique for the date range of the function when compared to all other variables (for example, functions, derived attributes, subtotals, tariffs, and direct variables).  </p>
+<p class="bodytext">The rules for naming are:</p>
+<ul class="listbullet"><li class="listbullet">For a scalar data type: <ul class="listdashbullet2"><li class="listdashbullet2">The name, data type, and interface number combination must be unique when compared to other functions.</li><li class="listdashbullet2">The name and data type combination must be unique when compared to other (non-function) variables.</li></ul></li><li class="listbullet">For a hash type, the name (excluding the data type) must be unique when compared to other hash type variables.</li><li class="listbullet">For an array type, the name (excluding the data type) must be unique when compared to other array type variables.</li></ul><p class="bodytext">For more information about derived attributes, refer to the <span class="referrals"><a id="h13666" class="jump" title="Configuration Fundamentals Guide for Singleview Convergent Billing" href="5533.htm" target="_self">Configuration Fundamentals Guide for Singleview Convergent Billing</a></span>.</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="41341.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="1698.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

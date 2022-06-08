@@ -1,0 +1,620 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Adjustment Variables (ADJUSTMENT) </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "6291.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "58835.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('58085');highlight('6292')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="6291.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="58835.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Adjustment Variables (ADJUSTMENT)</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Adjustment Variables (ADJUSTMENT)' (6292)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The following table lists the entity validation variables associated with the <span class="unixoutputc">ADJUSTMENT</span> view.</p>
+<p class="syntaxheading">Variable Definitions</p>
+<table class="tableintopic" width="702" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="234"><p class="tableheading">Variable</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="150"><p class="tableheading">View Field</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="102"><p class="tableheading">Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="216"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdAllocatedAdjustmentId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">ALLOCATED_</span><br><span class="unixoutputc">ADJUSTMENT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">ID of the allocated adjustment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdAccountNumber$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdAccountNumber$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Number of the account associated with the adjustment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdAmount#</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdAmount#</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Real</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Amount of the adjustment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdBatchId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdBatchId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">ADJUSTMENT_BATCH_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">ID of the adjustment batch.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdBatchNumber$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdBatchNumber$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">ADJUSTMENT_BATCH_</span><br><span class="unixoutputc">NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Adjustment batch number.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdBatchStatus&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdBatchStatus&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">BATCH_STATUS_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Adjustment batch status.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdCredit#</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdCredit#</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">CREDIT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Real</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Amount of a credit adjustment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdCreditAccountNumber$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdCreditAccount</span><br><span class="unixoutputc">Number$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">CREDIT_ACCOUNT_</span><br><span class="unixoutputc">NODE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Number of the account to which the adjustment is applied.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdCreditAccountId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdCreditAccountId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">CREDIT_ACCOUNT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">ID of the account to which the adjustment is applied.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdCreditCustomerNode</span><br><span class="unixoutputc">Name$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdCreditCustomerNode</span><br><span class="unixoutputc">Name$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">CREDIT_CUSTOMER_</span><br><span class="unixoutputc">NODE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Name of the customer node to which the adjustment is applied.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdCreditGLCodeId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdCreditGLCodeId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">CREDIT_GL_CODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">ID of the GL code to which the adjustment is applied.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdCurrencyId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdCurrencyId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">CURRENCY_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Currency of the adjustment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">EvAdjdCustomerInvoiceStr$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdCustomerInvoiceStr$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_INVOICE_</span><br><span class="unixoutputc">STR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Text associated with the adjustment that is displayed on an invoice.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">EvAdjdCustomerQueryNumber$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdCustomerQuery</span><br><span class="unixoutputc">Number$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_QUERY_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Number of a customer query associated with the adjustment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdCustomerQueryId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdCustomerQueryId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_QUERY_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">ID of a customer query associated with the adjustment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdDate~</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">ADJUSTMENT_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Date of the adjustment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdDebitAccountNumber$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdDebitAccountNumber$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">DEBIT_ACCOUNT_</span><br><span class="unixoutputc">NODE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Number of the account from which the adjustment is made.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdDebitAccountId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdDebitAccountId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">DEBIT_ACCOUNT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">ID of the account from which the adjustment is made.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdDebitCustomerNodeName$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdDebitCustomerNode</span><br><span class="unixoutputc">Name$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">DEBIT_CUSTOMER_</span><br><span class="unixoutputc">NODE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Name of the customer node from which the adjustment is made.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdDebitGLCodeId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdDebitGLCodeId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">DEBIT_GL_CODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">ID of the GL code from which the adjustment is made.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdDescription$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdDescription$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">DESCRIPTION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Description of the adjustment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdEnableAging&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">ENABLE_AGING_IND_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Enables aging according to the aging rules of <span class="unixoutputc">TO_ACCOUNT_ID</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdFromAccountNumber$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdFromAccountNumber$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">FROM_ACCOUNT_</span><br><span class="unixoutputc">NODE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Deprecated.</p>
+<p class="tablebodytext">Use <span class="unixoutputc">evAdjdDebitAccountNumber$</span> and <span class="unixoutputc">evOldAdjdDebitAccount</span><br><span class="unixoutputc">Number$</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdFromAccountId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdFromAccountId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">FROM_ACCOUNT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Deprecated.</p>
+<p class="tablebodytext">Use <span class="unixoutputc">evAdjdDebitAccountId&amp;</span> and <span class="unixoutputc">evOldAdjdDebitAccountId&amp;</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">EvAdjdFromCustomerNodeName$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdFromCustomerNode</span><br><span class="unixoutputc">Name$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">FROM_CUSTOMER_</span><br><span class="unixoutputc">NODE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Deprecated.</p>
+<p class="tablebodytext">Use <span class="unixoutputc">evAdjdDebitCustomerNodeName$</span> and <span class="unixoutputc">evOldAdjdDebitCustomerNode</span><br><span class="unixoutputc">Name$</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdFromGLCodeId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdFromGLCodeId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">FROM_GL_CODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Deprecated.</p>
+<p class="tablebodytext">Use <span class="unixoutputc">evAdjdCreditGLCodeId&amp;</span> and <span class="unixoutputc">evOldAdjdCreditGLCodeId&amp;</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdGeneral1$ -</span><br><span class="unixoutputc">evAdjdGeneral10$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdGeneral1$</span> -<br><span class="unixoutputc">evOldAdjdGeneral10$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">GENERAL_1</span> -<br><span class="unixoutputc">GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">General fields 1 - 10.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">ADJUSTMENT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">ID of the adjustment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdImageGenerated&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">IMAGE_GENERATED_</span><br><span class="unixoutputc">IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Indicator that an invoice was generated for the adjustment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdInvoice&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdInvoice&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">ADJUSTMENT_</span><br><span class="unixoutputc">INVOICE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Summary of the details in the <span class="unixoutputc">ADJUSTMENT_INVOICE</span> table for the adjustment. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Invoice (0): The adjustment is against a single invoice (distributed across zero or more receivable types).</li><li class="tablelistbullet">Split (1): The adjustment is against one or more invoices, adjustments, payments, and/or a direct credit or debit to the account.</li><li class="tablelistbullet">Unallocated (2): The adjustment is a direct credit or debit to the account (distributed across zero or more receivable types).</li><li class="tablelistbullet">Adjustment (3): The adjustment is against another adjustment (for example, where a debit note is allocated to a credit note).</li><li class="tablelistbullet">Payment (4): The adjustment is against a payment (for example, where a debit note is allocated to a payment).</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdInvoiceFormatId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">INVOICE_FORMAT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Reference to the adjustment note invoice format.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdInvoiceFormatName$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">INVOICE_FORMAT_</span><br><span class="unixoutputc">NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Name of the invoice format.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdInvoiceId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdInvoiceId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">INVOICE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">ID of the invoice with which the adjustment is associated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdLastModified~</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdLastModified~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">LAST_MODIFIED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Date the adjustment was last modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdNumber$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdNumber$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">ADJUSTMENT_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Number of the adjustment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdOperatorId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdOperatorId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">ATLANTA_OPERATOR_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">ID of the system user responsible for the adjustment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdPaymentId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">PAYMENT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">ID of the payment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdPendingGeneration&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">PENDING_</span><br><span class="unixoutputc">GENERATION_IND_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">ID indicating the adjustment is awaiting image generation.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdPendingPrint&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">PENDING_PRINT_</span><br><span class="unixoutputc">IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">ID indicating the adjustment is awaiting image printing.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdPrinted&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">PRINTED_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">ID indicating the adjustment was printed or emailed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdReceivedDate~</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdReceivedDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">ADJUSTMENT_</span><br><span class="unixoutputc">RECEIVED_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Date that the adjustment was received.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdStatus&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">ADJUSTMENT_</span><br><span class="unixoutputc">STATUS_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">ID indicating the status of the adjustment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdStoredImageType&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">STORED_IMAGE_</span><br><span class="unixoutputc">TYPE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (2)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">ID indicating the type of image stored in <span class="unixoutputc">ADJUSTMENT_IMAGE</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdText$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdText$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">ADJUSTMENT_TEXT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Text that is displayed on the customer invoice in the summary section with the details of the invoice adjustment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdToAccountId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdToAccountId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">TO_ACCOUNT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Deprecated.</p>
+<p class="tablebodytext">Use <span class="unixoutputc">evOldAdjdCreditAccountId&amp;</span> and <span class="unixoutputc">evAdjdCreditAccountId&amp;</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdToAccountNumber$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdToAccountNumber$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">TO_ACCOUNT_NODE_</span><br><span class="unixoutputc">NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Deprecated.</p>
+<p class="tablebodytext">Use <span class="unixoutputc">evAdjdCreditAccountNumber$</span> and <span class="unixoutputc">evOldAdjdCreditAccount</span><br><span class="unixoutputc">Number$</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">EvAdjdToCustomerNodeName$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdToCustomerNodeName$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">TO_CUSTOMER_NODE_</span><br><span class="unixoutputc">NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String (80)</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Deprecated.</p>
+<p class="tablebodytext">Use <span class="unixoutputc">evAdjdCreditCustomerNode</span><br><span class="unixoutputc">Name$</span> and <span class="unixoutputc">evOldAdjdCreditCustomer</span><br><span class="unixoutputc">NodeName$</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdToGLCodeId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdToGLCodeId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">TO_GL_CODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">Deprecated.</p>
+<p class="tablebodytext">Use <span class="unixoutputc">evAdjdDebitGLCodeId&amp;</span> and <span class="unixoutputc">evOldAdjdDebitGLCodeId&amp;</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">evAdjdTypeId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldAdjdTypeId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext"><span class="unixoutputc">ADJUSTMENT_TYPE_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext">ID of the adjustment type.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="6291.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="58835.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

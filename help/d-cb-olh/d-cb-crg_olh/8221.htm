@@ -1,0 +1,201 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> IDL Notation </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "8220.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "8226.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('8220');expand('8219');highlight('8221')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="8220.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="8226.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">IDL Notation</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'IDL Notation' (8221)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The interface to properties and methods detailed in the following sections are expressed in Interface Description Language (IDL).</p>
+<p class="bodytext">The syntax is in the following format:</p>
+<pre class="unixinputp">[operation, dispatch_id] HRESULT _stdcallmethod_name([modifier, retval] PARAM_TYPE param_name)</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The following table displays the elements of the IDL syntax.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">IDL Field Descriptions</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="104"><p class="tableheading">Field Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="208"><p class="tableheading">Description</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="109"><p class="tableheading">Possible Values</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="275"><p class="tableheading">Value Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" rowspan="2" width="104"><p class="tablebodytext"><span class="unixoutputc">operation</span></p>
+</td>
+<td style="border:1px solid #010101;" rowspan="2" width="208"><p class="tablebodytext">Specifies how the method operates.</p>
+<p class="tablebodytext">If it has a value, the method acts as a property.</p>
+</td>
+<td style="border:1px solid #010101;" width="109"><p class="tablebodytext"><span class="unixoutputc">propget</span></p>
+</td>
+<td style="border:1px solid #010101;" width="275"><p class="tablebodytext">Retrieves a value from the property.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="109"><p class="tablebodytext"><span class="unixoutputc">propput</span></p>
+</td>
+<td style="border:1px solid #010101;" width="275"><p class="tablebodytext">Assigns a value to the property.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" rowspan="3" width="104"><p class="tablebodytext"><span class="unixoutputc">dispatch_id</span></p>
+</td>
+<td style="border:1px solid #010101;" rowspan="3" width="208"><p class="tablebodytext">Dispatch ID.</p>
+<p class="tablebodytext">It is a unique number that can be used as an alternative to the name of the method.</p>
+</td>
+<td style="border:1px solid #010101;" width="109"><p class="tablebodytext"><span class="unixoutputc">0x1</span> to <span class="unixoutputc">0x19</span></p>
+</td>
+<td style="border:1px solid #010101;" width="275"><p class="tablebodytext">Standard methods and properties.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="109"><p class="tablebodytext"><span class="unixoutputc">0x20</span> to <span class="unixoutputc">0x39</span></p>
+</td>
+<td style="border:1px solid #010101;" width="275"><p class="tablebodytext">Application specific properties.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="109"><p class="tablebodytext"><span class="unixoutputc">0x40</span> onwards</p>
+</td>
+<td style="border:1px solid #010101;" width="275"><p class="tablebodytext">Application specific methods.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="104"><p class="tablebodytext"><span class="unixoutputc">method_name</span></p>
+</td>
+<td style="border:1px solid #010101;" width="208"><p class="tablebodytext">Name of the method or property.</p>
+</td>
+<td style="border:1px solid #010101;" width="109"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="275"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" rowspan="3" width="104"><p class="tablebodytext"><span class="unixoutputc">modifier</span></p>
+</td>
+<td style="border:1px solid #010101;" rowspan="3" width="208"><p class="tablebodytext">Specifies how the parameters passed by the method are handled.</p>
+</td>
+<td style="border:1px solid #010101;" width="109"><p class="tablebodytext">in</p>
+</td>
+<td style="border:1px solid #010101;" width="275"><p class="tablebodytext">The controlling process (server) sends a parameter to the client process.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="109"><p class="tablebodytext">out</p>
+</td>
+<td style="border:1px solid #010101;" width="275"><p class="tablebodytext">The controlling process (server) is passed a parameter from the client process.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="109"><p class="tablebodytext">In, out</p>
+</td>
+<td style="border:1px solid #010101;" width="275"><p class="tablebodytext">A parameter is passed in both directions.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="104"><p class="tablebodytext"><span class="unixoutputc">retval</span></p>
+</td>
+<td style="border:1px solid #010101;" width="208"><p class="tablebodytext">Specifies that a value be returned.</p>
+</td>
+<td style="border:1px solid #010101;" width="109"><p class="bodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="275"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="104"><p class="tablebodytext"><span class="unixoutputc">PARAM_TYPE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="208"><p class="tablebodytext">Data type of parameter.</p>
+</td>
+<td style="border:1px solid #010101;" width="109"><p class="bodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="275"><p class="bodytext">&nbsp;</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="104"><p class="tablebodytext"><span class="unixoutputc">param_name</span></p>
+</td>
+<td style="border:1px solid #010101;" width="208"><p class="tablebodytext">Name of the parameter.</p>
+</td>
+<td style="border:1px solid #010101;" width="109"><p class="bodytext">&nbsp;</p>
+</td>
+<td style="border:1px solid #010101;" width="275"><p class="bodytext">&nbsp;</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o8222"></a><h4 class="heading4">Example 1</h4>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Example 1' (8222)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Example 1 is an example of a property definition represented in IDL:</p>
+<p class="bodytext"><span class="unixoutputc">[propget, id(0x0000002B)] HRESULT _stdcall</span><br><span class="unixoutputc">    PropertyName([out, retval] VARIANT);</span></p>
+<p class="bodytext">The property definition describes a read-only method called <span class="unixoutputc">PropertyName</span>, which is a<span class="unixoutputc"> VARIANT</span> data type, with a hexadecimal dispatch ID of 2B.</p>
+<p class="bodytext">The presence of <span class="unixoutputc">propget</span> indicates that the property will retrieve a value from the automation server.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o8223"></a><h4 class="heading4">Example 2</h4>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Example 2' (8223)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Example 2 is an example of a method definition represented in IDL:</p>
+<p class="bodytext"><span class="unixoutputc">[id(0x0000002C)] HRESULT _stdcall MethodName([in] BSTR x, [in,out] VARIANT_BOOL *y, [out] VARIANT *z);</span></p>
+<p class="bodytext">The method definition describes a method called <span class="unixoutputc">MethodName</span> that has the following parameters:</p>
+<ul class="listbullet"><li class="listbullet"><span class="unixoutputc">x</span>, which is used as a return value from the client process.</li><li class="listbullet"><span class="unixoutputc">y,</span> which is both exported and used for a return value from the client process.</li><li class="listbullet"><span class="unixoutputc">z,</span> which is used to export a value from the controlling process.</li></ul><p class="bodytext">The method has a hexadecimal dispatch ID of 2C.</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="8220.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="8226.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

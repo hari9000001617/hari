@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Remote System Facts Tab Attributes </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Configuration Workbench for Singleview Process Engine 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "10088.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "11419.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11418');expand('10987');highlight('10098')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="10088.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="11419.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Configuration Workbench for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">Remote System Facts Tab Attributes</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Remote System Facts Tab Attributes' (10098)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Attributes on the <span class="fieldname">Remote System Facts</span> tab are divided into the following tabs:</p>
+<ul class="listbullet"><li class="listbullet"><span class="fieldname">System Facts,</span> which contains <a id="h43728" class="jump" title="System Facts Tab" href="10098.htm#o10099" target="_self">system facts</a>.</li><li class="listbullet"><span class="fieldname">Date Ranging</span>, which contains the groups for:<ul class="listdashbullet2"><li class="listdashbullet2"><a id="h43730" class="jump" title="Date Ranging Tab" href="10098.htm#o10101" target="_self">Date ranging</a></li><li class="listdashbullet2">Date ranging facts.</li></ul></li></ul>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o10099"></a><h4 class="heading4">System Facts Tab </h4>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'System Facts Tab ' (10099)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The mandatory facts that must be defined are name, security group, last update, and obsolete date.</p>
+<p class="bodytext">These facts must be mapped if stored and the class is Remote Master or Keyless.  The Last Update and Obsolete Date facts are defined as &lt;&lt;No Storage&gt;&gt; when the class is defined as the Remote Master.  However, remote storage can be specified for these facts in the normal way.  If the class is Local Master, these facts must be local and cannot be &lt;&lt;No Storage&gt;&gt;.</p>
+<p class="bodytext">Optional system facts are only enabled if the corresponding facts are defined in the <span class="fieldname">Detail</span> tab; otherwise, they are disabled.</p>
+<p class="bodytext">The following table lists <span class="fieldname">System Facts</span> tab attributes.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">System Facts Tab Attributes</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="180"><p class="tableheading">Attribute</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="516"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="fieldname">Name Fact Column</span> field</p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">Mandatory.</p>
+<p class="tablebodytext">Specifies the column that maps to the local Name fact.</p>
+<p class="tablebodytext">Defined as local storage or a column name from the remote table.</p>
+<p class="tablebodytext">It can be assigned only to a string data type column.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="fieldname">Security Group Fact Column</span> field</p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">Mandatory.</p>
+<p class="tablebodytext">Specifies the column that maps to the local Security Group fact.</p>
+<p class="tablebodytext">Defined as local storage or a column name from the remote table.</p>
+<p class="tablebodytext">It can be assigned only to an integer or string data type column.</p>
+<p class="tablebodytext">If integrating with Convergent Billing, this fact is typically mapped to the <span class="unixoutputc">ATLANTA_GROUP_ID</span> or <span class="unixoutputc">GROUP_ID</span> column.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="fieldname">Last Update Fact Column</span> field</p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">Mandatory.</p>
+<p class="tablebodytext">Specifies the column that maps to the local Last Update fact.</p>
+<p class="tablebodytext">Defined as local storage or a column name from the remote table.</p>
+<p class="tablebodytext">It can be assigned only to a decimal, date, or string data type column.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="fieldname">Obsolete Date Fact Column</span> field</p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">Mandatory.</p>
+<p class="tablebodytext">Specifies the column that maps to the local Obsolete Date fact.</p>
+<p class="tablebodytext">Defined as local storage or a column name from the remote table.</p>
+<p class="tablebodytext">It can be assigned only to a decimal, date, or string data type column.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">If integrating with Convergent Billing, this fact is not mapped and remains as &lt;&lt;No Storage&gt;&gt; because Convergent Billing does not have the concept of obsolete objects.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="fieldname">Status Fact Column</span> field</p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">Optional.</p>
+<p class="tablebodytext">Specifies the column that maps to the local Status fact.</p>
+<p class="tablebodytext">Defined as local storage or a column name from the remote table.</p>
+<p class="tablebodytext">It can be assigned only to an integer or string data type column.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="fieldname">Type Fact Column</span> field</p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">Optional.</p>
+<p class="tablebodytext">Specifies the column that maps to the local Type fact.  Defined as local storage or a column name from the remote table.</p>
+<p class="tablebodytext">It can be assigned only to an integer or string data type column.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="fieldname">Display Name Fact Column</span> field</p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">Optional.</p>
+<p class="tablebodytext">Specifies the column that maps to the local Display Name fact.  Defined as local storage or a column name from the remote table.</p>
+<p class="tablebodytext">It can be assigned only to an integer or string data type column.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="fieldname">Description Fact Column</span> field</p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">Optional.</p>
+<p class="tablebodytext">Specifies the column that maps to the local Description fact.  Defined as local storage or a column name from the remote table.</p>
+<p class="tablebodytext">It can be assigned only to a string data type column.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o10101"></a><h4 class="heading4">Date Ranging Tab</h4>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Date Ranging Tab' (10101)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="fieldname">Date Ranging</span> group specifies date ranging for the class.  The options are:</p>
+<ul class="listbullet"><li class="listbullet"><span class="fieldname">No date ranging</span></li><li class="listbullet"><span class="fieldname">Date-only ranging</span></li><li class="listbullet"><span class="fieldname">Date-time ranging</span>.</li></ul><p class="bodytext">Select the option corresponding to the date-time ranging used in the remote table.  For more information about date ranging, refer to the <span class="referrals">Configuration Guide for Singleview Process Engine</span>.</p>
+
+<table class="cautionstyle" width="100%"><tr><td><p class="caution">Caution:</p><ul class="cautionlistbullet"><li class="cautionlistbullet">If date-time ranging is used, it is recommended that all classes are date-time ranged.  If some classes are date-time ranged and some are date-only ranged, this may result in unexpected behaviour. </li><li class="cautionlistbullet">If a date ranging option that does not correspond to the date ranging used in the remote table is selected, errors will occur in Process Engine. </li><li class="cautionlistbullet">Errors may occur if a class is changed from date-time to date-only ranging after data is created in the class.</li><li class="cautionlistbullet">Enabling date-time ranging can result in frequent retrieval of shared class objects from remote databases, which can negatively impact system performance.</li></td></tr></table></ul>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o11423"></a><h4 class="heading4">Date Ranging Facts Group</h4>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Date Ranging Facts Group' (11423)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="fieldname">Start Date Fact</span> and <span class="fieldname">End Date Fact</span> fields must be defined before a remote column can be mapped for the start and end dates.  The &lt;new&gt; option and arrow can be used to define appropriate facts.</p>
+<p class="bodytext">The <span class="fieldname">Date Ranging Facts</span> group is only enabled if the <span class="fieldname">Date-only ranging</span> or <span class="fieldname">Date-time ranging</span> option is selected in the <span class="fieldname">Date Ranging</span> group.</p>
+<p class="bodytext">The following table lists <span class="fieldname">Date Ranging Facts</span> group attributes.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Date Ranging Facts Group Attributes</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="162"><p class="tableheading">Attribute</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="534"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="fieldname">Start Date Fact </span>field</p>
+</td>
+<td style="border:1px solid #010101;" width="534"><p class="tablebodytext">Specifies the fact in Process Engine mapped to the Convergent Billing <span class="fieldname">Start Date Fact Column</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="fieldname">Start Date Fact Column </span>field</p>
+</td>
+<td style="border:1px solid #010101;" width="534"><p class="tablebodytext">Specifies the column in Convergent Billing containing the start date.</p>
+<p class="tablebodytext">It is typically mapped to the <span class="unixoutputc">EFFECTIVE_START_DATE</span> the start date.</p>
+<p class="tablebodytext">It can be assigned only to a decimal, date, or string data type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="fieldname">End Date Fact </span>field</p>
+</td>
+<td style="border:1px solid #010101;" width="534"><p class="tablebodytext">Specifies the fact in Process Engine mapped to the Convergent Billing <span class="fieldname">End Date Fact Column</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext"><span class="fieldname">End Date Fact Column</span> field</p>
+</td>
+<td style="border:1px solid #010101;" width="534"><p class="tablebodytext">Specifies the column in Convergent Billing containing the end date.</p>
+<p class="tablebodytext">It can be assigned only to a decimal, date, or string data type column.</p>
+<p class="tablebodytext">It is typically mapped to the <span class="unixoutputc">EFFECTIVE_END_DATE</span> column.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o10103"></a><h4 class="heading4">Remote Table Columns Area</h4>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Remote Table Columns Area' (10103)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext"><span class="fieldname">Remote Table Columns</span> area lists the columns in the remote table that can be used for defining system and user-defined facts.</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="10088.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="11419.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Configuration Workbench for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

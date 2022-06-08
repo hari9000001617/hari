@@ -1,0 +1,724 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Entitlement Variables (ENTITLEMENT_TRE_V) </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "58547.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "6306.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('58085');highlight('58527')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="58547.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="6306.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Entitlement Variables (ENTITLEMENT_TRE_V)</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Entitlement Variables (ENTITLEMENT_TRE_V)' (58527)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The following table lists entity validation variables associated with the <span class="unixoutputc">ENTITLEMENT_TRE_V</span> view.</p>
+<p class="syntaxheading">Variable Definitions</p>
+<table class="tableintopic" width="702" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="240"><p class="tableheading">Variable</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="114"><p class="tableheading">View Field</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="102"><p class="tableheading">Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="246"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">ENTITLEMENT_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">ID of the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlLastModified~</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlLastModified~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">LAST_</span><br><span class="unixoutputc">MODIFIED</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Date-time when this row was last modified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlOperatorId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlOperatorId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">OPERATOR_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">ID of user who last modified the record.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlName$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlName$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">ENTITLEMENT_</span><br><span class="unixoutputc">NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String (60)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Name of the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlPartitionNr&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlPartitionNr&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">PARTITION_NR</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (2)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Customer partition number associated with the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlCategory&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlCategory&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">ENTITLEMENT_</span><br><span class="unixoutputc">CATEGORY_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Reference code of the category to which the entitlement belongs.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlTypeId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlTypeId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">ENTITLEMENT_</span><br><span class="unixoutputc">TYPE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">ID of the entitlement type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlTypeName$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlTypeName$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">ENTITLEMENT_</span><br><span class="unixoutputc">TYPE_NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String (30)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Name of the entitlement type.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlStartDate~</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlStartDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Date-time the entitlement became valid.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlExpiryDate~</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlExpiryDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">EXPIRY_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Date-time after which the entitlement is no longer valid.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlInitialAllocAmount#</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlInitialAlloc</span><br><span class="unixoutputc">Amount#</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">INITIAL_</span><br><span class="unixoutputc">ALLOCATION_</span><br><span class="unixoutputc">AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Real </p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Initial amount to be allocated to the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlRecurringAllocAmount#</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlRecurringAlloc</span><br><span class="unixoutputc">Amount#</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">RECURRING_</span><br><span class="unixoutputc">ALLOCATION_</span><br><span class="unixoutputc">AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Real</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Amount allocated at each repetition of the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlSuspended&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlSuspended&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">SUSPENDED_</span><br><span class="unixoutputc">IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Set to 1 (True) when the entitlement is suspended.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlAutoAllocFailure&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlAutoAllocFailure&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">AUTO_ALLOC_</span><br><span class="unixoutputc">FAILURE_IND_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">When set to 1 (True), an automatic allocation to the entitlement has failed, and no further automatic allocations will be attempted.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlNextAllocDate~</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlNextAllocDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">NEXT_</span><br><span class="unixoutputc">ALLOCATION_</span><br><span class="unixoutputc">DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Date-time the next allocation is due to be created for the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlLastAllocDate~</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlLastAllocDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">LAST_</span><br><span class="unixoutputc">ALLOCATION_</span><br><span class="unixoutputc">DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Date-time the last allocation was created for the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlNextAllocSchedFuncId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlNextAllocSched</span><br><span class="unixoutputc">FuncId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">NEXT_ALLOC_</span><br><span class="unixoutputc">SCHED_FUNC_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">ID of the scheduled function to be evaluated to create the next allocation for the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlWarnSchedFuncId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlWarnSchedFuncId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">WARNING_</span><br><span class="unixoutputc">SCHED_FUNC_</span><br><span class="unixoutputc">ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">ID of the scheduled function to be evaluated when the entitlement is about to expire.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlNextTaskId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlNextTaskId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">NEXT_TASK_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">ID of the task for the next bill run to be executed for the customer associated with the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlContext&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlContext&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">CONTEXT_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (2)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Processing context in which the entitlement operates.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlAllocGenAdvance</span><br><span class="unixoutputc">Period&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlAllocGenAdvance</span><br><span class="unixoutputc">Period&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">ALLOC_GEN_</span><br><span class="unixoutputc">ADVANCE_</span><br><span class="unixoutputc">PERIOD</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (6)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Duration of the advance period (seconds) for the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlAllocGenFuncDefnId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlAllocGenFuncDefn</span><br><span class="unixoutputc">Id&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">ALLOC_GEN_</span><br><span class="unixoutputc">FUNCTION_</span><br><span class="unixoutputc">DEFN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">ID of the function that is evaluated to generate an allocation for the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlFirstUseFuncDefnId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlFirstUseFuncDefn</span><br><span class="unixoutputc">Id&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">ALL_FIRST_</span><br><span class="unixoutputc">USE_FUNCTION_</span><br><span class="unixoutputc">DEFN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">ID of the function that is evaluated on the first use of an allocation for the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlWarnFuncDefnId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlWarnFuncDefnId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">WARNING_</span><br><span class="unixoutputc">FUNCTION_</span><br><span class="unixoutputc">DEFN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">ID of a function that is evaluated when the entitlement is about to expire.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">vEntlExpiryFuncDefnId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlExpiryFuncDefnId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">EXPIRY_</span><br><span class="unixoutputc">FUNCTION_</span><br><span class="unixoutputc">DEFN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">ID of a function that is evaluated when the entitlement expires.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlBillCycle&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlBillCycle&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">BILL_CYCLE_</span><br><span class="unixoutputc">IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">If set to 1 (True), the entitlement is aligned with bill cycles for the customer.</p>
+<p class="tablebodytext">If not null, must have a value of 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlProrate&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlProrate&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">PRORATE_IND_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">If set to 1 (True), prorating applies to the entitlement.</p>
+<p class="tablebodytext">If not null, it must have a value of 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlProrateFuncDefnId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlProrateFuncDefnId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">PRORATE_</span><br><span class="unixoutputc">FUNCTION_</span><br><span class="unixoutputc">DEFN_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (10)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">ID of the function that is evaluated to prorate the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlUnitOfMeasure&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlUnitOfMeasure&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">UNIT_OF_</span><br><span class="unixoutputc">MEASURE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (2)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Units in which allocations to the entitlement are measured.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlClass&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlClass&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">ENTITLEMENT_</span><br><span class="unixoutputc">CLASS_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (2)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">General classification of the entitlement. Valid values are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">1 (Recurring)</li><li class="tablelistbullet">2 (One-off).</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlRecurringPeriod&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlRecurringPeriod&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">RECURRING_</span><br><span class="unixoutputc">PERIOD</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Period of time between each repetition of the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlRecurringPeriodUnit&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlRecurringPeriod</span><br><span class="unixoutputc">Unit&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">RECURRING_</span><br><span class="unixoutputc">PERIOD_UNIT_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer </p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Units for <span class="unixoutputc">RECURRING_PERIOD</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlValidityPeriod&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlValidityPeriod&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">VALIDITY_</span><br><span class="unixoutputc">PERIOD</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Period of time in which allocations to the entitlement remain valid.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlValidityPeriodUnit&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlValidityPeriod</span><br><span class="unixoutputc">Unit&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">VALIDITY_</span><br><span class="unixoutputc">PERIOD_UNIT_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Units for <span class="unixoutputc">VALIDITY_PERIOD</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlWarningPeriod&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlWarningPeriod&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">WARNING_</span><br><span class="unixoutputc">PERIOD</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Time period of the advanced warning of the entitlement expiring.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlWarningPeriodUnit&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlWarningPeriodUnit&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">WARNING_</span><br><span class="unixoutputc">PERIOD_UNIT_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Units for <span class="unixoutputc">WARNING_PERIOD</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlExpireOnSuspension&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlExpireOn</span><br><span class="unixoutputc">Suspension&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">EXPIRE_ON_</span><br><span class="unixoutputc">SUSPENSION_</span><br><span class="unixoutputc">IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Default effect on existing allocations for the entitlement if the entitlement is suspended.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlConsumptionPriority&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlConsumption</span><br><span class="unixoutputc">Priority&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">CONSUMPTION_</span><br><span class="unixoutputc">PRIORITY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (2)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Priority that determines the order in which allocations are consumed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlGeneral1$ - evEntlGeneral10$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlGeneral1$ - evOldEntlGeneral10$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">GENERAL_1 - GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">General purpose fields.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlEffectiveStartDate~</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlEffectiveStart</span><br><span class="unixoutputc">Date~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">EEFFECTIVE_</span><br><span class="unixoutputc">START_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Date-time the entitlement became associated with the entity.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlEffectiveEndDate~</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlEffectiveEndDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">EFFECTIVE_</span><br><span class="unixoutputc">END_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Date-time one second before the entitlement ceased to be associated with the entity.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlServiceId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlServiceId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">SERVICE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">ID for a service associated to the entitlement during the effective date range.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlProductInstanceId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlProductInstanceId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">PRODUCT_</span><br><span class="unixoutputc">INSTANCE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">ID of a companion product instance that caused the entitlement to be created.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlCustomerNodeId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlCustomerNodeId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_</span><br><span class="unixoutputc">NODE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">ID of the customer node associated to the entitlement for the effective date range.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlReservation$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlReservation$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">RESERVATION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String (40)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">ID for the current reservation of an amount from an allocation of the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlSubCategory$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlSubCategory$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">SUB_CATEGORY</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String (255)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Sub-category to assist in classifying the entitlement in the effective date range.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlTypeDisplayName$</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlTypeDisplayName$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">ENTITLEMENT_</span><br><span class="unixoutputc">TYPE_DISPLAY_</span><br><span class="unixoutputc">NAME</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">String (60)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Name of the entitlement type displayed to the customer.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlExpirySchedFuncId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlExpirySchedFuncId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">EXPIRY_SCHED_</span><br><span class="unixoutputc">FUNC_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">ID of the scheduled function to be evaluated on expiry of the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlChargeStatus&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlChargeStatus&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">CHARGE_</span><br><span class="unixoutputc">STATUS_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (2)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Real-time charging status for the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlFailStatusUpdateDue</span><br><span class="unixoutputc">Date~</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlFailStatusUpdate</span><br><span class="unixoutputc">DueDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">FAIL_STATUS_</span><br><span class="unixoutputc">UPDATE_DUE_</span><br><span class="unixoutputc">DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Date-time when the status of the companion product instance associated with the entitlement is due to be updated, following a reservation failure.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlFailStatusSchedFuncId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlFailStatusSchedFunc</span><br><span class="unixoutputc">Id&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">FAIL_STATUS_</span><br><span class="unixoutputc">SCHED_FUNC_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">ID of the scheduled function used to perform the delayed update of the status of the companion product instance associated with the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlRealTimeRecurring</span><br><span class="unixoutputc">TariffId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlRealTimeRecurring</span><br><span class="unixoutputc">TariffId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">REAL_TIME_</span><br><span class="unixoutputc">RECURRING_</span><br><span class="unixoutputc">TARIFF_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">ID of the real-time tariff used to generate recurring charges using allocations associated with this entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlRealTimeActivation</span><br><span class="unixoutputc">TariffId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlRealTimeActivation</span><br><span class="unixoutputc">TariffId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">REAL_TIME_</span><br><span class="unixoutputc">ACTIVATION_</span><br><span class="unixoutputc">TARIFF_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">ID of real-time tariff used to generate activation charges using allocations associated with this entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlRealTimeCancelTariff</span><br><span class="unixoutputc">Id&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlRealTimeCancel</span><br><span class="unixoutputc">TariffId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">REAL_TIME_</span><br><span class="unixoutputc">CANCEL_</span><br><span class="unixoutputc">TARIFF_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (8)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">ID of real-time tariff used to generate cancellation charges using allocations associated with this entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlDelayPeriod&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlDelayPeriod&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">DELAY_PERIOD</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (4)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Period of time to delay an update to the status of a companion product instance, following failure to reserve an allocation for an entitlement of this category during the evaluation of a real-time recurring tariff.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlDelayPeriodUnitCode&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlDelayPeriodUnitCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">DELAY_PERIOD_</span><br><span class="unixoutputc">UNIT_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Units for <span class="unixoutputc">DELAY_PERIOD</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlAccountId&amp;</span></p>
+<p class="tablebodytext"><span class="unixoutputc">evOldEntlAccountId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">ACCOUNT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (15)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">ID of the account to check during the effective date range to determine when to reactivate the entitlement. </p>
+<p class="tablebodytext">The specified account may not be the account charged for the entitlement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="240"><p class="tablebodytext"><span class="unixoutputc">evEntlChargedIndCode&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext"><span class="unixoutputc">CHARGED_IND_</span><br><span class="unixoutputc">CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Integer (1)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">If set to 1 (True), at least one real-time charge was generated for this entitlement.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="58547.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="6306.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

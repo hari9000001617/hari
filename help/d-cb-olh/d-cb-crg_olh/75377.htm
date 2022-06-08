@@ -1,0 +1,729 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> TECStats?{}() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "58748.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "75438.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('75377')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="58748.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="75438.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">TECStats?{}()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'TECStats?{}()' (75377)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<pre class="unixinputp">TECStats?{}()</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Provides current Temporal Entitlements Cache (TEC) statistics for the process. </p>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="288" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="bold">Function Type</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Local </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="bold">Service</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">(Local)</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="108"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="486" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="138"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="348"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="138"><p class="tablebodytext">None.</p>
+</td>
+<td style="border:1px solid #010101;" width="348"><p class="tablebodytext">&nbsp;</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">Unknown hash of TEC statistics; an exception is raised if an error is encountered.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">The following table lists TEC statistics.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">TEC Statistics </p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="252"><p class="tableheading">Key</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="78"><p class="tableheading">Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="366"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">Created</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Date when the cache was created.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">TotalCacheSize</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Size of the cache in bytes.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ReplicationEnabled</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Set to 1 if replication is enabled in the configuration item; otherwise, set to 0.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ReplicationBackupAvailable</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Set to 1 if a remote instance is available; otherwise, set to 0.</p>
+<p class="tablebodytext">If set on the Master instance, cache replication is enabled.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ReplicationMaster</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Set to 1 if the local instance is configured as the Master; otherwise, set to 0.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ReplicationBackup</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Set to 1 if the local instance is configured as the Backup; otherwise, set to 0.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">StreamsActive</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Unknown Array</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Array of statistics for each active stream, listed in an unknown hash with the following keys:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">Instance</span>: instance that opened the stream, returned as a String</li><li class="tablelistbullet"><span class="unixoutputc">StreamId</span>: ID of the stream, returned as an Integer</li><li class="tablelistbullet"><span class="unixoutputc">NrDeltas</span>: number of uncommitted consumptions, retuned as an Integer</li><li class="tablelistbullet"><span class="unixoutputc">LastModified</span>: last modified date-time, returned as Date.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">StreamInserts</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of inserted free streams.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">StreamFreeCnt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of free streams.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">StreamUsedCnt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of used streams.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">StreamUsedMaxCnt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of used streams.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">StreamSize</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Size of a stream record in bytes.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EntityFreeCnt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of free entities.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EntityUsedCnt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of used entities.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EntityInserts</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of inserted entities. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EntityPurges</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of purged entities.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EntityHits</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of entity hits.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EntityMisses</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of entity misses.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EntitySize</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Size of an entity record in bytes.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EventInserts</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of inserted events inserted.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EventFreeCnt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of free events.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EventUsedCnt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of used events.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EventUsedMaxCnt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Maximum number of used events.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EventSize</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Size of an event record in bytes.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EntitlementCnt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of entitlements stored in the cache.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EntitlementMaxCnt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Maximum number of entitlements stored in the cache.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EntitlementInsertsByEntity</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of entitlements inserted due to an entity miss.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EntitlementInsertsByDate</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of entitlements inserted due to a <span class="unixoutputc"><a id="h75393" class="jump" title="CacheFromDate" href="75377.htm#o75392" target="_self">CacheFromDate</a></span><a id="h75393_2" class="jump" title="CacheFromDate" href="75377.htm#o75392" target="_self"> miss</a>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EntitlementInsertsByReload</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of entitlements inserted by the <span class="unixoutputc"><a id="h59474" class="jump" title="EntitlementReload&amp;()" href="58720.htm" target="_self">EntitlementReload&amp;()</a></span><a id="h59474_2" class="jump" title="EntitlementReload&amp;()" href="58720.htm" target="_self"> function</a>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EntitlementPurgesByEntity</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of entitlements purged as part of an entity purge.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EntitlementPurgesByDate</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of entitlements purged as part of a <span class="unixoutputc"><a id="h75393_3" class="jump" title="CacheFromDate" href="75377.htm#o75392" target="_self">CacheFromDate</a></span><a id="h75393_4" class="jump" title="CacheFromDate" href="75377.htm#o75392" target="_self"> purging</a>. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EntitlementPurgesByReload</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of entitlements purged by the <span class="unixoutputc"><a id="h59474_3" class="jump" title="EntitlementReload&amp;()" href="58720.htm" target="_self">EntitlementReload&amp;()</a></span><a id="h59474_4" class="jump" title="EntitlementReload&amp;()" href="58720.htm" target="_self"> function</a>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EntitlementReloads</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of entitlements reloaded by the <span class="unixoutputc"><a id="h59474_5" class="jump" title="EntitlementReload&amp;()" href="58720.htm" target="_self">EntitlementReload&amp;()</a></span><a id="h59474_6" class="jump" title="EntitlementReload&amp;()" href="58720.htm" target="_self"> function</a>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EntitlementHits </span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of entitlement hits. </p>
+<p class="tablebodytext">An entitlement hit is a request that can be satisfied in the cache without having to insert new entitlements.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EntitlementMisses</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of entitlement misses. </p>
+<p class="tablebodytext">An entitlement miss is a request that requires one or more entitlements to be inserted into the cache to satisfy the request.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EntitlementSize</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Size of an entitlement record in bytes.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">AllocationCnt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of stored allocations.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">AllocationMaxCnt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Maximum number of stored allocations.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">AllocationSize</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Size of an allocation record in bytes.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">AllocationInsertsByEntity </span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of allocations inserted due to an entity miss.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">AllocationInsertsByDate</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of allocations inserted due to a <span class="unixoutputc"><a id="h75393_5" class="jump" title="CacheFromDate" href="75377.htm#o75392" target="_self">CacheFromDate</a></span><a id="h75393_6" class="jump" title="CacheFromDate" href="75377.htm#o75392" target="_self"> miss</a>. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">AllocationInsertsByReload </span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of allocations inserted by the <span class="unixoutputc"><a id="h59474_7" class="jump" title="EntitlementReload&amp;()" href="58720.htm" target="_self">EntitlementReload&amp;()</a></span><a id="h59474_8" class="jump" title="EntitlementReload&amp;()" href="58720.htm" target="_self"> function</a>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">AllocationInsertsByAuto</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of automatic allocations made.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">AllocationInsertsByRating</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of allocations inserted by the <span class="unixoutputc"><a id="h77608" class="jump" title="EntitlementAllocationInsertRating&amp;()" href="77444.htm" target="_self">EntitlementAllocationInsertRating&amp;()</a></span><a id="h77608_2" class="jump" title="EntitlementAllocationInsertRating&amp;()" href="77444.htm" target="_self"> function</a>.  An allocation inserted by this function but subsequently removed due to the rollback of a reservation or normalised event does not contribute to this total.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">AllocationPurgesByEntity </span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of allocations purged as part of an entity purge.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">AllocationPurgesByDate</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of allocations purged as part of <span class="unixoutputc"><a id="h75393_7" class="jump" title="CacheFromDate" href="75377.htm#o75392" target="_self">CacheFromDate</a></span><a id="h75393_8" class="jump" title="CacheFromDate" href="75377.htm#o75392" target="_self"> purging</a>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">AllocationPurgesByReload </span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of allocations purged by the <span class="unixoutputc"><a id="h59474_9" class="jump" title="EntitlementReload&amp;()" href="58720.htm" target="_self">EntitlementReload&amp;()</a></span><a id="h59474_10" class="jump" title="EntitlementReload&amp;()" href="58720.htm" target="_self"> function</a>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">AllocationPurgesByConsumption</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of allocations purged due to being completely consumed, that is, having an available amount equal to zero.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">AllocationReloads</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of allocations reloaded by the <span class="unixoutputc"><a id="h59474_11" class="jump" title="EntitlementReload&amp;()" href="58720.htm" target="_self">EntitlementReload&amp;()</a></span><a id="h59474_12" class="jump" title="EntitlementReload&amp;()" href="58720.htm" target="_self"> function</a>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">DeltaInserts</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of delta inserts.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">DeltaUsedCnt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of used deltas.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">DeltaUsedMaxCnt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Maximum number of used deltas.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">DeltaSize</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Size of a delta record in bytes.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ReservationInserts</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of inserted reservations.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ReservationUsedCnt </span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of used reservations.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ReservationUsedMaxCnt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Maximum number of used reservations. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ReservationSize</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Size of a reservation record in bytes. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">RemoteStreamFreeCnt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of free remote streams. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">RemoteStreamUsedCnt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of in-use remote streams. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">RemoteStreamUsedCntMax</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Maximum number of concurrent in-use remote streams since the cache was opened.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">RemoteStreamSize </span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Size of a remote stream record in bytes. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">RemoteStreamInconsistentCnt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of inconsistent remote streams. </p>
+<p class="tablebodytext">A stream becomes inconsistent when a stream commit or rollback replication message is processed, and the number of deltas in the stream being committed does not match the number of deltas associated with the stream locally, that is, one or more deltas have been lost during replication. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">RemoteStreamInconsistentCntMax</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Maximum number of inconsistent remote streams. </p>
+<p class="tablebodytext">A stream becomes inconsistent when a stream commit or rollback replication message is processed, and the number of deltas in the stream being committed does not match the number of deltas associated with the stream locally, that is, one or more deltas have been lost during replication. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">RemoteStreamLingerCnt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of remote streams currently marked as closed but remaining in the cache for a period of time in case replication messages for the stream arrive late.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">RemoteStreamLingerCntMax</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Maximum number of remote streams that have been concurrently marked as closed and kept in the cache for a period of time in case replication messages for the stream arrived late. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">RemoteAllocInconsistentCnt</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Number of inconsistent allocations.</p>
+<p class="tablebodytext">Inconsistent allocations are allocations whose current available amount cannot be resolved by applying all replicated deltas. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">RemoteAllocInconsistentCntMax</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Maximum number of inconsistent allocations.</p>
+<p class="tablebodytext">Inconsistent allocations are allocations whose current available amount cannot be resolved by applying all replicated deltas. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">CacheFromDateMin</span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Minimum <span class="unixoutputc"><a id="h75393_9" class="jump" title="CacheFromDate" href="75377.htm#o75392" target="_self">CacheFromDate</a></span><a id="h75393_10" class="jump" title="CacheFromDate" href="75377.htm#o75392" target="_self"> of all cached entities</a>. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">CacheFromDateMax </span></p>
+</td>
+<td style="border:1px solid #010101;" width="78"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="366"><p class="tablebodytext">Maximum <span class="unixoutputc"><a id="h75393_11" class="jump" title="CacheFromDate" href="75377.htm#o75392" target="_self">CacheFromDate</a></span><a id="h75393_12" class="jump" title="CacheFromDate" href="75377.htm#o75392" target="_self"> of all cached entities</a>. </p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">TEC statistics also include statistic for the memory pools listed in the following table.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">TEC Statistics for Memory Pools</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="186"><p class="tableheading">Memory Pool</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="510"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext">Delta pool</p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">Used for storing deltas, reservations, and the details of scheduled functions for entitlement allocations created during rating.</p>
+<p class="tablebodytext"><a id="h75439" class="jump" title="Memory Pool Statistics" href="75438.htm" target="_self">Statistics for this memory pool have each key prefixed with </a><span class="unixoutputc"><a id="h75439_2" class="jump" title="Memory Pool Statistics" href="75438.htm" target="_self">DeltaPool</a></span><a id="h75439_3" class="jump" title="Memory Pool Statistics" href="75438.htm" target="_self"> (for example, </a><span class="unixoutputc"><a id="h75439_4" class="jump" title="Memory Pool Statistics" href="75438.htm" target="_self">DeltaPoolTotalAllocatedBytes</a></span><a id="h75439_5" class="jump" title="Memory Pool Statistics" href="75438.htm" target="_self">)</a>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext">General memory pool</p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">Used for storing entitlements, allocations, and IDs of transactions that cause entities to be cached. </p>
+<p class="tablebodytext"><a id="h75439_6" class="jump" title="Memory Pool Statistics" href="75438.htm" target="_self">Statistics for this memory pool have each key prefixed with </a><span class="unixoutputc"><a id="h75439_7" class="jump" title="Memory Pool Statistics" href="75438.htm" target="_self">Pool</a></span><a id="h75439_8" class="jump" title="Memory Pool Statistics" href="75438.htm" target="_self"> (for example, </a><span class="unixoutputc"><a id="h75439_9" class="jump" title="Memory Pool Statistics" href="75438.htm" target="_self">PoolTotalAllocatedBytes</a></span><a id="h75439_10" class="jump" title="Memory Pool Statistics" href="75438.htm" target="_self">)</a>.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o75392"></a><h4 class="heading4">CacheFromDate</h4>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'CacheFromDate' (75392)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The cache maintains a <span class="unixoutputc">CacheFromDate</span> date for entities and entitlements. </p>
+<p class="bodytext">For entities, <span class="unixoutputc">CacheFromDate</span> marks the start of the date range of entitlement mappings stored for the entity. This ensures that all:</p>
+<ul class="listbullet"><li class="listbullet">Entitlement mappings with an effective end-date on or after this date, are stored in the cache. <p class="listcontinue">Entitlement mappings refer to the associations between entities (services or customer nodes) and entitlements. </p>
+</li><li class="listbullet">Associated entitlements have a <span class="unixoutputc">CacheFromDate</span> on or before this date. </li></ul><p class="bodytext">For entitlements, <span class="unixoutputc">CacheFromDate</span> marks the start of the date range of allocations currently stored for the entitlement. This ensures that all allocations associated with entitlements with an expiry date on or after this date, and with an available balance greater than zero, are stored in the cache. </p>
+<p class="bodytext"><span class="unixoutputc">CacheFromDate</span> is updated when an entity is first accessed (the entity is not yet in the cache). When an entity is first accessed, it is retrieved from the database with all its related entitlements and their allocations that exist from the date-time of retrieval until the end-of-time. If a subsequent access is performed, and the access date-time precedes <span class="unixoutputc">CacheFromDate</span>, entitlements and allocations are retrieved for the missing period of time, that is, from the access date-time of this subsequent access until <span class="unixoutputc">CacheFromDate</span>.&nbsp;<span class="unixoutputc">CacheFromDate</span> is then updated to be equal to the earlier access date-time. If a request has an effective date outside of this range, it needs to be extended by retrieving additional information.</p>
+<p class="bodytext">A <span class="unixoutputc">CacheFromDate</span> miss occurs when a request is made for a cached entity. The entity's <span class="unixoutputc">CacheFromDate</span> is not sufficient to satisfy the request's effective date, and data is inserted in the cache to extend the <span class="unixoutputc">CacheFromDate</span>.</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="58748.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="75438.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

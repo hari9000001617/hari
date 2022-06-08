@@ -1,0 +1,205 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> fEV_ServiceDAUpdateRows&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "50605.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "50603.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('51544');expand('28068');expand('45618');highlight('28129')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="50605.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="50603.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h4 class="heading4">fEV_ServiceDAUpdateRows&amp;()</h4>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'fEV_ServiceDAUpdateRows&amp;()' (28129)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<table class="tableintopic" width="558" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<td class="tableheading" width="246"><p class="tableheading">Interface 1</p>
+</td>
+<td width="66"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td class="tableheading" width="246"><p class="tableheading">Interface 2</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="246"><pre class="unixinputp">fEV_ServiceDAUpdateRows&amp;(    serviceId&amp;,    effectiveDate~,    var lastModified~,    derivedAttributeId&amp;,    effectiveStartDate~,    effectiveEndDate~,    const fieldNames?[],    const fieldValues?[])&nbsp;</pre>
+</td>
+<td width="66"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td width="246"><pre class="unixinputp">fEV_ServiceDAUpdateRows&amp;(    serviceId&amp;,    effectiveDate~,    var lastModified~,    const tableName$,    effectiveStartDate~,    effectiveEndDate~,    const fieldNames?[],    const fieldValues?[])</pre>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td class="tableheading" width="246"><p class="tableheading">Interface 3</p>
+</td>
+<td width="66"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td class="tableheading" width="246"><p class="tableheading">Interface 4</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="246"><pre class="unixinputp">fEV_ServiceDAUpdateRows&amp;(    serviceId&amp;,    effectiveDate~,    var lastModified~,    derivedAttributeId&amp;,    effectiveStartDate~,    effectiveEndDate~,    const fieldValues?[])&nbsp;</pre>
+</td>
+<td width="66"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td width="246"><pre class="unixinputp">fEV_ServiceDAUpdateRows &amp;(    serviceId&amp;,    effectiveDate~,    var lastModified~,    const tableName$,    effectiveStartDate~,    effectiveEndDate~,    const fieldValues?[])</pre>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td class="tableheading" width="246"><p class="tableheading">Interface 5</p>
+</td>
+<td width="66"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td width="246"><pre class="unixinputp">&nbsp;</pre>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="246"><pre class="unixinputp">fEV_ServiceDAUpdateRows&amp;(    serviceId&amp;,    effectiveDate~,    var lastModified~,    derivedAttributeId&amp;,    seqNr&amp;[],    effectiveStartDate~,    effectiveEndDate~,    const fieldValues?[])</pre>
+</td>
+<td width="66"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td width="246"><pre class="unixinputp">&nbsp;</pre>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Updates rows of data in a service derived attribute array.  The function internally calls the <span class="unixoutputc">biServiceDAUpdate&amp;()</span> to perform the updates.</p>
+<p class="syntaxheading">Context</p>
+<p class="bodytext">The following groups of variables are available throughout all stages of processing a service derived attribute update rows request, except where otherwise specified:</p>
+<ul class="listbullet"><li class="listbullet">System client</li><li class="listbullet">Operator</li><li class="listbullet">Miscellaneous<ul class="listdashbullet2"><li class="listdashbullet2"><span class="unixoutputc">evFormCode$</span> contains the value <span class="unixoutputc">SERVSVR</span>.</li><li class="listdashbullet2"><span class="unixoutputc">evLastRowInd&amp;</span> contains the value <span class="unixoutputc">0</span> during all stages of processing, except the evaluation of the service pre-commit expressions and the service derived attribute pre-commit expressions for the last row processed.</li><li class="listdashbullet2"><span class="unixoutputc">evRowStatus$</span> contains the value <span class="unixoutputc">Update</span>.</li></ul></li><li class="listbullet">Service<p class="listcontinue">The service variables may only be available during the service processing stages and the evaluation of service derived attribute pre- and post commit expressions.</p>
+</li><li class="listbullet">Derived attribute<p class="listcontinue">The derived attribute variables may only be available during the service derived attribute processing stages.</p>
+</li></ul><p class="syntaxheading">Parameters</p>
+<table class="tableintopic" width="636" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="180"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="456"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">serviceId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">ID of the service for which derived attribute array rows are being updated.  A service with the specified ID must exist in the database for the effective date specified; otherwise, an error is raised.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">effectiveDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Effective date used to identify the historical service record that is updated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">lastModified~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Initial value must match the value in the record matching the specified <span class="unixoutputc">serviceId&amp;</span> and <span class="unixoutputc">effectiveDate~</span>.  <span class="unixoutputc">lastModified~</span> can be undefined.  If <span class="unixoutputc">lastModified~</span> is not defined, it is automatically derived from <span class="unixoutputc">SERVICE_HISTOR</span>Y<span class="unixoutputc">_V</span>.  On successful return, the value is the date-time of these updates.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">tableName$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Name of the derived attribute array in which the rows are updated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">derivedAttributeId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">ID of the derived attribute array in which the rows are updated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">seqNr&amp;[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Sequence numbers of the rows being updated.  The sequence must match the sequence of row data specified in <span class="unixoutputc">fieldValues?[]</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">effectiveStartDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Date on which the updates first become effective.  If not defined, the current date is used.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">effectiveEndDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Date on which the updates cease to be effective.  If the value is not defined, the end of time value is used.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">fieldValues?[]</span></p>
+<p class="tablebodytext"><span class="unixoutputc">fieldNames?[]</span></p>
+<p class="tablebodytext"><span class="unixoutputc">fieldValues?[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="456"><p class="tablebodytext">Service derived attribute array row data be updated.  Accepted forms are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Array of hashes of data for one or more service derived attribute array row (<span class="unixoutputc">fieldValues?[]</span>)</li><li class="tablelistbullet">Array of field names and an array of arrays of field values, containing data for one or more service derived attribute array rows (<span class="unixoutputc">fieldNames?[]</span>, <span class="unixoutputc">fieldValues?[]</span>)</li><li class="tablelistbullet">Pair of arrays of arrays of data for one or more service derived attribute array rows (<span class="unixoutputc">fieldNames?[]</span>, <span class="unixoutputc">fieldValues?[]</span>).</li></ul><p class="tablebodytext">Service derived attribute array data must contain a complete row of indexes for the derived attribute array.  Result values should not be specified.</p>
+<p class="tablebodytext">The derived attribute array rows to be updated are identified by the index values specified in this parameter, if <span class="unixoutputc">seqNr&amp;[]</span> is not specified.  If the index values for any row of data do not match a row in the database an error is raised.  Index values cannot be updated by this function.  To update the index values of any row, the row must be first deleted and then reinserted with the new values.</p>
+<p class="tablebodytext">The data can be keyed according to the corresponding column name in the <span class="unixoutputc">SERVICE_DA_ARRAY</span> table.  When keyed according to database column name, the data passed must match the type and value stored in the database.</p>
+<p class="tablebodytext">If attribute validation is enabled, data can be keyed by interface or display label specified in the appropriate entity validation, or in core defaults.  </p>
+<p class="tablebodytext">When keyed by a label, the data must match the type and value expected as defined in the appropriate attribute type.  Denormalised fields must pass the denormalised string values.  Other fields must pass data of the type defined in the attribute type.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Processing</p>
+<p class="bodytext">Assuming that all processing stages are enabled, the following is the order of evaluation of expressions and constraints before updates to the service derived attribute rows:</p>
+<ol class="listnumber"><li class="listnumber">Bundle direct variables if the call is nested.</li><li class="listnumber">If <span class="unixoutputc">seqNr&amp;[]</span> has not been specified, derive the sequence number for each row.</li><li class="listnumber">Decrypt any encrypted values and mask any appropriate values .</li><li class="listnumber">Apply attribute type defaults and validation.</li><li class="listnumber">Perform attribute-based and row validations for each new row of data to be updated:<ol class="listalpha2"><li class="listalpha2">Evaluate service derived attribute defaults.</li><li class="listalpha2">Check service derived attribute mandatory fields.</li><li class="listalpha2">Evaluate attribute type validation expressions for service derived attribute.</li><li class="listalpha2">Evaluate service derived attribute row expressions.</li></ol></li><li class="listnumber">Evaluate service pre-commit expressions.</li><li class="listnumber">Evaluate service derived attribute pre-commit expressions for each new row of data to be updated.</li><li class="listnumber">Unmask any masked values and encrypt any variable values configured for encryption.</li></ol><p class="bodytext">On performing the updates, the following sequence of actions occurs:</p>
+<ol class="listnumber"><li class="listnumber">Evaluate service in-transaction expressions.</li><li class="listnumber">Queue and evaluate service derived attribute post-commit expressions.</li><li class="listnumber">Evaluate service derived attribute in-transaction expressions for each row of data updated.</li><li class="listnumber">Queue and evaluate service derived attribute post-commit expressions for each row of data updated.</li></ol><p class="bodytext">After update and evaluation of the post-commit expressions:</p>
+<ol class="listnumber"><li class="listnumber">Unbundle variables that were stored in step 1 before the update.</li></ol><p class="syntaxheading">Returns</p>
+<p class="bodytext">On success, the number of rows updated (which equals the length of the <span class="unixoutputc">fieldValues?[]</span> parameter).  If any of the updates or any of the pre-update validation steps fail, an error is raised.</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="50605.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="50603.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

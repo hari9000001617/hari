@@ -1,0 +1,255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> CustomerNodeUpdate&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "14515.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "14517.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('58571')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="14515.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="14517.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">CustomerNodeUpdate&amp;()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'CustomerNodeUpdate&amp;()' (58571)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<table class="tableintopic" width="546" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<td class="tableheading" width="276"><p class="tableheading">Interface 1</p>
+</td>
+<td width="48"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td class="tableheading" width="222"><p class="tableheading">Interface 2</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="276"><pre class="unixinputp">CustomerNodeUpdate&amp;(    CustomerNodeId&amp;,    OldEffectiveDate~,    var&nbsp;LastModified~,    const FieldNames$[],    const StringFieldValues$[],    const IntegerFieldValues&amp;[],    const RealFieldValues#[],    const DateFieldValues~[])</pre>
+</td>
+<td width="48"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td width="222"><pre class="unixinputp">CustomerNodeUpdate&amp;(    CustomerNodeId&amp;,    OldEffectiveDate~,    var&nbsp;LastModified~,    const&nbsp;FieldNames$[],    const&nbsp;FieldValues?[])</pre>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Updates a customer node record.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">Interface 1 is deprecated and is used only for backward compatibility.</p></td></tr></table>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="288" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="bold">Method</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Local</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="186"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="510"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">CustomerNodeId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">In:  ID of customer node to be updated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">OldEffectiveDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">In:  Date-time used for retrieving details about the customer node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">LastModified~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">In:  Last modified date-time of the customer node to be updated.</p>
+<p class="tablebodytext">Out:  Last modified date-time of the updated customer node.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">FieldNames$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">In:  List of fields to be updated.</p>
+<p class="tablebodytext">Specify the string fields first, followed by integer fields, real fields, and date fields. For more information, refer to the <span class="unixoutputc">CUSTOMER_NODE_TRE_V</span> view.</p>
+<p class="tablebodytext">Field names not included in the <span class="unixoutputc">CUSTOMER_NODE_TRE_V</span> view which can also be used are:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet"><span class="unixoutputc">CURRENCY_NAME</span> (instead of <span class="unixoutputc">CURRENCY_ID</span>)</li><li class="tablelistbullet"><span class="unixoutputc">TURNOVER</span>_<span class="unixoutputc">CURRENCY</span>_<span class="unixoutputc">NAME</span> (instead of <span class="unixoutputc">TURNOVER_CURRENCY_ID</span>)</li><li class="tablelistbullet"><span class="unixoutputc">CREDIT</span>_<span class="unixoutputc">LIMIT</span>_<span class="unixoutputc">CURRENCY</span>_<span class="unixoutputc">NAME</span> (instead of  <span class="unixoutputc">CREDIT_LIMIT_CURRENCY_ID</span>)</li><li class="tablelistbullet"><span class="unixoutputc">EXPECTED</span>_<span class="unixoutputc">REVENUE</span>_<span class="unixoutputc">CURRENCY</span>_<span class="unixoutputc">NAME</span> (instead of <span class="unixoutputc">EXPECTED_REVENUE_CURRENCY_ID</span>)</li><li class="tablelistbullet"><span class="unixoutputc">GL_CODE_NAME</span> (instead of <span class="unixoutputc">GL_CODE_ID</span>).</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">FieldValues?[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">In:  Field values, in the same order that their names were specified in <span class="unixoutputc">FieldNames$[]</span>. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">StringFieldValues$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">In:  Values of string fields to update.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">IntegerFieldValues&amp;[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">In:  Values of integer fields to update.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">RealFieldValues#[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">In:  Values of real fields to update.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="unixoutputc">DateFieldValues~[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="510"><p class="tablebodytext">In:  Values of date fields to update.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">1 (TRUE) and the last modified date of the record, if successful; otherwise, an error is raised.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">The names of the fields to be updated are passed in the array <span class="unixoutputc">FieldNames$[]</span> with string field names first followed by integer fields, real fields, and date fields.</p>
+<p class="bodytext">If the specified customer node has a report level of Invoice and one or more statements pending consolidation, no change is made to the report level, and an error is raised.</p>
+<p class="bodytext">If the customer node record is successfully updated, the function <span class="unixoutputc"><a id="h63247" class="jump" title="CustomerNodePurge&amp;()" href="14506.htm" target="_self">CustomerNodePurge&amp;()</a></span> is called for that customer node.  Passing the field name <span class="unixoutputc">DO_NOT_PURGE_IND_CODE</span> with a value (any integer value, typically 1) can prevent the purge.  Not purging the customer node cache is recommended if customers are being updated in bulk; however, the customer node cache must be restarted after preventing the purge to ensure that correct data is being used. </p>
+<p class="bodytext">If the <span class="unixoutputc">REPORT_LEVEL</span> is being modified, the <span class="unixoutputc">ACCOUNT_INVOICE_ID</span> and <span class="unixoutputc">ACCOUNT_INVOICE_UNBILLED</span> values for all the accounts affected by the change are re-derived.  Re-deriving these values is achieved by calling <span class="unixoutputc"><a id="h49147" class="jump" title="CustomerNodeFixInvoiceAccount&amp;[]()" href="14494.htm" target="_self">CustomerNodeFixInvoiceAccount&amp;[]()</a></span>.  If the customer type changes, any required derived attribute instances not associated with the customer node are automatically created.</p>
+<p class="bodytext">The parent of a customer node cannot be changed using this function; it does not support the update of <span class="unixoutputc">PARENT_CUSTOMER_NODE_ID</span> or <span class="unixoutputc">ROOT_CUSTOMER_NODE_ID</span>.</p>
+<p class="bodytext">If <span class="unixoutputc">REPORT_LEVEL_CODE</span> value is set to Transferred Statement, <span class="unixoutputc">TRANSFERRED_ACCOUNT_ID</span> must be specified. If <span class="unixoutputc">TRANSFERRED_ACCOUNT_ID</span> is specified, the following rules apply:</p>
+<ul class="listbullet"><li class="listbullet">The customer must have a reporting level of Transferred Statement.</li><li class="listbullet">The customer must be a root customer node.</li><li class="listbullet">The account type of <span class="unixoutputc">TRANSFERRED_ACCOUNT_ID</span> must match the account type of <span class="unixoutputc">PRIME_ACCOUNT_ID</span>.</li><li class="listbullet"><span class="unixoutputc">TRANSFERRED_ACCOUNT_ID</span> must be the prime account of a root customer node.</li></ul><p class="bodytext">If <span class="unixoutputc">SCHEDULE_ID</span> is modified and the customer node:</p>
+<ul class="listbullet"><li class="listbullet">Or service is associated with an entitlement aligned to the customer node's bill cycle, <span class="unixoutputc">NEXT_TASK_QUEUE_ID</span> of the entitlement is updated with the new <span class="unixoutputc">SCHEDULE_ID</span>.</li><li class="listbullet">Is a root customer node with rental events generated in the future, and no invoices were generated for the associated customer node and bill run, a one-off task of type <span class="formname">Revoke Rental Events for Customer</span> is generated.  <p class="listcontinue">By default, the <span class="unixoutputc">BASE_INSTALL</span> <span class="unixoutputc"><a id="h68709" class="jump" title="CustomerNodeHandleFutureRentalEvents&amp;()" href="64694.htm" target="_self">CustomerNodeHandleFutureRentalEvents&amp;()</a></span> function implements this functionality.  This function:</p>
+<ul class="listdashbullet2"><li class="listdashbullet2">Can be customised to raise an error stating that the update can be done only after the rental events in the future are revoked.  </li><li class="listdashbullet2">Is not called if an attempt is made to modify the bill cycle of a child customer node.</li></ul></li></ul><p class="bodytext">To realign with the new bill cycle, <span class="unixoutputc"><a id="h58572" class="" title="EntitlementUpdate&amp;()" href="58365.htm" target="_self">EntitlementUpdate&amp;()</a></span> is used to update start and expiry dates for the entitlement and entitlement allocation.</p>
+<p class="bodytext">This function supports customer node history records with a sub-day granularity so <span class="unixoutputc">OldEffectiveDate~</span>, <span class="unixoutputc">EFFECTIVE_START_DATE</span>, and <span class="unixoutputc">EFFECTIVE_END_DATE</span> can specify a time component.</p>
+<p class="syntaxheading">Prepaid without Statements</p>
+<p class="bodytext">This function does not support the update of: </p>
+<ul class="listbullet"><li class="listbullet"><span class="unixoutputc">PREPAID_IND_CODE</span></li><li class="listbullet"><span class="unixoutputc">SCHEDULE_ID</span> or <span class="unixoutputc">SCHEDULE_NAME</span> for prepaid without statements customer nodes.</li></ul><table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">Non-prepaid customers cannot be updated to have a NULL invoice cycle. Updating a customer is not supported from: </p><ul class="notelistbullet"><li class="notelistbullet">Prepaid without statements to prepaid with statements or post-paid.</li><li class="notelistbullet">Prepaid with statements or post-paid to prepaid without statements.</li></td></tr></table></ul><p class="bodytext">If specified, <span class="unixoutputc">REPORT_LEVEL_CODE</span> must be Invoice for a prepaid without statements customer.</p>
+<p class="syntaxheading">User ID and Group ID Values</p>
+<p class="bodytext"><span class="unixoutputc">ATLANTA_OPERATOR_ID</span> is the ID of the user who last modified the customer record.  If not specified, the ID of the user who opened <span class="unixoutputc"><a id="h39486" class="jump" title="treConnect" href="51097.htm" target="_self">treConnect()</a></span> is used.</p>
+<p class="bodytext"><span class="unixoutputc">ATLANTA_GROUP_ID</span> is the ID of the security group that has access to the customer information.  If not specified, the group ID is obtained by mapping the user ID to its corresponding <span class="unixoutputc">PRIMARY_ATLANTA_GROUP_ID</span>.</p>
+<p class="bodytext">The following table lists methods used to obtain the user and group ID.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">User ID and Group ID Values </p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="228"><p class="tableheading">ATLANTA_OPERATOR_ID</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="234"><p class="tableheading">ATLANTA_GROUP_ID</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="234"><p class="tableheading">Result</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext">Specified using <span class="unixoutputc">FieldNames$[]</span>.</p>
+</td>
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext">Not specified.</p>
+</td>
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext">Specified user ID is used.</p>
+<p class="tablebodytext">Group ID is not included in the update.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext">Specified using <span class="unixoutputc">FieldNames$[]</span>.</p>
+</td>
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext">Specified using <span class="unixoutputc">FieldNames$[]</span>.</p>
+</td>
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext">Specified user and group IDs are used.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext">Not specified.</p>
+</td>
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext">Specified using <span class="unixoutputc">FieldNames$[]</span>.</p>
+</td>
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext">Specified group ID is used.</p>
+<p class="tablebodytext">ID of user who opened the <span class="unixoutputc">treConnect()</span> is used.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="228"><p class="tablebodytext">Not specified.</p>
+</td>
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext">Not specified.</p>
+</td>
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext">ID of user who opened the <span class="unixoutputc">treConnect()</span> is used.</p>
+<p class="tablebodytext">Group ID is not included in the update.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">The customer node update is only successful if the user has appropriate group update privileges for the customer node.</p>
+<p class="bodytext">The effective user must have update security group access level for the group associated with the record manipulated by this function call.  If the effective date of the update is less than the current date (00:00:00 timestamp) direct update security group access level is required.  </p>
+<p class="bodytext">If the <span class="unixoutputc">GROUP_ID</span> is updated and the group specified in the update is different to the current customer node's group, group update security group access level is required on the current group associated with the customer node and the new security group.</p>
+<p class="bodytext"><span class="unixoutputc">GROUP_ACCESS_TRE_V</span> view lists security group access level values.  </p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="14515.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="14517.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

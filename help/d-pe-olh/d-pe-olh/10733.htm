@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Search Definition Tab </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Configuration Workbench for Singleview Process Engine 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "12509.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "41881.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('12508');expand('10987');highlight('10733')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="12509.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="41881.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Configuration Workbench for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">Search Definition Tab</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Search Definition Tab' (10733)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="fieldname">Search Definition</span> tab is divided into two sections.  The list of available facts, based on the class, is displayed on the left-hand side.  The search definition area is displayed on the right-hand side.</p>
+<p class="bodytext">Facts are dragged and dropped from the list to the definition and vice versa.</p>
+<p class="bodytext">Searches can be defined, but not run, from the Search Tool.  Searches can only be run in Process Engine web client.</p>
+<table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%"><a name="o57659"></a><h3 class="heading3">Sort Order Tab</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Sort Order Tab' (57659)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The <span class="fieldname">Sort Order</span> tab contains the sort order definition for a search definition. The <span class="fieldname">Sort Order Definition</span> group can contain multiple <span class="fieldname">Sort Order Fact</span> groups, each containing a fact with an assigned ascending or descending order. Facts are rearranged to describe a required order.</p>
+<p class="bodytext">When a search is executed, the search results are sorted by each fact in turn, in the order that the facts are displayed in the tab. Subsequent sorts only affect the ordering of results ranked equally by previous sort. The selected ascending or descending order determines how the values for each fact are displayed in the search result. </p>
+<p class="bodytext">After a search definition is published as a public search, its sort order cannot be changed.</p>
+<p class="bodytext">The following diagram displays the <span class="fieldname">Sort Order</span> tab.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext"><img src="58444_sortordertab.png" alt="PE, CWT, Search Tool, Sort Order Tab" height="272" width="625" vspace="2" hspace="2" align="bottom" border="0"></p>
+<p class="caption">Sort Order Tab</p>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">If a sort order is not defined for a search definition, the <span class="fieldname">Sort Order</span> tab is blank. The tab displays an <strong class="buttons">Add</strong> button when the Search Tool is locked. This allows a user to define a sort order definition (see the <span class="referrals">User Guide for Customer Management</span>).</p>
+<p class="bodytext">The following table lists <span class="fieldname">Sort Order</span> tab attributes.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Sort Order Tab Attributes</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="144"><p class="tableheading">Attribute</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="552"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">Sort Order Definition </span>group</p>
+</td>
+<td style="border:1px solid #010101;" width="552"><p class="tablebodytext">Default sort order for a predefined search.</p>
+<p class="tablebodytext">A sort order definition can contain multiple sort conditions, each displayed as a row (<span class="fieldname">Sort Order Fact</span> group).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">Sort Order Fact</span> group</p>
+</td>
+<td style="border:1px solid #010101;" width="552"><p class="tablebodytext">Condition defining whether the selected fact is sorted in an ascending or descending order.</p>
+<p class="tablebodytext">Each condition is made up of a fact (<span class="fieldname">Sort By</span> drop-down list) with the ascending or descending order (<span class="fieldname">Sort Order</span> drop-down list) applied to it.</p>
+<p class="tablebodytext">A sort order definition can include multiple <span class="fieldname">Sort Order Fact</span> groups each representing a specific sort condition.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">Sort By</span> drop-down list</p>
+</td>
+<td style="border:1px solid #010101;" width="552"><p class="tablebodytext">Fact selected for sorting retrieved search results.</p>
+<p class="tablebodytext">The <span class="fieldname">Sort By</span> drop-down list displays names of facts, any one of which can be selected and used for sorting retrieved search results.</p>
+<p class="tablebodytext">The drop-down list only displays searchable and stored facts available for the search class if they are of the following types:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Boolean</li><li class="tablelistbullet">Integer</li><li class="tablelistbullet">Text</li><li class="tablelistbullet">Decimal</li><li class="tablelistbullet">Percent</li><li class="tablelistbullet">Currency</li><li class="tablelistbullet">Timestamp</li><li class="tablelistbullet">Period</li><li class="tablelistbullet">Reference.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><span class="fieldname">Sort Order</span> drop-down list</p>
+</td>
+<td style="border:1px solid #010101;" width="552"><p class="tablebodytext">Order in which the search results are sorted for the selected fact.</p>
+<p class="tablebodytext">The order can either be ascending or descending.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><strong class="buttons">Up</strong> Button</p>
+</td>
+<td style="border:1px solid #010101;" width="552"><p class="tablebodytext">Moves a <span class="fieldname">Sort Order Fact</span> group up by one.</p>
+<p class="tablebodytext">Enabled only for multi-fact sort definitions.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><strong class="buttons">Down</strong> Button</p>
+</td>
+<td style="border:1px solid #010101;" width="552"><p class="tablebodytext">Moves a <span class="fieldname">Sort Order Fact</span> group down by one.</p>
+<p class="tablebodytext">Enabled only for multi-fact sort definitions.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><strong class="buttons">Add</strong> Button</p>
+</td>
+<td style="border:1px solid #010101;" width="552"><p class="tablebodytext">Adds a new <span class="fieldname">Sort Order Fact</span> group.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="144"><p class="tablebodytext"><strong class="buttons">Delete</strong> Button</p>
+</td>
+<td style="border:1px solid #010101;" width="552"><p class="tablebodytext">Deletes a <span class="fieldname">Sort Order Fact</span> group.</p>
+</td>
+</tr>
+
+</table>
+<p class="tablebodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="12509.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="41881.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Configuration Workbench for Singleview Process Engine 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

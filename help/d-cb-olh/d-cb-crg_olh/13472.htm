@@ -1,0 +1,422 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> PaymentInsert&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "13471.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "51574.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('13472')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="13471.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="51574.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">PaymentInsert&amp;()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'PaymentInsert&amp;()' (13472)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<table class="tableintopic" width="510" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<td class="tableheading" width="234"><p class="tableheading">Interface 1 (deprecated)</p>
+</td>
+<td width="48"><p class="tablebodytext">&nbsp;</p>
+</td>
+<td class="tableheading" width="228"><p class="tableheading">Interface 2</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td width="234"><pre class="unixinputp">PaymentInsert&amp;(    var&nbsp;LastModified~,    const&nbsp;FieldNames$[],    StringFieldValues$[],    IntegerFieldValues&amp;[],    RealFieldValues#[]    DateFieldValues~[],    InvoiceId&amp;[],    Invoice$[],    Amount#[],    ItemLabel$[],    ItemAmount#[])</pre>
+</td>
+<td width="48"><pre class="unixinputp">&nbsp;</pre>
+</td>
+<td width="228"><pre class="unixinputp">PaymentInsert&amp;(    var&nbsp;LastModified~,    const&nbsp;FieldNames$[],    const&nbsp;FieldValues?[])</pre>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Inserts payment details into the database.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">Interface 1 is deprecated and exists only for backward compatibility.  It is replaced by interface 2.</p></td></tr></table>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="294" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="107"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="107"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Method</span></p>
+</td>
+<td style="border:1px solid #010101;" width="107"><p class="tablebodytext">Local</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="185"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="511"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="185"><p class="tablebodytext"><span class="unixoutputc">LastModified~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="511"><p class="tablebodytext">Out:  Last modified date-time of the inserted payment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="185"><p class="tablebodytext"><span class="unixoutputc">FieldNames$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="511"><p class="tablebodytext">In:  List of fields to insert, which correspond to columns in the <span class="unixoutputc">PAYMENT_TRE_V</span> view.</p>
+<p class="tablebodytext">In the deprecated interface 1, string fields must be specified first, followed by integer, real, and date fields.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="185"><p class="tablebodytext"><span class="unixoutputc">FieldValues?[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="511"><p class="tablebodytext">In:  Values of fields to insert, in the order that their counterpart names are specified in <span class="unixoutputc">FieldNames$[]</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="185"><p class="tablebodytext"><span class="unixoutputc">StringFieldValues$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="511"><p class="tablebodytext">In:  (Deprecated) Values of string fields to insert.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="185"><p class="tablebodytext"><span class="unixoutputc">IntegerFieldValues&amp;[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="511"><p class="tablebodytext">In:  (Deprecated) Values of integer fields to insert.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="185"><p class="tablebodytext"><span class="unixoutputc">RealFieldValues#[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="511"><p class="tablebodytext">In:  (Deprecated) Values of real fields to insert.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="185"><p class="tablebodytext"><span class="unixoutputc">DateFieldValues~[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="511"><p class="tablebodytext">In:  (Deprecated) Values of date fields to insert.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="185"><p class="tablebodytext"><span class="unixoutputc">InvoiceId&amp;[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="511"><p class="tablebodytext">In:  (Deprecated) Array of invoice IDs against which payments are being made (may be empty).</p>
+<p class="tablebodytext">Invoice IDs take precedence over invoice names.</p>
+<p class="tablebodytext">If is specified, <span class="unixoutputc">Invoice$[]</span> is ignored.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="185"><p class="tablebodytext"><span class="unixoutputc">Invoice$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="511"><p class="tablebodytext">In:  (Deprecated) Array of invoice names against which payments are being made (may be empty).</p>
+<p class="tablebodytext">It is used as an alternative to <span class="unixoutputc">InvoiceId&amp;[]</span>.</p>
+<p class="tablebodytext">It is ignored if <span class="unixoutputc">InvoiceId&amp;[]</span> is specified.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="185"><p class="tablebodytext"><span class="unixoutputc">Amount#[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="511"><p class="tablebodytext">In:  (Deprecated) Array of amounts being paid against each invoice.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="185"><p class="tablebodytext"><span class="unixoutputc">ItemLabel$[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="511"><p class="tablebodytext">In:  (Deprecated) Array of item labels.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="185"><p class="tablebodytext"><span class="unixoutputc">ItemAmount#[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="511"><p class="tablebodytext">In:  (Deprecated) Array of amounts corresponding to the item labels.</p>
+<p class="tablebodytext">Item amounts that do not have corresponding item labels are stored without labels.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">ID assigned to the new payment if successful, and sets <span class="unixoutputc">LastModified~</span> to the date-time of the insert if the payment insert is successful; otherwise, an error is raised.</p>
+<p class="bodytext">If the precision of the payment amount (<span class="unixoutputc">PAYMENT_TRE_V.AMOUNT</span> or <span class="unixoutputc">Amount#[]</span>) is not consistent with the precision of the associated currency, an error is raised.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">The customer partition and ID of the new payment is derived from the partition of the To Account, which is specified in either the <span class="unixoutputc">TO_ACCOUNT_NAME</span> or <span class="unixoutputc">TO_ACCOUNT_ID</span> fields passed to the function.  A positive payment amount is a credit and a negative payment amount is a debit. </p>
+<p class="bodytext">If the payment is part of a batch, the batch status must be Entered, and the payment type of the inserted payment must be the same as the payment type of the associated payment batch; otherwise, an error is raised.</p>
+<p class="bodytext">The effective user must have the insert security group access level for the customer associated with the record manipulated by this function call.  </p>
+<p class="bodytext"><span class="unixoutputc">GROUP_ACCESS_TRE_V</span> view lists security group access level values.</p>
+<p class="syntaxheading">Interface 1</p>
+<p class="bodytext">The following conditions apply:</p>
+<ul class="listbullet"><li class="listbullet">The method by which the payment is allocated to invoices, direct credits, and receivable types can be manual or automatic.</li><li class="listbullet">Automatic allocation means the function uses <span class="unixoutputc">PaymentAllocate&amp;()</span> to retrieve the payment amount breakdown by invoice and receivable type.</li><li class="listbullet">Manual allocation means that the function uses the combined <span class="unixoutputc">PaymentInsert&amp;(2)</span>, <span class="unixoutputc">PaymentInvoiceUpdate&amp;()</span>, and <span class="unixoutputc">PaymentItemUpdate&amp;()</span> interfaces.</li><li class="listbullet"><span class="unixoutputc">Invoice$[]</span> or <span class="unixoutputc">InvoiceId&amp;[]</span>, and <span class="unixoutputc">Amount#[]</span> can only be used in manual allocation.  </li><li class="listbullet">If <span class="unixoutputc">Invoice$[]</span> or <span class="unixoutputc">InvoiceId&amp;[]</span> are used for manual allocation, and <span class="unixoutputc">Amount#[]</span> is less than the payment amount, the difference is used as a direct credit.</li></ul><p class="bodytext">The following table lists field combinations that trigger manual and automatic methods of allocation of payments.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Manual or Automatic Allocation for Interface 1</p>
+<table class="tableintopic" width="708" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="85"><p class="tableheading">INVOICE_<br>ID</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="107"><p class="tableheading">Invoice$[]<br>InvoiceId&amp;[]<br>Amount#[]</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="168"><p class="tableheading">PAYMENT_INVOICE_<br>CODE</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="150"><p class="tableheading">AUTO_ALLOCATE_<br>IND_CODE</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="198"><p class="tableheading">Allocation Method</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="85"><p class="tablebodytext">Specified</p>
+</td>
+<td style="border:1px solid #010101;" width="107"><p class="tablebodytext">Empty</p>
+</td>
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">Not specified or NULL.</p>
+<p class="tablebodytext">Derived to be either of:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">0 (Invoice)</li><li class="tablelistbullet">1 (Split).</li></ul></td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext">Non-zero (TRUE)</p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Automatic (single invoice, zero or one credit, zero or more receivable types).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="85"><p class="tablebodytext">Specified</p>
+</td>
+<td style="border:1px solid #010101;" width="107"><p class="tablebodytext">Empty</p>
+</td>
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">0 (Invoice)</p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext">0 (FALSE)</p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Manual (single invoice, not broken down).</p>
+<table class="cautionstyle" width="100%"><tr><td><p class="caution">Caution:</p><p class="tablecaution">If an invoice has an associated receivable type, an error is raised.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="85"><p class="tablebodytext">Not specified</p>
+</td>
+<td style="border:1px solid #010101;" width="107"><p class="tablebodytext">Specified for a single invoice.</p>
+</td>
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">0 (Invoice)</p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext">0 (FALSE)</p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Manual (single invoice, not broken down).</p>
+<table class="cautionstyle" width="100%"><tr><td><p class="caution">Caution:</p><p class="tablecaution">If an invoice has an associated receivable type, an error is raised.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="85"><p class="tablebodytext">Not specified</p>
+</td>
+<td style="border:1px solid #010101;" width="107"><p class="tablebodytext">Empty</p>
+</td>
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">Not specified or NULL.</p>
+<p class="tablebodytext">Derived to be one of:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">0 (Invoice)</li><li class="tablelistbullet">1 (Split)</li><li class="tablelistbullet">2 (Unallocated).</li></ul></td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext">Non-zero (TRUE)</p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Automatic (zero or more invoices and/or a credit, zero or more receivable types).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="85"><p class="tablebodytext">Not specified</p>
+</td>
+<td style="border:1px solid #010101;" width="107"><p class="tablebodytext">Empty</p>
+</td>
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">2 (Unallocated).</p>
+</td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext">0 (FALSE)</p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Manual (direct credit, not broken down).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="85"><p class="tablebodytext">Not specified</p>
+</td>
+<td style="border:1px solid #010101;" width="107"><p class="tablebodytext">Specified</p>
+</td>
+<td style="border:1px solid #010101;" width="168"><p class="tablebodytext">Not specified or NULL.</p>
+<p class="tablebodytext">Derived to be one of:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">0 (Invoice)</li><li class="tablelistbullet">1 (Split)</li><li class="tablelistbullet">2 (Unallocated).</li></ul></td>
+<td style="border:1px solid #010101;" width="150"><p class="tablebodytext">0 (FALSE)</p>
+</td>
+<td style="border:1px solid #010101;" width="198"><p class="tablebodytext">Manual.</p>
+<table class="cautionstyle" width="100%"><tr><td><p class="caution">Caution:</p><p class="tablecaution">If an invoice has an associated receivable type, an error is raised.</p></td></tr></table>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Interface 2</p>
+<p class="bodytext">The following conditions apply:</p>
+<ul class="listbullet"><li class="listbullet">The function does not support specifying invoice allocations and payment items.  Use <span class="unixoutputc">PaymentInvoiceUpdate&amp;()</span> and <span class="unixoutputc">PaymentItemUpdate&amp;()</span> to insert allocations.</li><li class="listbullet">If <span class="unixoutputc">PAYMENT_INVOICE_CODE</span> is NULL and <span class="unixoutputc">AUTO_ALLOCATE_IND_CODE</span> is FALSE, no records are added to the <span class="unixoutputc">PAYMENT_INVOICE</span> table.  The records must be added using <span class="unixoutputc">PaymentInvoiceUpdate&amp;</span>.</li><li class="listbullet">Payments can be made to adjustments (for example, allocation to adjustments representing debit notes). </li><li class="listbullet">The method by which the payment is allocated to invoices, adjustments, direct credits, and receivable types can be manual or automatic.  </li><li class="listbullet">Automatic allocation means the function uses <span class="unixoutputc">PaymentAllocate&amp;()</span> to retrieve the payment amount breakdown by invoice, receivable type, and adjustment.  </li><li class="listbullet"><span class="unixoutputc">INVOICE_ID</span> and <span class="unixoutputc">PAYMENT_INVOICE_CODE</span> may not be required, depending on the allocation method.  For more information, refer to the following table.</li><li class="listbullet">If <span class="unixoutputc">PAYMENT_STATUS_CODE</span> is specified, the following applies: <ul class="listdashbullet2"><li class="listdashbullet2">A status of Entered (0) or Future Dated (3) may be supplied, in which case the payment is not applied, irrespective of the <span class="unixoutputc">PAYMENT_RECEIVED_DATE</span>.  The status values can be set irrespective of whether or not the payment is part of a batch.</li><li class="listdashbullet2">A status of Applied (1) may be supplied if the payment is not part of a batch.  Having a manually specified status of Applied forces the payment to be applied.  An error is raised if the payment cannot be applied for the following reasons:<ul class="listdashbullet3"><li class="listdashbullet3">It is attached to a batch.</li><li class="listdashbullet3">The payment breakdown information is not available.</li><li class="listdashbullet3">The <span class="unixoutputc">PAYMENT_RECEIVED_DATE</span> is set to a date greater than the current date.</li></ul></li></ul></li><li class="listbullet">If <span class="unixoutputc">PAYMENT_STATUS_CODE</span> is not specified, it is derived as follows:<ul class="listdashbullet2"><li class="listdashbullet2">For new individual payments with <span class="unixoutputc">PAYMENT_RECEIVED_DATE</span> less than or equal to <span class="unixoutputc">PAYMENT_DATE</span> and sufficient detail to apply the new payment to an invoice, the status is set to 1 (Applied). </li><li class="listdashbullet2">For new individual or batch payments with <span class="unixoutputc">PAYMENT_RECEIVED_DATE</span> greater than <span class="unixoutputc">PAYMENT_DATE</span>, the status is set to 3 (Future Dated).</li><li class="listdashbullet2">For all other payments, the status is set to 0 (Entered).</li></ul></li><li class="listbullet">Some fields have an ID and a string equivalent (for example, <span class="unixoutputc">TO_ACCOUNT_ID</span> and <span class="unixoutputc">TO_ACCOUNT_NAME</span>).  When supplying a value for one of these fields, either the ID or the string can be supplied, but not both.</li><li class="listbullet">The amount must have a valid precision for the currency.  This is checked using <span class="unixoutputc">CurrencyConversion#</span>.</li><li class="listbullet">If the specified account is the prime account of a customer node and the balance is 0, the <span class="unixoutputc">REPORT_LEVEL_CODE</span> must be set to 1 (Invoice).  This applies to both From and To accounts.</li></ul><p class="bodytext">The following table lists conditions that trigger manual and automatic methods of allocation of payments.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">Manual or Automatic Allocation for Interface 2</p>
+<table class="tableintopic" width="708" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="90"><p class="tableheading">INVOICE_<br>ID</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="114"><p class="tableheading">ALLOCATED_<br>ADJUSTMENT_<br>ID</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="96"><p class="tableheading">AUTO_<br>ALLOCATE_<br>IND_CODE</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="162"><p class="tableheading">PAYMENT_INVOICE_<br>CODE</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="246"><p class="tableheading">Allocation Method</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Specified</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Not specified</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">TRUE</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Not specified or NULL.</p>
+<p class="tablebodytext">Derived to be either of:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">0 (Invoice)</li><li class="tablelistbullet">1 (Split).</li></ul></td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Automatic (single invoice, zero or one credit, or zero or more receivable types).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Specified</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Not specified</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">FALSE</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">0 (Invoice)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Manual (single invoice, not broken down).</p>
+<table class="cautionstyle" width="100%"><tr><td><p class="caution">Caution:</p><p class="tablecaution">If an invoice has an associated receivable type, an error is raised.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Not specified</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Not specified</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">TRUE</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Not specified or NULL.</p>
+<p class="tablebodytext">Derived to be one of:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">0 (Invoice)</li><li class="tablelistbullet">1 (Split)</li><li class="tablelistbullet">2 (Unallocated)</li><li class="tablelistbullet">3 (Adjustment).</li></ul></td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Automatic (zero or more invoices or a credit, zero or more receivable types, or zero or more credit or debit notes).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Not specified</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Not specified</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">FALSE</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">2 (Unallocated).</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Manual (direct credit, not broken down).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Not specified</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Specified</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">TRUE</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Not specified or NULL.</p>
+<p class="tablebodytext">Derived to be either of:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">1 (Split)</li><li class="tablelistbullet">3 (Adjustment).</li></ul></td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Automatic (single credit or debit note, or zero or one credit).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Not specified</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Not specified</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">FALSE</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">3 (Adjustment)</p>
+</td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Manual (single credit or debit note).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="90"><p class="tablebodytext">Not specified</p>
+</td>
+<td style="border:1px solid #010101;" width="114"><p class="tablebodytext">Not specified</p>
+</td>
+<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">FALSE</p>
+</td>
+<td style="border:1px solid #010101;" width="162"><p class="tablebodytext">Not specified or NULL.</p>
+<p class="tablebodytext">Derived to be one of:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">0 (Invoice)</li><li class="tablelistbullet">1 (Split)</li><li class="tablelistbullet">2 (Unallocated)</li><li class="tablelistbullet">3 (Adjustment).</li></ul></td>
+<td style="border:1px solid #010101;" width="246"><p class="tablebodytext">Manual.</p>
+<p class="tablebodytext">No <span class="unixoutputc">PAYMENT_INVOICE</span> records are inserted.</p>
+<p class="tablebodytext">Use <span class="unixoutputc">biPaymentInvoiceUpdate&amp;()</span>.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="13471.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="51574.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

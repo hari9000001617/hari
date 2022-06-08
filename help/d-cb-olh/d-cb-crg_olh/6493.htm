@@ -1,0 +1,375 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Individual Adjustment Detail Form </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "6491.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "6495.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('55339');highlight('6493')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="6491.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="6495.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Individual Adjustment Detail Form</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Individual Adjustment Detail Form' (6493)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">The following table lists automation parameters for the <span class="formname">Individual Adjustment Detail</span> form, data type, and supported functions.</p>
+<p class="bodytext">The description column is provided to supplement the description in the <span class="unixoutputc">ADJUSTMENT_TRE_V</span> view, or to provide information about parameters not contained within the database view.</p>
+<p class="syntaxheading">Parameter Definitions </p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th class="tableheading" style="border:1px solid #010101;" width="234"><p class="tableheading">Parameter or Field Name</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="72"><p class="tableheading">Data Type</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="84"><p class="tableheading">Supported Functions</p>
+</th>
+<th class="tableheading" style="border:1px solid #010101;" width="306"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">ADJUSTMENT_TYPE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+<p class="tablebodytext">Update</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">Type of adjustment.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">It is recommended that this field be passed in first.  Failure to do so might cause other fields to be ignored.  An error occurs if<span class="unixoutputc"> TO_ACCOUNT_ID</span> is passed in before<span class="unixoutputc"> ADJUSTMENT_TYPE_ID</span>.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">DESCRIPTION</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+<p class="tablebodytext">Update</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">Description of the adjustment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">DEBIT_ACCOUNT_ID</span></p>
+<p class="tablebodytext"><span class="unixoutputc">(FROM_ACCOUNT_ID)</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+<p class="tablebodytext">Update</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">Account from which the adjustment is deducted.</p>
+<p class="tablebodytext"><span class="unixoutputc">FROM_ACCOUNT_ID</span> is deprecated and provided only for backward compatibility.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">CREDIT_GL_CODE_ID</span></p>
+<p class="tablebodytext"><span class="unixoutputc">(FROM_GL_CODE_ID)</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+<p class="tablebodytext">Update</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">GL code to credit with the adjustment amount.</p>
+<p class="tablebodytext"><span class="unixoutputc">FROM_GL_CODE_ID</span> is deprecated and provided only for backward compatibility.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">ADJUSTMENT_TEXT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+<p class="tablebodytext">Update</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">Text to be displayed on the customer's invoice.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">CREDIT_ACCOUNT_ID</span></p>
+<p class="tablebodytext"><span class="unixoutputc">(TO_ACCOUNT_ID)</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">Account to which the adjustment is to apply.</p>
+<p class="tablebodytext">It can only be specified if the<span class="unixoutputc"> ADJUSTMENT_TYPE_ID</span> has been supplied.</p>
+<p class="tablebodytext"><span class="unixoutputc">TO_ACCOUNT_ID</span> is deprecated and provided only for backward compatibility.</p>
+<p class="tablebodytext">An error occurs if <span class="unixoutputc">CREDIT_ACCOUNT_ID</span> is passed in before <span class="unixoutputc">ADJUSTMENT_TYPE_ID</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">DEBIT_GL_CODE_ID</span></p>
+<p class="tablebodytext"><span class="unixoutputc">(TO_GL_CODE_ID)</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+<p class="tablebodytext">Update</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">GL code to debit with the adjustment amount.</p>
+<p class="tablebodytext">It can only be updated if the adjustment is not applied.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">PERSON_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+<p class="tablebodytext">Update</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">Customer associated with the adjustment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">AMOUNT</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Real</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+<p class="tablebodytext">Update</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">Adjustment amount.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">CURRENCY_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+<p class="tablebodytext">Update</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">Adjustment currency.</p>
+<p class="tablebodytext">It can only be updated if the adjustment is not applied.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">CURRENCY_CONVERSION_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+<p class="tablebodytext">Update</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">Effective date-time of the conversion rate to use when converting amounts.</p>
+<p class="tablebodytext">It can only be updated if the adjustment is not applied.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">ADJUSTMENT_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">Date-time the adjustment was made.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">ADJUSTMENT_RECEIVED_DATE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Date</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+<p class="tablebodytext">Update</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">Date-time the adjustment is applied to the account.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">CUSTOMER_QUERY_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+<p class="tablebodytext">Update</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">Reference to the customer query that caused the adjustment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">GENERAL_1 - GENERAL_10</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">String</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+<p class="tablebodytext">Update</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">General fields 1 - 10 for the adjustment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">INVOICE_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">If the <span class="unixoutputc">ADJUSTMENT_INVOICE_CODE</span> is 0 (Invoice), this is the ID of the single invoice in the <span class="unixoutputc">ADJUSTMENT_INVOICE</span> table for the adjustment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">ALLOCATED_ADJUSTMENT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">ID of the single adjustment in the <span class="unixoutputc">ADJUSTMENT_INVOICE</span> table.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">INVOICE_FORMAT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+<p class="tablebodytext">Update</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">ID of the adjustment note invoice format.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">ENABLE_AGING_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+<p class="tablebodytext">Update</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">If set to 1 (True), unallocated amounts associated with an adjustment are aged according to the account type aging rules of <span class="unixoutputc">TO_ACCOUNT_ID</span>.</p>
+<p class="tablebodytext">Aging cannot be enabled for transfer adjustments.</p>
+<p class="tablebodytext">It can only be set to 1 if <span class="unixoutputc">FROM_ACCOUNT_ID</span> is <span class="unixoutputc">NULL</span>.</p>
+<p class="tablebodytext">If not set to 1, it must be set to <span class="unixoutputc">NULL</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">PENDING_GENERATION_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+<p class="tablebodytext">Update</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">If set to 1 (True), the adjustment is waiting for adjustment image generation (or regeneration).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">IMAGE_GENERATION_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+<p class="tablebodytext">Update</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">If set to 1 (True), an image is generated for the adjustment.</p>
+<p class="tablebodytext">It cannot be specified as part of an Insert or Update operation.</p>
+<p class="tablebodytext">It is populated automatically when the adjustment image is generated or regenerated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">PENDING_PRINT_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+<p class="tablebodytext">Update</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">If set to 1 (True), the image for the adjustment is awaiting printing (or reprinting).</p>
+<p class="tablebodytext">It can only be set to 1 if an adjustment image was or is waiting to be generated.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">PRINTED_IND_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+<p class="tablebodytext">Update</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">If set to 1 (True), the image for the adjustment was printed or emailed.</p>
+<p class="tablebodytext">When the image is printed (or reprinted), it is automatically set to 1.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">STORED_IMAGE_TYPE_CODE</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert<br>Update</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">Type of image stored in <span class="unixoutputc">ADJUSTMENT_IMAGE</span>, derived from the value stored in <span class="unixoutputc">INVOICE_FORMAT_ID</span> at image creation.</p>
+<p class="tablebodytext">It is set by <span class="unixoutputc">biAdjustmentImageGenerate&amp;()</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="234"><p class="tablebodytext"><span class="unixoutputc">PAYMENT_ID</span></p>
+</td>
+<td style="border:1px solid #010101;" width="72"><p class="tablebodytext">Integer</p>
+</td>
+<td style="border:1px solid #010101;" width="84"><p class="tablebodytext">Insert</p>
+</td>
+<td style="border:1px solid #010101;" width="306"><p class="tablebodytext">ID of the single payment in the <span class="unixoutputc">ADJUSTMENT_INVOICE</span> table.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="6491.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="6495.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

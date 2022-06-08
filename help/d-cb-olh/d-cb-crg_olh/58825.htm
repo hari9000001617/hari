@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> ProductInstanceEquipDelete&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "13501.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "58826.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('58825')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="13501.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="58826.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">ProductInstanceEquipDelete&amp;()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'ProductInstanceEquipDelete&amp;()' (58825)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<pre class="unixinputp">ProductInstanceEquipDelete&amp;(    ProductInstanceId&amp;,    StartDate~,    var&nbsp;LastModified~,    ServiceItemSeqnr&amp;,    EquipmentItemSeqnr&amp;,    EquipmentRangeSeqnr&amp;)</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Removes an optional equipment item from the product instance service at the specified start date-time.</p>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="288" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="187"><p class="tablebodytext"><span class="bold">Method</span></p>
+</td>
+<td style="border:1px solid #010101;" width="101"><p class="tablebodytext">Local</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="180"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="516"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">ProductInstanceId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">In:  ID of the base product instance.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">StartDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">In:  Start of the date-time range for which the equipment item is to be deleted.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">LastModified~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">In:  Last modified date-time of the product to be updated.</p>
+<p class="tablebodytext">Out:  Last modified date-time of the updated product.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">ServiceItemSeqnr&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">In:  Product service item being deleted.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">ServiceRangeSeqnr&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">In:  Range sequence number of the service within the product, which identifies a service within its <span class="unixoutputc">ServiceItemSeqnr&amp;</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">EquipmentItemSeqnr&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">In:  Product service equipment item being deleted.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="180"><p class="tablebodytext"><span class="unixoutputc">EquipmentRangeSeqnr&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="516"><p class="tablebodytext">In:  Equipment item being deleted.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">1 (TRUE) if the deletion is successful; otherwise, an error is raised.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">The product service equipment type (identified by <span class="unixoutputc">ServiceItemSeqnr&amp;</span> and <span class="unixoutputc">EquipmentItemSeqnr&amp;)</span> can have optional equipment if <span class="unixoutputc">EQUIPMENT_RANGE_MAX</span> in the <span class="unixoutputc">PRODUCT_SERVICE_TYPE_EQUIP</span> table is greater than <span class="unixoutputc">EQUIPMENT_RANGE_MIN</span>, in which case:</p>
+<ul class="listbullet"><li class="listbullet">The optional equipment has an <span class="unixoutputc">EQUIPMENT_RANGE_SEQNR</span> (in the <span class="unixoutputc">PRODUCT_INSTANCE_EQUIP</span> table) between <span class="unixoutputc">EQUIPMENT_RANGE_MIN</span> + 1 and <span class="unixoutputc">EQUIPMENT_RANGE_MAX</span>.  </li><li class="listbullet">A mandatory equipment item has an <span class="unixoutputc">EQUIPMENT_RANGE_SEQNR</span> between 1 and <span class="unixoutputc">EQUIPMENT_RANGE_MIN</span>.</li></ul><p class="bodytext">If the base product instance is assigned a product offer, the supported equipment range is determined based on the non-cancelled companion product instances for this base product instance, according to the algorithm described for <span class="unixoutputc"><a id="h59167" class="jump" title="ProductSvcEquipRange?[]()" href="59164.htm" target="_self">[bi]ProductSvcEquipRange?[]()</a></span>.</p>
+<p class="bodytext">If the base product instance is not assigned a product offer, the supported equipment range is retrieved from the <span class="unixoutputc">PRODUCT_SERVICE_TYPE_EQUIP</span> table for this base product. </p>
+<p class="bodytext"><span class="unixoutputc">StartDate~</span> must be equal to the <span class="unixoutputc">EFFECTIVE_START_DATE</span> of the latest <span class="unixoutputc">PRODUCT_INSTANCE_EQUIP</span> record of the optional equipment.</p>
+<p class="bodytext">On entry to the function, <span class="unixoutputc">LastModified~</span> must be equal to the <span class="unixoutputc">LAST_MODIFIED</span> field of the <span class="unixoutputc">PRODUCT_INSTANCE_HISTORY</span> record identified by <span class="unixoutputc">ProductInstanceId&amp;</span> as effective at <span class="unixoutputc">StartDate~</span>.  On successful completion, <span class="unixoutputc">LastModified~</span> is the new value of the <span class="unixoutputc">LAST_MODIFIED</span> field of the updated <span class="unixoutputc">PRODUCT_INSTANCE_HISTORY</span> record (only the <span class="unixoutputc">LAST_MODIFIED</span> field is updated).</p>
+<p class="bodytext">Any product instance equipment items with an <span class="unixoutputc">EQUIPMENT_RANGE_SEQNR</span> greater than <span class="unixoutputc">EquipmentRangeSeqnr&amp;</span> are renumbered.</p>
+<p class="bodytext">If the optional equipment item is successfully deleted, the product instance is flagged as either complete or requiring re-completion, according to the following rules:</p>
+<ul class="listbullet"><li class="listbullet">If the product instance is complete and is assigned a product offer, it is flagged as requiring re-completion if incomplete services or equipment items exist for the product instance, or if it has too many or too few services or equipment items.</li><li class="listbullet">If the product instance is not assigned a product offer, it is flagged as requiring re-completion if it has a status of Product Creation or an incomplete service or equipment item.</li><li class="listbullet">If the product instance is not assigned a product offer, it is flagged as complete if it has a status other than Product Creation and has no incomplete services or equipment items. </li></ul><p class="bodytext">If the <span class="unixoutputc">PRODUCT_INSTANCE_EQUIP</span> record had an allocated <span class="unixoutputc">EQUIPMENT_ID</span>, the equipment status is re-derived.</p>
+<p class="bodytext">This function supports product instance history records with sub-day granularity, so <span class="unixoutputc">StartDate~</span> can specify a time component.</p>
+<p class="bodytext">The effective user must have delete security group access level for the customer associated with the record manipulated by this function call.  </p>
+<p class="bodytext">The customer security group access level required is determined by the effective start date of the product instance or the effective date supplied by the active user.  If the effective date of the delete is less than the current date (00:00:00 timestamp), direct delete security group access level is required.  </p>
+<p class="bodytext"><span class="unixoutputc">GROUP_ACCESS_TRE_V</span> view lists security group access level values. </p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="13501.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="58826.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

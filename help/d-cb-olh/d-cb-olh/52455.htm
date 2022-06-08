@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> External Definition </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "1619.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "51826.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('4501');highlight('52455')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="1619.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="51826.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">External Definition</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'External Definition' (52455)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">External definitions are a key component of the interface between Singleview and external systems. External definitions define the details of the data structure and the fields that must be supplied either to or from an external system, and how they map to Singleview entities and their fields.</p>
+<p class="bodytext">External definitions do not include specific details on transport or encoding mechanisms.  These details are defined in a separate layer specific to the type of interface that is using the external definitions.</p>
+<p class="bodytext">External definitions can map to a Convergent Billing entity or a Process Engine class; these are concrete external definitions. An external definition not mapped to a Convergent Billing entity or Process Engine class is an abstract definition.  External definitions generated from an abstract definition are automatically mapped to the Convergent Billing entity or Process Engine class of a parent definition.</p>
+<p class="bodytext">External definitions can also be linked to create complex structures combining details from multiple entities.  Entities can be different, or belong to the same type (for example, customers and child customers). These are referred to as nested external definitions.</p>
+<p class="bodytext">Figure 2 displays how external definitions link to create a nested external definition.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext"><img src="57364_nestededs.png" alt="" height="486" width="658" vspace="2" hspace="2" align="bottom" border="0"></p>
+<p class="caption">Figure 2  Nested External Definition</p>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext">XML Schema terminology has been adopted for representing components of an external definition. Terminology includes:</p>
+<ul class="listbullet"><li class="listbullet">Namespace</li><li class="listbullet">Attributes</li><li class="listbullet">Elements</li><li class="listbullet">Content models (Simple Content, Sequence, Choice, and All).</li></ul><p class="bodytext">External definitions are created and maintained in the <span class="formname"><a id="h64647" class="jump" title="External Definition Form" href="52257.htm" target="_self">External Definition</a></span><a id="h64647_2" class="jump" title="External Definition Form" href="52257.htm" target="_self"> form</a>.  </p>
+<p class="bodytext">External definitions support combinations of the following basic operations on their underlying Convergent Billing or Process Engine entities:</p>
+<ul class="listbullet"><li class="listbullet">Insert </li><li class="listbullet">Update </li><li class="listbullet">Delete </li><li class="listbullet">Search </li><li class="listbullet">Fetch.</li></ul><p class="bodytext">To simplify the creation of external definitions, they can be generated:</p>
+<ul class="listbullet"><li class="listbullet">For a Convergent Billing entity (using an entity validation)</li><li class="listbullet">For a Process Engine class</li><li class="listbullet">From XML schema files.</li></ul><p class="bodytext">The generated external definition can be customised to suit requirements of the external interface that is to use it, and it can also be nested.</p>
+<p class="bodytext">For more information about external definitions, refer to the <span class="referrals">System Configuration Guide for Singleview Convergent Billing</span>.</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="1619.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="51826.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

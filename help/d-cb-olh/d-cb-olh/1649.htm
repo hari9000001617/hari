@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> Hash </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Online Help for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "11244.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "4531.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('4501');highlight('1649')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="11244.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="4531.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h2 class="heading2">Hash</h2>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'Hash' (1649)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="bodytext">Hashes can be defined in Convergent Billing as local variables in expression blocks and functions, subject to the following conditions:</p>
+<ul class="listbullet"><li class="listbullet">Hashes are defined using the following syntax:<p class="listcontinue"><span class="unixoutputc">&lt;hash name&gt;&lt;scalar type&gt;{}</span></p>
+<p class="listcontinue">The <span class="unixoutputc">&lt;scalar type&gt;</span> defines the data type of each hash element.  For example, <span class="unixoutputc">var charges#{}</span> defines a hash of real data type.</p>
+</li><li class="listbullet">Hashes are referenced using the following syntax:<p class="listcontinue"><span class="unixoutputc">&lt;hash name&gt;&lt;scalar type&gt;{&lt;expression&gt;}</span></p>
+<p class="listcontinue">where <span class="unixoutputc">&lt;expression&gt;</span> returns a string; for example, <span class="unixoutputc">var custname${'name'} := 'Smith';</span></p>
+</li></ul><p class="bodytext">The following table lists examples for the usage of hashes.</p>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="660" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="330"><p class="tableheading">Example</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="330"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="330"><p class="tablebodytext"><span class="unixoutputc">a${}</span></p>
+</td>
+<td style="border:1px solid #010101;" width="330"><p class="tablebodytext">Accesses the hash as a whole.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="330"><p class="tablebodytext"><span class="unixoutputc">var b?{};b${'SERVICE_NAME'}{} := a${};</span></p>
+</td>
+<td style="border:1px solid #010101;" width="330"><p class="tablebodytext">Assigns a hash to a hash element.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="330"><p class="tablebodytext"><span class="unixoutputc">b${'SERVICE_NAME'}{'Old'} := 'Hello';</span></p>
+</td>
+<td style="border:1px solid #010101;" width="330"><p class="tablebodytext">Assigns an element to a two-dimensional hash.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="330"><p class="tablebodytext"><span class="unixoutputc">var b?{};b${'SERVICE_NAME'}[] := a$[];</span></p>
+</td>
+<td style="border:1px solid #010101;" width="330"><p class="tablebodytext">Assigns an array to a hash element.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="330"><p class="tablebodytext"><span class="unixoutputc">b${'SERVICE_NAME'}[0] := 'FirstValue';</span></p>
+</td>
+<td style="border:1px solid #010101;" width="330"><p class="tablebodytext">Assigns an array element within a hash.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><ul class="notelistbullet"><li class="notelistbullet">There is no limit to the depth at which arrays or hashes can be nested.  Nested arrays and hashes are implicitly created as required and are always of unknown type.  Only hashes of unknown type support nested arrays and hashes.</li><li class="notelistbullet">A hash cannot be declared with multiple dimensions.  For example, the following is incorrect:<p class="listcontinue"><span class="unixoutputc">var a?{}{};.</span></p>
+<p class="listcontinue">To create a multi-dimensional hash, a single dimensional hash of unknown type must first be declared, and then the nested hashes (or arrays) accessed as required.</p>
+</li><li class="notelistbullet">A hash variable is identified by its name only, as opposed to scalar variables, which are identified by name and type.  For example, the following is incorrect:<p class="listcontinue"><span class="unixoutputc">var a&amp;{},</span> <span class="unixoutputc">a${};</span></p>
+<p class="listcontinue">The variable <span class="unixoutputc">a</span> has been declared to be of type integer hash, and cannot be declared to be of type string hash.</p>
+<p class="listcontinue">The purpose of this is to allow hash elements to use the type character; for example:</p>
+<p class="listcontinue"><span class="unixoutputc">var a?{};</span><br><span class="unixoutputc">a?{'SERVICE_NAME'} := ' a string';</span><br><span class="unixoutputc"># Trim leading spaces from first Array element.</span><br><span class="unixoutputc">a${'SERVICE_NAME'} := ltrim(a${'SERVICE_NAME'});</span><br><span class="unixoutputc">#Could also say</span><br><span class="unixoutputc">a?{'SERVICE_NAME'} := ltrim(a${'SERVICE_NAME'});</span><br><span class="unixoutputc">#or </span><br><span class="unixoutputc">a?{'SERVICE_NAME'} := ltrim(to_string(a?{'SERVICE_NAME'}));</span></p>
+</li><li class="notelistbullet"><span class="unixoutputc">a${'SERVICE_NAME'}</span> is not equivalent to <span class="unixoutputc">to_string(a?{'SERVICE_NAME'})</span>.  <span class="unixoutputc">a${'SERVICE_NAME'}</span> results<span class="unixoutputc"> </span>in a runtime error if the value being accessed is not a string, while <span class="unixoutputc">to_string(a${'SERVICE_NAME'})</span> converts the value to a string (using default formats for integers, reals, and dates) if it is not already a string.</li><li class="notelistbullet">In general, the value accessed must be of the type specified, or a runtime error occurs.  The exception is that casting between integers and reals is permitted; however, accessing a real value as an integer changes the value stored in the element to an integer, and accessing an integer as a real value changes the value stored in the element to a real value; for example:<p class="listcontinue"><span class="unixoutputc">var a?{};</span><br><span class="unixoutputc">a#{'SERVICE_NAME'} := 1.1;</span><br><span class="unixoutputc">if (a&amp;{'SERVICE_NAME'} &gt; 0) then print(a#{'SERVICE</span>_<span class="unixoutputc">NAME'}); # This prints 1, NOT 1.1</span></p>
+</li></td></tr></table></ul>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="11244.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="4531.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Online Help for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

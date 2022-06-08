@@ -1,0 +1,224 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> biBillRunExecute&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "11472.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "11474.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('11473')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="11472.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="11474.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">biBillRunExecute&amp;()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'biBillRunExecute&amp;()' (11473)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<pre class="unixinputp">biBillRunExecute&amp;(BillRunId&amp;,    EffectiveDate~,    EffectiveDayOfMonth&amp;,    QAInd&amp;,     BillingConfiguration&amp;,    TaskId&amp;,    ProcessName$,    FromOperation&amp;,    ToOperation&amp;,    ErrorThreshold&amp;,    RootCustomerNodeList&amp;[],    SkipCustomerNodeList&amp;[],    [MinimalRevoke&amp;],    var&nbsp;SuccessCustomerNodeList&amp;[],    var&nbsp;ErrorCustomerNodeList&amp;[],    var&nbsp;SuppressedCustomerNodeList&amp;[])</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">This function is a bill run controller EPM function that performs a range of applicable billing operations on the specified set of root customer nodes for the specified bill run.  </p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="note">The function supports batch runs of up to 10,000 customers.  Batch runs of greater than 10,000 customers are not supported.</p></td></tr></table>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="288" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="186"><p class="tablebodytext"><span class="bold">Method</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Remote</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="252"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="444"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">BillRunId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">In:  ID of the bill run to be executed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EffectiveDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">In:  Effective date-time of the bill run.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EffectiveDayOfMonth&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">In:  Target day of the month to calculate any recurring charges for this bill run.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">QAInd&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">In:  Indicator to identify if the bill run to be processed is a real bill run or a QA bill run.</p>
+<p class="tablebodytext">A non-zero value (TRUE) indicates a QA bill run.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">BillingConfiguration&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">In:  Code used to determine billing operations and calling programs for a specific billing configuration.</p>
+<p class="tablebodytext">The default configuration has a value of 0; user-defined configurations have a positive integer value.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">TaskId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">In:  ID of the set of operations.</p>
+<p class="tablebodytext">If this parameter is defined <span class="unixoutputc">ProcessName$</span> must not be defined.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ProcessName$</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">In:  Name of the process that requested the set of operations.</p>
+<p class="tablebodytext">If this parameter is defined <span class="unixoutputc">TaskId&amp;</span> must not be defined.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">FromOperation&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">In:  First operation of the range of calling programs to process.</p>
+<p class="tablebodytext">It must be:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Less than 128 or greater than 128</li><li class="tablelistbullet">Less than or equal to <span class="unixoutputc">ToOperation&amp;</span>.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ToOperation&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">In:  Last operation of the range of calling programs to process.</p>
+<p class="tablebodytext">It must be less than 128 or greater than 128.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ErrorThreshold&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">In:  Maximum number of overall errors encountered by the program before aborting with a threshold error.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">RootCustomerNodeList&amp;[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">In:  List of root customer node IDs that the operation calling programs must process.</p>
+<p class="tablebodytext">The customer nodes in this list must be mutually exclusive to the customer nodes in <span class="unixoutputc">SkipCustomerNodeList&amp;</span>.</p>
+<p class="tablebodytext">It cannot be empty.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">In a multi-tenant implementation, all customers specified in this parameter must belong to the same tenant or all customers must belong to no tenant.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">SkipCustomerNodeList&amp;[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">In:  List of root customer node IDs that the operation calling programs must not process.</p>
+<p class="tablebodytext">The customer nodes in this list must be mutually exclusive to the customer nodes in <span class="unixoutputc">RootCustomerNodeList&amp;</span>.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">MinimalRevoke&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">In:  Performs minimal revoke functionality if the operation fails.</p>
+<p class="tablebodytext">If not specified, defaults to FALSE.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">SuccessCustomerNodeList&amp;[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">Out:  List of root customer node IDs successfully processed by all of the operation calling programs.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ErrorCustomerNodeList&amp;[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">Out:  List of root customer node IDs not successfully processed by any of the operation calling programs.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">SuppressedCustomerNodeList&amp;[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">Out:  List of root customer IDs that have had their invoices suppressed.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">1 (TRUE) if successful; otherwise, an error is raised indicating that the error threshold was exceeded, and the function aborts.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">The operation codes supported by this function are in the range of 1 to 127 for standard billing operations; codes greater than 128 undo the effect of the operation.  The operations are performed in numerical order for codes less than 128 and in reverse numerical order for codes greater than 128.</p>
+<p class="bodytext"><span class="unixoutputc">BillingConfiguration&amp;</span> is used as the first index value into the <span class="unixoutputc">BillingConfiguration</span> derived attribute table.  It enables the grouping together of the required billing operation codes to be performed for a specific configuration.  </p>
+<p class="bodytext">The <span class="unixoutputc">BillingConfiguration</span> derived attribute table must be configured to consist of two index values and one result value.  The second index value contains the billing operation code referenced in the <span class="unixoutputc">BILL_RUN_OPERATION_TRE_V</span>.  The result value contains the name of the function to be called by a successful match of the two key index values.  </p>
+<p class="bodytext">Only the billing operation codes to be overridden from the default configuration, or any user-defined billing operation codes, need to be added to the derived attribute table.  If an operation or revoke operation is not defined for the specified billing configuration, the function associated with the default billing configuration is called.  </p>
+<p class="bodytext">Only root customers who successfully complete an operation are eligible for subsequent operations.  If an operation fails, the bill run operation table must be updated to reflect this.  If after an operation the total number of customers in error is greater than <span class="unixoutputc">ErrorThreshold&amp;</span>, the function aborts.</p>
+<p class="bodytext">If <span class="unixoutputc">MinimalRevoke&amp;</span> is set to TRUE and the required bill run operation matches any <span class="fieldname">Bill Run Operation</span> index value in the <span class="unixoutputc">BillingConfigurationRevokeSuppress</span> derived attribute table, the corresponding <span class="fieldname">Bill Run Operation Function</span> result value is used instead of the function defined in the <span class="unixoutputc">BillingConfiguration</span> derived attribute table.  <span class="unixoutputc">BillingConfigurationRevokeSuppress</span> contains revoke operations that retain intermediate results where possible to minimise the revoke processing on a failed customer hierarchy; for example, invoice images.</p>
+<p class="bodytext">The function aborts with an appropriate error message if the operations in the requested billing configuration have no TRE function defined or the bill run operation has no corresponding revoke operation defined.</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="11472.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="11474.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+

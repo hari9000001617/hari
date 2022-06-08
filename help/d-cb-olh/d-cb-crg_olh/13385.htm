@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title> InvoiceGenerate&amp;() </title>
+<script type="text/javascript" src="open_parent.js"></script>
+<link rel="stylesheet" type="text/css" href="pkc.css">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
+<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
+<script language="JavaScript">
+<!--
+
+document.onkeydown = checkChangePage;
+function checkChangePage(e)
+{
+   if (!e) var e = window.event;
+   // Don't put the following into the first page
+   if ((e.ctrlKey && (e.keyCode == 37))) {
+      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
+      document.location.href = "13384.htm";
+   } else
+   // Don't put the following into the late page for a document
+   if ((e.ctrlKey && (e.keyCode == 39))) {
+      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
+      document.location.href = "45860.htm";
+   }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function printpage()
+{
+	window.print();
+}
+//-->
+</script>
+</head>
+<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('13385')}">
+<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="13384.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="45860.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
+<h3 class="heading3">InvoiceGenerate&amp;()</h3>
+</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'InvoiceGenerate&amp;()' (13385)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
+<pre class="unixinputp">InvoiceGenerate&amp;(    BillRunId&amp;,    EffectiveDate~,    BillRunOperationId&amp;,    QAInd&amp;,    InterimInd&amp;,    RootCustomerNodeList&amp;[],    var&nbsp;SuccessCustomerNodeList&amp;[],    var&nbsp;ErrorCustomerNodeList&amp;[],    var&nbsp;SuppressedCustomerNodeList&amp;[],    var&nbsp;<span class="unixoutputc">OperationStatistics</span>?{})</pre>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Description</p>
+<p class="bodytext">Generates an invoice for the specified list of root customer nodes, after checking licensing entity status.</p>
+<p class="syntaxheading">Attributes</p>
+<table class="tableintopic" width="294" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="bold">Function Type</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Local Built-in</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="bold">Service</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">(Local)</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="bold">Context</span></p>
+</td>
+<td style="border:1px solid #010101;" width="102"><p class="tablebodytext">Any</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="252"><p class="tableheading">Parameter</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="444"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">BillRunId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">In:  ID of the bill run being processed.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">EffectiveDate~</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">In:  Effective date of the bill run.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">BillRunOperationId&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">In:  ID of the bill run operation.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">QAInd&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">In:  Indicator to identify if the bill run to be processed is a real bill run or a QA bill run.</p>
+<p class="tablebodytext">0 (FALSE) indicates real mode, in which the BGP generates real bills to be sent to customers.</p>
+<p class="tablebodytext">A non-zero value (TRUE) indicates a QA bill run (temp mode), in which the BGP generates temporary bills that will not be sent out to customers and will not be paid.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">InterimInd&amp;</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">In:  Indicates whether the BGP should operate in interim mode for the duration of the bill run.</p>
+<p class="tablebodytext">If set to a non-zero value (TRUE), the BGP operates in interim mode.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">RootCustomerNodeList&amp;[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">In:  List of root customer nodes to be processed.</p>
+<p class="tablebodytext">It contains a single entry for a bill run executed as a one-off task.</p>
+<p class="tablebodytext">It must not be empty.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">SuccessCustomerNodeList&amp;[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">Out:  List of all root customer nodes successfully processed and returned to the calling program.</p>
+<p class="tablebodytext">It is a subset of the <span class="unixoutputc">RootCustomerNodeList&amp;[]</span> parameter, and preserves the order of the <span class="unixoutputc">RootCustomerNodeList&amp;[]</span> parameter.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">ErrorCustomerNodeList&amp;[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">Out:  List of root customer nodes unsuccessfully processed by the server and returned to the calling program.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">SuppressedCustomerNodeList&amp;[]</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">Out:  List of root customer nodes whose invoices were suppressed.</p>
+<p class="tablebodytext">Invoices are suppressed by the invoice type expressions on the <span class="formname">Invoice Type Definition</span> form.  Invoices are only suppressed for a hierarchy if all invoices in the hierarchy are suppressed. Child customer nodes with a report level other than Invoice are excluded from this condition.</p>
+<table width="100%" class="notestyle"><tr><td><p class="note">Note:</p><p class="tablenote">There is no specific invoice suppression expression on the invoice type.  However, invoice type expressions can set the direct variable that is associated with the <span class="unixoutputc">SUPPRESS_IND_CODE</span> in the <span class="unixoutputc">INVOICE</span> table.</p></td></tr></table>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="252"><p class="tablebodytext"><span class="unixoutputc">OperationStatistics?{}</span></p>
+</td>
+<td style="border:1px solid #010101;" width="444"><p class="tablebodytext">Out:  Unknown EPM hash containing the statistics gathered during the processing of the list of root customers.</p>
+<p class="tablebodytext">The table below lists the statistic keys.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+<p class="syntaxheading">Returns</p>
+<p class="bodytext">1(TRUE) if the bill run is successful; otherwise, an error is raised.</p>
+<p class="syntaxheading">Remarks</p>
+<p class="bodytext">All license checks are automatically performed by Convergent Billing.</p>
+<p class="bodytext">If the function is called from the BGP (see the <span class="referrals">System Operations Guide for Singleview Convergent Billing</span>), it:</p>
+<ul class="listbullet"><li class="listbullet">Applies and releases locks on customers and manages the server's error threshold.</li><li class="listbullet">Supplies the calling program with lists of successful, rejected, and suppressed customers.</li></ul><p class="bodytext">A bill run is unsuccessful if any of the following conditions occur:</p>
+<ul class="listbullet"><li class="listbullet">The BGP server's error threshold is exceeded.</li><li class="listbullet">A detectable error occurs that is fatal to the BGP server.</li><li class="listbullet">An error is detected in the parameters.</li><li class="listbullet">Any failure that occurs when checking the licensing entity status.</li></ul><p class="bodytext">Before the function processes a root customer, it must obtain a lock on the customer to prevent any other billing operation from interfering with its processing.  Locks are obtained by updating the <span class="unixoutputc">CUSTOMER_NODE</span> table with the BGP servers bill run operation ID and process ID.  If these fields are <span class="unixoutputc">NULL</span>, a lock is obtained.  After the customer is processed, the lock is released to other billing processes.  If a lock is not obtained for a customer, that customer is immediately placed into the rejected customer list and not processed.</p>
+<p class="bodytext">If run in interim mode (<span class="unixoutputc">InterimInd&amp;</span> parameter), the BGP only processes events that have their <span class="unixoutputc">BILL_RUN_ID</span> set to the ID of the current bill run.  Interim mode limits the charges displayed on the invoice to charges resulting from events created by the RGP, charges generated by the BGP itself, and charges resulting from events that have had their <span class="unixoutputc">BILL_RUN_ID</span> explicitly set.  Regular usage events are excluded from the bill run in interim mode.</p>
+<p class="bodytext">The following table lists the <span class="unixoutputc">OperationStatistics?{}</span> hash keys.</p>
+<p class="bodytext">&nbsp;</p>
+<p class="caption">OperationStatistics?{}<span class="unixoutputc"> </span>Keys</p>
+<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td class="tableheading" style="border:1px solid #010101;" width="216"><p class="tableheading">Key</p>
+</td>
+<td class="tableheading" style="border:1px solid #010101;" width="480"><p class="tableheading">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">TotalCharges</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Number of original charges processed by the bill run.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">TotalEvents</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Number of original normalised events processed by the bill run.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">TotalServices</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Number of services processed by the bill run.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">ExcludedServices</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Number of services eligible to be processed but were excluded due to a lack of associated usage or rental charges. </p>
+<p class="tablebodytext">This key only has a value if the <span class="unixoutputc">EXCLUDE_IDLE_SERVICES</span> configuration attribute is set to TRUE.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">TotalCustomerNodes</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Number of customer nodes processed by the bill run.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">MaxChargePasses</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Maximum number of passes to the Normalised Event and Charge contexts for the bill run.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">MinChargePasses</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Minimum number of passes to the Normalised Event and Charge contexts for the bill run.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">TariffChargesGenerated</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Number of tariff charges generated for the bill run.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">SubtotalChargesGenerated</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Number of subtotal charges generated for the bill run.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">Invoices</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Total number of invoices generated for the bill run.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">Statements</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Total number of invoice records generated for statements on the bill run and includes invoice records for:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Secondary accounts.</li><li class="tablelistbullet">Primary accounts of non-reporting customer nodes (that is, those for which no statement image is generated).</li><li class="tablelistbullet">Statements pending consolidation.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">PendingConsolidation</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Total number of invoice records converted to statements pending consolidation.</p>
+<p class="tablebodytext">These invoices are included in the <span class="unixoutputc">Statements</span> key.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">InvoiceAmount</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Sum total of the invoiced amount generated by the bill run.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="216"><p class="tablebodytext"><span class="unixoutputc">StatementAmount</span></p>
+</td>
+<td style="border:1px solid #010101;" width="480"><p class="tablebodytext">Sum total of the statement amount generated by the bill run.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">&nbsp;</p>
+
+
+<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="13384.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="45860.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
+</html>
+
+
