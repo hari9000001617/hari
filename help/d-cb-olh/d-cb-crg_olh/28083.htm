@@ -1,202 +1,0 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<title> fEV_CustomerDADeleteRows&amp;() </title>
-<script type="text/javascript" src="open_parent.js"></script>
-<link rel="stylesheet" type="text/css" href="pkc.css">
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
-<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
-<script language="JavaScript">
-<!--
-
-document.onkeydown = checkChangePage;
-function checkChangePage(e)
-{
-   if (!e) var e = window.event;
-   // Don't put the following into the first page
-   if ((e.ctrlKey && (e.keyCode == 37))) {
-      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
-      document.location.href = "50602.htm";
-   } else
-   // Don't put the following into the late page for a document
-   if ((e.ctrlKey && (e.keyCode == 39))) {
-      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
-      document.location.href = "28084.htm";
-   }
-}
-
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-
-function MM_findObj(n, d) { //v4.0
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && document.getElementById) x=document.getElementById(n); return x;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-
-function printpage()
-{
-	window.print();
-}
-//-->
-</script>
-</head>
-<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('51544');expand('28068');expand('45618');highlight('28083')}">
-<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="50602.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="28084.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
-<h4 class="heading4">fEV_CustomerDADeleteRows&amp;()</h4>
-</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'fEV_CustomerDADeleteRows&amp;()' (28083)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
-<table class="tableintopic" width="534" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
-<tr align="left" valign="top">
-<td class="tableheading" width="240"><p class="tableheading">Interface 1</p>
-</td>
-<td width="48"><p class="tablebodytext">&nbsp;</p>
-</td>
-<td class="tableheading" width="246"><p class="tableheading">Interface 2</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td width="240"><pre class="unixinputp">fEV_CustomerDADeleteRows&amp;(    customerId&amp;,    effectiveDate~,    var lastModified~,    derivedAttributeId&amp;,    effectiveStartDate~,    effectiveEndDate~,    const fieldNames?[],    const fieldValues?[])&nbsp;</pre>
-</td>
-<td width="48"><pre class="unixinputp">&nbsp;</pre>
-</td>
-<td width="246"><pre class="unixinputp">fEV_CustomerDADeleteRows&amp;(    customerId&amp;,    effectiveDate~,    var lastModified~,    const tableName$,    effectiveStartDate~,    effectiveEndDate~,    const fieldNames?[],    const fieldValues?[])</pre>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td class="tableheading" width="240"><p class="tableheading">Interface 3</p>
-</td>
-<td width="48"><p class="tablebodytext">&nbsp;</p>
-</td>
-<td class="tableheading" width="246"><p class="tableheading">Interface 4</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td width="240"><pre class="unixinputp">fEV_CustomerDADeleteRows&amp;(    customerId&amp;,    effectiveDate~,    var lastModified~,    derivedAttributeId&amp;,    effectiveStartDate~,    effectiveEndDate~,    const fieldValues?[])&nbsp;</pre>
-</td>
-<td width="48"><pre class="unixinputp">&nbsp;</pre>
-</td>
-<td width="246"><pre class="unixinputp">fEV_CustomerDADeleteRows&amp;(    customerId&amp;,    effectiveDate~,    var lastModified~,    const tableName$,    effectiveStartDate~,    effectiveEndDate~,    const fieldValues?[])</pre>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td class="tableheading" width="240"><p class="tableheading">Interface 5</p>
-</td>
-<td width="48"><p class="tablebodytext">&nbsp;</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td width="240"><pre class="unixinputp">fEV_CustomerDADeleteRows&amp;(    customerId&amp;,    effectiveDate~,    var lastModified~,    derivedAttributeId&amp;,    seqNr&amp;[]    effectiveStartDate~,    effectiveEndDate~,)</pre>
-</td>
-<td width="48"><p class="tablebodytext">&nbsp;</p>
-</td>
-</tr>
-
-</table>
-<p class="bodytext">&nbsp;</p>
-<p class="syntaxheading">Description</p>
-<p class="bodytext">Deletes rows of data in a customer derived attribute array.  The function internally calls the <span class="unixoutputc">CustomerNodeDAUpdate&amp;()</span>function to perform the deletions.</p>
-<p class="syntaxheading">Context</p>
-<p class="bodytext">The following groups of variables are available throughout all stages of processing a customer derived attribute delete rows request, except where otherwise specified:</p>
-<ul class="listbullet"><li class="listbullet">System client</li><li class="listbullet">Operator</li><li class="listbullet">Miscellaneous<ul class="listdashbullet2"><li class="listdashbullet2"><span class="unixoutputc">EvFormCode$</span> contains the value <span class="unixoutputc">CUSTSVR</span>.</li><li class="listdashbullet2"><span class="unixoutputc">EvLastRowInd&amp;</span> contains the value <span class="unixoutputc">0</span> during all stages of processing, except the evaluation of the customer pre-commit expressions and the customer derived attribute pre-commit expressions for the last row processed.</li><li class="listdashbullet2"><span class="unixoutputc">EvRowStatus$</span> contains the value <span class="unixoutputc">Delete</span> for the customer derived attribute processing stages and the value <span class="unixoutputc">Update</span> for the customer processing stages.</li></ul></li><li class="listbullet">Customer<p class="listcontinue">The customer variables may only be available during the customer processing stages and the evaluation of customer-derived attribute pre  and post commit expressions.</p>
-</li><li class="listbullet">Derived attribute<p class="listcontinue">The derived attribute variables may only be available during the customer-derived attribute processing stages.</p>
-</li></ul><p class="syntaxheading">Parameters</p>
-<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
-<tr align="left" valign="top">
-<td class="tableheading" style="border:1px solid #010101;" width="175"><p class="tableheading">Parameter</p>
-</td>
-<td class="tableheading" style="border:1px solid #010101;" width="521"><p class="tableheading">Description</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td style="border:1px solid #010101;" width="175"><p class="tablebodytext"><span class="unixoutputc">customerId&amp;</span></p>
-</td>
-<td style="border:1px solid #010101;" width="521"><p class="tablebodytext">ID of the customer for which derived attribute array rows is being deleted.</p>
-<p class="tablebodytext">A customer with the specified ID must exist in the database for the effective date specified; otherwise, an error is raised.</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td style="border:1px solid #010101;" width="175"><p class="tablebodytext"><span class="unixoutputc">effectiveDate~</span></p>
-</td>
-<td style="border:1px solid #010101;" width="521"><p class="tablebodytext">Effective date used to identify the historical customer record that is updated.</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td style="border:1px solid #010101;" width="175"><p class="tablebodytext"><span class="unixoutputc">lastModified~</span></p>
-</td>
-<td style="border:1px solid #010101;" width="521"><p class="tablebodytext">Initial value of <span class="unixoutputc">lastModifed~</span> must match the value in the derived attribute history record matching the specified <span class="unixoutputc">customerId&amp;</span> and <span class="unixoutputc">oldEffectiveDate~</span>.</p>
-<p class="tablebodytext">If not defined, the last modified value in <span class="unixoutputc">CUSTOMER_NODE_HISTORY_V</span> for the specified <span class="unixoutputc">effectiveDate~</span> is used.</p>
-<p class="tablebodytext">On successful return, the value is the date-time of these deletions.</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td style="border:1px solid #010101;" width="175"><p class="tablebodytext"><span class="unixoutputc">tableName$</span></p>
-<p class="tablebodytext"><span class="unixoutputc">derivedAttributeId&amp;</span></p>
-</td>
-<td style="border:1px solid #010101;" width="521"><p class="tablebodytext">ID of the derived attribute array from which the rows is deleted.</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td style="border:1px solid #010101;" width="175"><p class="tablebodytext"><span class="unixoutputc">seqNr&amp;[]</span></p>
-</td>
-<td style="border:1px solid #010101;" width="521"><p class="tablebodytext">Sequence numbers of rows to delete.</p>
-<p class="tablebodytext">If any sequence number does not match a customer derived attribute array row, an error is raised.</p>
-<p class="tablebodytext">Deletions occur in the specified order.</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td style="border:1px solid #010101;" width="175"><p class="tablebodytext"><span class="unixoutputc">effectiveStartDate~</span></p>
-</td>
-<td style="border:1px solid #010101;" width="521"><p class="tablebodytext">Date on which the deletions first become effective.</p>
-<p class="tablebodytext">If not defined, the current date is used.</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td style="border:1px solid #010101;" width="175"><p class="tablebodytext"><span class="unixoutputc">effectiveEndDate~</span></p>
-</td>
-<td style="border:1px solid #010101;" width="521"><p class="tablebodytext">Date on which the deletions cease to be effective.</p>
-<p class="tablebodytext">If not defined, the end of time value is used.</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td style="border:1px solid #010101;" width="175"><p class="tablebodytext"><span class="unixoutputc">fieldValues?[]</span></p>
-<p class="tablebodytext"><span class="unixoutputc">fieldNames$[]</span></p>
-<p class="tablebodytext"><span class="unixoutputc">fieldValues?[]</span></p>
-</td>
-<td style="border:1px solid #010101;" width="521"><p class="tablebodytext">Customer derived attribute rows to delete.  Accepted forms are:</p>
-<ul class="tablelistbullet"><li class="tablelistbullet">Array of hashes of data for one or more customer derived attribute row (<span class="unixoutputc">fieldValues?[]</span>)</li><li class="tablelistbullet">Array of field names and an array of arrays of field values, containing data for one or more customer derived attribute rows (<span class="unixoutputc">fieldNames?[]</span>, <span class="unixoutputc">fieldValues?[]</span>)</li><li class="tablelistbullet">Pair of arrays of arrays of data for one or more customer derived attribute rows (<span class="unixoutputc">fieldNames?[]</span>, <span class="unixoutputc">fieldValues?[]</span>).</li></ul><p class="tablebodytext">Row data must contain complete row indexes for the derived attribute array. Result values must not be specified.</p>
-<p class="tablebodytext">The derived attribute array rows to be deleted are identified by the index values specified in this parameter.  If any row of data in this parameter does not match rows in the database, an error is raised.</p>
-<p class="tablebodytext">The data may be keyed according to the corresponding column name in the <span class="unixoutputc">CUSTOMER_NODE_DA_ARRAY</span> table.  When keyed according to the database column name, the data passed must match in both type and value the data stored in the database.</p>
-<p class="tablebodytext">If attribute validation is enabled, data can also be keyed by interface or display label specified in the appropriate entity validation, or in Convergent Billing defaults.</p>
-<p class="tablebodytext">When keyed by a label, data passed must match the type and value expected as defined in the appropriate attribute type.  Denormalised fields must pass denormalised string values.  Other fields must pass data of the type defined in the attribute type.</p>
-</td>
-</tr>
-
-</table>
-<p class="bodytext">&nbsp;</p>
-<p class="syntaxheading">Processing</p>
-<p class="bodytext">Assuming that all processing stages are enabled, the following is the order of evaluation of expressions and constraints before deletion of the customer derived attribute rows:</p>
-<ol class="listnumber"><li class="listnumber">Bundle direct variables if the call is nested.</li><li class="listnumber">If <span class="unixoutputc">seqNr&amp;[]</span> is not specified, derive the sequence number for each row.</li><li class="listnumber">Decrypt any encrypted values and mask any appropriate values.</li><li class="listnumber">Apply attribute type defaults and validation.</li><li class="listnumber">Evaluate customer pre-commit expressions.</li><li class="listnumber">Evaluate customer derived attribute pre-commit expressions for each new row of data to be deleted.</li></ol><p class="bodytext">On performing the deletions, the following sequence of actions occurs:  </p>
-<ol class="listnumber"><li class="listnumber">Evaluate customer in-transaction expressions.</li><li class="listnumber">Queue and evaluate customer post-commit expressions.</li><li class="listnumber">Evaluate customer derived attribute in-transaction expressions for each row of data deleted.</li><li class="listnumber">Queue and evaluate customer derived attribute post-commit expressions for each row of data deleted.</li><li class="listnumber">Unbundle variables that were stored in step 1 before deletion.  </li></ol><p class="syntaxheading">Returns</p>
-<p class="bodytext">On success, the number of rows deleted is returned.  If any of the deletions or pre-delete validation steps fail, an error is raised.</p>
-
-
-<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="50602.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="28084.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
-</html>
-
-

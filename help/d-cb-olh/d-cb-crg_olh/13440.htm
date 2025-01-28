@@ -1,218 +1,0 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<title> MonitorQuery&amp;() </title>
-<script type="text/javascript" src="open_parent.js"></script>
-<link rel="stylesheet" type="text/css" href="pkc.css">
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-<meta name="description" content="Configurer's Reference Guide for Singleview Convergent Billing 9.1 ">
-<script language="javascript" type="text/javascript" src="dhtml_toc.js"></script>
-<script language="JavaScript">
-<!--
-
-document.onkeydown = checkChangePage;
-function checkChangePage(e)
-{
-   if (!e) var e = window.event;
-   // Don't put the following into the first page
-   if ((e.ctrlKey && (e.keyCode == 37))) {
-      // Ctrl-Left Arrow was pressed or Page up key pressed at the top of the page
-      document.location.href = "13439.htm";
-   } else
-   // Don't put the following into the late page for a document
-   if ((e.ctrlKey && (e.keyCode == 39))) {
-      // Ctrl-Right Arrow was pressed or Page down key pressed and at the bottom of the page
-      document.location.href = "13441.htm";
-   }
-}
-
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
-
-function MM_findObj(n, d) { //v4.0
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && document.getElementById) x=document.getElementById(n); return x;
-}
-
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-
-function printpage()
-{
-	window.print();
-}
-//-->
-</script>
-</head>
-<body onload="loadParent();MM_preloadImages('left_down.gif','right_down.gif','index_down.gif','contents_down.gif','search_down.gif','print_down.gif');if (isTOCLoaded()) {expand('11007');expand('10992');highlight('13440')}">
-<div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="13439.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="13441.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="100%">
-<h3 class="heading3">MonitorQuery&amp;()</h3>
-</td><td class="feedback"><p><a href="mailto:ipoint@csgi.com?subject=Feedback on Topic 'MonitorQuery&amp;()' (13440)"><img border=0 src="email.png" alt="Provide feedback on this topic"></a></p></td></tr></table><p class="syntaxheading">Syntax</p>
-<table class="tableintopic" width="486" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
-<tr align="left" valign="top">
-<td class="tableheading" width="228"><p class="tableheading">Interface 1</p>
-</td>
-<td width="42"><p class="tablebodytext">&nbsp;</p>
-</td>
-<td class="tableheading" width="216"><p class="tableheading">Interface 2</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td width="228"><pre class="unixinputp">MonitorQuery&amp;(    StartDate~,    EndDate~,    var&nbsp;TimeStamp~[],    var&nbsp;ProcessName$[],    var&nbsp;Version$[],    var&nbsp;PrimaryId&amp;[],    var&nbsp;SecondaryId&amp;[],    var&nbsp;Event?[],    var MaxEventSeqNr&amp;)&nbsp;</pre>
-</td>
-<td width="42"><p class="tablebodytext">&nbsp;</p>
-</td>
-<td width="216"><pre class="unixinputp">MonitorQuery&amp;(    MinEventSeqNr&amp;,    var MaxEventSeqNr&amp;,    var&nbsp;TimeStamp~[],    var&nbsp;ProcessName$[],    var&nbsp;Version$[],    var&nbsp;PrimaryId&amp;[],    var&nbsp;SecondaryId&amp;[],    var&nbsp;Event?[])</pre>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td class="tableheading" width="228"><p class="tableheading">Interface 3</p>
-</td>
-<td width="42"><p class="tablebodytext">&nbsp;</p>
-</td>
-<td width="216"><p class="bodytext">&nbsp;</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td width="228"><pre class="unixinputp">MonitorQuery&amp;(    StartDate~,    EndDate~,    var&nbsp;TimeStamp~[],    var&nbsp;ProcessName$[],    var&nbsp;Version$[],    var&nbsp;PrimaryId&amp;[],    var&nbsp;SecondaryId&amp;[],    var&nbsp;Event?[])</pre>
-</td>
-<td width="42"><p class="tablebodytext">&nbsp;</p>
-</td>
-<td width="216"><p class="tablebodytext">&nbsp;</p>
-</td>
-</tr>
-
-</table>
-<p class="bodytext">&nbsp;</p>
-<p class="syntaxheading">Description</p>
-<p class="bodytext">Returns details of logged events over the specified date range or range of event sequence numbers, and can be a reduced set by specifying the other criteria listed in the parameter list.</p>
-<p class="syntaxheading">Attributes</p>
-<table class="tableintopic" width="288" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
-<tr align="left" valign="top">
-<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="bold">Application Environment</span></p>
-</td>
-<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Any</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="bold">Context</span></p>
-</td>
-<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Any</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td style="border:1px solid #010101;" width="192"><p class="tablebodytext"><span class="bold">Method</span></p>
-</td>
-<td style="border:1px solid #010101;" width="96"><p class="tablebodytext">Local</p>
-</td>
-</tr>
-
-</table>
-<p class="bodytext">&nbsp;</p>
-<table class="tableintopic" width="696" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
-<tr align="left" valign="top">
-<td class="tableheading" style="border:1px solid #010101;" width="132"><p class="tableheading">Parameter</p>
-</td>
-<td class="tableheading" style="border:1px solid #010101;" width="564"><p class="tableheading">Description</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">StartDate~</span></p>
-</td>
-<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">In:  Inclusive start date-time for which events are to be retrieved.</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">EndDate~</span></p>
-</td>
-<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">In:  Inclusive end date-time for which events are to be retrieved.</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">MinEventSeqnr&amp;</span></p>
-</td>
-<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">In:  Inclusive minimum event sequence number for which events are to be retrieved.</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">MaxEventSeqnr&amp;</span></p>
-</td>
-<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">In:  Inclusive maximum event sequence number of events to be retrieved.</p>
-<p class="tablebodytext">Supplying an undefined or zero value retrieves events from <span class="unixoutputc">MinEventSeqnr&amp;</span> onwards (only if <span class="unixoutputc">MinEventSeqnr&amp;</span> is also specified) (interface 2 only).</p>
-<p class="tablebodytext">Out:  Maximum event sequence number of returned events.</p>
-<p class="tablebodytext">If no events are returned, the maximum event sequence number of the cached events, or zero if there are no cached events (interfaces 1 and 2 only).</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">TimeStamp~[]</span></p>
-</td>
-<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">Out:  Timestamps of matching events.</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">ProcessName$[]</span></p>
-</td>
-<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">In/Out:  Process names of matching events.</p>
-<p class="tablebodytext">If specified on input, only events matching the specified process names are returned.</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">Version$[]</span></p>
-</td>
-<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">In/Out:  Versions of the software matching events.</p>
-<p class="tablebodytext">If specified on input, only events with the specified version are returned.</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">PrimaryId&amp;[]</span></p>
-</td>
-<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">In/Out:  Primary IDs of matching events.</p>
-<p class="tablebodytext">If specified on input, only events with the specified primary IDs are returned.</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">SecondaryId&amp;[]</span></p>
-</td>
-<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">In/Out:  Secondary IDs of matching events.</p>
-<p class="tablebodytext">If specified on input, only events with the specified secondary IDs are returned.</p>
-</td>
-</tr>
-<tr align="left" valign="top">
-<td style="border:1px solid #010101;" width="132"><p class="tablebodytext"><span class="unixoutputc">Event?[]</span></p>
-</td>
-<td style="border:1px solid #010101;" width="564"><p class="tablebodytext">In:  Array of hashes.</p>
-<p class="tablebodytext">Out:  Array of hashes with each element in the array corresponding to each <span class="unixoutputc">ProcessName$</span>.  If specified on input, then only events with matching keys and values will be returned.</p>
-<p class="tablebodytext">If <span class="unixoutputc">MinEventSeqnr&amp;</span> and <span class="unixoutputc">MaxEventSeqnr&amp;</span> are specified, the events in the hash are ordered by sequence number; otherwise, they are ordered by timestamp.</p>
-</td>
-</tr>
-
-</table>
-<p class="bodytext">&nbsp;</p>
-<p class="syntaxheading">Returns</p>
-<p class="bodytext">Number of events matching criteria between <span class="unixoutputc">StartDate~</span> and <span class="unixoutputc">EndDate~</span>.  All returned arrays are of this size.</p>
-<p class="syntaxheading">Remarks</p>
-<p class="bodytext">Events are retrieved from the in-memory cache only; if the range is outside the size of the in-memory cache, the set returned is all records that fit within the given range.</p>
-<p class="bodytext">Any analysis of events that have been pushed out of the cache must be done using an external application or third party performance analysis tool that can read the XML format as written in by the <span class="unixoutputc">biMonitorLog&amp;</span> function.</p>
-<p class="bodytext">This service assumes that events are received in approximately timestamp order.  If writing events to disk, they will be written in timestamp order.  The cache of events is sorted by timestamp, to perform efficient searches, and aged by timestamp (not by the order in which they were received), and returned events are sorted by timestamp.</p>
-<p class="bodytext">Interface 1 can be used to obtain a value for <span class="unixoutputc">MaxEventSeqnr&amp;</span>, which can then be used in subsequent calls using interface 2 to specify a range of event sequence numbers.</p>
-<p class="bodytext">Using sequence numbers rather than timestamps guarantees that no events are missed or duplicated when retrieving contiguous ranges of events, because only one event can have a given sequence number.</p>
-<p class="bodytext">Retrieval using a start and end timestamp cannot guarantee that no events are missed.  For example, further events may arrive for the end timestamp once the function call has returned, in which case a subsequent query starting from (end timestamp + 1 second) misses those events.</p>
-
-
-<br><div class="menubar">  <table width="100%" border="0" cellspacing="0" cellpadding="0">    <tr valign="middle">      <td width="70">        <a href="13439.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('left','','left_down.gif',1)">        <img name="left" border="0" src="left_up.gif" width="26" height="26" alt="Previous topic" title="Previous topic"></a>        <a href="13441.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('right','','right_down.gif',1)">        <img name="right" border="0" src="right_up.gif" width="26" height="26" alt="Next topic" title="Next topic"></a></td>        <td class="bodytext">Configurer's Reference Guide for Singleview Convergent Billing 9.1 </td>        <td width="40">        <div align="center">        <a href="javascript:printpage();" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('print','','print_down.gif',1)">        <img name="print" border="0" src="print_up.gif" width="26" height="26" alt="Print this page" title="Print this page"></a>      </div>       </td></tr>  </table></div></body>
-</html>
-
-
